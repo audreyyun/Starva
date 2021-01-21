@@ -9,11 +9,11 @@ class SessionForm extends React.Component {
             password: ""
         };
         this.handleSubmit = this.handleSubmit.bind(this)
+        this.loginDemoUser = this.loginDemoUser.bind(this)
     }
 
     handleSubmit(e) {
         e.preventDefault();
-        debugger
         const user = Object.assign({}, this.state);
         this.props.processForm(user).then(() => this.props.history.push(`/`))
     }
@@ -24,20 +24,39 @@ class SessionForm extends React.Component {
         }
     }
 
-    render () { 
-        // const link = (this.props.formType === 'Sign Up' ?
-        //     <Link className="auth-login-btn" to="/login"><button>Log In</button></Link> :
-        //     <Link className="auth-signup-btn" to="/signup"><button >Sign Up</button></Link>);
+    loginDemoUser(e) { 
+        e.preventDefault();
+        const demoUser = {email: "guest@guest.com", password: "password"}
+        this.props.processForm(demoUser).then(() => this.props.history.push('/'))
+    }
+    componentWillUnmount() { 
+        this.props.receiveErrors([])
+    }
+    renderErrors() {
+        return (
+            <ul>
+                {this.props.errors.map((error, i) => (
+                    <li key={`error-${i}`}>
+                        {error}
+                    </li>
+                ))}
+            </ul>
+        );
+    }
 
-        // const revlink = (this.props.formType !== 'Sign Up' ?
-        //     <Link className="auth-login-btn" to="/login"><button>Log In</button></Link> :
-        //     <Link className="auth-signup-btn" to="/signup"><button >Sign Up</button></Link>);
+    render () { 
+        const link = (this.props.formType === 'Sign Up' ?
+            <Link className="auth-login-btn" to="/login"><button>Log In</button></Link> :
+            <Link className="auth-signup-btn" to="/signup"><button >Sign Up</button></Link>);
 
         return (
             <div className="session-form">
                 <h1>Join Strava today, it's Free.</h1>
-                <h3>{this.props.navLink}</h3>
-                <form>
+        
+                <h3>{link}</h3>
+
+                {this.renderErrors()}
+                <form className="session-form" onSubmit={this.handleSubmit}>
                     <label>Email
                         <input type="text" value = {this.state.email} onChange={this.handleInput('email')}/>
                     </label>
@@ -46,6 +65,10 @@ class SessionForm extends React.Component {
                     </label>
                     <button onClick={this.handleSubmit}>{this.props.formType}</button>
 
+                </form>
+                
+                <form onSubmit={this.handleSubmit}>
+                    <button onClick={this.loginDemoUser}>Log In Demo User</button>
                 </form>
             </div>
         )

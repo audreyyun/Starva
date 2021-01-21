@@ -8,3 +8,9 @@
 
 
 # {username: "guest", email: "guest@gmail.com", first_name: "G", last_name: "Uest", password: "password" }
+User.destroy_all
+
+demo_user = User.create!( 
+    email: "guest@guest.com",
+    password: "password"
+)
