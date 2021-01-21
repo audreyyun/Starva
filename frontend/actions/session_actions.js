@@ -5,10 +5,10 @@ export const LOGOUT_CURRENT_USER = 'LOGOUT_CURRENT_USER';
 export const RECEIVE_SESSION_ERRORS = 'RECEIVE_SESSION_ERRORS';
 
 //reg action creators that return a POJO
-const receiveCurrentUser = (currentUser) => { 
+export const receiveCurrentUser = (user) => { 
     return { 
         type: RECEIVE_CURRENT_USER,
-        currentUser
+        user
     }
 }
 
@@ -29,13 +29,13 @@ export const receiveErrors = (errors) => { //errors is an array
 
 //thunks
 export const login = (user) => dispatch => { 
-    SessionAPIUtil.login(user).then(user => (dispatch(receiveCurrentUser(user))), error => (dispatch(receiveErrors(error.responseJSON))))
+    return SessionAPIUtil.login(user).then(currentUser => (dispatch(receiveCurrentUser(currentUser))), error => (dispatch(receiveErrors(error.responseJSON))))
 }
 export const signup = (user) => dispatch => { 
-    SessionAPIUtil.signup(user).then(user => (dispatch(receiveCurrentUser(user))), error => (dispatch(receiveErrors(error.responseJSON))))
+    return SessionAPIUtil.signup(user).then(currentUser => (dispatch(receiveCurrentUser(currentUser))), error => (dispatch(receiveErrors(error.responseJSON))))
 }
 export const logout = () => dispatch => { 
-    SessionAPIUtil.logout().then(() => dispatch(logoutCurrentUser()))
+    return SessionAPIUtil.logout().then(() => dispatch(logoutCurrentUser()))
 }
 
 
