@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import Button from '../Button';
 
 class SessionForm extends React.Component {
     constructor(props) {
@@ -29,9 +30,11 @@ class SessionForm extends React.Component {
         const demoUser = {email: "guest@guest.com", password: "password"}
         this.props.processForm(demoUser).then(() => this.props.history.push('/'))
     }
-    componentWillUnmount() { 
-        this.props.receiveErrors([])
-    }
+
+    // componentWillUnmount() { 
+    //     this.props.receiveErrors([])
+    // }
+
     renderErrors() {
         return (
             <ul>
@@ -46,31 +49,35 @@ class SessionForm extends React.Component {
 
     render () { 
         const link = (this.props.formType === 'Sign Up' ?
-            <Link className="auth-login-btn" to="/login"><button>Log In</button></Link> :
-            <Link className="auth-signup-btn" to="/signup"><button >Sign Up</button></Link>);
+            <Link className="auth-session-btn" to="/login"><button className="rev-link">Log In</button></Link> :
+            <Link className="auth-session-btn" to="/signup"><button className="rev-link">Sign Up</button></Link>);
 
+        const demo = (this.props.formType === 'Sign Up' ? <button onClick={this.loginDemoUser}>Log In Demo User</button> : null)
         return (
-            <div className="session-form">
-                <h1>Join Strava today, it's Free.</h1>
-        
-                <h3>{link}</h3>
-
+            <div className="session sesh-border">
+                <div className="top">
+                    <img className="starva-logo" src={window.starvalogo} alt="" />
+                        <div className="sesh-btn">{link}</div>
+                </div>
+                   
                 {this.renderErrors()}
-                <form className="session-form" onSubmit={this.handleSubmit}>
-                    <label>Email
-                        <input type="text" value = {this.state.email} onChange={this.handleInput('email')}/>
-                    </label>
-                    <label>Password
-                        <input type="password" value={this.state.password} onChange={this.handleInput('password')}/>
-                    </label>
-                    <button onClick={this.handleSubmit}>{this.props.formType}</button>
+                <form className="session-form-container" onSubmit={this.handleSubmit}>
+                    <h1 className="page-name">{this.props.formType}</h1>
+                    <img className="session-bg" src={window.sessionbg} alt="" />
+                    <div className="session-form-inner">
 
+                        <input className="login-input" type="email" placeholder="Your Email" value = {this.state.email} onChange={this.handleInput('email')}/>
+                        <input className="login-input" type="password" placeholder="Password" value={this.state.password} onChange={this.handleInput('password')}/>
+
+                    <Button className="btn-primary" handleSubmit={this.handleSubmit} formType={this.props.formType}/>
+                    </div>
                 </form>
                 
-                <form onSubmit={this.handleSubmit}>
-                    <button onClick={this.loginDemoUser}>Log In Demo User</button>
+                <form className="demo"onSubmit={this.handleSubmit}>
+                    {/* <button onClick={this.loginDemoUser}>Log In Demo User</button> */}
+                    {demo}
                 </form>
-            </div>
+                </div>
         )
     }
 }

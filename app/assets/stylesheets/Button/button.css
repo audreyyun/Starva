@@ -1,0 +1,46 @@
+button { 
+    border-radius: 3px;
+    line-height: inherit;
+    min-height: 40px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-primary { 
+    background-color: #fc5200;
+    border-color: #fc5200;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 750;
+}
+
+/* .auth-session-btn { 
+    height: 55px; 
+    position: right;
+    border-radius: 3px;
+    line-height: inherit;
+    min-height: 40px;
+    width: 100%;
+    text-align: center;
+} */
+
+.rev-link {
+    width: fit-content;
+    background-color: #fc5200;
+    border-color: #fc5200;
+    color: #fff;
+    align-items: flex-end;
+    /* width: 77.49; */
+}
+
+.sesh-btn {
+    width: 77.49;
+}
+
+.login-btn {
+    color: rgb(0,0,0);
+    background-color: #fff;
+    border-color: #dfdfe8;
+}

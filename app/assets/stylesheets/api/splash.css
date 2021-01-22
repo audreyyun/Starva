@@ -1,0 +1,24 @@
+#splash-page {
+display: flex;
+   flex-direction: column;
+   /* height: 100vh; */
+   margin-top: 0em;
+   align-items: center;
+}
+
+.splash-top {
+    display: flex;
+    justify-content: space-between;
+    
+}
+/* 
+.header-container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+} */
+
+.splash-body-container { 
+    font-size: 48;
+}

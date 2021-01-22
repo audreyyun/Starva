@@ -37,5 +37,3 @@ export const signup = (user) => dispatch => {
 export const logout = () => dispatch => { 
     return SessionAPIUtil.logout().then(() => dispatch(logoutCurrentUser()))
 }
-
-
