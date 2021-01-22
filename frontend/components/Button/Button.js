@@ -3,7 +3,11 @@ import React from 'react';
 
 const Button = (props) => { 
     return (
-        <button className={props.className} onClick={props.handleSubmit}>{props.formType}</button>
+        <button 
+            className={props.className} 
+            onClick={props.onClick} 
+            onSubmit={props.handleSubmit}
+        >{props.formType}</button>
     )
 }
 

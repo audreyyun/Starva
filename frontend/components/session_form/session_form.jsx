@@ -28,7 +28,7 @@ class SessionForm extends React.Component {
     loginDemoUser(e) { 
         e.preventDefault();
         const demoUser = {email: "guest@guest.com", password: "password"}
-        this.props.processForm(demoUser).then(() => this.props.history.push('/'))
+        this.props.logIn(demoUser).then(() => this.props.history.push('/'))
     }
 
     // componentWillUnmount() { 
@@ -52,7 +52,6 @@ class SessionForm extends React.Component {
             <Link className="auth-session-btn" to="/login"><button className="rev-link">Log In</button></Link> :
             <Link className="auth-session-btn" to="/signup"><button className="rev-link">Sign Up</button></Link>);
 
-        const demo = (this.props.formType === 'Sign Up' ? <button onClick={this.loginDemoUser}>Log In Demo User</button> : null)
         return (
             <div className="session sesh-border">
                 <div className="top">
@@ -69,14 +68,13 @@ class SessionForm extends React.Component {
                         <input className="login-input" type="email" placeholder="Your Email" value = {this.state.email} onChange={this.handleInput('email')}/>
                         <input className="login-input" type="password" placeholder="Password" value={this.state.password} onChange={this.handleInput('password')}/>
 
-                    <Button className="btn-primary" handleSubmit={this.handleSubmit} formType={this.props.formType}/>
+                        <Button className="btn-primary" onSubmit={this.handleSubmit} formType={this.props.formType}/>
+                        {this.props.formType === "Sign Up" &&
+                            <Button className="btn-secondary" onSubmit={this.handleSubmit} formType="Demo User" onClick={this.loginDemoUser}/>
+                        }
                     </div>
                 </form>
                 
-                <form className="demo"onSubmit={this.handleSubmit}>
-                    {/* <button onClick={this.loginDemoUser}>Log In Demo User</button> */}
-                    {demo}
-                </form>
                 </div>
         )
     }

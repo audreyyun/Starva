@@ -1,13 +1,24 @@
+ .sesh-border { 
+     display: flex;
+     flex-direction: column;
+ }
  .session-form-container {
    display: flex;
    flex-direction: column;
    justify-content: center;
    /* height: 100vh; */
-   margin-top: 0em;
+   margin: 60px auto;
    align-items: center;
-   /* background-image: url("../images/christian.png"); */
+   border-radius: 3px;
  }
 
+ .top { 
+     width: 100%;    
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     height: 55px;
+ }
 .session-form-inner {
     display: flex;
     flex-direction: column;
@@ -45,9 +56,6 @@
     align-items: center;
  }
 
-.demo { 
-    justify-content: center;
-}
 
 .login-input { 
     border-radius: 3px;
@@ -98,6 +106,6 @@
 
 .starva-logo { 
     position: left;
-    height: 55px;
+    height: 20px;
 }
 

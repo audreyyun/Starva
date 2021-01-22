@@ -14,6 +14,17 @@ button {
     color: #fff;
     font-size: 14px;
     font-weight: 750;
+    border-radius: 3px;
+}
+
+.btn-secondary { 
+    background-color: #fff;
+    align-items: center;
+    color: black;
+    font-size: 14px;
+    font-weight: 750;
+    margin-top: 20px;
+    width: 77.49px;
 }
 
 /* .auth-session-btn { 
@@ -32,7 +43,7 @@ button {
     border-color: #fc5200;
     color: #fff;
     align-items: flex-end;
-    /* width: 77.49; */
+    width: 77.49;
 }
 
 .sesh-btn {
@@ -43,4 +54,6 @@ button {
     color: rgb(0,0,0);
     background-color: #fff;
     border-color: #dfdfe8;
+    padding: 0px;
+    font-weight: 700;
 }
