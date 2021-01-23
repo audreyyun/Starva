@@ -1,27 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Button from "../Button"
 
-const Navbar = ({currentUser, logout}) => { 
-    const display = currentUser ? (
-        <div>
-            <p>Hello, {currentUser.email}</p>
-            <button onClick={()=> logout()}> Log Out </button>
+const Navbar = (props) => { 
+    <div className="navbar"> 
+        <div className="nav-left">
+            <img className="starva-logo" src={window.starvalogo} alt="" />
         </div>
-    ) : (
-        <div> 
-            <Link className='btn' to='/signup'>Sign Up</Link>
-            <Link className='btn' to='/login'>Log In</Link>
-        </div>
-    )
 
-    return (
-        <header className='nav-bar'>
-            <h1 className="logo">Strava</h1>
-                <div className="logo">
-                    {display}
-                </div>
-        </header>
-    )
+        <div className="nav-right">
+            {!props.isAuthenticated && 
+                <Link to="/login">
+                    <Button className={props.loginBtnClass} formType={props.loginBtnLabel} />
+                </Link>
+            }
+        </div>
+    </div>
 }
 
 export default Navbar;

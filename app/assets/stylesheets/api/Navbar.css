@@ -1,0 +1,9 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 56.25px;
+    align-items: center;
+}

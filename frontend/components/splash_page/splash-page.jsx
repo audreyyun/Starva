@@ -15,7 +15,7 @@ class SplashPage extends React.Component {
                             <Link to="/login"><Button className="splash-login-btn" formType="Log In"/></Link>
                         </div>
                     </div>
-                    <div className="splash-border"></div>
+            <div className="splash-border"></div>
 
                 <div className="splash-body-container">
                     <h2 className="motto">The #1 app for runners and cyclists</h2>
