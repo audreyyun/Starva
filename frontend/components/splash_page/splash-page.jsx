@@ -33,16 +33,21 @@ class SplashPage extends React.Component {
                 </div>
 
             <footer className="footer">
-                <div className="splash-footer">
-                    <div className="footer-logo-container">
-                        <img className="footer-logo-png" src={window.footerlogo} alt="" />
+                <div className="footer-columns-container">
+                    {/* <div className="splash-footer"> */}
+                            <div className="footer-logo-container">
+                                <img className="footer-logo-png" src={window.footerlogo} alt="" />
+                            </div>
+                    {/* </div> */}
+
+                    <div className="session-form-links">
+                        <div className="footer-getting-started">Getting Started</div>
+                        <div className="footer-links">
+                                <div className="footer-session"><Link to="/login" className="footer-session">Log In</Link></div>
+                                <div className="footer-session"><Link to="/signup" className="footer-session">Sign Up</Link></div>
+                        </div>
                     </div>
-                </div>
-
-                <div className="session-form-links">
-
-
-                </div>
+                </div>    
             </footer>
             </div>
 
