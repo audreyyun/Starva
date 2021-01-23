@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import Button from '../Button';
+import Navbar from '../Navbar'
+
 
 class SessionForm extends React.Component {
     constructor(props) {
@@ -46,18 +48,32 @@ class SessionForm extends React.Component {
             </ul>
         );
     }
+    
 
     render () { 
         const link = (this.props.formType === 'Sign Up' ?
             <Link className="auth-session-btn" to="/login"><button className="rev-link">Log In</button></Link> :
             <Link className="auth-session-btn" to="/signup"><button className="rev-link">Sign Up</button></Link>);
 
+
+        const navbarProps = (this.props.formType === 'Log In' ?
+            {
+                loginBtnClass: "nav-btn-primary",
+                loginBtnLabel: "Sign Up",
+                loginBtnPath: "/signup",
+                isAuthenticated: false
+            } : {
+                loginBtnClass: "nav-btn-secondary",
+                loginBtnLabel: "Log In",
+                loginBtnPath: "/login",
+                isAuthenticated: false
+
+            })
+
+
         return (
             <div className="session sesh-border">
-                <div className="top">
-                    <img className="starva-logo" src={window.starvalogo} alt="" />
-                        <div className="sesh-btn">{link}</div>
-                </div>
+                <Navbar {...navbarProps}/>
                    
                 {this.renderErrors()}
                 <form className="session-form-container" onSubmit={this.handleSubmit}>

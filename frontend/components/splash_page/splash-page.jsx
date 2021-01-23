@@ -1,21 +1,25 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import Button from '../Button';
+import Navbar from '../Navbar/navbar';
 
+
+const navbarProps = {
+    loginBtnClass: "nav-btn-secondary",
+    loginBtnLabel: "Log In",
+    loginBtnPath: "/login",
+    isAuthenticated: false
+}
 
 class SplashPage extends React.Component {
-
 
     render() {
         return (
             <div id="splash-page">
-                    <div className="splash-top">
-                        <img className="starva-logo" src={window.starvalogo} alt="" />
-                        <div className="header-container">
-                            <Link to="/login"><Button className="splash-login-btn" formType="Log In"/></Link>
-                        </div>
-                    </div>
+                    <Navbar {...navbarProps}/>
+
             <div className="splash-border"></div>
+
 
                 <div className="splash-body-container">
                     <h2 className="motto">The #1 app for runners and cyclists</h2>
@@ -32,23 +36,23 @@ class SplashPage extends React.Component {
                     </div>
                 </div>
 
-            <footer className="footer">
-                <div className="footer-columns-container">
-                    {/* <div className="splash-footer"> */}
-                            <div className="footer-logo-container">
-                                <img className="footer-logo-png" src={window.footerlogo} alt="" />
-                            </div>
-                    {/* </div> */}
+                <footer className="footer">
+                    <div className="footer-columns-container">
+                        {/* <div className="splash-footer"> */}
+                                <div className="footer-logo-container">
+                                    <img className="footer-logo-png" src={window.footerlogo} alt="" />
+                                </div>
+                        {/* </div> */}
 
-                    <div className="session-form-links">
-                        <div className="footer-getting-started">Getting Started</div>
-                        <div className="footer-links">
-                                <div className="footer-session"><Link to="/login" className="footer-session">Log In</Link></div>
-                                <div className="footer-session"><Link to="/signup" className="footer-session">Sign Up</Link></div>
+                        <div className="session-form-links">
+                            <div className="footer-getting-started">Getting Started</div>
+                            <div className="footer-links">
+                                    <div className="footer-session"><Link to="/login" className="footer-session">Log In</Link></div>
+                                    <div className="footer-session"><Link to="/signup" className="footer-session">Sign Up</Link></div>
+                            </div>
                         </div>
-                    </div>
-                </div>    
-            </footer>
+                    </div>    
+                </footer>
             </div>
 
         )

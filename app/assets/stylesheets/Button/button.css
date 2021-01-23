@@ -46,7 +46,7 @@ button {
     text-align: center;
 } */
 
-.rev-link {
+.nav-btn-primary {
     width: 77.49px;
     background-color: #fc5200;
     border-color: #fc5200;
@@ -60,7 +60,8 @@ button {
     width: 77.49;
 }
 
-.splash-login-btn {
+
+.nav-btn-secondary {
     color: rgb(0,0,0);
     background-color: #fff;
     border: 1px solid #dfdfe8;
