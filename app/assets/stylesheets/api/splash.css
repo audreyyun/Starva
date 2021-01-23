@@ -13,28 +13,112 @@
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-    height: 56.25px;
+    min-height: 56.25px;
     align-items: center;
-    /* background-color: red; */
 }
-/* 
+
+.splash-border { 
+    width: 100%;
+    border-bottom: 1px solid #f0f0f5;
+}
+
 .header-container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 16px;
-    padding-right: 16px;
-} */
+    display: flex;
+    align-items: center;
+}
 
 .splash-body-container { 
     display: flex;
     flex-direction: column;
+    width: 950px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.splash-body-content { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 3px solid black; */
+}
+
+.splash-img-container { 
+    height: 480px;
+    width: auto;
 }
 
 .splashphoto { 
-    height: 480px;
-    width: 61.5%;
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    /* margin-right: 30px; */
 }
 
 .motto { 
+    text-align: center;
     font-size: 48px;
+    font-weight: 500;
+    font-family: "MaisonNeue", "Segoe UI", "Helvetica Neue", -apple-system, system-ui, BlinkMacSystemFont, Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.splash-body-right { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 80px;
+    /* margin-left: 30px; */
+}
+
+.splash-signup-btn { 
+    width: 360.02px;
+    height: 54.49px;
+    color: #242428;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    font-size: 14px;
+    position: relative;
+    text-align: center;
+    border: 1px solid #dfdfe8;
+    margin-top: 16px;
+    padding: 16px 50px;
+   
+}
+
+.member-spacing { 
+    margin-top: 12px;
+    color: #494950;
+    font-size: 12px;
+    align-items: cen;
+}
+
+.member { 
+    text-align: center;
+}
+.member:link { 
+    text-decoration: none;
+}
+
+ 
+.footer { 
+    width: 100%;
+    margin-top: 0;
+    background-color: #242428;
+    color: #fff;
+    font-size: 10px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    vertical-align: baseline;
+    height: 475px;
+    position: fix;
+}
+
+.footer-logo-png { 
+    width: auto;
+    height: 34%;
+    object-fit: contain;
+}
+
+.footer-logo-container { 
+    width: auto;
+    height: 73px;
 }

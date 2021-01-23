@@ -70,7 +70,7 @@ class SessionForm extends React.Component {
 
                         <Button className="btn-primary" onSubmit={this.handleSubmit} formType={this.props.formType}/>
                         {this.props.formType === "Sign Up" &&
-                            <Button className="btn-secondary" onSubmit={this.handleSubmit} formType="Demo User" onClick={this.loginDemoUser}/>
+                            <Button className="btn-demo" onSubmit={this.handleSubmit} formType="Demo User" onClick={this.loginDemoUser}/>
                         }
                     </div>
                 </form>

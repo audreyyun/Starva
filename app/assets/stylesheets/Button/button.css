@@ -1,7 +1,5 @@
 button { 
     border-radius: 3px;
-    line-height: inherit;
-    min-height: 40px;
     width: 100%;
     text-align: center;
     cursor: pointer;
@@ -15,6 +13,7 @@ button {
     font-size: 14px;
     font-weight: 750;
     border-radius: 3px;
+    height: 40px;
 }
 
 .btn-secondary { 
@@ -27,6 +26,16 @@ button {
     width: 77.49px;
 }
 
+.btn-demo { 
+    background-color: #fff;
+    align-items: center;
+    margin-top: 20px;
+    color: black;
+    font-size: 14px;
+    font-weight: 750;
+    border-radius: 3px;
+    height: 40px;
+}
 /* .auth-session-btn { 
     height: 55px; 
     position: right;
@@ -38,22 +47,30 @@ button {
 } */
 
 .rev-link {
-    width: fit-content;
+    width: 77.49px;
     background-color: #fc5200;
     border-color: #fc5200;
     color: #fff;
     align-items: flex-end;
-    width: 77.49;
+    /* border: 1px solid black; */
+    height: 29.49px
 }
 
 .sesh-btn {
     width: 77.49;
 }
 
-.login-btn {
+.splash-login-btn {
     color: rgb(0,0,0);
     background-color: #fff;
-    border-color: #dfdfe8;
+    border: 1px solid #dfdfe8;
     padding: 0px;
     font-weight: 700;
+    height: 29.49px;
+    width: 77.49px;
+}
+
+.splash-signup-btn:focus {
+    border: 1px solid black;
+    background-color: inherit;
 }
