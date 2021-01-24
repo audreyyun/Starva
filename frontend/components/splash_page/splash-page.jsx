@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Button from '../Button';
 import Navbar from '../Navbar/navbar';
 
@@ -16,9 +16,9 @@ class SplashPage extends React.Component {
     render() {
         return (
             <div id="splash-page">
-                    <Navbar {...navbarProps}/>
+                <Navbar {...navbarProps} />
 
-            <div className="splash-border"></div>
+                <div className="splash-border"></div>
 
 
                 <div className="splash-body-container">
@@ -30,29 +30,50 @@ class SplashPage extends React.Component {
                         <div className="splash-body-right">
                             <Link to="/signup"><Button className="splash-signup-btn" formType="Sign Up" /></Link>
                             <div className="member-spacing">
-                                <p className="member">Already a Member? <Link to="/login">Log In</Link></p>
+                                <p className="member">Already a Member? <Link to="/login" className="member">Log In</Link></p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <footer className="footer">
-                    <div className="footer-columns-container">
-                        {/* <div className="splash-footer"> */}
+                <div className="footer-container">
+                        <div className="footer-grid">
+                            <div className="footer-column">
                                 <div className="footer-logo-container">
                                     <img className="footer-logo-png" src={window.footerlogo} alt="" />
                                 </div>
-                        {/* </div> */}
-
-                        <div className="session-form-links">
-                            <div className="footer-getting-started">Getting Started</div>
-                            <div className="footer-links">
-                                    <div className="footer-session"><Link to="/login" className="footer-session">Log In</Link></div>
-                                    <div className="footer-session"><Link to="/signup" className="footer-session">Sign Up</Link></div>
+                                <p className="footer-copyright">@2021 Starva</p>
                             </div>
-                        </div>
-                    </div>    
-                </footer>
+
+                            <div className="footer-column">
+                                <h3>MENU</h3>
+                                <p className="footer-column-link">FEATURES</p>
+                                <p className="footer-column-link">SUBSCRIPTION</p>
+                                <p className="footer-column-link">ABOUT</p>
+                                <p className="footer-column-link">CAREERS</p>
+                                <p className="footer-column-link">BLOG</p>
+                            </div>
+
+                            <div className="footer-column">
+                                <h3>FOLLOW</h3>
+                                <p className="footer-column-link">FACEBOOK</p>
+                                <p className="footer-column-link">INSTAGRAM</p>
+                                <p className="footer-column-link">TWITTER</p>
+                                <p className="footer-column-link">YOUTUBE</p>
+                            </div>
+
+                            <div className="footer-column">
+                                <h3>GET STARTED</h3>
+                                <p className="footer-column-link">
+                                <Link to="/signup" className="footer-column-link">SIGN UP</Link>
+                                </p>
+
+                                <p className="footer-column-link">
+                                <Link to="/login" className="footer-column-link">LOGIN</Link>
+                                </p>
+                            </div>
+                    </div>
+                </div>
             </div>
 
         )
