@@ -17,10 +17,10 @@
 /storage/*
 !/storage/.keep
 
-*.js.map
+# *.js.map
 /node_modules
-**/bundle.js
-**/bundle.js.map
+/bundle.js
+/bundle.js.map
 /yarn-error.log
 
 /public/assets
