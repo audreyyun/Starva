@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../Button';
-import Navbar from '../Navbar/navbar';
+import Navbar from '../Navbar/';
 
 
 const navbarProps = {
