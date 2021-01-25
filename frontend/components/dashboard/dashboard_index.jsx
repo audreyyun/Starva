@@ -6,8 +6,7 @@ class DashboardIndex extends React.Component {
 
     render() { 
         return (
-
-            <h1>Welcome to Splash page</h1>
+            <h1>Welcome to Dashboard page</h1>
         )
 
     }

@@ -18,7 +18,7 @@ class SessionForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
-        this.props.processForm(user).then(() => this.props.history.push(`/`))
+        this.props.processForm(user).then(() => this.props.history.push(`/dashboard`))
     }
 
     handleInput(type) { 
@@ -30,7 +30,7 @@ class SessionForm extends React.Component {
     loginDemoUser(e) { 
         e.preventDefault();
         const demoUser = {email: "guest@guest.com", password: "password"}
-        this.props.logIn(demoUser).then(() => this.props.history.push('/'))
+        this.props.logIn(demoUser).then(() => this.props.history.push('/dashboard'))
     }
 
     // componentWillUnmount() { 
@@ -71,6 +71,7 @@ class SessionForm extends React.Component {
             })
 
 
+            document.title = this.props.pageTitle
         return (
             <div className="session sesh-border">
                 <Navbar {...navbarProps}/>

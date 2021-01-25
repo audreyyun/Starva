@@ -14,6 +14,7 @@ const navbarProps = {
 class SplashPage extends React.Component {
 
     render() {
+        document.title="Starva | Run and Cycling Tracking onthe Social Network for Athletes"
         return (
             <div id="splash-page">
                 <Navbar {...navbarProps} />

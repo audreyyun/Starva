@@ -17,3 +17,8 @@
  * { 
      font-family: "MaisonNeue", Helvetica, Arial, sans-serif;
  }
+
+ #map-container { 
+     width: 500px;
+     height: 500px;
+ }

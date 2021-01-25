@@ -10,10 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_20_185341) do
+ActiveRecord::Schema.define(version: 2021_01_25_141802) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "routes", force: :cascade do |t|
+    t.string "route_name", null: false
+    t.float "distance"
+    t.string "activity"
+    t.float "start_lat"
+    t.float "start_long"
+    t.float "end_lat"
+    t.float "end_long"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "athlete_id"
+    t.index ["athlete_id"], name: "index_routes_on_athlete_id"
+    t.index ["route_name"], name: "index_routes_on_route_name"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", null: false

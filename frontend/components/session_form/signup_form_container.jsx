@@ -8,7 +8,8 @@ const msp = (state, ownProps) => {
     return {
         errors: state.errors.session,
         formType: 'Sign Up',
-        navLink: <Link to="/login">Log In</Link>
+        navLink: <Link to="/login">Log In</Link>,
+        pageTitle: "Create an account at Strava to start logging, analyzing, comparing and competing"
     };
 };
 

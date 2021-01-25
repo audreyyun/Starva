@@ -183,6 +183,10 @@ var App = function App() {
     exact: true,
     path: "/",
     component: _splash_page_splash_page__WEBPACK_IMPORTED_MODULE_5__.default
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
+    exact: true,
+    path: "/dashboard",
+    component: _dashboard_dashboard_index__WEBPACK_IMPORTED_MODULE_3__.default
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_util_route_utils__WEBPACK_IMPORTED_MODULE_4__.AuthRoute, {
     path: "/signup",
     component: _session_form_signup_form_container__WEBPACK_IMPORTED_MODULE_1__.default
@@ -347,7 +351,7 @@ var DashboardIndex = /*#__PURE__*/function (_React$Component) {
   _createClass(DashboardIndex, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "Welcome to Splash page");
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "Welcome to Dashboard page");
     }
   }]);
 
@@ -417,7 +421,8 @@ var msp = function msp(state, ownProps) {
     formType: 'Log In',
     navLink: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
       to: "/signup"
-    }, "Sign Up")
+    }, "Sign Up"),
+    pageTitle: "Log In  | Starva"
   };
 };
 
@@ -508,7 +513,7 @@ var SessionForm = /*#__PURE__*/function (_React$Component) {
       e.preventDefault();
       var user = Object.assign({}, this.state);
       this.props.processForm(user).then(function () {
-        return _this2.props.history.push("/");
+        return _this2.props.history.push("/dashboard");
       });
     }
   }, {
@@ -531,7 +536,7 @@ var SessionForm = /*#__PURE__*/function (_React$Component) {
         password: "password"
       };
       this.props.logIn(demoUser).then(function () {
-        return _this4.props.history.push('/');
+        return _this4.props.history.push('/dashboard');
       });
     } // componentWillUnmount() { 
     //     this.props.receiveErrors([])
@@ -571,6 +576,7 @@ var SessionForm = /*#__PURE__*/function (_React$Component) {
         loginBtnPath: "/login",
         isAuthenticated: false
       };
+      document.title = this.props.pageTitle;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "session sesh-border"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_2__.default, navbarProps), this.renderErrors(), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", {
@@ -644,7 +650,8 @@ var msp = function msp(state, ownProps) {
     formType: 'Sign Up',
     navLink: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
       to: "/login"
-    }, "Log In")
+    }, "Log In"),
+    pageTitle: "Create an account at Strava to start logging, analyzing, comparing and competing"
   };
 };
 
@@ -725,6 +732,7 @@ var SplashPage = /*#__PURE__*/function (_React$Component) {
   _createClass(SplashPage, [{
     key: "render",
     value: function render() {
+      document.title = "Starva | Run and Cycling Tracking onthe Social Network for Athletes";
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         id: "splash-page"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Navbar___WEBPACK_IMPORTED_MODULE_2__.default, navbarProps), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {

@@ -10,6 +10,7 @@ import SplashPage from './splash_page/splash-page';
 const App = () => (
     <div>
         <Route exact path="/" component={SplashPage}/>
+        <Route exact path="/dashboard" component={DashboardIndex}/>
         <AuthRoute path="/signup" component={SignUpFormContainer}/>
         <AuthRoute path="/login" component={LogInFormContainer}/>
     </div>
