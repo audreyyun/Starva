@@ -33,9 +33,9 @@ class SessionForm extends React.Component {
         this.props.logIn(demoUser).then(() => this.props.history.push('/dashboard'))
     }
 
-    // componentWillUnmount() { 
-    //     this.props.receiveErrors([])
-    // }
+    componentWillUnmount() { 
+        this.props.receiveErrors([])
+    }
 
     renderErrors() {
         return (

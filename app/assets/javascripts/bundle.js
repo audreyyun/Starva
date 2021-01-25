@@ -539,10 +539,12 @@ var SessionForm = /*#__PURE__*/function (_React$Component) {
       this.props.logIn(demoUser).then(function () {
         return _this4.props.history.push('/dashboard');
       });
-    } // componentWillUnmount() { 
-    //     this.props.receiveErrors([])
-    // }
-
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      this.props.receiveErrors([]);
+    }
   }, {
     key: "renderErrors",
     value: function renderErrors() {
