@@ -419,6 +419,7 @@ var msp = function msp(state, ownProps) {
   return {
     errors: state.errors.session,
     formType: 'Log In',
+    formHeader: "Log In",
     navLink: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
       to: "/signup"
     }, "Sign Up"),
@@ -584,7 +585,7 @@ var SessionForm = /*#__PURE__*/function (_React$Component) {
         onSubmit: this.handleSubmit
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
         className: "page-name"
-      }, this.props.formType), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+      }, this.props.formHeader), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
         className: "session-bg",
         src: window.sessionbg,
         alt: ""
@@ -648,6 +649,7 @@ var msp = function msp(state, ownProps) {
   return {
     errors: state.errors.session,
     formType: 'Sign Up',
+    formHeader: "Join Strava today, it's Free",
     navLink: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
       to: "/login"
     }, "Log In"),

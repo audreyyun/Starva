@@ -8,6 +8,7 @@ const msp = (state, ownProps) => {
     return {
         errors: state.errors.session,
         formType: 'Log In',
+        formHeader: "Log In",
         navLink: <Link to="/signup">Sign Up</Link>,
         pageTitle: "Log In  | Starva"
     };

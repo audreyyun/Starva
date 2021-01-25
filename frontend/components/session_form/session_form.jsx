@@ -78,7 +78,7 @@ class SessionForm extends React.Component {
                    
                 {this.renderErrors()}
                 <form className="session-form-container" onSubmit={this.handleSubmit}>
-                    <h1 className="page-name">{this.props.formType}</h1>
+                    <h1 className="page-name">{this.props.formHeader}</h1>
                     <img className="session-bg" src={window.sessionbg} alt="" />
                     <div className="session-form-inner">
 
