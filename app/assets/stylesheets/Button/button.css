@@ -49,16 +49,15 @@ button {
 .nav-btn-primary {
     width: 77.49px;
     background-color: #fc5200;
-    border-color: #fc5200;
+    border: 1px solid #fc5200;
     color: #fff;
     align-items: flex-end;
-    /* border: 1px solid black; */
-    height: 29.49px
+    height: 29.49px;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 6px
 }
 
-.sesh-btn {
-    width: 77.49;
-}
 
 
 .nav-btn-secondary {
@@ -67,8 +66,8 @@ button {
     border: 1px solid #dfdfe8;
     padding: 0px;
     font-weight: 700;
-    height: 29.49px;
-    width: 77.49px;
+    height: 30.49px;
+    width: 75.49px;
 }
 
 .splash-signup-btn:focus {
