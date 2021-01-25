@@ -27,6 +27,8 @@ class Route < ApplicationRecord
     # validates :end_lat, :end_long, allow_nil: true
     # validates :description, allow_nil: true
 
-
+    belongs_to :user, 
+    foreign_key: :athlete_id, 
+    class_name: :User
 
 end
