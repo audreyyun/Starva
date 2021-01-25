@@ -11,7 +11,7 @@ class DashboardIndex extends React.Component {
         return (
             <div>
                 <h1>Welcome to Dashboard page</h1>
-                <Link className="session-btn" to="/logout"><button className="logout">Log Out</button></Link>
+                <Link className="auth-session-btn" to="/logout"><button className="rev-link">Log Out</button></Link>
             </div>
         )
 
