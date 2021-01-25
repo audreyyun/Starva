@@ -8,34 +8,25 @@ class Api::RoutesController < ApplicationController
     def create
         @route = Route.new(route_params)
         if @route.save
-            # redirect_to route_url(@route) dont know where to redirect yet
+            render 'api/routes/show'
         else
-            flash.now[:errors] = @route.errors.full_messages
-            render :new
+            render json: @route.errors.full_messages, status: 422
         end
-  end
-    
-    def new
-        render :new
     end
+    
 
     def show
         @route = Route.find(params[:id])
         render :show
     end
-    
-    def edit
-        @route = Route.find(params[:id])
-        render :edit
-    end
+
 
     def update
         @route = Route.find(params[:id])
         if @route.update_attributes(route_params)
-            redirect_to route_url(@route)
+            render `api/routes/#{route.id}`
         else
-            flash.now[:errors] = @route.errors.full_messages
-            render :edit
+            render json: @route.errors.full_messages, status: 422
         end
     end
 

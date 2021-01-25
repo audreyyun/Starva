@@ -7,7 +7,7 @@ class Api::UsersController < ApplicationController
             login!(@user)
             render :show
         else 
-            render json: @user.errors.full_messages, status: 422
+            render json: ['This email address is already taken', 'Your password must be at least 8 characters long'], status: 422
         end
     end
 

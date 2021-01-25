@@ -34,8 +34,10 @@ class SessionForm extends React.Component {
     }
 
     componentWillUnmount() { 
+
         this.props.receiveErrors([])
     }
+
 
     renderErrors() {
         return (
@@ -91,8 +93,7 @@ class SessionForm extends React.Component {
                         }
                     </div>
                 </form>
-                
-                </div>
+            </div>
         )
     }
 }

@@ -666,6 +666,9 @@ var mdp = function mdp(dispatch) {
     },
     logIn: function logIn(formUser) {
       return dispatch((0,_actions_session_actions__WEBPACK_IMPORTED_MODULE_2__.login)(formUser));
+    },
+    receiveErrors: function receiveErrors(errors) {
+      return dispatch((0,_actions_session_actions__WEBPACK_IMPORTED_MODULE_2__.receiveErrors)(errors));
     }
   };
 };
