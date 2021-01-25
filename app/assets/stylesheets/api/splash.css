@@ -48,7 +48,8 @@
 .motto { 
     text-align: center;
     font-size: 48px;
-    font-weight: 500;
+    font-weight: 500;   
+    margin-bottom: 80px;
     font-family: "MaisonNeue", "Segoe UI", "Helvetica Neue", -apple-system, system-ui, BlinkMacSystemFont, Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
@@ -97,12 +98,13 @@
 
 
 .footer-container { 
-  width: 100%;
+  width: 100vw;
   margin: 0;
   background-color: #242428;
   color: #fff;
   font-size: 10px;
   padding: 64px;
+  padding-right: 0;
   height: 475px;
   font-size: 10px;
   /* margin: 0 auto; */
@@ -110,7 +112,8 @@
 
 .footer-grid {
     display: grid;
-    grid-template-columns: repeat(4, 17.5vw);
+    /* grid-template-columns: repeat(4, 17.5vw); */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
 }
 
@@ -138,12 +141,20 @@
     text-decoration: none;
 }
 
+.footer-column a {
+    text-decoration: none;
+}
+
+.footer-column-link:focus { 
+    color: #fff;
+    text-decoration: none;
+}
+
 .footer-copyright { 
     font-weight: 300;
     color: #6d6d78;
     margin-top: 32px;
 }
-
 
 .footer-logo-png { 
     width: auto;

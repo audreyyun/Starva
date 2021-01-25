@@ -166,7 +166,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _session_form_signup_form_container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./session_form/signup_form_container */ "./frontend/components/session_form/signup_form_container.jsx");
 /* harmony import */ var _session_form_login_form_container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./session_form/login_form_container */ "./frontend/components/session_form/login_form_container.jsx");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
-/* harmony import */ var _dashboard_dashboard_index__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./dashboard/dashboard_index */ "./frontend/components/dashboard/dashboard_index.jsx");
+/* harmony import */ var _dashboard_dashboard_container__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./dashboard/dashboard_container */ "./frontend/components/dashboard/dashboard_container.jsx");
 /* harmony import */ var _util_route_utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../util/route_utils */ "./frontend/util/route_utils.jsx");
 /* harmony import */ var _splash_page_splash_page__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./splash_page/splash-page */ "./frontend/components/splash_page/splash-page.jsx");
 
@@ -183,10 +183,10 @@ var App = function App() {
     exact: true,
     path: "/",
     component: _splash_page_splash_page__WEBPACK_IMPORTED_MODULE_5__.default
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_util_route_utils__WEBPACK_IMPORTED_MODULE_4__.ProtectedRoute, {
     exact: true,
     path: "/dashboard",
-    component: _dashboard_dashboard_index__WEBPACK_IMPORTED_MODULE_3__.default
+    component: _dashboard_dashboard_container__WEBPACK_IMPORTED_MODULE_3__.default
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_util_route_utils__WEBPACK_IMPORTED_MODULE_4__.AuthRoute, {
     path: "/signup",
     component: _session_form_signup_form_container__WEBPACK_IMPORTED_MODULE_1__.default
@@ -265,19 +265,23 @@ var Navbar = function Navbar(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "navbar"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "nav-content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "nav-left"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    to: "/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     className: "starva-logo",
     src: window.starvalogo,
     alt: ""
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "nav-right"
   }, !props.isAuthenticated && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: props.loginBtnPath
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Button__WEBPACK_IMPORTED_MODULE_1__.default, {
     className: props.loginBtnClass,
     formType: props.loginBtnLabel
-  }))));
+  })))));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Navbar);
@@ -301,6 +305,43 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./frontend/components/dashboard/dashboard_container.jsx":
+/*!***************************************************************!*\
+  !*** ./frontend/components/dashboard/dashboard_container.jsx ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _dashboard_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dashboard_index */ "./frontend/components/dashboard/dashboard_index.jsx");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _actions_session_actions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../actions/session_actions */ "./frontend/actions/session_actions.js");
+
+
+
+
+
+var msp = function msp(state, ownProps) {
+  return {};
+};
+
+var mdp = function mdp(dispatch) {
+  // debugger
+  return {
+    logout: function logout() {
+      return dispatch((0,_actions_session_actions__WEBPACK_IMPORTED_MODULE_3__.logout)());
+    }
+  };
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_2__.connect)(msp, mdp)(_dashboard_index__WEBPACK_IMPORTED_MODULE_1__.default));
+
+/***/ }),
+
 /***/ "./frontend/components/dashboard/dashboard_index.jsx":
 /*!***********************************************************!*\
   !*** ./frontend/components/dashboard/dashboard_index.jsx ***!
@@ -313,7 +354,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -353,12 +393,14 @@ var DashboardIndex = /*#__PURE__*/function (_React$Component) {
   _createClass(DashboardIndex, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "Welcome to Dashboard page"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-        className: "auth-session-btn",
-        to: "/logout"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+      var _this = this;
+
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "Welcome to Dashboard page"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+        onClick: function onClick() {
+          return _this.props.logout();
+        },
         className: "rev-link"
-      }, "Log Out")));
+      }, "Log Out"));
     }
   }]);
 
@@ -589,7 +631,7 @@ var SessionForm = /*#__PURE__*/function (_React$Component) {
       document.title = this.props.pageTitle;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "session sesh-border"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_2__.default, navbarProps), this.renderErrors(), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_2__.default, navbarProps), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", {
         className: "session-form-container",
         onSubmit: this.handleSubmit
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
@@ -600,6 +642,12 @@ var SessionForm = /*#__PURE__*/function (_React$Component) {
         alt: ""
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "session-form-inner"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "errors-section"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "errors"
+      }, this.renderErrors())), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "input-section"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
         className: "login-input",
         type: "email",
@@ -621,7 +669,7 @@ var SessionForm = /*#__PURE__*/function (_React$Component) {
         onSubmit: this.handleSubmit,
         formType: "Demo User",
         onClick: this.loginDemoUser
-      }))));
+      })))));
     }
   }]);
 
@@ -793,27 +841,19 @@ var SplashPage = /*#__PURE__*/function (_React$Component) {
         className: "footer-copyright"
       }, "@2021 Starva")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "footer-column"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "MENU"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
-        className: "footer-column-link"
-      }, "FEATURES"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
-        className: "footer-column-link"
-      }, "SUBSCRIPTION"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
-        className: "footer-column-link"
-      }, "ABOUT"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
-        className: "footer-column-link"
-      }, "CAREERS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
-        className: "footer-column-link"
-      }, "BLOG")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, " ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "footer-column"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "FOLLOW"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "FOLLOW"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+        href: "https://www.linkedin.com/in/audrey-yun/"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
         className: "footer-column-link"
-      }, "FACEBOOK"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+      }, "LINKEDIN")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+        href: "https://github.com/audreyyun/"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
         className: "footer-column-link"
-      }, "INSTAGRAM"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+      }, "GITHUB")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
         className: "footer-column-link"
-      }, "TWITTER"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
-        className: "footer-column-link"
-      }, "YOUTUBE")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      }, "PORTFOLIO")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "footer-column"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "GET STARTED"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
         className: "footer-column-link"
@@ -976,7 +1016,7 @@ var _nullUser = {
 var sessionReducer = function sessionReducer() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _nullUser;
   var action = arguments.length > 1 ? arguments[1] : undefined;
-  Object.freeze(state);
+  Object.freeze(state); // debugger
 
   switch (action.type) {
     case _actions_session_actions__WEBPACK_IMPORTED_MODULE_0__.RECEIVE_CURRENT_USER:
@@ -1059,6 +1099,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   var store = (0,_store_store__WEBPACK_IMPORTED_MODULE_2__.default)(preloadedState);
+  window.store = store;
   window.getState = store.getState;
   window.dispatch = store.dispatch;
   react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_root__WEBPACK_IMPORTED_MODULE_3__.default, {
@@ -1145,9 +1186,10 @@ var Protect = function Protect(_ref2) {
       exact = _ref2.exact;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
     path: path,
+    exact: exact,
     render: function render(props) {
       return loggedIn ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Component, props) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Redirect, {
-        to: "/signup"
+        to: "/login"
       });
     }
   });

@@ -22,11 +22,32 @@
     display: flex;
     flex-direction: column;
     width: 300px;
-    height: 492.97px;
-    align-items: center;
+    height: 392.97px;
+    align-items: end;
     background-color:rgba(0, 0, 0, .7);
-    padding: 50px;
+    padding: 0 50px;
+    padding-bottom: 80px;
     justify-content: center;
+}
+
+.errors-section { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 0;
+    text-align: center;
+    height: 60px
+}
+
+.errors { 
+    display: flex;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    line-height: 1.45;
+    height: 100%;
+    align-items: center;
+    font-family: "MaisonNeue", Helvetica, Arial, sans-serif;
 }
 
 .session-title {
@@ -46,8 +67,9 @@
     min-width: 1024px;
     width: 100%;
     height: auto;
+    background-size: cover;
     z-index: -1;
-    background-size: 100% cover;
+    /* background-size: 100% cover; */
 
 }
 
@@ -64,7 +86,6 @@
     margin-bottom: 20px;
     background: rgba(0, 0, 0, .75);
     border: 1px solid #666;
-    /* outline: none; */
 }
 
 .login-input::placeholder { 
@@ -75,9 +96,11 @@
 .login-input:focus { 
     background-color: #fff;
     outline: none;
-    box-shadow: 1px 1px 6px 3px rgba(255,255,255,1);
+    box-shadow: 1px 1px 3px 3px rgba(255,255,255,1);
     border: none;
+    color: #fff
 }
+
 
 .session-form > h1 {
     display: flex;
@@ -109,4 +132,3 @@
     position: left;
     height: 20px;
 }
-

@@ -1,9 +1,23 @@
 .navbar {
+    width: 100vw;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.nav-right {
+    float: right;
+}
+
+.nav-content { 
+    min-height: 56.25px;
     display: flex;
     justify-content: space-between;
-    width: 55%;
-    margin-left: auto;
-    margin-right: auto;
-    min-height: 56.25px;
-    align-items: center;
+    margin: auto;
+    align-items: center;  
+    align-content: center; 
+    align-self: center;
+}
+
+@media screen and (min-width: 1500px) { 
+    .nav-content {width: 1248px;}
 }

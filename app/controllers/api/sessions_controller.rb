@@ -18,6 +18,5 @@ class Api::SessionsController < ApplicationController
     def destroy
         logout!
         render json: {message: "Logout Successful"}
-        # redirect_to "api/"
     end
 end

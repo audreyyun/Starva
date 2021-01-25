@@ -5,6 +5,11 @@ button {
     cursor: pointer;
 }
 
+button:focus { 
+    outline: none;
+    text-decoration: none;
+}
+
 .btn-primary { 
     background-color: #fc5200;
     border-color: #fc5200;

@@ -47,20 +47,15 @@ class SplashPage extends React.Component {
                             </div>
 
                             <div className="footer-column">
-                                <h3>MENU</h3>
-                                <p className="footer-column-link">FEATURES</p>
-                                <p className="footer-column-link">SUBSCRIPTION</p>
-                                <p className="footer-column-link">ABOUT</p>
-                                <p className="footer-column-link">CAREERS</p>
-                                <p className="footer-column-link">BLOG</p>
+                                <h3> </h3>
+           
                             </div>
 
                             <div className="footer-column">
                                 <h3>FOLLOW</h3>
-                                <p className="footer-column-link">FACEBOOK</p>
-                                <p className="footer-column-link">INSTAGRAM</p>
-                                <p className="footer-column-link">TWITTER</p>
-                                <p className="footer-column-link">YOUTUBE</p>
+                                <a href="https://www.linkedin.com/in/audrey-yun/"><p className="footer-column-link">LINKEDIN</p></a>
+                                <a href="https://github.com/audreyyun/"><p className="footer-column-link">GITHUB</p></a>
+                                <p className="footer-column-link">PORTFOLIO</p>
                             </div>
 
                             <div className="footer-column">

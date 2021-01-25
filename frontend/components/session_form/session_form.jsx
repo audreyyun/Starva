@@ -73,24 +73,29 @@ class SessionForm extends React.Component {
             })
 
 
+
             document.title = this.props.pageTitle
         return (
             <div className="session sesh-border">
                 <Navbar {...navbarProps}/>
                    
-                {this.renderErrors()}
                 <form className="session-form-container" onSubmit={this.handleSubmit}>
                     <h1 className="page-name">{this.props.formHeader}</h1>
                     <img className="session-bg" src={window.sessionbg} alt="" />
                     <div className="session-form-inner">
 
-                        <input className="login-input" type="email" placeholder="Your Email" value = {this.state.email} onChange={this.handleInput('email')}/>
-                        <input className="login-input" type="password" placeholder="Password" value={this.state.password} onChange={this.handleInput('password')}/>
+                        <div className="errors-section">
+                            <div className="errors">{this.renderErrors()}</div>
+                            </div>
+                        <div className="input-section">
+                            <input className="login-input" type="email" placeholder="Your Email" value={this.state.email} onChange={this.handleInput('email')} />
+                            <input className="login-input" type="password" placeholder="Password" value={this.state.password} onChange={this.handleInput('password')}/>
 
-                        <Button className="btn-primary" onSubmit={this.handleSubmit} formType={this.props.formType}/>
-                        {this.props.formType === "Sign Up" &&
-                            <Button className="btn-demo" onSubmit={this.handleSubmit} formType="Demo User" onClick={this.loginDemoUser}/>
-                        }
+                            <Button className="btn-primary" onSubmit={this.handleSubmit} formType={this.props.formType}/>
+                            {this.props.formType === "Sign Up" &&
+                                <Button className="btn-demo" onSubmit={this.handleSubmit} formType="Demo User" onClick={this.loginDemoUser}/>
+                            }
+                        </div>
                     </div>
                 </form>
             </div>

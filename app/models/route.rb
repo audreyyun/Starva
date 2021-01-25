@@ -31,4 +31,5 @@ class Route < ApplicationRecord
     foreign_key: :athlete_id, 
     class_name: :User
 
+    
 end

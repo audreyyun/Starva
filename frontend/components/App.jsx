@@ -2,7 +2,7 @@ import React from 'react';
 import SignUpFormContainer from './session_form/signup_form_container';
 import LogInFormContainer from './session_form/login_form_container';
 import { Route } from 'react-router-dom'
-import DashboardIndex from './dashboard/dashboard_index'
+import DashboardIndexContainer from './dashboard/dashboard_container'
 // import NavbarContainer from './Navbar/navbar_container';
 import {AuthRoute, ProtectedRoute} from '../util/route_utils'
 import SplashPage from './splash_page/splash-page';
@@ -10,7 +10,7 @@ import SplashPage from './splash_page/splash-page';
 const App = () => (
     <div>
         <Route exact path="/" component={SplashPage}/>
-        <Route exact path="/dashboard" component={DashboardIndex}/>
+        <ProtectedRoute exact path="/dashboard" component={DashboardIndexContainer}/>
         <AuthRoute path="/signup" component={SignUpFormContainer}/>
         <AuthRoute path="/login" component={LogInFormContainer}/>
     </div>
