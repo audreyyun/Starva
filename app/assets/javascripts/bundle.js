@@ -815,8 +815,8 @@ var SessionForm = /*#__PURE__*/function (_React$Component) {
 
       e.preventDefault();
       var demoUser = {
-        email: "guest@guest.com",
-        password: "password"
+        email: "guest@email.com",
+        password: "password1"
       };
       this.props.logIn(demoUser).then(function () {
         return _this4.props.history.push('/dashboard');
