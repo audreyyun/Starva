@@ -5,7 +5,7 @@ import { Route } from 'react-router-dom'
 import DashboardIndexContainer from './dashboard/dashboard_container'
 import RouteIndexContainer from './route/route_index_container'
 // import NavbarContainer from './Navbar/navbar_container';
-import {AuthRoute, ProtectedRoute} from '../util/route_utils'
+import {AuthRoute, ProtectedRoute} from '../util/route_utils';
 import SplashPage from './splash_page/splash_page';
 
 const App = () => (

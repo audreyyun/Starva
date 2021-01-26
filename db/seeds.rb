@@ -11,6 +11,6 @@
 User.destroy_all
 
 demo_user = User.create!( 
-    email: "guest@guest.com",
-    password: "password"
+    email: "guest@email.com",
+    password: "password1"
 )
