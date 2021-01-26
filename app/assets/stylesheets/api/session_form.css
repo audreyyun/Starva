@@ -62,14 +62,13 @@
 
 .session-bg { 
     position: absolute;
-    top: 55px;
     min-height: 100vh;
-    min-width: 1024px;
+    top: 55px;
+    min-width: 100vw;
     width: 100%;
     height: auto;
-    background-size: cover;
     z-index: -1;
-
+    overflow: hidden;
 }
 
 .login-input {

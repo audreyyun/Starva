@@ -8,15 +8,15 @@ export const fetchRoutes = () => (
 export const fetchRoute = (routeId) => (
     $.ajax({
         method: "GET",
-        url: `/api/routes/${id}`
+        url: `/api/routes/${routeId}`
     })
 );
 
 export const createRoute = (route) => (
     $.ajax({
         method: "POST",
-        url: `/api/routes`,
-        data: { route: route }
+        url: `/api/routes${route.id}`,
+        data: { route }
     })
 );
 
@@ -24,7 +24,7 @@ export const updateRoute = (route) => (
     $.ajax({
         method: "PATCH",
         url: `/api/routes/${route.id}`,
-        data: { route: route }
+        data: { route }
     })
 );
 

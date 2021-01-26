@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import Navbar from '../Navbar'
 
 class DashboardIndex extends React.Component { 
     constructor(props) { 
@@ -8,12 +8,21 @@ class DashboardIndex extends React.Component {
     }
 
     render() { 
+        const navbarProps = 
+            {
+                loginBtnClass: "nav-btn-primary",
+                loginBtnLabel: "Log Out",
+                loginBtnPath: "/logout",
+                isAuthenticated: true,
+            }
+
         return (
             <div>
-                <h1>Welcome to Dashboard page</h1>
-                {/* <Link className="auth-session-btn" to="/"> */}
-                    <button onClick={() => this.props.logout()} className="rev-link">Log Out</button>
-                    {/* </Link> */}
+                <div className="dashboard-border">
+                    <Navbar logout={this.props.logout} {...navbarProps} />
+                    <h1>Welcome to Dashboard page</h1>
+                    
+                </div>
             </div>
         )
 

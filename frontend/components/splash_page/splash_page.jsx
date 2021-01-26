@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../Button';
-import Navbar from '../Navbar/';
+import Navbar from '../Navbar';
 
 
 const navbarProps = {
@@ -20,7 +20,6 @@ class SplashPage extends React.Component {
                 <Navbar {...navbarProps} />
 
                 <div className="splash-border"></div>
-
 
                 <div className="splash-body-container">
                     <h2 className="motto">The #1 app for runners and cyclists</h2>

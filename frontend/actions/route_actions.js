@@ -1,4 +1,4 @@
-import * as RouteAPIUtil from "../util/routes_api_util";
+import * as RouteAPIUtil from "../util/route_api_util";
 
 export const RECEIVE_ALL_ROUTES = "RECEIVE_ALL_ROUTES";
 export const RECEIVE_ROUTE = "RECEIVE_ROUTE";
@@ -36,8 +36,8 @@ export const createRoute = (newRoute) => dispatch => (
         .then(route => dispatch(receiveRoute(route)))
 );
 
-export const updateRoute = (editeRoute) => dispatch => (
-    RouteAPIUtil.updateRoute(editeRoute)
+export const updateRoute = (editRoute) => dispatch => (
+    RouteAPIUtil.updateRoute(editRoute)
         .then(route => dispatch(receiveRoute(route)))
 );
 
