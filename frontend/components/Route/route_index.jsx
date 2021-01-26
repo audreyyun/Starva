@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import Navbar from '../Navbar'
 
 
@@ -11,6 +10,7 @@ class RouteIndex extends React.Component {
     componentDidMount() { 
         this.props.fetchRoutes()
     }
+
     render () { 
         const navbarProps =
         {
@@ -19,9 +19,16 @@ class RouteIndex extends React.Component {
             loginBtnPath: "/logout",
             isAuthenticated: true,
         }
+        
+        const routeItems = this.props.routes.map( (route) => (
+            <RouteIndexItem key={route.id} route={route}/> 
+        ));
+
+
         return ( 
             <div className="routes-index-pg-container">
                 <Navbar logout={this.props.logout} {...navbarProps} />
+                <ul>{routeItems}</ul>
             </div>
         )
     }

@@ -18,10 +18,15 @@ const Navbar = (props) => {
                     }
 
                     {props.isAuthenticated && 
-                        <Link className="auth-session-btn" to="/">
+                        <Link className=".btn-secondary" to="/routes">My Routes</Link> 
+                    }
+
+                    {props.isAuthenticated && 
+                        <Link className="logout-btn" to="/">
                             <button onClick={() => props.logout()} className="btn-secondary">Log Out</button>
                         </Link> 
                     }
+                    
                 </div>
             </div>
         </div>
