@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import Button from '../Button';
 import Navbar from '../Navbar'
-
+// import LoginError, SignupError from "../Dialogs";
 
 class SessionForm extends React.Component {
     constructor(props) {
@@ -34,12 +34,16 @@ class SessionForm extends React.Component {
     }
 
     componentWillUnmount() { 
-
         this.props.receiveErrors([])
     }
 
 
     renderErrors() {
+        // return this.props.formType === 'Log In' && this.props.errors[0] ? 
+        //     (<LoginError message={errors[0]}/>) :
+        //     (<SignupError message={errors[0]}/>)
+
+
         return (
             <ul>
                 {this.props.errors.map((error, i) => (

@@ -533,7 +533,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
-
+ // import LoginError, SignupError from "../Dialogs";
 
 var SessionForm = /*#__PURE__*/function (_React$Component) {
   _inherits(SessionForm, _React$Component);
@@ -597,6 +597,9 @@ var SessionForm = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "renderErrors",
     value: function renderErrors() {
+      // return this.props.formType === 'Log In' && this.props.errors[0] ? 
+      //     (<LoginError message={errors[0]}/>) :
+      //     (<SignupError message={errors[0]}/>)
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", null, this.props.errors.map(function (error, i) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
           key: "error-".concat(i)

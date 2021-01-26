@@ -1,0 +1,1 @@
+json.extract! @route, :id, :creator_id, :name, :route, :start_lat, :start_lng

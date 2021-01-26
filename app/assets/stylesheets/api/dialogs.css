@@ -1,0 +1,12 @@
+.session-login-error {
+    color: #fff;
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+    background-color: #FE0C0B;
+}
+
+.session-signup-error {
+    color: #FE0C0B;
+    margin: 0 auto;
+}

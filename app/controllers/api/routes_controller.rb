@@ -32,7 +32,11 @@ class Api::RoutesController < ApplicationController
 
 
     def destroy
-        
+        @route = Route.find(params[:id])
+        if @route.destroy
+            render :show
+        else 
+            render json: @route.errors.full_messages, status: 422
     end
 
     private 
