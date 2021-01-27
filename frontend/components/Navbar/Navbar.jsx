@@ -23,7 +23,7 @@ const Navbar = (props) => {
 
                     {props.isAuthenticated && 
                         <Link className="logout-btn" to="/">
-                            <button onClick={() => props.logout()} className="btn-secondary">Log Out</button>
+                            <Button onClick={props.logout} className="btn-secondary" formType="Log Out" />
                         </Link> 
                     }
                     
