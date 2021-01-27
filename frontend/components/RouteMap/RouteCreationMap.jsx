@@ -1,9 +1,9 @@
-import React from 'react'
-import { Route } from 'react-router-dom'
-import { RouteCreationMap }from './RouteCreationMap'
-import MapGL from 'react-map-gl'
+import React from "react";
+import ReactDOM from 'react-dom';
+import MapGL from 'react-map-gl';
 
-const RouteMap = () => {
+export const RouteCreationMap = ({ MAPBOX_TOKEN}) => {
+
     const [viewport, setViewport] = React.useState({
         latitude: 37.7577,
         longitude: -122.4376,
@@ -17,9 +17,11 @@ const RouteMap = () => {
             height="100vh"
             mapStyle="mapbox://styles/mapbox/dark-v9"
             onViewportChange={nextViewport => setViewport(nextViewport)}
-            mapboxApiAccessToken={'pk.eyJ1IjoiYXVkcmV5eXVuIiwiYSI6ImNra2U3a3JubzBicDYybmpuNWFsZ3I1bnQifQ.rUMZUiM4ybo_eqcm1wcYiQ'}
+            mapboxApiAccessToken={MAPBOX_TOKEN}
         />
-    )
+    );
 }
 
-export default RouteMap
+RouteCreationMap.defaultProps = {
+    MAPBOX_TOKEN: 'pk.eyJ1IjoiYXVkcmV5eXVuIiwiYSI6ImNra2U3a3JubzBicDYybmpuNWFsZ3I1bnQifQ.rUMZUiM4ybo_eqcm1wcYiQ'
+}
