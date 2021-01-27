@@ -19,9 +19,10 @@
 
 # *.js.map
 /node_modules
-app/assets/javascript/bundle.js
-app/assets/javascript/bundle.js.map
+/app/assets/javascript/bundle.js
+/app/assets/javascript/bundle.js.map
 /yarn-error.log
+/bundle.js.LICENSE.text
 
 /public/assets
 .byebug_history
