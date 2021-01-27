@@ -1,33 +1,38 @@
-import React from "react";
-import ReactDOM from'react-dom';
-import mapboxgl from 'mapbox-gl'
+import React from 'react'
+import { Route } from 'react-router-dom'
+import { RouteCreationMap }from './RouteCreationMap'
+import MapGL from 'react-map-gl'
+import Navbar from '../Navbar'
+import logout from '../../actions/session_actions'
 
-mapboxgl.accessToken = 'pk.eyJ1IjoiYXVkcmV5eXVuIiwiYSI6ImNra2U3a3JubzBicDYybmpuNWFsZ3I1bnQifQ.rUMZUiM4ybo_eqcm1wcYiQ';
+const RouteMap = () => {
+    const [viewport, setViewport] = React.useState({
+        latitude: 34.0746,
+        longitude: -118.3296,
+        zoom: 11
+    });
 
-class RouteMap extends React.Component { 
-    constructor(props) {
-        super(props);
-        this.state = {
-            lng: 34.06351,
-            lat: -118.33809,
-            // zoom: 2
-        };
-    }
-    componentDidMount() {
-        const map = new mapboxgl.Map({
-            container: this.mapContainer,
-            style: 'mapbox://styles/mapbox/streets-v11',
-            center: [this.state.lng, this.state.lat],
-            zoom: this.state.zoom
-        });
+    const navbarProps =
+    {
+        loginBtnClass: "nav-btn-primary",
+        loginBtnLabel: "Log Out",
+        loginBtnPath: "/logout",
+        isAuthenticated: true,
     }
 
-    render() { 
-        //mapContainer ref specifies that map should be drawn to the HTML page in a new <div> element
-        return ( 
-            <div ref={el => this.mapContainer = el} className="mapContainer"/>
-        )
-    }
+    return (
+        <div>
+            <Navbar logout={logout} {...navbarProps}/>
+            <MapGL
+                {...viewport}
+                width="100vw"
+                height="100vh"
+                mapStyle="mapbox://styles/mapbox/light-v9"
+                onViewportChange={nextViewport => setViewport(nextViewport)}
+                mapboxApiAccessToken={'pk.eyJ1IjoiYXVkcmV5eXVuIiwiYSI6ImNra2U3a3JubzBicDYybmpuNWFsZ3I1bnQifQ.rUMZUiM4ybo_eqcm1wcYiQ'}
+            />
+        </div>
+    )
 }
 
-export default RouteMap;
+export default RouteMap

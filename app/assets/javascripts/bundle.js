@@ -1,6 +1,162 @@
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js ***!
+  \*********************************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ _arrayLikeToArray; }
+/* harmony export */ });
+function _arrayLikeToArray(arr, len) {
+  if (len == null || len > arr.length) len = arr.length;
+
+  for (var i = 0, arr2 = new Array(len); i < len; i++) {
+    arr2[i] = arr[i];
+  }
+
+  return arr2;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js ***!
+  \*******************************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ _arrayWithHoles; }
+/* harmony export */ });
+function _arrayWithHoles(arr) {
+  if (Array.isArray(arr)) return arr;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/arrayWithoutHoles.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/arrayWithoutHoles.js ***!
+  \**********************************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ _arrayWithoutHoles; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_arrayLikeToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/arrayLikeToArray */ "./node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js");
+
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) return (0,_babel_runtime_helpers_esm_arrayLikeToArray__WEBPACK_IMPORTED_MODULE_0__.default)(arr);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js ***!
+  \**************************************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ _assertThisInitialized; }
+/* harmony export */ });
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js ***!
+  \*******************************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ _classCallCheck; }
+/* harmony export */ });
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/createClass.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/createClass.js ***!
+  \****************************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ _createClass; }
+/* harmony export */ });
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/defineProperty.js ***!
+  \*******************************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ _defineProperty; }
+/* harmony export */ });
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime/helpers/esm/extends.js":
 /*!************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/extends.js ***!
@@ -32,6 +188,91 @@ function _extends() {
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime/helpers/esm/get.js":
+/*!********************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/get.js ***!
+  \********************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ _get; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_superPropBase__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/superPropBase */ "./node_modules/@babel/runtime/helpers/esm/superPropBase.js");
+
+function _get(target, property, receiver) {
+  if (typeof Reflect !== "undefined" && Reflect.get) {
+    _get = Reflect.get;
+  } else {
+    _get = function _get(target, property, receiver) {
+      var base = (0,_babel_runtime_helpers_esm_superPropBase__WEBPACK_IMPORTED_MODULE_0__.default)(target, property);
+      if (!base) return;
+      var desc = Object.getOwnPropertyDescriptor(base, property);
+
+      if (desc.get) {
+        return desc.get.call(receiver);
+      }
+
+      return desc.value;
+    };
+  }
+
+  return _get(target, property, receiver || target);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js ***!
+  \*******************************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ _getPrototypeOf; }
+/* harmony export */ });
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/inherits.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/inherits.js ***!
+  \*************************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ _inherits; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_setPrototypeOf__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/setPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js");
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) (0,_babel_runtime_helpers_esm_setPrototypeOf__WEBPACK_IMPORTED_MODULE_0__.default)(subClass, superClass);
+}
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js":
 /*!******************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js ***!
@@ -47,6 +288,131 @@ function _inheritsLoose(subClass, superClass) {
   subClass.prototype = Object.create(superClass.prototype);
   subClass.prototype.constructor = subClass;
   subClass.__proto__ = superClass;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/iterableToArray.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/iterableToArray.js ***!
+  \********************************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ _iterableToArray; }
+/* harmony export */ });
+function _iterableToArray(iter) {
+  if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/iterableToArrayLimit.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/iterableToArrayLimit.js ***!
+  \*************************************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ _iterableToArrayLimit; }
+/* harmony export */ });
+function _iterableToArrayLimit(arr, i) {
+  if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
+  var _arr = [];
+  var _n = true;
+  var _d = false;
+  var _e = undefined;
+
+  try {
+    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
+      _arr.push(_s.value);
+
+      if (i && _arr.length === i) break;
+    }
+  } catch (err) {
+    _d = true;
+    _e = err;
+  } finally {
+    try {
+      if (!_n && _i["return"] != null) _i["return"]();
+    } finally {
+      if (_d) throw _e;
+    }
+  }
+
+  return _arr;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js ***!
+  \********************************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ _nonIterableRest; }
+/* harmony export */ });
+function _nonIterableRest() {
+  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/nonIterableSpread.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/nonIterableSpread.js ***!
+  \**********************************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ _nonIterableSpread; }
+/* harmony export */ });
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js ***!
+  \****************************************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ _objectWithoutProperties; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
+
+function _objectWithoutProperties(source, excluded) {
+  if (source == null) return {};
+  var target = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__.default)(source, excluded);
+  var key, i;
+
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0) continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+      target[key] = source[key];
+    }
+  }
+
+  return target;
 }
 
 /***/ }),
@@ -76,6 +442,1174 @@ function _objectWithoutPropertiesLoose(source, excluded) {
 
   return target;
 }
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js ***!
+  \******************************************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ _possibleConstructorReturn; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/typeof */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
+/* harmony import */ var _babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
+
+
+function _possibleConstructorReturn(self, call) {
+  if (call && ((0,_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__.default)(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return (0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_1__.default)(self);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js ***!
+  \*******************************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ _setPrototypeOf; }
+/* harmony export */ });
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/slicedToArray.js ***!
+  \******************************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ _slicedToArray; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_arrayWithHoles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/arrayWithHoles */ "./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js");
+/* harmony import */ var _babel_runtime_helpers_esm_iterableToArrayLimit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/iterableToArrayLimit */ "./node_modules/@babel/runtime/helpers/esm/iterableToArrayLimit.js");
+/* harmony import */ var _babel_runtime_helpers_esm_unsupportedIterableToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/unsupportedIterableToArray */ "./node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js");
+/* harmony import */ var _babel_runtime_helpers_esm_nonIterableRest__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/nonIterableRest */ "./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js");
+
+
+
+
+function _slicedToArray(arr, i) {
+  return (0,_babel_runtime_helpers_esm_arrayWithHoles__WEBPACK_IMPORTED_MODULE_0__.default)(arr) || (0,_babel_runtime_helpers_esm_iterableToArrayLimit__WEBPACK_IMPORTED_MODULE_1__.default)(arr, i) || (0,_babel_runtime_helpers_esm_unsupportedIterableToArray__WEBPACK_IMPORTED_MODULE_2__.default)(arr, i) || (0,_babel_runtime_helpers_esm_nonIterableRest__WEBPACK_IMPORTED_MODULE_3__.default)();
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/superPropBase.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/superPropBase.js ***!
+  \******************************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ _superPropBase; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+
+function _superPropBase(object, property) {
+  while (!Object.prototype.hasOwnProperty.call(object, property)) {
+    object = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_0__.default)(object);
+    if (object === null) break;
+  }
+
+  return object;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js ***!
+  \**********************************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ _toConsumableArray; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_arrayWithoutHoles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/arrayWithoutHoles */ "./node_modules/@babel/runtime/helpers/esm/arrayWithoutHoles.js");
+/* harmony import */ var _babel_runtime_helpers_esm_iterableToArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/iterableToArray */ "./node_modules/@babel/runtime/helpers/esm/iterableToArray.js");
+/* harmony import */ var _babel_runtime_helpers_esm_unsupportedIterableToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/unsupportedIterableToArray */ "./node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js");
+/* harmony import */ var _babel_runtime_helpers_esm_nonIterableSpread__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/nonIterableSpread */ "./node_modules/@babel/runtime/helpers/esm/nonIterableSpread.js");
+
+
+
+
+function _toConsumableArray(arr) {
+  return (0,_babel_runtime_helpers_esm_arrayWithoutHoles__WEBPACK_IMPORTED_MODULE_0__.default)(arr) || (0,_babel_runtime_helpers_esm_iterableToArray__WEBPACK_IMPORTED_MODULE_1__.default)(arr) || (0,_babel_runtime_helpers_esm_unsupportedIterableToArray__WEBPACK_IMPORTED_MODULE_2__.default)(arr) || (0,_babel_runtime_helpers_esm_nonIterableSpread__WEBPACK_IMPORTED_MODULE_3__.default)();
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/typeof.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/typeof.js ***!
+  \***********************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ _typeof; }
+/* harmony export */ });
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js ***!
+  \*******************************************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ _unsupportedIterableToArray; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_arrayLikeToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/arrayLikeToArray */ "./node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js");
+
+function _unsupportedIterableToArray(o, minLen) {
+  if (!o) return;
+  if (typeof o === "string") return (0,_babel_runtime_helpers_esm_arrayLikeToArray__WEBPACK_IMPORTED_MODULE_0__.default)(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor) n = o.constructor.name;
+  if (n === "Map" || n === "Set") return Array.from(o);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return (0,_babel_runtime_helpers_esm_arrayLikeToArray__WEBPACK_IMPORTED_MODULE_0__.default)(o, minLen);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@math.gl/web-mercator/dist/esm/assert.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/@math.gl/web-mercator/dist/esm/assert.js ***!
+  \***************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ assert; }
+/* harmony export */ });
+function assert(condition, message) {
+  if (!condition) {
+    throw new Error(message || '@math.gl/web-mercator: assertion failed.');
+  }
+}
+//# sourceMappingURL=assert.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@math.gl/web-mercator/dist/esm/fit-bounds.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@math.gl/web-mercator/dist/esm/fit-bounds.js ***!
+  \*******************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ fitBounds; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var _web_mercator_viewport__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./web-mercator-viewport */ "./node_modules/@math.gl/web-mercator/dist/esm/web-mercator-viewport.js");
+/* harmony import */ var _assert__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assert */ "./node_modules/@math.gl/web-mercator/dist/esm/assert.js");
+
+
+
+function fitBounds(_ref) {
+  var width = _ref.width,
+      height = _ref.height,
+      bounds = _ref.bounds,
+      _ref$minExtent = _ref.minExtent,
+      minExtent = _ref$minExtent === void 0 ? 0 : _ref$minExtent,
+      _ref$maxZoom = _ref.maxZoom,
+      maxZoom = _ref$maxZoom === void 0 ? 24 : _ref$maxZoom,
+      _ref$padding = _ref.padding,
+      padding = _ref$padding === void 0 ? 0 : _ref$padding,
+      _ref$offset = _ref.offset,
+      offset = _ref$offset === void 0 ? [0, 0] : _ref$offset;
+
+  var _bounds = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__.default)(bounds, 2),
+      _bounds$ = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__.default)(_bounds[0], 2),
+      west = _bounds$[0],
+      south = _bounds$[1],
+      _bounds$2 = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__.default)(_bounds[1], 2),
+      east = _bounds$2[0],
+      north = _bounds$2[1];
+
+  if (Number.isFinite(padding)) {
+    var p = padding;
+    padding = {
+      top: p,
+      bottom: p,
+      left: p,
+      right: p
+    };
+  } else {
+    (0,_assert__WEBPACK_IMPORTED_MODULE_2__.default)(Number.isFinite(padding.top) && Number.isFinite(padding.bottom) && Number.isFinite(padding.left) && Number.isFinite(padding.right));
+  }
+
+  var viewport = new _web_mercator_viewport__WEBPACK_IMPORTED_MODULE_1__.default({
+    width: width,
+    height: height,
+    longitude: 0,
+    latitude: 0,
+    zoom: 0
+  });
+  var nw = viewport.project([west, north]);
+  var se = viewport.project([east, south]);
+  var size = [Math.max(Math.abs(se[0] - nw[0]), minExtent), Math.max(Math.abs(se[1] - nw[1]), minExtent)];
+  var targetSize = [width - padding.left - padding.right - Math.abs(offset[0]) * 2, height - padding.top - padding.bottom - Math.abs(offset[1]) * 2];
+  (0,_assert__WEBPACK_IMPORTED_MODULE_2__.default)(targetSize[0] > 0 && targetSize[1] > 0);
+  var scaleX = targetSize[0] / size[0];
+  var scaleY = targetSize[1] / size[1];
+  var offsetX = (padding.right - padding.left) / 2 / scaleX;
+  var offsetY = (padding.bottom - padding.top) / 2 / scaleY;
+  var center = [(se[0] + nw[0]) / 2 + offsetX, (se[1] + nw[1]) / 2 + offsetY];
+  var centerLngLat = viewport.unproject(center);
+  var zoom = Math.min(maxZoom, viewport.zoom + Math.log2(Math.abs(Math.min(scaleX, scaleY))));
+  (0,_assert__WEBPACK_IMPORTED_MODULE_2__.default)(Number.isFinite(zoom));
+  return {
+    longitude: centerLngLat[0],
+    latitude: centerLngLat[1],
+    zoom: zoom
+  };
+}
+//# sourceMappingURL=fit-bounds.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@math.gl/web-mercator/dist/esm/fly-to-viewport.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/@math.gl/web-mercator/dist/esm/fly-to-viewport.js ***!
+  \************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ flyToViewport; },
+/* harmony export */   "getFlyToDuration": function() { return /* binding */ getFlyToDuration; }
+/* harmony export */ });
+/* harmony import */ var _math_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./math-utils */ "./node_modules/@math.gl/web-mercator/dist/esm/math-utils.js");
+/* harmony import */ var _web_mercator_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./web-mercator-utils */ "./node_modules/@math.gl/web-mercator/dist/esm/web-mercator-utils.js");
+/* harmony import */ var gl_matrix_vec2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gl-matrix/vec2 */ "./node_modules/gl-matrix/esm/vec2.js");
+function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+
+
+
+var EPSILON = 0.01;
+var VIEWPORT_TRANSITION_PROPS = ['longitude', 'latitude', 'zoom'];
+var DEFAULT_OPTS = {
+  curve: 1.414,
+  speed: 1.2
+};
+function flyToViewport(startProps, endProps, t) {
+  var opts = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
+  var viewport = {};
+
+  var _getFlyToTransitionPa = getFlyToTransitionParams(startProps, endProps, opts),
+      startZoom = _getFlyToTransitionPa.startZoom,
+      startCenterXY = _getFlyToTransitionPa.startCenterXY,
+      uDelta = _getFlyToTransitionPa.uDelta,
+      w0 = _getFlyToTransitionPa.w0,
+      u1 = _getFlyToTransitionPa.u1,
+      S = _getFlyToTransitionPa.S,
+      rho = _getFlyToTransitionPa.rho,
+      rho2 = _getFlyToTransitionPa.rho2,
+      r0 = _getFlyToTransitionPa.r0;
+
+  if (u1 < EPSILON) {
+    var _iterator = _createForOfIteratorHelper(VIEWPORT_TRANSITION_PROPS),
+        _step;
+
+    try {
+      for (_iterator.s(); !(_step = _iterator.n()).done;) {
+        var key = _step.value;
+        var startValue = startProps[key];
+        var endValue = endProps[key];
+        viewport[key] = (0,_math_utils__WEBPACK_IMPORTED_MODULE_0__.lerp)(startValue, endValue, t);
+      }
+    } catch (err) {
+      _iterator.e(err);
+    } finally {
+      _iterator.f();
+    }
+
+    return viewport;
+  }
+
+  var s = t * S;
+  var w = Math.cosh(r0) / Math.cosh(r0 + rho * s);
+  var u = w0 * ((Math.cosh(r0) * Math.tanh(r0 + rho * s) - Math.sinh(r0)) / rho2) / u1;
+  var scaleIncrement = 1 / w;
+  var newZoom = startZoom + (0,_web_mercator_utils__WEBPACK_IMPORTED_MODULE_1__.scaleToZoom)(scaleIncrement);
+  var newCenterWorld = gl_matrix_vec2__WEBPACK_IMPORTED_MODULE_2__.scale([], uDelta, u);
+  gl_matrix_vec2__WEBPACK_IMPORTED_MODULE_2__.add(newCenterWorld, newCenterWorld, startCenterXY);
+  var newCenter = (0,_web_mercator_utils__WEBPACK_IMPORTED_MODULE_1__.worldToLngLat)(newCenterWorld);
+  viewport.longitude = newCenter[0];
+  viewport.latitude = newCenter[1];
+  viewport.zoom = newZoom;
+  return viewport;
+}
+function getFlyToDuration(startProps, endProps) {
+  var opts = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+  opts = Object.assign({}, DEFAULT_OPTS, opts);
+  var _opts = opts,
+      screenSpeed = _opts.screenSpeed,
+      speed = _opts.speed,
+      maxDuration = _opts.maxDuration;
+
+  var _getFlyToTransitionPa2 = getFlyToTransitionParams(startProps, endProps, opts),
+      S = _getFlyToTransitionPa2.S,
+      rho = _getFlyToTransitionPa2.rho;
+
+  var length = 1000 * S;
+  var duration;
+
+  if (Number.isFinite(screenSpeed)) {
+    duration = length / (screenSpeed / rho);
+  } else {
+    duration = length / speed;
+  }
+
+  return Number.isFinite(maxDuration) && duration > maxDuration ? 0 : duration;
+}
+
+function getFlyToTransitionParams(startProps, endProps, opts) {
+  opts = Object.assign({}, DEFAULT_OPTS, opts);
+  var rho = opts.curve;
+  var startZoom = startProps.zoom;
+  var startCenter = [startProps.longitude, startProps.latitude];
+  var startScale = (0,_web_mercator_utils__WEBPACK_IMPORTED_MODULE_1__.zoomToScale)(startZoom);
+  var endZoom = endProps.zoom;
+  var endCenter = [endProps.longitude, endProps.latitude];
+  var scale = (0,_web_mercator_utils__WEBPACK_IMPORTED_MODULE_1__.zoomToScale)(endZoom - startZoom);
+  var startCenterXY = (0,_web_mercator_utils__WEBPACK_IMPORTED_MODULE_1__.lngLatToWorld)(startCenter);
+  var endCenterXY = (0,_web_mercator_utils__WEBPACK_IMPORTED_MODULE_1__.lngLatToWorld)(endCenter);
+  var uDelta = gl_matrix_vec2__WEBPACK_IMPORTED_MODULE_2__.sub([], endCenterXY, startCenterXY);
+  var w0 = Math.max(startProps.width, startProps.height);
+  var w1 = w0 / scale;
+  var u1 = gl_matrix_vec2__WEBPACK_IMPORTED_MODULE_2__.length(uDelta) * startScale;
+
+  var _u1 = Math.max(u1, EPSILON);
+
+  var rho2 = rho * rho;
+  var b0 = (w1 * w1 - w0 * w0 + rho2 * rho2 * _u1 * _u1) / (2 * w0 * rho2 * _u1);
+  var b1 = (w1 * w1 - w0 * w0 - rho2 * rho2 * _u1 * _u1) / (2 * w1 * rho2 * _u1);
+  var r0 = Math.log(Math.sqrt(b0 * b0 + 1) - b0);
+  var r1 = Math.log(Math.sqrt(b1 * b1 + 1) - b1);
+  var S = (r1 - r0) / rho;
+  return {
+    startZoom: startZoom,
+    startCenterXY: startCenterXY,
+    uDelta: uDelta,
+    w0: w0,
+    u1: u1,
+    S: S,
+    rho: rho,
+    rho2: rho2,
+    r0: r0,
+    r1: r1
+  };
+}
+//# sourceMappingURL=fly-to-viewport.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@math.gl/web-mercator/dist/esm/get-bounds.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@math.gl/web-mercator/dist/esm/get-bounds.js ***!
+  \*******************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ getBounds; }
+/* harmony export */ });
+/* harmony import */ var _web_mercator_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./web-mercator-utils */ "./node_modules/@math.gl/web-mercator/dist/esm/web-mercator-utils.js");
+/* harmony import */ var gl_matrix_vec2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gl-matrix/vec2 */ "./node_modules/gl-matrix/esm/vec2.js");
+/* harmony import */ var _math_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./math-utils */ "./node_modules/@math.gl/web-mercator/dist/esm/math-utils.js");
+
+
+
+var DEGREES_TO_RADIANS = Math.PI / 180;
+function getBounds(viewport) {
+  var z = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+  var width = viewport.width,
+      height = viewport.height,
+      unproject = viewport.unproject;
+  var unprojectOps = {
+    targetZ: z
+  };
+  var bottomLeft = unproject([0, height], unprojectOps);
+  var bottomRight = unproject([width, height], unprojectOps);
+  var topLeft;
+  var topRight;
+  var halfFov = Math.atan(0.5 / viewport.altitude);
+  var angleToGround = (90 - viewport.pitch) * DEGREES_TO_RADIANS;
+
+  if (halfFov > angleToGround - 0.01) {
+    topLeft = unprojectOnFarPlane(viewport, 0, z);
+    topRight = unprojectOnFarPlane(viewport, width, z);
+  } else {
+    topLeft = unproject([0, 0], unprojectOps);
+    topRight = unproject([width, 0], unprojectOps);
+  }
+
+  return [bottomLeft, bottomRight, topRight, topLeft];
+}
+
+function unprojectOnFarPlane(viewport, x, targetZ) {
+  var pixelUnprojectionMatrix = viewport.pixelUnprojectionMatrix;
+  var coord0 = (0,_math_utils__WEBPACK_IMPORTED_MODULE_1__.transformVector)(pixelUnprojectionMatrix, [x, 0, 1, 1]);
+  var coord1 = (0,_math_utils__WEBPACK_IMPORTED_MODULE_1__.transformVector)(pixelUnprojectionMatrix, [x, viewport.height, 1, 1]);
+  var z = targetZ * viewport.distanceScales.unitsPerMeter[2];
+  var t = (z - coord0[2]) / (coord1[2] - coord0[2]);
+  var coord = gl_matrix_vec2__WEBPACK_IMPORTED_MODULE_2__.lerp([], coord0, coord1, t);
+  var result = (0,_web_mercator_utils__WEBPACK_IMPORTED_MODULE_0__.worldToLngLat)(coord);
+  result[2] = targetZ;
+  return result;
+}
+//# sourceMappingURL=get-bounds.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@math.gl/web-mercator/dist/esm/index.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/@math.gl/web-mercator/dist/esm/index.js ***!
+  \**************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* reexport safe */ _web_mercator_viewport__WEBPACK_IMPORTED_MODULE_0__.default; },
+/* harmony export */   "WebMercatorViewport": function() { return /* reexport safe */ _web_mercator_viewport__WEBPACK_IMPORTED_MODULE_0__.default; },
+/* harmony export */   "getBounds": function() { return /* reexport safe */ _get_bounds__WEBPACK_IMPORTED_MODULE_1__.default; },
+/* harmony export */   "fitBounds": function() { return /* reexport safe */ _fit_bounds__WEBPACK_IMPORTED_MODULE_2__.default; },
+/* harmony export */   "normalizeViewportProps": function() { return /* reexport safe */ _normalize_viewport_props__WEBPACK_IMPORTED_MODULE_3__.default; },
+/* harmony export */   "flyToViewport": function() { return /* reexport safe */ _fly_to_viewport__WEBPACK_IMPORTED_MODULE_4__.default; },
+/* harmony export */   "getFlyToDuration": function() { return /* reexport safe */ _fly_to_viewport__WEBPACK_IMPORTED_MODULE_4__.getFlyToDuration; },
+/* harmony export */   "lngLatToWorld": function() { return /* reexport safe */ _web_mercator_utils__WEBPACK_IMPORTED_MODULE_5__.lngLatToWorld; },
+/* harmony export */   "worldToLngLat": function() { return /* reexport safe */ _web_mercator_utils__WEBPACK_IMPORTED_MODULE_5__.worldToLngLat; },
+/* harmony export */   "worldToPixels": function() { return /* reexport safe */ _web_mercator_utils__WEBPACK_IMPORTED_MODULE_5__.worldToPixels; },
+/* harmony export */   "pixelsToWorld": function() { return /* reexport safe */ _web_mercator_utils__WEBPACK_IMPORTED_MODULE_5__.pixelsToWorld; },
+/* harmony export */   "zoomToScale": function() { return /* reexport safe */ _web_mercator_utils__WEBPACK_IMPORTED_MODULE_5__.zoomToScale; },
+/* harmony export */   "scaleToZoom": function() { return /* reexport safe */ _web_mercator_utils__WEBPACK_IMPORTED_MODULE_5__.scaleToZoom; },
+/* harmony export */   "getMeterZoom": function() { return /* reexport safe */ _web_mercator_utils__WEBPACK_IMPORTED_MODULE_5__.getMeterZoom; },
+/* harmony export */   "getDistanceScales": function() { return /* reexport safe */ _web_mercator_utils__WEBPACK_IMPORTED_MODULE_5__.getDistanceScales; },
+/* harmony export */   "addMetersToLngLat": function() { return /* reexport safe */ _web_mercator_utils__WEBPACK_IMPORTED_MODULE_5__.addMetersToLngLat; },
+/* harmony export */   "getViewMatrix": function() { return /* reexport safe */ _web_mercator_utils__WEBPACK_IMPORTED_MODULE_5__.getViewMatrix; },
+/* harmony export */   "getProjectionMatrix": function() { return /* reexport safe */ _web_mercator_utils__WEBPACK_IMPORTED_MODULE_5__.getProjectionMatrix; },
+/* harmony export */   "getProjectionParameters": function() { return /* reexport safe */ _web_mercator_utils__WEBPACK_IMPORTED_MODULE_5__.getProjectionParameters; }
+/* harmony export */ });
+/* harmony import */ var _web_mercator_viewport__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./web-mercator-viewport */ "./node_modules/@math.gl/web-mercator/dist/esm/web-mercator-viewport.js");
+/* harmony import */ var _get_bounds__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./get-bounds */ "./node_modules/@math.gl/web-mercator/dist/esm/get-bounds.js");
+/* harmony import */ var _fit_bounds__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fit-bounds */ "./node_modules/@math.gl/web-mercator/dist/esm/fit-bounds.js");
+/* harmony import */ var _normalize_viewport_props__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./normalize-viewport-props */ "./node_modules/@math.gl/web-mercator/dist/esm/normalize-viewport-props.js");
+/* harmony import */ var _fly_to_viewport__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./fly-to-viewport */ "./node_modules/@math.gl/web-mercator/dist/esm/fly-to-viewport.js");
+/* harmony import */ var _web_mercator_utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./web-mercator-utils */ "./node_modules/@math.gl/web-mercator/dist/esm/web-mercator-utils.js");
+
+
+
+
+
+
+
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@math.gl/web-mercator/dist/esm/math-utils.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@math.gl/web-mercator/dist/esm/math-utils.js ***!
+  \*******************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "createMat4": function() { return /* binding */ createMat4; },
+/* harmony export */   "transformVector": function() { return /* binding */ transformVector; },
+/* harmony export */   "mod": function() { return /* binding */ mod; },
+/* harmony export */   "lerp": function() { return /* binding */ lerp; }
+/* harmony export */ });
+/* harmony import */ var gl_matrix_vec4__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! gl-matrix/vec4 */ "./node_modules/gl-matrix/esm/vec4.js");
+
+function createMat4() {
+  return [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1];
+}
+function transformVector(matrix, vector) {
+  var result = gl_matrix_vec4__WEBPACK_IMPORTED_MODULE_0__.transformMat4([], vector, matrix);
+  gl_matrix_vec4__WEBPACK_IMPORTED_MODULE_0__.scale(result, result, 1 / result[3]);
+  return result;
+}
+function mod(value, divisor) {
+  var modulus = value % divisor;
+  return modulus < 0 ? divisor + modulus : modulus;
+}
+function lerp(start, end, step) {
+  return step * end + (1 - step) * start;
+}
+//# sourceMappingURL=math-utils.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@math.gl/web-mercator/dist/esm/normalize-viewport-props.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/@math.gl/web-mercator/dist/esm/normalize-viewport-props.js ***!
+  \*********************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ normalizeViewportProps; }
+/* harmony export */ });
+/* harmony import */ var _web_mercator_viewport__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./web-mercator-viewport */ "./node_modules/@math.gl/web-mercator/dist/esm/web-mercator-viewport.js");
+/* harmony import */ var _math_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./math-utils */ "./node_modules/@math.gl/web-mercator/dist/esm/math-utils.js");
+
+
+var MAX_LATITUDE = 85.05113;
+var MIN_LATITUDE = -85.05113;
+function normalizeViewportProps(_ref) {
+  var width = _ref.width,
+      height = _ref.height,
+      longitude = _ref.longitude,
+      latitude = _ref.latitude,
+      zoom = _ref.zoom,
+      _ref$pitch = _ref.pitch,
+      pitch = _ref$pitch === void 0 ? 0 : _ref$pitch,
+      _ref$bearing = _ref.bearing,
+      bearing = _ref$bearing === void 0 ? 0 : _ref$bearing;
+
+  if (longitude < -180 || longitude > 180) {
+    longitude = (0,_math_utils__WEBPACK_IMPORTED_MODULE_1__.mod)(longitude + 180, 360) - 180;
+  }
+
+  if (bearing < -180 || bearing > 180) {
+    bearing = (0,_math_utils__WEBPACK_IMPORTED_MODULE_1__.mod)(bearing + 180, 360) - 180;
+  }
+
+  var flatViewport = new _web_mercator_viewport__WEBPACK_IMPORTED_MODULE_0__.default({
+    width: width,
+    height: height,
+    longitude: longitude,
+    latitude: latitude,
+    zoom: zoom
+  });
+  var topY = flatViewport.project([longitude, MAX_LATITUDE])[1];
+  var bottomY = flatViewport.project([longitude, MIN_LATITUDE])[1];
+  var shiftY = 0;
+
+  if (bottomY - topY < height) {
+    zoom += Math.log2(height / (bottomY - topY));
+    flatViewport = new _web_mercator_viewport__WEBPACK_IMPORTED_MODULE_0__.default({
+      width: width,
+      height: height,
+      longitude: longitude,
+      latitude: latitude,
+      zoom: zoom
+    });
+    topY = flatViewport.project([longitude, MAX_LATITUDE])[1];
+    bottomY = flatViewport.project([longitude, MIN_LATITUDE])[1];
+  }
+
+  if (topY > 0) {
+    shiftY = topY;
+  } else if (bottomY < height) {
+    shiftY = bottomY - height;
+  }
+
+  if (shiftY) {
+    latitude = flatViewport.unproject([width / 2, height / 2 + shiftY])[1];
+  }
+
+  return {
+    width: width,
+    height: height,
+    longitude: longitude,
+    latitude: latitude,
+    zoom: zoom,
+    pitch: pitch,
+    bearing: bearing
+  };
+}
+//# sourceMappingURL=normalize-viewport-props.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@math.gl/web-mercator/dist/esm/web-mercator-utils.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@math.gl/web-mercator/dist/esm/web-mercator-utils.js ***!
+  \***************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "zoomToScale": function() { return /* binding */ zoomToScale; },
+/* harmony export */   "scaleToZoom": function() { return /* binding */ scaleToZoom; },
+/* harmony export */   "lngLatToWorld": function() { return /* binding */ lngLatToWorld; },
+/* harmony export */   "worldToLngLat": function() { return /* binding */ worldToLngLat; },
+/* harmony export */   "getMeterZoom": function() { return /* binding */ getMeterZoom; },
+/* harmony export */   "getDistanceScales": function() { return /* binding */ getDistanceScales; },
+/* harmony export */   "addMetersToLngLat": function() { return /* binding */ addMetersToLngLat; },
+/* harmony export */   "getViewMatrix": function() { return /* binding */ getViewMatrix; },
+/* harmony export */   "getProjectionParameters": function() { return /* binding */ getProjectionParameters; },
+/* harmony export */   "getProjectionMatrix": function() { return /* binding */ getProjectionMatrix; },
+/* harmony export */   "worldToPixels": function() { return /* binding */ worldToPixels; },
+/* harmony export */   "pixelsToWorld": function() { return /* binding */ pixelsToWorld; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var _math_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./math-utils */ "./node_modules/@math.gl/web-mercator/dist/esm/math-utils.js");
+/* harmony import */ var gl_matrix_mat4__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gl-matrix/mat4 */ "./node_modules/gl-matrix/esm/mat4.js");
+/* harmony import */ var gl_matrix_vec2__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! gl-matrix/vec2 */ "./node_modules/gl-matrix/esm/vec2.js");
+/* harmony import */ var gl_matrix_vec3__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! gl-matrix/vec3 */ "./node_modules/gl-matrix/esm/vec3.js");
+/* harmony import */ var _assert__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assert */ "./node_modules/@math.gl/web-mercator/dist/esm/assert.js");
+
+
+
+
+
+
+var PI = Math.PI;
+var PI_4 = PI / 4;
+var DEGREES_TO_RADIANS = PI / 180;
+var RADIANS_TO_DEGREES = 180 / PI;
+var TILE_SIZE = 512;
+var EARTH_CIRCUMFERENCE = 40.03e6;
+var DEFAULT_ALTITUDE = 1.5;
+function zoomToScale(zoom) {
+  return Math.pow(2, zoom);
+}
+function scaleToZoom(scale) {
+  return Math.log2(scale);
+}
+function lngLatToWorld(_ref) {
+  var _ref2 = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__.default)(_ref, 2),
+      lng = _ref2[0],
+      lat = _ref2[1];
+
+  (0,_assert__WEBPACK_IMPORTED_MODULE_2__.default)(Number.isFinite(lng));
+  (0,_assert__WEBPACK_IMPORTED_MODULE_2__.default)(Number.isFinite(lat) && lat >= -90 && lat <= 90, 'invalid latitude');
+  var lambda2 = lng * DEGREES_TO_RADIANS;
+  var phi2 = lat * DEGREES_TO_RADIANS;
+  var x = TILE_SIZE * (lambda2 + PI) / (2 * PI);
+  var y = TILE_SIZE * (PI + Math.log(Math.tan(PI_4 + phi2 * 0.5))) / (2 * PI);
+  return [x, y];
+}
+function worldToLngLat(_ref3) {
+  var _ref4 = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__.default)(_ref3, 2),
+      x = _ref4[0],
+      y = _ref4[1];
+
+  var lambda2 = x / TILE_SIZE * (2 * PI) - PI;
+  var phi2 = 2 * (Math.atan(Math.exp(y / TILE_SIZE * (2 * PI) - PI)) - PI_4);
+  return [lambda2 * RADIANS_TO_DEGREES, phi2 * RADIANS_TO_DEGREES];
+}
+function getMeterZoom(_ref5) {
+  var latitude = _ref5.latitude;
+  (0,_assert__WEBPACK_IMPORTED_MODULE_2__.default)(Number.isFinite(latitude));
+  var latCosine = Math.cos(latitude * DEGREES_TO_RADIANS);
+  return scaleToZoom(EARTH_CIRCUMFERENCE * latCosine) - 9;
+}
+function getDistanceScales(_ref6) {
+  var latitude = _ref6.latitude,
+      longitude = _ref6.longitude,
+      _ref6$highPrecision = _ref6.highPrecision,
+      highPrecision = _ref6$highPrecision === void 0 ? false : _ref6$highPrecision;
+  (0,_assert__WEBPACK_IMPORTED_MODULE_2__.default)(Number.isFinite(latitude) && Number.isFinite(longitude));
+  var result = {};
+  var worldSize = TILE_SIZE;
+  var latCosine = Math.cos(latitude * DEGREES_TO_RADIANS);
+  var unitsPerDegreeX = worldSize / 360;
+  var unitsPerDegreeY = unitsPerDegreeX / latCosine;
+  var altUnitsPerMeter = worldSize / EARTH_CIRCUMFERENCE / latCosine;
+  result.unitsPerMeter = [altUnitsPerMeter, altUnitsPerMeter, altUnitsPerMeter];
+  result.metersPerUnit = [1 / altUnitsPerMeter, 1 / altUnitsPerMeter, 1 / altUnitsPerMeter];
+  result.unitsPerDegree = [unitsPerDegreeX, unitsPerDegreeY, altUnitsPerMeter];
+  result.degreesPerUnit = [1 / unitsPerDegreeX, 1 / unitsPerDegreeY, 1 / altUnitsPerMeter];
+
+  if (highPrecision) {
+    var latCosine2 = DEGREES_TO_RADIANS * Math.tan(latitude * DEGREES_TO_RADIANS) / latCosine;
+    var unitsPerDegreeY2 = unitsPerDegreeX * latCosine2 / 2;
+    var altUnitsPerDegree2 = worldSize / EARTH_CIRCUMFERENCE * latCosine2;
+    var altUnitsPerMeter2 = altUnitsPerDegree2 / unitsPerDegreeY * altUnitsPerMeter;
+    result.unitsPerDegree2 = [0, unitsPerDegreeY2, altUnitsPerDegree2];
+    result.unitsPerMeter2 = [altUnitsPerMeter2, 0, altUnitsPerMeter2];
+  }
+
+  return result;
+}
+function addMetersToLngLat(lngLatZ, xyz) {
+  var _lngLatZ = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__.default)(lngLatZ, 3),
+      longitude = _lngLatZ[0],
+      latitude = _lngLatZ[1],
+      z0 = _lngLatZ[2];
+
+  var _xyz = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__.default)(xyz, 3),
+      x = _xyz[0],
+      y = _xyz[1],
+      z = _xyz[2];
+
+  var _getDistanceScales = getDistanceScales({
+    longitude: longitude,
+    latitude: latitude,
+    highPrecision: true
+  }),
+      unitsPerMeter = _getDistanceScales.unitsPerMeter,
+      unitsPerMeter2 = _getDistanceScales.unitsPerMeter2;
+
+  var worldspace = lngLatToWorld(lngLatZ);
+  worldspace[0] += x * (unitsPerMeter[0] + unitsPerMeter2[0] * y);
+  worldspace[1] += y * (unitsPerMeter[1] + unitsPerMeter2[1] * y);
+  var newLngLat = worldToLngLat(worldspace);
+  var newZ = (z0 || 0) + (z || 0);
+  return Number.isFinite(z0) || Number.isFinite(z) ? [newLngLat[0], newLngLat[1], newZ] : newLngLat;
+}
+function getViewMatrix(_ref7) {
+  var height = _ref7.height,
+      pitch = _ref7.pitch,
+      bearing = _ref7.bearing,
+      altitude = _ref7.altitude,
+      scale = _ref7.scale,
+      _ref7$center = _ref7.center,
+      center = _ref7$center === void 0 ? null : _ref7$center;
+  var vm = (0,_math_utils__WEBPACK_IMPORTED_MODULE_1__.createMat4)();
+  gl_matrix_mat4__WEBPACK_IMPORTED_MODULE_3__.translate(vm, vm, [0, 0, -altitude]);
+  gl_matrix_mat4__WEBPACK_IMPORTED_MODULE_3__.rotateX(vm, vm, -pitch * DEGREES_TO_RADIANS);
+  gl_matrix_mat4__WEBPACK_IMPORTED_MODULE_3__.rotateZ(vm, vm, bearing * DEGREES_TO_RADIANS);
+  scale /= height;
+  gl_matrix_mat4__WEBPACK_IMPORTED_MODULE_3__.scale(vm, vm, [scale, scale, scale]);
+
+  if (center) {
+    gl_matrix_mat4__WEBPACK_IMPORTED_MODULE_3__.translate(vm, vm, gl_matrix_vec3__WEBPACK_IMPORTED_MODULE_4__.negate([], center));
+  }
+
+  return vm;
+}
+function getProjectionParameters(_ref8) {
+  var width = _ref8.width,
+      height = _ref8.height,
+      _ref8$altitude = _ref8.altitude,
+      altitude = _ref8$altitude === void 0 ? DEFAULT_ALTITUDE : _ref8$altitude,
+      _ref8$pitch = _ref8.pitch,
+      pitch = _ref8$pitch === void 0 ? 0 : _ref8$pitch,
+      _ref8$nearZMultiplier = _ref8.nearZMultiplier,
+      nearZMultiplier = _ref8$nearZMultiplier === void 0 ? 1 : _ref8$nearZMultiplier,
+      _ref8$farZMultiplier = _ref8.farZMultiplier,
+      farZMultiplier = _ref8$farZMultiplier === void 0 ? 1 : _ref8$farZMultiplier;
+  var pitchRadians = pitch * DEGREES_TO_RADIANS;
+  var halfFov = Math.atan(0.5 / altitude);
+  var topHalfSurfaceDistance = Math.sin(halfFov) * altitude / Math.sin(Math.min(Math.max(Math.PI / 2 - pitchRadians - halfFov, 0.01), Math.PI - 0.01));
+  var farZ = Math.sin(pitchRadians) * topHalfSurfaceDistance + altitude;
+  return {
+    fov: 2 * halfFov,
+    aspect: width / height,
+    focalDistance: altitude,
+    near: nearZMultiplier,
+    far: farZ * farZMultiplier
+  };
+}
+function getProjectionMatrix(_ref9) {
+  var width = _ref9.width,
+      height = _ref9.height,
+      pitch = _ref9.pitch,
+      altitude = _ref9.altitude,
+      nearZMultiplier = _ref9.nearZMultiplier,
+      farZMultiplier = _ref9.farZMultiplier;
+
+  var _getProjectionParamet = getProjectionParameters({
+    width: width,
+    height: height,
+    altitude: altitude,
+    pitch: pitch,
+    nearZMultiplier: nearZMultiplier,
+    farZMultiplier: farZMultiplier
+  }),
+      fov = _getProjectionParamet.fov,
+      aspect = _getProjectionParamet.aspect,
+      near = _getProjectionParamet.near,
+      far = _getProjectionParamet.far;
+
+  var projectionMatrix = gl_matrix_mat4__WEBPACK_IMPORTED_MODULE_3__.perspective([], fov, aspect, near, far);
+  return projectionMatrix;
+}
+function worldToPixels(xyz, pixelProjectionMatrix) {
+  var _xyz2 = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__.default)(xyz, 3),
+      x = _xyz2[0],
+      y = _xyz2[1],
+      _xyz2$ = _xyz2[2],
+      z = _xyz2$ === void 0 ? 0 : _xyz2$;
+
+  (0,_assert__WEBPACK_IMPORTED_MODULE_2__.default)(Number.isFinite(x) && Number.isFinite(y) && Number.isFinite(z));
+  return (0,_math_utils__WEBPACK_IMPORTED_MODULE_1__.transformVector)(pixelProjectionMatrix, [x, y, z, 1]);
+}
+function pixelsToWorld(xyz, pixelUnprojectionMatrix) {
+  var targetZ = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
+
+  var _xyz3 = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__.default)(xyz, 3),
+      x = _xyz3[0],
+      y = _xyz3[1],
+      z = _xyz3[2];
+
+  (0,_assert__WEBPACK_IMPORTED_MODULE_2__.default)(Number.isFinite(x) && Number.isFinite(y), 'invalid pixel coordinate');
+
+  if (Number.isFinite(z)) {
+    var coord = (0,_math_utils__WEBPACK_IMPORTED_MODULE_1__.transformVector)(pixelUnprojectionMatrix, [x, y, z, 1]);
+    return coord;
+  }
+
+  var coord0 = (0,_math_utils__WEBPACK_IMPORTED_MODULE_1__.transformVector)(pixelUnprojectionMatrix, [x, y, 0, 1]);
+  var coord1 = (0,_math_utils__WEBPACK_IMPORTED_MODULE_1__.transformVector)(pixelUnprojectionMatrix, [x, y, 1, 1]);
+  var z0 = coord0[2];
+  var z1 = coord1[2];
+  var t = z0 === z1 ? 0 : ((targetZ || 0) - z0) / (z1 - z0);
+  return gl_matrix_vec2__WEBPACK_IMPORTED_MODULE_5__.lerp([], coord0, coord1, t);
+}
+//# sourceMappingURL=web-mercator-utils.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@math.gl/web-mercator/dist/esm/web-mercator-viewport.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/@math.gl/web-mercator/dist/esm/web-mercator-viewport.js ***!
+  \******************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ WebMercatorViewport; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/toConsumableArray */ "./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
+/* harmony import */ var _babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _math_utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./math-utils */ "./node_modules/@math.gl/web-mercator/dist/esm/math-utils.js");
+/* harmony import */ var _web_mercator_utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./web-mercator-utils */ "./node_modules/@math.gl/web-mercator/dist/esm/web-mercator-utils.js");
+/* harmony import */ var _fit_bounds__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./fit-bounds */ "./node_modules/@math.gl/web-mercator/dist/esm/fit-bounds.js");
+/* harmony import */ var _get_bounds__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./get-bounds */ "./node_modules/@math.gl/web-mercator/dist/esm/get-bounds.js");
+/* harmony import */ var gl_matrix_mat4__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! gl-matrix/mat4 */ "./node_modules/gl-matrix/esm/mat4.js");
+/* harmony import */ var gl_matrix_vec2__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! gl-matrix/vec2 */ "./node_modules/gl-matrix/esm/vec2.js");
+
+
+
+
+
+
+
+
+
+
+
+var WebMercatorViewport = function () {
+  function WebMercatorViewport() {
+    var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {
+      width: 1,
+      height: 1
+    },
+        width = _ref.width,
+        height = _ref.height,
+        _ref$latitude = _ref.latitude,
+        latitude = _ref$latitude === void 0 ? 0 : _ref$latitude,
+        _ref$longitude = _ref.longitude,
+        longitude = _ref$longitude === void 0 ? 0 : _ref$longitude,
+        _ref$zoom = _ref.zoom,
+        zoom = _ref$zoom === void 0 ? 0 : _ref$zoom,
+        _ref$pitch = _ref.pitch,
+        pitch = _ref$pitch === void 0 ? 0 : _ref$pitch,
+        _ref$bearing = _ref.bearing,
+        bearing = _ref$bearing === void 0 ? 0 : _ref$bearing,
+        _ref$altitude = _ref.altitude,
+        altitude = _ref$altitude === void 0 ? 1.5 : _ref$altitude,
+        _ref$nearZMultiplier = _ref.nearZMultiplier,
+        nearZMultiplier = _ref$nearZMultiplier === void 0 ? 0.02 : _ref$nearZMultiplier,
+        _ref$farZMultiplier = _ref.farZMultiplier,
+        farZMultiplier = _ref$farZMultiplier === void 0 ? 1.01 : _ref$farZMultiplier;
+
+    (0,_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__.default)(this, WebMercatorViewport);
+
+    width = width || 1;
+    height = height || 1;
+    var scale = (0,_web_mercator_utils__WEBPACK_IMPORTED_MODULE_5__.zoomToScale)(zoom);
+    altitude = Math.max(0.75, altitude);
+    var center = (0,_web_mercator_utils__WEBPACK_IMPORTED_MODULE_5__.lngLatToWorld)([longitude, latitude]);
+    center[2] = 0;
+    this.projectionMatrix = (0,_web_mercator_utils__WEBPACK_IMPORTED_MODULE_5__.getProjectionMatrix)({
+      width: width,
+      height: height,
+      pitch: pitch,
+      altitude: altitude,
+      nearZMultiplier: nearZMultiplier,
+      farZMultiplier: farZMultiplier
+    });
+    this.viewMatrix = (0,_web_mercator_utils__WEBPACK_IMPORTED_MODULE_5__.getViewMatrix)({
+      height: height,
+      scale: scale,
+      center: center,
+      pitch: pitch,
+      bearing: bearing,
+      altitude: altitude
+    });
+    this.width = width;
+    this.height = height;
+    this.scale = scale;
+    this.latitude = latitude;
+    this.longitude = longitude;
+    this.zoom = zoom;
+    this.pitch = pitch;
+    this.bearing = bearing;
+    this.altitude = altitude;
+    this.center = center;
+    this.distanceScales = (0,_web_mercator_utils__WEBPACK_IMPORTED_MODULE_5__.getDistanceScales)(this);
+
+    this._initMatrices();
+
+    this.equals = this.equals.bind(this);
+    this.project = this.project.bind(this);
+    this.unproject = this.unproject.bind(this);
+    this.projectPosition = this.projectPosition.bind(this);
+    this.unprojectPosition = this.unprojectPosition.bind(this);
+    Object.freeze(this);
+  }
+
+  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__.default)(WebMercatorViewport, [{
+    key: "_initMatrices",
+    value: function _initMatrices() {
+      var width = this.width,
+          height = this.height,
+          projectionMatrix = this.projectionMatrix,
+          viewMatrix = this.viewMatrix;
+      var vpm = (0,_math_utils__WEBPACK_IMPORTED_MODULE_4__.createMat4)();
+      gl_matrix_mat4__WEBPACK_IMPORTED_MODULE_8__.multiply(vpm, vpm, projectionMatrix);
+      gl_matrix_mat4__WEBPACK_IMPORTED_MODULE_8__.multiply(vpm, vpm, viewMatrix);
+      this.viewProjectionMatrix = vpm;
+      var m = (0,_math_utils__WEBPACK_IMPORTED_MODULE_4__.createMat4)();
+      gl_matrix_mat4__WEBPACK_IMPORTED_MODULE_8__.scale(m, m, [width / 2, -height / 2, 1]);
+      gl_matrix_mat4__WEBPACK_IMPORTED_MODULE_8__.translate(m, m, [1, -1, 0]);
+      gl_matrix_mat4__WEBPACK_IMPORTED_MODULE_8__.multiply(m, m, vpm);
+      var mInverse = gl_matrix_mat4__WEBPACK_IMPORTED_MODULE_8__.invert((0,_math_utils__WEBPACK_IMPORTED_MODULE_4__.createMat4)(), m);
+
+      if (!mInverse) {
+        throw new Error('Pixel project matrix not invertible');
+      }
+
+      this.pixelProjectionMatrix = m;
+      this.pixelUnprojectionMatrix = mInverse;
+    }
+  }, {
+    key: "equals",
+    value: function equals(viewport) {
+      if (!(viewport instanceof WebMercatorViewport)) {
+        return false;
+      }
+
+      return viewport.width === this.width && viewport.height === this.height && gl_matrix_mat4__WEBPACK_IMPORTED_MODULE_8__.equals(viewport.projectionMatrix, this.projectionMatrix) && gl_matrix_mat4__WEBPACK_IMPORTED_MODULE_8__.equals(viewport.viewMatrix, this.viewMatrix);
+    }
+  }, {
+    key: "project",
+    value: function project(xyz) {
+      var _ref2 = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
+          _ref2$topLeft = _ref2.topLeft,
+          topLeft = _ref2$topLeft === void 0 ? true : _ref2$topLeft;
+
+      var worldPosition = this.projectPosition(xyz);
+      var coord = (0,_web_mercator_utils__WEBPACK_IMPORTED_MODULE_5__.worldToPixels)(worldPosition, this.pixelProjectionMatrix);
+
+      var _coord = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__.default)(coord, 2),
+          x = _coord[0],
+          y = _coord[1];
+
+      var y2 = topLeft ? y : this.height - y;
+      return xyz.length === 2 ? [x, y2] : [x, y2, coord[2]];
+    }
+  }, {
+    key: "unproject",
+    value: function unproject(xyz) {
+      var _ref3 = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
+          _ref3$topLeft = _ref3.topLeft,
+          topLeft = _ref3$topLeft === void 0 ? true : _ref3$topLeft,
+          _ref3$targetZ = _ref3.targetZ,
+          targetZ = _ref3$targetZ === void 0 ? undefined : _ref3$targetZ;
+
+      var _xyz = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__.default)(xyz, 3),
+          x = _xyz[0],
+          y = _xyz[1],
+          z = _xyz[2];
+
+      var y2 = topLeft ? y : this.height - y;
+      var targetZWorld = targetZ && targetZ * this.distanceScales.unitsPerMeter[2];
+      var coord = (0,_web_mercator_utils__WEBPACK_IMPORTED_MODULE_5__.pixelsToWorld)([x, y2, z], this.pixelUnprojectionMatrix, targetZWorld);
+
+      var _this$unprojectPositi = this.unprojectPosition(coord),
+          _this$unprojectPositi2 = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__.default)(_this$unprojectPositi, 3),
+          X = _this$unprojectPositi2[0],
+          Y = _this$unprojectPositi2[1],
+          Z = _this$unprojectPositi2[2];
+
+      if (Number.isFinite(z)) {
+        return [X, Y, Z];
+      }
+
+      return Number.isFinite(targetZ) ? [X, Y, targetZ] : [X, Y];
+    }
+  }, {
+    key: "projectPosition",
+    value: function projectPosition(xyz) {
+      var _lngLatToWorld = (0,_web_mercator_utils__WEBPACK_IMPORTED_MODULE_5__.lngLatToWorld)(xyz),
+          _lngLatToWorld2 = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__.default)(_lngLatToWorld, 2),
+          X = _lngLatToWorld2[0],
+          Y = _lngLatToWorld2[1];
+
+      var Z = (xyz[2] || 0) * this.distanceScales.unitsPerMeter[2];
+      return [X, Y, Z];
+    }
+  }, {
+    key: "unprojectPosition",
+    value: function unprojectPosition(xyz) {
+      var _worldToLngLat = (0,_web_mercator_utils__WEBPACK_IMPORTED_MODULE_5__.worldToLngLat)(xyz),
+          _worldToLngLat2 = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__.default)(_worldToLngLat, 2),
+          X = _worldToLngLat2[0],
+          Y = _worldToLngLat2[1];
+
+      var Z = (xyz[2] || 0) * this.distanceScales.metersPerUnit[2];
+      return [X, Y, Z];
+    }
+  }, {
+    key: "projectFlat",
+    value: function projectFlat(lngLat) {
+      return (0,_web_mercator_utils__WEBPACK_IMPORTED_MODULE_5__.lngLatToWorld)(lngLat);
+    }
+  }, {
+    key: "unprojectFlat",
+    value: function unprojectFlat(xy) {
+      return (0,_web_mercator_utils__WEBPACK_IMPORTED_MODULE_5__.worldToLngLat)(xy);
+    }
+  }, {
+    key: "getMapCenterByLngLatPosition",
+    value: function getMapCenterByLngLatPosition(_ref4) {
+      var lngLat = _ref4.lngLat,
+          pos = _ref4.pos;
+      var fromLocation = (0,_web_mercator_utils__WEBPACK_IMPORTED_MODULE_5__.pixelsToWorld)(pos, this.pixelUnprojectionMatrix);
+      var toLocation = (0,_web_mercator_utils__WEBPACK_IMPORTED_MODULE_5__.lngLatToWorld)(lngLat);
+      var translate = gl_matrix_vec2__WEBPACK_IMPORTED_MODULE_9__.add([], toLocation, gl_matrix_vec2__WEBPACK_IMPORTED_MODULE_9__.negate([], fromLocation));
+      var newCenter = gl_matrix_vec2__WEBPACK_IMPORTED_MODULE_9__.add([], this.center, translate);
+      return (0,_web_mercator_utils__WEBPACK_IMPORTED_MODULE_5__.worldToLngLat)(newCenter);
+    }
+  }, {
+    key: "getLocationAtPoint",
+    value: function getLocationAtPoint(_ref5) {
+      var lngLat = _ref5.lngLat,
+          pos = _ref5.pos;
+      return this.getMapCenterByLngLatPosition({
+        lngLat: lngLat,
+        pos: pos
+      });
+    }
+  }, {
+    key: "fitBounds",
+    value: function fitBounds(bounds) {
+      var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      var width = this.width,
+          height = this.height;
+
+      var _fitBounds2 = (0,_fit_bounds__WEBPACK_IMPORTED_MODULE_6__.default)(Object.assign({
+        width: width,
+        height: height,
+        bounds: bounds
+      }, options)),
+          longitude = _fitBounds2.longitude,
+          latitude = _fitBounds2.latitude,
+          zoom = _fitBounds2.zoom;
+
+      return new WebMercatorViewport({
+        width: width,
+        height: height,
+        longitude: longitude,
+        latitude: latitude,
+        zoom: zoom
+      });
+    }
+  }, {
+    key: "getBounds",
+    value: function getBounds(options) {
+      var corners = this.getBoundingRegion(options);
+      var west = Math.min.apply(Math, (0,_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__.default)(corners.map(function (p) {
+        return p[0];
+      })));
+      var east = Math.max.apply(Math, (0,_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__.default)(corners.map(function (p) {
+        return p[0];
+      })));
+      var south = Math.min.apply(Math, (0,_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__.default)(corners.map(function (p) {
+        return p[1];
+      })));
+      var north = Math.max.apply(Math, (0,_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__.default)(corners.map(function (p) {
+        return p[1];
+      })));
+      return [[west, south], [east, north]];
+    }
+  }, {
+    key: "getBoundingRegion",
+    value: function getBoundingRegion() {
+      var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      return (0,_get_bounds__WEBPACK_IMPORTED_MODULE_7__.default)(this, options.z || 0);
+    }
+  }]);
+
+  return WebMercatorViewport;
+}();
+
+
+//# sourceMappingURL=web-mercator-viewport.js.map
 
 /***/ }),
 
@@ -272,12 +1806,12 @@ var App = function App() {
     component: _dashboard_dashboard_container__WEBPACK_IMPORTED_MODULE_3__.default
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
     exact: true,
-    path: "/routes",
-    component: _Route_route_index_container__WEBPACK_IMPORTED_MODULE_4__.default
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
-    exact: true,
     path: "/routes/new",
     component: _RouteMap_route_map__WEBPACK_IMPORTED_MODULE_5__.default
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+    exact: true,
+    path: "/routes",
+    component: _Route_route_index_container__WEBPACK_IMPORTED_MODULE_4__.default
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_util_route_utils__WEBPACK_IMPORTED_MODULE_6__.AuthRoute, {
     path: "/signup",
     component: _session_form_signup_form_container__WEBPACK_IMPORTED_MODULE_1__.default
@@ -369,12 +1903,11 @@ var Navbar = function Navbar(props) {
   }, "My Routes"), props.isAuthenticated && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
     className: "logout-btn",
     to: "/"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-    onClick: function onClick() {
-      return props.logout();
-    },
-    className: "btn-secondary"
-  }, "Log Out")))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Button__WEBPACK_IMPORTED_MODULE_1__.default, {
+    onClick: props.logout,
+    className: "btn-secondary",
+    formType: "Log Out"
+  })))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Navbar);
@@ -524,6 +2057,65 @@ var mdp = function mdp(dispatch) {
 
 /***/ }),
 
+/***/ "./frontend/components/RouteMap/RouteCreationMap.jsx":
+/*!***********************************************************!*\
+  !*** ./frontend/components/RouteMap/RouteCreationMap.jsx ***!
+  \***********************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "RouteCreationMap": function() { return /* binding */ RouteCreationMap; }
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_map_gl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-map-gl */ "./node_modules/react-map-gl/dist/esm/index.js");
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+var RouteCreationMap = function RouteCreationMap(_ref) {
+  var MAPBOX_TOKEN = _ref.MAPBOX_TOKEN;
+
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_0__.useState({
+    latitude: 34.0746,
+    longitude: -118.3296,
+    zoom: 8
+  }),
+      _React$useState2 = _slicedToArray(_React$useState, 2),
+      viewport = _React$useState2[0],
+      setViewport = _React$useState2[1];
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_map_gl__WEBPACK_IMPORTED_MODULE_2__.default, _extends({}, viewport, {
+    width: "100vw",
+    height: "100vh",
+    mapStyle: "mapbox://styles/mapbox/light-v9",
+    onViewportChange: function onViewportChange(nextViewport) {
+      return setViewport(nextViewport);
+    },
+    mapboxApiAccessToken: MAPBOX_TOKEN
+  }));
+};
+RouteCreationMap.defaultProps = {
+  MAPBOX_TOKEN: 'pk.eyJ1IjoiYXVkcmV5eXVuIiwiYSI6ImNra2U3a3JubzBicDYybmpuNWFsZ3I1bnQifQ.rUMZUiM4ybo_eqcm1wcYiQ'
+};
+
+/***/ }),
+
 /***/ "./frontend/components/RouteMap/route_map.jsx":
 /*!****************************************************!*\
   !*** ./frontend/components/RouteMap/route_map.jsx ***!
@@ -533,82 +2125,59 @@ var mdp = function mdp(dispatch) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var mapbox_gl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! mapbox-gl */ "./node_modules/mapbox-gl/dist/mapbox-gl.js");
-/* harmony import */ var mapbox_gl__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(mapbox_gl__WEBPACK_IMPORTED_MODULE_2__);
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+/* harmony import */ var _RouteCreationMap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./RouteCreationMap */ "./frontend/components/RouteMap/RouteCreationMap.jsx");
+/* harmony import */ var react_map_gl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-map-gl */ "./node_modules/react-map-gl/dist/esm/index.js");
+/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Navbar */ "./frontend/components/Navbar/index.js");
+/* harmony import */ var _actions_session_actions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../actions/session_actions */ "./frontend/actions/session_actions.js");
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
 
-(mapbox_gl__WEBPACK_IMPORTED_MODULE_2___default().accessToken) = 'pk.eyJ1IjoiYXVkcmV5eXVuIiwiYSI6ImNra2U3a3JubzBicDYybmpuNWFsZ3I1bnQifQ.rUMZUiM4ybo_eqcm1wcYiQ';
 
-var RouteMap = /*#__PURE__*/function (_React$Component) {
-  _inherits(RouteMap, _React$Component);
 
-  var _super = _createSuper(RouteMap);
 
-  function RouteMap(props) {
-    var _this;
 
-    _classCallCheck(this, RouteMap);
+var RouteMap = function RouteMap() {
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_0__.useState({
+    latitude: 34.0746,
+    longitude: -118.3296,
+    zoom: 11
+  }),
+      _React$useState2 = _slicedToArray(_React$useState, 2),
+      viewport = _React$useState2[0],
+      setViewport = _React$useState2[1];
 
-    _this = _super.call(this, props);
-    _this.state = {
-      lng: 34.06351,
-      lat: -118.33809 // zoom: 2
-
-    };
-    return _this;
-  }
-
-  _createClass(RouteMap, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      var map = new (mapbox_gl__WEBPACK_IMPORTED_MODULE_2___default().Map)({
-        container: this.mapContainer,
-        style: 'mapbox://styles/mapbox/streets-v11',
-        center: [this.state.lng, this.state.lat],
-        zoom: this.state.zoom
-      });
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this2 = this;
-
-      //mapContainer ref specifies that map should be drawn to the HTML page in a new <div> element
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        ref: function ref(el) {
-          return _this2.mapContainer = el;
-        },
-        className: "mapContainer"
-      });
-    }
-  }]);
-
-  return RouteMap;
-}(react__WEBPACK_IMPORTED_MODULE_0__.Component);
+  var navbarProps = {
+    loginBtnClass: "nav-btn-primary",
+    loginBtnLabel: "Log Out",
+    loginBtnPath: "/logout",
+    isAuthenticated: true
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_3__.default, _extends({
+    logout: _actions_session_actions__WEBPACK_IMPORTED_MODULE_4__.default
+  }, navbarProps)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_map_gl__WEBPACK_IMPORTED_MODULE_2__.default, _extends({}, viewport, {
+    width: "100vw",
+    height: "100vh",
+    mapStyle: "mapbox://styles/mapbox/light-v9",
+    onViewportChange: function onViewportChange(nextViewport) {
+      return setViewport(nextViewport);
+    },
+    mapboxApiAccessToken: 'pk.eyJ1IjoiYXVkcmV5eXVuIiwiYSI6ImNra2U3a3JubzBicDYybmpuNWFsZ3I1bnQifQ.rUMZUiM4ybo_eqcm1wcYiQ'
+  })));
+};
 
 /* harmony default export */ __webpack_exports__["default"] = (RouteMap);
 
@@ -1123,7 +2692,7 @@ var SplashPage = /*#__PURE__*/function (_React$Component) {
       }, "Already a Member? ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
         to: "/login",
         className: "member"
-      }, "Log In")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      }, "Log In")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("footer", {
         className: "footer-container"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "footer-grid"
@@ -1613,6 +3182,6850 @@ var logout = function logout() {
     url: '/api/session'
   });
 };
+
+/***/ }),
+
+/***/ "./node_modules/gl-matrix/esm/common.js":
+/*!**********************************************!*\
+  !*** ./node_modules/gl-matrix/esm/common.js ***!
+  \**********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "EPSILON": function() { return /* binding */ EPSILON; },
+/* harmony export */   "ARRAY_TYPE": function() { return /* binding */ ARRAY_TYPE; },
+/* harmony export */   "RANDOM": function() { return /* binding */ RANDOM; },
+/* harmony export */   "setMatrixArrayType": function() { return /* binding */ setMatrixArrayType; },
+/* harmony export */   "toRadian": function() { return /* binding */ toRadian; },
+/* harmony export */   "equals": function() { return /* binding */ equals; }
+/* harmony export */ });
+/**
+ * Common utilities
+ * @module glMatrix
+ */
+// Configuration Constants
+var EPSILON = 0.000001;
+var ARRAY_TYPE = typeof Float32Array !== 'undefined' ? Float32Array : Array;
+var RANDOM = Math.random;
+/**
+ * Sets the type of array used when creating new vectors and matrices
+ *
+ * @param {Float32ArrayConstructor | ArrayConstructor} type Array type, such as Float32Array or Array
+ */
+
+function setMatrixArrayType(type) {
+  ARRAY_TYPE = type;
+}
+var degree = Math.PI / 180;
+/**
+ * Convert Degree To Radian
+ *
+ * @param {Number} a Angle in Degrees
+ */
+
+function toRadian(a) {
+  return a * degree;
+}
+/**
+ * Tests whether or not the arguments have approximately the same value, within an absolute
+ * or relative tolerance of glMatrix.EPSILON (an absolute tolerance is used for values less
+ * than or equal to 1.0, and a relative tolerance is used for larger values)
+ *
+ * @param {Number} a The first number to test.
+ * @param {Number} b The second number to test.
+ * @returns {Boolean} True if the numbers are approximately equal, false otherwise.
+ */
+
+function equals(a, b) {
+  return Math.abs(a - b) <= EPSILON * Math.max(1.0, Math.abs(a), Math.abs(b));
+}
+if (!Math.hypot) Math.hypot = function () {
+  var y = 0,
+      i = arguments.length;
+
+  while (i--) {
+    y += arguments[i] * arguments[i];
+  }
+
+  return Math.sqrt(y);
+};
+
+/***/ }),
+
+/***/ "./node_modules/gl-matrix/esm/mat4.js":
+/*!********************************************!*\
+  !*** ./node_modules/gl-matrix/esm/mat4.js ***!
+  \********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "create": function() { return /* binding */ create; },
+/* harmony export */   "clone": function() { return /* binding */ clone; },
+/* harmony export */   "copy": function() { return /* binding */ copy; },
+/* harmony export */   "fromValues": function() { return /* binding */ fromValues; },
+/* harmony export */   "set": function() { return /* binding */ set; },
+/* harmony export */   "identity": function() { return /* binding */ identity; },
+/* harmony export */   "transpose": function() { return /* binding */ transpose; },
+/* harmony export */   "invert": function() { return /* binding */ invert; },
+/* harmony export */   "adjoint": function() { return /* binding */ adjoint; },
+/* harmony export */   "determinant": function() { return /* binding */ determinant; },
+/* harmony export */   "multiply": function() { return /* binding */ multiply; },
+/* harmony export */   "translate": function() { return /* binding */ translate; },
+/* harmony export */   "scale": function() { return /* binding */ scale; },
+/* harmony export */   "rotate": function() { return /* binding */ rotate; },
+/* harmony export */   "rotateX": function() { return /* binding */ rotateX; },
+/* harmony export */   "rotateY": function() { return /* binding */ rotateY; },
+/* harmony export */   "rotateZ": function() { return /* binding */ rotateZ; },
+/* harmony export */   "fromTranslation": function() { return /* binding */ fromTranslation; },
+/* harmony export */   "fromScaling": function() { return /* binding */ fromScaling; },
+/* harmony export */   "fromRotation": function() { return /* binding */ fromRotation; },
+/* harmony export */   "fromXRotation": function() { return /* binding */ fromXRotation; },
+/* harmony export */   "fromYRotation": function() { return /* binding */ fromYRotation; },
+/* harmony export */   "fromZRotation": function() { return /* binding */ fromZRotation; },
+/* harmony export */   "fromRotationTranslation": function() { return /* binding */ fromRotationTranslation; },
+/* harmony export */   "fromQuat2": function() { return /* binding */ fromQuat2; },
+/* harmony export */   "getTranslation": function() { return /* binding */ getTranslation; },
+/* harmony export */   "getScaling": function() { return /* binding */ getScaling; },
+/* harmony export */   "getRotation": function() { return /* binding */ getRotation; },
+/* harmony export */   "fromRotationTranslationScale": function() { return /* binding */ fromRotationTranslationScale; },
+/* harmony export */   "fromRotationTranslationScaleOrigin": function() { return /* binding */ fromRotationTranslationScaleOrigin; },
+/* harmony export */   "fromQuat": function() { return /* binding */ fromQuat; },
+/* harmony export */   "frustum": function() { return /* binding */ frustum; },
+/* harmony export */   "perspective": function() { return /* binding */ perspective; },
+/* harmony export */   "perspectiveFromFieldOfView": function() { return /* binding */ perspectiveFromFieldOfView; },
+/* harmony export */   "ortho": function() { return /* binding */ ortho; },
+/* harmony export */   "lookAt": function() { return /* binding */ lookAt; },
+/* harmony export */   "targetTo": function() { return /* binding */ targetTo; },
+/* harmony export */   "str": function() { return /* binding */ str; },
+/* harmony export */   "frob": function() { return /* binding */ frob; },
+/* harmony export */   "add": function() { return /* binding */ add; },
+/* harmony export */   "subtract": function() { return /* binding */ subtract; },
+/* harmony export */   "multiplyScalar": function() { return /* binding */ multiplyScalar; },
+/* harmony export */   "multiplyScalarAndAdd": function() { return /* binding */ multiplyScalarAndAdd; },
+/* harmony export */   "exactEquals": function() { return /* binding */ exactEquals; },
+/* harmony export */   "equals": function() { return /* binding */ equals; },
+/* harmony export */   "mul": function() { return /* binding */ mul; },
+/* harmony export */   "sub": function() { return /* binding */ sub; }
+/* harmony export */ });
+/* harmony import */ var _common_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./common.js */ "./node_modules/gl-matrix/esm/common.js");
+
+/**
+ * 4x4 Matrix<br>Format: column-major, when typed out it looks like row-major<br>The matrices are being post multiplied.
+ * @module mat4
+ */
+
+/**
+ * Creates a new identity mat4
+ *
+ * @returns {mat4} a new 4x4 matrix
+ */
+
+function create() {
+  var out = new _common_js__WEBPACK_IMPORTED_MODULE_0__.ARRAY_TYPE(16);
+
+  if (_common_js__WEBPACK_IMPORTED_MODULE_0__.ARRAY_TYPE != Float32Array) {
+    out[1] = 0;
+    out[2] = 0;
+    out[3] = 0;
+    out[4] = 0;
+    out[6] = 0;
+    out[7] = 0;
+    out[8] = 0;
+    out[9] = 0;
+    out[11] = 0;
+    out[12] = 0;
+    out[13] = 0;
+    out[14] = 0;
+  }
+
+  out[0] = 1;
+  out[5] = 1;
+  out[10] = 1;
+  out[15] = 1;
+  return out;
+}
+/**
+ * Creates a new mat4 initialized with values from an existing matrix
+ *
+ * @param {ReadonlyMat4} a matrix to clone
+ * @returns {mat4} a new 4x4 matrix
+ */
+
+function clone(a) {
+  var out = new _common_js__WEBPACK_IMPORTED_MODULE_0__.ARRAY_TYPE(16);
+  out[0] = a[0];
+  out[1] = a[1];
+  out[2] = a[2];
+  out[3] = a[3];
+  out[4] = a[4];
+  out[5] = a[5];
+  out[6] = a[6];
+  out[7] = a[7];
+  out[8] = a[8];
+  out[9] = a[9];
+  out[10] = a[10];
+  out[11] = a[11];
+  out[12] = a[12];
+  out[13] = a[13];
+  out[14] = a[14];
+  out[15] = a[15];
+  return out;
+}
+/**
+ * Copy the values from one mat4 to another
+ *
+ * @param {mat4} out the receiving matrix
+ * @param {ReadonlyMat4} a the source matrix
+ * @returns {mat4} out
+ */
+
+function copy(out, a) {
+  out[0] = a[0];
+  out[1] = a[1];
+  out[2] = a[2];
+  out[3] = a[3];
+  out[4] = a[4];
+  out[5] = a[5];
+  out[6] = a[6];
+  out[7] = a[7];
+  out[8] = a[8];
+  out[9] = a[9];
+  out[10] = a[10];
+  out[11] = a[11];
+  out[12] = a[12];
+  out[13] = a[13];
+  out[14] = a[14];
+  out[15] = a[15];
+  return out;
+}
+/**
+ * Create a new mat4 with the given values
+ *
+ * @param {Number} m00 Component in column 0, row 0 position (index 0)
+ * @param {Number} m01 Component in column 0, row 1 position (index 1)
+ * @param {Number} m02 Component in column 0, row 2 position (index 2)
+ * @param {Number} m03 Component in column 0, row 3 position (index 3)
+ * @param {Number} m10 Component in column 1, row 0 position (index 4)
+ * @param {Number} m11 Component in column 1, row 1 position (index 5)
+ * @param {Number} m12 Component in column 1, row 2 position (index 6)
+ * @param {Number} m13 Component in column 1, row 3 position (index 7)
+ * @param {Number} m20 Component in column 2, row 0 position (index 8)
+ * @param {Number} m21 Component in column 2, row 1 position (index 9)
+ * @param {Number} m22 Component in column 2, row 2 position (index 10)
+ * @param {Number} m23 Component in column 2, row 3 position (index 11)
+ * @param {Number} m30 Component in column 3, row 0 position (index 12)
+ * @param {Number} m31 Component in column 3, row 1 position (index 13)
+ * @param {Number} m32 Component in column 3, row 2 position (index 14)
+ * @param {Number} m33 Component in column 3, row 3 position (index 15)
+ * @returns {mat4} A new mat4
+ */
+
+function fromValues(m00, m01, m02, m03, m10, m11, m12, m13, m20, m21, m22, m23, m30, m31, m32, m33) {
+  var out = new _common_js__WEBPACK_IMPORTED_MODULE_0__.ARRAY_TYPE(16);
+  out[0] = m00;
+  out[1] = m01;
+  out[2] = m02;
+  out[3] = m03;
+  out[4] = m10;
+  out[5] = m11;
+  out[6] = m12;
+  out[7] = m13;
+  out[8] = m20;
+  out[9] = m21;
+  out[10] = m22;
+  out[11] = m23;
+  out[12] = m30;
+  out[13] = m31;
+  out[14] = m32;
+  out[15] = m33;
+  return out;
+}
+/**
+ * Set the components of a mat4 to the given values
+ *
+ * @param {mat4} out the receiving matrix
+ * @param {Number} m00 Component in column 0, row 0 position (index 0)
+ * @param {Number} m01 Component in column 0, row 1 position (index 1)
+ * @param {Number} m02 Component in column 0, row 2 position (index 2)
+ * @param {Number} m03 Component in column 0, row 3 position (index 3)
+ * @param {Number} m10 Component in column 1, row 0 position (index 4)
+ * @param {Number} m11 Component in column 1, row 1 position (index 5)
+ * @param {Number} m12 Component in column 1, row 2 position (index 6)
+ * @param {Number} m13 Component in column 1, row 3 position (index 7)
+ * @param {Number} m20 Component in column 2, row 0 position (index 8)
+ * @param {Number} m21 Component in column 2, row 1 position (index 9)
+ * @param {Number} m22 Component in column 2, row 2 position (index 10)
+ * @param {Number} m23 Component in column 2, row 3 position (index 11)
+ * @param {Number} m30 Component in column 3, row 0 position (index 12)
+ * @param {Number} m31 Component in column 3, row 1 position (index 13)
+ * @param {Number} m32 Component in column 3, row 2 position (index 14)
+ * @param {Number} m33 Component in column 3, row 3 position (index 15)
+ * @returns {mat4} out
+ */
+
+function set(out, m00, m01, m02, m03, m10, m11, m12, m13, m20, m21, m22, m23, m30, m31, m32, m33) {
+  out[0] = m00;
+  out[1] = m01;
+  out[2] = m02;
+  out[3] = m03;
+  out[4] = m10;
+  out[5] = m11;
+  out[6] = m12;
+  out[7] = m13;
+  out[8] = m20;
+  out[9] = m21;
+  out[10] = m22;
+  out[11] = m23;
+  out[12] = m30;
+  out[13] = m31;
+  out[14] = m32;
+  out[15] = m33;
+  return out;
+}
+/**
+ * Set a mat4 to the identity matrix
+ *
+ * @param {mat4} out the receiving matrix
+ * @returns {mat4} out
+ */
+
+function identity(out) {
+  out[0] = 1;
+  out[1] = 0;
+  out[2] = 0;
+  out[3] = 0;
+  out[4] = 0;
+  out[5] = 1;
+  out[6] = 0;
+  out[7] = 0;
+  out[8] = 0;
+  out[9] = 0;
+  out[10] = 1;
+  out[11] = 0;
+  out[12] = 0;
+  out[13] = 0;
+  out[14] = 0;
+  out[15] = 1;
+  return out;
+}
+/**
+ * Transpose the values of a mat4
+ *
+ * @param {mat4} out the receiving matrix
+ * @param {ReadonlyMat4} a the source matrix
+ * @returns {mat4} out
+ */
+
+function transpose(out, a) {
+  // If we are transposing ourselves we can skip a few steps but have to cache some values
+  if (out === a) {
+    var a01 = a[1],
+        a02 = a[2],
+        a03 = a[3];
+    var a12 = a[6],
+        a13 = a[7];
+    var a23 = a[11];
+    out[1] = a[4];
+    out[2] = a[8];
+    out[3] = a[12];
+    out[4] = a01;
+    out[6] = a[9];
+    out[7] = a[13];
+    out[8] = a02;
+    out[9] = a12;
+    out[11] = a[14];
+    out[12] = a03;
+    out[13] = a13;
+    out[14] = a23;
+  } else {
+    out[0] = a[0];
+    out[1] = a[4];
+    out[2] = a[8];
+    out[3] = a[12];
+    out[4] = a[1];
+    out[5] = a[5];
+    out[6] = a[9];
+    out[7] = a[13];
+    out[8] = a[2];
+    out[9] = a[6];
+    out[10] = a[10];
+    out[11] = a[14];
+    out[12] = a[3];
+    out[13] = a[7];
+    out[14] = a[11];
+    out[15] = a[15];
+  }
+
+  return out;
+}
+/**
+ * Inverts a mat4
+ *
+ * @param {mat4} out the receiving matrix
+ * @param {ReadonlyMat4} a the source matrix
+ * @returns {mat4} out
+ */
+
+function invert(out, a) {
+  var a00 = a[0],
+      a01 = a[1],
+      a02 = a[2],
+      a03 = a[3];
+  var a10 = a[4],
+      a11 = a[5],
+      a12 = a[6],
+      a13 = a[7];
+  var a20 = a[8],
+      a21 = a[9],
+      a22 = a[10],
+      a23 = a[11];
+  var a30 = a[12],
+      a31 = a[13],
+      a32 = a[14],
+      a33 = a[15];
+  var b00 = a00 * a11 - a01 * a10;
+  var b01 = a00 * a12 - a02 * a10;
+  var b02 = a00 * a13 - a03 * a10;
+  var b03 = a01 * a12 - a02 * a11;
+  var b04 = a01 * a13 - a03 * a11;
+  var b05 = a02 * a13 - a03 * a12;
+  var b06 = a20 * a31 - a21 * a30;
+  var b07 = a20 * a32 - a22 * a30;
+  var b08 = a20 * a33 - a23 * a30;
+  var b09 = a21 * a32 - a22 * a31;
+  var b10 = a21 * a33 - a23 * a31;
+  var b11 = a22 * a33 - a23 * a32; // Calculate the determinant
+
+  var det = b00 * b11 - b01 * b10 + b02 * b09 + b03 * b08 - b04 * b07 + b05 * b06;
+
+  if (!det) {
+    return null;
+  }
+
+  det = 1.0 / det;
+  out[0] = (a11 * b11 - a12 * b10 + a13 * b09) * det;
+  out[1] = (a02 * b10 - a01 * b11 - a03 * b09) * det;
+  out[2] = (a31 * b05 - a32 * b04 + a33 * b03) * det;
+  out[3] = (a22 * b04 - a21 * b05 - a23 * b03) * det;
+  out[4] = (a12 * b08 - a10 * b11 - a13 * b07) * det;
+  out[5] = (a00 * b11 - a02 * b08 + a03 * b07) * det;
+  out[6] = (a32 * b02 - a30 * b05 - a33 * b01) * det;
+  out[7] = (a20 * b05 - a22 * b02 + a23 * b01) * det;
+  out[8] = (a10 * b10 - a11 * b08 + a13 * b06) * det;
+  out[9] = (a01 * b08 - a00 * b10 - a03 * b06) * det;
+  out[10] = (a30 * b04 - a31 * b02 + a33 * b00) * det;
+  out[11] = (a21 * b02 - a20 * b04 - a23 * b00) * det;
+  out[12] = (a11 * b07 - a10 * b09 - a12 * b06) * det;
+  out[13] = (a00 * b09 - a01 * b07 + a02 * b06) * det;
+  out[14] = (a31 * b01 - a30 * b03 - a32 * b00) * det;
+  out[15] = (a20 * b03 - a21 * b01 + a22 * b00) * det;
+  return out;
+}
+/**
+ * Calculates the adjugate of a mat4
+ *
+ * @param {mat4} out the receiving matrix
+ * @param {ReadonlyMat4} a the source matrix
+ * @returns {mat4} out
+ */
+
+function adjoint(out, a) {
+  var a00 = a[0],
+      a01 = a[1],
+      a02 = a[2],
+      a03 = a[3];
+  var a10 = a[4],
+      a11 = a[5],
+      a12 = a[6],
+      a13 = a[7];
+  var a20 = a[8],
+      a21 = a[9],
+      a22 = a[10],
+      a23 = a[11];
+  var a30 = a[12],
+      a31 = a[13],
+      a32 = a[14],
+      a33 = a[15];
+  out[0] = a11 * (a22 * a33 - a23 * a32) - a21 * (a12 * a33 - a13 * a32) + a31 * (a12 * a23 - a13 * a22);
+  out[1] = -(a01 * (a22 * a33 - a23 * a32) - a21 * (a02 * a33 - a03 * a32) + a31 * (a02 * a23 - a03 * a22));
+  out[2] = a01 * (a12 * a33 - a13 * a32) - a11 * (a02 * a33 - a03 * a32) + a31 * (a02 * a13 - a03 * a12);
+  out[3] = -(a01 * (a12 * a23 - a13 * a22) - a11 * (a02 * a23 - a03 * a22) + a21 * (a02 * a13 - a03 * a12));
+  out[4] = -(a10 * (a22 * a33 - a23 * a32) - a20 * (a12 * a33 - a13 * a32) + a30 * (a12 * a23 - a13 * a22));
+  out[5] = a00 * (a22 * a33 - a23 * a32) - a20 * (a02 * a33 - a03 * a32) + a30 * (a02 * a23 - a03 * a22);
+  out[6] = -(a00 * (a12 * a33 - a13 * a32) - a10 * (a02 * a33 - a03 * a32) + a30 * (a02 * a13 - a03 * a12));
+  out[7] = a00 * (a12 * a23 - a13 * a22) - a10 * (a02 * a23 - a03 * a22) + a20 * (a02 * a13 - a03 * a12);
+  out[8] = a10 * (a21 * a33 - a23 * a31) - a20 * (a11 * a33 - a13 * a31) + a30 * (a11 * a23 - a13 * a21);
+  out[9] = -(a00 * (a21 * a33 - a23 * a31) - a20 * (a01 * a33 - a03 * a31) + a30 * (a01 * a23 - a03 * a21));
+  out[10] = a00 * (a11 * a33 - a13 * a31) - a10 * (a01 * a33 - a03 * a31) + a30 * (a01 * a13 - a03 * a11);
+  out[11] = -(a00 * (a11 * a23 - a13 * a21) - a10 * (a01 * a23 - a03 * a21) + a20 * (a01 * a13 - a03 * a11));
+  out[12] = -(a10 * (a21 * a32 - a22 * a31) - a20 * (a11 * a32 - a12 * a31) + a30 * (a11 * a22 - a12 * a21));
+  out[13] = a00 * (a21 * a32 - a22 * a31) - a20 * (a01 * a32 - a02 * a31) + a30 * (a01 * a22 - a02 * a21);
+  out[14] = -(a00 * (a11 * a32 - a12 * a31) - a10 * (a01 * a32 - a02 * a31) + a30 * (a01 * a12 - a02 * a11));
+  out[15] = a00 * (a11 * a22 - a12 * a21) - a10 * (a01 * a22 - a02 * a21) + a20 * (a01 * a12 - a02 * a11);
+  return out;
+}
+/**
+ * Calculates the determinant of a mat4
+ *
+ * @param {ReadonlyMat4} a the source matrix
+ * @returns {Number} determinant of a
+ */
+
+function determinant(a) {
+  var a00 = a[0],
+      a01 = a[1],
+      a02 = a[2],
+      a03 = a[3];
+  var a10 = a[4],
+      a11 = a[5],
+      a12 = a[6],
+      a13 = a[7];
+  var a20 = a[8],
+      a21 = a[9],
+      a22 = a[10],
+      a23 = a[11];
+  var a30 = a[12],
+      a31 = a[13],
+      a32 = a[14],
+      a33 = a[15];
+  var b00 = a00 * a11 - a01 * a10;
+  var b01 = a00 * a12 - a02 * a10;
+  var b02 = a00 * a13 - a03 * a10;
+  var b03 = a01 * a12 - a02 * a11;
+  var b04 = a01 * a13 - a03 * a11;
+  var b05 = a02 * a13 - a03 * a12;
+  var b06 = a20 * a31 - a21 * a30;
+  var b07 = a20 * a32 - a22 * a30;
+  var b08 = a20 * a33 - a23 * a30;
+  var b09 = a21 * a32 - a22 * a31;
+  var b10 = a21 * a33 - a23 * a31;
+  var b11 = a22 * a33 - a23 * a32; // Calculate the determinant
+
+  return b00 * b11 - b01 * b10 + b02 * b09 + b03 * b08 - b04 * b07 + b05 * b06;
+}
+/**
+ * Multiplies two mat4s
+ *
+ * @param {mat4} out the receiving matrix
+ * @param {ReadonlyMat4} a the first operand
+ * @param {ReadonlyMat4} b the second operand
+ * @returns {mat4} out
+ */
+
+function multiply(out, a, b) {
+  var a00 = a[0],
+      a01 = a[1],
+      a02 = a[2],
+      a03 = a[3];
+  var a10 = a[4],
+      a11 = a[5],
+      a12 = a[6],
+      a13 = a[7];
+  var a20 = a[8],
+      a21 = a[9],
+      a22 = a[10],
+      a23 = a[11];
+  var a30 = a[12],
+      a31 = a[13],
+      a32 = a[14],
+      a33 = a[15]; // Cache only the current line of the second matrix
+
+  var b0 = b[0],
+      b1 = b[1],
+      b2 = b[2],
+      b3 = b[3];
+  out[0] = b0 * a00 + b1 * a10 + b2 * a20 + b3 * a30;
+  out[1] = b0 * a01 + b1 * a11 + b2 * a21 + b3 * a31;
+  out[2] = b0 * a02 + b1 * a12 + b2 * a22 + b3 * a32;
+  out[3] = b0 * a03 + b1 * a13 + b2 * a23 + b3 * a33;
+  b0 = b[4];
+  b1 = b[5];
+  b2 = b[6];
+  b3 = b[7];
+  out[4] = b0 * a00 + b1 * a10 + b2 * a20 + b3 * a30;
+  out[5] = b0 * a01 + b1 * a11 + b2 * a21 + b3 * a31;
+  out[6] = b0 * a02 + b1 * a12 + b2 * a22 + b3 * a32;
+  out[7] = b0 * a03 + b1 * a13 + b2 * a23 + b3 * a33;
+  b0 = b[8];
+  b1 = b[9];
+  b2 = b[10];
+  b3 = b[11];
+  out[8] = b0 * a00 + b1 * a10 + b2 * a20 + b3 * a30;
+  out[9] = b0 * a01 + b1 * a11 + b2 * a21 + b3 * a31;
+  out[10] = b0 * a02 + b1 * a12 + b2 * a22 + b3 * a32;
+  out[11] = b0 * a03 + b1 * a13 + b2 * a23 + b3 * a33;
+  b0 = b[12];
+  b1 = b[13];
+  b2 = b[14];
+  b3 = b[15];
+  out[12] = b0 * a00 + b1 * a10 + b2 * a20 + b3 * a30;
+  out[13] = b0 * a01 + b1 * a11 + b2 * a21 + b3 * a31;
+  out[14] = b0 * a02 + b1 * a12 + b2 * a22 + b3 * a32;
+  out[15] = b0 * a03 + b1 * a13 + b2 * a23 + b3 * a33;
+  return out;
+}
+/**
+ * Translate a mat4 by the given vector
+ *
+ * @param {mat4} out the receiving matrix
+ * @param {ReadonlyMat4} a the matrix to translate
+ * @param {ReadonlyVec3} v vector to translate by
+ * @returns {mat4} out
+ */
+
+function translate(out, a, v) {
+  var x = v[0],
+      y = v[1],
+      z = v[2];
+  var a00, a01, a02, a03;
+  var a10, a11, a12, a13;
+  var a20, a21, a22, a23;
+
+  if (a === out) {
+    out[12] = a[0] * x + a[4] * y + a[8] * z + a[12];
+    out[13] = a[1] * x + a[5] * y + a[9] * z + a[13];
+    out[14] = a[2] * x + a[6] * y + a[10] * z + a[14];
+    out[15] = a[3] * x + a[7] * y + a[11] * z + a[15];
+  } else {
+    a00 = a[0];
+    a01 = a[1];
+    a02 = a[2];
+    a03 = a[3];
+    a10 = a[4];
+    a11 = a[5];
+    a12 = a[6];
+    a13 = a[7];
+    a20 = a[8];
+    a21 = a[9];
+    a22 = a[10];
+    a23 = a[11];
+    out[0] = a00;
+    out[1] = a01;
+    out[2] = a02;
+    out[3] = a03;
+    out[4] = a10;
+    out[5] = a11;
+    out[6] = a12;
+    out[7] = a13;
+    out[8] = a20;
+    out[9] = a21;
+    out[10] = a22;
+    out[11] = a23;
+    out[12] = a00 * x + a10 * y + a20 * z + a[12];
+    out[13] = a01 * x + a11 * y + a21 * z + a[13];
+    out[14] = a02 * x + a12 * y + a22 * z + a[14];
+    out[15] = a03 * x + a13 * y + a23 * z + a[15];
+  }
+
+  return out;
+}
+/**
+ * Scales the mat4 by the dimensions in the given vec3 not using vectorization
+ *
+ * @param {mat4} out the receiving matrix
+ * @param {ReadonlyMat4} a the matrix to scale
+ * @param {ReadonlyVec3} v the vec3 to scale the matrix by
+ * @returns {mat4} out
+ **/
+
+function scale(out, a, v) {
+  var x = v[0],
+      y = v[1],
+      z = v[2];
+  out[0] = a[0] * x;
+  out[1] = a[1] * x;
+  out[2] = a[2] * x;
+  out[3] = a[3] * x;
+  out[4] = a[4] * y;
+  out[5] = a[5] * y;
+  out[6] = a[6] * y;
+  out[7] = a[7] * y;
+  out[8] = a[8] * z;
+  out[9] = a[9] * z;
+  out[10] = a[10] * z;
+  out[11] = a[11] * z;
+  out[12] = a[12];
+  out[13] = a[13];
+  out[14] = a[14];
+  out[15] = a[15];
+  return out;
+}
+/**
+ * Rotates a mat4 by the given angle around the given axis
+ *
+ * @param {mat4} out the receiving matrix
+ * @param {ReadonlyMat4} a the matrix to rotate
+ * @param {Number} rad the angle to rotate the matrix by
+ * @param {ReadonlyVec3} axis the axis to rotate around
+ * @returns {mat4} out
+ */
+
+function rotate(out, a, rad, axis) {
+  var x = axis[0],
+      y = axis[1],
+      z = axis[2];
+  var len = Math.hypot(x, y, z);
+  var s, c, t;
+  var a00, a01, a02, a03;
+  var a10, a11, a12, a13;
+  var a20, a21, a22, a23;
+  var b00, b01, b02;
+  var b10, b11, b12;
+  var b20, b21, b22;
+
+  if (len < _common_js__WEBPACK_IMPORTED_MODULE_0__.EPSILON) {
+    return null;
+  }
+
+  len = 1 / len;
+  x *= len;
+  y *= len;
+  z *= len;
+  s = Math.sin(rad);
+  c = Math.cos(rad);
+  t = 1 - c;
+  a00 = a[0];
+  a01 = a[1];
+  a02 = a[2];
+  a03 = a[3];
+  a10 = a[4];
+  a11 = a[5];
+  a12 = a[6];
+  a13 = a[7];
+  a20 = a[8];
+  a21 = a[9];
+  a22 = a[10];
+  a23 = a[11]; // Construct the elements of the rotation matrix
+
+  b00 = x * x * t + c;
+  b01 = y * x * t + z * s;
+  b02 = z * x * t - y * s;
+  b10 = x * y * t - z * s;
+  b11 = y * y * t + c;
+  b12 = z * y * t + x * s;
+  b20 = x * z * t + y * s;
+  b21 = y * z * t - x * s;
+  b22 = z * z * t + c; // Perform rotation-specific matrix multiplication
+
+  out[0] = a00 * b00 + a10 * b01 + a20 * b02;
+  out[1] = a01 * b00 + a11 * b01 + a21 * b02;
+  out[2] = a02 * b00 + a12 * b01 + a22 * b02;
+  out[3] = a03 * b00 + a13 * b01 + a23 * b02;
+  out[4] = a00 * b10 + a10 * b11 + a20 * b12;
+  out[5] = a01 * b10 + a11 * b11 + a21 * b12;
+  out[6] = a02 * b10 + a12 * b11 + a22 * b12;
+  out[7] = a03 * b10 + a13 * b11 + a23 * b12;
+  out[8] = a00 * b20 + a10 * b21 + a20 * b22;
+  out[9] = a01 * b20 + a11 * b21 + a21 * b22;
+  out[10] = a02 * b20 + a12 * b21 + a22 * b22;
+  out[11] = a03 * b20 + a13 * b21 + a23 * b22;
+
+  if (a !== out) {
+    // If the source and destination differ, copy the unchanged last row
+    out[12] = a[12];
+    out[13] = a[13];
+    out[14] = a[14];
+    out[15] = a[15];
+  }
+
+  return out;
+}
+/**
+ * Rotates a matrix by the given angle around the X axis
+ *
+ * @param {mat4} out the receiving matrix
+ * @param {ReadonlyMat4} a the matrix to rotate
+ * @param {Number} rad the angle to rotate the matrix by
+ * @returns {mat4} out
+ */
+
+function rotateX(out, a, rad) {
+  var s = Math.sin(rad);
+  var c = Math.cos(rad);
+  var a10 = a[4];
+  var a11 = a[5];
+  var a12 = a[6];
+  var a13 = a[7];
+  var a20 = a[8];
+  var a21 = a[9];
+  var a22 = a[10];
+  var a23 = a[11];
+
+  if (a !== out) {
+    // If the source and destination differ, copy the unchanged rows
+    out[0] = a[0];
+    out[1] = a[1];
+    out[2] = a[2];
+    out[3] = a[3];
+    out[12] = a[12];
+    out[13] = a[13];
+    out[14] = a[14];
+    out[15] = a[15];
+  } // Perform axis-specific matrix multiplication
+
+
+  out[4] = a10 * c + a20 * s;
+  out[5] = a11 * c + a21 * s;
+  out[6] = a12 * c + a22 * s;
+  out[7] = a13 * c + a23 * s;
+  out[8] = a20 * c - a10 * s;
+  out[9] = a21 * c - a11 * s;
+  out[10] = a22 * c - a12 * s;
+  out[11] = a23 * c - a13 * s;
+  return out;
+}
+/**
+ * Rotates a matrix by the given angle around the Y axis
+ *
+ * @param {mat4} out the receiving matrix
+ * @param {ReadonlyMat4} a the matrix to rotate
+ * @param {Number} rad the angle to rotate the matrix by
+ * @returns {mat4} out
+ */
+
+function rotateY(out, a, rad) {
+  var s = Math.sin(rad);
+  var c = Math.cos(rad);
+  var a00 = a[0];
+  var a01 = a[1];
+  var a02 = a[2];
+  var a03 = a[3];
+  var a20 = a[8];
+  var a21 = a[9];
+  var a22 = a[10];
+  var a23 = a[11];
+
+  if (a !== out) {
+    // If the source and destination differ, copy the unchanged rows
+    out[4] = a[4];
+    out[5] = a[5];
+    out[6] = a[6];
+    out[7] = a[7];
+    out[12] = a[12];
+    out[13] = a[13];
+    out[14] = a[14];
+    out[15] = a[15];
+  } // Perform axis-specific matrix multiplication
+
+
+  out[0] = a00 * c - a20 * s;
+  out[1] = a01 * c - a21 * s;
+  out[2] = a02 * c - a22 * s;
+  out[3] = a03 * c - a23 * s;
+  out[8] = a00 * s + a20 * c;
+  out[9] = a01 * s + a21 * c;
+  out[10] = a02 * s + a22 * c;
+  out[11] = a03 * s + a23 * c;
+  return out;
+}
+/**
+ * Rotates a matrix by the given angle around the Z axis
+ *
+ * @param {mat4} out the receiving matrix
+ * @param {ReadonlyMat4} a the matrix to rotate
+ * @param {Number} rad the angle to rotate the matrix by
+ * @returns {mat4} out
+ */
+
+function rotateZ(out, a, rad) {
+  var s = Math.sin(rad);
+  var c = Math.cos(rad);
+  var a00 = a[0];
+  var a01 = a[1];
+  var a02 = a[2];
+  var a03 = a[3];
+  var a10 = a[4];
+  var a11 = a[5];
+  var a12 = a[6];
+  var a13 = a[7];
+
+  if (a !== out) {
+    // If the source and destination differ, copy the unchanged last row
+    out[8] = a[8];
+    out[9] = a[9];
+    out[10] = a[10];
+    out[11] = a[11];
+    out[12] = a[12];
+    out[13] = a[13];
+    out[14] = a[14];
+    out[15] = a[15];
+  } // Perform axis-specific matrix multiplication
+
+
+  out[0] = a00 * c + a10 * s;
+  out[1] = a01 * c + a11 * s;
+  out[2] = a02 * c + a12 * s;
+  out[3] = a03 * c + a13 * s;
+  out[4] = a10 * c - a00 * s;
+  out[5] = a11 * c - a01 * s;
+  out[6] = a12 * c - a02 * s;
+  out[7] = a13 * c - a03 * s;
+  return out;
+}
+/**
+ * Creates a matrix from a vector translation
+ * This is equivalent to (but much faster than):
+ *
+ *     mat4.identity(dest);
+ *     mat4.translate(dest, dest, vec);
+ *
+ * @param {mat4} out mat4 receiving operation result
+ * @param {ReadonlyVec3} v Translation vector
+ * @returns {mat4} out
+ */
+
+function fromTranslation(out, v) {
+  out[0] = 1;
+  out[1] = 0;
+  out[2] = 0;
+  out[3] = 0;
+  out[4] = 0;
+  out[5] = 1;
+  out[6] = 0;
+  out[7] = 0;
+  out[8] = 0;
+  out[9] = 0;
+  out[10] = 1;
+  out[11] = 0;
+  out[12] = v[0];
+  out[13] = v[1];
+  out[14] = v[2];
+  out[15] = 1;
+  return out;
+}
+/**
+ * Creates a matrix from a vector scaling
+ * This is equivalent to (but much faster than):
+ *
+ *     mat4.identity(dest);
+ *     mat4.scale(dest, dest, vec);
+ *
+ * @param {mat4} out mat4 receiving operation result
+ * @param {ReadonlyVec3} v Scaling vector
+ * @returns {mat4} out
+ */
+
+function fromScaling(out, v) {
+  out[0] = v[0];
+  out[1] = 0;
+  out[2] = 0;
+  out[3] = 0;
+  out[4] = 0;
+  out[5] = v[1];
+  out[6] = 0;
+  out[7] = 0;
+  out[8] = 0;
+  out[9] = 0;
+  out[10] = v[2];
+  out[11] = 0;
+  out[12] = 0;
+  out[13] = 0;
+  out[14] = 0;
+  out[15] = 1;
+  return out;
+}
+/**
+ * Creates a matrix from a given angle around a given axis
+ * This is equivalent to (but much faster than):
+ *
+ *     mat4.identity(dest);
+ *     mat4.rotate(dest, dest, rad, axis);
+ *
+ * @param {mat4} out mat4 receiving operation result
+ * @param {Number} rad the angle to rotate the matrix by
+ * @param {ReadonlyVec3} axis the axis to rotate around
+ * @returns {mat4} out
+ */
+
+function fromRotation(out, rad, axis) {
+  var x = axis[0],
+      y = axis[1],
+      z = axis[2];
+  var len = Math.hypot(x, y, z);
+  var s, c, t;
+
+  if (len < _common_js__WEBPACK_IMPORTED_MODULE_0__.EPSILON) {
+    return null;
+  }
+
+  len = 1 / len;
+  x *= len;
+  y *= len;
+  z *= len;
+  s = Math.sin(rad);
+  c = Math.cos(rad);
+  t = 1 - c; // Perform rotation-specific matrix multiplication
+
+  out[0] = x * x * t + c;
+  out[1] = y * x * t + z * s;
+  out[2] = z * x * t - y * s;
+  out[3] = 0;
+  out[4] = x * y * t - z * s;
+  out[5] = y * y * t + c;
+  out[6] = z * y * t + x * s;
+  out[7] = 0;
+  out[8] = x * z * t + y * s;
+  out[9] = y * z * t - x * s;
+  out[10] = z * z * t + c;
+  out[11] = 0;
+  out[12] = 0;
+  out[13] = 0;
+  out[14] = 0;
+  out[15] = 1;
+  return out;
+}
+/**
+ * Creates a matrix from the given angle around the X axis
+ * This is equivalent to (but much faster than):
+ *
+ *     mat4.identity(dest);
+ *     mat4.rotateX(dest, dest, rad);
+ *
+ * @param {mat4} out mat4 receiving operation result
+ * @param {Number} rad the angle to rotate the matrix by
+ * @returns {mat4} out
+ */
+
+function fromXRotation(out, rad) {
+  var s = Math.sin(rad);
+  var c = Math.cos(rad); // Perform axis-specific matrix multiplication
+
+  out[0] = 1;
+  out[1] = 0;
+  out[2] = 0;
+  out[3] = 0;
+  out[4] = 0;
+  out[5] = c;
+  out[6] = s;
+  out[7] = 0;
+  out[8] = 0;
+  out[9] = -s;
+  out[10] = c;
+  out[11] = 0;
+  out[12] = 0;
+  out[13] = 0;
+  out[14] = 0;
+  out[15] = 1;
+  return out;
+}
+/**
+ * Creates a matrix from the given angle around the Y axis
+ * This is equivalent to (but much faster than):
+ *
+ *     mat4.identity(dest);
+ *     mat4.rotateY(dest, dest, rad);
+ *
+ * @param {mat4} out mat4 receiving operation result
+ * @param {Number} rad the angle to rotate the matrix by
+ * @returns {mat4} out
+ */
+
+function fromYRotation(out, rad) {
+  var s = Math.sin(rad);
+  var c = Math.cos(rad); // Perform axis-specific matrix multiplication
+
+  out[0] = c;
+  out[1] = 0;
+  out[2] = -s;
+  out[3] = 0;
+  out[4] = 0;
+  out[5] = 1;
+  out[6] = 0;
+  out[7] = 0;
+  out[8] = s;
+  out[9] = 0;
+  out[10] = c;
+  out[11] = 0;
+  out[12] = 0;
+  out[13] = 0;
+  out[14] = 0;
+  out[15] = 1;
+  return out;
+}
+/**
+ * Creates a matrix from the given angle around the Z axis
+ * This is equivalent to (but much faster than):
+ *
+ *     mat4.identity(dest);
+ *     mat4.rotateZ(dest, dest, rad);
+ *
+ * @param {mat4} out mat4 receiving operation result
+ * @param {Number} rad the angle to rotate the matrix by
+ * @returns {mat4} out
+ */
+
+function fromZRotation(out, rad) {
+  var s = Math.sin(rad);
+  var c = Math.cos(rad); // Perform axis-specific matrix multiplication
+
+  out[0] = c;
+  out[1] = s;
+  out[2] = 0;
+  out[3] = 0;
+  out[4] = -s;
+  out[5] = c;
+  out[6] = 0;
+  out[7] = 0;
+  out[8] = 0;
+  out[9] = 0;
+  out[10] = 1;
+  out[11] = 0;
+  out[12] = 0;
+  out[13] = 0;
+  out[14] = 0;
+  out[15] = 1;
+  return out;
+}
+/**
+ * Creates a matrix from a quaternion rotation and vector translation
+ * This is equivalent to (but much faster than):
+ *
+ *     mat4.identity(dest);
+ *     mat4.translate(dest, vec);
+ *     let quatMat = mat4.create();
+ *     quat4.toMat4(quat, quatMat);
+ *     mat4.multiply(dest, quatMat);
+ *
+ * @param {mat4} out mat4 receiving operation result
+ * @param {quat4} q Rotation quaternion
+ * @param {ReadonlyVec3} v Translation vector
+ * @returns {mat4} out
+ */
+
+function fromRotationTranslation(out, q, v) {
+  // Quaternion math
+  var x = q[0],
+      y = q[1],
+      z = q[2],
+      w = q[3];
+  var x2 = x + x;
+  var y2 = y + y;
+  var z2 = z + z;
+  var xx = x * x2;
+  var xy = x * y2;
+  var xz = x * z2;
+  var yy = y * y2;
+  var yz = y * z2;
+  var zz = z * z2;
+  var wx = w * x2;
+  var wy = w * y2;
+  var wz = w * z2;
+  out[0] = 1 - (yy + zz);
+  out[1] = xy + wz;
+  out[2] = xz - wy;
+  out[3] = 0;
+  out[4] = xy - wz;
+  out[5] = 1 - (xx + zz);
+  out[6] = yz + wx;
+  out[7] = 0;
+  out[8] = xz + wy;
+  out[9] = yz - wx;
+  out[10] = 1 - (xx + yy);
+  out[11] = 0;
+  out[12] = v[0];
+  out[13] = v[1];
+  out[14] = v[2];
+  out[15] = 1;
+  return out;
+}
+/**
+ * Creates a new mat4 from a dual quat.
+ *
+ * @param {mat4} out Matrix
+ * @param {ReadonlyQuat2} a Dual Quaternion
+ * @returns {mat4} mat4 receiving operation result
+ */
+
+function fromQuat2(out, a) {
+  var translation = new _common_js__WEBPACK_IMPORTED_MODULE_0__.ARRAY_TYPE(3);
+  var bx = -a[0],
+      by = -a[1],
+      bz = -a[2],
+      bw = a[3],
+      ax = a[4],
+      ay = a[5],
+      az = a[6],
+      aw = a[7];
+  var magnitude = bx * bx + by * by + bz * bz + bw * bw; //Only scale if it makes sense
+
+  if (magnitude > 0) {
+    translation[0] = (ax * bw + aw * bx + ay * bz - az * by) * 2 / magnitude;
+    translation[1] = (ay * bw + aw * by + az * bx - ax * bz) * 2 / magnitude;
+    translation[2] = (az * bw + aw * bz + ax * by - ay * bx) * 2 / magnitude;
+  } else {
+    translation[0] = (ax * bw + aw * bx + ay * bz - az * by) * 2;
+    translation[1] = (ay * bw + aw * by + az * bx - ax * bz) * 2;
+    translation[2] = (az * bw + aw * bz + ax * by - ay * bx) * 2;
+  }
+
+  fromRotationTranslation(out, a, translation);
+  return out;
+}
+/**
+ * Returns the translation vector component of a transformation
+ *  matrix. If a matrix is built with fromRotationTranslation,
+ *  the returned vector will be the same as the translation vector
+ *  originally supplied.
+ * @param  {vec3} out Vector to receive translation component
+ * @param  {ReadonlyMat4} mat Matrix to be decomposed (input)
+ * @return {vec3} out
+ */
+
+function getTranslation(out, mat) {
+  out[0] = mat[12];
+  out[1] = mat[13];
+  out[2] = mat[14];
+  return out;
+}
+/**
+ * Returns the scaling factor component of a transformation
+ *  matrix. If a matrix is built with fromRotationTranslationScale
+ *  with a normalized Quaternion paramter, the returned vector will be
+ *  the same as the scaling vector
+ *  originally supplied.
+ * @param  {vec3} out Vector to receive scaling factor component
+ * @param  {ReadonlyMat4} mat Matrix to be decomposed (input)
+ * @return {vec3} out
+ */
+
+function getScaling(out, mat) {
+  var m11 = mat[0];
+  var m12 = mat[1];
+  var m13 = mat[2];
+  var m21 = mat[4];
+  var m22 = mat[5];
+  var m23 = mat[6];
+  var m31 = mat[8];
+  var m32 = mat[9];
+  var m33 = mat[10];
+  out[0] = Math.hypot(m11, m12, m13);
+  out[1] = Math.hypot(m21, m22, m23);
+  out[2] = Math.hypot(m31, m32, m33);
+  return out;
+}
+/**
+ * Returns a quaternion representing the rotational component
+ *  of a transformation matrix. If a matrix is built with
+ *  fromRotationTranslation, the returned quaternion will be the
+ *  same as the quaternion originally supplied.
+ * @param {quat} out Quaternion to receive the rotation component
+ * @param {ReadonlyMat4} mat Matrix to be decomposed (input)
+ * @return {quat} out
+ */
+
+function getRotation(out, mat) {
+  var scaling = new _common_js__WEBPACK_IMPORTED_MODULE_0__.ARRAY_TYPE(3);
+  getScaling(scaling, mat);
+  var is1 = 1 / scaling[0];
+  var is2 = 1 / scaling[1];
+  var is3 = 1 / scaling[2];
+  var sm11 = mat[0] * is1;
+  var sm12 = mat[1] * is2;
+  var sm13 = mat[2] * is3;
+  var sm21 = mat[4] * is1;
+  var sm22 = mat[5] * is2;
+  var sm23 = mat[6] * is3;
+  var sm31 = mat[8] * is1;
+  var sm32 = mat[9] * is2;
+  var sm33 = mat[10] * is3;
+  var trace = sm11 + sm22 + sm33;
+  var S = 0;
+
+  if (trace > 0) {
+    S = Math.sqrt(trace + 1.0) * 2;
+    out[3] = 0.25 * S;
+    out[0] = (sm23 - sm32) / S;
+    out[1] = (sm31 - sm13) / S;
+    out[2] = (sm12 - sm21) / S;
+  } else if (sm11 > sm22 && sm11 > sm33) {
+    S = Math.sqrt(1.0 + sm11 - sm22 - sm33) * 2;
+    out[3] = (sm23 - sm32) / S;
+    out[0] = 0.25 * S;
+    out[1] = (sm12 + sm21) / S;
+    out[2] = (sm31 + sm13) / S;
+  } else if (sm22 > sm33) {
+    S = Math.sqrt(1.0 + sm22 - sm11 - sm33) * 2;
+    out[3] = (sm31 - sm13) / S;
+    out[0] = (sm12 + sm21) / S;
+    out[1] = 0.25 * S;
+    out[2] = (sm23 + sm32) / S;
+  } else {
+    S = Math.sqrt(1.0 + sm33 - sm11 - sm22) * 2;
+    out[3] = (sm12 - sm21) / S;
+    out[0] = (sm31 + sm13) / S;
+    out[1] = (sm23 + sm32) / S;
+    out[2] = 0.25 * S;
+  }
+
+  return out;
+}
+/**
+ * Creates a matrix from a quaternion rotation, vector translation and vector scale
+ * This is equivalent to (but much faster than):
+ *
+ *     mat4.identity(dest);
+ *     mat4.translate(dest, vec);
+ *     let quatMat = mat4.create();
+ *     quat4.toMat4(quat, quatMat);
+ *     mat4.multiply(dest, quatMat);
+ *     mat4.scale(dest, scale)
+ *
+ * @param {mat4} out mat4 receiving operation result
+ * @param {quat4} q Rotation quaternion
+ * @param {ReadonlyVec3} v Translation vector
+ * @param {ReadonlyVec3} s Scaling vector
+ * @returns {mat4} out
+ */
+
+function fromRotationTranslationScale(out, q, v, s) {
+  // Quaternion math
+  var x = q[0],
+      y = q[1],
+      z = q[2],
+      w = q[3];
+  var x2 = x + x;
+  var y2 = y + y;
+  var z2 = z + z;
+  var xx = x * x2;
+  var xy = x * y2;
+  var xz = x * z2;
+  var yy = y * y2;
+  var yz = y * z2;
+  var zz = z * z2;
+  var wx = w * x2;
+  var wy = w * y2;
+  var wz = w * z2;
+  var sx = s[0];
+  var sy = s[1];
+  var sz = s[2];
+  out[0] = (1 - (yy + zz)) * sx;
+  out[1] = (xy + wz) * sx;
+  out[2] = (xz - wy) * sx;
+  out[3] = 0;
+  out[4] = (xy - wz) * sy;
+  out[5] = (1 - (xx + zz)) * sy;
+  out[6] = (yz + wx) * sy;
+  out[7] = 0;
+  out[8] = (xz + wy) * sz;
+  out[9] = (yz - wx) * sz;
+  out[10] = (1 - (xx + yy)) * sz;
+  out[11] = 0;
+  out[12] = v[0];
+  out[13] = v[1];
+  out[14] = v[2];
+  out[15] = 1;
+  return out;
+}
+/**
+ * Creates a matrix from a quaternion rotation, vector translation and vector scale, rotating and scaling around the given origin
+ * This is equivalent to (but much faster than):
+ *
+ *     mat4.identity(dest);
+ *     mat4.translate(dest, vec);
+ *     mat4.translate(dest, origin);
+ *     let quatMat = mat4.create();
+ *     quat4.toMat4(quat, quatMat);
+ *     mat4.multiply(dest, quatMat);
+ *     mat4.scale(dest, scale)
+ *     mat4.translate(dest, negativeOrigin);
+ *
+ * @param {mat4} out mat4 receiving operation result
+ * @param {quat4} q Rotation quaternion
+ * @param {ReadonlyVec3} v Translation vector
+ * @param {ReadonlyVec3} s Scaling vector
+ * @param {ReadonlyVec3} o The origin vector around which to scale and rotate
+ * @returns {mat4} out
+ */
+
+function fromRotationTranslationScaleOrigin(out, q, v, s, o) {
+  // Quaternion math
+  var x = q[0],
+      y = q[1],
+      z = q[2],
+      w = q[3];
+  var x2 = x + x;
+  var y2 = y + y;
+  var z2 = z + z;
+  var xx = x * x2;
+  var xy = x * y2;
+  var xz = x * z2;
+  var yy = y * y2;
+  var yz = y * z2;
+  var zz = z * z2;
+  var wx = w * x2;
+  var wy = w * y2;
+  var wz = w * z2;
+  var sx = s[0];
+  var sy = s[1];
+  var sz = s[2];
+  var ox = o[0];
+  var oy = o[1];
+  var oz = o[2];
+  var out0 = (1 - (yy + zz)) * sx;
+  var out1 = (xy + wz) * sx;
+  var out2 = (xz - wy) * sx;
+  var out4 = (xy - wz) * sy;
+  var out5 = (1 - (xx + zz)) * sy;
+  var out6 = (yz + wx) * sy;
+  var out8 = (xz + wy) * sz;
+  var out9 = (yz - wx) * sz;
+  var out10 = (1 - (xx + yy)) * sz;
+  out[0] = out0;
+  out[1] = out1;
+  out[2] = out2;
+  out[3] = 0;
+  out[4] = out4;
+  out[5] = out5;
+  out[6] = out6;
+  out[7] = 0;
+  out[8] = out8;
+  out[9] = out9;
+  out[10] = out10;
+  out[11] = 0;
+  out[12] = v[0] + ox - (out0 * ox + out4 * oy + out8 * oz);
+  out[13] = v[1] + oy - (out1 * ox + out5 * oy + out9 * oz);
+  out[14] = v[2] + oz - (out2 * ox + out6 * oy + out10 * oz);
+  out[15] = 1;
+  return out;
+}
+/**
+ * Calculates a 4x4 matrix from the given quaternion
+ *
+ * @param {mat4} out mat4 receiving operation result
+ * @param {ReadonlyQuat} q Quaternion to create matrix from
+ *
+ * @returns {mat4} out
+ */
+
+function fromQuat(out, q) {
+  var x = q[0],
+      y = q[1],
+      z = q[2],
+      w = q[3];
+  var x2 = x + x;
+  var y2 = y + y;
+  var z2 = z + z;
+  var xx = x * x2;
+  var yx = y * x2;
+  var yy = y * y2;
+  var zx = z * x2;
+  var zy = z * y2;
+  var zz = z * z2;
+  var wx = w * x2;
+  var wy = w * y2;
+  var wz = w * z2;
+  out[0] = 1 - yy - zz;
+  out[1] = yx + wz;
+  out[2] = zx - wy;
+  out[3] = 0;
+  out[4] = yx - wz;
+  out[5] = 1 - xx - zz;
+  out[6] = zy + wx;
+  out[7] = 0;
+  out[8] = zx + wy;
+  out[9] = zy - wx;
+  out[10] = 1 - xx - yy;
+  out[11] = 0;
+  out[12] = 0;
+  out[13] = 0;
+  out[14] = 0;
+  out[15] = 1;
+  return out;
+}
+/**
+ * Generates a frustum matrix with the given bounds
+ *
+ * @param {mat4} out mat4 frustum matrix will be written into
+ * @param {Number} left Left bound of the frustum
+ * @param {Number} right Right bound of the frustum
+ * @param {Number} bottom Bottom bound of the frustum
+ * @param {Number} top Top bound of the frustum
+ * @param {Number} near Near bound of the frustum
+ * @param {Number} far Far bound of the frustum
+ * @returns {mat4} out
+ */
+
+function frustum(out, left, right, bottom, top, near, far) {
+  var rl = 1 / (right - left);
+  var tb = 1 / (top - bottom);
+  var nf = 1 / (near - far);
+  out[0] = near * 2 * rl;
+  out[1] = 0;
+  out[2] = 0;
+  out[3] = 0;
+  out[4] = 0;
+  out[5] = near * 2 * tb;
+  out[6] = 0;
+  out[7] = 0;
+  out[8] = (right + left) * rl;
+  out[9] = (top + bottom) * tb;
+  out[10] = (far + near) * nf;
+  out[11] = -1;
+  out[12] = 0;
+  out[13] = 0;
+  out[14] = far * near * 2 * nf;
+  out[15] = 0;
+  return out;
+}
+/**
+ * Generates a perspective projection matrix with the given bounds.
+ * Passing null/undefined/no value for far will generate infinite projection matrix.
+ *
+ * @param {mat4} out mat4 frustum matrix will be written into
+ * @param {number} fovy Vertical field of view in radians
+ * @param {number} aspect Aspect ratio. typically viewport width/height
+ * @param {number} near Near bound of the frustum
+ * @param {number} far Far bound of the frustum, can be null or Infinity
+ * @returns {mat4} out
+ */
+
+function perspective(out, fovy, aspect, near, far) {
+  var f = 1.0 / Math.tan(fovy / 2),
+      nf;
+  out[0] = f / aspect;
+  out[1] = 0;
+  out[2] = 0;
+  out[3] = 0;
+  out[4] = 0;
+  out[5] = f;
+  out[6] = 0;
+  out[7] = 0;
+  out[8] = 0;
+  out[9] = 0;
+  out[11] = -1;
+  out[12] = 0;
+  out[13] = 0;
+  out[15] = 0;
+
+  if (far != null && far !== Infinity) {
+    nf = 1 / (near - far);
+    out[10] = (far + near) * nf;
+    out[14] = 2 * far * near * nf;
+  } else {
+    out[10] = -1;
+    out[14] = -2 * near;
+  }
+
+  return out;
+}
+/**
+ * Generates a perspective projection matrix with the given field of view.
+ * This is primarily useful for generating projection matrices to be used
+ * with the still experiemental WebVR API.
+ *
+ * @param {mat4} out mat4 frustum matrix will be written into
+ * @param {Object} fov Object containing the following values: upDegrees, downDegrees, leftDegrees, rightDegrees
+ * @param {number} near Near bound of the frustum
+ * @param {number} far Far bound of the frustum
+ * @returns {mat4} out
+ */
+
+function perspectiveFromFieldOfView(out, fov, near, far) {
+  var upTan = Math.tan(fov.upDegrees * Math.PI / 180.0);
+  var downTan = Math.tan(fov.downDegrees * Math.PI / 180.0);
+  var leftTan = Math.tan(fov.leftDegrees * Math.PI / 180.0);
+  var rightTan = Math.tan(fov.rightDegrees * Math.PI / 180.0);
+  var xScale = 2.0 / (leftTan + rightTan);
+  var yScale = 2.0 / (upTan + downTan);
+  out[0] = xScale;
+  out[1] = 0.0;
+  out[2] = 0.0;
+  out[3] = 0.0;
+  out[4] = 0.0;
+  out[5] = yScale;
+  out[6] = 0.0;
+  out[7] = 0.0;
+  out[8] = -((leftTan - rightTan) * xScale * 0.5);
+  out[9] = (upTan - downTan) * yScale * 0.5;
+  out[10] = far / (near - far);
+  out[11] = -1.0;
+  out[12] = 0.0;
+  out[13] = 0.0;
+  out[14] = far * near / (near - far);
+  out[15] = 0.0;
+  return out;
+}
+/**
+ * Generates a orthogonal projection matrix with the given bounds
+ *
+ * @param {mat4} out mat4 frustum matrix will be written into
+ * @param {number} left Left bound of the frustum
+ * @param {number} right Right bound of the frustum
+ * @param {number} bottom Bottom bound of the frustum
+ * @param {number} top Top bound of the frustum
+ * @param {number} near Near bound of the frustum
+ * @param {number} far Far bound of the frustum
+ * @returns {mat4} out
+ */
+
+function ortho(out, left, right, bottom, top, near, far) {
+  var lr = 1 / (left - right);
+  var bt = 1 / (bottom - top);
+  var nf = 1 / (near - far);
+  out[0] = -2 * lr;
+  out[1] = 0;
+  out[2] = 0;
+  out[3] = 0;
+  out[4] = 0;
+  out[5] = -2 * bt;
+  out[6] = 0;
+  out[7] = 0;
+  out[8] = 0;
+  out[9] = 0;
+  out[10] = 2 * nf;
+  out[11] = 0;
+  out[12] = (left + right) * lr;
+  out[13] = (top + bottom) * bt;
+  out[14] = (far + near) * nf;
+  out[15] = 1;
+  return out;
+}
+/**
+ * Generates a look-at matrix with the given eye position, focal point, and up axis.
+ * If you want a matrix that actually makes an object look at another object, you should use targetTo instead.
+ *
+ * @param {mat4} out mat4 frustum matrix will be written into
+ * @param {ReadonlyVec3} eye Position of the viewer
+ * @param {ReadonlyVec3} center Point the viewer is looking at
+ * @param {ReadonlyVec3} up vec3 pointing up
+ * @returns {mat4} out
+ */
+
+function lookAt(out, eye, center, up) {
+  var x0, x1, x2, y0, y1, y2, z0, z1, z2, len;
+  var eyex = eye[0];
+  var eyey = eye[1];
+  var eyez = eye[2];
+  var upx = up[0];
+  var upy = up[1];
+  var upz = up[2];
+  var centerx = center[0];
+  var centery = center[1];
+  var centerz = center[2];
+
+  if (Math.abs(eyex - centerx) < _common_js__WEBPACK_IMPORTED_MODULE_0__.EPSILON && Math.abs(eyey - centery) < _common_js__WEBPACK_IMPORTED_MODULE_0__.EPSILON && Math.abs(eyez - centerz) < _common_js__WEBPACK_IMPORTED_MODULE_0__.EPSILON) {
+    return identity(out);
+  }
+
+  z0 = eyex - centerx;
+  z1 = eyey - centery;
+  z2 = eyez - centerz;
+  len = 1 / Math.hypot(z0, z1, z2);
+  z0 *= len;
+  z1 *= len;
+  z2 *= len;
+  x0 = upy * z2 - upz * z1;
+  x1 = upz * z0 - upx * z2;
+  x2 = upx * z1 - upy * z0;
+  len = Math.hypot(x0, x1, x2);
+
+  if (!len) {
+    x0 = 0;
+    x1 = 0;
+    x2 = 0;
+  } else {
+    len = 1 / len;
+    x0 *= len;
+    x1 *= len;
+    x2 *= len;
+  }
+
+  y0 = z1 * x2 - z2 * x1;
+  y1 = z2 * x0 - z0 * x2;
+  y2 = z0 * x1 - z1 * x0;
+  len = Math.hypot(y0, y1, y2);
+
+  if (!len) {
+    y0 = 0;
+    y1 = 0;
+    y2 = 0;
+  } else {
+    len = 1 / len;
+    y0 *= len;
+    y1 *= len;
+    y2 *= len;
+  }
+
+  out[0] = x0;
+  out[1] = y0;
+  out[2] = z0;
+  out[3] = 0;
+  out[4] = x1;
+  out[5] = y1;
+  out[6] = z1;
+  out[7] = 0;
+  out[8] = x2;
+  out[9] = y2;
+  out[10] = z2;
+  out[11] = 0;
+  out[12] = -(x0 * eyex + x1 * eyey + x2 * eyez);
+  out[13] = -(y0 * eyex + y1 * eyey + y2 * eyez);
+  out[14] = -(z0 * eyex + z1 * eyey + z2 * eyez);
+  out[15] = 1;
+  return out;
+}
+/**
+ * Generates a matrix that makes something look at something else.
+ *
+ * @param {mat4} out mat4 frustum matrix will be written into
+ * @param {ReadonlyVec3} eye Position of the viewer
+ * @param {ReadonlyVec3} center Point the viewer is looking at
+ * @param {ReadonlyVec3} up vec3 pointing up
+ * @returns {mat4} out
+ */
+
+function targetTo(out, eye, target, up) {
+  var eyex = eye[0],
+      eyey = eye[1],
+      eyez = eye[2],
+      upx = up[0],
+      upy = up[1],
+      upz = up[2];
+  var z0 = eyex - target[0],
+      z1 = eyey - target[1],
+      z2 = eyez - target[2];
+  var len = z0 * z0 + z1 * z1 + z2 * z2;
+
+  if (len > 0) {
+    len = 1 / Math.sqrt(len);
+    z0 *= len;
+    z1 *= len;
+    z2 *= len;
+  }
+
+  var x0 = upy * z2 - upz * z1,
+      x1 = upz * z0 - upx * z2,
+      x2 = upx * z1 - upy * z0;
+  len = x0 * x0 + x1 * x1 + x2 * x2;
+
+  if (len > 0) {
+    len = 1 / Math.sqrt(len);
+    x0 *= len;
+    x1 *= len;
+    x2 *= len;
+  }
+
+  out[0] = x0;
+  out[1] = x1;
+  out[2] = x2;
+  out[3] = 0;
+  out[4] = z1 * x2 - z2 * x1;
+  out[5] = z2 * x0 - z0 * x2;
+  out[6] = z0 * x1 - z1 * x0;
+  out[7] = 0;
+  out[8] = z0;
+  out[9] = z1;
+  out[10] = z2;
+  out[11] = 0;
+  out[12] = eyex;
+  out[13] = eyey;
+  out[14] = eyez;
+  out[15] = 1;
+  return out;
+}
+/**
+ * Returns a string representation of a mat4
+ *
+ * @param {ReadonlyMat4} a matrix to represent as a string
+ * @returns {String} string representation of the matrix
+ */
+
+function str(a) {
+  return "mat4(" + a[0] + ", " + a[1] + ", " + a[2] + ", " + a[3] + ", " + a[4] + ", " + a[5] + ", " + a[6] + ", " + a[7] + ", " + a[8] + ", " + a[9] + ", " + a[10] + ", " + a[11] + ", " + a[12] + ", " + a[13] + ", " + a[14] + ", " + a[15] + ")";
+}
+/**
+ * Returns Frobenius norm of a mat4
+ *
+ * @param {ReadonlyMat4} a the matrix to calculate Frobenius norm of
+ * @returns {Number} Frobenius norm
+ */
+
+function frob(a) {
+  return Math.hypot(a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[10], a[11], a[12], a[13], a[14], a[15]);
+}
+/**
+ * Adds two mat4's
+ *
+ * @param {mat4} out the receiving matrix
+ * @param {ReadonlyMat4} a the first operand
+ * @param {ReadonlyMat4} b the second operand
+ * @returns {mat4} out
+ */
+
+function add(out, a, b) {
+  out[0] = a[0] + b[0];
+  out[1] = a[1] + b[1];
+  out[2] = a[2] + b[2];
+  out[3] = a[3] + b[3];
+  out[4] = a[4] + b[4];
+  out[5] = a[5] + b[5];
+  out[6] = a[6] + b[6];
+  out[7] = a[7] + b[7];
+  out[8] = a[8] + b[8];
+  out[9] = a[9] + b[9];
+  out[10] = a[10] + b[10];
+  out[11] = a[11] + b[11];
+  out[12] = a[12] + b[12];
+  out[13] = a[13] + b[13];
+  out[14] = a[14] + b[14];
+  out[15] = a[15] + b[15];
+  return out;
+}
+/**
+ * Subtracts matrix b from matrix a
+ *
+ * @param {mat4} out the receiving matrix
+ * @param {ReadonlyMat4} a the first operand
+ * @param {ReadonlyMat4} b the second operand
+ * @returns {mat4} out
+ */
+
+function subtract(out, a, b) {
+  out[0] = a[0] - b[0];
+  out[1] = a[1] - b[1];
+  out[2] = a[2] - b[2];
+  out[3] = a[3] - b[3];
+  out[4] = a[4] - b[4];
+  out[5] = a[5] - b[5];
+  out[6] = a[6] - b[6];
+  out[7] = a[7] - b[7];
+  out[8] = a[8] - b[8];
+  out[9] = a[9] - b[9];
+  out[10] = a[10] - b[10];
+  out[11] = a[11] - b[11];
+  out[12] = a[12] - b[12];
+  out[13] = a[13] - b[13];
+  out[14] = a[14] - b[14];
+  out[15] = a[15] - b[15];
+  return out;
+}
+/**
+ * Multiply each element of the matrix by a scalar.
+ *
+ * @param {mat4} out the receiving matrix
+ * @param {ReadonlyMat4} a the matrix to scale
+ * @param {Number} b amount to scale the matrix's elements by
+ * @returns {mat4} out
+ */
+
+function multiplyScalar(out, a, b) {
+  out[0] = a[0] * b;
+  out[1] = a[1] * b;
+  out[2] = a[2] * b;
+  out[3] = a[3] * b;
+  out[4] = a[4] * b;
+  out[5] = a[5] * b;
+  out[6] = a[6] * b;
+  out[7] = a[7] * b;
+  out[8] = a[8] * b;
+  out[9] = a[9] * b;
+  out[10] = a[10] * b;
+  out[11] = a[11] * b;
+  out[12] = a[12] * b;
+  out[13] = a[13] * b;
+  out[14] = a[14] * b;
+  out[15] = a[15] * b;
+  return out;
+}
+/**
+ * Adds two mat4's after multiplying each element of the second operand by a scalar value.
+ *
+ * @param {mat4} out the receiving vector
+ * @param {ReadonlyMat4} a the first operand
+ * @param {ReadonlyMat4} b the second operand
+ * @param {Number} scale the amount to scale b's elements by before adding
+ * @returns {mat4} out
+ */
+
+function multiplyScalarAndAdd(out, a, b, scale) {
+  out[0] = a[0] + b[0] * scale;
+  out[1] = a[1] + b[1] * scale;
+  out[2] = a[2] + b[2] * scale;
+  out[3] = a[3] + b[3] * scale;
+  out[4] = a[4] + b[4] * scale;
+  out[5] = a[5] + b[5] * scale;
+  out[6] = a[6] + b[6] * scale;
+  out[7] = a[7] + b[7] * scale;
+  out[8] = a[8] + b[8] * scale;
+  out[9] = a[9] + b[9] * scale;
+  out[10] = a[10] + b[10] * scale;
+  out[11] = a[11] + b[11] * scale;
+  out[12] = a[12] + b[12] * scale;
+  out[13] = a[13] + b[13] * scale;
+  out[14] = a[14] + b[14] * scale;
+  out[15] = a[15] + b[15] * scale;
+  return out;
+}
+/**
+ * Returns whether or not the matrices have exactly the same elements in the same position (when compared with ===)
+ *
+ * @param {ReadonlyMat4} a The first matrix.
+ * @param {ReadonlyMat4} b The second matrix.
+ * @returns {Boolean} True if the matrices are equal, false otherwise.
+ */
+
+function exactEquals(a, b) {
+  return a[0] === b[0] && a[1] === b[1] && a[2] === b[2] && a[3] === b[3] && a[4] === b[4] && a[5] === b[5] && a[6] === b[6] && a[7] === b[7] && a[8] === b[8] && a[9] === b[9] && a[10] === b[10] && a[11] === b[11] && a[12] === b[12] && a[13] === b[13] && a[14] === b[14] && a[15] === b[15];
+}
+/**
+ * Returns whether or not the matrices have approximately the same elements in the same position.
+ *
+ * @param {ReadonlyMat4} a The first matrix.
+ * @param {ReadonlyMat4} b The second matrix.
+ * @returns {Boolean} True if the matrices are equal, false otherwise.
+ */
+
+function equals(a, b) {
+  var a0 = a[0],
+      a1 = a[1],
+      a2 = a[2],
+      a3 = a[3];
+  var a4 = a[4],
+      a5 = a[5],
+      a6 = a[6],
+      a7 = a[7];
+  var a8 = a[8],
+      a9 = a[9],
+      a10 = a[10],
+      a11 = a[11];
+  var a12 = a[12],
+      a13 = a[13],
+      a14 = a[14],
+      a15 = a[15];
+  var b0 = b[0],
+      b1 = b[1],
+      b2 = b[2],
+      b3 = b[3];
+  var b4 = b[4],
+      b5 = b[5],
+      b6 = b[6],
+      b7 = b[7];
+  var b8 = b[8],
+      b9 = b[9],
+      b10 = b[10],
+      b11 = b[11];
+  var b12 = b[12],
+      b13 = b[13],
+      b14 = b[14],
+      b15 = b[15];
+  return Math.abs(a0 - b0) <= _common_js__WEBPACK_IMPORTED_MODULE_0__.EPSILON * Math.max(1.0, Math.abs(a0), Math.abs(b0)) && Math.abs(a1 - b1) <= _common_js__WEBPACK_IMPORTED_MODULE_0__.EPSILON * Math.max(1.0, Math.abs(a1), Math.abs(b1)) && Math.abs(a2 - b2) <= _common_js__WEBPACK_IMPORTED_MODULE_0__.EPSILON * Math.max(1.0, Math.abs(a2), Math.abs(b2)) && Math.abs(a3 - b3) <= _common_js__WEBPACK_IMPORTED_MODULE_0__.EPSILON * Math.max(1.0, Math.abs(a3), Math.abs(b3)) && Math.abs(a4 - b4) <= _common_js__WEBPACK_IMPORTED_MODULE_0__.EPSILON * Math.max(1.0, Math.abs(a4), Math.abs(b4)) && Math.abs(a5 - b5) <= _common_js__WEBPACK_IMPORTED_MODULE_0__.EPSILON * Math.max(1.0, Math.abs(a5), Math.abs(b5)) && Math.abs(a6 - b6) <= _common_js__WEBPACK_IMPORTED_MODULE_0__.EPSILON * Math.max(1.0, Math.abs(a6), Math.abs(b6)) && Math.abs(a7 - b7) <= _common_js__WEBPACK_IMPORTED_MODULE_0__.EPSILON * Math.max(1.0, Math.abs(a7), Math.abs(b7)) && Math.abs(a8 - b8) <= _common_js__WEBPACK_IMPORTED_MODULE_0__.EPSILON * Math.max(1.0, Math.abs(a8), Math.abs(b8)) && Math.abs(a9 - b9) <= _common_js__WEBPACK_IMPORTED_MODULE_0__.EPSILON * Math.max(1.0, Math.abs(a9), Math.abs(b9)) && Math.abs(a10 - b10) <= _common_js__WEBPACK_IMPORTED_MODULE_0__.EPSILON * Math.max(1.0, Math.abs(a10), Math.abs(b10)) && Math.abs(a11 - b11) <= _common_js__WEBPACK_IMPORTED_MODULE_0__.EPSILON * Math.max(1.0, Math.abs(a11), Math.abs(b11)) && Math.abs(a12 - b12) <= _common_js__WEBPACK_IMPORTED_MODULE_0__.EPSILON * Math.max(1.0, Math.abs(a12), Math.abs(b12)) && Math.abs(a13 - b13) <= _common_js__WEBPACK_IMPORTED_MODULE_0__.EPSILON * Math.max(1.0, Math.abs(a13), Math.abs(b13)) && Math.abs(a14 - b14) <= _common_js__WEBPACK_IMPORTED_MODULE_0__.EPSILON * Math.max(1.0, Math.abs(a14), Math.abs(b14)) && Math.abs(a15 - b15) <= _common_js__WEBPACK_IMPORTED_MODULE_0__.EPSILON * Math.max(1.0, Math.abs(a15), Math.abs(b15));
+}
+/**
+ * Alias for {@link mat4.multiply}
+ * @function
+ */
+
+var mul = multiply;
+/**
+ * Alias for {@link mat4.subtract}
+ * @function
+ */
+
+var sub = subtract;
+
+/***/ }),
+
+/***/ "./node_modules/gl-matrix/esm/vec2.js":
+/*!********************************************!*\
+  !*** ./node_modules/gl-matrix/esm/vec2.js ***!
+  \********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "create": function() { return /* binding */ create; },
+/* harmony export */   "clone": function() { return /* binding */ clone; },
+/* harmony export */   "fromValues": function() { return /* binding */ fromValues; },
+/* harmony export */   "copy": function() { return /* binding */ copy; },
+/* harmony export */   "set": function() { return /* binding */ set; },
+/* harmony export */   "add": function() { return /* binding */ add; },
+/* harmony export */   "subtract": function() { return /* binding */ subtract; },
+/* harmony export */   "multiply": function() { return /* binding */ multiply; },
+/* harmony export */   "divide": function() { return /* binding */ divide; },
+/* harmony export */   "ceil": function() { return /* binding */ ceil; },
+/* harmony export */   "floor": function() { return /* binding */ floor; },
+/* harmony export */   "min": function() { return /* binding */ min; },
+/* harmony export */   "max": function() { return /* binding */ max; },
+/* harmony export */   "round": function() { return /* binding */ round; },
+/* harmony export */   "scale": function() { return /* binding */ scale; },
+/* harmony export */   "scaleAndAdd": function() { return /* binding */ scaleAndAdd; },
+/* harmony export */   "distance": function() { return /* binding */ distance; },
+/* harmony export */   "squaredDistance": function() { return /* binding */ squaredDistance; },
+/* harmony export */   "length": function() { return /* binding */ length; },
+/* harmony export */   "squaredLength": function() { return /* binding */ squaredLength; },
+/* harmony export */   "negate": function() { return /* binding */ negate; },
+/* harmony export */   "inverse": function() { return /* binding */ inverse; },
+/* harmony export */   "normalize": function() { return /* binding */ normalize; },
+/* harmony export */   "dot": function() { return /* binding */ dot; },
+/* harmony export */   "cross": function() { return /* binding */ cross; },
+/* harmony export */   "lerp": function() { return /* binding */ lerp; },
+/* harmony export */   "random": function() { return /* binding */ random; },
+/* harmony export */   "transformMat2": function() { return /* binding */ transformMat2; },
+/* harmony export */   "transformMat2d": function() { return /* binding */ transformMat2d; },
+/* harmony export */   "transformMat3": function() { return /* binding */ transformMat3; },
+/* harmony export */   "transformMat4": function() { return /* binding */ transformMat4; },
+/* harmony export */   "rotate": function() { return /* binding */ rotate; },
+/* harmony export */   "angle": function() { return /* binding */ angle; },
+/* harmony export */   "zero": function() { return /* binding */ zero; },
+/* harmony export */   "str": function() { return /* binding */ str; },
+/* harmony export */   "exactEquals": function() { return /* binding */ exactEquals; },
+/* harmony export */   "equals": function() { return /* binding */ equals; },
+/* harmony export */   "len": function() { return /* binding */ len; },
+/* harmony export */   "sub": function() { return /* binding */ sub; },
+/* harmony export */   "mul": function() { return /* binding */ mul; },
+/* harmony export */   "div": function() { return /* binding */ div; },
+/* harmony export */   "dist": function() { return /* binding */ dist; },
+/* harmony export */   "sqrDist": function() { return /* binding */ sqrDist; },
+/* harmony export */   "sqrLen": function() { return /* binding */ sqrLen; },
+/* harmony export */   "forEach": function() { return /* binding */ forEach; }
+/* harmony export */ });
+/* harmony import */ var _common_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./common.js */ "./node_modules/gl-matrix/esm/common.js");
+
+/**
+ * 2 Dimensional Vector
+ * @module vec2
+ */
+
+/**
+ * Creates a new, empty vec2
+ *
+ * @returns {vec2} a new 2D vector
+ */
+
+function create() {
+  var out = new _common_js__WEBPACK_IMPORTED_MODULE_0__.ARRAY_TYPE(2);
+
+  if (_common_js__WEBPACK_IMPORTED_MODULE_0__.ARRAY_TYPE != Float32Array) {
+    out[0] = 0;
+    out[1] = 0;
+  }
+
+  return out;
+}
+/**
+ * Creates a new vec2 initialized with values from an existing vector
+ *
+ * @param {ReadonlyVec2} a vector to clone
+ * @returns {vec2} a new 2D vector
+ */
+
+function clone(a) {
+  var out = new _common_js__WEBPACK_IMPORTED_MODULE_0__.ARRAY_TYPE(2);
+  out[0] = a[0];
+  out[1] = a[1];
+  return out;
+}
+/**
+ * Creates a new vec2 initialized with the given values
+ *
+ * @param {Number} x X component
+ * @param {Number} y Y component
+ * @returns {vec2} a new 2D vector
+ */
+
+function fromValues(x, y) {
+  var out = new _common_js__WEBPACK_IMPORTED_MODULE_0__.ARRAY_TYPE(2);
+  out[0] = x;
+  out[1] = y;
+  return out;
+}
+/**
+ * Copy the values from one vec2 to another
+ *
+ * @param {vec2} out the receiving vector
+ * @param {ReadonlyVec2} a the source vector
+ * @returns {vec2} out
+ */
+
+function copy(out, a) {
+  out[0] = a[0];
+  out[1] = a[1];
+  return out;
+}
+/**
+ * Set the components of a vec2 to the given values
+ *
+ * @param {vec2} out the receiving vector
+ * @param {Number} x X component
+ * @param {Number} y Y component
+ * @returns {vec2} out
+ */
+
+function set(out, x, y) {
+  out[0] = x;
+  out[1] = y;
+  return out;
+}
+/**
+ * Adds two vec2's
+ *
+ * @param {vec2} out the receiving vector
+ * @param {ReadonlyVec2} a the first operand
+ * @param {ReadonlyVec2} b the second operand
+ * @returns {vec2} out
+ */
+
+function add(out, a, b) {
+  out[0] = a[0] + b[0];
+  out[1] = a[1] + b[1];
+  return out;
+}
+/**
+ * Subtracts vector b from vector a
+ *
+ * @param {vec2} out the receiving vector
+ * @param {ReadonlyVec2} a the first operand
+ * @param {ReadonlyVec2} b the second operand
+ * @returns {vec2} out
+ */
+
+function subtract(out, a, b) {
+  out[0] = a[0] - b[0];
+  out[1] = a[1] - b[1];
+  return out;
+}
+/**
+ * Multiplies two vec2's
+ *
+ * @param {vec2} out the receiving vector
+ * @param {ReadonlyVec2} a the first operand
+ * @param {ReadonlyVec2} b the second operand
+ * @returns {vec2} out
+ */
+
+function multiply(out, a, b) {
+  out[0] = a[0] * b[0];
+  out[1] = a[1] * b[1];
+  return out;
+}
+/**
+ * Divides two vec2's
+ *
+ * @param {vec2} out the receiving vector
+ * @param {ReadonlyVec2} a the first operand
+ * @param {ReadonlyVec2} b the second operand
+ * @returns {vec2} out
+ */
+
+function divide(out, a, b) {
+  out[0] = a[0] / b[0];
+  out[1] = a[1] / b[1];
+  return out;
+}
+/**
+ * Math.ceil the components of a vec2
+ *
+ * @param {vec2} out the receiving vector
+ * @param {ReadonlyVec2} a vector to ceil
+ * @returns {vec2} out
+ */
+
+function ceil(out, a) {
+  out[0] = Math.ceil(a[0]);
+  out[1] = Math.ceil(a[1]);
+  return out;
+}
+/**
+ * Math.floor the components of a vec2
+ *
+ * @param {vec2} out the receiving vector
+ * @param {ReadonlyVec2} a vector to floor
+ * @returns {vec2} out
+ */
+
+function floor(out, a) {
+  out[0] = Math.floor(a[0]);
+  out[1] = Math.floor(a[1]);
+  return out;
+}
+/**
+ * Returns the minimum of two vec2's
+ *
+ * @param {vec2} out the receiving vector
+ * @param {ReadonlyVec2} a the first operand
+ * @param {ReadonlyVec2} b the second operand
+ * @returns {vec2} out
+ */
+
+function min(out, a, b) {
+  out[0] = Math.min(a[0], b[0]);
+  out[1] = Math.min(a[1], b[1]);
+  return out;
+}
+/**
+ * Returns the maximum of two vec2's
+ *
+ * @param {vec2} out the receiving vector
+ * @param {ReadonlyVec2} a the first operand
+ * @param {ReadonlyVec2} b the second operand
+ * @returns {vec2} out
+ */
+
+function max(out, a, b) {
+  out[0] = Math.max(a[0], b[0]);
+  out[1] = Math.max(a[1], b[1]);
+  return out;
+}
+/**
+ * Math.round the components of a vec2
+ *
+ * @param {vec2} out the receiving vector
+ * @param {ReadonlyVec2} a vector to round
+ * @returns {vec2} out
+ */
+
+function round(out, a) {
+  out[0] = Math.round(a[0]);
+  out[1] = Math.round(a[1]);
+  return out;
+}
+/**
+ * Scales a vec2 by a scalar number
+ *
+ * @param {vec2} out the receiving vector
+ * @param {ReadonlyVec2} a the vector to scale
+ * @param {Number} b amount to scale the vector by
+ * @returns {vec2} out
+ */
+
+function scale(out, a, b) {
+  out[0] = a[0] * b;
+  out[1] = a[1] * b;
+  return out;
+}
+/**
+ * Adds two vec2's after scaling the second operand by a scalar value
+ *
+ * @param {vec2} out the receiving vector
+ * @param {ReadonlyVec2} a the first operand
+ * @param {ReadonlyVec2} b the second operand
+ * @param {Number} scale the amount to scale b by before adding
+ * @returns {vec2} out
+ */
+
+function scaleAndAdd(out, a, b, scale) {
+  out[0] = a[0] + b[0] * scale;
+  out[1] = a[1] + b[1] * scale;
+  return out;
+}
+/**
+ * Calculates the euclidian distance between two vec2's
+ *
+ * @param {ReadonlyVec2} a the first operand
+ * @param {ReadonlyVec2} b the second operand
+ * @returns {Number} distance between a and b
+ */
+
+function distance(a, b) {
+  var x = b[0] - a[0],
+      y = b[1] - a[1];
+  return Math.hypot(x, y);
+}
+/**
+ * Calculates the squared euclidian distance between two vec2's
+ *
+ * @param {ReadonlyVec2} a the first operand
+ * @param {ReadonlyVec2} b the second operand
+ * @returns {Number} squared distance between a and b
+ */
+
+function squaredDistance(a, b) {
+  var x = b[0] - a[0],
+      y = b[1] - a[1];
+  return x * x + y * y;
+}
+/**
+ * Calculates the length of a vec2
+ *
+ * @param {ReadonlyVec2} a vector to calculate length of
+ * @returns {Number} length of a
+ */
+
+function length(a) {
+  var x = a[0],
+      y = a[1];
+  return Math.hypot(x, y);
+}
+/**
+ * Calculates the squared length of a vec2
+ *
+ * @param {ReadonlyVec2} a vector to calculate squared length of
+ * @returns {Number} squared length of a
+ */
+
+function squaredLength(a) {
+  var x = a[0],
+      y = a[1];
+  return x * x + y * y;
+}
+/**
+ * Negates the components of a vec2
+ *
+ * @param {vec2} out the receiving vector
+ * @param {ReadonlyVec2} a vector to negate
+ * @returns {vec2} out
+ */
+
+function negate(out, a) {
+  out[0] = -a[0];
+  out[1] = -a[1];
+  return out;
+}
+/**
+ * Returns the inverse of the components of a vec2
+ *
+ * @param {vec2} out the receiving vector
+ * @param {ReadonlyVec2} a vector to invert
+ * @returns {vec2} out
+ */
+
+function inverse(out, a) {
+  out[0] = 1.0 / a[0];
+  out[1] = 1.0 / a[1];
+  return out;
+}
+/**
+ * Normalize a vec2
+ *
+ * @param {vec2} out the receiving vector
+ * @param {ReadonlyVec2} a vector to normalize
+ * @returns {vec2} out
+ */
+
+function normalize(out, a) {
+  var x = a[0],
+      y = a[1];
+  var len = x * x + y * y;
+
+  if (len > 0) {
+    //TODO: evaluate use of glm_invsqrt here?
+    len = 1 / Math.sqrt(len);
+  }
+
+  out[0] = a[0] * len;
+  out[1] = a[1] * len;
+  return out;
+}
+/**
+ * Calculates the dot product of two vec2's
+ *
+ * @param {ReadonlyVec2} a the first operand
+ * @param {ReadonlyVec2} b the second operand
+ * @returns {Number} dot product of a and b
+ */
+
+function dot(a, b) {
+  return a[0] * b[0] + a[1] * b[1];
+}
+/**
+ * Computes the cross product of two vec2's
+ * Note that the cross product must by definition produce a 3D vector
+ *
+ * @param {vec3} out the receiving vector
+ * @param {ReadonlyVec2} a the first operand
+ * @param {ReadonlyVec2} b the second operand
+ * @returns {vec3} out
+ */
+
+function cross(out, a, b) {
+  var z = a[0] * b[1] - a[1] * b[0];
+  out[0] = out[1] = 0;
+  out[2] = z;
+  return out;
+}
+/**
+ * Performs a linear interpolation between two vec2's
+ *
+ * @param {vec2} out the receiving vector
+ * @param {ReadonlyVec2} a the first operand
+ * @param {ReadonlyVec2} b the second operand
+ * @param {Number} t interpolation amount, in the range [0-1], between the two inputs
+ * @returns {vec2} out
+ */
+
+function lerp(out, a, b, t) {
+  var ax = a[0],
+      ay = a[1];
+  out[0] = ax + t * (b[0] - ax);
+  out[1] = ay + t * (b[1] - ay);
+  return out;
+}
+/**
+ * Generates a random vector with the given scale
+ *
+ * @param {vec2} out the receiving vector
+ * @param {Number} [scale] Length of the resulting vector. If ommitted, a unit vector will be returned
+ * @returns {vec2} out
+ */
+
+function random(out, scale) {
+  scale = scale || 1.0;
+  var r = _common_js__WEBPACK_IMPORTED_MODULE_0__.RANDOM() * 2.0 * Math.PI;
+  out[0] = Math.cos(r) * scale;
+  out[1] = Math.sin(r) * scale;
+  return out;
+}
+/**
+ * Transforms the vec2 with a mat2
+ *
+ * @param {vec2} out the receiving vector
+ * @param {ReadonlyVec2} a the vector to transform
+ * @param {ReadonlyMat2} m matrix to transform with
+ * @returns {vec2} out
+ */
+
+function transformMat2(out, a, m) {
+  var x = a[0],
+      y = a[1];
+  out[0] = m[0] * x + m[2] * y;
+  out[1] = m[1] * x + m[3] * y;
+  return out;
+}
+/**
+ * Transforms the vec2 with a mat2d
+ *
+ * @param {vec2} out the receiving vector
+ * @param {ReadonlyVec2} a the vector to transform
+ * @param {ReadonlyMat2d} m matrix to transform with
+ * @returns {vec2} out
+ */
+
+function transformMat2d(out, a, m) {
+  var x = a[0],
+      y = a[1];
+  out[0] = m[0] * x + m[2] * y + m[4];
+  out[1] = m[1] * x + m[3] * y + m[5];
+  return out;
+}
+/**
+ * Transforms the vec2 with a mat3
+ * 3rd vector component is implicitly '1'
+ *
+ * @param {vec2} out the receiving vector
+ * @param {ReadonlyVec2} a the vector to transform
+ * @param {ReadonlyMat3} m matrix to transform with
+ * @returns {vec2} out
+ */
+
+function transformMat3(out, a, m) {
+  var x = a[0],
+      y = a[1];
+  out[0] = m[0] * x + m[3] * y + m[6];
+  out[1] = m[1] * x + m[4] * y + m[7];
+  return out;
+}
+/**
+ * Transforms the vec2 with a mat4
+ * 3rd vector component is implicitly '0'
+ * 4th vector component is implicitly '1'
+ *
+ * @param {vec2} out the receiving vector
+ * @param {ReadonlyVec2} a the vector to transform
+ * @param {ReadonlyMat4} m matrix to transform with
+ * @returns {vec2} out
+ */
+
+function transformMat4(out, a, m) {
+  var x = a[0];
+  var y = a[1];
+  out[0] = m[0] * x + m[4] * y + m[12];
+  out[1] = m[1] * x + m[5] * y + m[13];
+  return out;
+}
+/**
+ * Rotate a 2D vector
+ * @param {vec2} out The receiving vec2
+ * @param {ReadonlyVec2} a The vec2 point to rotate
+ * @param {ReadonlyVec2} b The origin of the rotation
+ * @param {Number} rad The angle of rotation in radians
+ * @returns {vec2} out
+ */
+
+function rotate(out, a, b, rad) {
+  //Translate point to the origin
+  var p0 = a[0] - b[0],
+      p1 = a[1] - b[1],
+      sinC = Math.sin(rad),
+      cosC = Math.cos(rad); //perform rotation and translate to correct position
+
+  out[0] = p0 * cosC - p1 * sinC + b[0];
+  out[1] = p0 * sinC + p1 * cosC + b[1];
+  return out;
+}
+/**
+ * Get the angle between two 2D vectors
+ * @param {ReadonlyVec2} a The first operand
+ * @param {ReadonlyVec2} b The second operand
+ * @returns {Number} The angle in radians
+ */
+
+function angle(a, b) {
+  var x1 = a[0],
+      y1 = a[1],
+      x2 = b[0],
+      y2 = b[1],
+      // mag is the product of the magnitudes of a and b
+  mag = Math.sqrt(x1 * x1 + y1 * y1) * Math.sqrt(x2 * x2 + y2 * y2),
+      // mag &&.. short circuits if mag == 0
+  cosine = mag && (x1 * x2 + y1 * y2) / mag; // Math.min(Math.max(cosine, -1), 1) clamps the cosine between -1 and 1
+
+  return Math.acos(Math.min(Math.max(cosine, -1), 1));
+}
+/**
+ * Set the components of a vec2 to zero
+ *
+ * @param {vec2} out the receiving vector
+ * @returns {vec2} out
+ */
+
+function zero(out) {
+  out[0] = 0.0;
+  out[1] = 0.0;
+  return out;
+}
+/**
+ * Returns a string representation of a vector
+ *
+ * @param {ReadonlyVec2} a vector to represent as a string
+ * @returns {String} string representation of the vector
+ */
+
+function str(a) {
+  return "vec2(" + a[0] + ", " + a[1] + ")";
+}
+/**
+ * Returns whether or not the vectors exactly have the same elements in the same position (when compared with ===)
+ *
+ * @param {ReadonlyVec2} a The first vector.
+ * @param {ReadonlyVec2} b The second vector.
+ * @returns {Boolean} True if the vectors are equal, false otherwise.
+ */
+
+function exactEquals(a, b) {
+  return a[0] === b[0] && a[1] === b[1];
+}
+/**
+ * Returns whether or not the vectors have approximately the same elements in the same position.
+ *
+ * @param {ReadonlyVec2} a The first vector.
+ * @param {ReadonlyVec2} b The second vector.
+ * @returns {Boolean} True if the vectors are equal, false otherwise.
+ */
+
+function equals(a, b) {
+  var a0 = a[0],
+      a1 = a[1];
+  var b0 = b[0],
+      b1 = b[1];
+  return Math.abs(a0 - b0) <= _common_js__WEBPACK_IMPORTED_MODULE_0__.EPSILON * Math.max(1.0, Math.abs(a0), Math.abs(b0)) && Math.abs(a1 - b1) <= _common_js__WEBPACK_IMPORTED_MODULE_0__.EPSILON * Math.max(1.0, Math.abs(a1), Math.abs(b1));
+}
+/**
+ * Alias for {@link vec2.length}
+ * @function
+ */
+
+var len = length;
+/**
+ * Alias for {@link vec2.subtract}
+ * @function
+ */
+
+var sub = subtract;
+/**
+ * Alias for {@link vec2.multiply}
+ * @function
+ */
+
+var mul = multiply;
+/**
+ * Alias for {@link vec2.divide}
+ * @function
+ */
+
+var div = divide;
+/**
+ * Alias for {@link vec2.distance}
+ * @function
+ */
+
+var dist = distance;
+/**
+ * Alias for {@link vec2.squaredDistance}
+ * @function
+ */
+
+var sqrDist = squaredDistance;
+/**
+ * Alias for {@link vec2.squaredLength}
+ * @function
+ */
+
+var sqrLen = squaredLength;
+/**
+ * Perform some operation over an array of vec2s.
+ *
+ * @param {Array} a the array of vectors to iterate over
+ * @param {Number} stride Number of elements between the start of each vec2. If 0 assumes tightly packed
+ * @param {Number} offset Number of elements to skip at the beginning of the array
+ * @param {Number} count Number of vec2s to iterate over. If 0 iterates over entire array
+ * @param {Function} fn Function to call for each vector in the array
+ * @param {Object} [arg] additional argument to pass to fn
+ * @returns {Array} a
+ * @function
+ */
+
+var forEach = function () {
+  var vec = create();
+  return function (a, stride, offset, count, fn, arg) {
+    var i, l;
+
+    if (!stride) {
+      stride = 2;
+    }
+
+    if (!offset) {
+      offset = 0;
+    }
+
+    if (count) {
+      l = Math.min(count * stride + offset, a.length);
+    } else {
+      l = a.length;
+    }
+
+    for (i = offset; i < l; i += stride) {
+      vec[0] = a[i];
+      vec[1] = a[i + 1];
+      fn(vec, vec, arg);
+      a[i] = vec[0];
+      a[i + 1] = vec[1];
+    }
+
+    return a;
+  };
+}();
+
+/***/ }),
+
+/***/ "./node_modules/gl-matrix/esm/vec3.js":
+/*!********************************************!*\
+  !*** ./node_modules/gl-matrix/esm/vec3.js ***!
+  \********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "create": function() { return /* binding */ create; },
+/* harmony export */   "clone": function() { return /* binding */ clone; },
+/* harmony export */   "length": function() { return /* binding */ length; },
+/* harmony export */   "fromValues": function() { return /* binding */ fromValues; },
+/* harmony export */   "copy": function() { return /* binding */ copy; },
+/* harmony export */   "set": function() { return /* binding */ set; },
+/* harmony export */   "add": function() { return /* binding */ add; },
+/* harmony export */   "subtract": function() { return /* binding */ subtract; },
+/* harmony export */   "multiply": function() { return /* binding */ multiply; },
+/* harmony export */   "divide": function() { return /* binding */ divide; },
+/* harmony export */   "ceil": function() { return /* binding */ ceil; },
+/* harmony export */   "floor": function() { return /* binding */ floor; },
+/* harmony export */   "min": function() { return /* binding */ min; },
+/* harmony export */   "max": function() { return /* binding */ max; },
+/* harmony export */   "round": function() { return /* binding */ round; },
+/* harmony export */   "scale": function() { return /* binding */ scale; },
+/* harmony export */   "scaleAndAdd": function() { return /* binding */ scaleAndAdd; },
+/* harmony export */   "distance": function() { return /* binding */ distance; },
+/* harmony export */   "squaredDistance": function() { return /* binding */ squaredDistance; },
+/* harmony export */   "squaredLength": function() { return /* binding */ squaredLength; },
+/* harmony export */   "negate": function() { return /* binding */ negate; },
+/* harmony export */   "inverse": function() { return /* binding */ inverse; },
+/* harmony export */   "normalize": function() { return /* binding */ normalize; },
+/* harmony export */   "dot": function() { return /* binding */ dot; },
+/* harmony export */   "cross": function() { return /* binding */ cross; },
+/* harmony export */   "lerp": function() { return /* binding */ lerp; },
+/* harmony export */   "hermite": function() { return /* binding */ hermite; },
+/* harmony export */   "bezier": function() { return /* binding */ bezier; },
+/* harmony export */   "random": function() { return /* binding */ random; },
+/* harmony export */   "transformMat4": function() { return /* binding */ transformMat4; },
+/* harmony export */   "transformMat3": function() { return /* binding */ transformMat3; },
+/* harmony export */   "transformQuat": function() { return /* binding */ transformQuat; },
+/* harmony export */   "rotateX": function() { return /* binding */ rotateX; },
+/* harmony export */   "rotateY": function() { return /* binding */ rotateY; },
+/* harmony export */   "rotateZ": function() { return /* binding */ rotateZ; },
+/* harmony export */   "angle": function() { return /* binding */ angle; },
+/* harmony export */   "zero": function() { return /* binding */ zero; },
+/* harmony export */   "str": function() { return /* binding */ str; },
+/* harmony export */   "exactEquals": function() { return /* binding */ exactEquals; },
+/* harmony export */   "equals": function() { return /* binding */ equals; },
+/* harmony export */   "sub": function() { return /* binding */ sub; },
+/* harmony export */   "mul": function() { return /* binding */ mul; },
+/* harmony export */   "div": function() { return /* binding */ div; },
+/* harmony export */   "dist": function() { return /* binding */ dist; },
+/* harmony export */   "sqrDist": function() { return /* binding */ sqrDist; },
+/* harmony export */   "len": function() { return /* binding */ len; },
+/* harmony export */   "sqrLen": function() { return /* binding */ sqrLen; },
+/* harmony export */   "forEach": function() { return /* binding */ forEach; }
+/* harmony export */ });
+/* harmony import */ var _common_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./common.js */ "./node_modules/gl-matrix/esm/common.js");
+
+/**
+ * 3 Dimensional Vector
+ * @module vec3
+ */
+
+/**
+ * Creates a new, empty vec3
+ *
+ * @returns {vec3} a new 3D vector
+ */
+
+function create() {
+  var out = new _common_js__WEBPACK_IMPORTED_MODULE_0__.ARRAY_TYPE(3);
+
+  if (_common_js__WEBPACK_IMPORTED_MODULE_0__.ARRAY_TYPE != Float32Array) {
+    out[0] = 0;
+    out[1] = 0;
+    out[2] = 0;
+  }
+
+  return out;
+}
+/**
+ * Creates a new vec3 initialized with values from an existing vector
+ *
+ * @param {ReadonlyVec3} a vector to clone
+ * @returns {vec3} a new 3D vector
+ */
+
+function clone(a) {
+  var out = new _common_js__WEBPACK_IMPORTED_MODULE_0__.ARRAY_TYPE(3);
+  out[0] = a[0];
+  out[1] = a[1];
+  out[2] = a[2];
+  return out;
+}
+/**
+ * Calculates the length of a vec3
+ *
+ * @param {ReadonlyVec3} a vector to calculate length of
+ * @returns {Number} length of a
+ */
+
+function length(a) {
+  var x = a[0];
+  var y = a[1];
+  var z = a[2];
+  return Math.hypot(x, y, z);
+}
+/**
+ * Creates a new vec3 initialized with the given values
+ *
+ * @param {Number} x X component
+ * @param {Number} y Y component
+ * @param {Number} z Z component
+ * @returns {vec3} a new 3D vector
+ */
+
+function fromValues(x, y, z) {
+  var out = new _common_js__WEBPACK_IMPORTED_MODULE_0__.ARRAY_TYPE(3);
+  out[0] = x;
+  out[1] = y;
+  out[2] = z;
+  return out;
+}
+/**
+ * Copy the values from one vec3 to another
+ *
+ * @param {vec3} out the receiving vector
+ * @param {ReadonlyVec3} a the source vector
+ * @returns {vec3} out
+ */
+
+function copy(out, a) {
+  out[0] = a[0];
+  out[1] = a[1];
+  out[2] = a[2];
+  return out;
+}
+/**
+ * Set the components of a vec3 to the given values
+ *
+ * @param {vec3} out the receiving vector
+ * @param {Number} x X component
+ * @param {Number} y Y component
+ * @param {Number} z Z component
+ * @returns {vec3} out
+ */
+
+function set(out, x, y, z) {
+  out[0] = x;
+  out[1] = y;
+  out[2] = z;
+  return out;
+}
+/**
+ * Adds two vec3's
+ *
+ * @param {vec3} out the receiving vector
+ * @param {ReadonlyVec3} a the first operand
+ * @param {ReadonlyVec3} b the second operand
+ * @returns {vec3} out
+ */
+
+function add(out, a, b) {
+  out[0] = a[0] + b[0];
+  out[1] = a[1] + b[1];
+  out[2] = a[2] + b[2];
+  return out;
+}
+/**
+ * Subtracts vector b from vector a
+ *
+ * @param {vec3} out the receiving vector
+ * @param {ReadonlyVec3} a the first operand
+ * @param {ReadonlyVec3} b the second operand
+ * @returns {vec3} out
+ */
+
+function subtract(out, a, b) {
+  out[0] = a[0] - b[0];
+  out[1] = a[1] - b[1];
+  out[2] = a[2] - b[2];
+  return out;
+}
+/**
+ * Multiplies two vec3's
+ *
+ * @param {vec3} out the receiving vector
+ * @param {ReadonlyVec3} a the first operand
+ * @param {ReadonlyVec3} b the second operand
+ * @returns {vec3} out
+ */
+
+function multiply(out, a, b) {
+  out[0] = a[0] * b[0];
+  out[1] = a[1] * b[1];
+  out[2] = a[2] * b[2];
+  return out;
+}
+/**
+ * Divides two vec3's
+ *
+ * @param {vec3} out the receiving vector
+ * @param {ReadonlyVec3} a the first operand
+ * @param {ReadonlyVec3} b the second operand
+ * @returns {vec3} out
+ */
+
+function divide(out, a, b) {
+  out[0] = a[0] / b[0];
+  out[1] = a[1] / b[1];
+  out[2] = a[2] / b[2];
+  return out;
+}
+/**
+ * Math.ceil the components of a vec3
+ *
+ * @param {vec3} out the receiving vector
+ * @param {ReadonlyVec3} a vector to ceil
+ * @returns {vec3} out
+ */
+
+function ceil(out, a) {
+  out[0] = Math.ceil(a[0]);
+  out[1] = Math.ceil(a[1]);
+  out[2] = Math.ceil(a[2]);
+  return out;
+}
+/**
+ * Math.floor the components of a vec3
+ *
+ * @param {vec3} out the receiving vector
+ * @param {ReadonlyVec3} a vector to floor
+ * @returns {vec3} out
+ */
+
+function floor(out, a) {
+  out[0] = Math.floor(a[0]);
+  out[1] = Math.floor(a[1]);
+  out[2] = Math.floor(a[2]);
+  return out;
+}
+/**
+ * Returns the minimum of two vec3's
+ *
+ * @param {vec3} out the receiving vector
+ * @param {ReadonlyVec3} a the first operand
+ * @param {ReadonlyVec3} b the second operand
+ * @returns {vec3} out
+ */
+
+function min(out, a, b) {
+  out[0] = Math.min(a[0], b[0]);
+  out[1] = Math.min(a[1], b[1]);
+  out[2] = Math.min(a[2], b[2]);
+  return out;
+}
+/**
+ * Returns the maximum of two vec3's
+ *
+ * @param {vec3} out the receiving vector
+ * @param {ReadonlyVec3} a the first operand
+ * @param {ReadonlyVec3} b the second operand
+ * @returns {vec3} out
+ */
+
+function max(out, a, b) {
+  out[0] = Math.max(a[0], b[0]);
+  out[1] = Math.max(a[1], b[1]);
+  out[2] = Math.max(a[2], b[2]);
+  return out;
+}
+/**
+ * Math.round the components of a vec3
+ *
+ * @param {vec3} out the receiving vector
+ * @param {ReadonlyVec3} a vector to round
+ * @returns {vec3} out
+ */
+
+function round(out, a) {
+  out[0] = Math.round(a[0]);
+  out[1] = Math.round(a[1]);
+  out[2] = Math.round(a[2]);
+  return out;
+}
+/**
+ * Scales a vec3 by a scalar number
+ *
+ * @param {vec3} out the receiving vector
+ * @param {ReadonlyVec3} a the vector to scale
+ * @param {Number} b amount to scale the vector by
+ * @returns {vec3} out
+ */
+
+function scale(out, a, b) {
+  out[0] = a[0] * b;
+  out[1] = a[1] * b;
+  out[2] = a[2] * b;
+  return out;
+}
+/**
+ * Adds two vec3's after scaling the second operand by a scalar value
+ *
+ * @param {vec3} out the receiving vector
+ * @param {ReadonlyVec3} a the first operand
+ * @param {ReadonlyVec3} b the second operand
+ * @param {Number} scale the amount to scale b by before adding
+ * @returns {vec3} out
+ */
+
+function scaleAndAdd(out, a, b, scale) {
+  out[0] = a[0] + b[0] * scale;
+  out[1] = a[1] + b[1] * scale;
+  out[2] = a[2] + b[2] * scale;
+  return out;
+}
+/**
+ * Calculates the euclidian distance between two vec3's
+ *
+ * @param {ReadonlyVec3} a the first operand
+ * @param {ReadonlyVec3} b the second operand
+ * @returns {Number} distance between a and b
+ */
+
+function distance(a, b) {
+  var x = b[0] - a[0];
+  var y = b[1] - a[1];
+  var z = b[2] - a[2];
+  return Math.hypot(x, y, z);
+}
+/**
+ * Calculates the squared euclidian distance between two vec3's
+ *
+ * @param {ReadonlyVec3} a the first operand
+ * @param {ReadonlyVec3} b the second operand
+ * @returns {Number} squared distance between a and b
+ */
+
+function squaredDistance(a, b) {
+  var x = b[0] - a[0];
+  var y = b[1] - a[1];
+  var z = b[2] - a[2];
+  return x * x + y * y + z * z;
+}
+/**
+ * Calculates the squared length of a vec3
+ *
+ * @param {ReadonlyVec3} a vector to calculate squared length of
+ * @returns {Number} squared length of a
+ */
+
+function squaredLength(a) {
+  var x = a[0];
+  var y = a[1];
+  var z = a[2];
+  return x * x + y * y + z * z;
+}
+/**
+ * Negates the components of a vec3
+ *
+ * @param {vec3} out the receiving vector
+ * @param {ReadonlyVec3} a vector to negate
+ * @returns {vec3} out
+ */
+
+function negate(out, a) {
+  out[0] = -a[0];
+  out[1] = -a[1];
+  out[2] = -a[2];
+  return out;
+}
+/**
+ * Returns the inverse of the components of a vec3
+ *
+ * @param {vec3} out the receiving vector
+ * @param {ReadonlyVec3} a vector to invert
+ * @returns {vec3} out
+ */
+
+function inverse(out, a) {
+  out[0] = 1.0 / a[0];
+  out[1] = 1.0 / a[1];
+  out[2] = 1.0 / a[2];
+  return out;
+}
+/**
+ * Normalize a vec3
+ *
+ * @param {vec3} out the receiving vector
+ * @param {ReadonlyVec3} a vector to normalize
+ * @returns {vec3} out
+ */
+
+function normalize(out, a) {
+  var x = a[0];
+  var y = a[1];
+  var z = a[2];
+  var len = x * x + y * y + z * z;
+
+  if (len > 0) {
+    //TODO: evaluate use of glm_invsqrt here?
+    len = 1 / Math.sqrt(len);
+  }
+
+  out[0] = a[0] * len;
+  out[1] = a[1] * len;
+  out[2] = a[2] * len;
+  return out;
+}
+/**
+ * Calculates the dot product of two vec3's
+ *
+ * @param {ReadonlyVec3} a the first operand
+ * @param {ReadonlyVec3} b the second operand
+ * @returns {Number} dot product of a and b
+ */
+
+function dot(a, b) {
+  return a[0] * b[0] + a[1] * b[1] + a[2] * b[2];
+}
+/**
+ * Computes the cross product of two vec3's
+ *
+ * @param {vec3} out the receiving vector
+ * @param {ReadonlyVec3} a the first operand
+ * @param {ReadonlyVec3} b the second operand
+ * @returns {vec3} out
+ */
+
+function cross(out, a, b) {
+  var ax = a[0],
+      ay = a[1],
+      az = a[2];
+  var bx = b[0],
+      by = b[1],
+      bz = b[2];
+  out[0] = ay * bz - az * by;
+  out[1] = az * bx - ax * bz;
+  out[2] = ax * by - ay * bx;
+  return out;
+}
+/**
+ * Performs a linear interpolation between two vec3's
+ *
+ * @param {vec3} out the receiving vector
+ * @param {ReadonlyVec3} a the first operand
+ * @param {ReadonlyVec3} b the second operand
+ * @param {Number} t interpolation amount, in the range [0-1], between the two inputs
+ * @returns {vec3} out
+ */
+
+function lerp(out, a, b, t) {
+  var ax = a[0];
+  var ay = a[1];
+  var az = a[2];
+  out[0] = ax + t * (b[0] - ax);
+  out[1] = ay + t * (b[1] - ay);
+  out[2] = az + t * (b[2] - az);
+  return out;
+}
+/**
+ * Performs a hermite interpolation with two control points
+ *
+ * @param {vec3} out the receiving vector
+ * @param {ReadonlyVec3} a the first operand
+ * @param {ReadonlyVec3} b the second operand
+ * @param {ReadonlyVec3} c the third operand
+ * @param {ReadonlyVec3} d the fourth operand
+ * @param {Number} t interpolation amount, in the range [0-1], between the two inputs
+ * @returns {vec3} out
+ */
+
+function hermite(out, a, b, c, d, t) {
+  var factorTimes2 = t * t;
+  var factor1 = factorTimes2 * (2 * t - 3) + 1;
+  var factor2 = factorTimes2 * (t - 2) + t;
+  var factor3 = factorTimes2 * (t - 1);
+  var factor4 = factorTimes2 * (3 - 2 * t);
+  out[0] = a[0] * factor1 + b[0] * factor2 + c[0] * factor3 + d[0] * factor4;
+  out[1] = a[1] * factor1 + b[1] * factor2 + c[1] * factor3 + d[1] * factor4;
+  out[2] = a[2] * factor1 + b[2] * factor2 + c[2] * factor3 + d[2] * factor4;
+  return out;
+}
+/**
+ * Performs a bezier interpolation with two control points
+ *
+ * @param {vec3} out the receiving vector
+ * @param {ReadonlyVec3} a the first operand
+ * @param {ReadonlyVec3} b the second operand
+ * @param {ReadonlyVec3} c the third operand
+ * @param {ReadonlyVec3} d the fourth operand
+ * @param {Number} t interpolation amount, in the range [0-1], between the two inputs
+ * @returns {vec3} out
+ */
+
+function bezier(out, a, b, c, d, t) {
+  var inverseFactor = 1 - t;
+  var inverseFactorTimesTwo = inverseFactor * inverseFactor;
+  var factorTimes2 = t * t;
+  var factor1 = inverseFactorTimesTwo * inverseFactor;
+  var factor2 = 3 * t * inverseFactorTimesTwo;
+  var factor3 = 3 * factorTimes2 * inverseFactor;
+  var factor4 = factorTimes2 * t;
+  out[0] = a[0] * factor1 + b[0] * factor2 + c[0] * factor3 + d[0] * factor4;
+  out[1] = a[1] * factor1 + b[1] * factor2 + c[1] * factor3 + d[1] * factor4;
+  out[2] = a[2] * factor1 + b[2] * factor2 + c[2] * factor3 + d[2] * factor4;
+  return out;
+}
+/**
+ * Generates a random vector with the given scale
+ *
+ * @param {vec3} out the receiving vector
+ * @param {Number} [scale] Length of the resulting vector. If ommitted, a unit vector will be returned
+ * @returns {vec3} out
+ */
+
+function random(out, scale) {
+  scale = scale || 1.0;
+  var r = _common_js__WEBPACK_IMPORTED_MODULE_0__.RANDOM() * 2.0 * Math.PI;
+  var z = _common_js__WEBPACK_IMPORTED_MODULE_0__.RANDOM() * 2.0 - 1.0;
+  var zScale = Math.sqrt(1.0 - z * z) * scale;
+  out[0] = Math.cos(r) * zScale;
+  out[1] = Math.sin(r) * zScale;
+  out[2] = z * scale;
+  return out;
+}
+/**
+ * Transforms the vec3 with a mat4.
+ * 4th vector component is implicitly '1'
+ *
+ * @param {vec3} out the receiving vector
+ * @param {ReadonlyVec3} a the vector to transform
+ * @param {ReadonlyMat4} m matrix to transform with
+ * @returns {vec3} out
+ */
+
+function transformMat4(out, a, m) {
+  var x = a[0],
+      y = a[1],
+      z = a[2];
+  var w = m[3] * x + m[7] * y + m[11] * z + m[15];
+  w = w || 1.0;
+  out[0] = (m[0] * x + m[4] * y + m[8] * z + m[12]) / w;
+  out[1] = (m[1] * x + m[5] * y + m[9] * z + m[13]) / w;
+  out[2] = (m[2] * x + m[6] * y + m[10] * z + m[14]) / w;
+  return out;
+}
+/**
+ * Transforms the vec3 with a mat3.
+ *
+ * @param {vec3} out the receiving vector
+ * @param {ReadonlyVec3} a the vector to transform
+ * @param {ReadonlyMat3} m the 3x3 matrix to transform with
+ * @returns {vec3} out
+ */
+
+function transformMat3(out, a, m) {
+  var x = a[0],
+      y = a[1],
+      z = a[2];
+  out[0] = x * m[0] + y * m[3] + z * m[6];
+  out[1] = x * m[1] + y * m[4] + z * m[7];
+  out[2] = x * m[2] + y * m[5] + z * m[8];
+  return out;
+}
+/**
+ * Transforms the vec3 with a quat
+ * Can also be used for dual quaternions. (Multiply it with the real part)
+ *
+ * @param {vec3} out the receiving vector
+ * @param {ReadonlyVec3} a the vector to transform
+ * @param {ReadonlyQuat} q quaternion to transform with
+ * @returns {vec3} out
+ */
+
+function transformQuat(out, a, q) {
+  // benchmarks: https://jsperf.com/quaternion-transform-vec3-implementations-fixed
+  var qx = q[0],
+      qy = q[1],
+      qz = q[2],
+      qw = q[3];
+  var x = a[0],
+      y = a[1],
+      z = a[2]; // var qvec = [qx, qy, qz];
+  // var uv = vec3.cross([], qvec, a);
+
+  var uvx = qy * z - qz * y,
+      uvy = qz * x - qx * z,
+      uvz = qx * y - qy * x; // var uuv = vec3.cross([], qvec, uv);
+
+  var uuvx = qy * uvz - qz * uvy,
+      uuvy = qz * uvx - qx * uvz,
+      uuvz = qx * uvy - qy * uvx; // vec3.scale(uv, uv, 2 * w);
+
+  var w2 = qw * 2;
+  uvx *= w2;
+  uvy *= w2;
+  uvz *= w2; // vec3.scale(uuv, uuv, 2);
+
+  uuvx *= 2;
+  uuvy *= 2;
+  uuvz *= 2; // return vec3.add(out, a, vec3.add(out, uv, uuv));
+
+  out[0] = x + uvx + uuvx;
+  out[1] = y + uvy + uuvy;
+  out[2] = z + uvz + uuvz;
+  return out;
+}
+/**
+ * Rotate a 3D vector around the x-axis
+ * @param {vec3} out The receiving vec3
+ * @param {ReadonlyVec3} a The vec3 point to rotate
+ * @param {ReadonlyVec3} b The origin of the rotation
+ * @param {Number} rad The angle of rotation in radians
+ * @returns {vec3} out
+ */
+
+function rotateX(out, a, b, rad) {
+  var p = [],
+      r = []; //Translate point to the origin
+
+  p[0] = a[0] - b[0];
+  p[1] = a[1] - b[1];
+  p[2] = a[2] - b[2]; //perform rotation
+
+  r[0] = p[0];
+  r[1] = p[1] * Math.cos(rad) - p[2] * Math.sin(rad);
+  r[2] = p[1] * Math.sin(rad) + p[2] * Math.cos(rad); //translate to correct position
+
+  out[0] = r[0] + b[0];
+  out[1] = r[1] + b[1];
+  out[2] = r[2] + b[2];
+  return out;
+}
+/**
+ * Rotate a 3D vector around the y-axis
+ * @param {vec3} out The receiving vec3
+ * @param {ReadonlyVec3} a The vec3 point to rotate
+ * @param {ReadonlyVec3} b The origin of the rotation
+ * @param {Number} rad The angle of rotation in radians
+ * @returns {vec3} out
+ */
+
+function rotateY(out, a, b, rad) {
+  var p = [],
+      r = []; //Translate point to the origin
+
+  p[0] = a[0] - b[0];
+  p[1] = a[1] - b[1];
+  p[2] = a[2] - b[2]; //perform rotation
+
+  r[0] = p[2] * Math.sin(rad) + p[0] * Math.cos(rad);
+  r[1] = p[1];
+  r[2] = p[2] * Math.cos(rad) - p[0] * Math.sin(rad); //translate to correct position
+
+  out[0] = r[0] + b[0];
+  out[1] = r[1] + b[1];
+  out[2] = r[2] + b[2];
+  return out;
+}
+/**
+ * Rotate a 3D vector around the z-axis
+ * @param {vec3} out The receiving vec3
+ * @param {ReadonlyVec3} a The vec3 point to rotate
+ * @param {ReadonlyVec3} b The origin of the rotation
+ * @param {Number} rad The angle of rotation in radians
+ * @returns {vec3} out
+ */
+
+function rotateZ(out, a, b, rad) {
+  var p = [],
+      r = []; //Translate point to the origin
+
+  p[0] = a[0] - b[0];
+  p[1] = a[1] - b[1];
+  p[2] = a[2] - b[2]; //perform rotation
+
+  r[0] = p[0] * Math.cos(rad) - p[1] * Math.sin(rad);
+  r[1] = p[0] * Math.sin(rad) + p[1] * Math.cos(rad);
+  r[2] = p[2]; //translate to correct position
+
+  out[0] = r[0] + b[0];
+  out[1] = r[1] + b[1];
+  out[2] = r[2] + b[2];
+  return out;
+}
+/**
+ * Get the angle between two 3D vectors
+ * @param {ReadonlyVec3} a The first operand
+ * @param {ReadonlyVec3} b The second operand
+ * @returns {Number} The angle in radians
+ */
+
+function angle(a, b) {
+  var ax = a[0],
+      ay = a[1],
+      az = a[2],
+      bx = b[0],
+      by = b[1],
+      bz = b[2],
+      mag1 = Math.sqrt(ax * ax + ay * ay + az * az),
+      mag2 = Math.sqrt(bx * bx + by * by + bz * bz),
+      mag = mag1 * mag2,
+      cosine = mag && dot(a, b) / mag;
+  return Math.acos(Math.min(Math.max(cosine, -1), 1));
+}
+/**
+ * Set the components of a vec3 to zero
+ *
+ * @param {vec3} out the receiving vector
+ * @returns {vec3} out
+ */
+
+function zero(out) {
+  out[0] = 0.0;
+  out[1] = 0.0;
+  out[2] = 0.0;
+  return out;
+}
+/**
+ * Returns a string representation of a vector
+ *
+ * @param {ReadonlyVec3} a vector to represent as a string
+ * @returns {String} string representation of the vector
+ */
+
+function str(a) {
+  return "vec3(" + a[0] + ", " + a[1] + ", " + a[2] + ")";
+}
+/**
+ * Returns whether or not the vectors have exactly the same elements in the same position (when compared with ===)
+ *
+ * @param {ReadonlyVec3} a The first vector.
+ * @param {ReadonlyVec3} b The second vector.
+ * @returns {Boolean} True if the vectors are equal, false otherwise.
+ */
+
+function exactEquals(a, b) {
+  return a[0] === b[0] && a[1] === b[1] && a[2] === b[2];
+}
+/**
+ * Returns whether or not the vectors have approximately the same elements in the same position.
+ *
+ * @param {ReadonlyVec3} a The first vector.
+ * @param {ReadonlyVec3} b The second vector.
+ * @returns {Boolean} True if the vectors are equal, false otherwise.
+ */
+
+function equals(a, b) {
+  var a0 = a[0],
+      a1 = a[1],
+      a2 = a[2];
+  var b0 = b[0],
+      b1 = b[1],
+      b2 = b[2];
+  return Math.abs(a0 - b0) <= _common_js__WEBPACK_IMPORTED_MODULE_0__.EPSILON * Math.max(1.0, Math.abs(a0), Math.abs(b0)) && Math.abs(a1 - b1) <= _common_js__WEBPACK_IMPORTED_MODULE_0__.EPSILON * Math.max(1.0, Math.abs(a1), Math.abs(b1)) && Math.abs(a2 - b2) <= _common_js__WEBPACK_IMPORTED_MODULE_0__.EPSILON * Math.max(1.0, Math.abs(a2), Math.abs(b2));
+}
+/**
+ * Alias for {@link vec3.subtract}
+ * @function
+ */
+
+var sub = subtract;
+/**
+ * Alias for {@link vec3.multiply}
+ * @function
+ */
+
+var mul = multiply;
+/**
+ * Alias for {@link vec3.divide}
+ * @function
+ */
+
+var div = divide;
+/**
+ * Alias for {@link vec3.distance}
+ * @function
+ */
+
+var dist = distance;
+/**
+ * Alias for {@link vec3.squaredDistance}
+ * @function
+ */
+
+var sqrDist = squaredDistance;
+/**
+ * Alias for {@link vec3.length}
+ * @function
+ */
+
+var len = length;
+/**
+ * Alias for {@link vec3.squaredLength}
+ * @function
+ */
+
+var sqrLen = squaredLength;
+/**
+ * Perform some operation over an array of vec3s.
+ *
+ * @param {Array} a the array of vectors to iterate over
+ * @param {Number} stride Number of elements between the start of each vec3. If 0 assumes tightly packed
+ * @param {Number} offset Number of elements to skip at the beginning of the array
+ * @param {Number} count Number of vec3s to iterate over. If 0 iterates over entire array
+ * @param {Function} fn Function to call for each vector in the array
+ * @param {Object} [arg] additional argument to pass to fn
+ * @returns {Array} a
+ * @function
+ */
+
+var forEach = function () {
+  var vec = create();
+  return function (a, stride, offset, count, fn, arg) {
+    var i, l;
+
+    if (!stride) {
+      stride = 3;
+    }
+
+    if (!offset) {
+      offset = 0;
+    }
+
+    if (count) {
+      l = Math.min(count * stride + offset, a.length);
+    } else {
+      l = a.length;
+    }
+
+    for (i = offset; i < l; i += stride) {
+      vec[0] = a[i];
+      vec[1] = a[i + 1];
+      vec[2] = a[i + 2];
+      fn(vec, vec, arg);
+      a[i] = vec[0];
+      a[i + 1] = vec[1];
+      a[i + 2] = vec[2];
+    }
+
+    return a;
+  };
+}();
+
+/***/ }),
+
+/***/ "./node_modules/gl-matrix/esm/vec4.js":
+/*!********************************************!*\
+  !*** ./node_modules/gl-matrix/esm/vec4.js ***!
+  \********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "create": function() { return /* binding */ create; },
+/* harmony export */   "clone": function() { return /* binding */ clone; },
+/* harmony export */   "fromValues": function() { return /* binding */ fromValues; },
+/* harmony export */   "copy": function() { return /* binding */ copy; },
+/* harmony export */   "set": function() { return /* binding */ set; },
+/* harmony export */   "add": function() { return /* binding */ add; },
+/* harmony export */   "subtract": function() { return /* binding */ subtract; },
+/* harmony export */   "multiply": function() { return /* binding */ multiply; },
+/* harmony export */   "divide": function() { return /* binding */ divide; },
+/* harmony export */   "ceil": function() { return /* binding */ ceil; },
+/* harmony export */   "floor": function() { return /* binding */ floor; },
+/* harmony export */   "min": function() { return /* binding */ min; },
+/* harmony export */   "max": function() { return /* binding */ max; },
+/* harmony export */   "round": function() { return /* binding */ round; },
+/* harmony export */   "scale": function() { return /* binding */ scale; },
+/* harmony export */   "scaleAndAdd": function() { return /* binding */ scaleAndAdd; },
+/* harmony export */   "distance": function() { return /* binding */ distance; },
+/* harmony export */   "squaredDistance": function() { return /* binding */ squaredDistance; },
+/* harmony export */   "length": function() { return /* binding */ length; },
+/* harmony export */   "squaredLength": function() { return /* binding */ squaredLength; },
+/* harmony export */   "negate": function() { return /* binding */ negate; },
+/* harmony export */   "inverse": function() { return /* binding */ inverse; },
+/* harmony export */   "normalize": function() { return /* binding */ normalize; },
+/* harmony export */   "dot": function() { return /* binding */ dot; },
+/* harmony export */   "cross": function() { return /* binding */ cross; },
+/* harmony export */   "lerp": function() { return /* binding */ lerp; },
+/* harmony export */   "random": function() { return /* binding */ random; },
+/* harmony export */   "transformMat4": function() { return /* binding */ transformMat4; },
+/* harmony export */   "transformQuat": function() { return /* binding */ transformQuat; },
+/* harmony export */   "zero": function() { return /* binding */ zero; },
+/* harmony export */   "str": function() { return /* binding */ str; },
+/* harmony export */   "exactEquals": function() { return /* binding */ exactEquals; },
+/* harmony export */   "equals": function() { return /* binding */ equals; },
+/* harmony export */   "sub": function() { return /* binding */ sub; },
+/* harmony export */   "mul": function() { return /* binding */ mul; },
+/* harmony export */   "div": function() { return /* binding */ div; },
+/* harmony export */   "dist": function() { return /* binding */ dist; },
+/* harmony export */   "sqrDist": function() { return /* binding */ sqrDist; },
+/* harmony export */   "len": function() { return /* binding */ len; },
+/* harmony export */   "sqrLen": function() { return /* binding */ sqrLen; },
+/* harmony export */   "forEach": function() { return /* binding */ forEach; }
+/* harmony export */ });
+/* harmony import */ var _common_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./common.js */ "./node_modules/gl-matrix/esm/common.js");
+
+/**
+ * 4 Dimensional Vector
+ * @module vec4
+ */
+
+/**
+ * Creates a new, empty vec4
+ *
+ * @returns {vec4} a new 4D vector
+ */
+
+function create() {
+  var out = new _common_js__WEBPACK_IMPORTED_MODULE_0__.ARRAY_TYPE(4);
+
+  if (_common_js__WEBPACK_IMPORTED_MODULE_0__.ARRAY_TYPE != Float32Array) {
+    out[0] = 0;
+    out[1] = 0;
+    out[2] = 0;
+    out[3] = 0;
+  }
+
+  return out;
+}
+/**
+ * Creates a new vec4 initialized with values from an existing vector
+ *
+ * @param {ReadonlyVec4} a vector to clone
+ * @returns {vec4} a new 4D vector
+ */
+
+function clone(a) {
+  var out = new _common_js__WEBPACK_IMPORTED_MODULE_0__.ARRAY_TYPE(4);
+  out[0] = a[0];
+  out[1] = a[1];
+  out[2] = a[2];
+  out[3] = a[3];
+  return out;
+}
+/**
+ * Creates a new vec4 initialized with the given values
+ *
+ * @param {Number} x X component
+ * @param {Number} y Y component
+ * @param {Number} z Z component
+ * @param {Number} w W component
+ * @returns {vec4} a new 4D vector
+ */
+
+function fromValues(x, y, z, w) {
+  var out = new _common_js__WEBPACK_IMPORTED_MODULE_0__.ARRAY_TYPE(4);
+  out[0] = x;
+  out[1] = y;
+  out[2] = z;
+  out[3] = w;
+  return out;
+}
+/**
+ * Copy the values from one vec4 to another
+ *
+ * @param {vec4} out the receiving vector
+ * @param {ReadonlyVec4} a the source vector
+ * @returns {vec4} out
+ */
+
+function copy(out, a) {
+  out[0] = a[0];
+  out[1] = a[1];
+  out[2] = a[2];
+  out[3] = a[3];
+  return out;
+}
+/**
+ * Set the components of a vec4 to the given values
+ *
+ * @param {vec4} out the receiving vector
+ * @param {Number} x X component
+ * @param {Number} y Y component
+ * @param {Number} z Z component
+ * @param {Number} w W component
+ * @returns {vec4} out
+ */
+
+function set(out, x, y, z, w) {
+  out[0] = x;
+  out[1] = y;
+  out[2] = z;
+  out[3] = w;
+  return out;
+}
+/**
+ * Adds two vec4's
+ *
+ * @param {vec4} out the receiving vector
+ * @param {ReadonlyVec4} a the first operand
+ * @param {ReadonlyVec4} b the second operand
+ * @returns {vec4} out
+ */
+
+function add(out, a, b) {
+  out[0] = a[0] + b[0];
+  out[1] = a[1] + b[1];
+  out[2] = a[2] + b[2];
+  out[3] = a[3] + b[3];
+  return out;
+}
+/**
+ * Subtracts vector b from vector a
+ *
+ * @param {vec4} out the receiving vector
+ * @param {ReadonlyVec4} a the first operand
+ * @param {ReadonlyVec4} b the second operand
+ * @returns {vec4} out
+ */
+
+function subtract(out, a, b) {
+  out[0] = a[0] - b[0];
+  out[1] = a[1] - b[1];
+  out[2] = a[2] - b[2];
+  out[3] = a[3] - b[3];
+  return out;
+}
+/**
+ * Multiplies two vec4's
+ *
+ * @param {vec4} out the receiving vector
+ * @param {ReadonlyVec4} a the first operand
+ * @param {ReadonlyVec4} b the second operand
+ * @returns {vec4} out
+ */
+
+function multiply(out, a, b) {
+  out[0] = a[0] * b[0];
+  out[1] = a[1] * b[1];
+  out[2] = a[2] * b[2];
+  out[3] = a[3] * b[3];
+  return out;
+}
+/**
+ * Divides two vec4's
+ *
+ * @param {vec4} out the receiving vector
+ * @param {ReadonlyVec4} a the first operand
+ * @param {ReadonlyVec4} b the second operand
+ * @returns {vec4} out
+ */
+
+function divide(out, a, b) {
+  out[0] = a[0] / b[0];
+  out[1] = a[1] / b[1];
+  out[2] = a[2] / b[2];
+  out[3] = a[3] / b[3];
+  return out;
+}
+/**
+ * Math.ceil the components of a vec4
+ *
+ * @param {vec4} out the receiving vector
+ * @param {ReadonlyVec4} a vector to ceil
+ * @returns {vec4} out
+ */
+
+function ceil(out, a) {
+  out[0] = Math.ceil(a[0]);
+  out[1] = Math.ceil(a[1]);
+  out[2] = Math.ceil(a[2]);
+  out[3] = Math.ceil(a[3]);
+  return out;
+}
+/**
+ * Math.floor the components of a vec4
+ *
+ * @param {vec4} out the receiving vector
+ * @param {ReadonlyVec4} a vector to floor
+ * @returns {vec4} out
+ */
+
+function floor(out, a) {
+  out[0] = Math.floor(a[0]);
+  out[1] = Math.floor(a[1]);
+  out[2] = Math.floor(a[2]);
+  out[3] = Math.floor(a[3]);
+  return out;
+}
+/**
+ * Returns the minimum of two vec4's
+ *
+ * @param {vec4} out the receiving vector
+ * @param {ReadonlyVec4} a the first operand
+ * @param {ReadonlyVec4} b the second operand
+ * @returns {vec4} out
+ */
+
+function min(out, a, b) {
+  out[0] = Math.min(a[0], b[0]);
+  out[1] = Math.min(a[1], b[1]);
+  out[2] = Math.min(a[2], b[2]);
+  out[3] = Math.min(a[3], b[3]);
+  return out;
+}
+/**
+ * Returns the maximum of two vec4's
+ *
+ * @param {vec4} out the receiving vector
+ * @param {ReadonlyVec4} a the first operand
+ * @param {ReadonlyVec4} b the second operand
+ * @returns {vec4} out
+ */
+
+function max(out, a, b) {
+  out[0] = Math.max(a[0], b[0]);
+  out[1] = Math.max(a[1], b[1]);
+  out[2] = Math.max(a[2], b[2]);
+  out[3] = Math.max(a[3], b[3]);
+  return out;
+}
+/**
+ * Math.round the components of a vec4
+ *
+ * @param {vec4} out the receiving vector
+ * @param {ReadonlyVec4} a vector to round
+ * @returns {vec4} out
+ */
+
+function round(out, a) {
+  out[0] = Math.round(a[0]);
+  out[1] = Math.round(a[1]);
+  out[2] = Math.round(a[2]);
+  out[3] = Math.round(a[3]);
+  return out;
+}
+/**
+ * Scales a vec4 by a scalar number
+ *
+ * @param {vec4} out the receiving vector
+ * @param {ReadonlyVec4} a the vector to scale
+ * @param {Number} b amount to scale the vector by
+ * @returns {vec4} out
+ */
+
+function scale(out, a, b) {
+  out[0] = a[0] * b;
+  out[1] = a[1] * b;
+  out[2] = a[2] * b;
+  out[3] = a[3] * b;
+  return out;
+}
+/**
+ * Adds two vec4's after scaling the second operand by a scalar value
+ *
+ * @param {vec4} out the receiving vector
+ * @param {ReadonlyVec4} a the first operand
+ * @param {ReadonlyVec4} b the second operand
+ * @param {Number} scale the amount to scale b by before adding
+ * @returns {vec4} out
+ */
+
+function scaleAndAdd(out, a, b, scale) {
+  out[0] = a[0] + b[0] * scale;
+  out[1] = a[1] + b[1] * scale;
+  out[2] = a[2] + b[2] * scale;
+  out[3] = a[3] + b[3] * scale;
+  return out;
+}
+/**
+ * Calculates the euclidian distance between two vec4's
+ *
+ * @param {ReadonlyVec4} a the first operand
+ * @param {ReadonlyVec4} b the second operand
+ * @returns {Number} distance between a and b
+ */
+
+function distance(a, b) {
+  var x = b[0] - a[0];
+  var y = b[1] - a[1];
+  var z = b[2] - a[2];
+  var w = b[3] - a[3];
+  return Math.hypot(x, y, z, w);
+}
+/**
+ * Calculates the squared euclidian distance between two vec4's
+ *
+ * @param {ReadonlyVec4} a the first operand
+ * @param {ReadonlyVec4} b the second operand
+ * @returns {Number} squared distance between a and b
+ */
+
+function squaredDistance(a, b) {
+  var x = b[0] - a[0];
+  var y = b[1] - a[1];
+  var z = b[2] - a[2];
+  var w = b[3] - a[3];
+  return x * x + y * y + z * z + w * w;
+}
+/**
+ * Calculates the length of a vec4
+ *
+ * @param {ReadonlyVec4} a vector to calculate length of
+ * @returns {Number} length of a
+ */
+
+function length(a) {
+  var x = a[0];
+  var y = a[1];
+  var z = a[2];
+  var w = a[3];
+  return Math.hypot(x, y, z, w);
+}
+/**
+ * Calculates the squared length of a vec4
+ *
+ * @param {ReadonlyVec4} a vector to calculate squared length of
+ * @returns {Number} squared length of a
+ */
+
+function squaredLength(a) {
+  var x = a[0];
+  var y = a[1];
+  var z = a[2];
+  var w = a[3];
+  return x * x + y * y + z * z + w * w;
+}
+/**
+ * Negates the components of a vec4
+ *
+ * @param {vec4} out the receiving vector
+ * @param {ReadonlyVec4} a vector to negate
+ * @returns {vec4} out
+ */
+
+function negate(out, a) {
+  out[0] = -a[0];
+  out[1] = -a[1];
+  out[2] = -a[2];
+  out[3] = -a[3];
+  return out;
+}
+/**
+ * Returns the inverse of the components of a vec4
+ *
+ * @param {vec4} out the receiving vector
+ * @param {ReadonlyVec4} a vector to invert
+ * @returns {vec4} out
+ */
+
+function inverse(out, a) {
+  out[0] = 1.0 / a[0];
+  out[1] = 1.0 / a[1];
+  out[2] = 1.0 / a[2];
+  out[3] = 1.0 / a[3];
+  return out;
+}
+/**
+ * Normalize a vec4
+ *
+ * @param {vec4} out the receiving vector
+ * @param {ReadonlyVec4} a vector to normalize
+ * @returns {vec4} out
+ */
+
+function normalize(out, a) {
+  var x = a[0];
+  var y = a[1];
+  var z = a[2];
+  var w = a[3];
+  var len = x * x + y * y + z * z + w * w;
+
+  if (len > 0) {
+    len = 1 / Math.sqrt(len);
+  }
+
+  out[0] = x * len;
+  out[1] = y * len;
+  out[2] = z * len;
+  out[3] = w * len;
+  return out;
+}
+/**
+ * Calculates the dot product of two vec4's
+ *
+ * @param {ReadonlyVec4} a the first operand
+ * @param {ReadonlyVec4} b the second operand
+ * @returns {Number} dot product of a and b
+ */
+
+function dot(a, b) {
+  return a[0] * b[0] + a[1] * b[1] + a[2] * b[2] + a[3] * b[3];
+}
+/**
+ * Returns the cross-product of three vectors in a 4-dimensional space
+ *
+ * @param {ReadonlyVec4} result the receiving vector
+ * @param {ReadonlyVec4} U the first vector
+ * @param {ReadonlyVec4} V the second vector
+ * @param {ReadonlyVec4} W the third vector
+ * @returns {vec4} result
+ */
+
+function cross(out, u, v, w) {
+  var A = v[0] * w[1] - v[1] * w[0],
+      B = v[0] * w[2] - v[2] * w[0],
+      C = v[0] * w[3] - v[3] * w[0],
+      D = v[1] * w[2] - v[2] * w[1],
+      E = v[1] * w[3] - v[3] * w[1],
+      F = v[2] * w[3] - v[3] * w[2];
+  var G = u[0];
+  var H = u[1];
+  var I = u[2];
+  var J = u[3];
+  out[0] = H * F - I * E + J * D;
+  out[1] = -(G * F) + I * C - J * B;
+  out[2] = G * E - H * C + J * A;
+  out[3] = -(G * D) + H * B - I * A;
+  return out;
+}
+/**
+ * Performs a linear interpolation between two vec4's
+ *
+ * @param {vec4} out the receiving vector
+ * @param {ReadonlyVec4} a the first operand
+ * @param {ReadonlyVec4} b the second operand
+ * @param {Number} t interpolation amount, in the range [0-1], between the two inputs
+ * @returns {vec4} out
+ */
+
+function lerp(out, a, b, t) {
+  var ax = a[0];
+  var ay = a[1];
+  var az = a[2];
+  var aw = a[3];
+  out[0] = ax + t * (b[0] - ax);
+  out[1] = ay + t * (b[1] - ay);
+  out[2] = az + t * (b[2] - az);
+  out[3] = aw + t * (b[3] - aw);
+  return out;
+}
+/**
+ * Generates a random vector with the given scale
+ *
+ * @param {vec4} out the receiving vector
+ * @param {Number} [scale] Length of the resulting vector. If ommitted, a unit vector will be returned
+ * @returns {vec4} out
+ */
+
+function random(out, scale) {
+  scale = scale || 1.0; // Marsaglia, George. Choosing a Point from the Surface of a
+  // Sphere. Ann. Math. Statist. 43 (1972), no. 2, 645--646.
+  // http://projecteuclid.org/euclid.aoms/1177692644;
+
+  var v1, v2, v3, v4;
+  var s1, s2;
+
+  do {
+    v1 = _common_js__WEBPACK_IMPORTED_MODULE_0__.RANDOM() * 2 - 1;
+    v2 = _common_js__WEBPACK_IMPORTED_MODULE_0__.RANDOM() * 2 - 1;
+    s1 = v1 * v1 + v2 * v2;
+  } while (s1 >= 1);
+
+  do {
+    v3 = _common_js__WEBPACK_IMPORTED_MODULE_0__.RANDOM() * 2 - 1;
+    v4 = _common_js__WEBPACK_IMPORTED_MODULE_0__.RANDOM() * 2 - 1;
+    s2 = v3 * v3 + v4 * v4;
+  } while (s2 >= 1);
+
+  var d = Math.sqrt((1 - s1) / s2);
+  out[0] = scale * v1;
+  out[1] = scale * v2;
+  out[2] = scale * v3 * d;
+  out[3] = scale * v4 * d;
+  return out;
+}
+/**
+ * Transforms the vec4 with a mat4.
+ *
+ * @param {vec4} out the receiving vector
+ * @param {ReadonlyVec4} a the vector to transform
+ * @param {ReadonlyMat4} m matrix to transform with
+ * @returns {vec4} out
+ */
+
+function transformMat4(out, a, m) {
+  var x = a[0],
+      y = a[1],
+      z = a[2],
+      w = a[3];
+  out[0] = m[0] * x + m[4] * y + m[8] * z + m[12] * w;
+  out[1] = m[1] * x + m[5] * y + m[9] * z + m[13] * w;
+  out[2] = m[2] * x + m[6] * y + m[10] * z + m[14] * w;
+  out[3] = m[3] * x + m[7] * y + m[11] * z + m[15] * w;
+  return out;
+}
+/**
+ * Transforms the vec4 with a quat
+ *
+ * @param {vec4} out the receiving vector
+ * @param {ReadonlyVec4} a the vector to transform
+ * @param {ReadonlyQuat} q quaternion to transform with
+ * @returns {vec4} out
+ */
+
+function transformQuat(out, a, q) {
+  var x = a[0],
+      y = a[1],
+      z = a[2];
+  var qx = q[0],
+      qy = q[1],
+      qz = q[2],
+      qw = q[3]; // calculate quat * vec
+
+  var ix = qw * x + qy * z - qz * y;
+  var iy = qw * y + qz * x - qx * z;
+  var iz = qw * z + qx * y - qy * x;
+  var iw = -qx * x - qy * y - qz * z; // calculate result * inverse quat
+
+  out[0] = ix * qw + iw * -qx + iy * -qz - iz * -qy;
+  out[1] = iy * qw + iw * -qy + iz * -qx - ix * -qz;
+  out[2] = iz * qw + iw * -qz + ix * -qy - iy * -qx;
+  out[3] = a[3];
+  return out;
+}
+/**
+ * Set the components of a vec4 to zero
+ *
+ * @param {vec4} out the receiving vector
+ * @returns {vec4} out
+ */
+
+function zero(out) {
+  out[0] = 0.0;
+  out[1] = 0.0;
+  out[2] = 0.0;
+  out[3] = 0.0;
+  return out;
+}
+/**
+ * Returns a string representation of a vector
+ *
+ * @param {ReadonlyVec4} a vector to represent as a string
+ * @returns {String} string representation of the vector
+ */
+
+function str(a) {
+  return "vec4(" + a[0] + ", " + a[1] + ", " + a[2] + ", " + a[3] + ")";
+}
+/**
+ * Returns whether or not the vectors have exactly the same elements in the same position (when compared with ===)
+ *
+ * @param {ReadonlyVec4} a The first vector.
+ * @param {ReadonlyVec4} b The second vector.
+ * @returns {Boolean} True if the vectors are equal, false otherwise.
+ */
+
+function exactEquals(a, b) {
+  return a[0] === b[0] && a[1] === b[1] && a[2] === b[2] && a[3] === b[3];
+}
+/**
+ * Returns whether or not the vectors have approximately the same elements in the same position.
+ *
+ * @param {ReadonlyVec4} a The first vector.
+ * @param {ReadonlyVec4} b The second vector.
+ * @returns {Boolean} True if the vectors are equal, false otherwise.
+ */
+
+function equals(a, b) {
+  var a0 = a[0],
+      a1 = a[1],
+      a2 = a[2],
+      a3 = a[3];
+  var b0 = b[0],
+      b1 = b[1],
+      b2 = b[2],
+      b3 = b[3];
+  return Math.abs(a0 - b0) <= _common_js__WEBPACK_IMPORTED_MODULE_0__.EPSILON * Math.max(1.0, Math.abs(a0), Math.abs(b0)) && Math.abs(a1 - b1) <= _common_js__WEBPACK_IMPORTED_MODULE_0__.EPSILON * Math.max(1.0, Math.abs(a1), Math.abs(b1)) && Math.abs(a2 - b2) <= _common_js__WEBPACK_IMPORTED_MODULE_0__.EPSILON * Math.max(1.0, Math.abs(a2), Math.abs(b2)) && Math.abs(a3 - b3) <= _common_js__WEBPACK_IMPORTED_MODULE_0__.EPSILON * Math.max(1.0, Math.abs(a3), Math.abs(b3));
+}
+/**
+ * Alias for {@link vec4.subtract}
+ * @function
+ */
+
+var sub = subtract;
+/**
+ * Alias for {@link vec4.multiply}
+ * @function
+ */
+
+var mul = multiply;
+/**
+ * Alias for {@link vec4.divide}
+ * @function
+ */
+
+var div = divide;
+/**
+ * Alias for {@link vec4.distance}
+ * @function
+ */
+
+var dist = distance;
+/**
+ * Alias for {@link vec4.squaredDistance}
+ * @function
+ */
+
+var sqrDist = squaredDistance;
+/**
+ * Alias for {@link vec4.length}
+ * @function
+ */
+
+var len = length;
+/**
+ * Alias for {@link vec4.squaredLength}
+ * @function
+ */
+
+var sqrLen = squaredLength;
+/**
+ * Perform some operation over an array of vec4s.
+ *
+ * @param {Array} a the array of vectors to iterate over
+ * @param {Number} stride Number of elements between the start of each vec4. If 0 assumes tightly packed
+ * @param {Number} offset Number of elements to skip at the beginning of the array
+ * @param {Number} count Number of vec4s to iterate over. If 0 iterates over entire array
+ * @param {Function} fn Function to call for each vector in the array
+ * @param {Object} [arg] additional argument to pass to fn
+ * @returns {Array} a
+ * @function
+ */
+
+var forEach = function () {
+  var vec = create();
+  return function (a, stride, offset, count, fn, arg) {
+    var i, l;
+
+    if (!stride) {
+      stride = 4;
+    }
+
+    if (!offset) {
+      offset = 0;
+    }
+
+    if (count) {
+      l = Math.min(count * stride + offset, a.length);
+    } else {
+      l = a.length;
+    }
+
+    for (i = offset; i < l; i += stride) {
+      vec[0] = a[i];
+      vec[1] = a[i + 1];
+      vec[2] = a[i + 2];
+      vec[3] = a[i + 3];
+      fn(vec, vec, arg);
+      a[i] = vec[0];
+      a[i + 1] = vec[1];
+      a[i + 2] = vec[2];
+      a[i + 3] = vec[3];
+    }
+
+    return a;
+  };
+}();
+
+/***/ }),
+
+/***/ "./node_modules/hammerjs/hammer.js":
+/*!*****************************************!*\
+  !*** ./node_modules/hammerjs/hammer.js ***!
+  \*****************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;/*! Hammer.JS - v2.0.7 - 2016-04-22
+ * http://hammerjs.github.io/
+ *
+ * Copyright (c) 2016 Jorik Tangelder;
+ * Licensed under the MIT license */
+(function(window, document, exportName, undefined) {
+  'use strict';
+
+var VENDOR_PREFIXES = ['', 'webkit', 'Moz', 'MS', 'ms', 'o'];
+var TEST_ELEMENT = document.createElement('div');
+
+var TYPE_FUNCTION = 'function';
+
+var round = Math.round;
+var abs = Math.abs;
+var now = Date.now;
+
+/**
+ * set a timeout with a given scope
+ * @param {Function} fn
+ * @param {Number} timeout
+ * @param {Object} context
+ * @returns {number}
+ */
+function setTimeoutContext(fn, timeout, context) {
+    return setTimeout(bindFn(fn, context), timeout);
+}
+
+/**
+ * if the argument is an array, we want to execute the fn on each entry
+ * if it aint an array we don't want to do a thing.
+ * this is used by all the methods that accept a single and array argument.
+ * @param {*|Array} arg
+ * @param {String} fn
+ * @param {Object} [context]
+ * @returns {Boolean}
+ */
+function invokeArrayArg(arg, fn, context) {
+    if (Array.isArray(arg)) {
+        each(arg, context[fn], context);
+        return true;
+    }
+    return false;
+}
+
+/**
+ * walk objects and arrays
+ * @param {Object} obj
+ * @param {Function} iterator
+ * @param {Object} context
+ */
+function each(obj, iterator, context) {
+    var i;
+
+    if (!obj) {
+        return;
+    }
+
+    if (obj.forEach) {
+        obj.forEach(iterator, context);
+    } else if (obj.length !== undefined) {
+        i = 0;
+        while (i < obj.length) {
+            iterator.call(context, obj[i], i, obj);
+            i++;
+        }
+    } else {
+        for (i in obj) {
+            obj.hasOwnProperty(i) && iterator.call(context, obj[i], i, obj);
+        }
+    }
+}
+
+/**
+ * wrap a method with a deprecation warning and stack trace
+ * @param {Function} method
+ * @param {String} name
+ * @param {String} message
+ * @returns {Function} A new function wrapping the supplied method.
+ */
+function deprecate(method, name, message) {
+    var deprecationMessage = 'DEPRECATED METHOD: ' + name + '\n' + message + ' AT \n';
+    return function() {
+        var e = new Error('get-stack-trace');
+        var stack = e && e.stack ? e.stack.replace(/^[^\(]+?[\n$]/gm, '')
+            .replace(/^\s+at\s+/gm, '')
+            .replace(/^Object.<anonymous>\s*\(/gm, '{anonymous}()@') : 'Unknown Stack Trace';
+
+        var log = window.console && (window.console.warn || window.console.log);
+        if (log) {
+            log.call(window.console, deprecationMessage, stack);
+        }
+        return method.apply(this, arguments);
+    };
+}
+
+/**
+ * extend object.
+ * means that properties in dest will be overwritten by the ones in src.
+ * @param {Object} target
+ * @param {...Object} objects_to_assign
+ * @returns {Object} target
+ */
+var assign;
+if (typeof Object.assign !== 'function') {
+    assign = function assign(target) {
+        if (target === undefined || target === null) {
+            throw new TypeError('Cannot convert undefined or null to object');
+        }
+
+        var output = Object(target);
+        for (var index = 1; index < arguments.length; index++) {
+            var source = arguments[index];
+            if (source !== undefined && source !== null) {
+                for (var nextKey in source) {
+                    if (source.hasOwnProperty(nextKey)) {
+                        output[nextKey] = source[nextKey];
+                    }
+                }
+            }
+        }
+        return output;
+    };
+} else {
+    assign = Object.assign;
+}
+
+/**
+ * extend object.
+ * means that properties in dest will be overwritten by the ones in src.
+ * @param {Object} dest
+ * @param {Object} src
+ * @param {Boolean} [merge=false]
+ * @returns {Object} dest
+ */
+var extend = deprecate(function extend(dest, src, merge) {
+    var keys = Object.keys(src);
+    var i = 0;
+    while (i < keys.length) {
+        if (!merge || (merge && dest[keys[i]] === undefined)) {
+            dest[keys[i]] = src[keys[i]];
+        }
+        i++;
+    }
+    return dest;
+}, 'extend', 'Use `assign`.');
+
+/**
+ * merge the values from src in the dest.
+ * means that properties that exist in dest will not be overwritten by src
+ * @param {Object} dest
+ * @param {Object} src
+ * @returns {Object} dest
+ */
+var merge = deprecate(function merge(dest, src) {
+    return extend(dest, src, true);
+}, 'merge', 'Use `assign`.');
+
+/**
+ * simple class inheritance
+ * @param {Function} child
+ * @param {Function} base
+ * @param {Object} [properties]
+ */
+function inherit(child, base, properties) {
+    var baseP = base.prototype,
+        childP;
+
+    childP = child.prototype = Object.create(baseP);
+    childP.constructor = child;
+    childP._super = baseP;
+
+    if (properties) {
+        assign(childP, properties);
+    }
+}
+
+/**
+ * simple function bind
+ * @param {Function} fn
+ * @param {Object} context
+ * @returns {Function}
+ */
+function bindFn(fn, context) {
+    return function boundFn() {
+        return fn.apply(context, arguments);
+    };
+}
+
+/**
+ * let a boolean value also be a function that must return a boolean
+ * this first item in args will be used as the context
+ * @param {Boolean|Function} val
+ * @param {Array} [args]
+ * @returns {Boolean}
+ */
+function boolOrFn(val, args) {
+    if (typeof val == TYPE_FUNCTION) {
+        return val.apply(args ? args[0] || undefined : undefined, args);
+    }
+    return val;
+}
+
+/**
+ * use the val2 when val1 is undefined
+ * @param {*} val1
+ * @param {*} val2
+ * @returns {*}
+ */
+function ifUndefined(val1, val2) {
+    return (val1 === undefined) ? val2 : val1;
+}
+
+/**
+ * addEventListener with multiple events at once
+ * @param {EventTarget} target
+ * @param {String} types
+ * @param {Function} handler
+ */
+function addEventListeners(target, types, handler) {
+    each(splitStr(types), function(type) {
+        target.addEventListener(type, handler, false);
+    });
+}
+
+/**
+ * removeEventListener with multiple events at once
+ * @param {EventTarget} target
+ * @param {String} types
+ * @param {Function} handler
+ */
+function removeEventListeners(target, types, handler) {
+    each(splitStr(types), function(type) {
+        target.removeEventListener(type, handler, false);
+    });
+}
+
+/**
+ * find if a node is in the given parent
+ * @method hasParent
+ * @param {HTMLElement} node
+ * @param {HTMLElement} parent
+ * @return {Boolean} found
+ */
+function hasParent(node, parent) {
+    while (node) {
+        if (node == parent) {
+            return true;
+        }
+        node = node.parentNode;
+    }
+    return false;
+}
+
+/**
+ * small indexOf wrapper
+ * @param {String} str
+ * @param {String} find
+ * @returns {Boolean} found
+ */
+function inStr(str, find) {
+    return str.indexOf(find) > -1;
+}
+
+/**
+ * split string on whitespace
+ * @param {String} str
+ * @returns {Array} words
+ */
+function splitStr(str) {
+    return str.trim().split(/\s+/g);
+}
+
+/**
+ * find if a array contains the object using indexOf or a simple polyFill
+ * @param {Array} src
+ * @param {String} find
+ * @param {String} [findByKey]
+ * @return {Boolean|Number} false when not found, or the index
+ */
+function inArray(src, find, findByKey) {
+    if (src.indexOf && !findByKey) {
+        return src.indexOf(find);
+    } else {
+        var i = 0;
+        while (i < src.length) {
+            if ((findByKey && src[i][findByKey] == find) || (!findByKey && src[i] === find)) {
+                return i;
+            }
+            i++;
+        }
+        return -1;
+    }
+}
+
+/**
+ * convert array-like objects to real arrays
+ * @param {Object} obj
+ * @returns {Array}
+ */
+function toArray(obj) {
+    return Array.prototype.slice.call(obj, 0);
+}
+
+/**
+ * unique array with objects based on a key (like 'id') or just by the array's value
+ * @param {Array} src [{id:1},{id:2},{id:1}]
+ * @param {String} [key]
+ * @param {Boolean} [sort=False]
+ * @returns {Array} [{id:1},{id:2}]
+ */
+function uniqueArray(src, key, sort) {
+    var results = [];
+    var values = [];
+    var i = 0;
+
+    while (i < src.length) {
+        var val = key ? src[i][key] : src[i];
+        if (inArray(values, val) < 0) {
+            results.push(src[i]);
+        }
+        values[i] = val;
+        i++;
+    }
+
+    if (sort) {
+        if (!key) {
+            results = results.sort();
+        } else {
+            results = results.sort(function sortUniqueArray(a, b) {
+                return a[key] > b[key];
+            });
+        }
+    }
+
+    return results;
+}
+
+/**
+ * get the prefixed property
+ * @param {Object} obj
+ * @param {String} property
+ * @returns {String|Undefined} prefixed
+ */
+function prefixed(obj, property) {
+    var prefix, prop;
+    var camelProp = property[0].toUpperCase() + property.slice(1);
+
+    var i = 0;
+    while (i < VENDOR_PREFIXES.length) {
+        prefix = VENDOR_PREFIXES[i];
+        prop = (prefix) ? prefix + camelProp : property;
+
+        if (prop in obj) {
+            return prop;
+        }
+        i++;
+    }
+    return undefined;
+}
+
+/**
+ * get a unique id
+ * @returns {number} uniqueId
+ */
+var _uniqueId = 1;
+function uniqueId() {
+    return _uniqueId++;
+}
+
+/**
+ * get the window object of an element
+ * @param {HTMLElement} element
+ * @returns {DocumentView|Window}
+ */
+function getWindowForElement(element) {
+    var doc = element.ownerDocument || element;
+    return (doc.defaultView || doc.parentWindow || window);
+}
+
+var MOBILE_REGEX = /mobile|tablet|ip(ad|hone|od)|android/i;
+
+var SUPPORT_TOUCH = ('ontouchstart' in window);
+var SUPPORT_POINTER_EVENTS = prefixed(window, 'PointerEvent') !== undefined;
+var SUPPORT_ONLY_TOUCH = SUPPORT_TOUCH && MOBILE_REGEX.test(navigator.userAgent);
+
+var INPUT_TYPE_TOUCH = 'touch';
+var INPUT_TYPE_PEN = 'pen';
+var INPUT_TYPE_MOUSE = 'mouse';
+var INPUT_TYPE_KINECT = 'kinect';
+
+var COMPUTE_INTERVAL = 25;
+
+var INPUT_START = 1;
+var INPUT_MOVE = 2;
+var INPUT_END = 4;
+var INPUT_CANCEL = 8;
+
+var DIRECTION_NONE = 1;
+var DIRECTION_LEFT = 2;
+var DIRECTION_RIGHT = 4;
+var DIRECTION_UP = 8;
+var DIRECTION_DOWN = 16;
+
+var DIRECTION_HORIZONTAL = DIRECTION_LEFT | DIRECTION_RIGHT;
+var DIRECTION_VERTICAL = DIRECTION_UP | DIRECTION_DOWN;
+var DIRECTION_ALL = DIRECTION_HORIZONTAL | DIRECTION_VERTICAL;
+
+var PROPS_XY = ['x', 'y'];
+var PROPS_CLIENT_XY = ['clientX', 'clientY'];
+
+/**
+ * create new input type manager
+ * @param {Manager} manager
+ * @param {Function} callback
+ * @returns {Input}
+ * @constructor
+ */
+function Input(manager, callback) {
+    var self = this;
+    this.manager = manager;
+    this.callback = callback;
+    this.element = manager.element;
+    this.target = manager.options.inputTarget;
+
+    // smaller wrapper around the handler, for the scope and the enabled state of the manager,
+    // so when disabled the input events are completely bypassed.
+    this.domHandler = function(ev) {
+        if (boolOrFn(manager.options.enable, [manager])) {
+            self.handler(ev);
+        }
+    };
+
+    this.init();
+
+}
+
+Input.prototype = {
+    /**
+     * should handle the inputEvent data and trigger the callback
+     * @virtual
+     */
+    handler: function() { },
+
+    /**
+     * bind the events
+     */
+    init: function() {
+        this.evEl && addEventListeners(this.element, this.evEl, this.domHandler);
+        this.evTarget && addEventListeners(this.target, this.evTarget, this.domHandler);
+        this.evWin && addEventListeners(getWindowForElement(this.element), this.evWin, this.domHandler);
+    },
+
+    /**
+     * unbind the events
+     */
+    destroy: function() {
+        this.evEl && removeEventListeners(this.element, this.evEl, this.domHandler);
+        this.evTarget && removeEventListeners(this.target, this.evTarget, this.domHandler);
+        this.evWin && removeEventListeners(getWindowForElement(this.element), this.evWin, this.domHandler);
+    }
+};
+
+/**
+ * create new input type manager
+ * called by the Manager constructor
+ * @param {Hammer} manager
+ * @returns {Input}
+ */
+function createInputInstance(manager) {
+    var Type;
+    var inputClass = manager.options.inputClass;
+
+    if (inputClass) {
+        Type = inputClass;
+    } else if (SUPPORT_POINTER_EVENTS) {
+        Type = PointerEventInput;
+    } else if (SUPPORT_ONLY_TOUCH) {
+        Type = TouchInput;
+    } else if (!SUPPORT_TOUCH) {
+        Type = MouseInput;
+    } else {
+        Type = TouchMouseInput;
+    }
+    return new (Type)(manager, inputHandler);
+}
+
+/**
+ * handle input events
+ * @param {Manager} manager
+ * @param {String} eventType
+ * @param {Object} input
+ */
+function inputHandler(manager, eventType, input) {
+    var pointersLen = input.pointers.length;
+    var changedPointersLen = input.changedPointers.length;
+    var isFirst = (eventType & INPUT_START && (pointersLen - changedPointersLen === 0));
+    var isFinal = (eventType & (INPUT_END | INPUT_CANCEL) && (pointersLen - changedPointersLen === 0));
+
+    input.isFirst = !!isFirst;
+    input.isFinal = !!isFinal;
+
+    if (isFirst) {
+        manager.session = {};
+    }
+
+    // source event is the normalized value of the domEvents
+    // like 'touchstart, mouseup, pointerdown'
+    input.eventType = eventType;
+
+    // compute scale, rotation etc
+    computeInputData(manager, input);
+
+    // emit secret event
+    manager.emit('hammer.input', input);
+
+    manager.recognize(input);
+    manager.session.prevInput = input;
+}
+
+/**
+ * extend the data with some usable properties like scale, rotate, velocity etc
+ * @param {Object} manager
+ * @param {Object} input
+ */
+function computeInputData(manager, input) {
+    var session = manager.session;
+    var pointers = input.pointers;
+    var pointersLength = pointers.length;
+
+    // store the first input to calculate the distance and direction
+    if (!session.firstInput) {
+        session.firstInput = simpleCloneInputData(input);
+    }
+
+    // to compute scale and rotation we need to store the multiple touches
+    if (pointersLength > 1 && !session.firstMultiple) {
+        session.firstMultiple = simpleCloneInputData(input);
+    } else if (pointersLength === 1) {
+        session.firstMultiple = false;
+    }
+
+    var firstInput = session.firstInput;
+    var firstMultiple = session.firstMultiple;
+    var offsetCenter = firstMultiple ? firstMultiple.center : firstInput.center;
+
+    var center = input.center = getCenter(pointers);
+    input.timeStamp = now();
+    input.deltaTime = input.timeStamp - firstInput.timeStamp;
+
+    input.angle = getAngle(offsetCenter, center);
+    input.distance = getDistance(offsetCenter, center);
+
+    computeDeltaXY(session, input);
+    input.offsetDirection = getDirection(input.deltaX, input.deltaY);
+
+    var overallVelocity = getVelocity(input.deltaTime, input.deltaX, input.deltaY);
+    input.overallVelocityX = overallVelocity.x;
+    input.overallVelocityY = overallVelocity.y;
+    input.overallVelocity = (abs(overallVelocity.x) > abs(overallVelocity.y)) ? overallVelocity.x : overallVelocity.y;
+
+    input.scale = firstMultiple ? getScale(firstMultiple.pointers, pointers) : 1;
+    input.rotation = firstMultiple ? getRotation(firstMultiple.pointers, pointers) : 0;
+
+    input.maxPointers = !session.prevInput ? input.pointers.length : ((input.pointers.length >
+        session.prevInput.maxPointers) ? input.pointers.length : session.prevInput.maxPointers);
+
+    computeIntervalInputData(session, input);
+
+    // find the correct target
+    var target = manager.element;
+    if (hasParent(input.srcEvent.target, target)) {
+        target = input.srcEvent.target;
+    }
+    input.target = target;
+}
+
+function computeDeltaXY(session, input) {
+    var center = input.center;
+    var offset = session.offsetDelta || {};
+    var prevDelta = session.prevDelta || {};
+    var prevInput = session.prevInput || {};
+
+    if (input.eventType === INPUT_START || prevInput.eventType === INPUT_END) {
+        prevDelta = session.prevDelta = {
+            x: prevInput.deltaX || 0,
+            y: prevInput.deltaY || 0
+        };
+
+        offset = session.offsetDelta = {
+            x: center.x,
+            y: center.y
+        };
+    }
+
+    input.deltaX = prevDelta.x + (center.x - offset.x);
+    input.deltaY = prevDelta.y + (center.y - offset.y);
+}
+
+/**
+ * velocity is calculated every x ms
+ * @param {Object} session
+ * @param {Object} input
+ */
+function computeIntervalInputData(session, input) {
+    var last = session.lastInterval || input,
+        deltaTime = input.timeStamp - last.timeStamp,
+        velocity, velocityX, velocityY, direction;
+
+    if (input.eventType != INPUT_CANCEL && (deltaTime > COMPUTE_INTERVAL || last.velocity === undefined)) {
+        var deltaX = input.deltaX - last.deltaX;
+        var deltaY = input.deltaY - last.deltaY;
+
+        var v = getVelocity(deltaTime, deltaX, deltaY);
+        velocityX = v.x;
+        velocityY = v.y;
+        velocity = (abs(v.x) > abs(v.y)) ? v.x : v.y;
+        direction = getDirection(deltaX, deltaY);
+
+        session.lastInterval = input;
+    } else {
+        // use latest velocity info if it doesn't overtake a minimum period
+        velocity = last.velocity;
+        velocityX = last.velocityX;
+        velocityY = last.velocityY;
+        direction = last.direction;
+    }
+
+    input.velocity = velocity;
+    input.velocityX = velocityX;
+    input.velocityY = velocityY;
+    input.direction = direction;
+}
+
+/**
+ * create a simple clone from the input used for storage of firstInput and firstMultiple
+ * @param {Object} input
+ * @returns {Object} clonedInputData
+ */
+function simpleCloneInputData(input) {
+    // make a simple copy of the pointers because we will get a reference if we don't
+    // we only need clientXY for the calculations
+    var pointers = [];
+    var i = 0;
+    while (i < input.pointers.length) {
+        pointers[i] = {
+            clientX: round(input.pointers[i].clientX),
+            clientY: round(input.pointers[i].clientY)
+        };
+        i++;
+    }
+
+    return {
+        timeStamp: now(),
+        pointers: pointers,
+        center: getCenter(pointers),
+        deltaX: input.deltaX,
+        deltaY: input.deltaY
+    };
+}
+
+/**
+ * get the center of all the pointers
+ * @param {Array} pointers
+ * @return {Object} center contains `x` and `y` properties
+ */
+function getCenter(pointers) {
+    var pointersLength = pointers.length;
+
+    // no need to loop when only one touch
+    if (pointersLength === 1) {
+        return {
+            x: round(pointers[0].clientX),
+            y: round(pointers[0].clientY)
+        };
+    }
+
+    var x = 0, y = 0, i = 0;
+    while (i < pointersLength) {
+        x += pointers[i].clientX;
+        y += pointers[i].clientY;
+        i++;
+    }
+
+    return {
+        x: round(x / pointersLength),
+        y: round(y / pointersLength)
+    };
+}
+
+/**
+ * calculate the velocity between two points. unit is in px per ms.
+ * @param {Number} deltaTime
+ * @param {Number} x
+ * @param {Number} y
+ * @return {Object} velocity `x` and `y`
+ */
+function getVelocity(deltaTime, x, y) {
+    return {
+        x: x / deltaTime || 0,
+        y: y / deltaTime || 0
+    };
+}
+
+/**
+ * get the direction between two points
+ * @param {Number} x
+ * @param {Number} y
+ * @return {Number} direction
+ */
+function getDirection(x, y) {
+    if (x === y) {
+        return DIRECTION_NONE;
+    }
+
+    if (abs(x) >= abs(y)) {
+        return x < 0 ? DIRECTION_LEFT : DIRECTION_RIGHT;
+    }
+    return y < 0 ? DIRECTION_UP : DIRECTION_DOWN;
+}
+
+/**
+ * calculate the absolute distance between two points
+ * @param {Object} p1 {x, y}
+ * @param {Object} p2 {x, y}
+ * @param {Array} [props] containing x and y keys
+ * @return {Number} distance
+ */
+function getDistance(p1, p2, props) {
+    if (!props) {
+        props = PROPS_XY;
+    }
+    var x = p2[props[0]] - p1[props[0]],
+        y = p2[props[1]] - p1[props[1]];
+
+    return Math.sqrt((x * x) + (y * y));
+}
+
+/**
+ * calculate the angle between two coordinates
+ * @param {Object} p1
+ * @param {Object} p2
+ * @param {Array} [props] containing x and y keys
+ * @return {Number} angle
+ */
+function getAngle(p1, p2, props) {
+    if (!props) {
+        props = PROPS_XY;
+    }
+    var x = p2[props[0]] - p1[props[0]],
+        y = p2[props[1]] - p1[props[1]];
+    return Math.atan2(y, x) * 180 / Math.PI;
+}
+
+/**
+ * calculate the rotation degrees between two pointersets
+ * @param {Array} start array of pointers
+ * @param {Array} end array of pointers
+ * @return {Number} rotation
+ */
+function getRotation(start, end) {
+    return getAngle(end[1], end[0], PROPS_CLIENT_XY) + getAngle(start[1], start[0], PROPS_CLIENT_XY);
+}
+
+/**
+ * calculate the scale factor between two pointersets
+ * no scale is 1, and goes down to 0 when pinched together, and bigger when pinched out
+ * @param {Array} start array of pointers
+ * @param {Array} end array of pointers
+ * @return {Number} scale
+ */
+function getScale(start, end) {
+    return getDistance(end[0], end[1], PROPS_CLIENT_XY) / getDistance(start[0], start[1], PROPS_CLIENT_XY);
+}
+
+var MOUSE_INPUT_MAP = {
+    mousedown: INPUT_START,
+    mousemove: INPUT_MOVE,
+    mouseup: INPUT_END
+};
+
+var MOUSE_ELEMENT_EVENTS = 'mousedown';
+var MOUSE_WINDOW_EVENTS = 'mousemove mouseup';
+
+/**
+ * Mouse events input
+ * @constructor
+ * @extends Input
+ */
+function MouseInput() {
+    this.evEl = MOUSE_ELEMENT_EVENTS;
+    this.evWin = MOUSE_WINDOW_EVENTS;
+
+    this.pressed = false; // mousedown state
+
+    Input.apply(this, arguments);
+}
+
+inherit(MouseInput, Input, {
+    /**
+     * handle mouse events
+     * @param {Object} ev
+     */
+    handler: function MEhandler(ev) {
+        var eventType = MOUSE_INPUT_MAP[ev.type];
+
+        // on start we want to have the left mouse button down
+        if (eventType & INPUT_START && ev.button === 0) {
+            this.pressed = true;
+        }
+
+        if (eventType & INPUT_MOVE && ev.which !== 1) {
+            eventType = INPUT_END;
+        }
+
+        // mouse must be down
+        if (!this.pressed) {
+            return;
+        }
+
+        if (eventType & INPUT_END) {
+            this.pressed = false;
+        }
+
+        this.callback(this.manager, eventType, {
+            pointers: [ev],
+            changedPointers: [ev],
+            pointerType: INPUT_TYPE_MOUSE,
+            srcEvent: ev
+        });
+    }
+});
+
+var POINTER_INPUT_MAP = {
+    pointerdown: INPUT_START,
+    pointermove: INPUT_MOVE,
+    pointerup: INPUT_END,
+    pointercancel: INPUT_CANCEL,
+    pointerout: INPUT_CANCEL
+};
+
+// in IE10 the pointer types is defined as an enum
+var IE10_POINTER_TYPE_ENUM = {
+    2: INPUT_TYPE_TOUCH,
+    3: INPUT_TYPE_PEN,
+    4: INPUT_TYPE_MOUSE,
+    5: INPUT_TYPE_KINECT // see https://twitter.com/jacobrossi/status/480596438489890816
+};
+
+var POINTER_ELEMENT_EVENTS = 'pointerdown';
+var POINTER_WINDOW_EVENTS = 'pointermove pointerup pointercancel';
+
+// IE10 has prefixed support, and case-sensitive
+if (window.MSPointerEvent && !window.PointerEvent) {
+    POINTER_ELEMENT_EVENTS = 'MSPointerDown';
+    POINTER_WINDOW_EVENTS = 'MSPointerMove MSPointerUp MSPointerCancel';
+}
+
+/**
+ * Pointer events input
+ * @constructor
+ * @extends Input
+ */
+function PointerEventInput() {
+    this.evEl = POINTER_ELEMENT_EVENTS;
+    this.evWin = POINTER_WINDOW_EVENTS;
+
+    Input.apply(this, arguments);
+
+    this.store = (this.manager.session.pointerEvents = []);
+}
+
+inherit(PointerEventInput, Input, {
+    /**
+     * handle mouse events
+     * @param {Object} ev
+     */
+    handler: function PEhandler(ev) {
+        var store = this.store;
+        var removePointer = false;
+
+        var eventTypeNormalized = ev.type.toLowerCase().replace('ms', '');
+        var eventType = POINTER_INPUT_MAP[eventTypeNormalized];
+        var pointerType = IE10_POINTER_TYPE_ENUM[ev.pointerType] || ev.pointerType;
+
+        var isTouch = (pointerType == INPUT_TYPE_TOUCH);
+
+        // get index of the event in the store
+        var storeIndex = inArray(store, ev.pointerId, 'pointerId');
+
+        // start and mouse must be down
+        if (eventType & INPUT_START && (ev.button === 0 || isTouch)) {
+            if (storeIndex < 0) {
+                store.push(ev);
+                storeIndex = store.length - 1;
+            }
+        } else if (eventType & (INPUT_END | INPUT_CANCEL)) {
+            removePointer = true;
+        }
+
+        // it not found, so the pointer hasn't been down (so it's probably a hover)
+        if (storeIndex < 0) {
+            return;
+        }
+
+        // update the event in the store
+        store[storeIndex] = ev;
+
+        this.callback(this.manager, eventType, {
+            pointers: store,
+            changedPointers: [ev],
+            pointerType: pointerType,
+            srcEvent: ev
+        });
+
+        if (removePointer) {
+            // remove from the store
+            store.splice(storeIndex, 1);
+        }
+    }
+});
+
+var SINGLE_TOUCH_INPUT_MAP = {
+    touchstart: INPUT_START,
+    touchmove: INPUT_MOVE,
+    touchend: INPUT_END,
+    touchcancel: INPUT_CANCEL
+};
+
+var SINGLE_TOUCH_TARGET_EVENTS = 'touchstart';
+var SINGLE_TOUCH_WINDOW_EVENTS = 'touchstart touchmove touchend touchcancel';
+
+/**
+ * Touch events input
+ * @constructor
+ * @extends Input
+ */
+function SingleTouchInput() {
+    this.evTarget = SINGLE_TOUCH_TARGET_EVENTS;
+    this.evWin = SINGLE_TOUCH_WINDOW_EVENTS;
+    this.started = false;
+
+    Input.apply(this, arguments);
+}
+
+inherit(SingleTouchInput, Input, {
+    handler: function TEhandler(ev) {
+        var type = SINGLE_TOUCH_INPUT_MAP[ev.type];
+
+        // should we handle the touch events?
+        if (type === INPUT_START) {
+            this.started = true;
+        }
+
+        if (!this.started) {
+            return;
+        }
+
+        var touches = normalizeSingleTouches.call(this, ev, type);
+
+        // when done, reset the started state
+        if (type & (INPUT_END | INPUT_CANCEL) && touches[0].length - touches[1].length === 0) {
+            this.started = false;
+        }
+
+        this.callback(this.manager, type, {
+            pointers: touches[0],
+            changedPointers: touches[1],
+            pointerType: INPUT_TYPE_TOUCH,
+            srcEvent: ev
+        });
+    }
+});
+
+/**
+ * @this {TouchInput}
+ * @param {Object} ev
+ * @param {Number} type flag
+ * @returns {undefined|Array} [all, changed]
+ */
+function normalizeSingleTouches(ev, type) {
+    var all = toArray(ev.touches);
+    var changed = toArray(ev.changedTouches);
+
+    if (type & (INPUT_END | INPUT_CANCEL)) {
+        all = uniqueArray(all.concat(changed), 'identifier', true);
+    }
+
+    return [all, changed];
+}
+
+var TOUCH_INPUT_MAP = {
+    touchstart: INPUT_START,
+    touchmove: INPUT_MOVE,
+    touchend: INPUT_END,
+    touchcancel: INPUT_CANCEL
+};
+
+var TOUCH_TARGET_EVENTS = 'touchstart touchmove touchend touchcancel';
+
+/**
+ * Multi-user touch events input
+ * @constructor
+ * @extends Input
+ */
+function TouchInput() {
+    this.evTarget = TOUCH_TARGET_EVENTS;
+    this.targetIds = {};
+
+    Input.apply(this, arguments);
+}
+
+inherit(TouchInput, Input, {
+    handler: function MTEhandler(ev) {
+        var type = TOUCH_INPUT_MAP[ev.type];
+        var touches = getTouches.call(this, ev, type);
+        if (!touches) {
+            return;
+        }
+
+        this.callback(this.manager, type, {
+            pointers: touches[0],
+            changedPointers: touches[1],
+            pointerType: INPUT_TYPE_TOUCH,
+            srcEvent: ev
+        });
+    }
+});
+
+/**
+ * @this {TouchInput}
+ * @param {Object} ev
+ * @param {Number} type flag
+ * @returns {undefined|Array} [all, changed]
+ */
+function getTouches(ev, type) {
+    var allTouches = toArray(ev.touches);
+    var targetIds = this.targetIds;
+
+    // when there is only one touch, the process can be simplified
+    if (type & (INPUT_START | INPUT_MOVE) && allTouches.length === 1) {
+        targetIds[allTouches[0].identifier] = true;
+        return [allTouches, allTouches];
+    }
+
+    var i,
+        targetTouches,
+        changedTouches = toArray(ev.changedTouches),
+        changedTargetTouches = [],
+        target = this.target;
+
+    // get target touches from touches
+    targetTouches = allTouches.filter(function(touch) {
+        return hasParent(touch.target, target);
+    });
+
+    // collect touches
+    if (type === INPUT_START) {
+        i = 0;
+        while (i < targetTouches.length) {
+            targetIds[targetTouches[i].identifier] = true;
+            i++;
+        }
+    }
+
+    // filter changed touches to only contain touches that exist in the collected target ids
+    i = 0;
+    while (i < changedTouches.length) {
+        if (targetIds[changedTouches[i].identifier]) {
+            changedTargetTouches.push(changedTouches[i]);
+        }
+
+        // cleanup removed touches
+        if (type & (INPUT_END | INPUT_CANCEL)) {
+            delete targetIds[changedTouches[i].identifier];
+        }
+        i++;
+    }
+
+    if (!changedTargetTouches.length) {
+        return;
+    }
+
+    return [
+        // merge targetTouches with changedTargetTouches so it contains ALL touches, including 'end' and 'cancel'
+        uniqueArray(targetTouches.concat(changedTargetTouches), 'identifier', true),
+        changedTargetTouches
+    ];
+}
+
+/**
+ * Combined touch and mouse input
+ *
+ * Touch has a higher priority then mouse, and while touching no mouse events are allowed.
+ * This because touch devices also emit mouse events while doing a touch.
+ *
+ * @constructor
+ * @extends Input
+ */
+
+var DEDUP_TIMEOUT = 2500;
+var DEDUP_DISTANCE = 25;
+
+function TouchMouseInput() {
+    Input.apply(this, arguments);
+
+    var handler = bindFn(this.handler, this);
+    this.touch = new TouchInput(this.manager, handler);
+    this.mouse = new MouseInput(this.manager, handler);
+
+    this.primaryTouch = null;
+    this.lastTouches = [];
+}
+
+inherit(TouchMouseInput, Input, {
+    /**
+     * handle mouse and touch events
+     * @param {Hammer} manager
+     * @param {String} inputEvent
+     * @param {Object} inputData
+     */
+    handler: function TMEhandler(manager, inputEvent, inputData) {
+        var isTouch = (inputData.pointerType == INPUT_TYPE_TOUCH),
+            isMouse = (inputData.pointerType == INPUT_TYPE_MOUSE);
+
+        if (isMouse && inputData.sourceCapabilities && inputData.sourceCapabilities.firesTouchEvents) {
+            return;
+        }
+
+        // when we're in a touch event, record touches to  de-dupe synthetic mouse event
+        if (isTouch) {
+            recordTouches.call(this, inputEvent, inputData);
+        } else if (isMouse && isSyntheticEvent.call(this, inputData)) {
+            return;
+        }
+
+        this.callback(manager, inputEvent, inputData);
+    },
+
+    /**
+     * remove the event listeners
+     */
+    destroy: function destroy() {
+        this.touch.destroy();
+        this.mouse.destroy();
+    }
+});
+
+function recordTouches(eventType, eventData) {
+    if (eventType & INPUT_START) {
+        this.primaryTouch = eventData.changedPointers[0].identifier;
+        setLastTouch.call(this, eventData);
+    } else if (eventType & (INPUT_END | INPUT_CANCEL)) {
+        setLastTouch.call(this, eventData);
+    }
+}
+
+function setLastTouch(eventData) {
+    var touch = eventData.changedPointers[0];
+
+    if (touch.identifier === this.primaryTouch) {
+        var lastTouch = {x: touch.clientX, y: touch.clientY};
+        this.lastTouches.push(lastTouch);
+        var lts = this.lastTouches;
+        var removeLastTouch = function() {
+            var i = lts.indexOf(lastTouch);
+            if (i > -1) {
+                lts.splice(i, 1);
+            }
+        };
+        setTimeout(removeLastTouch, DEDUP_TIMEOUT);
+    }
+}
+
+function isSyntheticEvent(eventData) {
+    var x = eventData.srcEvent.clientX, y = eventData.srcEvent.clientY;
+    for (var i = 0; i < this.lastTouches.length; i++) {
+        var t = this.lastTouches[i];
+        var dx = Math.abs(x - t.x), dy = Math.abs(y - t.y);
+        if (dx <= DEDUP_DISTANCE && dy <= DEDUP_DISTANCE) {
+            return true;
+        }
+    }
+    return false;
+}
+
+var PREFIXED_TOUCH_ACTION = prefixed(TEST_ELEMENT.style, 'touchAction');
+var NATIVE_TOUCH_ACTION = PREFIXED_TOUCH_ACTION !== undefined;
+
+// magical touchAction value
+var TOUCH_ACTION_COMPUTE = 'compute';
+var TOUCH_ACTION_AUTO = 'auto';
+var TOUCH_ACTION_MANIPULATION = 'manipulation'; // not implemented
+var TOUCH_ACTION_NONE = 'none';
+var TOUCH_ACTION_PAN_X = 'pan-x';
+var TOUCH_ACTION_PAN_Y = 'pan-y';
+var TOUCH_ACTION_MAP = getTouchActionProps();
+
+/**
+ * Touch Action
+ * sets the touchAction property or uses the js alternative
+ * @param {Manager} manager
+ * @param {String} value
+ * @constructor
+ */
+function TouchAction(manager, value) {
+    this.manager = manager;
+    this.set(value);
+}
+
+TouchAction.prototype = {
+    /**
+     * set the touchAction value on the element or enable the polyfill
+     * @param {String} value
+     */
+    set: function(value) {
+        // find out the touch-action by the event handlers
+        if (value == TOUCH_ACTION_COMPUTE) {
+            value = this.compute();
+        }
+
+        if (NATIVE_TOUCH_ACTION && this.manager.element.style && TOUCH_ACTION_MAP[value]) {
+            this.manager.element.style[PREFIXED_TOUCH_ACTION] = value;
+        }
+        this.actions = value.toLowerCase().trim();
+    },
+
+    /**
+     * just re-set the touchAction value
+     */
+    update: function() {
+        this.set(this.manager.options.touchAction);
+    },
+
+    /**
+     * compute the value for the touchAction property based on the recognizer's settings
+     * @returns {String} value
+     */
+    compute: function() {
+        var actions = [];
+        each(this.manager.recognizers, function(recognizer) {
+            if (boolOrFn(recognizer.options.enable, [recognizer])) {
+                actions = actions.concat(recognizer.getTouchAction());
+            }
+        });
+        return cleanTouchActions(actions.join(' '));
+    },
+
+    /**
+     * this method is called on each input cycle and provides the preventing of the browser behavior
+     * @param {Object} input
+     */
+    preventDefaults: function(input) {
+        var srcEvent = input.srcEvent;
+        var direction = input.offsetDirection;
+
+        // if the touch action did prevented once this session
+        if (this.manager.session.prevented) {
+            srcEvent.preventDefault();
+            return;
+        }
+
+        var actions = this.actions;
+        var hasNone = inStr(actions, TOUCH_ACTION_NONE) && !TOUCH_ACTION_MAP[TOUCH_ACTION_NONE];
+        var hasPanY = inStr(actions, TOUCH_ACTION_PAN_Y) && !TOUCH_ACTION_MAP[TOUCH_ACTION_PAN_Y];
+        var hasPanX = inStr(actions, TOUCH_ACTION_PAN_X) && !TOUCH_ACTION_MAP[TOUCH_ACTION_PAN_X];
+
+        if (hasNone) {
+            //do not prevent defaults if this is a tap gesture
+
+            var isTapPointer = input.pointers.length === 1;
+            var isTapMovement = input.distance < 2;
+            var isTapTouchTime = input.deltaTime < 250;
+
+            if (isTapPointer && isTapMovement && isTapTouchTime) {
+                return;
+            }
+        }
+
+        if (hasPanX && hasPanY) {
+            // `pan-x pan-y` means browser handles all scrolling/panning, do not prevent
+            return;
+        }
+
+        if (hasNone ||
+            (hasPanY && direction & DIRECTION_HORIZONTAL) ||
+            (hasPanX && direction & DIRECTION_VERTICAL)) {
+            return this.preventSrc(srcEvent);
+        }
+    },
+
+    /**
+     * call preventDefault to prevent the browser's default behavior (scrolling in most cases)
+     * @param {Object} srcEvent
+     */
+    preventSrc: function(srcEvent) {
+        this.manager.session.prevented = true;
+        srcEvent.preventDefault();
+    }
+};
+
+/**
+ * when the touchActions are collected they are not a valid value, so we need to clean things up. *
+ * @param {String} actions
+ * @returns {*}
+ */
+function cleanTouchActions(actions) {
+    // none
+    if (inStr(actions, TOUCH_ACTION_NONE)) {
+        return TOUCH_ACTION_NONE;
+    }
+
+    var hasPanX = inStr(actions, TOUCH_ACTION_PAN_X);
+    var hasPanY = inStr(actions, TOUCH_ACTION_PAN_Y);
+
+    // if both pan-x and pan-y are set (different recognizers
+    // for different directions, e.g. horizontal pan but vertical swipe?)
+    // we need none (as otherwise with pan-x pan-y combined none of these
+    // recognizers will work, since the browser would handle all panning
+    if (hasPanX && hasPanY) {
+        return TOUCH_ACTION_NONE;
+    }
+
+    // pan-x OR pan-y
+    if (hasPanX || hasPanY) {
+        return hasPanX ? TOUCH_ACTION_PAN_X : TOUCH_ACTION_PAN_Y;
+    }
+
+    // manipulation
+    if (inStr(actions, TOUCH_ACTION_MANIPULATION)) {
+        return TOUCH_ACTION_MANIPULATION;
+    }
+
+    return TOUCH_ACTION_AUTO;
+}
+
+function getTouchActionProps() {
+    if (!NATIVE_TOUCH_ACTION) {
+        return false;
+    }
+    var touchMap = {};
+    var cssSupports = window.CSS && window.CSS.supports;
+    ['auto', 'manipulation', 'pan-y', 'pan-x', 'pan-x pan-y', 'none'].forEach(function(val) {
+
+        // If css.supports is not supported but there is native touch-action assume it supports
+        // all values. This is the case for IE 10 and 11.
+        touchMap[val] = cssSupports ? window.CSS.supports('touch-action', val) : true;
+    });
+    return touchMap;
+}
+
+/**
+ * Recognizer flow explained; *
+ * All recognizers have the initial state of POSSIBLE when a input session starts.
+ * The definition of a input session is from the first input until the last input, with all it's movement in it. *
+ * Example session for mouse-input: mousedown -> mousemove -> mouseup
+ *
+ * On each recognizing cycle (see Manager.recognize) the .recognize() method is executed
+ * which determines with state it should be.
+ *
+ * If the recognizer has the state FAILED, CANCELLED or RECOGNIZED (equals ENDED), it is reset to
+ * POSSIBLE to give it another change on the next cycle.
+ *
+ *               Possible
+ *                  |
+ *            +-----+---------------+
+ *            |                     |
+ *      +-----+-----+               |
+ *      |           |               |
+ *   Failed      Cancelled          |
+ *                          +-------+------+
+ *                          |              |
+ *                      Recognized       Began
+ *                                         |
+ *                                      Changed
+ *                                         |
+ *                                  Ended/Recognized
+ */
+var STATE_POSSIBLE = 1;
+var STATE_BEGAN = 2;
+var STATE_CHANGED = 4;
+var STATE_ENDED = 8;
+var STATE_RECOGNIZED = STATE_ENDED;
+var STATE_CANCELLED = 16;
+var STATE_FAILED = 32;
+
+/**
+ * Recognizer
+ * Every recognizer needs to extend from this class.
+ * @constructor
+ * @param {Object} options
+ */
+function Recognizer(options) {
+    this.options = assign({}, this.defaults, options || {});
+
+    this.id = uniqueId();
+
+    this.manager = null;
+
+    // default is enable true
+    this.options.enable = ifUndefined(this.options.enable, true);
+
+    this.state = STATE_POSSIBLE;
+
+    this.simultaneous = {};
+    this.requireFail = [];
+}
+
+Recognizer.prototype = {
+    /**
+     * @virtual
+     * @type {Object}
+     */
+    defaults: {},
+
+    /**
+     * set options
+     * @param {Object} options
+     * @return {Recognizer}
+     */
+    set: function(options) {
+        assign(this.options, options);
+
+        // also update the touchAction, in case something changed about the directions/enabled state
+        this.manager && this.manager.touchAction.update();
+        return this;
+    },
+
+    /**
+     * recognize simultaneous with an other recognizer.
+     * @param {Recognizer} otherRecognizer
+     * @returns {Recognizer} this
+     */
+    recognizeWith: function(otherRecognizer) {
+        if (invokeArrayArg(otherRecognizer, 'recognizeWith', this)) {
+            return this;
+        }
+
+        var simultaneous = this.simultaneous;
+        otherRecognizer = getRecognizerByNameIfManager(otherRecognizer, this);
+        if (!simultaneous[otherRecognizer.id]) {
+            simultaneous[otherRecognizer.id] = otherRecognizer;
+            otherRecognizer.recognizeWith(this);
+        }
+        return this;
+    },
+
+    /**
+     * drop the simultaneous link. it doesnt remove the link on the other recognizer.
+     * @param {Recognizer} otherRecognizer
+     * @returns {Recognizer} this
+     */
+    dropRecognizeWith: function(otherRecognizer) {
+        if (invokeArrayArg(otherRecognizer, 'dropRecognizeWith', this)) {
+            return this;
+        }
+
+        otherRecognizer = getRecognizerByNameIfManager(otherRecognizer, this);
+        delete this.simultaneous[otherRecognizer.id];
+        return this;
+    },
+
+    /**
+     * recognizer can only run when an other is failing
+     * @param {Recognizer} otherRecognizer
+     * @returns {Recognizer} this
+     */
+    requireFailure: function(otherRecognizer) {
+        if (invokeArrayArg(otherRecognizer, 'requireFailure', this)) {
+            return this;
+        }
+
+        var requireFail = this.requireFail;
+        otherRecognizer = getRecognizerByNameIfManager(otherRecognizer, this);
+        if (inArray(requireFail, otherRecognizer) === -1) {
+            requireFail.push(otherRecognizer);
+            otherRecognizer.requireFailure(this);
+        }
+        return this;
+    },
+
+    /**
+     * drop the requireFailure link. it does not remove the link on the other recognizer.
+     * @param {Recognizer} otherRecognizer
+     * @returns {Recognizer} this
+     */
+    dropRequireFailure: function(otherRecognizer) {
+        if (invokeArrayArg(otherRecognizer, 'dropRequireFailure', this)) {
+            return this;
+        }
+
+        otherRecognizer = getRecognizerByNameIfManager(otherRecognizer, this);
+        var index = inArray(this.requireFail, otherRecognizer);
+        if (index > -1) {
+            this.requireFail.splice(index, 1);
+        }
+        return this;
+    },
+
+    /**
+     * has require failures boolean
+     * @returns {boolean}
+     */
+    hasRequireFailures: function() {
+        return this.requireFail.length > 0;
+    },
+
+    /**
+     * if the recognizer can recognize simultaneous with an other recognizer
+     * @param {Recognizer} otherRecognizer
+     * @returns {Boolean}
+     */
+    canRecognizeWith: function(otherRecognizer) {
+        return !!this.simultaneous[otherRecognizer.id];
+    },
+
+    /**
+     * You should use `tryEmit` instead of `emit` directly to check
+     * that all the needed recognizers has failed before emitting.
+     * @param {Object} input
+     */
+    emit: function(input) {
+        var self = this;
+        var state = this.state;
+
+        function emit(event) {
+            self.manager.emit(event, input);
+        }
+
+        // 'panstart' and 'panmove'
+        if (state < STATE_ENDED) {
+            emit(self.options.event + stateStr(state));
+        }
+
+        emit(self.options.event); // simple 'eventName' events
+
+        if (input.additionalEvent) { // additional event(panleft, panright, pinchin, pinchout...)
+            emit(input.additionalEvent);
+        }
+
+        // panend and pancancel
+        if (state >= STATE_ENDED) {
+            emit(self.options.event + stateStr(state));
+        }
+    },
+
+    /**
+     * Check that all the require failure recognizers has failed,
+     * if true, it emits a gesture event,
+     * otherwise, setup the state to FAILED.
+     * @param {Object} input
+     */
+    tryEmit: function(input) {
+        if (this.canEmit()) {
+            return this.emit(input);
+        }
+        // it's failing anyway
+        this.state = STATE_FAILED;
+    },
+
+    /**
+     * can we emit?
+     * @returns {boolean}
+     */
+    canEmit: function() {
+        var i = 0;
+        while (i < this.requireFail.length) {
+            if (!(this.requireFail[i].state & (STATE_FAILED | STATE_POSSIBLE))) {
+                return false;
+            }
+            i++;
+        }
+        return true;
+    },
+
+    /**
+     * update the recognizer
+     * @param {Object} inputData
+     */
+    recognize: function(inputData) {
+        // make a new copy of the inputData
+        // so we can change the inputData without messing up the other recognizers
+        var inputDataClone = assign({}, inputData);
+
+        // is is enabled and allow recognizing?
+        if (!boolOrFn(this.options.enable, [this, inputDataClone])) {
+            this.reset();
+            this.state = STATE_FAILED;
+            return;
+        }
+
+        // reset when we've reached the end
+        if (this.state & (STATE_RECOGNIZED | STATE_CANCELLED | STATE_FAILED)) {
+            this.state = STATE_POSSIBLE;
+        }
+
+        this.state = this.process(inputDataClone);
+
+        // the recognizer has recognized a gesture
+        // so trigger an event
+        if (this.state & (STATE_BEGAN | STATE_CHANGED | STATE_ENDED | STATE_CANCELLED)) {
+            this.tryEmit(inputDataClone);
+        }
+    },
+
+    /**
+     * return the state of the recognizer
+     * the actual recognizing happens in this method
+     * @virtual
+     * @param {Object} inputData
+     * @returns {Const} STATE
+     */
+    process: function(inputData) { }, // jshint ignore:line
+
+    /**
+     * return the preferred touch-action
+     * @virtual
+     * @returns {Array}
+     */
+    getTouchAction: function() { },
+
+    /**
+     * called when the gesture isn't allowed to recognize
+     * like when another is being recognized or it is disabled
+     * @virtual
+     */
+    reset: function() { }
+};
+
+/**
+ * get a usable string, used as event postfix
+ * @param {Const} state
+ * @returns {String} state
+ */
+function stateStr(state) {
+    if (state & STATE_CANCELLED) {
+        return 'cancel';
+    } else if (state & STATE_ENDED) {
+        return 'end';
+    } else if (state & STATE_CHANGED) {
+        return 'move';
+    } else if (state & STATE_BEGAN) {
+        return 'start';
+    }
+    return '';
+}
+
+/**
+ * direction cons to string
+ * @param {Const} direction
+ * @returns {String}
+ */
+function directionStr(direction) {
+    if (direction == DIRECTION_DOWN) {
+        return 'down';
+    } else if (direction == DIRECTION_UP) {
+        return 'up';
+    } else if (direction == DIRECTION_LEFT) {
+        return 'left';
+    } else if (direction == DIRECTION_RIGHT) {
+        return 'right';
+    }
+    return '';
+}
+
+/**
+ * get a recognizer by name if it is bound to a manager
+ * @param {Recognizer|String} otherRecognizer
+ * @param {Recognizer} recognizer
+ * @returns {Recognizer}
+ */
+function getRecognizerByNameIfManager(otherRecognizer, recognizer) {
+    var manager = recognizer.manager;
+    if (manager) {
+        return manager.get(otherRecognizer);
+    }
+    return otherRecognizer;
+}
+
+/**
+ * This recognizer is just used as a base for the simple attribute recognizers.
+ * @constructor
+ * @extends Recognizer
+ */
+function AttrRecognizer() {
+    Recognizer.apply(this, arguments);
+}
+
+inherit(AttrRecognizer, Recognizer, {
+    /**
+     * @namespace
+     * @memberof AttrRecognizer
+     */
+    defaults: {
+        /**
+         * @type {Number}
+         * @default 1
+         */
+        pointers: 1
+    },
+
+    /**
+     * Used to check if it the recognizer receives valid input, like input.distance > 10.
+     * @memberof AttrRecognizer
+     * @param {Object} input
+     * @returns {Boolean} recognized
+     */
+    attrTest: function(input) {
+        var optionPointers = this.options.pointers;
+        return optionPointers === 0 || input.pointers.length === optionPointers;
+    },
+
+    /**
+     * Process the input and return the state for the recognizer
+     * @memberof AttrRecognizer
+     * @param {Object} input
+     * @returns {*} State
+     */
+    process: function(input) {
+        var state = this.state;
+        var eventType = input.eventType;
+
+        var isRecognized = state & (STATE_BEGAN | STATE_CHANGED);
+        var isValid = this.attrTest(input);
+
+        // on cancel input and we've recognized before, return STATE_CANCELLED
+        if (isRecognized && (eventType & INPUT_CANCEL || !isValid)) {
+            return state | STATE_CANCELLED;
+        } else if (isRecognized || isValid) {
+            if (eventType & INPUT_END) {
+                return state | STATE_ENDED;
+            } else if (!(state & STATE_BEGAN)) {
+                return STATE_BEGAN;
+            }
+            return state | STATE_CHANGED;
+        }
+        return STATE_FAILED;
+    }
+});
+
+/**
+ * Pan
+ * Recognized when the pointer is down and moved in the allowed direction.
+ * @constructor
+ * @extends AttrRecognizer
+ */
+function PanRecognizer() {
+    AttrRecognizer.apply(this, arguments);
+
+    this.pX = null;
+    this.pY = null;
+}
+
+inherit(PanRecognizer, AttrRecognizer, {
+    /**
+     * @namespace
+     * @memberof PanRecognizer
+     */
+    defaults: {
+        event: 'pan',
+        threshold: 10,
+        pointers: 1,
+        direction: DIRECTION_ALL
+    },
+
+    getTouchAction: function() {
+        var direction = this.options.direction;
+        var actions = [];
+        if (direction & DIRECTION_HORIZONTAL) {
+            actions.push(TOUCH_ACTION_PAN_Y);
+        }
+        if (direction & DIRECTION_VERTICAL) {
+            actions.push(TOUCH_ACTION_PAN_X);
+        }
+        return actions;
+    },
+
+    directionTest: function(input) {
+        var options = this.options;
+        var hasMoved = true;
+        var distance = input.distance;
+        var direction = input.direction;
+        var x = input.deltaX;
+        var y = input.deltaY;
+
+        // lock to axis?
+        if (!(direction & options.direction)) {
+            if (options.direction & DIRECTION_HORIZONTAL) {
+                direction = (x === 0) ? DIRECTION_NONE : (x < 0) ? DIRECTION_LEFT : DIRECTION_RIGHT;
+                hasMoved = x != this.pX;
+                distance = Math.abs(input.deltaX);
+            } else {
+                direction = (y === 0) ? DIRECTION_NONE : (y < 0) ? DIRECTION_UP : DIRECTION_DOWN;
+                hasMoved = y != this.pY;
+                distance = Math.abs(input.deltaY);
+            }
+        }
+        input.direction = direction;
+        return hasMoved && distance > options.threshold && direction & options.direction;
+    },
+
+    attrTest: function(input) {
+        return AttrRecognizer.prototype.attrTest.call(this, input) &&
+            (this.state & STATE_BEGAN || (!(this.state & STATE_BEGAN) && this.directionTest(input)));
+    },
+
+    emit: function(input) {
+
+        this.pX = input.deltaX;
+        this.pY = input.deltaY;
+
+        var direction = directionStr(input.direction);
+
+        if (direction) {
+            input.additionalEvent = this.options.event + direction;
+        }
+        this._super.emit.call(this, input);
+    }
+});
+
+/**
+ * Pinch
+ * Recognized when two or more pointers are moving toward (zoom-in) or away from each other (zoom-out).
+ * @constructor
+ * @extends AttrRecognizer
+ */
+function PinchRecognizer() {
+    AttrRecognizer.apply(this, arguments);
+}
+
+inherit(PinchRecognizer, AttrRecognizer, {
+    /**
+     * @namespace
+     * @memberof PinchRecognizer
+     */
+    defaults: {
+        event: 'pinch',
+        threshold: 0,
+        pointers: 2
+    },
+
+    getTouchAction: function() {
+        return [TOUCH_ACTION_NONE];
+    },
+
+    attrTest: function(input) {
+        return this._super.attrTest.call(this, input) &&
+            (Math.abs(input.scale - 1) > this.options.threshold || this.state & STATE_BEGAN);
+    },
+
+    emit: function(input) {
+        if (input.scale !== 1) {
+            var inOut = input.scale < 1 ? 'in' : 'out';
+            input.additionalEvent = this.options.event + inOut;
+        }
+        this._super.emit.call(this, input);
+    }
+});
+
+/**
+ * Press
+ * Recognized when the pointer is down for x ms without any movement.
+ * @constructor
+ * @extends Recognizer
+ */
+function PressRecognizer() {
+    Recognizer.apply(this, arguments);
+
+    this._timer = null;
+    this._input = null;
+}
+
+inherit(PressRecognizer, Recognizer, {
+    /**
+     * @namespace
+     * @memberof PressRecognizer
+     */
+    defaults: {
+        event: 'press',
+        pointers: 1,
+        time: 251, // minimal time of the pointer to be pressed
+        threshold: 9 // a minimal movement is ok, but keep it low
+    },
+
+    getTouchAction: function() {
+        return [TOUCH_ACTION_AUTO];
+    },
+
+    process: function(input) {
+        var options = this.options;
+        var validPointers = input.pointers.length === options.pointers;
+        var validMovement = input.distance < options.threshold;
+        var validTime = input.deltaTime > options.time;
+
+        this._input = input;
+
+        // we only allow little movement
+        // and we've reached an end event, so a tap is possible
+        if (!validMovement || !validPointers || (input.eventType & (INPUT_END | INPUT_CANCEL) && !validTime)) {
+            this.reset();
+        } else if (input.eventType & INPUT_START) {
+            this.reset();
+            this._timer = setTimeoutContext(function() {
+                this.state = STATE_RECOGNIZED;
+                this.tryEmit();
+            }, options.time, this);
+        } else if (input.eventType & INPUT_END) {
+            return STATE_RECOGNIZED;
+        }
+        return STATE_FAILED;
+    },
+
+    reset: function() {
+        clearTimeout(this._timer);
+    },
+
+    emit: function(input) {
+        if (this.state !== STATE_RECOGNIZED) {
+            return;
+        }
+
+        if (input && (input.eventType & INPUT_END)) {
+            this.manager.emit(this.options.event + 'up', input);
+        } else {
+            this._input.timeStamp = now();
+            this.manager.emit(this.options.event, this._input);
+        }
+    }
+});
+
+/**
+ * Rotate
+ * Recognized when two or more pointer are moving in a circular motion.
+ * @constructor
+ * @extends AttrRecognizer
+ */
+function RotateRecognizer() {
+    AttrRecognizer.apply(this, arguments);
+}
+
+inherit(RotateRecognizer, AttrRecognizer, {
+    /**
+     * @namespace
+     * @memberof RotateRecognizer
+     */
+    defaults: {
+        event: 'rotate',
+        threshold: 0,
+        pointers: 2
+    },
+
+    getTouchAction: function() {
+        return [TOUCH_ACTION_NONE];
+    },
+
+    attrTest: function(input) {
+        return this._super.attrTest.call(this, input) &&
+            (Math.abs(input.rotation) > this.options.threshold || this.state & STATE_BEGAN);
+    }
+});
+
+/**
+ * Swipe
+ * Recognized when the pointer is moving fast (velocity), with enough distance in the allowed direction.
+ * @constructor
+ * @extends AttrRecognizer
+ */
+function SwipeRecognizer() {
+    AttrRecognizer.apply(this, arguments);
+}
+
+inherit(SwipeRecognizer, AttrRecognizer, {
+    /**
+     * @namespace
+     * @memberof SwipeRecognizer
+     */
+    defaults: {
+        event: 'swipe',
+        threshold: 10,
+        velocity: 0.3,
+        direction: DIRECTION_HORIZONTAL | DIRECTION_VERTICAL,
+        pointers: 1
+    },
+
+    getTouchAction: function() {
+        return PanRecognizer.prototype.getTouchAction.call(this);
+    },
+
+    attrTest: function(input) {
+        var direction = this.options.direction;
+        var velocity;
+
+        if (direction & (DIRECTION_HORIZONTAL | DIRECTION_VERTICAL)) {
+            velocity = input.overallVelocity;
+        } else if (direction & DIRECTION_HORIZONTAL) {
+            velocity = input.overallVelocityX;
+        } else if (direction & DIRECTION_VERTICAL) {
+            velocity = input.overallVelocityY;
+        }
+
+        return this._super.attrTest.call(this, input) &&
+            direction & input.offsetDirection &&
+            input.distance > this.options.threshold &&
+            input.maxPointers == this.options.pointers &&
+            abs(velocity) > this.options.velocity && input.eventType & INPUT_END;
+    },
+
+    emit: function(input) {
+        var direction = directionStr(input.offsetDirection);
+        if (direction) {
+            this.manager.emit(this.options.event + direction, input);
+        }
+
+        this.manager.emit(this.options.event, input);
+    }
+});
+
+/**
+ * A tap is ecognized when the pointer is doing a small tap/click. Multiple taps are recognized if they occur
+ * between the given interval and position. The delay option can be used to recognize multi-taps without firing
+ * a single tap.
+ *
+ * The eventData from the emitted event contains the property `tapCount`, which contains the amount of
+ * multi-taps being recognized.
+ * @constructor
+ * @extends Recognizer
+ */
+function TapRecognizer() {
+    Recognizer.apply(this, arguments);
+
+    // previous time and center,
+    // used for tap counting
+    this.pTime = false;
+    this.pCenter = false;
+
+    this._timer = null;
+    this._input = null;
+    this.count = 0;
+}
+
+inherit(TapRecognizer, Recognizer, {
+    /**
+     * @namespace
+     * @memberof PinchRecognizer
+     */
+    defaults: {
+        event: 'tap',
+        pointers: 1,
+        taps: 1,
+        interval: 300, // max time between the multi-tap taps
+        time: 250, // max time of the pointer to be down (like finger on the screen)
+        threshold: 9, // a minimal movement is ok, but keep it low
+        posThreshold: 10 // a multi-tap can be a bit off the initial position
+    },
+
+    getTouchAction: function() {
+        return [TOUCH_ACTION_MANIPULATION];
+    },
+
+    process: function(input) {
+        var options = this.options;
+
+        var validPointers = input.pointers.length === options.pointers;
+        var validMovement = input.distance < options.threshold;
+        var validTouchTime = input.deltaTime < options.time;
+
+        this.reset();
+
+        if ((input.eventType & INPUT_START) && (this.count === 0)) {
+            return this.failTimeout();
+        }
+
+        // we only allow little movement
+        // and we've reached an end event, so a tap is possible
+        if (validMovement && validTouchTime && validPointers) {
+            if (input.eventType != INPUT_END) {
+                return this.failTimeout();
+            }
+
+            var validInterval = this.pTime ? (input.timeStamp - this.pTime < options.interval) : true;
+            var validMultiTap = !this.pCenter || getDistance(this.pCenter, input.center) < options.posThreshold;
+
+            this.pTime = input.timeStamp;
+            this.pCenter = input.center;
+
+            if (!validMultiTap || !validInterval) {
+                this.count = 1;
+            } else {
+                this.count += 1;
+            }
+
+            this._input = input;
+
+            // if tap count matches we have recognized it,
+            // else it has began recognizing...
+            var tapCount = this.count % options.taps;
+            if (tapCount === 0) {
+                // no failing requirements, immediately trigger the tap event
+                // or wait as long as the multitap interval to trigger
+                if (!this.hasRequireFailures()) {
+                    return STATE_RECOGNIZED;
+                } else {
+                    this._timer = setTimeoutContext(function() {
+                        this.state = STATE_RECOGNIZED;
+                        this.tryEmit();
+                    }, options.interval, this);
+                    return STATE_BEGAN;
+                }
+            }
+        }
+        return STATE_FAILED;
+    },
+
+    failTimeout: function() {
+        this._timer = setTimeoutContext(function() {
+            this.state = STATE_FAILED;
+        }, this.options.interval, this);
+        return STATE_FAILED;
+    },
+
+    reset: function() {
+        clearTimeout(this._timer);
+    },
+
+    emit: function() {
+        if (this.state == STATE_RECOGNIZED) {
+            this._input.tapCount = this.count;
+            this.manager.emit(this.options.event, this._input);
+        }
+    }
+});
+
+/**
+ * Simple way to create a manager with a default set of recognizers.
+ * @param {HTMLElement} element
+ * @param {Object} [options]
+ * @constructor
+ */
+function Hammer(element, options) {
+    options = options || {};
+    options.recognizers = ifUndefined(options.recognizers, Hammer.defaults.preset);
+    return new Manager(element, options);
+}
+
+/**
+ * @const {string}
+ */
+Hammer.VERSION = '2.0.7';
+
+/**
+ * default settings
+ * @namespace
+ */
+Hammer.defaults = {
+    /**
+     * set if DOM events are being triggered.
+     * But this is slower and unused by simple implementations, so disabled by default.
+     * @type {Boolean}
+     * @default false
+     */
+    domEvents: false,
+
+    /**
+     * The value for the touchAction property/fallback.
+     * When set to `compute` it will magically set the correct value based on the added recognizers.
+     * @type {String}
+     * @default compute
+     */
+    touchAction: TOUCH_ACTION_COMPUTE,
+
+    /**
+     * @type {Boolean}
+     * @default true
+     */
+    enable: true,
+
+    /**
+     * EXPERIMENTAL FEATURE -- can be removed/changed
+     * Change the parent input target element.
+     * If Null, then it is being set the to main element.
+     * @type {Null|EventTarget}
+     * @default null
+     */
+    inputTarget: null,
+
+    /**
+     * force an input class
+     * @type {Null|Function}
+     * @default null
+     */
+    inputClass: null,
+
+    /**
+     * Default recognizer setup when calling `Hammer()`
+     * When creating a new Manager these will be skipped.
+     * @type {Array}
+     */
+    preset: [
+        // RecognizerClass, options, [recognizeWith, ...], [requireFailure, ...]
+        [RotateRecognizer, {enable: false}],
+        [PinchRecognizer, {enable: false}, ['rotate']],
+        [SwipeRecognizer, {direction: DIRECTION_HORIZONTAL}],
+        [PanRecognizer, {direction: DIRECTION_HORIZONTAL}, ['swipe']],
+        [TapRecognizer],
+        [TapRecognizer, {event: 'doubletap', taps: 2}, ['tap']],
+        [PressRecognizer]
+    ],
+
+    /**
+     * Some CSS properties can be used to improve the working of Hammer.
+     * Add them to this method and they will be set when creating a new Manager.
+     * @namespace
+     */
+    cssProps: {
+        /**
+         * Disables text selection to improve the dragging gesture. Mainly for desktop browsers.
+         * @type {String}
+         * @default 'none'
+         */
+        userSelect: 'none',
+
+        /**
+         * Disable the Windows Phone grippers when pressing an element.
+         * @type {String}
+         * @default 'none'
+         */
+        touchSelect: 'none',
+
+        /**
+         * Disables the default callout shown when you touch and hold a touch target.
+         * On iOS, when you touch and hold a touch target such as a link, Safari displays
+         * a callout containing information about the link. This property allows you to disable that callout.
+         * @type {String}
+         * @default 'none'
+         */
+        touchCallout: 'none',
+
+        /**
+         * Specifies whether zooming is enabled. Used by IE10>
+         * @type {String}
+         * @default 'none'
+         */
+        contentZooming: 'none',
+
+        /**
+         * Specifies that an entire element should be draggable instead of its contents. Mainly for desktop browsers.
+         * @type {String}
+         * @default 'none'
+         */
+        userDrag: 'none',
+
+        /**
+         * Overrides the highlight color shown when the user taps a link or a JavaScript
+         * clickable element in iOS. This property obeys the alpha value, if specified.
+         * @type {String}
+         * @default 'rgba(0,0,0,0)'
+         */
+        tapHighlightColor: 'rgba(0,0,0,0)'
+    }
+};
+
+var STOP = 1;
+var FORCED_STOP = 2;
+
+/**
+ * Manager
+ * @param {HTMLElement} element
+ * @param {Object} [options]
+ * @constructor
+ */
+function Manager(element, options) {
+    this.options = assign({}, Hammer.defaults, options || {});
+
+    this.options.inputTarget = this.options.inputTarget || element;
+
+    this.handlers = {};
+    this.session = {};
+    this.recognizers = [];
+    this.oldCssProps = {};
+
+    this.element = element;
+    this.input = createInputInstance(this);
+    this.touchAction = new TouchAction(this, this.options.touchAction);
+
+    toggleCssProps(this, true);
+
+    each(this.options.recognizers, function(item) {
+        var recognizer = this.add(new (item[0])(item[1]));
+        item[2] && recognizer.recognizeWith(item[2]);
+        item[3] && recognizer.requireFailure(item[3]);
+    }, this);
+}
+
+Manager.prototype = {
+    /**
+     * set options
+     * @param {Object} options
+     * @returns {Manager}
+     */
+    set: function(options) {
+        assign(this.options, options);
+
+        // Options that need a little more setup
+        if (options.touchAction) {
+            this.touchAction.update();
+        }
+        if (options.inputTarget) {
+            // Clean up existing event listeners and reinitialize
+            this.input.destroy();
+            this.input.target = options.inputTarget;
+            this.input.init();
+        }
+        return this;
+    },
+
+    /**
+     * stop recognizing for this session.
+     * This session will be discarded, when a new [input]start event is fired.
+     * When forced, the recognizer cycle is stopped immediately.
+     * @param {Boolean} [force]
+     */
+    stop: function(force) {
+        this.session.stopped = force ? FORCED_STOP : STOP;
+    },
+
+    /**
+     * run the recognizers!
+     * called by the inputHandler function on every movement of the pointers (touches)
+     * it walks through all the recognizers and tries to detect the gesture that is being made
+     * @param {Object} inputData
+     */
+    recognize: function(inputData) {
+        var session = this.session;
+        if (session.stopped) {
+            return;
+        }
+
+        // run the touch-action polyfill
+        this.touchAction.preventDefaults(inputData);
+
+        var recognizer;
+        var recognizers = this.recognizers;
+
+        // this holds the recognizer that is being recognized.
+        // so the recognizer's state needs to be BEGAN, CHANGED, ENDED or RECOGNIZED
+        // if no recognizer is detecting a thing, it is set to `null`
+        var curRecognizer = session.curRecognizer;
+
+        // reset when the last recognizer is recognized
+        // or when we're in a new session
+        if (!curRecognizer || (curRecognizer && curRecognizer.state & STATE_RECOGNIZED)) {
+            curRecognizer = session.curRecognizer = null;
+        }
+
+        var i = 0;
+        while (i < recognizers.length) {
+            recognizer = recognizers[i];
+
+            // find out if we are allowed try to recognize the input for this one.
+            // 1.   allow if the session is NOT forced stopped (see the .stop() method)
+            // 2.   allow if we still haven't recognized a gesture in this session, or the this recognizer is the one
+            //      that is being recognized.
+            // 3.   allow if the recognizer is allowed to run simultaneous with the current recognized recognizer.
+            //      this can be setup with the `recognizeWith()` method on the recognizer.
+            if (session.stopped !== FORCED_STOP && ( // 1
+                    !curRecognizer || recognizer == curRecognizer || // 2
+                    recognizer.canRecognizeWith(curRecognizer))) { // 3
+                recognizer.recognize(inputData);
+            } else {
+                recognizer.reset();
+            }
+
+            // if the recognizer has been recognizing the input as a valid gesture, we want to store this one as the
+            // current active recognizer. but only if we don't already have an active recognizer
+            if (!curRecognizer && recognizer.state & (STATE_BEGAN | STATE_CHANGED | STATE_ENDED)) {
+                curRecognizer = session.curRecognizer = recognizer;
+            }
+            i++;
+        }
+    },
+
+    /**
+     * get a recognizer by its event name.
+     * @param {Recognizer|String} recognizer
+     * @returns {Recognizer|Null}
+     */
+    get: function(recognizer) {
+        if (recognizer instanceof Recognizer) {
+            return recognizer;
+        }
+
+        var recognizers = this.recognizers;
+        for (var i = 0; i < recognizers.length; i++) {
+            if (recognizers[i].options.event == recognizer) {
+                return recognizers[i];
+            }
+        }
+        return null;
+    },
+
+    /**
+     * add a recognizer to the manager
+     * existing recognizers with the same event name will be removed
+     * @param {Recognizer} recognizer
+     * @returns {Recognizer|Manager}
+     */
+    add: function(recognizer) {
+        if (invokeArrayArg(recognizer, 'add', this)) {
+            return this;
+        }
+
+        // remove existing
+        var existing = this.get(recognizer.options.event);
+        if (existing) {
+            this.remove(existing);
+        }
+
+        this.recognizers.push(recognizer);
+        recognizer.manager = this;
+
+        this.touchAction.update();
+        return recognizer;
+    },
+
+    /**
+     * remove a recognizer by name or instance
+     * @param {Recognizer|String} recognizer
+     * @returns {Manager}
+     */
+    remove: function(recognizer) {
+        if (invokeArrayArg(recognizer, 'remove', this)) {
+            return this;
+        }
+
+        recognizer = this.get(recognizer);
+
+        // let's make sure this recognizer exists
+        if (recognizer) {
+            var recognizers = this.recognizers;
+            var index = inArray(recognizers, recognizer);
+
+            if (index !== -1) {
+                recognizers.splice(index, 1);
+                this.touchAction.update();
+            }
+        }
+
+        return this;
+    },
+
+    /**
+     * bind event
+     * @param {String} events
+     * @param {Function} handler
+     * @returns {EventEmitter} this
+     */
+    on: function(events, handler) {
+        if (events === undefined) {
+            return;
+        }
+        if (handler === undefined) {
+            return;
+        }
+
+        var handlers = this.handlers;
+        each(splitStr(events), function(event) {
+            handlers[event] = handlers[event] || [];
+            handlers[event].push(handler);
+        });
+        return this;
+    },
+
+    /**
+     * unbind event, leave emit blank to remove all handlers
+     * @param {String} events
+     * @param {Function} [handler]
+     * @returns {EventEmitter} this
+     */
+    off: function(events, handler) {
+        if (events === undefined) {
+            return;
+        }
+
+        var handlers = this.handlers;
+        each(splitStr(events), function(event) {
+            if (!handler) {
+                delete handlers[event];
+            } else {
+                handlers[event] && handlers[event].splice(inArray(handlers[event], handler), 1);
+            }
+        });
+        return this;
+    },
+
+    /**
+     * emit event to the listeners
+     * @param {String} event
+     * @param {Object} data
+     */
+    emit: function(event, data) {
+        // we also want to trigger dom events
+        if (this.options.domEvents) {
+            triggerDomEvent(event, data);
+        }
+
+        // no handlers, so skip it all
+        var handlers = this.handlers[event] && this.handlers[event].slice();
+        if (!handlers || !handlers.length) {
+            return;
+        }
+
+        data.type = event;
+        data.preventDefault = function() {
+            data.srcEvent.preventDefault();
+        };
+
+        var i = 0;
+        while (i < handlers.length) {
+            handlers[i](data);
+            i++;
+        }
+    },
+
+    /**
+     * destroy the manager and unbinds all events
+     * it doesn't unbind dom events, that is the user own responsibility
+     */
+    destroy: function() {
+        this.element && toggleCssProps(this, false);
+
+        this.handlers = {};
+        this.session = {};
+        this.input.destroy();
+        this.element = null;
+    }
+};
+
+/**
+ * add/remove the css properties as defined in manager.options.cssProps
+ * @param {Manager} manager
+ * @param {Boolean} add
+ */
+function toggleCssProps(manager, add) {
+    var element = manager.element;
+    if (!element.style) {
+        return;
+    }
+    var prop;
+    each(manager.options.cssProps, function(value, name) {
+        prop = prefixed(element.style, name);
+        if (add) {
+            manager.oldCssProps[prop] = element.style[prop];
+            element.style[prop] = value;
+        } else {
+            element.style[prop] = manager.oldCssProps[prop] || '';
+        }
+    });
+    if (!add) {
+        manager.oldCssProps = {};
+    }
+}
+
+/**
+ * trigger dom event
+ * @param {String} event
+ * @param {Object} data
+ */
+function triggerDomEvent(event, data) {
+    var gestureEvent = document.createEvent('Event');
+    gestureEvent.initEvent(event, true, true);
+    gestureEvent.gesture = data;
+    data.target.dispatchEvent(gestureEvent);
+}
+
+assign(Hammer, {
+    INPUT_START: INPUT_START,
+    INPUT_MOVE: INPUT_MOVE,
+    INPUT_END: INPUT_END,
+    INPUT_CANCEL: INPUT_CANCEL,
+
+    STATE_POSSIBLE: STATE_POSSIBLE,
+    STATE_BEGAN: STATE_BEGAN,
+    STATE_CHANGED: STATE_CHANGED,
+    STATE_ENDED: STATE_ENDED,
+    STATE_RECOGNIZED: STATE_RECOGNIZED,
+    STATE_CANCELLED: STATE_CANCELLED,
+    STATE_FAILED: STATE_FAILED,
+
+    DIRECTION_NONE: DIRECTION_NONE,
+    DIRECTION_LEFT: DIRECTION_LEFT,
+    DIRECTION_RIGHT: DIRECTION_RIGHT,
+    DIRECTION_UP: DIRECTION_UP,
+    DIRECTION_DOWN: DIRECTION_DOWN,
+    DIRECTION_HORIZONTAL: DIRECTION_HORIZONTAL,
+    DIRECTION_VERTICAL: DIRECTION_VERTICAL,
+    DIRECTION_ALL: DIRECTION_ALL,
+
+    Manager: Manager,
+    Input: Input,
+    TouchAction: TouchAction,
+
+    TouchInput: TouchInput,
+    MouseInput: MouseInput,
+    PointerEventInput: PointerEventInput,
+    TouchMouseInput: TouchMouseInput,
+    SingleTouchInput: SingleTouchInput,
+
+    Recognizer: Recognizer,
+    AttrRecognizer: AttrRecognizer,
+    Tap: TapRecognizer,
+    Pan: PanRecognizer,
+    Swipe: SwipeRecognizer,
+    Pinch: PinchRecognizer,
+    Rotate: RotateRecognizer,
+    Press: PressRecognizer,
+
+    on: addEventListeners,
+    off: removeEventListeners,
+    each: each,
+    merge: merge,
+    extend: extend,
+    assign: assign,
+    inherit: inherit,
+    bindFn: bindFn,
+    prefixed: prefixed
+});
+
+// this prevents errors when Hammer is loaded in the presence of an AMD
+//  style loader but by script tag, not by the loader.
+var freeGlobal = (typeof window !== 'undefined' ? window : (typeof self !== 'undefined' ? self : {})); // jshint ignore:line
+freeGlobal.Hammer = Hammer;
+
+if (true) {
+    !(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
+        return Hammer;
+    }).call(exports, __webpack_require__, exports, module),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+} else {}
+
+})(window, document, 'Hammer');
+
 
 /***/ }),
 
@@ -2929,6 +11342,1383 @@ var index = react__WEBPACK_IMPORTED_MODULE_0__.createContext || createReactConte
 
 /* harmony default export */ __webpack_exports__["default"] = (index);
 
+
+/***/ }),
+
+/***/ "./node_modules/mjolnir.js/dist/esm/constants.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/mjolnir.js/dist/esm/constants.js ***!
+  \*******************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "RECOGNIZERS": function() { return /* binding */ RECOGNIZERS; },
+/* harmony export */   "RECOGNIZER_COMPATIBLE_MAP": function() { return /* binding */ RECOGNIZER_COMPATIBLE_MAP; },
+/* harmony export */   "RECOGNIZER_FALLBACK_MAP": function() { return /* binding */ RECOGNIZER_FALLBACK_MAP; },
+/* harmony export */   "BASIC_EVENT_ALIASES": function() { return /* binding */ BASIC_EVENT_ALIASES; },
+/* harmony export */   "INPUT_EVENT_TYPES": function() { return /* binding */ INPUT_EVENT_TYPES; },
+/* harmony export */   "EVENT_RECOGNIZER_MAP": function() { return /* binding */ EVENT_RECOGNIZER_MAP; },
+/* harmony export */   "GESTURE_EVENT_ALIASES": function() { return /* binding */ GESTURE_EVENT_ALIASES; }
+/* harmony export */ });
+/* harmony import */ var _utils_hammer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils/hammer */ "./node_modules/mjolnir.js/dist/esm/utils/hammer.browser.js");
+
+var RECOGNIZERS = _utils_hammer__WEBPACK_IMPORTED_MODULE_0__.default ? [[_utils_hammer__WEBPACK_IMPORTED_MODULE_0__.default.Pan, {
+  event: 'tripan',
+  pointers: 3,
+  threshold: 0,
+  enable: false
+}], [_utils_hammer__WEBPACK_IMPORTED_MODULE_0__.default.Rotate, {
+  enable: false
+}], [_utils_hammer__WEBPACK_IMPORTED_MODULE_0__.default.Pinch, {
+  enable: false
+}], [_utils_hammer__WEBPACK_IMPORTED_MODULE_0__.default.Swipe, {
+  enable: false
+}], [_utils_hammer__WEBPACK_IMPORTED_MODULE_0__.default.Pan, {
+  threshold: 0,
+  enable: false
+}], [_utils_hammer__WEBPACK_IMPORTED_MODULE_0__.default.Press, {
+  enable: false
+}], [_utils_hammer__WEBPACK_IMPORTED_MODULE_0__.default.Tap, {
+  event: 'doubletap',
+  taps: 2,
+  enable: false
+}], [_utils_hammer__WEBPACK_IMPORTED_MODULE_0__.default.Tap, {
+  event: 'anytap',
+  enable: false
+}], [_utils_hammer__WEBPACK_IMPORTED_MODULE_0__.default.Tap, {
+  enable: false
+}]] : null;
+var RECOGNIZER_COMPATIBLE_MAP = {
+  tripan: ['rotate', 'pinch', 'pan'],
+  rotate: ['pinch'],
+  pinch: ['pan'],
+  pan: ['press', 'doubletap', 'anytap', 'tap'],
+  doubletap: ['anytap'],
+  anytap: ['tap']
+};
+var RECOGNIZER_FALLBACK_MAP = {
+  doubletap: ['tap']
+};
+var BASIC_EVENT_ALIASES = {
+  pointerdown: 'pointerdown',
+  pointermove: 'pointermove',
+  pointerup: 'pointerup',
+  touchstart: 'pointerdown',
+  touchmove: 'pointermove',
+  touchend: 'pointerup',
+  mousedown: 'pointerdown',
+  mousemove: 'pointermove',
+  mouseup: 'pointerup'
+};
+var INPUT_EVENT_TYPES = {
+  KEY_EVENTS: ['keydown', 'keyup'],
+  MOUSE_EVENTS: ['mousedown', 'mousemove', 'mouseup', 'mouseover', 'mouseout', 'mouseleave'],
+  WHEEL_EVENTS: ['wheel', 'mousewheel', 'DOMMouseScroll']
+};
+var EVENT_RECOGNIZER_MAP = {
+  tap: 'tap',
+  anytap: 'anytap',
+  doubletap: 'doubletap',
+  press: 'press',
+  pinch: 'pinch',
+  pinchin: 'pinch',
+  pinchout: 'pinch',
+  pinchstart: 'pinch',
+  pinchmove: 'pinch',
+  pinchend: 'pinch',
+  pinchcancel: 'pinch',
+  rotate: 'rotate',
+  rotatestart: 'rotate',
+  rotatemove: 'rotate',
+  rotateend: 'rotate',
+  rotatecancel: 'rotate',
+  tripan: 'tripan',
+  tripanstart: 'tripan',
+  tripanmove: 'tripan',
+  tripanup: 'tripan',
+  tripandown: 'tripan',
+  tripanleft: 'tripan',
+  tripanright: 'tripan',
+  tripanend: 'tripan',
+  tripancancel: 'tripan',
+  pan: 'pan',
+  panstart: 'pan',
+  panmove: 'pan',
+  panup: 'pan',
+  pandown: 'pan',
+  panleft: 'pan',
+  panright: 'pan',
+  panend: 'pan',
+  pancancel: 'pan',
+  swipe: 'swipe',
+  swipeleft: 'swipe',
+  swiperight: 'swipe',
+  swipeup: 'swipe',
+  swipedown: 'swipe'
+};
+var GESTURE_EVENT_ALIASES = {
+  click: 'tap',
+  anyclick: 'anytap',
+  dblclick: 'doubletap',
+  mousedown: 'pointerdown',
+  mousemove: 'pointermove',
+  mouseup: 'pointerup',
+  mouseover: 'pointerover',
+  mouseout: 'pointerout',
+  mouseleave: 'pointerleave'
+};
+//# sourceMappingURL=constants.js.map
+
+/***/ }),
+
+/***/ "./node_modules/mjolnir.js/dist/esm/event-manager.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/mjolnir.js/dist/esm/event-manager.js ***!
+  \***********************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ EventManager; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _utils_hammer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utils/hammer */ "./node_modules/mjolnir.js/dist/esm/utils/hammer.browser.js");
+/* harmony import */ var _inputs_wheel_input__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./inputs/wheel-input */ "./node_modules/mjolnir.js/dist/esm/inputs/wheel-input.js");
+/* harmony import */ var _inputs_move_input__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./inputs/move-input */ "./node_modules/mjolnir.js/dist/esm/inputs/move-input.js");
+/* harmony import */ var _inputs_key_input__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./inputs/key-input */ "./node_modules/mjolnir.js/dist/esm/inputs/key-input.js");
+/* harmony import */ var _inputs_contextmenu_input__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./inputs/contextmenu-input */ "./node_modules/mjolnir.js/dist/esm/inputs/contextmenu-input.js");
+/* harmony import */ var _utils_event_registrar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./utils/event-registrar */ "./node_modules/mjolnir.js/dist/esm/utils/event-registrar.js");
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./constants */ "./node_modules/mjolnir.js/dist/esm/constants.js");
+
+
+
+
+function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+
+
+
+
+
+
+
+var DEFAULT_OPTIONS = {
+  events: null,
+  recognizers: null,
+  recognizerOptions: {},
+  Manager: _utils_hammer__WEBPACK_IMPORTED_MODULE_3__.Manager,
+  touchAction: 'none',
+  tabIndex: 0
+};
+
+var EventManager = function () {
+  function EventManager() {
+    var element = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+    var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+    (0,_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__.default)(this, EventManager);
+
+    this.options = Object.assign({}, DEFAULT_OPTIONS, options);
+    this.events = new Map();
+    this._onBasicInput = this._onBasicInput.bind(this);
+    this._onOtherEvent = this._onOtherEvent.bind(this);
+    this.setElement(element);
+    var events = options.events;
+
+    if (events) {
+      this.on(events);
+    }
+  }
+
+  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__.default)(EventManager, [{
+    key: "setElement",
+    value: function setElement(element) {
+      var _this = this;
+
+      if (this.element) {
+        this.destroy();
+      }
+
+      this.element = element;
+
+      if (!element) {
+        return;
+      }
+
+      var options = this.options;
+      var ManagerClass = options.Manager;
+      this.manager = new ManagerClass(element, {
+        touchAction: options.touchAction,
+        recognizers: options.recognizers || _constants__WEBPACK_IMPORTED_MODULE_9__.RECOGNIZERS
+      }).on('hammer.input', this._onBasicInput);
+
+      if (!options.recognizers) {
+        Object.keys(_constants__WEBPACK_IMPORTED_MODULE_9__.RECOGNIZER_COMPATIBLE_MAP).forEach(function (name) {
+          var recognizer = _this.manager.get(name);
+
+          if (recognizer) {
+            _constants__WEBPACK_IMPORTED_MODULE_9__.RECOGNIZER_COMPATIBLE_MAP[name].forEach(function (otherName) {
+              recognizer.recognizeWith(otherName);
+            });
+          }
+        });
+      }
+
+      for (var recognizerName in options.recognizerOptions) {
+        var recognizer = this.manager.get(recognizerName);
+
+        if (recognizer) {
+          var recognizerOption = options.recognizerOptions[recognizerName];
+          delete recognizerOption.enable;
+          recognizer.set(recognizerOption);
+        }
+      }
+
+      this.wheelInput = new _inputs_wheel_input__WEBPACK_IMPORTED_MODULE_4__.default(element, this._onOtherEvent, {
+        enable: false
+      });
+      this.moveInput = new _inputs_move_input__WEBPACK_IMPORTED_MODULE_5__.default(element, this._onOtherEvent, {
+        enable: false
+      });
+      this.keyInput = new _inputs_key_input__WEBPACK_IMPORTED_MODULE_6__.default(element, this._onOtherEvent, {
+        enable: false,
+        tabIndex: options.tabIndex
+      });
+      this.contextmenuInput = new _inputs_contextmenu_input__WEBPACK_IMPORTED_MODULE_7__.default(element, this._onOtherEvent, {
+        enable: false
+      });
+
+      var _iterator = _createForOfIteratorHelper(this.events),
+          _step;
+
+      try {
+        for (_iterator.s(); !(_step = _iterator.n()).done;) {
+          var _step$value = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__.default)(_step.value, 2),
+              eventAlias = _step$value[0],
+              eventRegistrar = _step$value[1];
+
+          if (!eventRegistrar.isEmpty()) {
+            this._toggleRecognizer(eventRegistrar.recognizerName, true);
+
+            this.manager.on(eventAlias, eventRegistrar.handleEvent);
+          }
+        }
+      } catch (err) {
+        _iterator.e(err);
+      } finally {
+        _iterator.f();
+      }
+    }
+  }, {
+    key: "destroy",
+    value: function destroy() {
+      if (this.element) {
+        this.wheelInput.destroy();
+        this.moveInput.destroy();
+        this.keyInput.destroy();
+        this.contextmenuInput.destroy();
+        this.manager.destroy();
+        this.wheelInput = null;
+        this.moveInput = null;
+        this.keyInput = null;
+        this.contextmenuInput = null;
+        this.manager = null;
+        this.element = null;
+      }
+    }
+  }, {
+    key: "on",
+    value: function on(event, handler, opts) {
+      this._addEventHandler(event, handler, opts, false);
+    }
+  }, {
+    key: "once",
+    value: function once(event, handler, opts) {
+      this._addEventHandler(event, handler, opts, true);
+    }
+  }, {
+    key: "watch",
+    value: function watch(event, handler, opts) {
+      this._addEventHandler(event, handler, opts, false, true);
+    }
+  }, {
+    key: "off",
+    value: function off(event, handler) {
+      this._removeEventHandler(event, handler);
+    }
+  }, {
+    key: "_toggleRecognizer",
+    value: function _toggleRecognizer(name, enabled) {
+      var manager = this.manager;
+
+      if (!manager) {
+        return;
+      }
+
+      var recognizer = manager.get(name);
+
+      if (recognizer && recognizer.options.enable !== enabled) {
+        recognizer.set({
+          enable: enabled
+        });
+        var fallbackRecognizers = _constants__WEBPACK_IMPORTED_MODULE_9__.RECOGNIZER_FALLBACK_MAP[name];
+
+        if (fallbackRecognizers && !this.options.recognizers) {
+          fallbackRecognizers.forEach(function (otherName) {
+            var otherRecognizer = manager.get(otherName);
+
+            if (enabled) {
+              otherRecognizer.requireFailure(name);
+              recognizer.dropRequireFailure(otherName);
+            } else {
+              otherRecognizer.dropRequireFailure(name);
+            }
+          });
+        }
+      }
+
+      this.wheelInput.enableEventType(name, enabled);
+      this.moveInput.enableEventType(name, enabled);
+      this.keyInput.enableEventType(name, enabled);
+      this.contextmenuInput.enableEventType(name, enabled);
+    }
+  }, {
+    key: "_addEventHandler",
+    value: function _addEventHandler(event, handler, opts, once, passive) {
+      if (typeof event !== 'string') {
+        opts = handler;
+
+        for (var eventName in event) {
+          this._addEventHandler(eventName, event[eventName], opts, once, passive);
+        }
+
+        return;
+      }
+
+      var manager = this.manager,
+          events = this.events;
+      var eventAlias = _constants__WEBPACK_IMPORTED_MODULE_9__.GESTURE_EVENT_ALIASES[event] || event;
+      var eventRegistrar = events.get(eventAlias);
+
+      if (!eventRegistrar) {
+        eventRegistrar = new _utils_event_registrar__WEBPACK_IMPORTED_MODULE_8__.default(this);
+        events.set(eventAlias, eventRegistrar);
+        eventRegistrar.recognizerName = _constants__WEBPACK_IMPORTED_MODULE_9__.EVENT_RECOGNIZER_MAP[eventAlias] || eventAlias;
+
+        if (manager) {
+          manager.on(eventAlias, eventRegistrar.handleEvent);
+        }
+      }
+
+      eventRegistrar.add(event, handler, opts, once, passive);
+
+      if (!eventRegistrar.isEmpty()) {
+        this._toggleRecognizer(eventRegistrar.recognizerName, true);
+      }
+    }
+  }, {
+    key: "_removeEventHandler",
+    value: function _removeEventHandler(event, handler) {
+      if (typeof event !== 'string') {
+        for (var eventName in event) {
+          this._removeEventHandler(eventName, event[eventName]);
+        }
+
+        return;
+      }
+
+      var events = this.events;
+      var eventAlias = _constants__WEBPACK_IMPORTED_MODULE_9__.GESTURE_EVENT_ALIASES[event] || event;
+      var eventRegistrar = events.get(eventAlias);
+
+      if (!eventRegistrar) {
+        return;
+      }
+
+      eventRegistrar.remove(event, handler);
+
+      if (eventRegistrar.isEmpty()) {
+        var recognizerName = eventRegistrar.recognizerName;
+        var isRecognizerUsed = false;
+
+        var _iterator2 = _createForOfIteratorHelper(events.values()),
+            _step2;
+
+        try {
+          for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+            var eh = _step2.value;
+
+            if (eh.recognizerName === recognizerName && !eh.isEmpty()) {
+              isRecognizerUsed = true;
+              break;
+            }
+          }
+        } catch (err) {
+          _iterator2.e(err);
+        } finally {
+          _iterator2.f();
+        }
+
+        if (!isRecognizerUsed) {
+          this._toggleRecognizer(recognizerName, false);
+        }
+      }
+    }
+  }, {
+    key: "_onBasicInput",
+    value: function _onBasicInput(event) {
+      var srcEvent = event.srcEvent;
+      var alias = _constants__WEBPACK_IMPORTED_MODULE_9__.BASIC_EVENT_ALIASES[srcEvent.type];
+
+      if (alias) {
+        this.manager.emit(alias, event);
+      }
+    }
+  }, {
+    key: "_onOtherEvent",
+    value: function _onOtherEvent(event) {
+      this.manager.emit(event.type, event);
+    }
+  }]);
+
+  return EventManager;
+}();
+
+
+//# sourceMappingURL=event-manager.js.map
+
+/***/ }),
+
+/***/ "./node_modules/mjolnir.js/dist/esm/index.js":
+/*!***************************************************!*\
+  !*** ./node_modules/mjolnir.js/dist/esm/index.js ***!
+  \***************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "EventManager": function() { return /* reexport safe */ _event_manager__WEBPACK_IMPORTED_MODULE_0__.default; }
+/* harmony export */ });
+/* harmony import */ var _event_manager__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./event-manager */ "./node_modules/mjolnir.js/dist/esm/event-manager.js");
+
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/mjolnir.js/dist/esm/inputs/contextmenu-input.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/mjolnir.js/dist/esm/inputs/contextmenu-input.js ***!
+  \**********************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ ContextmenuInput; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+
+
+var EVENT_TYPE = 'contextmenu';
+
+var ContextmenuInput = function () {
+  function ContextmenuInput(element, callback) {
+    var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+
+    (0,_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__.default)(this, ContextmenuInput);
+
+    this.element = element;
+    this.callback = callback;
+    this.options = Object.assign({
+      enable: true
+    }, options);
+    this.handleEvent = this.handleEvent.bind(this);
+    element.addEventListener('contextmenu', this.handleEvent);
+  }
+
+  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__.default)(ContextmenuInput, [{
+    key: "destroy",
+    value: function destroy() {
+      this.element.removeEventListener('contextmenu', this.handleEvent);
+    }
+  }, {
+    key: "enableEventType",
+    value: function enableEventType(eventType, enabled) {
+      if (eventType === EVENT_TYPE) {
+        this.options.enable = enabled;
+      }
+    }
+  }, {
+    key: "handleEvent",
+    value: function handleEvent(event) {
+      if (!this.options.enable) {
+        return;
+      }
+
+      this.callback({
+        type: EVENT_TYPE,
+        center: {
+          x: event.clientX,
+          y: event.clientY
+        },
+        srcEvent: event,
+        pointerType: 'mouse',
+        target: event.target
+      });
+    }
+  }]);
+
+  return ContextmenuInput;
+}();
+
+
+//# sourceMappingURL=contextmenu-input.js.map
+
+/***/ }),
+
+/***/ "./node_modules/mjolnir.js/dist/esm/inputs/key-input.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/mjolnir.js/dist/esm/inputs/key-input.js ***!
+  \**************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ KeyInput; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../constants */ "./node_modules/mjolnir.js/dist/esm/constants.js");
+
+
+
+var KEY_EVENTS = _constants__WEBPACK_IMPORTED_MODULE_2__.INPUT_EVENT_TYPES.KEY_EVENTS;
+var DOWN_EVENT_TYPE = 'keydown';
+var UP_EVENT_TYPE = 'keyup';
+
+var KeyInput = function () {
+  function KeyInput(element, callback) {
+    var _this = this;
+
+    var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+
+    (0,_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__.default)(this, KeyInput);
+
+    this.element = element;
+    this.callback = callback;
+    this.options = Object.assign({
+      enable: true
+    }, options);
+    this.enableDownEvent = this.options.enable;
+    this.enableUpEvent = this.options.enable;
+    this.events = KEY_EVENTS.concat(options.events || []);
+    this.handleEvent = this.handleEvent.bind(this);
+    element.tabIndex = options.tabIndex || 0;
+    element.style.outline = 'none';
+    this.events.forEach(function (event) {
+      return element.addEventListener(event, _this.handleEvent);
+    });
+  }
+
+  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__.default)(KeyInput, [{
+    key: "destroy",
+    value: function destroy() {
+      var _this2 = this;
+
+      this.events.forEach(function (event) {
+        return _this2.element.removeEventListener(event, _this2.handleEvent);
+      });
+    }
+  }, {
+    key: "enableEventType",
+    value: function enableEventType(eventType, enabled) {
+      if (eventType === DOWN_EVENT_TYPE) {
+        this.enableDownEvent = enabled;
+      }
+
+      if (eventType === UP_EVENT_TYPE) {
+        this.enableUpEvent = enabled;
+      }
+    }
+  }, {
+    key: "handleEvent",
+    value: function handleEvent(event) {
+      var targetElement = event.target || event.srcElement;
+
+      if (targetElement.tagName === 'INPUT' && targetElement.type === 'text' || targetElement.tagName === 'TEXTAREA') {
+        return;
+      }
+
+      if (this.enableDownEvent && event.type === 'keydown') {
+        this.callback({
+          type: DOWN_EVENT_TYPE,
+          srcEvent: event,
+          key: event.key,
+          target: event.target
+        });
+      }
+
+      if (this.enableUpEvent && event.type === 'keyup') {
+        this.callback({
+          type: UP_EVENT_TYPE,
+          srcEvent: event,
+          key: event.key,
+          target: event.target
+        });
+      }
+    }
+  }]);
+
+  return KeyInput;
+}();
+
+
+//# sourceMappingURL=key-input.js.map
+
+/***/ }),
+
+/***/ "./node_modules/mjolnir.js/dist/esm/inputs/move-input.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/mjolnir.js/dist/esm/inputs/move-input.js ***!
+  \***************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ MoveInput; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../constants */ "./node_modules/mjolnir.js/dist/esm/constants.js");
+
+
+
+var MOUSE_EVENTS = _constants__WEBPACK_IMPORTED_MODULE_2__.INPUT_EVENT_TYPES.MOUSE_EVENTS;
+var MOVE_EVENT_TYPE = 'pointermove';
+var OVER_EVENT_TYPE = 'pointerover';
+var OUT_EVENT_TYPE = 'pointerout';
+var LEAVE_EVENT_TYPE = 'pointerleave';
+
+var MoveInput = function () {
+  function MoveInput(element, callback) {
+    var _this = this;
+
+    var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+
+    (0,_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__.default)(this, MoveInput);
+
+    this.element = element;
+    this.callback = callback;
+    this.pressed = false;
+    this.options = Object.assign({
+      enable: true
+    }, options);
+    this.enableMoveEvent = this.options.enable;
+    this.enableLeaveEvent = this.options.enable;
+    this.enableOutEvent = this.options.enable;
+    this.enableOverEvent = this.options.enable;
+    this.events = MOUSE_EVENTS.concat(options.events || []);
+    this.handleEvent = this.handleEvent.bind(this);
+    this.events.forEach(function (event) {
+      return element.addEventListener(event, _this.handleEvent);
+    });
+  }
+
+  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__.default)(MoveInput, [{
+    key: "destroy",
+    value: function destroy() {
+      var _this2 = this;
+
+      this.events.forEach(function (event) {
+        return _this2.element.removeEventListener(event, _this2.handleEvent);
+      });
+    }
+  }, {
+    key: "enableEventType",
+    value: function enableEventType(eventType, enabled) {
+      if (eventType === MOVE_EVENT_TYPE) {
+        this.enableMoveEvent = enabled;
+      }
+
+      if (eventType === OVER_EVENT_TYPE) {
+        this.enableOverEvent = enabled;
+      }
+
+      if (eventType === OUT_EVENT_TYPE) {
+        this.enableOutEvent = enabled;
+      }
+
+      if (eventType === LEAVE_EVENT_TYPE) {
+        this.enableLeaveEvent = enabled;
+      }
+    }
+  }, {
+    key: "handleEvent",
+    value: function handleEvent(event) {
+      this.handleOverEvent(event);
+      this.handleOutEvent(event);
+      this.handleLeaveEvent(event);
+      this.handleMoveEvent(event);
+    }
+  }, {
+    key: "handleOverEvent",
+    value: function handleOverEvent(event) {
+      if (this.enableOverEvent) {
+        if (event.type === 'mouseover') {
+          this.callback({
+            type: OVER_EVENT_TYPE,
+            srcEvent: event,
+            pointerType: 'mouse',
+            target: event.target
+          });
+        }
+      }
+    }
+  }, {
+    key: "handleOutEvent",
+    value: function handleOutEvent(event) {
+      if (this.enableOutEvent) {
+        if (event.type === 'mouseout') {
+          this.callback({
+            type: OUT_EVENT_TYPE,
+            srcEvent: event,
+            pointerType: 'mouse',
+            target: event.target
+          });
+        }
+      }
+    }
+  }, {
+    key: "handleLeaveEvent",
+    value: function handleLeaveEvent(event) {
+      if (this.enableLeaveEvent) {
+        if (event.type === 'mouseleave') {
+          this.callback({
+            type: LEAVE_EVENT_TYPE,
+            srcEvent: event,
+            pointerType: 'mouse',
+            target: event.target
+          });
+        }
+      }
+    }
+  }, {
+    key: "handleMoveEvent",
+    value: function handleMoveEvent(event) {
+      if (this.enableMoveEvent) {
+        switch (event.type) {
+          case 'mousedown':
+            if (event.button >= 0) {
+              this.pressed = true;
+            }
+
+            break;
+
+          case 'mousemove':
+            if (event.which === 0) {
+              this.pressed = false;
+            }
+
+            if (!this.pressed) {
+              this.callback({
+                type: MOVE_EVENT_TYPE,
+                srcEvent: event,
+                pointerType: 'mouse',
+                target: event.target
+              });
+            }
+
+            break;
+
+          case 'mouseup':
+            this.pressed = false;
+            break;
+
+          default:
+        }
+      }
+    }
+  }]);
+
+  return MoveInput;
+}();
+
+
+//# sourceMappingURL=move-input.js.map
+
+/***/ }),
+
+/***/ "./node_modules/mjolnir.js/dist/esm/inputs/wheel-input.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/mjolnir.js/dist/esm/inputs/wheel-input.js ***!
+  \****************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ WheelInput; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../constants */ "./node_modules/mjolnir.js/dist/esm/constants.js");
+/* harmony import */ var _utils_globals__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/globals */ "./node_modules/mjolnir.js/dist/esm/utils/globals.js");
+
+
+
+
+var firefox = _utils_globals__WEBPACK_IMPORTED_MODULE_3__.userAgent.indexOf('firefox') !== -1;
+var WHEEL_EVENTS = _constants__WEBPACK_IMPORTED_MODULE_2__.INPUT_EVENT_TYPES.WHEEL_EVENTS;
+var EVENT_TYPE = 'wheel';
+var WHEEL_DELTA_MAGIC_SCALER = 4.000244140625;
+var WHEEL_DELTA_PER_LINE = 40;
+var SHIFT_MULTIPLIER = 0.25;
+
+var WheelInput = function () {
+  function WheelInput(element, callback) {
+    var _this = this;
+
+    var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+
+    (0,_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__.default)(this, WheelInput);
+
+    this.element = element;
+    this.callback = callback;
+    this.options = Object.assign({
+      enable: true
+    }, options);
+    this.events = WHEEL_EVENTS.concat(options.events || []);
+    this.handleEvent = this.handleEvent.bind(this);
+    this.events.forEach(function (event) {
+      return element.addEventListener(event, _this.handleEvent, _utils_globals__WEBPACK_IMPORTED_MODULE_3__.passiveSupported ? {
+        passive: false
+      } : false);
+    });
+  }
+
+  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__.default)(WheelInput, [{
+    key: "destroy",
+    value: function destroy() {
+      var _this2 = this;
+
+      this.events.forEach(function (event) {
+        return _this2.element.removeEventListener(event, _this2.handleEvent);
+      });
+    }
+  }, {
+    key: "enableEventType",
+    value: function enableEventType(eventType, enabled) {
+      if (eventType === EVENT_TYPE) {
+        this.options.enable = enabled;
+      }
+    }
+  }, {
+    key: "handleEvent",
+    value: function handleEvent(event) {
+      if (!this.options.enable) {
+        return;
+      }
+
+      var value = event.deltaY;
+
+      if (_utils_globals__WEBPACK_IMPORTED_MODULE_3__.window.WheelEvent) {
+        if (firefox && event.deltaMode === _utils_globals__WEBPACK_IMPORTED_MODULE_3__.window.WheelEvent.DOM_DELTA_PIXEL) {
+          value /= _utils_globals__WEBPACK_IMPORTED_MODULE_3__.window.devicePixelRatio;
+        }
+
+        if (event.deltaMode === _utils_globals__WEBPACK_IMPORTED_MODULE_3__.window.WheelEvent.DOM_DELTA_LINE) {
+          value *= WHEEL_DELTA_PER_LINE;
+        }
+      }
+
+      var wheelPosition = {
+        x: event.clientX,
+        y: event.clientY
+      };
+
+      if (value !== 0 && value % WHEEL_DELTA_MAGIC_SCALER === 0) {
+        value = Math.floor(value / WHEEL_DELTA_MAGIC_SCALER);
+      }
+
+      if (event.shiftKey && value) {
+        value = value * SHIFT_MULTIPLIER;
+      }
+
+      this._onWheel(event, -value, wheelPosition);
+    }
+  }, {
+    key: "_onWheel",
+    value: function _onWheel(srcEvent, delta, position) {
+      this.callback({
+        type: EVENT_TYPE,
+        center: position,
+        delta: delta,
+        srcEvent: srcEvent,
+        pointerType: 'mouse',
+        target: srcEvent.target
+      });
+    }
+  }]);
+
+  return WheelInput;
+}();
+
+
+//# sourceMappingURL=wheel-input.js.map
+
+/***/ }),
+
+/***/ "./node_modules/mjolnir.js/dist/esm/utils/event-registrar.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/mjolnir.js/dist/esm/utils/event-registrar.js ***!
+  \*******************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ EventRegistrar; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/typeof */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _event_utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./event-utils */ "./node_modules/mjolnir.js/dist/esm/utils/event-utils.js");
+
+
+
+
+var DEFAULT_OPTIONS = {
+  srcElement: 'root',
+  priority: 0
+};
+
+var EventRegistrar = function () {
+  function EventRegistrar(eventManager) {
+    (0,_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__.default)(this, EventRegistrar);
+
+    this.eventManager = eventManager;
+    this.handlers = [];
+    this.handlersByElement = new Map();
+    this.handleEvent = this.handleEvent.bind(this);
+    this._active = false;
+  }
+
+  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__.default)(EventRegistrar, [{
+    key: "isEmpty",
+    value: function isEmpty() {
+      return !this._active;
+    }
+  }, {
+    key: "add",
+    value: function add(type, handler, opts) {
+      var once = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
+      var passive = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
+      var handlers = this.handlers,
+          handlersByElement = this.handlersByElement;
+
+      if (opts && ((0,_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__.default)(opts) !== 'object' || opts.addEventListener)) {
+        opts = {
+          srcElement: opts
+        };
+      }
+
+      opts = opts ? Object.assign({}, DEFAULT_OPTIONS, opts) : DEFAULT_OPTIONS;
+      var entries = handlersByElement.get(opts.srcElement);
+
+      if (!entries) {
+        entries = [];
+        handlersByElement.set(opts.srcElement, entries);
+      }
+
+      var entry = {
+        type: type,
+        handler: handler,
+        srcElement: opts.srcElement,
+        priority: opts.priority
+      };
+
+      if (once) {
+        entry.once = true;
+      }
+
+      if (passive) {
+        entry.passive = true;
+      }
+
+      handlers.push(entry);
+      this._active = this._active || !entry.passive;
+      var insertPosition = entries.length - 1;
+
+      while (insertPosition >= 0) {
+        if (entries[insertPosition].priority >= entry.priority) {
+          break;
+        }
+
+        insertPosition--;
+      }
+
+      entries.splice(insertPosition + 1, 0, entry);
+    }
+  }, {
+    key: "remove",
+    value: function remove(type, handler) {
+      var handlers = this.handlers,
+          handlersByElement = this.handlersByElement;
+
+      for (var i = handlers.length - 1; i >= 0; i--) {
+        var entry = handlers[i];
+
+        if (entry.type === type && entry.handler === handler) {
+          handlers.splice(i, 1);
+          var entries = handlersByElement.get(entry.srcElement);
+          entries.splice(entries.indexOf(entry), 1);
+
+          if (entries.length === 0) {
+            handlersByElement["delete"](entry.srcElement);
+          }
+        }
+      }
+
+      this._active = handlers.some(function (entry) {
+        return !entry.passive;
+      });
+    }
+  }, {
+    key: "handleEvent",
+    value: function handleEvent(event) {
+      if (this.isEmpty()) {
+        return;
+      }
+
+      var mjolnirEvent = this._normalizeEvent(event);
+
+      var target = event.srcEvent.target;
+
+      while (target && target !== mjolnirEvent.rootElement) {
+        this._emit(mjolnirEvent, target);
+
+        if (mjolnirEvent.handled) {
+          return;
+        }
+
+        target = target.parentNode;
+      }
+
+      this._emit(mjolnirEvent, 'root');
+    }
+  }, {
+    key: "_emit",
+    value: function _emit(event, srcElement) {
+      var entries = this.handlersByElement.get(srcElement);
+
+      if (entries) {
+        var immediatePropagationStopped = false;
+
+        var stopPropagation = function stopPropagation() {
+          event.handled = true;
+        };
+
+        var stopImmediatePropagation = function stopImmediatePropagation() {
+          event.handled = true;
+          immediatePropagationStopped = true;
+        };
+
+        var entriesToRemove = [];
+
+        for (var i = 0; i < entries.length; i++) {
+          var _entries$i = entries[i],
+              type = _entries$i.type,
+              handler = _entries$i.handler,
+              once = _entries$i.once;
+          handler(Object.assign({}, event, {
+            type: type,
+            stopPropagation: stopPropagation,
+            stopImmediatePropagation: stopImmediatePropagation
+          }));
+
+          if (once) {
+            entriesToRemove.push(entries[i]);
+          }
+
+          if (immediatePropagationStopped) {
+            break;
+          }
+        }
+
+        for (var _i = 0; _i < entriesToRemove.length; _i++) {
+          var _entriesToRemove$_i = entriesToRemove[_i],
+              _type = _entriesToRemove$_i.type,
+              _handler = _entriesToRemove$_i.handler;
+          this.remove(_type, _handler);
+        }
+      }
+    }
+  }, {
+    key: "_normalizeEvent",
+    value: function _normalizeEvent(event) {
+      var rootElement = this.eventManager.element;
+      return Object.assign({}, event, (0,_event_utils__WEBPACK_IMPORTED_MODULE_3__.whichButtons)(event), (0,_event_utils__WEBPACK_IMPORTED_MODULE_3__.getOffsetPosition)(event, rootElement), {
+        handled: false,
+        rootElement: rootElement
+      });
+    }
+  }]);
+
+  return EventRegistrar;
+}();
+
+
+//# sourceMappingURL=event-registrar.js.map
+
+/***/ }),
+
+/***/ "./node_modules/mjolnir.js/dist/esm/utils/event-utils.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/mjolnir.js/dist/esm/utils/event-utils.js ***!
+  \***************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "whichButtons": function() { return /* binding */ whichButtons; },
+/* harmony export */   "getOffsetPosition": function() { return /* binding */ getOffsetPosition; }
+/* harmony export */ });
+var DOWN_EVENT = 1;
+var MOVE_EVENT = 2;
+var UP_EVENT = 4;
+var MOUSE_EVENTS = {
+  pointerdown: DOWN_EVENT,
+  pointermove: MOVE_EVENT,
+  pointerup: UP_EVENT,
+  mousedown: DOWN_EVENT,
+  mousemove: MOVE_EVENT,
+  mouseup: UP_EVENT
+};
+var MOUSE_EVENT_WHICH_LEFT = 1;
+var MOUSE_EVENT_WHICH_MIDDLE = 2;
+var MOUSE_EVENT_WHICH_RIGHT = 3;
+var MOUSE_EVENT_BUTTON_LEFT = 0;
+var MOUSE_EVENT_BUTTON_MIDDLE = 1;
+var MOUSE_EVENT_BUTTON_RIGHT = 2;
+var MOUSE_EVENT_BUTTONS_LEFT_MASK = 1;
+var MOUSE_EVENT_BUTTONS_RIGHT_MASK = 2;
+var MOUSE_EVENT_BUTTONS_MIDDLE_MASK = 4;
+function whichButtons(event) {
+  var eventType = MOUSE_EVENTS[event.srcEvent.type];
+
+  if (!eventType) {
+    return null;
+  }
+
+  var _event$srcEvent = event.srcEvent,
+      buttons = _event$srcEvent.buttons,
+      button = _event$srcEvent.button,
+      which = _event$srcEvent.which;
+  var leftButton = false;
+  var middleButton = false;
+  var rightButton = false;
+
+  if (eventType === UP_EVENT || eventType === MOVE_EVENT && !Number.isFinite(buttons)) {
+    leftButton = which === MOUSE_EVENT_WHICH_LEFT;
+    middleButton = which === MOUSE_EVENT_WHICH_MIDDLE;
+    rightButton = which === MOUSE_EVENT_WHICH_RIGHT;
+  } else if (eventType === MOVE_EVENT) {
+    leftButton = Boolean(buttons & MOUSE_EVENT_BUTTONS_LEFT_MASK);
+    middleButton = Boolean(buttons & MOUSE_EVENT_BUTTONS_MIDDLE_MASK);
+    rightButton = Boolean(buttons & MOUSE_EVENT_BUTTONS_RIGHT_MASK);
+  } else if (eventType === DOWN_EVENT) {
+    leftButton = button === MOUSE_EVENT_BUTTON_LEFT;
+    middleButton = button === MOUSE_EVENT_BUTTON_MIDDLE;
+    rightButton = button === MOUSE_EVENT_BUTTON_RIGHT;
+  }
+
+  return {
+    leftButton: leftButton,
+    middleButton: middleButton,
+    rightButton: rightButton
+  };
+}
+function getOffsetPosition(event, rootElement) {
+  var srcEvent = event.srcEvent;
+
+  if (!event.center && !Number.isFinite(srcEvent.clientX)) {
+    return null;
+  }
+
+  var center = event.center || {
+    x: srcEvent.clientX,
+    y: srcEvent.clientY
+  };
+  var rect = rootElement.getBoundingClientRect();
+  var scaleX = rect.width / rootElement.offsetWidth;
+  var scaleY = rect.height / rootElement.offsetHeight;
+  var offsetCenter = {
+    x: (center.x - rect.left - rootElement.clientLeft) / scaleX,
+    y: (center.y - rect.top - rootElement.clientTop) / scaleY
+  };
+  return {
+    center: center,
+    offsetCenter: offsetCenter
+  };
+}
+//# sourceMappingURL=event-utils.js.map
+
+/***/ }),
+
+/***/ "./node_modules/mjolnir.js/dist/esm/utils/globals.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/mjolnir.js/dist/esm/utils/globals.js ***!
+  \***********************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "userAgent": function() { return /* binding */ userAgent; },
+/* harmony export */   "window": function() { return /* binding */ window_; },
+/* harmony export */   "global": function() { return /* binding */ global_; },
+/* harmony export */   "document": function() { return /* binding */ document_; },
+/* harmony export */   "passiveSupported": function() { return /* binding */ passiveSupported; }
+/* harmony export */ });
+var userAgent = typeof navigator !== 'undefined' && navigator.userAgent ? navigator.userAgent.toLowerCase() : '';
+var window_ = typeof window !== 'undefined' ? window : __webpack_require__.g;
+var global_ = typeof __webpack_require__.g !== 'undefined' ? __webpack_require__.g : window;
+var document_ = typeof document !== 'undefined' ? document : {};
+
+var passiveSupported = false;
+
+try {
+  var options = {
+    get passive() {
+      passiveSupported = true;
+      return true;
+    }
+
+  };
+  window_.addEventListener('test', options, options);
+  window_.removeEventListener('test', options, options);
+} catch (err) {}
+
+
+//# sourceMappingURL=globals.js.map
+
+/***/ }),
+
+/***/ "./node_modules/mjolnir.js/dist/esm/utils/hammer-overrides.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/mjolnir.js/dist/esm/utils/hammer-overrides.js ***!
+  \********************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "enhancePointerEventInput": function() { return /* binding */ enhancePointerEventInput; },
+/* harmony export */   "enhanceMouseInput": function() { return /* binding */ enhanceMouseInput; }
+/* harmony export */ });
+var INPUT_START = 1;
+var INPUT_MOVE = 2;
+var INPUT_END = 4;
+var MOUSE_INPUT_MAP = {
+  mousedown: INPUT_START,
+  mousemove: INPUT_MOVE,
+  mouseup: INPUT_END
+};
+
+function some(array, predict) {
+  for (var i = 0; i < array.length; i++) {
+    if (predict(array[i])) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+function enhancePointerEventInput(PointerEventInput) {
+  var oldHandler = PointerEventInput.prototype.handler;
+
+  PointerEventInput.prototype.handler = function handler(ev) {
+    var store = this.store;
+
+    if (ev.button > 0) {
+      if (!some(store, function (e) {
+        return e.pointerId === ev.pointerId;
+      })) {
+        store.push(ev);
+      }
+    }
+
+    oldHandler.call(this, ev);
+  };
+}
+function enhanceMouseInput(MouseInput) {
+  MouseInput.prototype.handler = function handler(ev) {
+    var eventType = MOUSE_INPUT_MAP[ev.type];
+
+    if (eventType & INPUT_START && ev.button >= 0) {
+      this.pressed = true;
+    }
+
+    if (eventType & INPUT_MOVE && ev.which === 0) {
+      eventType = INPUT_END;
+    }
+
+    if (!this.pressed) {
+      return;
+    }
+
+    if (eventType & INPUT_END) {
+      this.pressed = false;
+    }
+
+    this.callback(this.manager, eventType, {
+      pointers: [ev],
+      changedPointers: [ev],
+      pointerType: 'mouse',
+      srcEvent: ev
+    });
+  };
+}
+//# sourceMappingURL=hammer-overrides.js.map
+
+/***/ }),
+
+/***/ "./node_modules/mjolnir.js/dist/esm/utils/hammer.browser.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/mjolnir.js/dist/esm/utils/hammer.browser.js ***!
+  \******************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Manager": function() { return /* binding */ Manager; }
+/* harmony export */ });
+/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! hammerjs */ "./node_modules/hammerjs/hammer.js");
+/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(hammerjs__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _hammer_overrides__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./hammer-overrides */ "./node_modules/mjolnir.js/dist/esm/utils/hammer-overrides.js");
+
+
+(0,_hammer_overrides__WEBPACK_IMPORTED_MODULE_1__.enhancePointerEventInput)((hammerjs__WEBPACK_IMPORTED_MODULE_0___default().PointerEventInput));
+(0,_hammer_overrides__WEBPACK_IMPORTED_MODULE_1__.enhanceMouseInput)((hammerjs__WEBPACK_IMPORTED_MODULE_0___default().MouseInput));
+var Manager = (hammerjs__WEBPACK_IMPORTED_MODULE_0___default().Manager);
+/* harmony default export */ __webpack_exports__["default"] = ((hammerjs__WEBPACK_IMPORTED_MODULE_0___default()));
+//# sourceMappingURL=hammer.browser.js.map
 
 /***/ }),
 
@@ -30752,6 +40542,6102 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./node_modules/react-map-gl/dist/esm/components/base-control.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/components/base-control.js ***!
+  \***********************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ BaseControl; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _map_context__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./map-context */ "./node_modules/react-map-gl/dist/esm/components/map-context.js");
+
+
+
+
+
+
+
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0,_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__.default)(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
+
+
+
+var propTypes = {
+  captureScroll: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().bool),
+  captureDrag: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().bool),
+  captureClick: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().bool),
+  captureDoubleClick: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().bool),
+  capturePointerMove: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().bool)
+};
+var defaultProps = {
+  captureScroll: false,
+  captureDrag: true,
+  captureClick: true,
+  captureDoubleClick: true,
+  capturePointerMove: false
+};
+
+var BaseControl = function (_PureComponent) {
+  (0,_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_3__.default)(BaseControl, _PureComponent);
+
+  var _super = _createSuper(BaseControl);
+
+  function BaseControl() {
+    var _this;
+
+    (0,_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__.default)(this, BaseControl);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _super.call.apply(_super, [this].concat(args));
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_context", {});
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_events", null);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_containerRef", (0,react__WEBPACK_IMPORTED_MODULE_7__.createRef)());
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_onScroll", function (evt) {
+      if (_this.props.captureScroll) {
+        evt.stopPropagation();
+      }
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_onDragStart", function (evt) {
+      if (_this.props.captureDrag) {
+        evt.stopPropagation();
+      }
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_onDblClick", function (evt) {
+      if (_this.props.captureDoubleClick) {
+        evt.stopPropagation();
+      }
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_onClick", function (evt) {
+      if (_this.props.captureClick) {
+        evt.stopPropagation();
+      }
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_onPointerMove", function (evt) {
+      if (_this.props.capturePointerMove) {
+        evt.stopPropagation();
+      }
+    });
+
+    return _this;
+  }
+
+  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__.default)(BaseControl, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var ref = this._containerRef.current;
+
+      if (!ref) {
+        return;
+      }
+
+      var eventManager = this._context.eventManager;
+
+      if (eventManager) {
+        this._events = {
+          wheel: this._onScroll,
+          panstart: this._onDragStart,
+          anyclick: this._onClick,
+          click: this._onClick,
+          dblclick: this._onDblClick,
+          pointermove: this._onPointerMove
+        };
+        eventManager.watch(this._events, ref);
+      }
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      var eventManager = this._context.eventManager;
+
+      if (eventManager && this._events) {
+        eventManager.off(this._events);
+      }
+    }
+  }, {
+    key: "_render",
+    value: function _render() {
+      throw new Error('_render() not implemented');
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      return react__WEBPACK_IMPORTED_MODULE_7__.createElement(_map_context__WEBPACK_IMPORTED_MODULE_9__.default.Consumer, null, function (context) {
+        _this2._context = context;
+        return _this2._render();
+      });
+    }
+  }]);
+
+  return BaseControl;
+}(react__WEBPACK_IMPORTED_MODULE_7__.PureComponent);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)(BaseControl, "propTypes", propTypes);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)(BaseControl, "defaultProps", defaultProps);
+
+
+//# sourceMappingURL=base-control.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/components/draggable-control.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/components/draggable-control.js ***!
+  \****************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ DraggableControl; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/get */ "./node_modules/@babel/runtime/helpers/esm/get.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _base_control__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./base-control */ "./node_modules/react-map-gl/dist/esm/components/base-control.js");
+
+
+
+
+
+
+
+
+
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0,_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_6__.default)(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
+
+var propTypes = Object.assign({}, _base_control__WEBPACK_IMPORTED_MODULE_10__.default.propTypes, {
+  draggable: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().bool),
+  onDrag: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().func),
+  onDragEnd: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().func),
+  onDragStart: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().func),
+  offsetLeft: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().number),
+  offsetTop: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().number)
+});
+var defaultProps = Object.assign({}, _base_control__WEBPACK_IMPORTED_MODULE_10__.default.defaultProps, {
+  draggable: false,
+  offsetLeft: 0,
+  offsetTop: 0
+});
+
+var DraggableControl = function (_BaseControl) {
+  (0,_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__.default)(DraggableControl, _BaseControl);
+
+  var _super = _createSuper(DraggableControl);
+
+  function DraggableControl() {
+    var _this;
+
+    (0,_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__.default)(this, DraggableControl);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _super.call.apply(_super, [this].concat(args));
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3__.default)(_this), "state", {
+      dragPos: null,
+      dragOffset: null
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3__.default)(_this), "_dragEvents", null);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3__.default)(_this), "_onDragStart", function (event) {
+      var _this$props = _this.props,
+          draggable = _this$props.draggable,
+          captureDrag = _this$props.captureDrag;
+
+      if (draggable || captureDrag) {
+        event.stopPropagation();
+      }
+
+      if (!draggable) {
+        return;
+      }
+
+      var dragPos = _this._getDragEventPosition(event);
+
+      var dragOffset = _this._getDragEventOffset(event);
+
+      _this.setState({
+        dragPos: dragPos,
+        dragOffset: dragOffset
+      });
+
+      _this._setupDragEvents();
+
+      var onDragStart = _this.props.onDragStart;
+
+      if (onDragStart && dragOffset) {
+        var callbackEvent = Object.assign({}, event);
+        callbackEvent.lngLat = _this._getDragLngLat(dragPos, dragOffset);
+        onDragStart(callbackEvent);
+      }
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3__.default)(_this), "_onDrag", function (event) {
+      event.stopPropagation();
+
+      var dragPos = _this._getDragEventPosition(event);
+
+      _this.setState({
+        dragPos: dragPos
+      });
+
+      var onDrag = _this.props.onDrag;
+      var dragOffset = _this.state.dragOffset;
+
+      if (onDrag && dragOffset) {
+        var callbackEvent = Object.assign({}, event);
+        callbackEvent.lngLat = _this._getDragLngLat(dragPos, dragOffset);
+        onDrag(callbackEvent);
+      }
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3__.default)(_this), "_onDragEnd", function (event) {
+      var _this$state = _this.state,
+          dragPos = _this$state.dragPos,
+          dragOffset = _this$state.dragOffset;
+      event.stopPropagation();
+
+      _this.setState({
+        dragPos: null,
+        dragOffset: null
+      });
+
+      _this._removeDragEvents();
+
+      var onDragEnd = _this.props.onDragEnd;
+
+      if (onDragEnd && dragPos && dragOffset) {
+        var callbackEvent = Object.assign({}, event);
+        callbackEvent.lngLat = _this._getDragLngLat(dragPos, dragOffset);
+        onDragEnd(callbackEvent);
+      }
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3__.default)(_this), "_onDragCancel", function (event) {
+      event.stopPropagation();
+
+      _this.setState({
+        dragPos: null,
+        dragOffset: null
+      });
+
+      _this._removeDragEvents();
+    });
+
+    return _this;
+  }
+
+  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__.default)(DraggableControl, [{
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      (0,_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_4__.default)((0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__.default)(DraggableControl.prototype), "componentWillUnmount", this).call(this);
+
+      this._removeDragEvents();
+    }
+  }, {
+    key: "_setupDragEvents",
+    value: function _setupDragEvents() {
+      var eventManager = this._context.eventManager;
+
+      if (!eventManager) {
+        return;
+      }
+
+      this._dragEvents = {
+        panmove: this._onDrag,
+        panend: this._onDragEnd,
+        pancancel: this._onDragCancel
+      };
+      eventManager.on(this._dragEvents);
+    }
+  }, {
+    key: "_removeDragEvents",
+    value: function _removeDragEvents() {
+      var eventManager = this._context.eventManager;
+
+      if (!eventManager || !this._dragEvents) {
+        return;
+      }
+
+      eventManager.off(this._dragEvents);
+      this._dragEvents = null;
+    }
+  }, {
+    key: "_getDragEventPosition",
+    value: function _getDragEventPosition(event) {
+      var _event$offsetCenter = event.offsetCenter,
+          x = _event$offsetCenter.x,
+          y = _event$offsetCenter.y;
+      return [x, y];
+    }
+  }, {
+    key: "_getDragEventOffset",
+    value: function _getDragEventOffset(event) {
+      var _event$center = event.center,
+          x = _event$center.x,
+          y = _event$center.y;
+      var container = this._containerRef.current;
+
+      if (container) {
+        var rect = container.getBoundingClientRect();
+        return [rect.left - x, rect.top - y];
+      }
+
+      return null;
+    }
+  }, {
+    key: "_getDraggedPosition",
+    value: function _getDraggedPosition(dragPos, dragOffset) {
+      return [dragPos[0] + dragOffset[0], dragPos[1] + dragOffset[1]];
+    }
+  }, {
+    key: "_getDragLngLat",
+    value: function _getDragLngLat(dragPos, dragOffset) {
+      var _this$props2 = this.props,
+          offsetLeft = _this$props2.offsetLeft,
+          offsetTop = _this$props2.offsetTop;
+
+      var _this$_getDraggedPosi = this._getDraggedPosition(dragPos, dragOffset),
+          _this$_getDraggedPosi2 = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__.default)(_this$_getDraggedPosi, 2),
+          x = _this$_getDraggedPosi2[0],
+          y = _this$_getDraggedPosi2[1];
+
+      return this._context.viewport.unproject([x - offsetLeft, y - offsetTop]);
+    }
+  }]);
+
+  return DraggableControl;
+}(_base_control__WEBPACK_IMPORTED_MODULE_10__.default);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__.default)(DraggableControl, "propTypes", propTypes);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__.default)(DraggableControl, "defaultProps", defaultProps);
+
+
+//# sourceMappingURL=draggable-control.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/components/fullscreen-control.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/components/fullscreen-control.js ***!
+  \*****************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ FullscreenControl; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var _utils_globals__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../utils/globals */ "./node_modules/react-map-gl/dist/esm/utils/globals.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _base_control__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./base-control */ "./node_modules/react-map-gl/dist/esm/components/base-control.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _utils_mapboxgl__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../utils/mapboxgl */ "./node_modules/react-map-gl/dist/esm/utils/mapboxgl.browser.js");
+
+
+
+
+
+
+
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0,_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__.default)(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
+
+
+
+
+var propTypes = Object.assign({}, _base_control__WEBPACK_IMPORTED_MODULE_9__.default.propTypes, {
+  className: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().string),
+  container: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().object),
+  label: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().string)
+});
+var defaultProps = Object.assign({}, _base_control__WEBPACK_IMPORTED_MODULE_9__.default.defaultProps, {
+  className: '',
+  container: null,
+  label: 'Toggle fullscreen'
+});
+
+var FullscreenControl = function (_BaseControl) {
+  (0,_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_3__.default)(FullscreenControl, _BaseControl);
+
+  var _super = _createSuper(FullscreenControl);
+
+  function FullscreenControl() {
+    var _this;
+
+    (0,_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__.default)(this, FullscreenControl);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _super.call.apply(_super, [this].concat(args));
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "state", {
+      isFullscreen: false,
+      showButton: false
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_mapboxFullscreenControl", null);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_onFullscreenChange", function () {
+      var nextState = !_this._mapboxFullscreenControl._fullscreen;
+      _this._mapboxFullscreenControl._fullscreen = nextState;
+
+      _this.setState({
+        isFullscreen: nextState
+      });
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_onClickFullscreen", function () {
+      _this._mapboxFullscreenControl._onClickFullscreen();
+    });
+
+    return _this;
+  }
+
+  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__.default)(FullscreenControl, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var container = this.props.container || this._context.mapContainer;
+      this._mapboxFullscreenControl = new _utils_mapboxgl__WEBPACK_IMPORTED_MODULE_11__.default.FullscreenControl({
+        container: container
+      });
+      this.setState({
+        showButton: this._mapboxFullscreenControl._checkFullscreenSupport()
+      });
+      _utils_globals__WEBPACK_IMPORTED_MODULE_7__.document.addEventListener(this._mapboxFullscreenControl._fullscreenchange, this._onFullscreenChange);
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      _utils_globals__WEBPACK_IMPORTED_MODULE_7__.document.removeEventListener(this._mapboxFullscreenControl._fullscreenchange, this._onFullscreenChange);
+    }
+  }, {
+    key: "_renderButton",
+    value: function _renderButton(type, label, callback) {
+      return react__WEBPACK_IMPORTED_MODULE_10__.createElement("button", {
+        key: type,
+        className: "mapboxgl-ctrl-icon mapboxgl-ctrl-".concat(type),
+        type: "button",
+        title: label,
+        onClick: callback
+      }, react__WEBPACK_IMPORTED_MODULE_10__.createElement("span", {
+        className: "mapboxgl-ctrl-icon",
+        "aria-hidden": "true"
+      }));
+    }
+  }, {
+    key: "_render",
+    value: function _render() {
+      if (!this.state.showButton) {
+        return null;
+      }
+
+      var _this$props = this.props,
+          className = _this$props.className,
+          label = _this$props.label;
+      var isFullscreen = this.state.isFullscreen;
+      var type = isFullscreen ? 'shrink' : 'fullscreen';
+      return react__WEBPACK_IMPORTED_MODULE_10__.createElement("div", {
+        className: "mapboxgl-ctrl mapboxgl-ctrl-group ".concat(className),
+        ref: this._containerRef
+      }, this._renderButton(type, label, this._onClickFullscreen));
+    }
+  }]);
+
+  return FullscreenControl;
+}(_base_control__WEBPACK_IMPORTED_MODULE_9__.default);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)(FullscreenControl, "propTypes", propTypes);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)(FullscreenControl, "defaultProps", defaultProps);
+
+
+//# sourceMappingURL=fullscreen-control.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/components/geolocate-control.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/components/geolocate-control.js ***!
+  \****************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ GeolocateControl; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var viewport_mercator_project__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! viewport-mercator-project */ "./node_modules/viewport-mercator-project/module.js");
+/* harmony import */ var _utils_mapboxgl__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../utils/mapboxgl */ "./node_modules/react-map-gl/dist/esm/utils/mapboxgl.browser.js");
+/* harmony import */ var _base_control__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./base-control */ "./node_modules/react-map-gl/dist/esm/components/base-control.js");
+/* harmony import */ var _marker__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./marker */ "./node_modules/react-map-gl/dist/esm/components/marker.js");
+/* harmony import */ var _utils_map_state__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../utils/map-state */ "./node_modules/react-map-gl/dist/esm/utils/map-state.js");
+/* harmony import */ var _utils_transition_manager__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../utils/transition-manager */ "./node_modules/react-map-gl/dist/esm/utils/transition-manager.js");
+/* harmony import */ var _utils_geolocate_utils__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../utils/geolocate-utils */ "./node_modules/react-map-gl/dist/esm/utils/geolocate-utils.js");
+
+
+
+
+
+
+
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0,_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__.default)(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
+
+
+
+
+
+
+
+
+
+var LINEAR_TRANSITION_PROPS = Object.assign({}, _utils_transition_manager__WEBPACK_IMPORTED_MODULE_14__.default.defaultProps, {
+  transitionDuration: 500
+});
+
+var noop = function noop() {};
+
+var propTypes = Object.assign({}, _base_control__WEBPACK_IMPORTED_MODULE_11__.default.propTypes, {
+  className: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().string),
+  style: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().object),
+  label: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().string),
+  auto: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().bool),
+  positionOptions: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().object),
+  fitBoundsOptions: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().object),
+  trackUserLocation: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().bool),
+  showUserLocation: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().bool),
+  onViewStateChange: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().func),
+  onViewportChange: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().func),
+  onGeolocate: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().func)
+});
+var defaultProps = Object.assign({}, _base_control__WEBPACK_IMPORTED_MODULE_11__.default.defaultProps, {
+  className: '',
+  style: {},
+  label: 'Geolocate',
+  auto: false,
+  positionOptions: null,
+  fitBoundsOptions: null,
+  trackUserLocation: false,
+  showUserLocation: true,
+  onGeolocate: function onGeolocate() {}
+});
+
+var GeolocateControl = function (_BaseControl) {
+  (0,_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_3__.default)(GeolocateControl, _BaseControl);
+
+  var _super = _createSuper(GeolocateControl);
+
+  function GeolocateControl() {
+    var _this;
+
+    (0,_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__.default)(this, GeolocateControl);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _super.call.apply(_super, [this].concat(args));
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "state", {
+      supportsGeolocation: false,
+      markerPosition: null
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_mapboxGeolocateControl", null);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_geolocateButtonRef", (0,react__WEBPACK_IMPORTED_MODULE_7__.createRef)());
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_setupMapboxGeolocateControl", function (supportsGeolocation) {
+      if (!supportsGeolocation) {
+        console.warn('Geolocation support is not available, the GeolocateControl will not be visible.');
+        return;
+      }
+
+      var controlOptions = {
+        showUserLocation: false
+      };
+      ['positionOptions', 'fitBoundsOptions', 'trackUserLocation'].forEach(function (prop) {
+        if (prop in _this.props && _this.props[prop] !== null) {
+          controlOptions[prop] = _this.props[prop];
+        }
+      });
+      var control = new _utils_mapboxgl__WEBPACK_IMPORTED_MODULE_10__.default.GeolocateControl(controlOptions);
+      _this._mapboxGeolocateControl = control;
+      control._watchState = 'OFF';
+      control._geolocateButton = _this._geolocateButtonRef.current;
+
+      if (control.options.trackUserLocation && control._geolocateButton) {
+        control._geolocateButton.setAttribute('aria-pressed', 'false');
+      }
+
+      control._updateMarker = _this._updateMarker;
+      control._updateCamera = _this._updateCamera;
+      control._setup = true;
+      var eventManager = _this._context.eventManager;
+
+      if (control.options.trackUserLocation && eventManager) {
+        eventManager.on('panstart', function () {
+          if (control._watchState === 'ACTIVE_LOCK') {
+            control._watchState = 'BACKGROUND';
+
+            control._geolocateButton.classList.add('mapboxgl-ctrl-geolocate-background');
+
+            control._geolocateButton.classList.remove('mapboxgl-ctrl-geolocate-active');
+          }
+        });
+      }
+
+      control.on('geolocate', _this.props.onGeolocate);
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_triggerGeolocate", function () {
+      var control = _this._mapboxGeolocateControl;
+      control._map = _this._context.map;
+
+      if (_this.props.showUserLocation) {
+        control.on('geolocate', _this._updateMarker);
+        control.on('trackuserlocationend', _this._updateMarker);
+      }
+
+      return _this._mapboxGeolocateControl.trigger();
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_updateMarker", function (position) {
+      if (position) {
+        _this.setState({
+          markerPosition: position.coords
+        });
+      }
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_getBounds", function (position) {
+      var center = new _utils_mapboxgl__WEBPACK_IMPORTED_MODULE_10__.default.LngLat(position.coords.longitude, position.coords.latitude);
+      var radius = position.coords.accuracy;
+      var bounds = center.toBounds(radius);
+      return [[bounds._ne.lng, bounds._ne.lat], [bounds._sw.lng, bounds._sw.lat]];
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_updateCamera", function (position) {
+      var viewport = _this._context.viewport;
+
+      var bounds = _this._getBounds(position);
+
+      var _WebMercatorViewport$ = new viewport_mercator_project__WEBPACK_IMPORTED_MODULE_9__.default(viewport).fitBounds(bounds),
+          longitude = _WebMercatorViewport$.longitude,
+          latitude = _WebMercatorViewport$.latitude,
+          zoom = _WebMercatorViewport$.zoom;
+
+      var newViewState = Object.assign({}, viewport, {
+        longitude: longitude,
+        latitude: latitude,
+        zoom: zoom
+      });
+      var mapState = new _utils_map_state__WEBPACK_IMPORTED_MODULE_13__.default(newViewState);
+      var viewState = Object.assign({}, mapState.getViewportProps(), LINEAR_TRANSITION_PROPS);
+      var onViewportChange = _this.props.onViewportChange || _this._context.onViewportChange || noop;
+      var onViewStateChange = _this.props.onViewStateChange || _this._context.onViewStateChange || noop;
+      onViewStateChange({
+        viewState: viewState
+      });
+      onViewportChange(viewState);
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_renderButton", function (type, label, callback) {
+      return react__WEBPACK_IMPORTED_MODULE_7__.createElement("button", {
+        key: type,
+        className: "mapboxgl-ctrl-icon mapboxgl-ctrl-".concat(type),
+        ref: _this._geolocateButtonRef,
+        type: "button",
+        title: label,
+        onClick: callback
+      }, react__WEBPACK_IMPORTED_MODULE_7__.createElement("span", {
+        className: "mapboxgl-ctrl-icon",
+        "aria-hidden": "true"
+      }));
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_renderMarker", function () {
+      var markerPosition = _this.state.markerPosition;
+      var showUserLocation = _this.props.showUserLocation;
+
+      if (!markerPosition || !showUserLocation) {
+        return null;
+      }
+
+      return react__WEBPACK_IMPORTED_MODULE_7__.createElement(_marker__WEBPACK_IMPORTED_MODULE_12__.default, {
+        key: "location-maker",
+        longitude: markerPosition.longitude,
+        latitude: markerPosition.latitude,
+        captureDrag: false,
+        captureDoubleClick: false
+      }, react__WEBPACK_IMPORTED_MODULE_7__.createElement("div", {
+        className: "mapboxgl-user-location-dot",
+        style: {
+          transform: 'translate(-50%, -50%)'
+        }
+      }));
+    });
+
+    return _this;
+  }
+
+  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__.default)(GeolocateControl, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      (0,_utils_geolocate_utils__WEBPACK_IMPORTED_MODULE_15__.isGeolocationSupported)().then(function (result) {
+        _this2.setState({
+          supportsGeolocation: result
+        });
+
+        _this2._setupMapboxGeolocateControl(result);
+
+        if (result && _this2.props.auto) {
+          _this2._triggerGeolocate();
+        }
+      });
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps) {
+      if (this.state.supportsGeolocation && !prevProps.auto && this.props.auto) {
+        this._triggerGeolocate();
+      }
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      if (this._mapboxGeolocateControl) {
+        var geolocationWatchID = this._mapboxGeolocateControl._geolocationWatchID;
+
+        if (geolocationWatchID !== undefined) {
+          window.navigator.geolocation.clearWatch(geolocationWatchID);
+          this._mapboxGeolocateControl._geolocationWatchID = undefined;
+        }
+      }
+    }
+  }, {
+    key: "_render",
+    value: function _render() {
+      if (!this.state.supportsGeolocation) {
+        return null;
+      }
+
+      var _this$props = this.props,
+          className = _this$props.className,
+          style = _this$props.style,
+          label = _this$props.label;
+      return react__WEBPACK_IMPORTED_MODULE_7__.createElement("div", null, this._renderMarker(), react__WEBPACK_IMPORTED_MODULE_7__.createElement("div", {
+        key: "geolocate-control",
+        className: "mapboxgl-ctrl mapboxgl-ctrl-group ".concat(className),
+        ref: this._containerRef,
+        style: style
+      }, this._renderButton('geolocate', label, this._triggerGeolocate)));
+    }
+  }]);
+
+  return GeolocateControl;
+}(_base_control__WEBPACK_IMPORTED_MODULE_11__.default);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)(GeolocateControl, "propTypes", propTypes);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)(GeolocateControl, "defaultProps", defaultProps);
+
+
+//# sourceMappingURL=geolocate-control.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/components/interactive-map.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/components/interactive-map.js ***!
+  \**************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ InteractiveMap; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _static_map__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./static-map */ "./node_modules/react-map-gl/dist/esm/components/static-map.js");
+/* harmony import */ var _utils_map_state__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../utils/map-state */ "./node_modules/react-map-gl/dist/esm/utils/map-state.js");
+/* harmony import */ var viewport_mercator_project__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! viewport-mercator-project */ "./node_modules/viewport-mercator-project/module.js");
+/* harmony import */ var _utils_transition_manager__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../utils/transition-manager */ "./node_modules/react-map-gl/dist/esm/utils/transition-manager.js");
+/* harmony import */ var _map_context__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./map-context */ "./node_modules/react-map-gl/dist/esm/components/map-context.js");
+/* harmony import */ var mjolnir_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! mjolnir.js */ "./node_modules/mjolnir.js/dist/esm/index.js");
+/* harmony import */ var _utils_map_controller__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../utils/map-controller */ "./node_modules/react-map-gl/dist/esm/utils/map-controller.js");
+/* harmony import */ var _utils_deprecate_warn__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../utils/deprecate-warn */ "./node_modules/react-map-gl/dist/esm/utils/deprecate-warn.js");
+
+
+
+
+
+
+
+
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0,_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5__.default)(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
+
+
+
+
+
+
+
+
+
+
+var propTypes = Object.assign({}, _static_map__WEBPACK_IMPORTED_MODULE_10__.default.propTypes, {
+  maxZoom: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().number),
+  minZoom: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().number),
+  maxPitch: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().number),
+  minPitch: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().number),
+  onViewStateChange: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().func),
+  onViewportChange: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().func),
+  onInteractionStateChange: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().func),
+  transitionDuration: prop_types__WEBPACK_IMPORTED_MODULE_9___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_9___default().number), (prop_types__WEBPACK_IMPORTED_MODULE_9___default().string)]),
+  transitionInterpolator: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().object),
+  transitionInterruption: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().number),
+  transitionEasing: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().func),
+  onTransitionStart: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().func),
+  onTransitionInterrupt: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().func),
+  onTransitionEnd: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().func),
+  scrollZoom: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().bool),
+  dragPan: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().bool),
+  dragRotate: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().bool),
+  doubleClickZoom: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().bool),
+  touchZoom: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().bool),
+  touchRotate: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().bool),
+  keyboard: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().bool),
+  onHover: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().func),
+  onClick: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().func),
+  onDblClick: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().func),
+  onContextMenu: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().func),
+  onMouseDown: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().func),
+  onMouseMove: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().func),
+  onMouseUp: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().func),
+  onTouchStart: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().func),
+  onTouchMove: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().func),
+  onTouchEnd: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().func),
+  onMouseEnter: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().func),
+  onMouseLeave: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().func),
+  onMouseOut: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().func),
+  onWheel: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().func),
+  touchAction: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().string),
+  clickRadius: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().number),
+  interactiveLayerIds: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().array),
+  getCursor: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().func),
+  controller: prop_types__WEBPACK_IMPORTED_MODULE_9___default().instanceOf(_utils_map_controller__WEBPACK_IMPORTED_MODULE_16__.default)
+});
+
+var getDefaultCursor = function getDefaultCursor(_ref) {
+  var isDragging = _ref.isDragging,
+      isHovering = _ref.isHovering;
+  return isDragging ? 'grabbing' : isHovering ? 'pointer' : 'grab';
+};
+
+var defaultProps = Object.assign({}, _static_map__WEBPACK_IMPORTED_MODULE_10__.default.defaultProps, _utils_map_state__WEBPACK_IMPORTED_MODULE_11__.MAPBOX_LIMITS, _utils_transition_manager__WEBPACK_IMPORTED_MODULE_13__.default.defaultProps, {
+  onViewStateChange: null,
+  onViewportChange: null,
+  onClick: null,
+  onNativeClick: null,
+  onHover: null,
+  onContextMenu: function onContextMenu(event) {
+    return event.preventDefault();
+  },
+  scrollZoom: true,
+  dragPan: true,
+  dragRotate: true,
+  doubleClickZoom: true,
+  touchZoom: true,
+  touchRotate: false,
+  keyboard: true,
+  touchAction: 'none',
+  clickRadius: 0,
+  getCursor: getDefaultCursor
+});
+
+var InteractiveMap = function (_PureComponent) {
+  (0,_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__.default)(InteractiveMap, _PureComponent);
+
+  var _super = _createSuper(InteractiveMap);
+
+  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__.default)(InteractiveMap, null, [{
+    key: "supported",
+    value: function supported() {
+      return _static_map__WEBPACK_IMPORTED_MODULE_10__.default.supported();
+    }
+  }]);
+
+  function InteractiveMap(props) {
+    var _this;
+
+    (0,_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__.default)(this, InteractiveMap);
+
+    _this = _super.call(this, props);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "state", {
+      isLoaded: false,
+      isDragging: false,
+      isHovering: false
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_controller", void 0);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_eventManager", void 0);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_interactiveContext", void 0);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_width", 0);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_height", 0);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_eventCanvasRef", (0,react__WEBPACK_IMPORTED_MODULE_8__.createRef)());
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_staticMapRef", (0,react__WEBPACK_IMPORTED_MODULE_8__.createRef)());
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "getMap", function () {
+      return _this._staticMapRef.current ? _this._staticMapRef.current.getMap() : null;
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "queryRenderedFeatures", function (geometry) {
+      var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+      var map = _this.getMap();
+
+      return map && map.queryRenderedFeatures(geometry, options);
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_onInteractionStateChange", function (interactionState) {
+      var _interactionState$isD = interactionState.isDragging,
+          isDragging = _interactionState$isD === void 0 ? false : _interactionState$isD;
+
+      if (isDragging !== _this.state.isDragging) {
+        _this._updateInteractiveContext({
+          isDragging: isDragging
+        });
+
+        _this.setState({
+          isDragging: isDragging
+        });
+      }
+
+      var onInteractionStateChange = _this.props.onInteractionStateChange;
+
+      if (onInteractionStateChange) {
+        onInteractionStateChange(interactionState);
+      }
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_onResize", function (_ref2) {
+      var width = _ref2.width,
+          height = _ref2.height;
+      _this._width = width;
+      _this._height = height;
+
+      _this._setControllerProps(_this.props);
+
+      _this.props.onResize({
+        width: width,
+        height: height
+      });
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_onViewportChange", function (viewState, interactionState, oldViewState) {
+      var _this$props = _this.props,
+          onViewStateChange = _this$props.onViewStateChange,
+          onViewportChange = _this$props.onViewportChange;
+
+      if (onViewStateChange) {
+        onViewStateChange({
+          viewState: viewState,
+          interactionState: interactionState,
+          oldViewState: oldViewState
+        });
+      }
+
+      if (onViewportChange) {
+        onViewportChange(viewState, interactionState, oldViewState);
+      }
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_onLoad", function (event) {
+      _this.setState({
+        isLoaded: true
+      });
+
+      _this.props.onLoad(event);
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_onEvent", function (callbackName, event) {
+      var func = _this.props[callbackName];
+
+      if (func) {
+        func(_this._normalizeEvent(event));
+      }
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_onPointerDown", function (event) {
+      switch (event.pointerType) {
+        case 'touch':
+          _this._onEvent('onTouchStart', event);
+
+          break;
+
+        default:
+          _this._onEvent('onMouseDown', event);
+
+      }
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_onPointerUp", function (event) {
+      switch (event.pointerType) {
+        case 'touch':
+          _this._onEvent('onTouchEnd', event);
+
+          break;
+
+        default:
+          _this._onEvent('onMouseUp', event);
+
+      }
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_onPointerMove", function (event) {
+      switch (event.pointerType) {
+        case 'touch':
+          _this._onEvent('onTouchMove', event);
+
+          break;
+
+        default:
+          _this._onEvent('onMouseMove', event);
+
+      }
+
+      if (!_this.state.isDragging) {
+        var _this$props2 = _this.props,
+            onHover = _this$props2.onHover,
+            interactiveLayerIds = _this$props2.interactiveLayerIds;
+        var features;
+        event = _this._normalizeEvent(event);
+
+        if (_this.state.isLoaded && (interactiveLayerIds || onHover)) {
+          features = _this._getFeatures({
+            pos: event.point,
+            radius: _this.props.clickRadius
+          });
+        }
+
+        if (onHover) {
+          event.features = features;
+          onHover(event);
+        }
+
+        var isHovering = Boolean(interactiveLayerIds && features && features.length > 0);
+        var isEntering = isHovering && !_this.state.isHovering;
+        var isExiting = !isHovering && _this.state.isHovering;
+
+        if (isEntering) {
+          _this._onEvent('onMouseEnter', event);
+        }
+
+        if (isExiting) {
+          _this._onEvent('onMouseLeave', event);
+        }
+
+        if (isEntering || isExiting) {
+          _this.setState({
+            isHovering: isHovering
+          });
+        }
+      }
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_onClick", function (event) {
+      var _this$props3 = _this.props,
+          onClick = _this$props3.onClick,
+          onNativeClick = _this$props3.onNativeClick,
+          onDblClick = _this$props3.onDblClick,
+          doubleClickZoom = _this$props3.doubleClickZoom;
+      var callbacks = [];
+      var isDoubleClickEnabled = onDblClick || doubleClickZoom;
+
+      switch (event.type) {
+        case 'anyclick':
+          callbacks.push(onNativeClick);
+
+          if (!isDoubleClickEnabled) {
+            callbacks.push(onClick);
+          }
+
+          break;
+
+        case 'click':
+          if (isDoubleClickEnabled) {
+            callbacks.push(onClick);
+          }
+
+          break;
+
+        default:
+      }
+
+      callbacks = callbacks.filter(Boolean);
+
+      if (callbacks.length) {
+        event = _this._normalizeEvent(event);
+        event.features = _this._getFeatures({
+          pos: event.point,
+          radius: _this.props.clickRadius
+        });
+        callbacks.forEach(function (cb) {
+          return cb(event);
+        });
+      }
+    });
+
+    (0,_utils_deprecate_warn__WEBPACK_IMPORTED_MODULE_17__.default)(props);
+    _this._controller = props.controller || new _utils_map_controller__WEBPACK_IMPORTED_MODULE_16__.default();
+    _this._eventManager = new mjolnir_js__WEBPACK_IMPORTED_MODULE_15__.EventManager(null, {
+      touchAction: props.touchAction
+    });
+
+    _this._updateInteractiveContext({
+      isDragging: false,
+      eventManager: _this._eventManager
+    });
+
+    return _this;
+  }
+
+  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__.default)(InteractiveMap, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var eventManager = this._eventManager;
+      var mapContainer = this._eventCanvasRef.current;
+      eventManager.setElement(mapContainer);
+      eventManager.on({
+        pointerdown: this._onPointerDown,
+        pointermove: this._onPointerMove,
+        pointerup: this._onPointerUp,
+        pointerleave: this._onEvent.bind(this, 'onMouseOut'),
+        click: this._onClick,
+        anyclick: this._onClick,
+        dblclick: this._onEvent.bind(this, 'onDblClick'),
+        wheel: this._onEvent.bind(this, 'onWheel'),
+        contextmenu: this._onEvent.bind(this, 'onContextMenu')
+      });
+
+      this._setControllerProps(this.props);
+
+      this._updateInteractiveContext({
+        mapContainer: mapContainer
+      });
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate() {
+      this._setControllerProps(this.props);
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      this._eventManager.destroy();
+    }
+  }, {
+    key: "_setControllerProps",
+    value: function _setControllerProps(props) {
+      props = Object.assign({}, props, props.viewState, {
+        isInteractive: Boolean(props.onViewStateChange || props.onViewportChange),
+        onViewportChange: this._onViewportChange,
+        onStateChange: this._onInteractionStateChange,
+        eventManager: this._eventManager,
+        width: this._width,
+        height: this._height
+      });
+
+      this._controller.setOptions(props);
+
+      var context = this._interactiveContext;
+      context.onViewportChange = props.onViewportChange;
+      context.onViewStateChange = props.onViewStateChange;
+    }
+  }, {
+    key: "_getFeatures",
+    value: function _getFeatures(_ref3) {
+      var pos = _ref3.pos,
+          radius = _ref3.radius;
+      var features;
+      var queryParams = {};
+      var map = this.getMap();
+
+      if (this.props.interactiveLayerIds) {
+        queryParams.layers = this.props.interactiveLayerIds;
+      }
+
+      if (radius) {
+        var size = radius;
+        var bbox = [[pos[0] - size, pos[1] + size], [pos[0] + size, pos[1] - size]];
+        features = map && map.queryRenderedFeatures(bbox, queryParams);
+      } else {
+        features = map && map.queryRenderedFeatures(pos, queryParams);
+      }
+
+      return features;
+    }
+  }, {
+    key: "_updateInteractiveContext",
+    value: function _updateInteractiveContext(updatedContext) {
+      this._interactiveContext = Object.assign({}, this._interactiveContext, updatedContext);
+    }
+  }, {
+    key: "_normalizeEvent",
+    value: function _normalizeEvent(event) {
+      if (event.lngLat) {
+        return event;
+      }
+
+      var _event$offsetCenter = event.offsetCenter,
+          x = _event$offsetCenter.x,
+          y = _event$offsetCenter.y;
+      var pos = [x, y];
+      var viewport = new viewport_mercator_project__WEBPACK_IMPORTED_MODULE_12__.default(Object.assign({}, this.props, {
+        width: this._width,
+        height: this._height
+      }));
+      event.point = pos;
+      event.lngLat = viewport.unproject(pos);
+      return event;
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$props4 = this.props,
+          width = _this$props4.width,
+          height = _this$props4.height,
+          style = _this$props4.style,
+          getCursor = _this$props4.getCursor;
+      var eventCanvasStyle = Object.assign({
+        position: 'relative'
+      }, style, {
+        width: width,
+        height: height,
+        cursor: getCursor(this.state)
+      });
+      return react__WEBPACK_IMPORTED_MODULE_8__.createElement(_map_context__WEBPACK_IMPORTED_MODULE_14__.default.Provider, {
+        value: this._interactiveContext
+      }, react__WEBPACK_IMPORTED_MODULE_8__.createElement("div", {
+        key: "event-canvas",
+        ref: this._eventCanvasRef,
+        style: eventCanvasStyle
+      }, react__WEBPACK_IMPORTED_MODULE_8__.createElement(_static_map__WEBPACK_IMPORTED_MODULE_10__.default, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__.default)({}, this.props, {
+        width: "100%",
+        height: "100%",
+        style: null,
+        onResize: this._onResize,
+        onLoad: this._onLoad,
+        ref: this._staticMapRef
+      }), this.props.children)));
+    }
+  }]);
+
+  return InteractiveMap;
+}(react__WEBPACK_IMPORTED_MODULE_8__.PureComponent);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__.default)(InteractiveMap, "propTypes", propTypes);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__.default)(InteractiveMap, "defaultProps", defaultProps);
+
+
+//# sourceMappingURL=interactive-map.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/components/layer.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/components/layer.js ***!
+  \****************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ Layer; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _map_context__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./map-context */ "./node_modules/react-map-gl/dist/esm/components/map-context.js");
+/* harmony import */ var _utils_assert__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../utils/assert */ "./node_modules/react-map-gl/dist/esm/utils/assert.js");
+/* harmony import */ var _utils_deep_equal__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../utils/deep-equal */ "./node_modules/react-map-gl/dist/esm/utils/deep-equal.js");
+
+
+
+
+
+
+
+
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0,_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__.default)(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
+
+
+
+
+
+var LAYER_TYPES = {
+  fill: 'fill',
+  line: 'line',
+  symbol: 'symbol',
+  circle: 'circle',
+  'fill-extrusion': 'fill-extrusion',
+  raster: 'raster',
+  background: 'background',
+  heatmap: 'heatmap',
+  hillshade: 'hillshade',
+  sky: 'sky'
+};
+var propTypes = {
+  type: prop_types__WEBPACK_IMPORTED_MODULE_9___default().oneOf(Object.keys(LAYER_TYPES)).isRequired,
+  id: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().string),
+  source: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().string),
+  beforeId: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().string)
+};
+
+function diffLayerStyles(map, id, props, prevProps) {
+  var _props$layout = props.layout,
+      layout = _props$layout === void 0 ? {} : _props$layout,
+      _props$paint = props.paint,
+      paint = _props$paint === void 0 ? {} : _props$paint,
+      filter = props.filter,
+      minzoom = props.minzoom,
+      maxzoom = props.maxzoom,
+      beforeId = props.beforeId,
+      otherProps = (0,_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_7__.default)(props, ["layout", "paint", "filter", "minzoom", "maxzoom", "beforeId"]);
+
+  if (beforeId !== prevProps.beforeId) {
+    map.moveLayer(id, beforeId);
+  }
+
+  if (layout !== prevProps.layout) {
+    var prevLayout = prevProps.layout || {};
+
+    for (var key in layout) {
+      if (!(0,_utils_deep_equal__WEBPACK_IMPORTED_MODULE_12__.default)(layout[key], prevLayout[key])) {
+        map.setLayoutProperty(id, key, layout[key]);
+      }
+    }
+
+    for (var _key in prevLayout) {
+      if (!layout.hasOwnProperty(_key)) {
+        map.setLayoutProperty(id, _key, undefined);
+      }
+    }
+  }
+
+  if (paint !== prevProps.paint) {
+    var prevPaint = prevProps.paint || {};
+
+    for (var _key2 in paint) {
+      if (!(0,_utils_deep_equal__WEBPACK_IMPORTED_MODULE_12__.default)(paint[_key2], prevPaint[_key2])) {
+        map.setPaintProperty(id, _key2, paint[_key2]);
+      }
+    }
+
+    for (var _key3 in prevPaint) {
+      if (!paint.hasOwnProperty(_key3)) {
+        map.setPaintProperty(id, _key3, undefined);
+      }
+    }
+  }
+
+  if (!(0,_utils_deep_equal__WEBPACK_IMPORTED_MODULE_12__.default)(filter, prevProps.filter)) {
+    map.setFilter(id, filter);
+  }
+
+  if (minzoom !== prevProps.minzoom || maxzoom !== prevProps.maxzoom) {
+    map.setLayerZoomRange(id, minzoom, maxzoom);
+  }
+
+  for (var _key4 in otherProps) {
+    if (!(0,_utils_deep_equal__WEBPACK_IMPORTED_MODULE_12__.default)(otherProps[_key4], prevProps[_key4])) {
+      map.setLayerProperty(id, _key4, otherProps[_key4]);
+    }
+  }
+}
+
+var layerCounter = 0;
+
+var Layer = function (_PureComponent) {
+  (0,_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_3__.default)(Layer, _PureComponent);
+
+  var _super = _createSuper(Layer);
+
+  function Layer(_props) {
+    var _this;
+
+    (0,_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__.default)(this, Layer);
+
+    _this = _super.call(this, _props);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "id", void 0);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "type", void 0);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_map", null);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_layerOptions", {});
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_updateLayer", function () {
+      var map = _this._map;
+
+      if (!map) {
+        return;
+      }
+
+      var _assertThisInitialize = (0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this),
+          props = _assertThisInitialize.props,
+          layerOptions = _assertThisInitialize._layerOptions;
+
+      (0,_utils_assert__WEBPACK_IMPORTED_MODULE_11__.default)(!props.id || props.id === _this.id, 'layer id changed');
+      (0,_utils_assert__WEBPACK_IMPORTED_MODULE_11__.default)(props.type === _this.type, 'layer type changed');
+
+      if (!_this.getLayer()) {
+        _this._createLayer();
+
+        return;
+      }
+
+      try {
+        diffLayerStyles(map, _this.id, props, layerOptions);
+        Object.assign(layerOptions, props);
+      } catch (error) {
+        console.warn(error);
+      }
+    });
+
+    _this.id = _props.id || "jsx-layer-".concat(layerCounter++);
+    _this.type = _props.type;
+    return _this;
+  }
+
+  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__.default)(Layer, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this._updateLayer();
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate() {
+      this._updateLayer();
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      var map = this._map;
+
+      if (map) {
+        map.off('styledata', this._updateLayer);
+
+        if (map.style && map.style._loaded) {
+          map.removeLayer(this.id);
+        }
+      }
+    }
+  }, {
+    key: "getLayer",
+    value: function getLayer() {
+      var map = this._map;
+      return map && map.style && map.getLayer(this.id);
+    }
+  }, {
+    key: "_createLayer",
+    value: function _createLayer() {
+      var map = this._map;
+
+      if (map.style && map.style._loaded) {
+        var options = Object.assign({}, this.props);
+        options.id = this.id;
+        delete options.beforeId;
+        map.addLayer(options, this.props.beforeId);
+        this._layerOptions = options;
+      }
+    }
+  }, {
+    key: "_render",
+    value: function _render(context) {
+      if (!this._map && context.map) {
+        this._map = context.map;
+
+        this._map.on('styledata', this._updateLayer);
+      }
+
+      return null;
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_8__.createElement(_map_context__WEBPACK_IMPORTED_MODULE_10__.default.Consumer, null, this._render.bind(this));
+    }
+  }]);
+
+  return Layer;
+}(react__WEBPACK_IMPORTED_MODULE_8__.PureComponent);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)(Layer, "propTypes", propTypes);
+
+
+//# sourceMappingURL=layer.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/components/map-context.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/components/map-context.js ***!
+  \**********************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+/* harmony default export */ __webpack_exports__["default"] = ((0,react__WEBPACK_IMPORTED_MODULE_0__.createContext)({
+  viewport: null,
+  map: null,
+  mapContainer: null,
+  onViewportChange: null,
+  onViewStateChange: null,
+  eventManager: null,
+  isDragging: false
+}));
+//# sourceMappingURL=map-context.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/components/marker.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/components/marker.js ***!
+  \*****************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ Marker; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/get */ "./node_modules/@babel/runtime/helpers/esm/get.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _draggable_control__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./draggable-control */ "./node_modules/react-map-gl/dist/esm/components/draggable-control.js");
+/* harmony import */ var _utils_crisp_pixel__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../utils/crisp-pixel */ "./node_modules/react-map-gl/dist/esm/utils/crisp-pixel.js");
+
+
+
+
+
+
+
+
+
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0,_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_6__.default)(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
+
+
+
+var propTypes = Object.assign({}, _draggable_control__WEBPACK_IMPORTED_MODULE_11__.default.propTypes, {
+  className: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().string),
+  longitude: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().number.isRequired),
+  latitude: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().number.isRequired)
+});
+var defaultProps = Object.assign({}, _draggable_control__WEBPACK_IMPORTED_MODULE_11__.default.defaultProps, {
+  className: ''
+});
+
+var Marker = function (_DraggableControl) {
+  (0,_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__.default)(Marker, _DraggableControl);
+
+  var _super = _createSuper(Marker);
+
+  function Marker() {
+    var _this;
+
+    (0,_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__.default)(this, Marker);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _super.call.apply(_super, [this].concat(args));
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3__.default)(_this), "_control", null);
+
+    return _this;
+  }
+
+  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__.default)(Marker, [{
+    key: "_getPosition",
+    value: function _getPosition() {
+      var _this$props = this.props,
+          longitude = _this$props.longitude,
+          latitude = _this$props.latitude,
+          offsetLeft = _this$props.offsetLeft,
+          offsetTop = _this$props.offsetTop;
+      var _this$state = this.state,
+          dragPos = _this$state.dragPos,
+          dragOffset = _this$state.dragOffset;
+
+      if (dragPos && dragOffset) {
+        return this._getDraggedPosition(dragPos, dragOffset);
+      }
+
+      var _this$_context$viewpo = this._context.viewport.project([longitude, latitude]),
+          _this$_context$viewpo2 = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__.default)(_this$_context$viewpo, 2),
+          x = _this$_context$viewpo2[0],
+          y = _this$_context$viewpo2[1];
+
+      x += offsetLeft;
+      y += offsetTop;
+      return [x, y];
+    }
+  }, {
+    key: "_render",
+    value: function _render() {
+      var _this$_getPosition = this._getPosition(),
+          _this$_getPosition2 = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__.default)(_this$_getPosition, 2),
+          x = _this$_getPosition2[0],
+          y = _this$_getPosition2[1];
+
+      var transform = "translate(".concat((0,_utils_crisp_pixel__WEBPACK_IMPORTED_MODULE_12__.crispPixel)(x), "px, ").concat((0,_utils_crisp_pixel__WEBPACK_IMPORTED_MODULE_12__.crispPixel)(y), "px)");
+      var div = this._containerRef.current;
+
+      if (this._control && div) {
+        div.style.transform = transform;
+      } else {
+        var _this$props2 = this.props,
+            className = _this$props2.className,
+            draggable = _this$props2.draggable;
+        var dragPos = this.state.dragPos;
+        var containerStyle = {
+          position: 'absolute',
+          left: 0,
+          top: 0,
+          transform: transform,
+          cursor: draggable ? dragPos ? 'grabbing' : 'grab' : 'auto'
+        };
+        this._control = react__WEBPACK_IMPORTED_MODULE_9__.createElement("div", {
+          className: "mapboxgl-marker ".concat(className),
+          ref: this._containerRef,
+          style: containerStyle
+        }, this.props.children);
+      }
+
+      return this._control;
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      this._control = null;
+      return (0,_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_4__.default)((0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__.default)(Marker.prototype), "render", this).call(this);
+    }
+  }]);
+
+  return Marker;
+}(_draggable_control__WEBPACK_IMPORTED_MODULE_11__.default);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__.default)(Marker, "propTypes", propTypes);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__.default)(Marker, "defaultProps", defaultProps);
+
+
+//# sourceMappingURL=marker.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/components/navigation-control.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/components/navigation-control.js ***!
+  \*****************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ NavigationControl; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _base_control__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./base-control */ "./node_modules/react-map-gl/dist/esm/components/base-control.js");
+/* harmony import */ var _utils_map_state__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../utils/map-state */ "./node_modules/react-map-gl/dist/esm/utils/map-state.js");
+/* harmony import */ var _utils_map_controller__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../utils/map-controller */ "./node_modules/react-map-gl/dist/esm/utils/map-controller.js");
+/* harmony import */ var _utils_deprecate_warn__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../utils/deprecate-warn */ "./node_modules/react-map-gl/dist/esm/utils/deprecate-warn.js");
+/* harmony import */ var _utils_version__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../utils/version */ "./node_modules/react-map-gl/dist/esm/utils/version.js");
+
+
+
+
+
+
+
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0,_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__.default)(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
+
+
+
+
+
+
+
+var noop = function noop() {};
+
+var propTypes = Object.assign({}, _base_control__WEBPACK_IMPORTED_MODULE_9__.default.propTypes, {
+  className: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().string),
+  onViewStateChange: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().func),
+  onViewportChange: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().func),
+  showCompass: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().bool),
+  showZoom: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().bool),
+  zoomInLabel: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().string),
+  zoomOutLabel: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().string),
+  compassLabel: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().string)
+});
+var defaultProps = Object.assign({}, _base_control__WEBPACK_IMPORTED_MODULE_9__.default.defaultProps, {
+  className: '',
+  showCompass: true,
+  showZoom: true,
+  zoomInLabel: 'Zoom In',
+  zoomOutLabel: 'Zoom Out',
+  compassLabel: 'Reset North'
+});
+var VERSION_LEGACY = 1;
+var VERSION_1_6 = 2;
+
+function getUIVersion(mapboxVersion) {
+  return (0,_utils_version__WEBPACK_IMPORTED_MODULE_13__.compareVersions)(mapboxVersion, '1.6.0') >= 0 ? VERSION_1_6 : VERSION_LEGACY;
+}
+
+var NavigationControl = function (_BaseControl) {
+  (0,_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_3__.default)(NavigationControl, _BaseControl);
+
+  var _super = _createSuper(NavigationControl);
+
+  function NavigationControl(props) {
+    var _this;
+
+    (0,_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__.default)(this, NavigationControl);
+
+    _this = _super.call(this, props);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_uiVersion", void 0);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_onZoomIn", function () {
+      _this._updateViewport({
+        zoom: _this._context.viewport.zoom + 1
+      });
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_onZoomOut", function () {
+      _this._updateViewport({
+        zoom: _this._context.viewport.zoom - 1
+      });
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_onResetNorth", function () {
+      _this._updateViewport({
+        bearing: 0,
+        pitch: 0
+      });
+    });
+
+    (0,_utils_deprecate_warn__WEBPACK_IMPORTED_MODULE_12__.default)(props);
+    return _this;
+  }
+
+  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__.default)(NavigationControl, [{
+    key: "_updateViewport",
+    value: function _updateViewport(opts) {
+      var viewport = this._context.viewport;
+      var mapState = new _utils_map_state__WEBPACK_IMPORTED_MODULE_10__.default(Object.assign({}, viewport, opts));
+      var viewState = Object.assign({}, mapState.getViewportProps(), _utils_map_controller__WEBPACK_IMPORTED_MODULE_11__.LINEAR_TRANSITION_PROPS);
+      var onViewportChange = this.props.onViewportChange || this._context.onViewportChange || noop;
+      var onViewStateChange = this.props.onViewStateChange || this._context.onViewStateChange || noop;
+      onViewStateChange({
+        viewState: viewState
+      });
+      onViewportChange(viewState);
+    }
+  }, {
+    key: "_renderCompass",
+    value: function _renderCompass() {
+      var bearing = this._context.viewport.bearing;
+      var style = {
+        transform: "rotate(".concat(-bearing, "deg)")
+      };
+      return this._uiVersion === VERSION_1_6 ? react__WEBPACK_IMPORTED_MODULE_7__.createElement("span", {
+        className: "mapboxgl-ctrl-icon",
+        "aria-hidden": "true",
+        style: style
+      }) : react__WEBPACK_IMPORTED_MODULE_7__.createElement("span", {
+        className: "mapboxgl-ctrl-compass-arrow",
+        style: style
+      });
+    }
+  }, {
+    key: "_renderButton",
+    value: function _renderButton(type, label, callback, children) {
+      return react__WEBPACK_IMPORTED_MODULE_7__.createElement("button", {
+        key: type,
+        className: "mapboxgl-ctrl-icon mapboxgl-ctrl-".concat(type),
+        type: "button",
+        title: label,
+        onClick: callback
+      }, children || react__WEBPACK_IMPORTED_MODULE_7__.createElement("span", {
+        className: "mapboxgl-ctrl-icon",
+        "aria-hidden": "true"
+      }));
+    }
+  }, {
+    key: "_render",
+    value: function _render() {
+      var _this$props = this.props,
+          className = _this$props.className,
+          showCompass = _this$props.showCompass,
+          showZoom = _this$props.showZoom,
+          zoomInLabel = _this$props.zoomInLabel,
+          zoomOutLabel = _this$props.zoomOutLabel,
+          compassLabel = _this$props.compassLabel;
+
+      if (!this._uiVersion) {
+        var map = this._context.map;
+        this._uiVersion = map ? getUIVersion(map.version) : VERSION_1_6;
+      }
+
+      return react__WEBPACK_IMPORTED_MODULE_7__.createElement("div", {
+        className: "mapboxgl-ctrl mapboxgl-ctrl-group ".concat(className),
+        ref: this._containerRef
+      }, showZoom && this._renderButton('zoom-in', zoomInLabel, this._onZoomIn), showZoom && this._renderButton('zoom-out', zoomOutLabel, this._onZoomOut), showCompass && this._renderButton('compass', compassLabel, this._onResetNorth, this._renderCompass()));
+    }
+  }]);
+
+  return NavigationControl;
+}(_base_control__WEBPACK_IMPORTED_MODULE_9__.default);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)(NavigationControl, "propTypes", propTypes);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)(NavigationControl, "defaultProps", defaultProps);
+
+
+//# sourceMappingURL=navigation-control.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/components/popup.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/components/popup.js ***!
+  \****************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ Popup; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/get */ "./node_modules/@babel/runtime/helpers/esm/get.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _base_control__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./base-control */ "./node_modules/react-map-gl/dist/esm/components/base-control.js");
+/* harmony import */ var _utils_dynamic_position__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../utils/dynamic-position */ "./node_modules/react-map-gl/dist/esm/utils/dynamic-position.js");
+/* harmony import */ var _utils_crisp_pixel__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../utils/crisp-pixel */ "./node_modules/react-map-gl/dist/esm/utils/crisp-pixel.js");
+
+
+
+
+
+
+
+
+
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0,_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_6__.default)(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
+
+
+
+
+
+var propTypes = Object.assign({}, _base_control__WEBPACK_IMPORTED_MODULE_11__.default.propTypes, {
+  className: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().string),
+  longitude: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().number.isRequired),
+  latitude: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().number.isRequired),
+  altitude: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().number),
+  offsetLeft: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().number),
+  offsetTop: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().number),
+  tipSize: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().number),
+  closeButton: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().bool),
+  closeOnClick: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().bool),
+  anchor: prop_types__WEBPACK_IMPORTED_MODULE_10___default().oneOf(Object.keys(_utils_dynamic_position__WEBPACK_IMPORTED_MODULE_12__.ANCHOR_POSITION)),
+  dynamicPosition: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().bool),
+  sortByDepth: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().bool),
+  onClose: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().func)
+});
+var defaultProps = Object.assign({}, _base_control__WEBPACK_IMPORTED_MODULE_11__.default.defaultProps, {
+  className: '',
+  altitude: 0,
+  offsetLeft: 0,
+  offsetTop: 0,
+  tipSize: 10,
+  anchor: 'bottom',
+  dynamicPosition: true,
+  sortByDepth: false,
+  closeButton: true,
+  closeOnClick: true,
+  onClose: function onClose() {}
+});
+
+var Popup = function (_BaseControl) {
+  (0,_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__.default)(Popup, _BaseControl);
+
+  var _super = _createSuper(Popup);
+
+  function Popup() {
+    var _this;
+
+    (0,_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__.default)(this, Popup);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _super.call.apply(_super, [this].concat(args));
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3__.default)(_this), "_closeOnClick", false);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3__.default)(_this), "_contentRef", (0,react__WEBPACK_IMPORTED_MODULE_9__.createRef)());
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3__.default)(_this), "_onClick", function (evt) {
+      if (_this.props.captureClick) {
+        evt.stopPropagation();
+      }
+
+      if (_this.props.closeOnClick || evt.target.className === 'mapboxgl-popup-close-button') {
+        _this.props.onClose();
+
+        var eventManager = _this._context.eventManager;
+
+        if (eventManager) {
+          eventManager.once('click', function (e) {
+            return e.stopPropagation();
+          }, evt.target);
+        }
+      }
+    });
+
+    return _this;
+  }
+
+  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__.default)(Popup, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      (0,_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_4__.default)((0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__.default)(Popup.prototype), "componentDidMount", this).call(this);
+
+      this.forceUpdate();
+    }
+  }, {
+    key: "_getPosition",
+    value: function _getPosition(x, y) {
+      var viewport = this._context.viewport;
+      var _this$props = this.props,
+          anchor = _this$props.anchor,
+          dynamicPosition = _this$props.dynamicPosition,
+          tipSize = _this$props.tipSize;
+      var content = this._contentRef.current;
+
+      if (content) {
+        return dynamicPosition ? (0,_utils_dynamic_position__WEBPACK_IMPORTED_MODULE_12__.getDynamicPosition)({
+          x: x,
+          y: y,
+          anchor: anchor,
+          padding: tipSize,
+          width: viewport.width,
+          height: viewport.height,
+          selfWidth: content.clientWidth,
+          selfHeight: content.clientHeight
+        }) : anchor;
+      }
+
+      return anchor;
+    }
+  }, {
+    key: "_getContainerStyle",
+    value: function _getContainerStyle(x, y, z, positionType) {
+      var viewport = this._context.viewport;
+      var _this$props2 = this.props,
+          offsetLeft = _this$props2.offsetLeft,
+          offsetTop = _this$props2.offsetTop,
+          sortByDepth = _this$props2.sortByDepth;
+      var anchorPosition = _utils_dynamic_position__WEBPACK_IMPORTED_MODULE_12__.ANCHOR_POSITION[positionType];
+      var left = x + offsetLeft;
+      var top = y + offsetTop;
+      var el = this._containerRef.current;
+      var xPercentage = (0,_utils_crisp_pixel__WEBPACK_IMPORTED_MODULE_13__.crispPercentage)(el, -anchorPosition.x * 100);
+      var yPercentage = (0,_utils_crisp_pixel__WEBPACK_IMPORTED_MODULE_13__.crispPercentage)(el, -anchorPosition.y * 100, 'y');
+      var style = {
+        position: 'absolute',
+        transform: "\n        translate(".concat(xPercentage, "%, ").concat(yPercentage, "%)\n        translate(").concat((0,_utils_crisp_pixel__WEBPACK_IMPORTED_MODULE_13__.crispPixel)(left), "px, ").concat((0,_utils_crisp_pixel__WEBPACK_IMPORTED_MODULE_13__.crispPixel)(top), "px)\n      "),
+        display: undefined,
+        zIndex: undefined
+      };
+
+      if (!sortByDepth) {
+        return style;
+      }
+
+      if (z > 1 || z < -1 || x < 0 || x > viewport.width || y < 0 || y > viewport.height) {
+        style.display = 'none';
+      } else {
+        style.zIndex = Math.floor((1 - z) / 2 * 100000);
+      }
+
+      return style;
+    }
+  }, {
+    key: "_renderTip",
+    value: function _renderTip(positionType) {
+      var tipSize = this.props.tipSize;
+      return react__WEBPACK_IMPORTED_MODULE_9__.createElement("div", {
+        key: "tip",
+        className: "mapboxgl-popup-tip",
+        style: {
+          borderWidth: tipSize
+        }
+      });
+    }
+  }, {
+    key: "_renderContent",
+    value: function _renderContent() {
+      var _this$props3 = this.props,
+          closeButton = _this$props3.closeButton,
+          children = _this$props3.children;
+      var onClick = this._context.eventManager ? null : this._onClick;
+      return react__WEBPACK_IMPORTED_MODULE_9__.createElement("div", {
+        key: "content",
+        ref: this._contentRef,
+        className: "mapboxgl-popup-content",
+        onClick: onClick
+      }, closeButton && react__WEBPACK_IMPORTED_MODULE_9__.createElement("button", {
+        key: "close-button",
+        className: "mapboxgl-popup-close-button",
+        type: "button"
+      }, "\xD7"), children);
+    }
+  }, {
+    key: "_render",
+    value: function _render() {
+      var _this$props4 = this.props,
+          className = _this$props4.className,
+          longitude = _this$props4.longitude,
+          latitude = _this$props4.latitude,
+          altitude = _this$props4.altitude;
+
+      var _this$_context$viewpo = this._context.viewport.project([longitude, latitude, altitude]),
+          _this$_context$viewpo2 = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__.default)(_this$_context$viewpo, 3),
+          x = _this$_context$viewpo2[0],
+          y = _this$_context$viewpo2[1],
+          z = _this$_context$viewpo2[2];
+
+      var positionType = this._getPosition(x, y);
+
+      var containerStyle = this._getContainerStyle(x, y, z, positionType);
+
+      return react__WEBPACK_IMPORTED_MODULE_9__.createElement("div", {
+        className: "mapboxgl-popup mapboxgl-popup-anchor-".concat(positionType, " ").concat(className),
+        style: containerStyle,
+        ref: this._containerRef
+      }, this._renderTip(positionType), this._renderContent());
+    }
+  }]);
+
+  return Popup;
+}(_base_control__WEBPACK_IMPORTED_MODULE_11__.default);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__.default)(Popup, "propTypes", propTypes);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__.default)(Popup, "defaultProps", defaultProps);
+
+
+//# sourceMappingURL=popup.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/components/scale-control.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/components/scale-control.js ***!
+  \************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ ScaleControl; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _base_control__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./base-control */ "./node_modules/react-map-gl/dist/esm/components/base-control.js");
+/* harmony import */ var _utils_mapboxgl__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../utils/mapboxgl */ "./node_modules/react-map-gl/dist/esm/utils/mapboxgl.browser.js");
+
+
+
+
+
+
+
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0,_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__.default)(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
+
+
+
+var propTypes = Object.assign({}, _base_control__WEBPACK_IMPORTED_MODULE_9__.default.propTypes, {
+  maxWidth: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().number),
+  unit: prop_types__WEBPACK_IMPORTED_MODULE_8___default().oneOf(['imperial', 'metric', 'nautical'])
+});
+var defaultProps = Object.assign({}, _base_control__WEBPACK_IMPORTED_MODULE_9__.default.defaultProps, {
+  maxWidth: 100,
+  unit: 'metric'
+});
+
+var ScaleControl = function (_BaseControl) {
+  (0,_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_3__.default)(ScaleControl, _BaseControl);
+
+  var _super = _createSuper(ScaleControl);
+
+  function ScaleControl() {
+    var _this;
+
+    (0,_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__.default)(this, ScaleControl);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _super.call.apply(_super, [this].concat(args));
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_control", null);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_mapboxScaleControl", null);
+
+    return _this;
+  }
+
+  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__.default)(ScaleControl, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var mapboxScaleControl = new _utils_mapboxgl__WEBPACK_IMPORTED_MODULE_10__.default.ScaleControl();
+      mapboxScaleControl._map = this._context.map;
+      mapboxScaleControl._container = this._containerRef.current;
+      this._mapboxScaleControl = mapboxScaleControl;
+
+      this._update();
+    }
+  }, {
+    key: "_update",
+    value: function _update() {
+      var mapboxScaleControl = this._mapboxScaleControl;
+
+      if (mapboxScaleControl) {
+        mapboxScaleControl.options = this.props;
+
+        mapboxScaleControl._onMove();
+      }
+    }
+  }, {
+    key: "_render",
+    value: function _render() {
+      this._control = this._control || react__WEBPACK_IMPORTED_MODULE_7__.createElement("div", {
+        ref: this._containerRef,
+        className: "mapboxgl-ctrl mapboxgl-ctrl-scale"
+      });
+
+      this._update();
+
+      return this._control;
+    }
+  }]);
+
+  return ScaleControl;
+}(_base_control__WEBPACK_IMPORTED_MODULE_9__.default);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)(ScaleControl, "propTypes", propTypes);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)(ScaleControl, "defaultProps", defaultProps);
+
+
+//# sourceMappingURL=scale-control.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/components/source.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/components/source.js ***!
+  \*****************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ Source; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _map_context__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./map-context */ "./node_modules/react-map-gl/dist/esm/components/map-context.js");
+/* harmony import */ var _utils_assert__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../utils/assert */ "./node_modules/react-map-gl/dist/esm/utils/assert.js");
+/* harmony import */ var _utils_deep_equal__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../utils/deep-equal */ "./node_modules/react-map-gl/dist/esm/utils/deep-equal.js");
+
+
+
+
+
+
+
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0,_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__.default)(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
+
+
+
+
+
+var propTypes = {
+  type: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().string.isRequired),
+  id: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().string)
+};
+var sourceCounter = 0;
+
+var Source = function (_PureComponent) {
+  (0,_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_3__.default)(Source, _PureComponent);
+
+  var _super = _createSuper(Source);
+
+  function Source(_props) {
+    var _this;
+
+    (0,_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__.default)(this, Source);
+
+    _this = _super.call(this, _props);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "id", void 0);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "type", void 0);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_map", null);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_sourceOptions", {});
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_updateSource", function () {
+      var _assertThisInitialize = (0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this),
+          type = _assertThisInitialize.type,
+          map = _assertThisInitialize._map;
+
+      if (!map) {
+        return;
+      }
+
+      var _assertThisInitialize2 = (0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this),
+          sourceOptions = _assertThisInitialize2._sourceOptions,
+          props = _assertThisInitialize2.props;
+
+      (0,_utils_assert__WEBPACK_IMPORTED_MODULE_10__.default)(!props.id || props.id === _this.id, 'source id changed');
+      (0,_utils_assert__WEBPACK_IMPORTED_MODULE_10__.default)(props.type === type, 'source type changed');
+      var changedKey = '';
+      var changedKeyCount = 0;
+
+      for (var key in props) {
+        if (key !== 'children' && key !== 'id' && !(0,_utils_deep_equal__WEBPACK_IMPORTED_MODULE_11__.default)(sourceOptions[key], props[key])) {
+          sourceOptions[key] = props[key];
+          changedKey = key;
+          changedKeyCount++;
+        }
+      }
+
+      var source = _this.getSource();
+
+      if (!source) {
+        _this._createSource(sourceOptions);
+
+        return;
+      }
+
+      if (!changedKeyCount) {
+        return;
+      }
+
+      if (type === 'geojson') {
+        source.setData(sourceOptions.data);
+      } else if (type === 'image') {
+        source.updateImage({
+          url: sourceOptions.url,
+          coordinates: sourceOptions.coordinates
+        });
+      } else if ((type === 'canvas' || type === 'video') && changedKeyCount === 1 && changedKey === 'coordinates') {
+        source.setCoordinates(sourceOptions.coordinates);
+      } else if (type === 'vector' && source.setUrl) {
+        switch (changedKey) {
+          case 'url':
+            source.setUrl(sourceOptions.url);
+            break;
+
+          case 'tiles':
+            source.setTiles(sourceOptions.tiles);
+            break;
+
+          default:
+        }
+      } else {
+        console.warn("Unable to update <Source> prop: ".concat(changedKey));
+      }
+    });
+
+    _this.id = _props.id || "jsx-source-".concat(sourceCounter++);
+    _this.type = _props.type;
+    return _this;
+  }
+
+  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__.default)(Source, [{
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      var _this2 = this;
+
+      var map = this._map;
+
+      if (map) {
+        map.off('styledata', this._updateSource);
+        requestAnimationFrame(function () {
+          if (map.style && map.style._loaded) {
+            map.removeSource(_this2.id);
+          }
+        });
+      }
+    }
+  }, {
+    key: "getSource",
+    value: function getSource() {
+      var map = this._map;
+      return map && map.style && map.getSource(this.id);
+    }
+  }, {
+    key: "_createSource",
+    value: function _createSource(sourceOptions) {
+      var map = this._map;
+
+      if (map.style && map.style._loaded) {
+        map.addSource(this.id, sourceOptions);
+      }
+    }
+  }, {
+    key: "_render",
+    value: function _render(context) {
+      var _this3 = this;
+
+      if (!this._map && context.map) {
+        this._map = context.map;
+
+        this._map.on('styledata', this._updateSource);
+      }
+
+      this._updateSource();
+
+      return react__WEBPACK_IMPORTED_MODULE_7__.Children.map(this.props.children, function (child) {
+        return child && (0,react__WEBPACK_IMPORTED_MODULE_7__.cloneElement)(child, {
+          source: _this3.id
+        });
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_7__.createElement(_map_context__WEBPACK_IMPORTED_MODULE_9__.default.Consumer, null, this._render.bind(this));
+    }
+  }]);
+
+  return Source;
+}(react__WEBPACK_IMPORTED_MODULE_7__.PureComponent);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)(Source, "propTypes", propTypes);
+
+
+//# sourceMappingURL=source.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/components/static-map.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/components/static-map.js ***!
+  \*********************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ StaticMap; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _utils_style_utils__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../utils/style-utils */ "./node_modules/react-map-gl/dist/esm/utils/style-utils.js");
+/* harmony import */ var viewport_mercator_project__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! viewport-mercator-project */ "./node_modules/viewport-mercator-project/module.js");
+/* harmony import */ var react_virtualized_auto_sizer__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-virtualized-auto-sizer */ "./node_modules/react-virtualized-auto-sizer/dist/index.esm.js");
+/* harmony import */ var _mapbox_mapbox__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../mapbox/mapbox */ "./node_modules/react-map-gl/dist/esm/mapbox/mapbox.js");
+/* harmony import */ var _utils_mapboxgl__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../utils/mapboxgl */ "./node_modules/react-map-gl/dist/esm/utils/mapboxgl.browser.js");
+/* harmony import */ var _utils_map_constraints__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../utils/map-constraints */ "./node_modules/react-map-gl/dist/esm/utils/map-constraints.js");
+/* harmony import */ var _utils_map_state__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../utils/map-state */ "./node_modules/react-map-gl/dist/esm/utils/map-state.js");
+/* harmony import */ var _map_context__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./map-context */ "./node_modules/react-map-gl/dist/esm/components/map-context.js");
+
+
+
+
+
+
+
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0,_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__.default)(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
+
+
+
+
+
+
+
+
+
+
+var TOKEN_DOC_URL = 'https://visgl.github.io/react-map-gl/docs/get-started/mapbox-tokens';
+var NO_TOKEN_WARNING = 'A valid API access token is required to use Mapbox data';
+
+function noop() {}
+
+var UNAUTHORIZED_ERROR_CODE = 401;
+var CONTAINER_STYLE = {
+  position: 'absolute',
+  width: '100%',
+  height: '100%',
+  overflow: 'hidden'
+};
+var propTypes = Object.assign({}, _mapbox_mapbox__WEBPACK_IMPORTED_MODULE_12__.default.propTypes, {
+  width: prop_types__WEBPACK_IMPORTED_MODULE_8___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_8___default().number), (prop_types__WEBPACK_IMPORTED_MODULE_8___default().string)]),
+  height: prop_types__WEBPACK_IMPORTED_MODULE_8___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_8___default().number), (prop_types__WEBPACK_IMPORTED_MODULE_8___default().string)]),
+  onResize: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().func),
+  preventStyleDiffing: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().bool),
+  disableTokenWarning: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().bool),
+  visible: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().bool),
+  className: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().string),
+  style: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().object),
+  visibilityConstraints: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().object)
+});
+var defaultProps = Object.assign({}, _mapbox_mapbox__WEBPACK_IMPORTED_MODULE_12__.default.defaultProps, {
+  preventStyleDiffing: false,
+  disableTokenWarning: false,
+  visible: true,
+  onResize: noop,
+  className: '',
+  style: null,
+  visibilityConstraints: _utils_map_state__WEBPACK_IMPORTED_MODULE_15__.MAPBOX_LIMITS
+});
+
+function preventScroll(event) {
+  event.target.scrollTo(0, 0);
+}
+
+var StaticMap = function (_PureComponent) {
+  (0,_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_3__.default)(StaticMap, _PureComponent);
+
+  var _super = _createSuper(StaticMap);
+
+  function StaticMap() {
+    var _this;
+
+    (0,_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__.default)(this, StaticMap);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _super.call.apply(_super, [this].concat(args));
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "state", {
+      accessTokenInvalid: false
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_mapbox", null);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_map", null);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_mapboxMapRef", (0,react__WEBPACK_IMPORTED_MODULE_7__.createRef)());
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_mapContainerRef", (0,react__WEBPACK_IMPORTED_MODULE_7__.createRef)());
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_queryParams", {});
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_width", 0);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_height", 0);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "getMap", function () {
+      return _this._map;
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "queryRenderedFeatures", function (geometry) {
+      var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      return _this._map.queryRenderedFeatures(geometry, options);
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_mapboxMapError", function (evt) {
+      var statusCode = evt.error && evt.error.status || evt.status;
+
+      if (statusCode === UNAUTHORIZED_ERROR_CODE && !_this.state.accessTokenInvalid) {
+        console.error(NO_TOKEN_WARNING);
+
+        _this.setState({
+          accessTokenInvalid: true
+        });
+      }
+
+      _this.props.onError(evt);
+    });
+
+    return _this;
+  }
+
+  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__.default)(StaticMap, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      if (!StaticMap.supported()) {
+        return;
+      }
+
+      var mapStyle = this.props.mapStyle;
+      this._mapbox = new _mapbox_mapbox__WEBPACK_IMPORTED_MODULE_12__.default(Object.assign({}, this.props, {
+        mapboxgl: _utils_mapboxgl__WEBPACK_IMPORTED_MODULE_13__.default,
+        width: this._width,
+        height: this._height,
+        container: this._mapboxMapRef.current,
+        onError: this._mapboxMapError,
+        mapStyle: (0,_utils_style_utils__WEBPACK_IMPORTED_MODULE_9__.normalizeStyle)(mapStyle)
+      }));
+      this._map = this._mapbox.getMap();
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps) {
+      if (this._mapbox) {
+        this._updateMapStyle(prevProps, this.props);
+
+        this._updateMapProps(this.props);
+      }
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      if (this._mapbox) {
+        this._mapbox.finalize();
+
+        this._mapbox = null;
+        this._map = null;
+      }
+    }
+  }, {
+    key: "_updateMapSize",
+    value: function _updateMapSize(width, height) {
+      if (this._width !== width || this._height !== height) {
+        this._width = width;
+        this._height = height;
+
+        this._updateMapProps(this.props);
+      }
+    }
+  }, {
+    key: "_updateMapStyle",
+    value: function _updateMapStyle(oldProps, newProps) {
+      var mapStyle = newProps.mapStyle;
+      var oldMapStyle = oldProps.mapStyle;
+
+      if (mapStyle !== oldMapStyle && mapStyle) {
+        this._map.setStyle((0,_utils_style_utils__WEBPACK_IMPORTED_MODULE_9__.normalizeStyle)(mapStyle), {
+          diff: !this.props.preventStyleDiffing
+        });
+      }
+    }
+  }, {
+    key: "_updateMapProps",
+    value: function _updateMapProps(props) {
+      if (!this._mapbox) {
+        return;
+      }
+
+      this._mapbox.setProps(Object.assign({}, props, {
+        width: this._width,
+        height: this._height
+      }));
+    }
+  }, {
+    key: "_renderNoTokenWarning",
+    value: function _renderNoTokenWarning() {
+      if (this.state.accessTokenInvalid && !this.props.disableTokenWarning) {
+        var style = {
+          position: 'absolute',
+          left: 0,
+          top: 0
+        };
+        return react__WEBPACK_IMPORTED_MODULE_7__.createElement("div", {
+          key: "warning",
+          id: "no-token-warning",
+          style: style
+        }, react__WEBPACK_IMPORTED_MODULE_7__.createElement("h3", {
+          key: "header"
+        }, NO_TOKEN_WARNING), react__WEBPACK_IMPORTED_MODULE_7__.createElement("div", {
+          key: "text"
+        }, "For information on setting up your basemap, read"), react__WEBPACK_IMPORTED_MODULE_7__.createElement("a", {
+          key: "link",
+          href: TOKEN_DOC_URL
+        }, "Note on Map Tokens"));
+      }
+
+      return null;
+    }
+  }, {
+    key: "_renderOverlays",
+    value: function _renderOverlays(dimensions) {
+      var _this2 = this;
+
+      var width = dimensions.width,
+          height = dimensions.height;
+
+      this._updateMapSize(width, height);
+
+      return react__WEBPACK_IMPORTED_MODULE_7__.createElement(_map_context__WEBPACK_IMPORTED_MODULE_16__.default.Consumer, null, function (interactiveContext) {
+        var context = _objectSpread(_objectSpread({}, interactiveContext), {}, {
+          viewport: new viewport_mercator_project__WEBPACK_IMPORTED_MODULE_10__.default(_objectSpread(_objectSpread(_objectSpread({}, _this2.props), _this2.props.viewState), {}, {
+            width: width,
+            height: height
+          })),
+          map: _this2._map,
+          mapContainer: interactiveContext.mapContainer || _this2._mapContainerRef.current
+        });
+
+        return react__WEBPACK_IMPORTED_MODULE_7__.createElement(_map_context__WEBPACK_IMPORTED_MODULE_16__.default.Provider, {
+          value: context
+        }, react__WEBPACK_IMPORTED_MODULE_7__.createElement("div", {
+          key: "map-overlays",
+          className: "overlays",
+          style: CONTAINER_STYLE,
+          onScroll: preventScroll
+        }, _this2.props.children));
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          className = _this$props.className,
+          width = _this$props.width,
+          height = _this$props.height,
+          style = _this$props.style,
+          visibilityConstraints = _this$props.visibilityConstraints;
+      var mapContainerStyle = Object.assign({
+        position: 'relative'
+      }, style, {
+        width: width,
+        height: height
+      });
+      var visible = this.props.visible && (0,_utils_map_constraints__WEBPACK_IMPORTED_MODULE_14__.checkVisibilityConstraints)(this.props.viewState || this.props, visibilityConstraints);
+      var mapStyle = Object.assign({}, CONTAINER_STYLE, {
+        visibility: visible ? 'inherit' : 'hidden'
+      });
+      return react__WEBPACK_IMPORTED_MODULE_7__.createElement("div", {
+        key: "map-container",
+        style: mapContainerStyle,
+        ref: this._mapContainerRef
+      }, react__WEBPACK_IMPORTED_MODULE_7__.createElement("div", {
+        key: "map-mapbox",
+        ref: this._mapboxMapRef,
+        style: mapStyle,
+        className: className
+      }), react__WEBPACK_IMPORTED_MODULE_7__.createElement(react_virtualized_auto_sizer__WEBPACK_IMPORTED_MODULE_11__.default, {
+        key: "autosizer",
+        onResize: this.props.onResize
+      }, this._renderOverlays.bind(this)), this._renderNoTokenWarning());
+    }
+  }], [{
+    key: "supported",
+    value: function supported() {
+      return _utils_mapboxgl__WEBPACK_IMPORTED_MODULE_13__.default && _utils_mapboxgl__WEBPACK_IMPORTED_MODULE_13__.default.supported();
+    }
+  }]);
+
+  return StaticMap;
+}(react__WEBPACK_IMPORTED_MODULE_7__.PureComponent);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)(StaticMap, "propTypes", propTypes);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)(StaticMap, "defaultProps", defaultProps);
+
+
+//# sourceMappingURL=static-map.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/index.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/index.js ***!
+  \*****************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* reexport safe */ _components_interactive_map__WEBPACK_IMPORTED_MODULE_0__.default; },
+/* harmony export */   "InteractiveMap": function() { return /* reexport safe */ _components_interactive_map__WEBPACK_IMPORTED_MODULE_0__.default; },
+/* harmony export */   "StaticMap": function() { return /* reexport safe */ _components_static_map__WEBPACK_IMPORTED_MODULE_1__.default; },
+/* harmony export */   "Source": function() { return /* reexport safe */ _components_source__WEBPACK_IMPORTED_MODULE_2__.default; },
+/* harmony export */   "Layer": function() { return /* reexport safe */ _components_layer__WEBPACK_IMPORTED_MODULE_3__.default; },
+/* harmony export */   "BaseControl": function() { return /* reexport safe */ _components_base_control__WEBPACK_IMPORTED_MODULE_4__.default; },
+/* harmony export */   "Marker": function() { return /* reexport safe */ _components_marker__WEBPACK_IMPORTED_MODULE_5__.default; },
+/* harmony export */   "Popup": function() { return /* reexport safe */ _components_popup__WEBPACK_IMPORTED_MODULE_6__.default; },
+/* harmony export */   "FullscreenControl": function() { return /* reexport safe */ _components_fullscreen_control__WEBPACK_IMPORTED_MODULE_7__.default; },
+/* harmony export */   "GeolocateControl": function() { return /* reexport safe */ _components_geolocate_control__WEBPACK_IMPORTED_MODULE_8__.default; },
+/* harmony export */   "NavigationControl": function() { return /* reexport safe */ _components_navigation_control__WEBPACK_IMPORTED_MODULE_9__.default; },
+/* harmony export */   "ScaleControl": function() { return /* reexport safe */ _components_scale_control__WEBPACK_IMPORTED_MODULE_10__.default; },
+/* harmony export */   "CanvasOverlay": function() { return /* reexport safe */ _overlays_canvas_overlay__WEBPACK_IMPORTED_MODULE_11__.default; },
+/* harmony export */   "HTMLOverlay": function() { return /* reexport safe */ _overlays_html_overlay__WEBPACK_IMPORTED_MODULE_12__.default; },
+/* harmony export */   "SVGOverlay": function() { return /* reexport safe */ _overlays_svg_overlay__WEBPACK_IMPORTED_MODULE_13__.default; },
+/* harmony export */   "TRANSITION_EVENTS": function() { return /* reexport safe */ _utils_transition_manager__WEBPACK_IMPORTED_MODULE_14__.TRANSITION_EVENTS; },
+/* harmony export */   "TransitionInterpolator": function() { return /* reexport safe */ _utils_transition__WEBPACK_IMPORTED_MODULE_15__.TransitionInterpolator; },
+/* harmony export */   "LinearInterpolator": function() { return /* reexport safe */ _utils_transition__WEBPACK_IMPORTED_MODULE_15__.LinearInterpolator; },
+/* harmony export */   "FlyToInterpolator": function() { return /* reexport safe */ _utils_transition__WEBPACK_IMPORTED_MODULE_15__.ViewportFlyToInterpolator; },
+/* harmony export */   "MapController": function() { return /* reexport safe */ _utils_map_controller__WEBPACK_IMPORTED_MODULE_16__.default; },
+/* harmony export */   "WebMercatorViewport": function() { return /* reexport safe */ viewport_mercator_project__WEBPACK_IMPORTED_MODULE_17__.WebMercatorViewport; },
+/* harmony export */   "setRTLTextPlugin": function() { return /* reexport safe */ _utils_set_rtl_text_plugin__WEBPACK_IMPORTED_MODULE_18__.default; },
+/* harmony export */   "_MapContext": function() { return /* reexport safe */ _components_map_context__WEBPACK_IMPORTED_MODULE_19__.default; }
+/* harmony export */ });
+/* harmony import */ var _components_interactive_map__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/interactive-map */ "./node_modules/react-map-gl/dist/esm/components/interactive-map.js");
+/* harmony import */ var _components_static_map__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/static-map */ "./node_modules/react-map-gl/dist/esm/components/static-map.js");
+/* harmony import */ var _components_source__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/source */ "./node_modules/react-map-gl/dist/esm/components/source.js");
+/* harmony import */ var _components_layer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/layer */ "./node_modules/react-map-gl/dist/esm/components/layer.js");
+/* harmony import */ var _components_base_control__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/base-control */ "./node_modules/react-map-gl/dist/esm/components/base-control.js");
+/* harmony import */ var _components_marker__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/marker */ "./node_modules/react-map-gl/dist/esm/components/marker.js");
+/* harmony import */ var _components_popup__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/popup */ "./node_modules/react-map-gl/dist/esm/components/popup.js");
+/* harmony import */ var _components_fullscreen_control__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/fullscreen-control */ "./node_modules/react-map-gl/dist/esm/components/fullscreen-control.js");
+/* harmony import */ var _components_geolocate_control__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/geolocate-control */ "./node_modules/react-map-gl/dist/esm/components/geolocate-control.js");
+/* harmony import */ var _components_navigation_control__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/navigation-control */ "./node_modules/react-map-gl/dist/esm/components/navigation-control.js");
+/* harmony import */ var _components_scale_control__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/scale-control */ "./node_modules/react-map-gl/dist/esm/components/scale-control.js");
+/* harmony import */ var _overlays_canvas_overlay__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./overlays/canvas-overlay */ "./node_modules/react-map-gl/dist/esm/overlays/canvas-overlay.js");
+/* harmony import */ var _overlays_html_overlay__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./overlays/html-overlay */ "./node_modules/react-map-gl/dist/esm/overlays/html-overlay.js");
+/* harmony import */ var _overlays_svg_overlay__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./overlays/svg-overlay */ "./node_modules/react-map-gl/dist/esm/overlays/svg-overlay.js");
+/* harmony import */ var _utils_transition_manager__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./utils/transition-manager */ "./node_modules/react-map-gl/dist/esm/utils/transition-manager.js");
+/* harmony import */ var _utils_transition__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./utils/transition */ "./node_modules/react-map-gl/dist/esm/utils/transition/index.js");
+/* harmony import */ var _utils_map_controller__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./utils/map-controller */ "./node_modules/react-map-gl/dist/esm/utils/map-controller.js");
+/* harmony import */ var viewport_mercator_project__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! viewport-mercator-project */ "./node_modules/viewport-mercator-project/module.js");
+/* harmony import */ var _utils_set_rtl_text_plugin__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./utils/set-rtl-text-plugin */ "./node_modules/react-map-gl/dist/esm/utils/set-rtl-text-plugin.js");
+/* harmony import */ var _components_map_context__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/map-context */ "./node_modules/react-map-gl/dist/esm/components/map-context.js");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/mapbox/mapbox.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/mapbox/mapbox.js ***!
+  \*************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getAccessToken": function() { return /* binding */ getAccessToken; },
+/* harmony export */   "default": function() { return /* binding */ Mapbox; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _utils_globals__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/globals */ "./node_modules/react-map-gl/dist/esm/utils/globals.js");
+
+
+
+
+
+
+function noop() {}
+
+function defaultOnError(event) {
+  if (event) {
+    console.error(event.error);
+  }
+}
+
+var propTypes = {
+  container: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object),
+  gl: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object),
+  mapboxApiAccessToken: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
+  mapboxApiUrl: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
+  attributionControl: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
+  preserveDrawingBuffer: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
+  reuseMaps: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
+  transformRequest: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().func),
+  mapOptions: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object),
+  mapStyle: prop_types__WEBPACK_IMPORTED_MODULE_3___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_3___default().string), (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object)]),
+  visible: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
+  asyncRender: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
+  onLoad: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().func),
+  onError: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().func),
+  width: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().number),
+  height: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().number),
+  viewState: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object),
+  longitude: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().number),
+  latitude: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().number),
+  zoom: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().number),
+  bearing: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().number),
+  pitch: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().number),
+  altitude: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().number)
+};
+var defaultProps = {
+  container: _utils_globals__WEBPACK_IMPORTED_MODULE_4__.document.body,
+  mapboxApiAccessToken: getAccessToken(),
+  mapboxApiUrl: 'https://api.mapbox.com',
+  preserveDrawingBuffer: false,
+  attributionControl: true,
+  reuseMaps: false,
+  mapOptions: {},
+  mapStyle: 'mapbox://styles/mapbox/light-v8',
+  visible: true,
+  asyncRender: false,
+  onLoad: noop,
+  onError: defaultOnError,
+  width: 0,
+  height: 0,
+  longitude: 0,
+  latitude: 0,
+  zoom: 0,
+  bearing: 0,
+  pitch: 0,
+  altitude: 1.5
+};
+function getAccessToken() {
+  var accessToken = null;
+
+  if (typeof window !== 'undefined' && window.location) {
+    var match = window.location.search.match(/access_token=([^&\/]*)/);
+    accessToken = match && match[1];
+  }
+
+  if (!accessToken && typeof process !== 'undefined') {
+    accessToken = accessToken || process.env.MapboxAccessToken || process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
+  }
+
+  return accessToken || 'no-token';
+}
+
+function checkPropTypes(props) {
+  var component = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'component';
+
+  if (props.debug) {
+    prop_types__WEBPACK_IMPORTED_MODULE_3___default().checkPropTypes(propTypes, props, 'prop', component);
+  }
+}
+
+var Mapbox = function () {
+  function Mapbox(props) {
+    var _this = this;
+
+    (0,_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__.default)(this, Mapbox);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__.default)(this, "mapboxgl", void 0);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__.default)(this, "props", defaultProps);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__.default)(this, "_map", null);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__.default)(this, "width", 0);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__.default)(this, "height", 0);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__.default)(this, "_fireLoadEvent", function () {
+      _this.props.onLoad({
+        type: 'load',
+        target: _this._map
+      });
+    });
+
+    if (!props.mapboxgl) {
+      throw new Error('Mapbox not available');
+    }
+
+    this.mapboxgl = props.mapboxgl;
+
+    if (!Mapbox.initialized) {
+      Mapbox.initialized = true;
+
+      this._checkStyleSheet(this.mapboxgl.version);
+    }
+
+    this._initialize(props);
+  }
+
+  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__.default)(Mapbox, [{
+    key: "finalize",
+    value: function finalize() {
+      this._destroy();
+
+      return this;
+    }
+  }, {
+    key: "setProps",
+    value: function setProps(props) {
+      this._update(this.props, props);
+
+      return this;
+    }
+  }, {
+    key: "resize",
+    value: function resize() {
+      this._map.resize();
+
+      return this;
+    }
+  }, {
+    key: "redraw",
+    value: function redraw() {
+      var map = this._map;
+
+      if (map.style) {
+        if (map._frame) {
+          map._frame.cancel();
+
+          map._frame = null;
+        }
+
+        map._render();
+      }
+    }
+  }, {
+    key: "getMap",
+    value: function getMap() {
+      return this._map;
+    }
+  }, {
+    key: "_reuse",
+    value: function _reuse(props) {
+      this._map = Mapbox.savedMap;
+
+      var oldContainer = this._map.getContainer();
+
+      var newContainer = props.container;
+      newContainer.classList.add('mapboxgl-map');
+
+      while (oldContainer.childNodes.length > 0) {
+        newContainer.appendChild(oldContainer.childNodes[0]);
+      }
+
+      this._map._container = newContainer;
+      Mapbox.savedMap = null;
+
+      if (props.mapStyle) {
+        this._map.setStyle(props.mapStyle, {
+          diff: false
+        });
+      }
+
+      if (this._map.isStyleLoaded()) {
+        this._fireLoadEvent();
+      } else {
+        this._map.once('styledata', this._fireLoadEvent);
+      }
+    }
+  }, {
+    key: "_create",
+    value: function _create(props) {
+      if (props.reuseMaps && Mapbox.savedMap) {
+        this._reuse(props);
+      } else {
+        if (props.gl) {
+          var getContext = HTMLCanvasElement.prototype.getContext;
+
+          HTMLCanvasElement.prototype.getContext = function () {
+            HTMLCanvasElement.prototype.getContext = getContext;
+            return props.gl;
+          };
+        }
+
+        var mapOptions = {
+          container: props.container,
+          center: [0, 0],
+          zoom: 8,
+          pitch: 0,
+          bearing: 0,
+          maxZoom: 24,
+          style: props.mapStyle,
+          interactive: false,
+          trackResize: false,
+          attributionControl: props.attributionControl,
+          preserveDrawingBuffer: props.preserveDrawingBuffer
+        };
+
+        if (props.transformRequest) {
+          mapOptions.transformRequest = props.transformRequest;
+        }
+
+        this._map = new this.mapboxgl.Map(Object.assign({}, mapOptions, props.mapOptions));
+
+        this._map.once('load', props.onLoad);
+
+        this._map.on('error', props.onError);
+      }
+
+      return this;
+    }
+  }, {
+    key: "_destroy",
+    value: function _destroy() {
+      if (!this._map) {
+        return;
+      }
+
+      if (!Mapbox.savedMap) {
+        Mapbox.savedMap = this._map;
+
+        this._map.off('load', this.props.onLoad);
+
+        this._map.off('error', this.props.onError);
+
+        this._map.off('styledata', this._fireLoadEvent);
+      } else {
+        this._map.remove();
+      }
+
+      this._map = null;
+    }
+  }, {
+    key: "_initialize",
+    value: function _initialize(props) {
+      var _this2 = this;
+
+      props = Object.assign({}, defaultProps, props);
+      checkPropTypes(props, 'Mapbox');
+      this.mapboxgl.accessToken = props.mapboxApiAccessToken || defaultProps.mapboxApiAccessToken;
+      this.mapboxgl.baseApiUrl = props.mapboxApiUrl;
+
+      this._create(props);
+
+      var _props = props,
+          container = _props.container;
+      Object.defineProperty(container, 'offsetWidth', {
+        get: function get() {
+          return _this2.width;
+        }
+      });
+      Object.defineProperty(container, 'clientWidth', {
+        get: function get() {
+          return _this2.width;
+        }
+      });
+      Object.defineProperty(container, 'offsetHeight', {
+        get: function get() {
+          return _this2.height;
+        }
+      });
+      Object.defineProperty(container, 'clientHeight', {
+        get: function get() {
+          return _this2.height;
+        }
+      });
+
+      var canvas = this._map.getCanvas();
+
+      if (canvas) {
+        canvas.style.outline = 'none';
+      }
+
+      this._updateMapViewport({}, props);
+
+      this._updateMapSize({}, props);
+
+      this.props = props;
+    }
+  }, {
+    key: "_update",
+    value: function _update(oldProps, newProps) {
+      if (!this._map) {
+        return;
+      }
+
+      newProps = Object.assign({}, this.props, newProps);
+      checkPropTypes(newProps, 'Mapbox');
+
+      var viewportChanged = this._updateMapViewport(oldProps, newProps);
+
+      var sizeChanged = this._updateMapSize(oldProps, newProps);
+
+      if (!newProps.asyncRender && (viewportChanged || sizeChanged)) {
+        this.redraw();
+      }
+
+      this.props = newProps;
+    }
+  }, {
+    key: "_updateMapSize",
+    value: function _updateMapSize(oldProps, newProps) {
+      var sizeChanged = oldProps.width !== newProps.width || oldProps.height !== newProps.height;
+
+      if (sizeChanged) {
+        this.width = newProps.width;
+        this.height = newProps.height;
+        this.resize();
+      }
+
+      return sizeChanged;
+    }
+  }, {
+    key: "_updateMapViewport",
+    value: function _updateMapViewport(oldProps, newProps) {
+      var oldViewState = this._getViewState(oldProps);
+
+      var newViewState = this._getViewState(newProps);
+
+      var viewportChanged = newViewState.latitude !== oldViewState.latitude || newViewState.longitude !== oldViewState.longitude || newViewState.zoom !== oldViewState.zoom || newViewState.pitch !== oldViewState.pitch || newViewState.bearing !== oldViewState.bearing || newViewState.altitude !== oldViewState.altitude;
+
+      if (viewportChanged) {
+        this._map.jumpTo(this._viewStateToMapboxProps(newViewState));
+
+        if (newViewState.altitude !== oldViewState.altitude) {
+          this._map.transform.altitude = newViewState.altitude;
+        }
+      }
+
+      return viewportChanged;
+    }
+  }, {
+    key: "_getViewState",
+    value: function _getViewState(props) {
+      var _ref = props.viewState || props,
+          longitude = _ref.longitude,
+          latitude = _ref.latitude,
+          zoom = _ref.zoom,
+          _ref$pitch = _ref.pitch,
+          pitch = _ref$pitch === void 0 ? 0 : _ref$pitch,
+          _ref$bearing = _ref.bearing,
+          bearing = _ref$bearing === void 0 ? 0 : _ref$bearing,
+          _ref$altitude = _ref.altitude,
+          altitude = _ref$altitude === void 0 ? 1.5 : _ref$altitude;
+
+      return {
+        longitude: longitude,
+        latitude: latitude,
+        zoom: zoom,
+        pitch: pitch,
+        bearing: bearing,
+        altitude: altitude
+      };
+    }
+  }, {
+    key: "_checkStyleSheet",
+    value: function _checkStyleSheet() {
+      var mapboxVersion = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '0.47.0';
+
+      if (typeof _utils_globals__WEBPACK_IMPORTED_MODULE_4__.document === 'undefined') {
+        return;
+      }
+
+      try {
+        var testElement = _utils_globals__WEBPACK_IMPORTED_MODULE_4__.document.createElement('div');
+        testElement.className = 'mapboxgl-map';
+        testElement.style.display = 'none';
+        _utils_globals__WEBPACK_IMPORTED_MODULE_4__.document.body.appendChild(testElement);
+        var isCssLoaded = window.getComputedStyle(testElement).position !== 'static';
+
+        if (!isCssLoaded) {
+          var link = _utils_globals__WEBPACK_IMPORTED_MODULE_4__.document.createElement('link');
+          link.setAttribute('rel', 'stylesheet');
+          link.setAttribute('type', 'text/css');
+          link.setAttribute('href', "https://api.tiles.mapbox.com/mapbox-gl-js/v".concat(mapboxVersion, "/mapbox-gl.css"));
+          _utils_globals__WEBPACK_IMPORTED_MODULE_4__.document.head.appendChild(link);
+        }
+      } catch (error) {}
+    }
+  }, {
+    key: "_viewStateToMapboxProps",
+    value: function _viewStateToMapboxProps(viewState) {
+      return {
+        center: [viewState.longitude, viewState.latitude],
+        zoom: viewState.zoom,
+        bearing: viewState.bearing,
+        pitch: viewState.pitch
+      };
+    }
+  }]);
+
+  return Mapbox;
+}();
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__.default)(Mapbox, "initialized", false);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__.default)(Mapbox, "propTypes", propTypes);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__.default)(Mapbox, "defaultProps", defaultProps);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__.default)(Mapbox, "savedMap", null);
+
+
+//# sourceMappingURL=mapbox.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/overlays/canvas-overlay.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/overlays/canvas-overlay.js ***!
+  \***********************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ CanvasOverlay; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _components_base_control__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/base-control */ "./node_modules/react-map-gl/dist/esm/components/base-control.js");
+/* harmony import */ var _utils_globals__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../utils/globals */ "./node_modules/react-map-gl/dist/esm/utils/globals.js");
+
+
+
+
+
+
+
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0,_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__.default)(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
+
+
+
+var propTypes = Object.assign({}, _components_base_control__WEBPACK_IMPORTED_MODULE_9__.default.propTypes, {
+  redraw: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().func.isRequired)
+});
+var defaultProps = {
+  captureScroll: false,
+  captureDrag: false,
+  captureClick: false,
+  captureDoubleClick: false,
+  capturePointerMove: false
+};
+
+var CanvasOverlay = function (_BaseControl) {
+  (0,_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_3__.default)(CanvasOverlay, _BaseControl);
+
+  var _super = _createSuper(CanvasOverlay);
+
+  function CanvasOverlay() {
+    var _this;
+
+    (0,_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__.default)(this, CanvasOverlay);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _super.call.apply(_super, [this].concat(args));
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_canvas", void 0);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_ctx", void 0);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "_redraw", function () {
+      var ctx = _this._ctx;
+
+      if (!ctx) {
+        return;
+      }
+
+      var pixelRatio = _utils_globals__WEBPACK_IMPORTED_MODULE_10__.window.devicePixelRatio || 1;
+      ctx.save();
+      ctx.scale(pixelRatio, pixelRatio);
+      var _this$_context = _this._context,
+          viewport = _this$_context.viewport,
+          isDragging = _this$_context.isDragging;
+
+      _this.props.redraw({
+        width: viewport.width,
+        height: viewport.height,
+        ctx: ctx,
+        isDragging: isDragging,
+        project: viewport.project.bind(viewport),
+        unproject: viewport.unproject.bind(viewport)
+      });
+
+      ctx.restore();
+    });
+
+    return _this;
+  }
+
+  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__.default)(CanvasOverlay, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var canvas = this._containerRef.current;
+
+      if (canvas) {
+        this._canvas = canvas;
+        this._ctx = canvas.getContext('2d');
+      }
+
+      this._redraw();
+    }
+  }, {
+    key: "_render",
+    value: function _render() {
+      var pixelRatio = _utils_globals__WEBPACK_IMPORTED_MODULE_10__.window.devicePixelRatio || 1;
+      var _this$_context$viewpo = this._context.viewport,
+          width = _this$_context$viewpo.width,
+          height = _this$_context$viewpo.height;
+
+      this._redraw();
+
+      return react__WEBPACK_IMPORTED_MODULE_7__.createElement("canvas", {
+        ref: this._containerRef,
+        width: width * pixelRatio,
+        height: height * pixelRatio,
+        style: {
+          width: "".concat(width, "px"),
+          height: "".concat(height, "px"),
+          position: 'absolute',
+          left: 0,
+          top: 0
+        }
+      });
+    }
+  }]);
+
+  return CanvasOverlay;
+}(_components_base_control__WEBPACK_IMPORTED_MODULE_9__.default);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)(CanvasOverlay, "propTypes", propTypes);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)(CanvasOverlay, "defaultProps", defaultProps);
+
+
+//# sourceMappingURL=canvas-overlay.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/overlays/html-overlay.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/overlays/html-overlay.js ***!
+  \*********************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ HTMLOverlay; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _components_base_control__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/base-control */ "./node_modules/react-map-gl/dist/esm/components/base-control.js");
+
+
+
+
+
+
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0,_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__.default)(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
+
+
+var propTypes = Object.assign({}, _components_base_control__WEBPACK_IMPORTED_MODULE_8__.default.propTypes, {
+  redraw: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().func.isRequired),
+  style: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().object)
+});
+var defaultProps = {
+  captureScroll: false,
+  captureDrag: false,
+  captureClick: false,
+  captureDoubleClick: false,
+  capturePointerMove: false
+};
+
+var HTMLOverlay = function (_BaseControl) {
+  (0,_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__.default)(HTMLOverlay, _BaseControl);
+
+  var _super = _createSuper(HTMLOverlay);
+
+  function HTMLOverlay() {
+    (0,_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__.default)(this, HTMLOverlay);
+
+    return _super.apply(this, arguments);
+  }
+
+  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__.default)(HTMLOverlay, [{
+    key: "_render",
+    value: function _render() {
+      var _this$_context = this._context,
+          viewport = _this$_context.viewport,
+          isDragging = _this$_context.isDragging;
+      var style = Object.assign({
+        position: 'absolute',
+        left: 0,
+        top: 0,
+        width: viewport.width,
+        height: viewport.height
+      }, this.props.style);
+      return react__WEBPACK_IMPORTED_MODULE_6__.createElement("div", {
+        ref: this._containerRef,
+        style: style
+      }, this.props.redraw({
+        width: viewport.width,
+        height: viewport.height,
+        isDragging: isDragging,
+        project: viewport.project.bind(viewport),
+        unproject: viewport.unproject.bind(viewport)
+      }));
+    }
+  }]);
+
+  return HTMLOverlay;
+}(_components_base_control__WEBPACK_IMPORTED_MODULE_8__.default);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_5__.default)(HTMLOverlay, "propTypes", propTypes);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_5__.default)(HTMLOverlay, "defaultProps", defaultProps);
+
+
+//# sourceMappingURL=html-overlay.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/overlays/svg-overlay.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/overlays/svg-overlay.js ***!
+  \********************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ SVGOverlay; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _components_base_control__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/base-control */ "./node_modules/react-map-gl/dist/esm/components/base-control.js");
+
+
+
+
+
+
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0,_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__.default)(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
+
+
+var propTypes = Object.assign({}, _components_base_control__WEBPACK_IMPORTED_MODULE_8__.default.propTypes, {
+  redraw: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().func.isRequired),
+  style: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().object)
+});
+var defaultProps = {
+  captureScroll: false,
+  captureDrag: false,
+  captureClick: false,
+  captureDoubleClick: false,
+  capturePointerMove: false
+};
+
+var SVGOverlay = function (_BaseControl) {
+  (0,_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__.default)(SVGOverlay, _BaseControl);
+
+  var _super = _createSuper(SVGOverlay);
+
+  function SVGOverlay() {
+    (0,_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__.default)(this, SVGOverlay);
+
+    return _super.apply(this, arguments);
+  }
+
+  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__.default)(SVGOverlay, [{
+    key: "_render",
+    value: function _render() {
+      var _this$_context = this._context,
+          viewport = _this$_context.viewport,
+          isDragging = _this$_context.isDragging;
+      var style = Object.assign({
+        position: 'absolute',
+        left: 0,
+        top: 0
+      }, this.props.style);
+      return react__WEBPACK_IMPORTED_MODULE_6__.createElement("svg", {
+        width: viewport.width,
+        height: viewport.height,
+        ref: this._containerRef,
+        style: style
+      }, this.props.redraw({
+        width: viewport.width,
+        height: viewport.height,
+        isDragging: isDragging,
+        project: viewport.project.bind(viewport),
+        unproject: viewport.unproject.bind(viewport)
+      }));
+    }
+  }]);
+
+  return SVGOverlay;
+}(_components_base_control__WEBPACK_IMPORTED_MODULE_8__.default);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_5__.default)(SVGOverlay, "propTypes", propTypes);
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_5__.default)(SVGOverlay, "defaultProps", defaultProps);
+
+
+//# sourceMappingURL=svg-overlay.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/utils/assert.js":
+/*!************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/utils/assert.js ***!
+  \************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ assert; }
+/* harmony export */ });
+function assert(condition, message) {
+  if (!condition) {
+    throw new Error(message || 'react-map-gl: assertion failed.');
+  }
+}
+//# sourceMappingURL=assert.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/utils/crisp-pixel.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/utils/crisp-pixel.js ***!
+  \*****************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "crispPixel": function() { return /* binding */ crispPixel; },
+/* harmony export */   "crispPercentage": function() { return /* binding */ crispPercentage; }
+/* harmony export */ });
+var pixelRatio = typeof window !== 'undefined' && window.devicePixelRatio || 1;
+var crispPixel = function crispPixel(size) {
+  return Math.round(size * pixelRatio) / pixelRatio;
+};
+var crispPercentage = function crispPercentage(el, percentage) {
+  var dimension = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'x';
+
+  if (el === null) {
+    return percentage;
+  }
+
+  var origSize = dimension === 'x' ? el.offsetWidth : el.offsetHeight;
+  return crispPixel(percentage / 100 * origSize) / origSize * 100;
+};
+//# sourceMappingURL=crisp-pixel.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/utils/debounce.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/utils/debounce.js ***!
+  \**************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ debounce; }
+/* harmony export */ });
+function debounce(func, delay) {
+  var _this;
+
+  var _arguments;
+
+  var timeout;
+
+  var executeNow = function executeNow() {
+    timeout = null;
+    return func.apply(_this, _arguments);
+  };
+
+  return function () {
+    _this = this;
+    _arguments = arguments;
+
+    if (timeout) {
+      clearTimeout(timeout);
+    }
+
+    timeout = setTimeout(executeNow, delay);
+  };
+}
+//# sourceMappingURL=debounce.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/utils/deep-equal.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/utils/deep-equal.js ***!
+  \****************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ deepEqual; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/typeof */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
+
+function deepEqual(a, b) {
+  if (a === b) {
+    return true;
+  }
+
+  if (!a || !b) {
+    return false;
+  }
+
+  if (Array.isArray(a)) {
+    if (!Array.isArray(b) || a.length !== b.length) {
+      return false;
+    }
+
+    for (var i = 0; i < a.length; i++) {
+      if (!deepEqual(a[i], b[i])) {
+        return false;
+      }
+    }
+
+    return true;
+  } else if (Array.isArray(b)) {
+    return false;
+  }
+
+  if ((0,_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__.default)(a) === 'object' && (0,_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__.default)(b) === 'object') {
+    var aKeys = Object.keys(a);
+    var bKeys = Object.keys(b);
+
+    if (aKeys.length !== bKeys.length) {
+      return false;
+    }
+
+    for (var _i = 0, _aKeys = aKeys; _i < _aKeys.length; _i++) {
+      var key = _aKeys[_i];
+
+      if (!b.hasOwnProperty(key)) {
+        return false;
+      }
+
+      if (!deepEqual(a[key], b[key])) {
+        return false;
+      }
+    }
+
+    return true;
+  }
+
+  return false;
+}
+//# sourceMappingURL=deep-equal.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/utils/deprecate-warn.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/utils/deprecate-warn.js ***!
+  \********************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ checkDeprecatedProps; }
+/* harmony export */ });
+var DEPRECATED_PROPS = [{
+  old: 'onChangeViewport',
+  "new": 'onViewportChange'
+}, {
+  old: 'perspectiveEnabled',
+  "new": 'dragRotate'
+}, {
+  old: 'onHoverFeatures',
+  "new": 'onHover'
+}, {
+  old: 'onClickFeatures',
+  "new": 'onClick'
+}, {
+  old: 'touchZoomRotate',
+  "new": 'touchZoom, touchRotate'
+}, {
+  old: 'mapControls',
+  "new": 'controller'
+}];
+
+function getDeprecatedText(name) {
+  return "react-map-gl: `".concat(name, "` is removed.");
+}
+
+function getNewText(name) {
+  return "Use `".concat(name, "` instead.");
+}
+
+function checkDeprecatedProps() {
+  var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  DEPRECATED_PROPS.forEach(function (depProp) {
+    if (props.hasOwnProperty(depProp.old)) {
+      var warnMessage = getDeprecatedText(depProp.old);
+
+      if (depProp["new"]) {
+        warnMessage = "".concat(warnMessage, " ").concat(getNewText(depProp["new"]));
+      }
+
+      console.warn(warnMessage);
+    }
+  });
+}
+//# sourceMappingURL=deprecate-warn.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/utils/dynamic-position.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/utils/dynamic-position.js ***!
+  \**********************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ANCHOR_POSITION": function() { return /* binding */ ANCHOR_POSITION; },
+/* harmony export */   "getDynamicPosition": function() { return /* binding */ getDynamicPosition; }
+/* harmony export */ });
+var ANCHOR_POSITION = {
+  top: {
+    x: 0.5,
+    y: 0
+  },
+  'top-left': {
+    x: 0,
+    y: 0
+  },
+  'top-right': {
+    x: 1,
+    y: 0
+  },
+  bottom: {
+    x: 0.5,
+    y: 1
+  },
+  'bottom-left': {
+    x: 0,
+    y: 1
+  },
+  'bottom-right': {
+    x: 1,
+    y: 1
+  },
+  left: {
+    x: 0,
+    y: 0.5
+  },
+  right: {
+    x: 1,
+    y: 0.5
+  }
+};
+var ANCHOR_TYPES = Object.keys(ANCHOR_POSITION);
+function getDynamicPosition(_ref) {
+  var x = _ref.x,
+      y = _ref.y,
+      width = _ref.width,
+      height = _ref.height,
+      selfWidth = _ref.selfWidth,
+      selfHeight = _ref.selfHeight,
+      anchor = _ref.anchor,
+      _ref$padding = _ref.padding,
+      padding = _ref$padding === void 0 ? 0 : _ref$padding;
+  var _ANCHOR_POSITION$anch = ANCHOR_POSITION[anchor],
+      anchorX = _ANCHOR_POSITION$anch.x,
+      anchorY = _ANCHOR_POSITION$anch.y;
+  var top = y - anchorY * selfHeight;
+  var bottom = top + selfHeight;
+  var cutoffY = Math.max(0, padding - top) + Math.max(0, bottom - height + padding);
+
+  if (cutoffY > 0) {
+    var bestAnchorY = anchorY;
+    var minCutoff = cutoffY;
+
+    for (anchorY = 0; anchorY <= 1; anchorY += 0.5) {
+      top = y - anchorY * selfHeight;
+      bottom = top + selfHeight;
+      cutoffY = Math.max(0, padding - top) + Math.max(0, bottom - height + padding);
+
+      if (cutoffY < minCutoff) {
+        minCutoff = cutoffY;
+        bestAnchorY = anchorY;
+      }
+    }
+
+    anchorY = bestAnchorY;
+  }
+
+  var xStep = 0.5;
+
+  if (anchorY === 0.5) {
+    anchorX = Math.floor(anchorX);
+    xStep = 1;
+  }
+
+  var left = x - anchorX * selfWidth;
+  var right = left + selfWidth;
+  var cutoffX = Math.max(0, padding - left) + Math.max(0, right - width + padding);
+
+  if (cutoffX > 0) {
+    var bestAnchorX = anchorX;
+    var _minCutoff = cutoffX;
+
+    for (anchorX = 0; anchorX <= 1; anchorX += xStep) {
+      left = x - anchorX * selfWidth;
+      right = left + selfWidth;
+      cutoffX = Math.max(0, padding - left) + Math.max(0, right - width + padding);
+
+      if (cutoffX < _minCutoff) {
+        _minCutoff = cutoffX;
+        bestAnchorX = anchorX;
+      }
+    }
+
+    anchorX = bestAnchorX;
+  }
+
+  return ANCHOR_TYPES.find(function (positionType) {
+    var anchorPosition = ANCHOR_POSITION[positionType];
+    return anchorPosition.x === anchorX && anchorPosition.y === anchorY;
+  }) || anchor;
+}
+//# sourceMappingURL=dynamic-position.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/utils/geolocate-utils.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/utils/geolocate-utils.js ***!
+  \*********************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "isGeolocationSupported": function() { return /* binding */ isGeolocationSupported; }
+/* harmony export */ });
+var supported;
+function isGeolocationSupported() {
+  if (supported !== undefined) {
+    return Promise.resolve(supported);
+  }
+
+  if (window.navigator.permissions !== undefined) {
+    return window.navigator.permissions.query({
+      name: 'geolocation'
+    }).then(function (p) {
+      supported = p.state !== 'denied';
+      return supported;
+    });
+  }
+
+  supported = Boolean(window.navigator.geolocation);
+  return Promise.resolve(supported);
+}
+//# sourceMappingURL=geolocate-utils.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/utils/globals.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/utils/globals.js ***!
+  \*************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "window": function() { return /* binding */ window_; },
+/* harmony export */   "global": function() { return /* binding */ global_; },
+/* harmony export */   "document": function() { return /* binding */ document_; }
+/* harmony export */ });
+var window_ = typeof window !== 'undefined' ? window : __webpack_require__.g;
+var global_ = typeof __webpack_require__.g !== 'undefined' ? __webpack_require__.g : window;
+var document_ = typeof document !== 'undefined' ? document : {};
+
+//# sourceMappingURL=globals.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/utils/map-constraints.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/utils/map-constraints.js ***!
+  \*********************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "checkVisibilityConstraints": function() { return /* binding */ checkVisibilityConstraints; }
+/* harmony export */ });
+/* harmony import */ var _map_state__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./map-state */ "./node_modules/react-map-gl/dist/esm/utils/map-state.js");
+
+
+function decapitalize(s) {
+  return s[0].toLowerCase() + s.slice(1);
+}
+
+function checkVisibilityConstraints(props) {
+  var constraints = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : _map_state__WEBPACK_IMPORTED_MODULE_0__.MAPBOX_LIMITS;
+
+  for (var constraintName in constraints) {
+    var type = constraintName.slice(0, 3);
+    var propName = decapitalize(constraintName.slice(3));
+
+    if (type === 'min' && props[propName] < constraints[constraintName]) {
+      return false;
+    }
+
+    if (type === 'max' && props[propName] > constraints[constraintName]) {
+      return false;
+    }
+  }
+
+  return true;
+}
+//# sourceMappingURL=map-constraints.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/utils/map-controller.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/utils/map-controller.js ***!
+  \********************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "LINEAR_TRANSITION_PROPS": function() { return /* binding */ LINEAR_TRANSITION_PROPS; },
+/* harmony export */   "default": function() { return /* binding */ MapController; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var _map_state__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./map-state */ "./node_modules/react-map-gl/dist/esm/utils/map-state.js");
+/* harmony import */ var _transition__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./transition */ "./node_modules/react-map-gl/dist/esm/utils/transition/index.js");
+/* harmony import */ var _transition_manager__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./transition-manager */ "./node_modules/react-map-gl/dist/esm/utils/transition-manager.js");
+/* harmony import */ var _debounce__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./debounce */ "./node_modules/react-map-gl/dist/esm/utils/debounce.js");
+
+
+
+
+
+
+
+
+var NO_TRANSITION_PROPS = {
+  transitionDuration: 0
+};
+var LINEAR_TRANSITION_PROPS = {
+  transitionDuration: 300,
+  transitionEasing: function transitionEasing(t) {
+    return t;
+  },
+  transitionInterpolator: new _transition__WEBPACK_IMPORTED_MODULE_5__.LinearInterpolator(),
+  transitionInterruption: _transition_manager__WEBPACK_IMPORTED_MODULE_6__.TRANSITION_EVENTS.BREAK
+};
+var PITCH_MOUSE_THRESHOLD = 5;
+var PITCH_ACCEL = 1.2;
+var ZOOM_ACCEL = 0.01;
+var EVENT_TYPES = {
+  WHEEL: ['wheel'],
+  PAN: ['panstart', 'panmove', 'panend'],
+  PINCH: ['pinchstart', 'pinchmove', 'pinchend', 'pinchcancel'],
+  DOUBLE_TAP: ['doubletap'],
+  KEYBOARD: ['keydown']
+};
+
+var MapController = function () {
+  function MapController() {
+    var _this = this;
+
+    (0,_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__.default)(this, MapController);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__.default)(this, "events", []);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__.default)(this, "mapState", void 0);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__.default)(this, "onViewportChange", void 0);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__.default)(this, "onStateChange", void 0);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__.default)(this, "mapStateProps", void 0);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__.default)(this, "eventManager", void 0);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__.default)(this, "scrollZoom", true);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__.default)(this, "dragPan", true);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__.default)(this, "dragRotate", true);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__.default)(this, "doubleClickZoom", true);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__.default)(this, "touchZoom", true);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__.default)(this, "touchRotate", false);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__.default)(this, "keyboard", true);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__.default)(this, "_state", {
+      isDragging: false
+    });
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__.default)(this, "_events", {});
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__.default)(this, "_transitionManager", new _transition_manager__WEBPACK_IMPORTED_MODULE_6__.default());
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__.default)(this, "setState", function (newState) {
+      Object.assign(_this._state, newState);
+
+      if (_this.onStateChange) {
+        _this.onStateChange(_this._state);
+      }
+    });
+
+    this.handleEvent = this.handleEvent.bind(this);
+    this._onWheelEnd = (0,_debounce__WEBPACK_IMPORTED_MODULE_7__.default)(this._onWheelEnd, 100);
+  }
+
+  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__.default)(MapController, [{
+    key: "handleEvent",
+    value: function handleEvent(event) {
+      this.mapState = this.getMapState();
+
+      switch (event.type) {
+        case 'panstart':
+          return this._onPanStart(event);
+
+        case 'panmove':
+          return this._onPan(event);
+
+        case 'panend':
+          return this._onPanEnd(event);
+
+        case 'pinchstart':
+          return this._onPinchStart(event);
+
+        case 'pinchmove':
+          return this._onPinch(event);
+
+        case 'pinchcancel':
+        case 'pinchend':
+          return this._onPinchEnd(event);
+
+        case 'doubletap':
+          return this._onDoubleTap(event);
+
+        case 'wheel':
+          return this._onWheel(event);
+
+        case 'keydown':
+          return this._onKeyDown(event);
+
+        default:
+          return false;
+      }
+    }
+  }, {
+    key: "getCenter",
+    value: function getCenter(event) {
+      var _event$offsetCenter = event.offsetCenter,
+          x = _event$offsetCenter.x,
+          y = _event$offsetCenter.y;
+      return [x, y];
+    }
+  }, {
+    key: "isFunctionKeyPressed",
+    value: function isFunctionKeyPressed(event) {
+      var srcEvent = event.srcEvent;
+      return Boolean(srcEvent.metaKey || srcEvent.altKey || srcEvent.ctrlKey || srcEvent.shiftKey);
+    }
+  }, {
+    key: "updateViewport",
+    value: function updateViewport(newMapState) {
+      var extraProps = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      var extraState = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+      var oldViewport = this.mapState ? this.mapState.getViewportProps() : {};
+      var newViewport = Object.assign({}, newMapState.getViewportProps(), extraProps);
+      var viewStateChanged = Object.keys(newViewport).some(function (key) {
+        return oldViewport[key] !== newViewport[key];
+      });
+
+      if (viewStateChanged) {
+        this.onViewportChange(newViewport, extraState, oldViewport);
+      }
+
+      this.setState(Object.assign({}, newMapState.getInteractiveState(), extraState));
+    }
+  }, {
+    key: "getMapState",
+    value: function getMapState(overrides) {
+      return new _map_state__WEBPACK_IMPORTED_MODULE_4__.default(Object.assign({}, this.mapStateProps, this._state, overrides));
+    }
+  }, {
+    key: "setOptions",
+    value: function setOptions(options) {
+      var onViewportChange = options.onViewportChange,
+          onStateChange = options.onStateChange,
+          _options$eventManager = options.eventManager,
+          eventManager = _options$eventManager === void 0 ? this.eventManager : _options$eventManager,
+          _options$isInteractiv = options.isInteractive,
+          isInteractive = _options$isInteractiv === void 0 ? true : _options$isInteractiv,
+          _options$scrollZoom = options.scrollZoom,
+          scrollZoom = _options$scrollZoom === void 0 ? this.scrollZoom : _options$scrollZoom,
+          _options$dragPan = options.dragPan,
+          dragPan = _options$dragPan === void 0 ? this.dragPan : _options$dragPan,
+          _options$dragRotate = options.dragRotate,
+          dragRotate = _options$dragRotate === void 0 ? this.dragRotate : _options$dragRotate,
+          _options$doubleClickZ = options.doubleClickZoom,
+          doubleClickZoom = _options$doubleClickZ === void 0 ? this.doubleClickZoom : _options$doubleClickZ,
+          _options$touchZoom = options.touchZoom,
+          touchZoom = _options$touchZoom === void 0 ? this.touchZoom : _options$touchZoom,
+          _options$touchRotate = options.touchRotate,
+          touchRotate = _options$touchRotate === void 0 ? this.touchRotate : _options$touchRotate,
+          _options$keyboard = options.keyboard,
+          keyboard = _options$keyboard === void 0 ? this.keyboard : _options$keyboard;
+      this.onViewportChange = onViewportChange;
+      this.onStateChange = onStateChange;
+      var dimensionChanged = !this.mapStateProps || this.mapStateProps.height !== options.height;
+      this.mapStateProps = options;
+
+      if (dimensionChanged) {
+        this.updateViewport(new _map_state__WEBPACK_IMPORTED_MODULE_4__.default(options));
+      }
+
+      this._transitionManager.processViewportChange(Object.assign({}, options, {
+        onStateChange: this.setState
+      }));
+
+      if (this.eventManager !== eventManager) {
+        this.eventManager = eventManager;
+        this._events = {};
+        this.toggleEvents(this.events, true);
+      }
+
+      this.toggleEvents(EVENT_TYPES.WHEEL, isInteractive && scrollZoom);
+      this.toggleEvents(EVENT_TYPES.PAN, isInteractive && (dragPan || dragRotate));
+      this.toggleEvents(EVENT_TYPES.PINCH, isInteractive && (touchZoom || touchRotate));
+      this.toggleEvents(EVENT_TYPES.DOUBLE_TAP, isInteractive && doubleClickZoom);
+      this.toggleEvents(EVENT_TYPES.KEYBOARD, isInteractive && keyboard);
+      this.scrollZoom = scrollZoom;
+      this.dragPan = dragPan;
+      this.dragRotate = dragRotate;
+      this.doubleClickZoom = doubleClickZoom;
+      this.touchZoom = touchZoom;
+      this.touchRotate = touchRotate;
+      this.keyboard = keyboard;
+    }
+  }, {
+    key: "toggleEvents",
+    value: function toggleEvents(eventNames, enabled) {
+      var _this2 = this;
+
+      if (this.eventManager) {
+        eventNames.forEach(function (eventName) {
+          if (_this2._events[eventName] !== enabled) {
+            _this2._events[eventName] = enabled;
+
+            if (enabled) {
+              _this2.eventManager.on(eventName, _this2.handleEvent);
+            } else {
+              _this2.eventManager.off(eventName, _this2.handleEvent);
+            }
+          }
+        });
+      }
+    }
+  }, {
+    key: "_onPanStart",
+    value: function _onPanStart(event) {
+      var pos = this.getCenter(event);
+      var newMapState = this.mapState.panStart({
+        pos: pos
+      }).rotateStart({
+        pos: pos
+      });
+      this.updateViewport(newMapState, NO_TRANSITION_PROPS, {
+        isDragging: true
+      });
+      return true;
+    }
+  }, {
+    key: "_onPan",
+    value: function _onPan(event) {
+      return this.isFunctionKeyPressed(event) || event.rightButton ? this._onPanRotate(event) : this._onPanMove(event);
+    }
+  }, {
+    key: "_onPanEnd",
+    value: function _onPanEnd(event) {
+      var newMapState = this.mapState.panEnd().rotateEnd();
+      this.updateViewport(newMapState, null, {
+        isDragging: false,
+        isPanning: false,
+        isRotating: false
+      });
+      return true;
+    }
+  }, {
+    key: "_onPanMove",
+    value: function _onPanMove(event) {
+      if (!this.dragPan) {
+        return false;
+      }
+
+      var pos = this.getCenter(event);
+      var newMapState = this.mapState.pan({
+        pos: pos
+      });
+      this.updateViewport(newMapState, NO_TRANSITION_PROPS, {
+        isPanning: true
+      });
+      return true;
+    }
+  }, {
+    key: "_onPanRotate",
+    value: function _onPanRotate(event) {
+      if (!this.dragRotate) {
+        return false;
+      }
+
+      var deltaX = event.deltaX,
+          deltaY = event.deltaY;
+
+      var _this$getCenter = this.getCenter(event),
+          _this$getCenter2 = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__.default)(_this$getCenter, 2),
+          centerY = _this$getCenter2[1];
+
+      var startY = centerY - deltaY;
+
+      var _this$mapState$getVie = this.mapState.getViewportProps(),
+          width = _this$mapState$getVie.width,
+          height = _this$mapState$getVie.height;
+
+      var deltaScaleX = deltaX / width;
+      var deltaScaleY = 0;
+
+      if (deltaY > 0) {
+        if (Math.abs(height - startY) > PITCH_MOUSE_THRESHOLD) {
+          deltaScaleY = deltaY / (startY - height) * PITCH_ACCEL;
+        }
+      } else if (deltaY < 0) {
+        if (startY > PITCH_MOUSE_THRESHOLD) {
+          deltaScaleY = 1 - centerY / startY;
+        }
+      }
+
+      deltaScaleY = Math.min(1, Math.max(-1, deltaScaleY));
+      var newMapState = this.mapState.rotate({
+        deltaScaleX: deltaScaleX,
+        deltaScaleY: deltaScaleY
+      });
+      this.updateViewport(newMapState, NO_TRANSITION_PROPS, {
+        isRotating: true
+      });
+      return true;
+    }
+  }, {
+    key: "_onWheel",
+    value: function _onWheel(event) {
+      if (!this.scrollZoom) {
+        return false;
+      }
+
+      event.preventDefault();
+      var pos = this.getCenter(event);
+      var delta = event.delta;
+      var scale = 2 / (1 + Math.exp(-Math.abs(delta * ZOOM_ACCEL)));
+
+      if (delta < 0 && scale !== 0) {
+        scale = 1 / scale;
+      }
+
+      var newMapState = this.mapState.zoom({
+        pos: pos,
+        scale: scale
+      });
+      this.updateViewport(newMapState, NO_TRANSITION_PROPS, {
+        isZooming: true
+      });
+
+      this._onWheelEnd();
+
+      return true;
+    }
+  }, {
+    key: "_onWheelEnd",
+    value: function _onWheelEnd() {
+      this.setState({
+        isZooming: false
+      });
+    }
+  }, {
+    key: "_onPinchStart",
+    value: function _onPinchStart(event) {
+      var pos = this.getCenter(event);
+      var newMapState = this.mapState.zoomStart({
+        pos: pos
+      }).rotateStart({
+        pos: pos
+      });
+      this._state.startPinchRotation = event.rotation;
+      this.updateViewport(newMapState, NO_TRANSITION_PROPS, {
+        isDragging: true
+      });
+      return true;
+    }
+  }, {
+    key: "_onPinch",
+    value: function _onPinch(event) {
+      if (!this.touchZoom && !this.touchRotate) {
+        return false;
+      }
+
+      var newMapState = this.mapState;
+
+      if (this.touchZoom) {
+        var scale = event.scale;
+        var pos = this.getCenter(event);
+        newMapState = newMapState.zoom({
+          pos: pos,
+          scale: scale
+        });
+      }
+
+      if (this.touchRotate) {
+        var rotation = event.rotation;
+        var startPinchRotation = this._state.startPinchRotation;
+        newMapState = newMapState.rotate({
+          deltaScaleX: -(rotation - startPinchRotation) / 180
+        });
+      }
+
+      this.updateViewport(newMapState, NO_TRANSITION_PROPS, {
+        isDragging: true,
+        isPanning: this.touchZoom,
+        isZooming: this.touchZoom,
+        isRotating: this.touchRotate
+      });
+      return true;
+    }
+  }, {
+    key: "_onPinchEnd",
+    value: function _onPinchEnd(event) {
+      var newMapState = this.mapState.zoomEnd().rotateEnd();
+      this._state.startPinchRotation = 0;
+      this.updateViewport(newMapState, null, {
+        isDragging: false,
+        isPanning: false,
+        isZooming: false,
+        isRotating: false
+      });
+      return true;
+    }
+  }, {
+    key: "_onDoubleTap",
+    value: function _onDoubleTap(event) {
+      if (!this.doubleClickZoom) {
+        return false;
+      }
+
+      var pos = this.getCenter(event);
+      var isZoomOut = this.isFunctionKeyPressed(event);
+      var newMapState = this.mapState.zoom({
+        pos: pos,
+        scale: isZoomOut ? 0.5 : 2
+      });
+      this.updateViewport(newMapState, Object.assign({}, LINEAR_TRANSITION_PROPS, {
+        transitionInterpolator: new _transition__WEBPACK_IMPORTED_MODULE_5__.LinearInterpolator({
+          around: pos
+        })
+      }), {
+        isZooming: true
+      });
+      return true;
+    }
+  }, {
+    key: "_onKeyDown",
+    value: function _onKeyDown(event) {
+      if (!this.keyboard) {
+        return false;
+      }
+
+      var funcKey = this.isFunctionKeyPressed(event);
+      var mapStateProps = this.mapStateProps;
+      var newMapState;
+
+      switch (event.srcEvent.keyCode) {
+        case 189:
+          if (funcKey) {
+            newMapState = this.getMapState({
+              zoom: mapStateProps.zoom - 2
+            });
+          } else {
+            newMapState = this.getMapState({
+              zoom: mapStateProps.zoom - 1
+            });
+          }
+
+          break;
+
+        case 187:
+          if (funcKey) {
+            newMapState = this.getMapState({
+              zoom: mapStateProps.zoom + 2
+            });
+          } else {
+            newMapState = this.getMapState({
+              zoom: mapStateProps.zoom + 1
+            });
+          }
+
+          break;
+
+        case 37:
+          if (funcKey) {
+            newMapState = this.getMapState({
+              bearing: mapStateProps.bearing - 15
+            });
+          } else {
+            newMapState = this.mapState.pan({
+              pos: [100, 0],
+              startPos: [0, 0]
+            });
+          }
+
+          break;
+
+        case 39:
+          if (funcKey) {
+            newMapState = this.getMapState({
+              bearing: mapStateProps.bearing + 15
+            });
+          } else {
+            newMapState = this.mapState.pan({
+              pos: [-100, 0],
+              startPos: [0, 0]
+            });
+          }
+
+          break;
+
+        case 38:
+          if (funcKey) {
+            newMapState = this.getMapState({
+              pitch: mapStateProps.pitch + 10
+            });
+          } else {
+            newMapState = this.mapState.pan({
+              pos: [0, 100],
+              startPos: [0, 0]
+            });
+          }
+
+          break;
+
+        case 40:
+          if (funcKey) {
+            newMapState = this.getMapState({
+              pitch: mapStateProps.pitch - 10
+            });
+          } else {
+            newMapState = this.mapState.pan({
+              pos: [0, -100],
+              startPos: [0, 0]
+            });
+          }
+
+          break;
+
+        default:
+          return false;
+      }
+
+      return this.updateViewport(newMapState, LINEAR_TRANSITION_PROPS);
+    }
+  }]);
+
+  return MapController;
+}();
+
+
+//# sourceMappingURL=map-controller.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/utils/map-state.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/utils/map-state.js ***!
+  \***************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "MAPBOX_LIMITS": function() { return /* binding */ MAPBOX_LIMITS; },
+/* harmony export */   "default": function() { return /* binding */ MapState; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var viewport_mercator_project__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! viewport-mercator-project */ "./node_modules/viewport-mercator-project/module.js");
+/* harmony import */ var _transition__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./transition */ "./node_modules/react-map-gl/dist/esm/utils/transition/index.js");
+/* harmony import */ var _math_utils__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./math-utils */ "./node_modules/react-map-gl/dist/esm/utils/math-utils.js");
+/* harmony import */ var _assert__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./assert */ "./node_modules/react-map-gl/dist/esm/utils/assert.js");
+
+
+
+
+
+
+
+
+var MAPBOX_LIMITS = {
+  minZoom: 0,
+  maxZoom: 24,
+  minPitch: 0,
+  maxPitch: 85
+};
+var DEFAULT_STATE = {
+  pitch: 0,
+  bearing: 0,
+  altitude: 1.5
+};
+
+var MapState = function () {
+  function MapState(_ref) {
+    var width = _ref.width,
+        height = _ref.height,
+        latitude = _ref.latitude,
+        longitude = _ref.longitude,
+        zoom = _ref.zoom,
+        _ref$bearing = _ref.bearing,
+        bearing = _ref$bearing === void 0 ? DEFAULT_STATE.bearing : _ref$bearing,
+        _ref$pitch = _ref.pitch,
+        pitch = _ref$pitch === void 0 ? DEFAULT_STATE.pitch : _ref$pitch,
+        _ref$altitude = _ref.altitude,
+        altitude = _ref$altitude === void 0 ? DEFAULT_STATE.altitude : _ref$altitude,
+        _ref$maxZoom = _ref.maxZoom,
+        maxZoom = _ref$maxZoom === void 0 ? MAPBOX_LIMITS.maxZoom : _ref$maxZoom,
+        _ref$minZoom = _ref.minZoom,
+        minZoom = _ref$minZoom === void 0 ? MAPBOX_LIMITS.minZoom : _ref$minZoom,
+        _ref$maxPitch = _ref.maxPitch,
+        maxPitch = _ref$maxPitch === void 0 ? MAPBOX_LIMITS.maxPitch : _ref$maxPitch,
+        _ref$minPitch = _ref.minPitch,
+        minPitch = _ref$minPitch === void 0 ? MAPBOX_LIMITS.minPitch : _ref$minPitch,
+        transitionDuration = _ref.transitionDuration,
+        transitionEasing = _ref.transitionEasing,
+        transitionInterpolator = _ref.transitionInterpolator,
+        transitionInterruption = _ref.transitionInterruption,
+        startPanLngLat = _ref.startPanLngLat,
+        startZoomLngLat = _ref.startZoomLngLat,
+        startBearing = _ref.startBearing,
+        startPitch = _ref.startPitch,
+        startZoom = _ref.startZoom;
+
+    (0,_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__.default)(this, MapState);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__.default)(this, "_viewportProps", void 0);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_3__.default)(this, "_interactiveState", void 0);
+
+    (0,_assert__WEBPACK_IMPORTED_MODULE_7__.default)(Number.isFinite(width), '`width` must be supplied');
+    (0,_assert__WEBPACK_IMPORTED_MODULE_7__.default)(Number.isFinite(height), '`height` must be supplied');
+    (0,_assert__WEBPACK_IMPORTED_MODULE_7__.default)(Number.isFinite(longitude), '`longitude` must be supplied');
+    (0,_assert__WEBPACK_IMPORTED_MODULE_7__.default)(Number.isFinite(latitude), '`latitude` must be supplied');
+    (0,_assert__WEBPACK_IMPORTED_MODULE_7__.default)(Number.isFinite(zoom), '`zoom` must be supplied');
+    this._viewportProps = this._applyConstraints({
+      width: width,
+      height: height,
+      latitude: latitude,
+      longitude: longitude,
+      zoom: zoom,
+      bearing: bearing,
+      pitch: pitch,
+      altitude: altitude,
+      maxZoom: maxZoom,
+      minZoom: minZoom,
+      maxPitch: maxPitch,
+      minPitch: minPitch,
+      transitionDuration: transitionDuration,
+      transitionEasing: transitionEasing,
+      transitionInterpolator: transitionInterpolator,
+      transitionInterruption: transitionInterruption
+    });
+    this._interactiveState = {
+      startPanLngLat: startPanLngLat,
+      startZoomLngLat: startZoomLngLat,
+      startBearing: startBearing,
+      startPitch: startPitch,
+      startZoom: startZoom
+    };
+  }
+
+  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__.default)(MapState, [{
+    key: "getViewportProps",
+    value: function getViewportProps() {
+      return this._viewportProps;
+    }
+  }, {
+    key: "getInteractiveState",
+    value: function getInteractiveState() {
+      return this._interactiveState;
+    }
+  }, {
+    key: "panStart",
+    value: function panStart(_ref2) {
+      var pos = _ref2.pos;
+      return this._getUpdatedMapState({
+        startPanLngLat: this._unproject(pos)
+      });
+    }
+  }, {
+    key: "pan",
+    value: function pan(_ref3) {
+      var pos = _ref3.pos,
+          startPos = _ref3.startPos;
+
+      var startPanLngLat = this._interactiveState.startPanLngLat || this._unproject(startPos);
+
+      if (!startPanLngLat) {
+        return this;
+      }
+
+      var _this$_calculateNewLn = this._calculateNewLngLat({
+        startPanLngLat: startPanLngLat,
+        pos: pos
+      }),
+          _this$_calculateNewLn2 = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__.default)(_this$_calculateNewLn, 2),
+          longitude = _this$_calculateNewLn2[0],
+          latitude = _this$_calculateNewLn2[1];
+
+      return this._getUpdatedMapState({
+        longitude: longitude,
+        latitude: latitude
+      });
+    }
+  }, {
+    key: "panEnd",
+    value: function panEnd() {
+      return this._getUpdatedMapState({
+        startPanLngLat: null
+      });
+    }
+  }, {
+    key: "rotateStart",
+    value: function rotateStart(_ref4) {
+      var pos = _ref4.pos;
+      return this._getUpdatedMapState({
+        startBearing: this._viewportProps.bearing,
+        startPitch: this._viewportProps.pitch
+      });
+    }
+  }, {
+    key: "rotate",
+    value: function rotate(_ref5) {
+      var _ref5$deltaScaleX = _ref5.deltaScaleX,
+          deltaScaleX = _ref5$deltaScaleX === void 0 ? 0 : _ref5$deltaScaleX,
+          _ref5$deltaScaleY = _ref5.deltaScaleY,
+          deltaScaleY = _ref5$deltaScaleY === void 0 ? 0 : _ref5$deltaScaleY;
+      var _this$_interactiveSta = this._interactiveState,
+          startBearing = _this$_interactiveSta.startBearing,
+          startPitch = _this$_interactiveSta.startPitch;
+
+      if (!Number.isFinite(startBearing) || !Number.isFinite(startPitch)) {
+        return this;
+      }
+
+      var _this$_calculateNewPi = this._calculateNewPitchAndBearing({
+        deltaScaleX: deltaScaleX,
+        deltaScaleY: deltaScaleY,
+        startBearing: startBearing || 0,
+        startPitch: startPitch || 0
+      }),
+          pitch = _this$_calculateNewPi.pitch,
+          bearing = _this$_calculateNewPi.bearing;
+
+      return this._getUpdatedMapState({
+        bearing: bearing,
+        pitch: pitch
+      });
+    }
+  }, {
+    key: "rotateEnd",
+    value: function rotateEnd() {
+      return this._getUpdatedMapState({
+        startBearing: null,
+        startPitch: null
+      });
+    }
+  }, {
+    key: "zoomStart",
+    value: function zoomStart(_ref6) {
+      var pos = _ref6.pos;
+      return this._getUpdatedMapState({
+        startZoomLngLat: this._unproject(pos),
+        startZoom: this._viewportProps.zoom
+      });
+    }
+  }, {
+    key: "zoom",
+    value: function zoom(_ref7) {
+      var pos = _ref7.pos,
+          startPos = _ref7.startPos,
+          scale = _ref7.scale;
+      (0,_assert__WEBPACK_IMPORTED_MODULE_7__.default)(scale > 0, '`scale` must be a positive number');
+      var _this$_interactiveSta2 = this._interactiveState,
+          startZoom = _this$_interactiveSta2.startZoom,
+          startZoomLngLat = _this$_interactiveSta2.startZoomLngLat;
+
+      if (!Number.isFinite(startZoom)) {
+        startZoom = this._viewportProps.zoom;
+        startZoomLngLat = this._unproject(startPos) || this._unproject(pos);
+      }
+
+      (0,_assert__WEBPACK_IMPORTED_MODULE_7__.default)(startZoomLngLat, '`startZoomLngLat` prop is required ' + 'for zoom behavior to calculate where to position the map.');
+
+      var zoom = this._calculateNewZoom({
+        scale: scale,
+        startZoom: startZoom || 0
+      });
+
+      var zoomedViewport = new viewport_mercator_project__WEBPACK_IMPORTED_MODULE_4__.default(Object.assign({}, this._viewportProps, {
+        zoom: zoom
+      }));
+
+      var _zoomedViewport$getMa = zoomedViewport.getMapCenterByLngLatPosition({
+        lngLat: startZoomLngLat,
+        pos: pos
+      }),
+          _zoomedViewport$getMa2 = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__.default)(_zoomedViewport$getMa, 2),
+          longitude = _zoomedViewport$getMa2[0],
+          latitude = _zoomedViewport$getMa2[1];
+
+      return this._getUpdatedMapState({
+        zoom: zoom,
+        longitude: longitude,
+        latitude: latitude
+      });
+    }
+  }, {
+    key: "zoomEnd",
+    value: function zoomEnd() {
+      return this._getUpdatedMapState({
+        startZoomLngLat: null,
+        startZoom: null
+      });
+    }
+  }, {
+    key: "_getUpdatedMapState",
+    value: function _getUpdatedMapState(newProps) {
+      return new MapState(Object.assign({}, this._viewportProps, this._interactiveState, newProps));
+    }
+  }, {
+    key: "_applyConstraints",
+    value: function _applyConstraints(props) {
+      var maxZoom = props.maxZoom,
+          minZoom = props.minZoom,
+          zoom = props.zoom;
+      props.zoom = (0,_math_utils__WEBPACK_IMPORTED_MODULE_6__.clamp)(zoom, minZoom, maxZoom);
+      var maxPitch = props.maxPitch,
+          minPitch = props.minPitch,
+          pitch = props.pitch;
+      props.pitch = (0,_math_utils__WEBPACK_IMPORTED_MODULE_6__.clamp)(pitch, minPitch, maxPitch);
+      Object.assign(props, (0,viewport_mercator_project__WEBPACK_IMPORTED_MODULE_4__.normalizeViewportProps)(props));
+      return props;
+    }
+  }, {
+    key: "_unproject",
+    value: function _unproject(pos) {
+      var viewport = new viewport_mercator_project__WEBPACK_IMPORTED_MODULE_4__.default(this._viewportProps);
+      return pos && viewport.unproject(pos);
+    }
+  }, {
+    key: "_calculateNewLngLat",
+    value: function _calculateNewLngLat(_ref8) {
+      var startPanLngLat = _ref8.startPanLngLat,
+          pos = _ref8.pos;
+      var viewport = new viewport_mercator_project__WEBPACK_IMPORTED_MODULE_4__.default(this._viewportProps);
+      return viewport.getMapCenterByLngLatPosition({
+        lngLat: startPanLngLat,
+        pos: pos
+      });
+    }
+  }, {
+    key: "_calculateNewZoom",
+    value: function _calculateNewZoom(_ref9) {
+      var scale = _ref9.scale,
+          startZoom = _ref9.startZoom;
+      var _this$_viewportProps = this._viewportProps,
+          maxZoom = _this$_viewportProps.maxZoom,
+          minZoom = _this$_viewportProps.minZoom;
+      var zoom = startZoom + Math.log2(scale);
+      return (0,_math_utils__WEBPACK_IMPORTED_MODULE_6__.clamp)(zoom, minZoom, maxZoom);
+    }
+  }, {
+    key: "_calculateNewPitchAndBearing",
+    value: function _calculateNewPitchAndBearing(_ref10) {
+      var deltaScaleX = _ref10.deltaScaleX,
+          deltaScaleY = _ref10.deltaScaleY,
+          startBearing = _ref10.startBearing,
+          startPitch = _ref10.startPitch;
+      deltaScaleY = (0,_math_utils__WEBPACK_IMPORTED_MODULE_6__.clamp)(deltaScaleY, -1, 1);
+      var _this$_viewportProps2 = this._viewportProps,
+          minPitch = _this$_viewportProps2.minPitch,
+          maxPitch = _this$_viewportProps2.maxPitch;
+      var bearing = startBearing + 180 * deltaScaleX;
+      var pitch = startPitch;
+
+      if (deltaScaleY > 0) {
+        pitch = startPitch + deltaScaleY * (maxPitch - startPitch);
+      } else if (deltaScaleY < 0) {
+        pitch = startPitch - deltaScaleY * (minPitch - startPitch);
+      }
+
+      return {
+        pitch: pitch,
+        bearing: bearing
+      };
+    }
+  }]);
+
+  return MapState;
+}();
+
+
+//# sourceMappingURL=map-state.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/utils/mapboxgl.browser.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/utils/mapboxgl.browser.js ***!
+  \**********************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* reexport default from dynamic */ mapbox_gl__WEBPACK_IMPORTED_MODULE_0___default.a; }
+/* harmony export */ });
+/* harmony import */ var mapbox_gl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mapbox-gl */ "./node_modules/mapbox-gl/dist/mapbox-gl.js");
+/* harmony import */ var mapbox_gl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mapbox_gl__WEBPACK_IMPORTED_MODULE_0__);
+
+//# sourceMappingURL=mapboxgl.browser.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/utils/math-utils.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/utils/math-utils.js ***!
+  \****************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "equals": function() { return /* binding */ equals; },
+/* harmony export */   "clamp": function() { return /* binding */ clamp; },
+/* harmony export */   "lerp": function() { return /* binding */ lerp; }
+/* harmony export */ });
+var EPSILON = 1e-7;
+
+function isArray(value) {
+  return Array.isArray(value) || ArrayBuffer.isView(value);
+}
+
+function equals(a, b) {
+  if (a === b) {
+    return true;
+  }
+
+  if (isArray(a) && isArray(b)) {
+    if (a.length !== b.length) {
+      return false;
+    }
+
+    for (var i = 0; i < a.length; ++i) {
+      if (!equals(a[i], b[i])) {
+        return false;
+      }
+    }
+
+    return true;
+  }
+
+  return Math.abs(a - b) <= EPSILON;
+}
+function clamp(value, min, max) {
+  return Math.max(min, Math.min(max, value));
+}
+function lerp(a, b, t) {
+  if (isArray(a)) {
+    return a.map(function (ai, i) {
+      return lerp(ai, b[i], t);
+    });
+  }
+
+  return t * b + (1 - t) * a;
+}
+//# sourceMappingURL=math-utils.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/utils/set-rtl-text-plugin.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/utils/set-rtl-text-plugin.js ***!
+  \*************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _mapboxgl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mapboxgl */ "./node_modules/react-map-gl/dist/esm/utils/mapboxgl.browser.js");
+
+var setRTLTextPlugin = _mapboxgl__WEBPACK_IMPORTED_MODULE_0__.default ? _mapboxgl__WEBPACK_IMPORTED_MODULE_0__.default.setRTLTextPlugin : function () {};
+/* harmony default export */ __webpack_exports__["default"] = (setRTLTextPlugin);
+//# sourceMappingURL=set-rtl-text-plugin.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/utils/style-utils.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/utils/style-utils.js ***!
+  \*****************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "normalizeStyle": function() { return /* binding */ normalizeStyle; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _createForOfIteratorHelper(o) { if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (o = _unsupportedIterableToArray(o))) { var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var it, normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+var refProps = ['type', 'source', 'source-layer', 'minzoom', 'maxzoom', 'filter', 'layout'];
+function normalizeStyle(style) {
+  if (!style) {
+    return null;
+  }
+
+  if (typeof style === 'string') {
+    return style;
+  }
+
+  if (style.toJS) {
+    style = style.toJS();
+  }
+
+  var layerIndex = {};
+
+  var _iterator = _createForOfIteratorHelper(style.layers),
+      _step;
+
+  try {
+    for (_iterator.s(); !(_step = _iterator.n()).done;) {
+      var layer = _step.value;
+      layerIndex[layer.id] = layer;
+    }
+  } catch (err) {
+    _iterator.e(err);
+  } finally {
+    _iterator.f();
+  }
+
+  var layers = style.layers.map(function (layer) {
+    var layerRef = layerIndex[layer.ref];
+    var normalizedLayer = null;
+
+    if ('interactive' in layer) {
+      normalizedLayer = _objectSpread({}, layer);
+      delete normalizedLayer.interactive;
+    }
+
+    if (layerRef) {
+      normalizedLayer = normalizedLayer || _objectSpread({}, layer);
+      delete normalizedLayer.ref;
+
+      var _iterator2 = _createForOfIteratorHelper(refProps),
+          _step2;
+
+      try {
+        for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+          var propName = _step2.value;
+
+          if (propName in layerRef) {
+            normalizedLayer[propName] = layerRef[propName];
+          }
+        }
+      } catch (err) {
+        _iterator2.e(err);
+      } finally {
+        _iterator2.f();
+      }
+    }
+
+    return normalizedLayer || layer;
+  });
+  return _objectSpread(_objectSpread({}, style), {}, {
+    layers: layers
+  });
+}
+//# sourceMappingURL=style-utils.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/utils/transition-manager.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/utils/transition-manager.js ***!
+  \************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "cropEasingFunction": function() { return /* binding */ cropEasingFunction; },
+/* harmony export */   "TRANSITION_EVENTS": function() { return /* binding */ TRANSITION_EVENTS; },
+/* harmony export */   "default": function() { return /* binding */ TransitionManager; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var _assert__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assert */ "./node_modules/react-map-gl/dist/esm/utils/assert.js");
+/* harmony import */ var _transition__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./transition */ "./node_modules/react-map-gl/dist/esm/utils/transition/index.js");
+/* harmony import */ var _map_state__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./map-state */ "./node_modules/react-map-gl/dist/esm/utils/map-state.js");
+
+
+
+
+
+
+
+var noop = function noop() {};
+
+function cropEasingFunction(easing, x0) {
+  var y0 = easing(x0);
+  return function (t) {
+    return 1 / (1 - y0) * (easing(t * (1 - x0) + x0) - y0);
+  };
+}
+var TRANSITION_EVENTS = {
+  BREAK: 1,
+  SNAP_TO_END: 2,
+  IGNORE: 3,
+  UPDATE: 4
+};
+var DEFAULT_PROPS = {
+  transitionDuration: 0,
+  transitionEasing: function transitionEasing(t) {
+    return t;
+  },
+  transitionInterpolator: new _transition__WEBPACK_IMPORTED_MODULE_4__.LinearInterpolator(),
+  transitionInterruption: TRANSITION_EVENTS.BREAK,
+  onTransitionStart: noop,
+  onTransitionInterrupt: noop,
+  onTransitionEnd: noop,
+  onViewportChange: noop,
+  onStateChange: noop
+};
+
+var TransitionManager = function () {
+  function TransitionManager(props, getTime) {
+    var _this = this;
+
+    (0,_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__.default)(this, TransitionManager);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__.default)(this, "props", void 0);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__.default)(this, "state", void 0);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__.default)(this, "time", void 0);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__.default)(this, "_animationFrame", null);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__.default)(this, "_onTransitionFrame", function () {
+      _this._animationFrame = requestAnimationFrame(_this._onTransitionFrame);
+
+      _this._updateViewport();
+    });
+
+    if (props) {
+      this.props = props;
+    }
+
+    this.time = getTime || Date.now;
+  }
+
+  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__.default)(TransitionManager, [{
+    key: "getViewportInTransition",
+    value: function getViewportInTransition() {
+      return this._animationFrame ? this.state.propsInTransition : null;
+    }
+  }, {
+    key: "processViewportChange",
+    value: function processViewportChange(nextProps) {
+      var currentProps = this.props;
+      this.props = nextProps;
+
+      if (this._shouldIgnoreViewportChange(currentProps, nextProps)) {
+        return false;
+      }
+
+      if (this._isTransitionEnabled(nextProps)) {
+        var startProps = Object.assign({}, currentProps);
+        var endProps = Object.assign({}, nextProps);
+
+        if (this._isTransitionInProgress()) {
+          currentProps.onTransitionInterrupt();
+
+          if (this.state.interruption === TRANSITION_EVENTS.SNAP_TO_END) {
+            Object.assign(startProps, this.state.endProps);
+          } else {
+            Object.assign(startProps, this.state.propsInTransition);
+          }
+
+          if (this.state.interruption === TRANSITION_EVENTS.UPDATE) {
+            var currentTime = this.time();
+            var x0 = (currentTime - this.state.startTime) / this.state.duration;
+            endProps.transitionDuration = this.state.duration - (currentTime - this.state.startTime);
+            endProps.transitionEasing = cropEasingFunction(this.state.easing, x0);
+            endProps.transitionInterpolator = startProps.transitionInterpolator;
+          }
+        }
+
+        endProps.onTransitionStart();
+
+        this._triggerTransition(startProps, endProps);
+
+        return true;
+      }
+
+      if (this._isTransitionInProgress()) {
+        currentProps.onTransitionInterrupt();
+
+        this._endTransition();
+      }
+
+      return false;
+    }
+  }, {
+    key: "_isTransitionInProgress",
+    value: function _isTransitionInProgress() {
+      return Boolean(this._animationFrame);
+    }
+  }, {
+    key: "_isTransitionEnabled",
+    value: function _isTransitionEnabled(props) {
+      var transitionDuration = props.transitionDuration,
+          transitionInterpolator = props.transitionInterpolator;
+      return (transitionDuration > 0 || transitionDuration === 'auto') && Boolean(transitionInterpolator);
+    }
+  }, {
+    key: "_isUpdateDueToCurrentTransition",
+    value: function _isUpdateDueToCurrentTransition(props) {
+      if (this.state.propsInTransition) {
+        return this.state.interpolator.arePropsEqual(props, this.state.propsInTransition);
+      }
+
+      return false;
+    }
+  }, {
+    key: "_shouldIgnoreViewportChange",
+    value: function _shouldIgnoreViewportChange(currentProps, nextProps) {
+      if (!currentProps) {
+        return true;
+      }
+
+      if (this._isTransitionInProgress()) {
+        return this.state.interruption === TRANSITION_EVENTS.IGNORE || this._isUpdateDueToCurrentTransition(nextProps);
+      }
+
+      if (this._isTransitionEnabled(nextProps)) {
+        return nextProps.transitionInterpolator.arePropsEqual(currentProps, nextProps);
+      }
+
+      return true;
+    }
+  }, {
+    key: "_triggerTransition",
+    value: function _triggerTransition(startProps, endProps) {
+      (0,_assert__WEBPACK_IMPORTED_MODULE_3__.default)(this._isTransitionEnabled(endProps));
+
+      if (this._animationFrame) {
+        cancelAnimationFrame(this._animationFrame);
+      }
+
+      var transitionInterpolator = endProps.transitionInterpolator;
+      var duration = transitionInterpolator.getDuration ? transitionInterpolator.getDuration(startProps, endProps) : endProps.transitionDuration;
+
+      if (duration === 0) {
+        return;
+      }
+
+      var initialProps = endProps.transitionInterpolator.initializeProps(startProps, endProps);
+      var interactionState = {
+        inTransition: true,
+        isZooming: startProps.zoom !== endProps.zoom,
+        isPanning: startProps.longitude !== endProps.longitude || startProps.latitude !== endProps.latitude,
+        isRotating: startProps.bearing !== endProps.bearing || startProps.pitch !== endProps.pitch
+      };
+      this.state = {
+        duration: duration,
+        easing: endProps.transitionEasing,
+        interpolator: endProps.transitionInterpolator,
+        interruption: endProps.transitionInterruption,
+        startTime: this.time(),
+        startProps: initialProps.start,
+        endProps: initialProps.end,
+        animation: null,
+        propsInTransition: {},
+        interactionState: interactionState
+      };
+
+      this._onTransitionFrame();
+
+      this.props.onStateChange(interactionState);
+    }
+  }, {
+    key: "_endTransition",
+    value: function _endTransition() {
+      if (this._animationFrame) {
+        cancelAnimationFrame(this._animationFrame);
+        this._animationFrame = null;
+      }
+
+      this.props.onStateChange({
+        inTransition: false,
+        isZooming: false,
+        isPanning: false,
+        isRotating: false
+      });
+    }
+  }, {
+    key: "_updateViewport",
+    value: function _updateViewport() {
+      var currentTime = this.time();
+      var _this$state = this.state,
+          startTime = _this$state.startTime,
+          duration = _this$state.duration,
+          easing = _this$state.easing,
+          interpolator = _this$state.interpolator,
+          startProps = _this$state.startProps,
+          endProps = _this$state.endProps;
+      var shouldEnd = false;
+      var t = (currentTime - startTime) / duration;
+
+      if (t >= 1) {
+        t = 1;
+        shouldEnd = true;
+      }
+
+      t = easing(t);
+      var viewport = interpolator.interpolateProps(startProps, endProps, t);
+      var mapState = new _map_state__WEBPACK_IMPORTED_MODULE_5__.default(Object.assign({}, this.props, viewport));
+      this.state.propsInTransition = mapState.getViewportProps();
+      this.props.onViewportChange(this.state.propsInTransition, this.state.interactionState, this.props);
+
+      if (shouldEnd) {
+        this._endTransition();
+
+        this.props.onTransitionEnd();
+      }
+    }
+  }]);
+
+  return TransitionManager;
+}();
+
+(0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__.default)(TransitionManager, "defaultProps", DEFAULT_PROPS);
+
+
+//# sourceMappingURL=transition-manager.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/utils/transition/index.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/utils/transition/index.js ***!
+  \**********************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "TransitionInterpolator": function() { return /* reexport safe */ _transition_interpolator__WEBPACK_IMPORTED_MODULE_0__.default; },
+/* harmony export */   "ViewportFlyToInterpolator": function() { return /* reexport safe */ _viewport_fly_to_interpolator__WEBPACK_IMPORTED_MODULE_1__.default; },
+/* harmony export */   "LinearInterpolator": function() { return /* reexport safe */ _linear_interpolator__WEBPACK_IMPORTED_MODULE_2__.default; }
+/* harmony export */ });
+/* harmony import */ var _transition_interpolator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./transition-interpolator */ "./node_modules/react-map-gl/dist/esm/utils/transition/transition-interpolator.js");
+/* harmony import */ var _viewport_fly_to_interpolator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./viewport-fly-to-interpolator */ "./node_modules/react-map-gl/dist/esm/utils/transition/viewport-fly-to-interpolator.js");
+/* harmony import */ var _linear_interpolator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./linear-interpolator */ "./node_modules/react-map-gl/dist/esm/utils/transition/linear-interpolator.js");
+
+
+
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/utils/transition/linear-interpolator.js":
+/*!************************************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/utils/transition/linear-interpolator.js ***!
+  \************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ LinearInterpolator; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var viewport_mercator_project__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! viewport-mercator-project */ "./node_modules/viewport-mercator-project/module.js");
+/* harmony import */ var _assert__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../assert */ "./node_modules/react-map-gl/dist/esm/utils/assert.js");
+/* harmony import */ var _transition_interpolator__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./transition-interpolator */ "./node_modules/react-map-gl/dist/esm/utils/transition/transition-interpolator.js");
+/* harmony import */ var _transition_utils__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./transition-utils */ "./node_modules/react-map-gl/dist/esm/utils/transition/transition-utils.js");
+/* harmony import */ var _math_utils__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../math-utils */ "./node_modules/react-map-gl/dist/esm/utils/math-utils.js");
+
+
+
+
+
+
+
+
+
+function _createForOfIteratorHelper(o) { if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (o = _unsupportedIterableToArray(o))) { var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var it, normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0,_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5__.default)(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
+
+
+
+
+var VIEWPORT_TRANSITION_PROPS = ['longitude', 'latitude', 'zoom', 'bearing', 'pitch'];
+
+var LinearInterpolator = function (_TransitionInterpolat) {
+  (0,_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__.default)(LinearInterpolator, _TransitionInterpolat);
+
+  var _super = _createSuper(LinearInterpolator);
+
+  function LinearInterpolator() {
+    var _this;
+
+    var opts = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+    (0,_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__.default)(this, LinearInterpolator);
+
+    _this = _super.call(this);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3__.default)(_this), "around", void 0);
+
+    if (Array.isArray(opts)) {
+      opts = {
+        transitionProps: opts
+      };
+    }
+
+    _this.propNames = opts.transitionProps || VIEWPORT_TRANSITION_PROPS;
+
+    if (opts.around) {
+      _this.around = opts.around;
+    }
+
+    return _this;
+  }
+
+  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__.default)(LinearInterpolator, [{
+    key: "initializeProps",
+    value: function initializeProps(startProps, endProps) {
+      var startViewportProps = {};
+      var endViewportProps = {};
+
+      if (this.around) {
+        startViewportProps.around = this.around;
+        var aroundLngLat = new viewport_mercator_project__WEBPACK_IMPORTED_MODULE_8__.default(startProps).unproject(this.around);
+        Object.assign(endViewportProps, endProps, {
+          around: new viewport_mercator_project__WEBPACK_IMPORTED_MODULE_8__.default(endProps).project(aroundLngLat),
+          aroundLngLat: aroundLngLat
+        });
+      }
+
+      var _iterator = _createForOfIteratorHelper(this.propNames),
+          _step;
+
+      try {
+        for (_iterator.s(); !(_step = _iterator.n()).done;) {
+          var key = _step.value;
+          var startValue = startProps[key];
+          var endValue = endProps[key];
+          (0,_assert__WEBPACK_IMPORTED_MODULE_9__.default)((0,_transition_utils__WEBPACK_IMPORTED_MODULE_11__.isValid)(startValue) && (0,_transition_utils__WEBPACK_IMPORTED_MODULE_11__.isValid)(endValue), "".concat(key, " must be supplied for transition"));
+          startViewportProps[key] = startValue;
+          endViewportProps[key] = (0,_transition_utils__WEBPACK_IMPORTED_MODULE_11__.getEndValueByShortestPath)(key, startValue, endValue);
+        }
+      } catch (err) {
+        _iterator.e(err);
+      } finally {
+        _iterator.f();
+      }
+
+      return {
+        start: startViewportProps,
+        end: endViewportProps
+      };
+    }
+  }, {
+    key: "interpolateProps",
+    value: function interpolateProps(startProps, endProps, t) {
+      var viewport = {};
+
+      var _iterator2 = _createForOfIteratorHelper(this.propNames),
+          _step2;
+
+      try {
+        for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+          var key = _step2.value;
+          viewport[key] = (0,_math_utils__WEBPACK_IMPORTED_MODULE_12__.lerp)(startProps[key], endProps[key], t);
+        }
+      } catch (err) {
+        _iterator2.e(err);
+      } finally {
+        _iterator2.f();
+      }
+
+      if (endProps.around) {
+        var _WebMercatorViewport$ = new viewport_mercator_project__WEBPACK_IMPORTED_MODULE_8__.default(Object.assign({}, endProps, viewport)).getMapCenterByLngLatPosition({
+          lngLat: endProps.aroundLngLat,
+          pos: (0,_math_utils__WEBPACK_IMPORTED_MODULE_12__.lerp)(startProps.around, endProps.around, t)
+        }),
+            _WebMercatorViewport$2 = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__.default)(_WebMercatorViewport$, 2),
+            longitude = _WebMercatorViewport$2[0],
+            latitude = _WebMercatorViewport$2[1];
+
+        viewport.longitude = longitude;
+        viewport.latitude = latitude;
+      }
+
+      return viewport;
+    }
+  }]);
+
+  return LinearInterpolator;
+}(_transition_interpolator__WEBPACK_IMPORTED_MODULE_10__.default);
+
+
+//# sourceMappingURL=linear-interpolator.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/utils/transition/transition-interpolator.js":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/utils/transition/transition-interpolator.js ***!
+  \****************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ TransitionInterpolator; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var _math_utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../math-utils */ "./node_modules/react-map-gl/dist/esm/utils/math-utils.js");
+/* harmony import */ var _assert__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assert */ "./node_modules/react-map-gl/dist/esm/utils/assert.js");
+
+
+
+
+function _createForOfIteratorHelper(o) { if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (o = _unsupportedIterableToArray(o))) { var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var it, normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+
+
+
+var TransitionInterpolator = function () {
+  function TransitionInterpolator() {
+    (0,_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__.default)(this, TransitionInterpolator);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__.default)(this, "propNames", []);
+  }
+
+  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__.default)(TransitionInterpolator, [{
+    key: "arePropsEqual",
+    value: function arePropsEqual(currentProps, nextProps) {
+      var _iterator = _createForOfIteratorHelper(this.propNames || []),
+          _step;
+
+      try {
+        for (_iterator.s(); !(_step = _iterator.n()).done;) {
+          var key = _step.value;
+
+          if (!(0,_math_utils__WEBPACK_IMPORTED_MODULE_3__.equals)(currentProps[key], nextProps[key])) {
+            return false;
+          }
+        }
+      } catch (err) {
+        _iterator.e(err);
+      } finally {
+        _iterator.f();
+      }
+
+      return true;
+    }
+  }, {
+    key: "initializeProps",
+    value: function initializeProps(startProps, endProps) {
+      return {
+        start: startProps,
+        end: endProps
+      };
+    }
+  }, {
+    key: "interpolateProps",
+    value: function interpolateProps(startProps, endProps, t) {
+      (0,_assert__WEBPACK_IMPORTED_MODULE_4__.default)(false, 'interpolateProps is not implemented');
+    }
+  }, {
+    key: "getDuration",
+    value: function getDuration(startProps, endProps) {
+      return endProps.transitionDuration;
+    }
+  }]);
+
+  return TransitionInterpolator;
+}();
+
+
+//# sourceMappingURL=transition-interpolator.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/utils/transition/transition-utils.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/utils/transition/transition-utils.js ***!
+  \*********************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "mod": function() { return /* binding */ mod; },
+/* harmony export */   "isValid": function() { return /* binding */ isValid; },
+/* harmony export */   "getEndValueByShortestPath": function() { return /* binding */ getEndValueByShortestPath; }
+/* harmony export */ });
+var WRAPPED_ANGULAR_PROPS = {
+  longitude: 1,
+  bearing: 1
+};
+function mod(value, divisor) {
+  var modulus = value % divisor;
+  return modulus < 0 ? divisor + modulus : modulus;
+}
+function isValid(prop) {
+  return Number.isFinite(prop) || Array.isArray(prop);
+}
+
+function isWrappedAngularProp(propName) {
+  return propName in WRAPPED_ANGULAR_PROPS;
+}
+
+function getEndValueByShortestPath(propName, startValue, endValue) {
+  if (isWrappedAngularProp(propName) && Math.abs(endValue - startValue) > 180) {
+    endValue = endValue < 0 ? endValue + 360 : endValue - 360;
+  }
+
+  return endValue;
+}
+//# sourceMappingURL=transition-utils.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/utils/transition/viewport-fly-to-interpolator.js":
+/*!*********************************************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/utils/transition/viewport-fly-to-interpolator.js ***!
+  \*********************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ ViewportFlyToInterpolator; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var _assert__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../assert */ "./node_modules/react-map-gl/dist/esm/utils/assert.js");
+/* harmony import */ var _transition_interpolator__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./transition-interpolator */ "./node_modules/react-map-gl/dist/esm/utils/transition/transition-interpolator.js");
+/* harmony import */ var viewport_mercator_project__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! viewport-mercator-project */ "./node_modules/viewport-mercator-project/module.js");
+/* harmony import */ var _transition_utils__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./transition-utils */ "./node_modules/react-map-gl/dist/esm/utils/transition/transition-utils.js");
+/* harmony import */ var _math_utils__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../math-utils */ "./node_modules/react-map-gl/dist/esm/utils/math-utils.js");
+
+
+
+
+
+
+
+
+function _createForOfIteratorHelper(o) { if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (o = _unsupportedIterableToArray(o))) { var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var it, normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0,_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__.default)(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
+
+
+
+
+var VIEWPORT_TRANSITION_PROPS = ['longitude', 'latitude', 'zoom', 'bearing', 'pitch'];
+var REQUIRED_PROPS = ['latitude', 'longitude', 'zoom', 'width', 'height'];
+var LINEARLY_INTERPOLATED_PROPS = ['bearing', 'pitch'];
+var DEFAULT_OPTS = {
+  speed: 1.2,
+  curve: 1.414
+};
+
+var ViewportFlyToInterpolator = function (_TransitionInterpolat) {
+  (0,_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_3__.default)(ViewportFlyToInterpolator, _TransitionInterpolat);
+
+  var _super = _createSuper(ViewportFlyToInterpolator);
+
+  function ViewportFlyToInterpolator() {
+    var _this;
+
+    var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+    (0,_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__.default)(this, ViewportFlyToInterpolator);
+
+    _this = _super.call(this);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "speed", void 0);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "propNames", VIEWPORT_TRANSITION_PROPS);
+
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__.default)((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__.default)(_this), "props", void 0);
+
+    _this.props = Object.assign({}, DEFAULT_OPTS, props);
+    return _this;
+  }
+
+  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__.default)(ViewportFlyToInterpolator, [{
+    key: "initializeProps",
+    value: function initializeProps(startProps, endProps) {
+      var startViewportProps = {};
+      var endViewportProps = {};
+
+      var _iterator = _createForOfIteratorHelper(REQUIRED_PROPS),
+          _step;
+
+      try {
+        for (_iterator.s(); !(_step = _iterator.n()).done;) {
+          var key = _step.value;
+          var startValue = startProps[key];
+          var endValue = endProps[key];
+          (0,_assert__WEBPACK_IMPORTED_MODULE_7__.default)((0,_transition_utils__WEBPACK_IMPORTED_MODULE_10__.isValid)(startValue) && (0,_transition_utils__WEBPACK_IMPORTED_MODULE_10__.isValid)(endValue), "".concat(key, " must be supplied for transition"));
+          startViewportProps[key] = startValue;
+          endViewportProps[key] = (0,_transition_utils__WEBPACK_IMPORTED_MODULE_10__.getEndValueByShortestPath)(key, startValue, endValue);
+        }
+      } catch (err) {
+        _iterator.e(err);
+      } finally {
+        _iterator.f();
+      }
+
+      var _iterator2 = _createForOfIteratorHelper(LINEARLY_INTERPOLATED_PROPS),
+          _step2;
+
+      try {
+        for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+          var _key = _step2.value;
+
+          var _startValue = startProps[_key] || 0;
+
+          var _endValue = endProps[_key] || 0;
+
+          startViewportProps[_key] = _startValue;
+          endViewportProps[_key] = (0,_transition_utils__WEBPACK_IMPORTED_MODULE_10__.getEndValueByShortestPath)(_key, _startValue, _endValue);
+        }
+      } catch (err) {
+        _iterator2.e(err);
+      } finally {
+        _iterator2.f();
+      }
+
+      return {
+        start: startViewportProps,
+        end: endViewportProps
+      };
+    }
+  }, {
+    key: "interpolateProps",
+    value: function interpolateProps(startProps, endProps, t) {
+      var viewport = (0,viewport_mercator_project__WEBPACK_IMPORTED_MODULE_9__.flyToViewport)(startProps, endProps, t, this.props);
+
+      var _iterator3 = _createForOfIteratorHelper(LINEARLY_INTERPOLATED_PROPS),
+          _step3;
+
+      try {
+        for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
+          var key = _step3.value;
+          viewport[key] = (0,_math_utils__WEBPACK_IMPORTED_MODULE_11__.lerp)(startProps[key], endProps[key], t);
+        }
+      } catch (err) {
+        _iterator3.e(err);
+      } finally {
+        _iterator3.f();
+      }
+
+      return viewport;
+    }
+  }, {
+    key: "getDuration",
+    value: function getDuration(startProps, endProps) {
+      var transitionDuration = endProps.transitionDuration;
+
+      if (transitionDuration === 'auto') {
+        transitionDuration = (0,viewport_mercator_project__WEBPACK_IMPORTED_MODULE_9__.getFlyToDuration)(startProps, endProps, this.props);
+      }
+
+      return transitionDuration;
+    }
+  }]);
+
+  return ViewportFlyToInterpolator;
+}(_transition_interpolator__WEBPACK_IMPORTED_MODULE_8__.default);
+
+
+//# sourceMappingURL=viewport-fly-to-interpolator.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-map-gl/dist/esm/utils/version.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/react-map-gl/dist/esm/utils/version.js ***!
+  \*************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "compareVersions": function() { return /* binding */ compareVersions; }
+/* harmony export */ });
+function compareVersions(version1, version2) {
+  var v1 = (version1 || '').split('.').map(Number);
+  var v2 = (version2 || '').split('.').map(Number);
+
+  for (var i = 0; i < 3; i++) {
+    var part1 = v1[i] || 0;
+    var part2 = v2[i] || 0;
+
+    if (part1 < part2) {
+      return -1;
+    }
+
+    if (part1 > part2) {
+      return 1;
+    }
+  }
+
+  return 0;
+}
+//# sourceMappingURL=version.js.map
+
+/***/ }),
+
 /***/ "./node_modules/react-redux/es/components/Context.js":
 /*!***********************************************************!*\
   !*** ./node_modules/react-redux/es/components/Context.js ***!
@@ -33566,6 +49452,426 @@ if (true) {
 
 
 //# sourceMappingURL=react-router.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/react-virtualized-auto-sizer/dist/index.esm.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/react-virtualized-auto-sizer/dist/index.esm.js ***!
+  \*********************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+
+/**
+ * Detect Element Resize.
+ * https://github.com/sdecima/javascript-detect-element-resize
+ * Sebastian Decima
+ *
+ * Forked from version 0.5.3; includes the following modifications:
+ * 1) Guard against unsafe 'window' and 'document' references (to support SSR).
+ * 2) Defer initialization code via a top-level function wrapper (to support SSR).
+ * 3) Avoid unnecessary reflows by not measuring size for scroll events bubbling from children.
+ * 4) Add nonce for style element.
+ **/
+
+function createDetectElementResize(nonce) {
+  // Check `document` and `window` in case of server-side rendering
+  var _window;
+  if (typeof window !== 'undefined') {
+    _window = window;
+  } else if (typeof self !== 'undefined') {
+    _window = self;
+  } else {
+    _window = __webpack_require__.g;
+  }
+
+  var attachEvent = typeof document !== 'undefined' && document.attachEvent;
+
+  if (!attachEvent) {
+    var requestFrame = function () {
+      var raf = _window.requestAnimationFrame || _window.mozRequestAnimationFrame || _window.webkitRequestAnimationFrame || function (fn) {
+        return _window.setTimeout(fn, 20);
+      };
+      return function (fn) {
+        return raf(fn);
+      };
+    }();
+
+    var cancelFrame = function () {
+      var cancel = _window.cancelAnimationFrame || _window.mozCancelAnimationFrame || _window.webkitCancelAnimationFrame || _window.clearTimeout;
+      return function (id) {
+        return cancel(id);
+      };
+    }();
+
+    var resetTriggers = function resetTriggers(element) {
+      var triggers = element.__resizeTriggers__,
+          expand = triggers.firstElementChild,
+          contract = triggers.lastElementChild,
+          expandChild = expand.firstElementChild;
+      contract.scrollLeft = contract.scrollWidth;
+      contract.scrollTop = contract.scrollHeight;
+      expandChild.style.width = expand.offsetWidth + 1 + 'px';
+      expandChild.style.height = expand.offsetHeight + 1 + 'px';
+      expand.scrollLeft = expand.scrollWidth;
+      expand.scrollTop = expand.scrollHeight;
+    };
+
+    var checkTriggers = function checkTriggers(element) {
+      return element.offsetWidth != element.__resizeLast__.width || element.offsetHeight != element.__resizeLast__.height;
+    };
+
+    var scrollListener = function scrollListener(e) {
+      // Don't measure (which forces) reflow for scrolls that happen inside of children!
+      if (e.target.className && typeof e.target.className.indexOf === 'function' && e.target.className.indexOf('contract-trigger') < 0 && e.target.className.indexOf('expand-trigger') < 0) {
+        return;
+      }
+
+      var element = this;
+      resetTriggers(this);
+      if (this.__resizeRAF__) {
+        cancelFrame(this.__resizeRAF__);
+      }
+      this.__resizeRAF__ = requestFrame(function () {
+        if (checkTriggers(element)) {
+          element.__resizeLast__.width = element.offsetWidth;
+          element.__resizeLast__.height = element.offsetHeight;
+          element.__resizeListeners__.forEach(function (fn) {
+            fn.call(element, e);
+          });
+        }
+      });
+    };
+
+    /* Detect CSS Animations support to detect element display/re-attach */
+    var animation = false,
+        keyframeprefix = '',
+        animationstartevent = 'animationstart',
+        domPrefixes = 'Webkit Moz O ms'.split(' '),
+        startEvents = 'webkitAnimationStart animationstart oAnimationStart MSAnimationStart'.split(' '),
+        pfx = '';
+    {
+      var elm = document.createElement('fakeelement');
+      if (elm.style.animationName !== undefined) {
+        animation = true;
+      }
+
+      if (animation === false) {
+        for (var i = 0; i < domPrefixes.length; i++) {
+          if (elm.style[domPrefixes[i] + 'AnimationName'] !== undefined) {
+            pfx = domPrefixes[i];
+            keyframeprefix = '-' + pfx.toLowerCase() + '-';
+            animationstartevent = startEvents[i];
+            animation = true;
+            break;
+          }
+        }
+      }
+    }
+
+    var animationName = 'resizeanim';
+    var animationKeyframes = '@' + keyframeprefix + 'keyframes ' + animationName + ' { from { opacity: 0; } to { opacity: 0; } } ';
+    var animationStyle = keyframeprefix + 'animation: 1ms ' + animationName + '; ';
+  }
+
+  var createStyles = function createStyles(doc) {
+    if (!doc.getElementById('detectElementResize')) {
+      //opacity:0 works around a chrome bug https://code.google.com/p/chromium/issues/detail?id=286360
+      var css = (animationKeyframes ? animationKeyframes : '') + '.resize-triggers { ' + (animationStyle ? animationStyle : '') + 'visibility: hidden; opacity: 0; } ' + '.resize-triggers, .resize-triggers > div, .contract-trigger:before { content: " "; display: block; position: absolute; top: 0; left: 0; height: 100%; width: 100%; overflow: hidden; z-index: -1; } .resize-triggers > div { background: #eee; overflow: auto; } .contract-trigger:before { width: 200%; height: 200%; }',
+          head = doc.head || doc.getElementsByTagName('head')[0],
+          style = doc.createElement('style');
+
+      style.id = 'detectElementResize';
+      style.type = 'text/css';
+
+      if (nonce != null) {
+        style.setAttribute('nonce', nonce);
+      }
+
+      if (style.styleSheet) {
+        style.styleSheet.cssText = css;
+      } else {
+        style.appendChild(doc.createTextNode(css));
+      }
+
+      head.appendChild(style);
+    }
+  };
+
+  var addResizeListener = function addResizeListener(element, fn) {
+    if (attachEvent) {
+      element.attachEvent('onresize', fn);
+    } else {
+      if (!element.__resizeTriggers__) {
+        var doc = element.ownerDocument;
+        var elementStyle = _window.getComputedStyle(element);
+        if (elementStyle && elementStyle.position == 'static') {
+          element.style.position = 'relative';
+        }
+        createStyles(doc);
+        element.__resizeLast__ = {};
+        element.__resizeListeners__ = [];
+        (element.__resizeTriggers__ = doc.createElement('div')).className = 'resize-triggers';
+        var expandTrigger = doc.createElement('div');
+        expandTrigger.className = 'expand-trigger';
+        expandTrigger.appendChild(doc.createElement('div'));
+        var contractTrigger = doc.createElement('div');
+        contractTrigger.className = 'contract-trigger';
+        element.__resizeTriggers__.appendChild(expandTrigger);
+        element.__resizeTriggers__.appendChild(contractTrigger);
+        element.appendChild(element.__resizeTriggers__);
+        resetTriggers(element);
+        element.addEventListener('scroll', scrollListener, true);
+
+        /* Listen for a css animation to detect element display/re-attach */
+        if (animationstartevent) {
+          element.__resizeTriggers__.__animationListener__ = function animationListener(e) {
+            if (e.animationName == animationName) {
+              resetTriggers(element);
+            }
+          };
+          element.__resizeTriggers__.addEventListener(animationstartevent, element.__resizeTriggers__.__animationListener__);
+        }
+      }
+      element.__resizeListeners__.push(fn);
+    }
+  };
+
+  var removeResizeListener = function removeResizeListener(element, fn) {
+    if (attachEvent) {
+      element.detachEvent('onresize', fn);
+    } else {
+      element.__resizeListeners__.splice(element.__resizeListeners__.indexOf(fn), 1);
+      if (!element.__resizeListeners__.length) {
+        element.removeEventListener('scroll', scrollListener, true);
+        if (element.__resizeTriggers__.__animationListener__) {
+          element.__resizeTriggers__.removeEventListener(animationstartevent, element.__resizeTriggers__.__animationListener__);
+          element.__resizeTriggers__.__animationListener__ = null;
+        }
+        try {
+          element.__resizeTriggers__ = !element.removeChild(element.__resizeTriggers__);
+        } catch (e) {
+          // Preact compat; see developit/preact-compat/issues/228
+        }
+      }
+    }
+  };
+
+  return {
+    addResizeListener: addResizeListener,
+    removeResizeListener: removeResizeListener
+  };
+}
+
+var classCallCheck = function (instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+};
+
+var createClass = function () {
+  function defineProperties(target, props) {
+    for (var i = 0; i < props.length; i++) {
+      var descriptor = props[i];
+      descriptor.enumerable = descriptor.enumerable || false;
+      descriptor.configurable = true;
+      if ("value" in descriptor) descriptor.writable = true;
+      Object.defineProperty(target, descriptor.key, descriptor);
+    }
+  }
+
+  return function (Constructor, protoProps, staticProps) {
+    if (protoProps) defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) defineProperties(Constructor, staticProps);
+    return Constructor;
+  };
+}();
+
+var _extends = Object.assign || function (target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i];
+
+    for (var key in source) {
+      if (Object.prototype.hasOwnProperty.call(source, key)) {
+        target[key] = source[key];
+      }
+    }
+  }
+
+  return target;
+};
+
+var inherits = function (subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      enumerable: false,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+};
+
+var possibleConstructorReturn = function (self, call) {
+  if (!self) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return call && (typeof call === "object" || typeof call === "function") ? call : self;
+};
+
+var AutoSizer = function (_React$PureComponent) {
+  inherits(AutoSizer, _React$PureComponent);
+
+  function AutoSizer() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
+    classCallCheck(this, AutoSizer);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = possibleConstructorReturn(this, (_ref = AutoSizer.__proto__ || Object.getPrototypeOf(AutoSizer)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+      height: _this.props.defaultHeight || 0,
+      width: _this.props.defaultWidth || 0
+    }, _this._onResize = function () {
+      var _this$props = _this.props,
+          disableHeight = _this$props.disableHeight,
+          disableWidth = _this$props.disableWidth,
+          onResize = _this$props.onResize;
+
+
+      if (_this._parentNode) {
+        // Guard against AutoSizer component being removed from the DOM immediately after being added.
+        // This can result in invalid style values which can result in NaN values if we don't handle them.
+        // See issue #150 for more context.
+
+        var _height = _this._parentNode.offsetHeight || 0;
+        var _width = _this._parentNode.offsetWidth || 0;
+
+        var _style = window.getComputedStyle(_this._parentNode) || {};
+        var paddingLeft = parseInt(_style.paddingLeft, 10) || 0;
+        var paddingRight = parseInt(_style.paddingRight, 10) || 0;
+        var paddingTop = parseInt(_style.paddingTop, 10) || 0;
+        var paddingBottom = parseInt(_style.paddingBottom, 10) || 0;
+
+        var newHeight = _height - paddingTop - paddingBottom;
+        var newWidth = _width - paddingLeft - paddingRight;
+
+        if (!disableHeight && _this.state.height !== newHeight || !disableWidth && _this.state.width !== newWidth) {
+          _this.setState({
+            height: _height - paddingTop - paddingBottom,
+            width: _width - paddingLeft - paddingRight
+          });
+
+          onResize({ height: _height, width: _width });
+        }
+      }
+    }, _this._setRef = function (autoSizer) {
+      _this._autoSizer = autoSizer;
+    }, _temp), possibleConstructorReturn(_this, _ret);
+  }
+
+  createClass(AutoSizer, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      var nonce = this.props.nonce;
+
+      if (this._autoSizer && this._autoSizer.parentNode && this._autoSizer.parentNode.ownerDocument && this._autoSizer.parentNode.ownerDocument.defaultView && this._autoSizer.parentNode instanceof this._autoSizer.parentNode.ownerDocument.defaultView.HTMLElement) {
+        // Delay access of parentNode until mount.
+        // This handles edge-cases where the component has already been unmounted before its ref has been set,
+        // As well as libraries like react-lite which have a slightly different lifecycle.
+        this._parentNode = this._autoSizer.parentNode;
+
+        // Defer requiring resize handler in order to support server-side rendering.
+        // See issue #41
+        this._detectElementResize = createDetectElementResize(nonce);
+        this._detectElementResize.addResizeListener(this._parentNode, this._onResize);
+
+        this._onResize();
+      }
+    }
+  }, {
+    key: 'componentWillUnmount',
+    value: function componentWillUnmount() {
+      if (this._detectElementResize && this._parentNode) {
+        this._detectElementResize.removeResizeListener(this._parentNode, this._onResize);
+      }
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _props = this.props,
+          children = _props.children,
+          className = _props.className,
+          disableHeight = _props.disableHeight,
+          disableWidth = _props.disableWidth,
+          style = _props.style;
+      var _state = this.state,
+          height = _state.height,
+          width = _state.width;
+
+      // Outer div should not force width/height since that may prevent containers from shrinking.
+      // Inner component should overflow and use calculated width/height.
+      // See issue #68 for more information.
+
+      var outerStyle = { overflow: 'visible' };
+      var childParams = {};
+
+      // Avoid rendering children before the initial measurements have been collected.
+      // At best this would just be wasting cycles.
+      var bailoutOnChildren = false;
+
+      if (!disableHeight) {
+        if (height === 0) {
+          bailoutOnChildren = true;
+        }
+        outerStyle.height = 0;
+        childParams.height = height;
+      }
+
+      if (!disableWidth) {
+        if (width === 0) {
+          bailoutOnChildren = true;
+        }
+        outerStyle.width = 0;
+        childParams.width = width;
+      }
+
+      return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(
+        'div',
+        {
+          className: className,
+          ref: this._setRef,
+          style: _extends({}, outerStyle, style) },
+        !bailoutOnChildren && children(childParams)
+      );
+    }
+  }]);
+  return AutoSizer;
+}(react__WEBPACK_IMPORTED_MODULE_0__.PureComponent);
+
+AutoSizer.defaultProps = {
+  onResize: function onResize() {},
+  disableHeight: false,
+  disableWidth: false,
+  style: {}
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (AutoSizer);
 
 
 /***/ }),
@@ -38152,6 +54458,42 @@ function valueEqual(a, b) {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (valueEqual);
+
+
+/***/ }),
+
+/***/ "./node_modules/viewport-mercator-project/module.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/viewport-mercator-project/module.js ***!
+  \**********************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* reexport safe */ _math_gl_web_mercator__WEBPACK_IMPORTED_MODULE_0__.WebMercatorViewport; },
+/* harmony export */   "WebMercatorViewport": function() { return /* reexport safe */ _math_gl_web_mercator__WEBPACK_IMPORTED_MODULE_0__.WebMercatorViewport; },
+/* harmony export */   "addMetersToLngLat": function() { return /* reexport safe */ _math_gl_web_mercator__WEBPACK_IMPORTED_MODULE_0__.addMetersToLngLat; },
+/* harmony export */   "fitBounds": function() { return /* reexport safe */ _math_gl_web_mercator__WEBPACK_IMPORTED_MODULE_0__.fitBounds; },
+/* harmony export */   "flyToViewport": function() { return /* reexport safe */ _math_gl_web_mercator__WEBPACK_IMPORTED_MODULE_0__.flyToViewport; },
+/* harmony export */   "getBounds": function() { return /* reexport safe */ _math_gl_web_mercator__WEBPACK_IMPORTED_MODULE_0__.getBounds; },
+/* harmony export */   "getDistanceScales": function() { return /* reexport safe */ _math_gl_web_mercator__WEBPACK_IMPORTED_MODULE_0__.getDistanceScales; },
+/* harmony export */   "getFlyToDuration": function() { return /* reexport safe */ _math_gl_web_mercator__WEBPACK_IMPORTED_MODULE_0__.getFlyToDuration; },
+/* harmony export */   "getMeterZoom": function() { return /* reexport safe */ _math_gl_web_mercator__WEBPACK_IMPORTED_MODULE_0__.getMeterZoom; },
+/* harmony export */   "getProjectionMatrix": function() { return /* reexport safe */ _math_gl_web_mercator__WEBPACK_IMPORTED_MODULE_0__.getProjectionMatrix; },
+/* harmony export */   "getProjectionParameters": function() { return /* reexport safe */ _math_gl_web_mercator__WEBPACK_IMPORTED_MODULE_0__.getProjectionParameters; },
+/* harmony export */   "getViewMatrix": function() { return /* reexport safe */ _math_gl_web_mercator__WEBPACK_IMPORTED_MODULE_0__.getViewMatrix; },
+/* harmony export */   "lngLatToWorld": function() { return /* reexport safe */ _math_gl_web_mercator__WEBPACK_IMPORTED_MODULE_0__.lngLatToWorld; },
+/* harmony export */   "normalizeViewportProps": function() { return /* reexport safe */ _math_gl_web_mercator__WEBPACK_IMPORTED_MODULE_0__.normalizeViewportProps; },
+/* harmony export */   "pixelsToWorld": function() { return /* reexport safe */ _math_gl_web_mercator__WEBPACK_IMPORTED_MODULE_0__.pixelsToWorld; },
+/* harmony export */   "scaleToZoom": function() { return /* reexport safe */ _math_gl_web_mercator__WEBPACK_IMPORTED_MODULE_0__.scaleToZoom; },
+/* harmony export */   "worldToLngLat": function() { return /* reexport safe */ _math_gl_web_mercator__WEBPACK_IMPORTED_MODULE_0__.worldToLngLat; },
+/* harmony export */   "worldToPixels": function() { return /* reexport safe */ _math_gl_web_mercator__WEBPACK_IMPORTED_MODULE_0__.worldToPixels; },
+/* harmony export */   "zoomToScale": function() { return /* reexport safe */ _math_gl_web_mercator__WEBPACK_IMPORTED_MODULE_0__.zoomToScale; }
+/* harmony export */ });
+/* harmony import */ var _math_gl_web_mercator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @math.gl/web-mercator */ "./node_modules/@math.gl/web-mercator/dist/esm/index.js");
+
+
 
 
 /***/ })

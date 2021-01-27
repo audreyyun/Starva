@@ -36,7 +36,7 @@ class SplashPage extends React.Component {
                     </div>
                 </div>
 
-                <div className="footer-container">
+                <footer className="footer-container">
                         <div className="footer-grid">
                             <div className="footer-column">
                                 <div className="footer-logo-container">
@@ -68,7 +68,7 @@ class SplashPage extends React.Component {
                                 </p>
                             </div>
                     </div>
-                </div>
+                </footer>
             </div>
 
         )
