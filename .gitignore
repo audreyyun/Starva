@@ -19,8 +19,8 @@
 
 # *.js.map
 /node_modules
-/bundle.js
-/bundle.js.map
+app/assets/javascript/bundle.js
+app/assets/javascript/bundle.js.map
 /yarn-error.log
 
 /public/assets
