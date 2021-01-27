@@ -5,8 +5,8 @@ import MapGL from 'react-map-gl';
 export const RouteCreationMap = ({ MAPBOX_TOKEN}) => {
 
     const [viewport, setViewport] = React.useState({
-        latitude: 37.7577,
-        longitude: -122.4376,
+        latitude: 34.0746,
+        longitude: -118.3296,
         zoom: 8
     });
 
@@ -15,7 +15,7 @@ export const RouteCreationMap = ({ MAPBOX_TOKEN}) => {
             {...viewport}
             width="100vw"
             height="100vh"
-            mapStyle="mapbox://styles/mapbox/dark-v9"
+            mapStyle="mapbox://styles/mapbox/light-v9"
             onViewportChange={nextViewport => setViewport(nextViewport)}
             mapboxApiAccessToken={MAPBOX_TOKEN}
         />

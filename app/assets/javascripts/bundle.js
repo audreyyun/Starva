@@ -2092,8 +2092,8 @@ var RouteCreationMap = function RouteCreationMap(_ref) {
   var MAPBOX_TOKEN = _ref.MAPBOX_TOKEN;
 
   var _React$useState = react__WEBPACK_IMPORTED_MODULE_0__.useState({
-    latitude: 37.7577,
-    longitude: -122.4376,
+    latitude: 34.0746,
+    longitude: -118.3296,
     zoom: 8
   }),
       _React$useState2 = _slicedToArray(_React$useState, 2),
@@ -2103,7 +2103,7 @@ var RouteCreationMap = function RouteCreationMap(_ref) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_map_gl__WEBPACK_IMPORTED_MODULE_2__.default, _extends({}, viewport, {
     width: "100vw",
     height: "100vh",
-    mapStyle: "mapbox://styles/mapbox/dark-v9",
+    mapStyle: "mapbox://styles/mapbox/light-v9",
     onViewportChange: function onViewportChange(nextViewport) {
       return setViewport(nextViewport);
     },
@@ -2127,6 +2127,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _RouteCreationMap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./RouteCreationMap */ "./frontend/components/RouteMap/RouteCreationMap.jsx");
 /* harmony import */ var react_map_gl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-map-gl */ "./node_modules/react-map-gl/dist/esm/index.js");
+/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Navbar */ "./frontend/components/Navbar/index.js");
+/* harmony import */ var _actions_session_actions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../actions/session_actions */ "./frontend/actions/session_actions.js");
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
@@ -2146,25 +2148,35 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
+
 var RouteMap = function RouteMap() {
   var _React$useState = react__WEBPACK_IMPORTED_MODULE_0__.useState({
-    latitude: 37.7577,
-    longitude: -122.4376,
-    zoom: 8
+    latitude: 34.0746,
+    longitude: -118.3296,
+    zoom: 11
   }),
       _React$useState2 = _slicedToArray(_React$useState, 2),
       viewport = _React$useState2[0],
       setViewport = _React$useState2[1];
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_map_gl__WEBPACK_IMPORTED_MODULE_2__.default, _extends({}, viewport, {
+  var navbarProps = {
+    loginBtnClass: "nav-btn-primary",
+    loginBtnLabel: "Log Out",
+    loginBtnPath: "/logout",
+    isAuthenticated: true
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_3__.default, _extends({
+    logout: _actions_session_actions__WEBPACK_IMPORTED_MODULE_4__.default
+  }, navbarProps)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_map_gl__WEBPACK_IMPORTED_MODULE_2__.default, _extends({}, viewport, {
     width: "100vw",
     height: "100vh",
-    mapStyle: "mapbox://styles/mapbox/dark-v9",
+    mapStyle: "mapbox://styles/mapbox/light-v9",
     onViewportChange: function onViewportChange(nextViewport) {
       return setViewport(nextViewport);
     },
     mapboxApiAccessToken: 'pk.eyJ1IjoiYXVkcmV5eXVuIiwiYSI6ImNra2U3a3JubzBicDYybmpuNWFsZ3I1bnQifQ.rUMZUiM4ybo_eqcm1wcYiQ'
-  }));
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (RouteMap);
