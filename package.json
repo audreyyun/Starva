@@ -8,6 +8,7 @@
     "@mapbox/mapbox-gl-draw": "^1.2.0",
     "babel-loader": "^8.2.2",
     "mapbox-gl": "^2.0.1",
+    "process": "^0.11.10",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-map-gl": "^6.0.3",
@@ -27,7 +28,9 @@
     "lib": "lib",
     "test": "test"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "css-loader": "^5.0.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack --mode=development --watch",

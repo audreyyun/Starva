@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
-import { RouteCreationMap } from './RouteCreationMap'
+import {RouteCreationMap} from './RouteCreationMap'
 import MapGL from 'react-map-gl'
 import Navbar from '../Navbar'
 import {logout} from '../../actions/session_actions'

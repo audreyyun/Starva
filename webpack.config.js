@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
     context: __dirname,
@@ -21,9 +22,28 @@ module.exports = {
                         presets: ['@babel/env', '@babel/react']
                     }
                 },
-            }
+            },
+            {
+                test: /\.css$/,
+                use: {
+                    loader: 'css-loader',
+                }
+            },
+            {
+                test: /\.scss$/,
+                use: [
+                    'style-loader',
+                    'postcss-loader',
+                    'sass-loader',
+                ]
+            },
         ]
     },
     devtool: 'source-map',
+    plugins: [
+        new webpack.ProvidePlugin({
+            process: 'process/browser',
+        })
+    ],
     
 };
