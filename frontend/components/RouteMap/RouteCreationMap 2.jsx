@@ -2,13 +2,12 @@ import React from "react";
 import ReactDOM from 'react-dom';
 import MapGL from 'react-map-gl';
 
-
 export const RouteCreationMap = ({ MAPBOX_TOKEN}) => {
 
     const [viewport, setViewport] = React.useState({
         latitude: 34.0746,
         longitude: -118.3296,
-        zoom: 11
+        zoom: 8
     });
 
     return (

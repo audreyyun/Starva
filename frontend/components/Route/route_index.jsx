@@ -17,6 +17,7 @@ class RouteIndex extends React.Component {
             loginBtnClass: "nav-btn-primary",
             loginBtnLabel: "Log Out",
             loginBtnPath: "/logout",
+            myRoutes: "My Routes",
             isAuthenticated: true,
         }
         
@@ -28,6 +29,7 @@ class RouteIndex extends React.Component {
         return ( 
             <div className="routes-index-pg-container">
                 <Navbar logout={this.props.logout} {...navbarProps} />
+                <div className="splash-border"></div>
                 <ul>{routeItems}</ul>
             </div>
         )

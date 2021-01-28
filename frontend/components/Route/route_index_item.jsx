@@ -13,7 +13,7 @@ class RouteIndexItem extends React.Component {
                     <div>{this.props.route.id}</div>
                     <div>{this.props.route.route_name}</div>
                     <div>{this.props.route.distance}</div>
-                    <div>{this.props.route.activity}</div>
+                    <div>{this.props.route.elevation}</div>
                 </Link>
             </li>
         )

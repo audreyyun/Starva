@@ -10,7 +10,7 @@ class DashboardIndex extends React.Component {
     render() { 
         const navbarProps = 
             {
-                loginBtnClass: "nav-btn-primary",
+                loginBtnClass: "nav-btn-secondary",
                 loginBtnLabel: "Log Out",
                 loginBtnPath: "/logout",
                 isAuthenticated: true,
@@ -20,6 +20,7 @@ class DashboardIndex extends React.Component {
             <div>
                 <div className="dashboard-border">
                     <Navbar logout={this.props.logout} {...navbarProps} />
+                    <div className="splash-border"></div>
                     <h1>Welcome to Dashboard page</h1>
                     
                 </div>
