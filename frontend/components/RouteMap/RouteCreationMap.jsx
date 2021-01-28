@@ -5,7 +5,7 @@ import mapboxgl from 'mapbox-gl';
 import Directions from 'react-map-gl-directions';
 
 
-export const RouteCreationMap = ({ MAPBOX_TOKEN}) => {
+export const RouteCreationMap = () => {
     const mapRef = useRef();
 
     const [viewport, setViewport] = React.useState({
@@ -21,14 +21,10 @@ export const RouteCreationMap = ({ MAPBOX_TOKEN}) => {
             height="100vh"
             mapStyle="mapbox://styles/mapbox/light-v9"
             onViewportChange={nextViewport => setViewport(nextViewport)}
-            mapboxApiAccessToken={MAPBOX_TOKEN}
+            mapboxApiAccessToken={window.mapboxApiAccessToken}
             ref={mapRef}
         >
-            <Directions mapRef={mapRef} mapboxApiAccessToken={MAPBOX_TOKEN} profile="mapbox/cycling"/>
+            <Directions mapRef={mapRef} mapboxApiAccessToken={window.mapboxApiAccessToken} profile="mapbox/cycling"/>
         </MapGL>
     );
-}
-
-RouteCreationMap.defaultProps = {
-    MAPBOX_TOKEN: 'pk.eyJ1IjoiYXVkcmV5eXVuIiwiYSI6ImNra2U3a3JubzBicDYybmpuNWFsZ3I1bnQifQ.rUMZUiM4ybo_eqcm1wcYiQ'
 }
