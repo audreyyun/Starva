@@ -10,6 +10,10 @@ button:focus {
     text-decoration: none;
 }
 
+button:hover { 
+    filter: brightness(.9)
+}
+
 .btn-primary { 
     background-color: #fc5200;
     border-color: #fc5200;
@@ -20,6 +24,7 @@ button:focus {
     border-radius: 3px;
     height: 40px;
 }
+
 
 .btn-secondary { 
     background-color: #fff;

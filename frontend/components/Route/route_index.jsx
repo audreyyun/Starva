@@ -14,10 +14,9 @@ class RouteIndex extends React.Component {
     render () { 
         const navbarProps =
         {
-            loginBtnClass: "nav-btn-primary",
+            loginBtnClass: "nav-btn-secondary",
             loginBtnLabel: "Log Out",
             loginBtnPath: "/logout",
-            myRoutes: "My Routes",
             isAuthenticated: true,
         }
         

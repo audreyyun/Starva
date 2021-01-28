@@ -10,10 +10,10 @@ class RouteIndexItem extends React.Component {
         return (
             <li className="route-index-item">
                 <Link to={`/routes/${this.props.route.id}`}>
-                    <div>{this.props.route.id}</div>
-                    <div>{this.props.route.route_name}</div>
-                    <div>{this.props.route.distance}</div>
-                    <div>{this.props.route.elevation}</div>
+                    <div className= "id">{this.props.route.id}</div>
+                    <div className= "route-name">{this.props.route.route_name}</div>
+                    <div className= "distance">{this.props.route.distance}</div>
+                    <div className= "elevation">{this.props.route.elevation}</div>
                 </Link>
             </li>
         )

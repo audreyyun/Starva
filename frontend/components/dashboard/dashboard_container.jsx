@@ -8,7 +8,6 @@ const msp = (state, ownProps) => {
 };
 
 const mdp = dispatch => {
-    // debugger
     return {
         logout: () => dispatch(logout()),
     };

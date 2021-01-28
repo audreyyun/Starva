@@ -12,7 +12,7 @@ import {useDispatchMap} from './map'
 
   const navbarProps =
     {
-        loginBtnClass: "nav-btn-primary",
+        loginBtnClass: "nav-btn-secondary",
         loginBtnLabel: "Log Out",
         loginBtnPath: "/logout",
         isAuthenticated: true,
