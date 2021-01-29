@@ -1,7 +1,7 @@
 import React, {useRef} from "react";
-import MapGL from 'react-map-gl/dist/es6/index.js'
-import mapboxgl from '!mapbox-gl';
-import Directions from 'react-map-gl-directions';
+// import MapGL from 'react-map-gl/dist/es6/index.js'
+// import mapboxgl from '!mapbox-gl';
+// import Directions from 'react-map-gl-directions';
 
 
 export const RouteCreationMap = () => {
