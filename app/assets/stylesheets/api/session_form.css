@@ -25,7 +25,7 @@
     width: 300px;
     height: 392.97px;
     align-items: end;
-    background-color:rgb(0, 0, 0, .7);
+    background-color:rgba(0, 0, 0, .7);
     padding: 0 50px;
     padding-bottom: 80px;
     justify-content: center;
@@ -98,7 +98,7 @@
     outline: none;
     box-shadow: 1px 1px 3px 3px rgba(255,255,255,1);
     border: none;
-    color: rgba(0, 0, 0)
+    color: rgb(0, 0, 0)
 }
 
 .session-form > h1 {
