@@ -1,5 +1,7 @@
 import React from 'react';
-import Navbar from '../Navbar'
+import Navbar from '../Navbar';
+import { Link } from 'react-router-dom';
+import Button from '../Button';
 
 
 class RouteIndex extends React.Component { 
@@ -26,10 +28,21 @@ class RouteIndex extends React.Component {
 
 
         return ( 
-            <div className="routes-index-pg-container">
+            <div id="routes-index-pg-container">
                 <Navbar logout={this.props.logout} {...navbarProps} />
                 <div className="splash-border"></div>
-                <ul>{routeItems}</ul>
+                <div className="routes-index-body">
+                    <div className="routes-index-row">
+                        <h1 className="routes-index-title">My Routes</h1>
+                    </div>
+
+                    <Link className="create-route-btn" to="/roues/new">
+                        <Button className="nav-btn-primary" formType="Create a Route" />
+                    </Link> 
+                    <ul>{routeItems}</ul>
+                
+                </div>
+
             </div>
         )
     }

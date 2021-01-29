@@ -5,3 +5,28 @@ right: 0;
 left: 0;
 bottom: 0;
 }
+
+.routes-index-pg-container { 
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+   margin-top: 0em;
+   align-items: center;
+}
+
+.routes-index-body { 
+    margin: auto;
+    width: 70%;
+}
+
+.routes-index-body h1 { 
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 41px;
+}
+
+.routes-index-row {
+    width: auto;
+    margin-top: 35px;
+}
