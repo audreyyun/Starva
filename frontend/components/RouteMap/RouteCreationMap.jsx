@@ -5,7 +5,6 @@ import Directions from 'react-map-gl-directions';
 
 
 export const RouteCreationMap = () => {
-    debugger
     const mapRef = useRef();
 
     const [viewport, setViewport] = React.useState({
