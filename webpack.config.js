@@ -20,7 +20,7 @@ module.exports = {
                     loader: 'babel-loader',
                     options: {
                         presets: ['@babel/env', '@babel/react'],
-                        ignore: ['./node_modules/mapbox-gl/mapbox-gl.js']
+                        ignore: ['./node_modules/mapbox-gl/mapbox-gl.js', './node_modules/react-map-gl/index.js', './node_modules/react-map-gl-directions/index.js']
                     }
                 },
             },
