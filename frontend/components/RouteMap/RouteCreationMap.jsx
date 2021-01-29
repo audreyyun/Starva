@@ -1,11 +1,11 @@
 import React, {useRef} from "react";
-import ReactDOM from 'react-dom';
 import MapGL from 'react-map-gl';
 import mapboxgl from 'mapbox-gl';
 import Directions from 'react-map-gl-directions';
 
 
 export const RouteCreationMap = () => {
+    debugger
     const mapRef = useRef();
 
     const [viewport, setViewport] = React.useState({

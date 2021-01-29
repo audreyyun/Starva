@@ -1,6 +1,5 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
-import {RouteCreationMap} from './RouteCreationMap'
 import MapGL from 'react-map-gl'
 import Navbar from '../Navbar'
 import {logout} from '../../actions/session_actions'
@@ -8,7 +7,7 @@ import {logout} from '../../actions/session_actions'
 // import DrawControl from "@mapbox/mapbox-gl-draw";
 import {useDispatchMap} from './map'
 // import { Markers } from "./Markers";
-
+import {RouteCreationMap} from "./RouteCreationMap"
 
   const navbarProps =
     {

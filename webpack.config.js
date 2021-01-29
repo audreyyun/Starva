@@ -9,11 +9,7 @@ module.exports = {
         filename: 'bundle.js'
     },
     resolve: {
-        extensions: ['.js', '.jsx', '*'],
-        alias: {      
-            'mapbox-gl': 'mapbox-gl/dist/mapbox-gl.js',      
-            '@mapbox/mapbox-gl-draw': '@mapbox/mapbox-gl-draw/dist/mapbox-gl-draw.js',
-        }
+        extensions: ['.js', '.jsx', '*']
     },
     module: {
         rules: [
@@ -41,14 +37,12 @@ module.exports = {
                     'sass-loader',
                 ]
             },
-        ],
-        noParse: /(mapbox-gl)\.js$/
+        ]
     },
     devtool: 'source-map',
     plugins: [
         new webpack.ProvidePlugin({
             process: 'process/browser',
         })
-    ],
-    
+    ]
 };

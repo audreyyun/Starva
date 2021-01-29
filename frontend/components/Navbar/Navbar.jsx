@@ -20,7 +20,7 @@ const Navbar = (props) => {
                     <Link to="/" onClick={(event) => event.preventDefault()} className="navbar-routes drop-btn">Routes</Link>
                     <div className="dropdown-content">
                         <div>
-                                <Link className="navbar-routes" to="/routes/new">Create Route</Link>
+                                <Link className="navbar-routes" to="/routes/new">Create a Route</Link>
                         </div>
                         <div>
                                 <Link className="navbar-routes" to="/routes">My Routes</Link>
