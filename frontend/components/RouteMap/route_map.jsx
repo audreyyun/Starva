@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
-// import MapGL from 'react-map-gl'
+import MapGL from 'react-map-gl'
 import Navbar from '../Navbar'
 import {logout} from '../../actions/session_actions'
 // import '@mapbox/mapbox-gl-draw/dist/mapbox-gl-draw.css'

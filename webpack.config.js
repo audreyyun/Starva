@@ -9,7 +9,7 @@ module.exports = {
         filename: 'bundle.js'
     },
     resolve: {
-        extensions: ['.js', '.jsx', '*']
+        extensions: ['.js', '.jsx', '*'],
     },
     module: {
         rules: [
@@ -19,7 +19,8 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        presets: ['@babel/env', '@babel/react']
+                        presets: ['@babel/env', '@babel/react'],
+                        ignore: ['./node_modules/mapbox-gl/mapbox-gl.js']
                     }
                 },
             },
@@ -43,6 +44,9 @@ module.exports = {
     plugins: [
         new webpack.ProvidePlugin({
             process: 'process/browser',
+        }),
+        new webpack.DefinePlugin({
+            'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
         })
     ]
 };
