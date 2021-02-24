@@ -8,13 +8,15 @@ import RouteMapContainer from './RouteMap/route_map_container';
 // import NavbarContainer from './Navbar/navbar_container';
 import {AuthRoute, ProtectedRoute} from '../util/route_utils';
 import SplashPage from './splash_page/splash_page';
+import SearchContainer from './Search/SearchContainer';
 
 const App = () => (
     <div>
         <Route exact path="/" component={SplashPage}/>
         <ProtectedRoute exact path="/dashboard" component={DashboardIndexContainer}/>
         <ProtectedRoute exact path="/routes/new" component={RouteMapContainer}/>
-        <ProtectedRoute exact path="/routes" component={RouteIndexContainer}/>
+        {/* <ProtectedRoute exact path="/routes" component={RouteIndexContainer}/> */}
+        <ProtectedRoute exact path="/routes/" component={SearchContainer}/>
         <AuthRoute path="/signup" component={SignUpFormContainer}/>
         <AuthRoute path="/login" component={LogInFormContainer}/>
     </div>
