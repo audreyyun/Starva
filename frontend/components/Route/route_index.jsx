@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../Navbar';
 import { Link } from 'react-router-dom';
 import Button from '../Button';
+import RouteIndexItemContainer from './route_index_item_container'
 
 
 class RouteIndex extends React.Component { 
@@ -10,7 +11,7 @@ class RouteIndex extends React.Component {
     }
 
     componentDidMount() { 
-        this.props.fetchRoutes()
+        this.props.fetchRoutes();
     }
 
     render () { 
@@ -22,9 +23,11 @@ class RouteIndex extends React.Component {
             isAuthenticated: true,
         }
         
-        const routeItems = this.props.routes.map( (route) => (
-            <RouteIndexItem key={route.id} route={route}/> 
+        const routeItems = Object.values(this.props.routes).map( (route) => (
+            <RouteIndexItemContainer key={route.id} route={route}/> 
         ));
+
+        
 
 
         return ( 

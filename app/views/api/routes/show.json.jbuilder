@@ -1,1 +1,1 @@
-jason.partial! 'api/routes/route'
+json.partial! 'api/routes/route'

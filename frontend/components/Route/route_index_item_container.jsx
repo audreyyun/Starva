@@ -1,11 +1,12 @@
 
 import { connect } from "react-redux"; 
-import { deleteRoute } from "../../actions/route_actions"
+import { deleteRoute, fetchRoute } from "../../actions/route_actions"
 import RouteIndexItem from "./route_index_item";
 
 
 const mdp = dispatch => { 
     return { 
+        fetchRoute: routeId => dispatch(fetchRoute(routeId)),
         deleteRoute: routeId => dispatch(deleteRoute(routeId))
     }
 }

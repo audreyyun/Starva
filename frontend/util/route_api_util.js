@@ -15,7 +15,7 @@ export const fetchRoute = (routeId) => (
 export const createRoute = (route) => (
     $.ajax({
         method: "POST",
-        url: `/api/routes${route.id}`,
+        url: `/api/routes`,
         data: { route }
     })
 );

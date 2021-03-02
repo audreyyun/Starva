@@ -6,7 +6,7 @@ class Api::RoutesController < ApplicationController
     end
     
     def create
-        @route = Route.new(route_params)
+        @route = Route.new(routes_params)
         if @route.save
             render 'api/routes/show'
         else
@@ -23,7 +23,7 @@ class Api::RoutesController < ApplicationController
 
     def update
         @route = Route.find(params[:id])
-        if @route.update_attributes(route_params)
+        if @route.update_attributes(routes_params)
             render `api/routes/#{route.id}`
         else
             render json: @route.errors.full_messages, status: 422
@@ -43,7 +43,7 @@ class Api::RoutesController < ApplicationController
     private 
 
     def routes_params
-        params.require(:route).permit(:id, :activity, :description, :distance, :end_lat, :end_long, :start_long, :start_lat, :athlete_id)
+        params.require(:route).permit(:id, :route_name, :activity, :description, :distance, :end_lat, :end_long, :start_long, :start_lat, :athlete_id)
     end
 
 end
