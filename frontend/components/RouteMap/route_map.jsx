@@ -88,9 +88,14 @@ class RouteMap extends React.Component {
             debugger
 
             this.props.action(route)
+            .then(() => {
+                this.props.history.push({ 
+                    pathname: `/routes/`
+                })
+            })
             // .then((savedRoute) => {
             //     this.props.history.push({ 
-            //         pathname: `/api/routes/${savedRoute.route.id}`
+            //         pathname: `/routes/${savedRoute.route.id}`
             //     })
             // })
         }
