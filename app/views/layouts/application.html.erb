@@ -2,11 +2,16 @@
 <html>
   <head>
     <title>Starva</title>
+    <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=" + Rails.application.credentials.google[:api_key] + "&libraries=geometry,places" %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <script type="text/javascript">
       window.mapboxApiAccessToken = "<%= Rails.application.credentials.mapbox[:api_key] %>"
+    </script>
+
+    <script type="text/javascript">
+      window.googleAPIKey = "<%= Rails.application.credentials.google[:api_key] %>"
     </script>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>

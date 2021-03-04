@@ -1,7 +1,7 @@
 import React from "react";
-import RouteMap from "../RouteMap"
+import RouteMap from "../RouteMap/route_map_container"
 
-const Search = () => (
+export const Search = () => (
     <div>
         <RouteMap />
         <RouteIndex />

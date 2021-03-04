@@ -31,10 +31,12 @@ export const fetchRoute = (id) => dispatch => (
         .then(route => dispatch(receiveRoute(route)))
 );
 
-export const createRoute = (newRoute) => dispatch => (
-    RouteAPIUtil.createRoute(newRoute)
+export const createRoute = (newRoute) => dispatch => {
+    debugger
+    return (RouteAPIUtil.createRoute(newRoute)
         .then(route => dispatch(receiveRoute(route)))
-);
+    )
+};
 
 export const updateRoute = (editRoute) => dispatch => (
     RouteAPIUtil.updateRoute(editRoute)
