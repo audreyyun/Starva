@@ -83,7 +83,7 @@ class RouteMap extends React.Component {
                 route: google.maps.geometry.encoding.encodePath(path),
                 start_lat: path.getArray()[0].lat(),
                 start_long: path.getArray()[0].lng(),
-                // id: 2
+                distance: this.state.distance
             }
             debugger
 
@@ -129,6 +129,7 @@ class RouteMap extends React.Component {
         return (
             <div className="create-route-sidebar">
                 <button id="save-route" onClick={this.handleSave}>Save Route</button>
+                <div>Miles: {this.state.distance}</div>
             </div>
         )
     }
