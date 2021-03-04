@@ -2,13 +2,20 @@
 import { connect } from "react-redux"; 
 import { deleteRoute, fetchRoute } from "../../actions/route_actions"
 import RouteIndexItem from "./route_index_item";
+import { logout } from "../../actions/session_actions"
 
+const msp = (state, ownProps) => { 
+    return {
+        route: state.entities.routes[ownProps.match.params.routeId]
+    }
+}
 
 const mdp = dispatch => { 
     return { 
         fetchRoute: routeId => dispatch(fetchRoute(routeId)),
-        deleteRoute: routeId => dispatch(deleteRoute(routeId))
+        deleteRoute: routeId => dispatch(deleteRoute(routeId)),
+        logout: () => dispatch(logout())
     }
 }
 
-export default connect(null, mdp)(RouteIndexItem)
+export default connect(msp, mdp)(RouteIndexItem)

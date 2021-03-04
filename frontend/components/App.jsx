@@ -10,6 +10,7 @@ import DashboardIndexContainer from './dashboard/dashboard_container';
 
 import RouteMapContainer from './RouteMap/route_map_container';
 import RouteIndexItemContainer from './Route/route_index_item_container';
+import RouteIndexItem from './Route/route_index_item';
 // import NavbarContainer from './Navbar/navbar_container';
 import SearchContainer from './Search/SearchContainer';
 

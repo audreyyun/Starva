@@ -1,8 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { fetchRoutes, createRoute, updateRoute } from '../../actions/route_actions';
+import { fetchRoutes, createRoute, updateRoute, deleteRoute } from '../../actions/route_actions';
 import RouteIndex from './route_index';
 import { logout } from "../../actions/session_actions"
+import { deleteRoute } from '../../util/route_api_util';
 
 const msp = (state, ownProps) => {
     return {
@@ -15,6 +16,7 @@ const mdp = dispatch => {
         fetchRoutes: () => dispatch(fetchRoutes()),
         createRoute: route => dispatch(createRoute(route)),
         updateRoute: route => dispatch(updateRoute(route)),
+        deleteRoute: route => dispatch(deleteRoute(route)),
         logout: () => dispatch(logout())
     };
 };

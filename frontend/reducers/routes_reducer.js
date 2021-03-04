@@ -3,7 +3,7 @@ import { RECEIVE_ALL_ROUTES, RECEIVE_ROUTE, REMOVE_ROUTE } from '../actions/rout
 const RoutesReducer = (state = {}, action) => {
     Object.freeze(state);
 
-    debugger
+    // debugger
     switch (action.type) {
         case RECEIVE_ALL_ROUTES:
             return action.routes;
