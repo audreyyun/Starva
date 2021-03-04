@@ -1,6 +1,4 @@
 import {connect} from "react-redux"
-import { updateRoute } from "../../actions/route_actions"
-import { fetchRoute } from "../../util/route_api_util";
 import { fetchRoute, updateRoute } from "../../actions/route_actions";
 import RouteMap from "./route_map"
 

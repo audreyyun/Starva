@@ -1,4 +1,5 @@
 import React from 'react'
+import { updateRoute } from '../../util/route_api_util';
 // import { Route } from 'react-router-dom'
 import Navbar from '../Navbar'
 
@@ -12,27 +13,43 @@ class RouteMap extends React.Component {
 
         this.state = { 
             route: {name: ""},
+            encodedRoute: null,
             distance: 0
         }
     }
 
     componentDidMount() {
-        // if (!this.props.route.id) { 
-        //     this.initializeMap();
-        // }
+        debugger
+        if (!this.props.routeId) { 
+            this.initializeMap();
+        } else { 
+            this.initializeMap(() => { 
+                this.props.fetchRoute(this.props.routeId).then(action => { 
+                    this.setState({ 
+                        route: action.route, 
+                        encodedRoute: action.route.route
+                    })
+                })
+            })
+        }
 
-        this.initializeMap();
+        // this.initializeMap();
     }
 
-    initializeMap() { 
+    initializeMap(cb) { 
         // set the map to show SF
         const mapOptions = {
             center: { lat: 34.0745, lng: -118.3294 }, // this is SF
             zoom: 7
         };
 
+        
         // wrap this.mapNode in a Google Map
         this.map = new google.maps.Map(this.mapNode, mapOptions);
+
+        if (cb) { 
+            google.maps.event.addListenerOnce(this.map, 'tilesloaded', cb);
+        }
 
         this.poly = new google.maps.Polyline({
             strokeColor: "#000000",
@@ -42,6 +59,12 @@ class RouteMap extends React.Component {
         });
 
         this.poly.setMap(this.map);
+
+        if (this.state.encodedRoute) {
+            this.poly.setPath(google.maps.geometry.decodePath(this.state.encodedRoute));
+
+        }
+        
         // Add a listener for the click event
         this.map.addListener("click", this.addLatLng);
     }
