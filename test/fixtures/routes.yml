@@ -8,6 +8,7 @@
 #  distance    :float
 #  end_lat     :float
 #  end_long    :float
+#  route       :string           not null
 #  route_name  :string           not null
 #  start_lat   :float
 #  start_long  :float

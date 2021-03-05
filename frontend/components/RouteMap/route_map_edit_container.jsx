@@ -2,10 +2,12 @@ import {connect} from "react-redux"
 import { fetchRoute, updateRoute } from "../../actions/route_actions";
 import RouteMap from "./route_map"
 
-const msp = (state, ownProps) => ({
-    athleteId: state.session.id, 
-    routeId: ownProps.match.params.routeId
-});
+const msp = (state, ownProps) => {
+    return  {
+        athleteId: state.session.id, 
+        routeId: ownProps.match.params.routeId
+    }
+};
 
 const mdp = dispatch => ({
     fetchRoute: routeId => dispatch(fetchRoute(routeId)),

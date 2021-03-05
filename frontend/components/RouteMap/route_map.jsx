@@ -1,11 +1,10 @@
 import React from 'react'
-import { updateRoute } from '../../util/route_api_util';
-// import { Route } from 'react-router-dom'
 import Navbar from '../Navbar'
 
 
 class RouteMap extends React.Component {
     constructor(props) { 
+        debugger
         super(props);
         this.addLatLng = this.addLatLng.bind(this);
         this.initializeMap = this.initializeMap.bind(this)
@@ -19,12 +18,13 @@ class RouteMap extends React.Component {
     }
 
     componentDidMount() {
-        debugger
         if (!this.props.routeId) { 
+            debugger
             this.initializeMap();
         } else { 
             this.initializeMap(() => { 
                 this.props.fetchRoute(this.props.routeId).then(action => { 
+                    debugger
                     this.setState({ 
                         route: action.route, 
                         encodedRoute: action.route.route
@@ -88,10 +88,10 @@ class RouteMap extends React.Component {
         const encodeString = google.maps.geometry.encoding.encodePath(path);
 
         //For edits to the polyline
-        // google.maps.event.addListener(this.poly, "dragend", this.polyPathChanged);
-        // google.maps.event.addListener(this.poly.getPath(), "insert_at", this.polyPathChanged);
-        // google.maps.event.addListener(this.poly.getPath(), "remove_at", this.polyPathChanged);
-        // google.maps.event.addListener(this.poly.getPath(), "set_at", this.polyPathChanged);
+        // google.maps.event.addListener(this.poly, "dragend", this.changedRoute);
+        // google.maps.event.addListener(this.poly.getPath(), "insert_at", this.changedRoute);
+        // google.maps.event.addListener(this.poly.getPath(), "remove_at", this.changedRoute);
+        // google.maps.event.addListener(this.poly.getPath(), "set_at", this.changedRoute);
     }
 
     handleSave() { 
@@ -106,7 +106,8 @@ class RouteMap extends React.Component {
                 route: google.maps.geometry.encoding.encodePath(path),
                 start_lat: path.getArray()[0].lat(),
                 start_long: path.getArray()[0].lng(),
-                distance: this.state.distance
+                distance: this.state.distance,
+                id: this.props.routeId
             }
             debugger
 
@@ -157,6 +158,17 @@ class RouteMap extends React.Component {
         )
     }
 
+    // changedRoute() { 
+    //     const path = this.poly.getPath().getArray();
+    //     this.setState({
+    //         totalMiles: Number.parseFloat(
+    //             google.maps.geometry.spherical.computeLength(path) / 1600
+    //         ).toFixed(2)
+    //     });
+
+
+
+    // }
 
 }
 
