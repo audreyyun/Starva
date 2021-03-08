@@ -9,6 +9,8 @@ class RouteMap extends React.Component {
         this.addLatLng = this.addLatLng.bind(this);
         this.initializeMap = this.initializeMap.bind(this)
         this.handleSave = this.handleSave.bind(this);
+        this.createRoute = this.createRoute.bind(this);
+        // this.handleClick = this.handleClick.bind(this)
 
         this.state = { 
             route: {name: ""},
@@ -29,6 +31,7 @@ class RouteMap extends React.Component {
                         route: action.route, 
                         encodedRoute: action.route.route
                     })
+                    this.createRoute();
                 })
             })
         }
@@ -38,8 +41,9 @@ class RouteMap extends React.Component {
 
     initializeMap(cb) { 
         // set the map to show SF
+        debugger
         const mapOptions = {
-            center: { lat: 34.0745, lng: -118.3294 }, // this is SF
+            center: { lat: 34.0745, lng: -118.3294 },
             zoom: 7
         };
 
@@ -48,9 +52,29 @@ class RouteMap extends React.Component {
         this.map = new google.maps.Map(this.mapNode, mapOptions);
 
         if (cb) { 
+            debugger
             google.maps.event.addListenerOnce(this.map, 'tilesloaded', cb);
         }
 
+        // this.poly = new google.maps.Polyline({
+        //     strokeColor: "#000000",
+        //     strokeOpacity: 1.0,
+        //     strokeWeight: 3,
+        //     editable: true
+        // });
+
+        // this.poly.setMap(this.map);
+
+        // if (this.state.encodedRoute) {
+        //     debugger
+        //     this.poly.setPath(google.maps.geometry.decodePath(this.state.encodedRoute));
+        // }
+        
+        // Add a listener for the click event
+        this.map.addListener("click", this.handleClick);
+    }
+
+    createRoute() { 
         this.poly = new google.maps.Polyline({
             strokeColor: "#000000",
             strokeOpacity: 1.0,
@@ -61,20 +85,20 @@ class RouteMap extends React.Component {
         this.poly.setMap(this.map);
 
         if (this.state.encodedRoute) {
-            this.poly.setPath(google.maps.geometry.decodePath(this.state.encodedRoute));
-
+            debugger
+            this.poly.setPath(google.maps.geometry.encoding.decodePath(this.state.encodedRoute));
         }
-        
-        // Add a listener for the click event
-        this.map.addListener("click", this.addLatLng);
+
+        //For edits to the polyline
+        google.maps.event.addListener(this.poly, "dragend", this.changedRoute);
+        google.maps.event.addListener(this.poly.getPath(), "insert_at", this.changedRoute);
+        google.maps.event.addListener(this.poly.getPath(), "remove_at", this.changedRoute);
+        google.maps.event.addListener(this.poly.getPath(), "set_at", this.changedRoute);
     }
 
-    addLatLng(e) {
-        const path = this.poly.getPath();
-        // Because path is an MVCArray, we can simply append a new coordinate
-        // and it will automatically appear.
-        path.push(e.latLng);
-        // Add a new marker at the new plotted point on the polyline.
+    addLatLng() {
+
+        const path = this.poly.getPath().getArray();
         new google.maps.Marker({
             position: e.latLng,
             title: "#" + path.getLength(),
@@ -85,14 +109,15 @@ class RouteMap extends React.Component {
             distance: Number.parseFloat(google.maps.geometry.spherical.computeLength(path) / 1600).toFixed(2)
         });
 
-        const encodeString = google.maps.geometry.encoding.encodePath(path);
-
-        //For edits to the polyline
-        // google.maps.event.addListener(this.poly, "dragend", this.changedRoute);
-        // google.maps.event.addListener(this.poly.getPath(), "insert_at", this.changedRoute);
-        // google.maps.event.addListener(this.poly.getPath(), "remove_at", this.changedRoute);
-        // google.maps.event.addListener(this.poly.getPath(), "set_at", this.changedRoute);
     }
+
+    handleClick(e) { 
+        const path = this.poly.getPath();
+        // Because path is an MVCArray, we can simply append a new coordinate
+        // and it will automatically appear.
+        path.push(e.latLng);
+    }
+
 
     handleSave() { 
         //eventually a modal 
@@ -139,7 +164,7 @@ class RouteMap extends React.Component {
         return (
                 // ...
                 // this ref gives us access to the map dom node
-            <div>
+            <div className="route-page-container">
                 <Navbar logout={this.props.logout} {...navbarProps} />
                 <div className="create-route-container">
                     {this.renderSidebar()}
@@ -158,17 +183,14 @@ class RouteMap extends React.Component {
         )
     }
 
-    // changedRoute() { 
-    //     const path = this.poly.getPath().getArray();
-    //     this.setState({
-    //         totalMiles: Number.parseFloat(
-    //             google.maps.geometry.spherical.computeLength(path) / 1600
-    //         ).toFixed(2)
-    //     });
-
-
-
-    // }
+    changedRoute() { 
+        const path = this.poly.getPath().getArray();
+        this.setState({
+            totalMiles: Number.parseFloat(
+                google.maps.geometry.spherical.computeLength(path) / 1600
+            ).toFixed(2)
+        });
+    }
 
 }
 
