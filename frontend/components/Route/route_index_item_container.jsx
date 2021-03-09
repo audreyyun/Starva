@@ -6,13 +6,15 @@ import { logout } from "../../actions/session_actions"
 
 const msp = (state, ownProps) => { 
     return {
-        route: state.entities.routes[ownProps.match.params.routeId]
+        routeId: ownProps.match.params.routeId,
+        route: state.entities.routes[ownProps.match.params.routeId],
+        sessionId: state.session.id
     }
 }
 
 const mdp = dispatch => { 
     return { 
-        fetchRoute: routeId => dispatch(fetchRoute(routeId)),
+        action: routeId => dispatch(fetchRoute(routeId)),
         deleteRoute: routeId => dispatch(deleteRoute(routeId)),
         logout: () => dispatch(logout())
     }

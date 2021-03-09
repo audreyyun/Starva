@@ -15,6 +15,7 @@ class RouteIndex extends React.Component {
     componentDidMount() { 
         this.props.fetchRoutes();
     }
+    
 
     render () { 
 
@@ -34,16 +35,13 @@ class RouteIndex extends React.Component {
                 route={route}
                 />  */}
                 <Link to={`/routes/${route.id}`}>
-                <div className="route-name">{route.route_name}</div>
+                    <RouteIndexItem route={route} action={this.props.fetchRoute}/>
+                {/* <div className="route-name">{route.route_name}</div>
                 <div className="distance">{route.distance}</div>
-                <div className="elevation">{route.elevation}</div>
+                <div className="elevation">{route.elevation}</div> */}
             </Link>
             </li>
         ));
-        debugger
-        // const routeItems = this.props.routes.map( (route) => (
-        //     <RouteIndexItemContainer key={route.id} route={route}/> 
-        // ));
 
         
         if (!this.props.routes) {
@@ -65,7 +63,7 @@ class RouteIndex extends React.Component {
                         <Link className="create-route-btn" to="/roues/new">
                             <Button className="nav-btn-primary" formType="Create a Route" />
                         </Link> 
-                        <ul>{routeItems}</ul>
+                        <ul className="routes-list">{routeItems}</ul>
                     
                     </div>
 

@@ -114,12 +114,6 @@ class RouteMap extends React.Component {
     // }
     addLatLng() {
         const path = this.poly.getPath().getArray();
-        
-        // new google.maps.Marker({
-        //     position: e.latLng,
-        //     title: "#" + path.getLength(),
-        //     map: this.map,
-        // });
 
         this.setState({ //spherical computes geodesic angles, distances, and areas
             distance: Number.parseFloat(google.maps.geometry.spherical.computeLength(path) / 1600).toFixed(2)
@@ -130,13 +124,13 @@ class RouteMap extends React.Component {
     handleClick(e) { 
         const path = this.poly.getPath();
         // Because path is an MVCArray, we can simply append a new coordinate
-        // and it will automatically appear.
+        // and will automatically appear.
         path.push(e.latLng);
     }
 
 
     handleSave() { 
-        //eventually a modal 
+        // eventually a modal?
         const title = prompt("Route name(required)", this.state.route.route_name);
         const path = this.poly.getPath();
 
@@ -155,16 +149,11 @@ class RouteMap extends React.Component {
                 route.id = this.props.routeId;
             }
 
-            this.props.action(route).then(() => {
+            this.props.action(route).then((route) => {
                 this.props.history.push({ 
-                    pathname: `/routes/`
+                    pathname: `/routes/${route.route.id}`
                 })
-            })
-            // .then((savedRoute) => {
-            //     this.props.history.push({ 
-            //         pathname: `/routes/${savedRoute.route.id}`
-            //     })
-            // })
+            });
         }
 
     }
@@ -228,32 +217,5 @@ class RouteMap extends React.Component {
     }
 
 }
-
-
-            //   const navbarProps =
-//     {
-//         loginBtnClass: "nav-btn-secondary",
-//         loginBtnLabel: "Log Out",
-//         loginBtnPath: "/logout",
-//         isAuthenticated: true,
-//     }
-
-// class RouteMap extends React.Component {
-//     constructor (props) { 
-//         super(props)
-//     }
-
-    
-//     render () {
-//         return (
-//             <div id='map-container' ref='map'>
-//                 <Navbar logout={this.props.logout} {...navbarProps} />
-//                 {/* <RouteCreationMap /> */}
-//                 <div className="splash-border"></div>
-//             </div>
-//         )
-//     }
-   
-// }
 
 export default RouteMap
