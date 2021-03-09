@@ -10,7 +10,8 @@ class RouteMap extends React.Component {
         this.initializeMap = this.initializeMap.bind(this)
         this.handleSave = this.handleSave.bind(this);
         this.createRoute = this.createRoute.bind(this);
-        // this.handleClick = this.handleClick.bind(this)
+        this.handleClick = this.handleClick.bind(this);
+        this.changedRoute = this.changedRoute.bind(this);
 
         this.state = { 
             route: {name: ""},
@@ -55,20 +56,6 @@ class RouteMap extends React.Component {
             debugger
             google.maps.event.addListenerOnce(this.map, 'tilesloaded', cb);
         }
-
-        // this.poly = new google.maps.Polyline({
-        //     strokeColor: "#000000",
-        //     strokeOpacity: 1.0,
-        //     strokeWeight: 3,
-        //     editable: true
-        // });
-
-        // this.poly.setMap(this.map);
-
-        // if (this.state.encodedRoute) {
-        //     debugger
-        //     this.poly.setPath(google.maps.geometry.decodePath(this.state.encodedRoute));
-        // }
         
         // Add a listener for the click event
         this.map.addListener("click", this.handleClick);
@@ -87,9 +74,11 @@ class RouteMap extends React.Component {
         if (this.state.encodedRoute) {
             debugger
             this.poly.setPath(google.maps.geometry.encoding.decodePath(this.state.encodedRoute));
+
+            this.changedRoute();
         }
 
-        //For edits to the polyline
+        //For edits to the polyline / route
         google.maps.event.addListener(this.poly, "dragend", this.changedRoute);
         google.maps.event.addListener(this.poly.getPath(), "insert_at", this.changedRoute);
         google.maps.event.addListener(this.poly.getPath(), "remove_at", this.changedRoute);
@@ -97,8 +86,8 @@ class RouteMap extends React.Component {
     }
 
     addLatLng() {
-
         const path = this.poly.getPath().getArray();
+        
         new google.maps.Marker({
             position: e.latLng,
             title: "#" + path.getLength(),
@@ -134,10 +123,12 @@ class RouteMap extends React.Component {
                 distance: this.state.distance,
                 id: this.props.routeId
             }
-            debugger
+            
+            if (this.props.routeId) {
+                route.id = this.props.routeId;
+            }
 
-            this.props.action(route)
-            .then(() => {
+            this.props.action(route).then(() => {
                 this.props.history.push({ 
                     pathname: `/routes/`
                 })
@@ -150,6 +141,32 @@ class RouteMap extends React.Component {
         }
 
     }
+
+    changedRoute() {
+        //.getPath retrieves the path
+        const path = this.poly.getPath().getArray();
+        this.setState({
+            distance: Number.parseFloat(
+                google.maps.geometry.spherical.computeLength(path) / 1600
+            ).toFixed(2)
+        });
+
+        if (!this.starter) { 
+            this.starter = new google.maps.Marker({ 
+                position: path[0],
+                title: "START",
+                map: this.map
+            })
+
+            this.starter.addListener("click", () => { 
+                this.poly.getPath().push(this.starter.getPosition()); //Marker method 
+            })
+        } else { 
+            this.starter.setPosition(path[0]);
+            this.starter.setMap(this.map); //renders this shape on the specific map 
+        }
+    }
+
 
     render() {
 
@@ -181,15 +198,6 @@ class RouteMap extends React.Component {
                 <div>Miles: {this.state.distance}</div>
             </div>
         )
-    }
-
-    changedRoute() { 
-        const path = this.poly.getPath().getArray();
-        this.setState({
-            totalMiles: Number.parseFloat(
-                google.maps.geometry.spherical.computeLength(path) / 1600
-            ).toFixed(2)
-        });
     }
 
 }

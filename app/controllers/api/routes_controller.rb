@@ -24,7 +24,7 @@ class Api::RoutesController < ApplicationController
     def update
         @route = Route.find(params[:id])
         if @route.update_attributes(routes_params)
-            render `api/routes/#{route.id}`
+            render 'api/routes/show'
         else
             render json: @route.errors.full_messages, status: 422
         end
