@@ -23,7 +23,7 @@ class RouteMap extends React.Component {
     componentDidMount() {
         if (!this.props.routeId) { 
             debugger
-            this.initializeMap();
+            this.initializeMap(this.createRoute);
         } else { 
             this.initializeMap(() => { 
                 this.props.fetchRoute(this.props.routeId).then(action => { 
@@ -52,13 +52,16 @@ class RouteMap extends React.Component {
         // wrap this.mapNode in a Google Map
         this.map = new google.maps.Map(this.mapNode, mapOptions);
 
+        // this.elevation = new google.maps.ElevationService();
+        
+        // draw path, using visualization API and elvation service
+        //displayPathElevation(path, elevation, map) is my createRoute ()
+
         if (cb) { 
             debugger
             google.maps.event.addListenerOnce(this.map, 'tilesloaded', cb);
         }
         
-        // Add a listener for the click event
-        this.map.addListener("click", this.handleClick);
     }
 
     createRoute() { 
@@ -71,6 +74,13 @@ class RouteMap extends React.Component {
 
         this.poly.setMap(this.map);
 
+        // this.elevation.getElevationAlongPath(
+        //     { path: this.poly.getPath(),
+        //     samples: 256,
+        //     },
+        //     this.plotElevation
+        // );
+
         if (this.state.encodedRoute) {
             debugger
             this.poly.setPath(google.maps.geometry.encoding.decodePath(this.state.encodedRoute));
@@ -78,21 +88,38 @@ class RouteMap extends React.Component {
             this.changedRoute();
         }
 
+
+        // Add a listener for the click event
+        this.map.addListener("click", this.handleClick);
+
         //For edits to the polyline / route
         google.maps.event.addListener(this.poly, "dragend", this.changedRoute);
         google.maps.event.addListener(this.poly.getPath(), "insert_at", this.changedRoute);
         google.maps.event.addListener(this.poly.getPath(), "remove_at", this.changedRoute);
         google.maps.event.addListener(this.poly.getPath(), "set_at", this.changedRoute);
+    
     }
 
+    //takes array of elevationresult objects, draws the path on the map and plots the elevation profile 
+    // plotElevation() { 
+    //     if (status === 'OK') { 
+    //         const data = new google.visualization.DataTable();
+    //         data.addColumn('number', 'Elevation');
+    //         const path = this.poly.getPath().getArray();
+
+    //         for (let i = 0; i < path.length; i++) {
+    //             data.addRow(['', elevation[i].elevation])
+    //         }
+    //     }
+    // }
     addLatLng() {
         const path = this.poly.getPath().getArray();
         
-        new google.maps.Marker({
-            position: e.latLng,
-            title: "#" + path.getLength(),
-            map: this.map,
-        });
+        // new google.maps.Marker({
+        //     position: e.latLng,
+        //     title: "#" + path.getLength(),
+        //     map: this.map,
+        // });
 
         this.setState({ //spherical computes geodesic angles, distances, and areas
             distance: Number.parseFloat(google.maps.geometry.spherical.computeLength(path) / 1600).toFixed(2)
