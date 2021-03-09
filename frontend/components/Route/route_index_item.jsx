@@ -54,6 +54,11 @@ class RouteIndexItem extends React.Component {
         if (this.state.encodedRoute) {
             this.poly.setPath(google.maps.geometry.encoding.decodePath(this.state.encodedRoute));
         }
+
+
+        const mapBounds = new google.maps.LatLngBounds();
+        this.poly.getPath().forEach(location => mapBounds.extend(location));
+        this.map.fitBounds(mapBounds);
     }
 
     initializeMap(cb) {
