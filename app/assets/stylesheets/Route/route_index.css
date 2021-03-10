@@ -46,16 +46,12 @@
     height: 34px;
     font-weight: 700;
     font-size: 14px;
-    padding: 6px 16px;
-    /* min-height: 34px; */
+    padding: 6px;
+
 }
 
 @media screen and (min-width: 1500px) { 
     .routes-index-body {width: 1248px;}
-}
-
-.route-index-item { 
-    /* border: 1px solid black */
 }
 
 .routes-index-heading-row { 
@@ -83,11 +79,18 @@
     line-height: 16px;
 }
 
-a { 
+.route-index-item a { 
     text-decoration: none;
 }
 
-a:visited { 
+.route-index-item a:visited { 
     text-decoration: none;
-    decoration: none;
+}
+.route-name  { 
+    text-decoration: none;
+    color: #007FB6;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
 }
