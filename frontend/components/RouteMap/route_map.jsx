@@ -66,7 +66,7 @@ class RouteMap extends React.Component {
 
     createRoute() { 
         this.poly = new google.maps.Polyline({
-            strokeColor: "#000000",
+            strokeColor: "#FC5200",
             strokeOpacity: 1.0,
             strokeWeight: 3,
             editable: true
@@ -171,7 +171,8 @@ class RouteMap extends React.Component {
             this.starter = new google.maps.Marker({ 
                 position: path[0],
                 title: "START",
-                map: this.map
+                map: this.map, 
+                
             })
 
             this.starter.addListener("click", () => { 

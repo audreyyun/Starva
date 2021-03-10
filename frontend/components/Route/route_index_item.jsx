@@ -36,13 +36,14 @@ class RouteIndexItem extends React.Component {
 
     createRoute() {
         this.poly = new google.maps.Polyline({
-            strokeColor: "#000000",
+            strokeColor: "#FC5200",
             strokeOpacity: 1.0,
             strokeWeight: 3,
-            editable: true
+            editable: false, 
         });
 
         this.poly.setMap(this.map);
+
 
         // this.elevation.getElevationAlongPath(
         //     { path: this.poly.getPath(),
@@ -65,13 +66,15 @@ class RouteIndexItem extends React.Component {
         // set the map to show SF
         debugger
         const mapOptions = {
+            strokeColor: "#FC5200",
             center: { 
                 lat: this.props.route.start_lat,
                 lng: this.props.route.start_long
             },
             zoom: 10, 
+            disableDefaultUI: true,
+            draggable: false,
         };
-
 
         // wrap this.mapNode in a Google Map
         this.map = new google.maps.Map(this.mapNode, mapOptions);
@@ -84,14 +87,20 @@ class RouteIndexItem extends React.Component {
     }
 
     render() {
+        let month = new Date(this.props.route.created_at).getMonth() + 1;
+        let day = new Date(this.props.route.created_at).getDay();
+        let year = new Date(this.props.route.created_at).getFullYear();
 
         return (
             <div className="route-card">
-                <div className="splash-border"></div>
-                <div className="route-name">{this.props.route.route_name}</div>
-                <div className="distance">{this.props.route.distance}</div>
+                <div id='item-map-container' ref={map => this.mapNode = map}> </div>
+                <div id='route-item-info'>
+                    <div className="route-name">{this.props.route.route_name}</div>
+                    <div className="distance">{this.props.route.distance}</div>
+                </div>
+                
+                <div id="route-item-timestamp">Created on {month}/{day}/{year} </div>
 
-                <div id='map-container' ref={map => this.mapNode = map}> </div>
             </div>
         )
     }

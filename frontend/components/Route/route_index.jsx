@@ -35,11 +35,8 @@ class RouteIndex extends React.Component {
                 route={route}
                 />  */}
                 <Link to={`/routes/${route.id}`}>
-                    <RouteIndexItem route={route} action={this.props.fetchRoute}/>
-                {/* <div className="route-name">{route.route_name}</div>
-                <div className="distance">{route.distance}</div>
-                <div className="elevation">{route.elevation}</div> */}
-            </Link>
+                    <RouteIndexItem route={route} fetchRoute={this.props.fetchRoute}/>
+                </Link>
             </li>
         ));
 
@@ -56,13 +53,15 @@ class RouteIndex extends React.Component {
                     <Navbar logout={this.props.logout} {...navbarProps} />
                     <div className="splash-border"></div>
                     <div className="routes-index-body">
-                        <div className="routes-index-row">
+                        <div className="routes-index-heading-row">
                             <h1 className="routes-index-title">My Routes</h1>
+                        
+                            <Link className="create-route-btn-container" to="/routes/new">
+                                <Button className="create-route-btn" formType="Create New Route" />
+                            </Link> 
                         </div>
 
-                        <Link className="create-route-btn" to="/roues/new">
-                            <Button className="nav-btn-primary" formType="Create a Route" />
-                        </Link> 
+                        
                         <ul className="routes-list">{routeItems}</ul>
                     
                     </div>
