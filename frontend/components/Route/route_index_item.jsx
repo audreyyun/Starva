@@ -15,6 +15,7 @@ class RouteIndexItem extends React.Component {
 
         this.initializeMap = this.initializeMap.bind(this);
         this.createRoute = this.createRoute.bind(this);
+        this.handleDelete = this.handleDelete.bind(this);
     }
 
     componentDidMount() { 
@@ -86,6 +87,16 @@ class RouteIndexItem extends React.Component {
 
     }
 
+    handleDelete() { 
+        if (window.confirm("Are you sure you want to delete this route? You can not undo this action.")) { 
+            this.props.deleteRoute(this.props.routeId).then(
+                this.props.history.replace({ 
+                    pathname:`/routes`
+                })
+            )
+        }
+    }
+
     render() {
         let month = new Date(this.props.route.created_at).getMonth() + 1;
         let day = new Date(this.props.route.created_at).getDay();
@@ -97,8 +108,9 @@ class RouteIndexItem extends React.Component {
                 <div id='route-item-info'>
                     <div className="route-name">{this.props.route.route_name}</div>
                     <div className="distance">{this.props.route.distance}</div>
+                    <button className="delete-route-btn" onClick={this.handleDelete}>Delete</button>
                 </div>
-                
+
                 <div id="route-item-timestamp">Created on {month}/{day}/{year} </div>
 
             </div>
