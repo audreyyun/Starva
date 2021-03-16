@@ -17,6 +17,9 @@ import SearchContainer from './Search/SearchContainer';
 
 const App = () => (
     <div>
+
+        {/* <NavbarContainer /> */}
+
         <Route exact path="/" component={SplashPage}/>
 
         <AuthRoute path="/signup" component={SignUpFormContainer}/>

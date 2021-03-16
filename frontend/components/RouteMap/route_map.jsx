@@ -22,7 +22,7 @@ class RouteMap extends React.Component {
 
     componentDidMount() {
         if (!this.props.routeId) { 
-            debugger
+            // debugger
             this.initializeMap(this.createRoute);
         } else { 
             this.initializeMap(() => { 
@@ -37,11 +37,9 @@ class RouteMap extends React.Component {
             })
         }
 
-        // this.initializeMap();
     }
 
     initializeMap(cb) { 
-        // set the map to show SF
         debugger
         const mapOptions = {
             center: { lat: 34.0745, lng: -118.3294 },
