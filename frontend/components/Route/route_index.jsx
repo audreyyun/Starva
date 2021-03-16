@@ -9,13 +9,36 @@ import RouteIndexItem from './route_index_item'
 class RouteIndex extends React.Component { 
     constructor(props) { 
         // debugger
-        super(props)
+        super(props);
+        this.handleDelete = this.handleDelete.bind(this)
     }
 
     componentDidMount() { 
         this.props.fetchRoutes();
     }
     
+
+    handleDelete(routeId) {
+        return e => { 
+            if (window.confirm("Are you sure you want to delete this route? You can not undo this action.")) {
+                this.props.deleteRoute(routeId).then(
+                    this.props.history.replace({
+                        pathname: `/routes/`
+                    })
+                )
+            }
+        }
+
+
+        // debugger
+        // if (window.confirm("Are you sure you want to delete this route? You can not undo this action.")) {
+        //     this.props.deleteRoute(routeId).then(
+        //         this.props.history.replace({
+        //             pathname: `/routes/`
+        //         })
+        //     )
+        // }
+    }
 
     render () { 
 
@@ -34,9 +57,13 @@ class RouteIndex extends React.Component {
                 deleteRoute={this.props.deleteRoute} 
                 route={route}
                 />  */}
-                <Link to={`/routes/${route.id}`}>
-                    <RouteIndexItem route={route} fetchRoute={this.props.fetchRoute}/>
-                </Link>
+                <button className="delete-route-btn" onClick={this.handleDelete(route.id)}>Delete</button>
+                {/* <Link to={`/routes/${route.id}`}> */}
+                    <RouteIndexItem route={route}
+                     fetchRoute={this.props.fetchRoute}
+                     deleteRoute={this.props.deleteRoute}
+                     />
+                {/* </Link> */}
             </li>
         ));
 

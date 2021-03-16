@@ -32,7 +32,6 @@ export const fetchRoute = (id) => dispatch => (
 );
 
 export const createRoute = (newRoute) => dispatch => {
-    debugger
     return (RouteAPIUtil.createRoute(newRoute)
         .then(route => dispatch(receiveRoute(route)))
     )

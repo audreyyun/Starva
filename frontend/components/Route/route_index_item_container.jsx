@@ -14,7 +14,7 @@ const msp = (state, ownProps) => {
 
 const mdp = dispatch => { 
     return { 
-        action: routeId => dispatch(fetchRoute(routeId)),
+        fetchRoute: routeId => dispatch(fetchRoute(routeId)),
         deleteRoute: routeId => dispatch(deleteRoute(routeId)),
         logout: () => dispatch(logout())
     }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '../Navbar';
 import Button from '../Button';
 
@@ -22,10 +23,10 @@ class RouteIndexItem extends React.Component {
         this.initializeMap(() => { 
             if (this.state.encodedRoute) {  this.createRoute() }
             debugger
-            this.props.fetchRoute(this.props.routeId).then(fetchRoute => { 
+            this.props.fetchRoute(this.props.routeId).then(action => { 
                 this.setState({ 
-                    encodedRoute: fetchRoute.route.route, 
-                    route: fetchRoute.route
+                    encodedRoute: action.route.route, 
+                    route: action.route
                 })
                 this.createRoute();
             })
@@ -91,7 +92,7 @@ class RouteIndexItem extends React.Component {
         if (window.confirm("Are you sure you want to delete this route? You can not undo this action.")) { 
             this.props.deleteRoute(this.props.routeId).then(
                 this.props.history.replace({ 
-                    pathname:`/routes`
+                    pathname:`/routes/`
                 })
             )
         }
@@ -104,11 +105,17 @@ class RouteIndexItem extends React.Component {
 
         return (
             <div className="route-card">
-                <div id='item-map-container' ref={map => this.mapNode = map}> </div>
+                <Link to={`/routes/${this.props.route.id}`}>
+                    <div id='item-map-container' ref={map => this.mapNode = map}> </div>
+                </Link>
                 <div id='route-item-info'>
-                    <div className="route-name">{this.props.route.route_name}</div>
-                    <div className="distance">{this.props.route.distance}</div>
-                    <button className="delete-route-btn" onClick={this.handleDelete}>Delete</button>
+                    <Link to={`/routes/${this.props.route.id}`}>
+                        <div className="route-name">{this.props.route.route_name}</div>
+                    </Link>
+                    <Link to={`/routes/${this.props.route.id}`}>
+                        <div className="distance">{this.props.route.distance}</div>
+                    </Link>
+                    {/* <button className="delete-route-btn" onClick={this.handleDelete}>Delete</button> */}
                 </div>
 
                 <div id="route-item-timestamp">Created on {month}/{day}/{year} </div>

@@ -14,10 +14,10 @@ const msp = (state, ownProps) => {
 const mdp = dispatch => {
     return {
         fetchRoutes: () => dispatch(fetchRoutes()),
-        fetchRoute: routeId => dispatch(fetchRoute(routeId)),
+        // fetchRoute: routeId => dispatch(fetchRoute(routeId)),
         createRoute: route => dispatch(createRoute(route)),
         updateRoute: route => dispatch(updateRoute(route)),
-        deleteRoute: route => dispatch(deleteRoute(route)),
+        deleteRoute: routeId => dispatch(deleteRoute(routeId)),
         logout: () => dispatch(logout())
     };
 };

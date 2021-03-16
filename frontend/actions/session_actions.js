@@ -3,6 +3,7 @@ import * as SessionAPIUtil from '../util/session_api_util';
 export const RECEIVE_CURRENT_USER = 'RECEIVE_CURRENT_USER';
 export const LOGOUT_CURRENT_USER = 'LOGOUT_CURRENT_USER';
 export const RECEIVE_SESSION_ERRORS = 'RECEIVE_SESSION_ERRORS';
+export const CLEAR_SESSION_ERRORS = "CLEAR_SESSION_ERRORS";
 
 //reg action creators that return a POJO
 export const receiveCurrentUser = (user) => { 
@@ -26,6 +27,9 @@ export const receiveErrors = (errors) => { //errors is an array
     }
 }
 
+export const clearErrors = () => ({
+    type: CLEAR_SESSION_ERRORS
+})
 
 //thunks
 export const login = (user) => dispatch => { 

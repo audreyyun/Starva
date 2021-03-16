@@ -12,9 +12,6 @@ class Api::SessionsController < ApplicationController
         end
     end
 
-    def new
-        render :new
-    end
 
     def destroy
         logout!
