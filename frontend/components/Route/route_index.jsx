@@ -17,6 +17,7 @@ class RouteIndex extends React.Component {
     componentDidMount() { 
         // debugger
         this.props.fetchRoutes(this.props.sessionId);
+
     }
     
 
@@ -93,19 +94,22 @@ class RouteIndex extends React.Component {
                 <div id="routes-index-pg-container">
                     <Navbar logout={this.props.logout} {...navbarProps} />
                     <div className="splash-border"></div>
-                    <div className="routes-index-body">
-                        <div className="routes-index-heading-row">
-                            <h1 className="routes-index-title">My Routes</h1>
 
-                            <Link className="create-route-btn-container" to="/routes/new">
-                                <Button className="create-route-btn" formType="Create New Route" />
-                            </Link>
+                    <div className="routes-index-body-container">
+                        <div className="routes-index-body">
+                            <div className="routes-index-heading-row">
+                                <h1 className="routes-index-title">My Routes</h1>
+
+                                <Link className="create-route-btn-container" to="/routes/new">
+                                    <Button className="create-route-btn" formType="Create New Route" />
+                                </Link>
+                            </div>
+
+                            <div>
+                                No Routes!
+                            </div>
+
                         </div>
-
-                        <div>
-                            No Routes!
-                        </div>
-
                     </div>
 
                 </div>
@@ -115,20 +119,22 @@ class RouteIndex extends React.Component {
                 <div id="routes-index-pg-container">
                     <Navbar logout={this.props.logout} {...navbarProps} />
                     <div className="splash-border"></div>
-                    <div className="routes-index-body">
-                        <div className="routes-index-heading-row">
-                            <h1 className="routes-index-title">My Routes</h1>
+
+                    <div className="routes-index-body-container">
+                        <div className="routes-index-body">
+                            <div className="routes-index-heading-row">
+                                <h1 className="routes-index-title">My Routes</h1>
+                            
+                                <Link className="create-route-btn-container" to="/routes/new">
+                                    <Button className="create-route-btn" formType="Create New Route" />
+                                </Link> 
+                            </div>
+
+                            
+                            <ul className="routes-list">{routeItems}</ul>
                         
-                            <Link className="create-route-btn-container" to="/routes/new">
-                                <Button className="create-route-btn" formType="Create New Route" />
-                            </Link> 
                         </div>
-
-                        
-                        <ul className="routes-list">{routeItems}</ul>
-                    
                     </div>
-
                 </div>
             )
         }
