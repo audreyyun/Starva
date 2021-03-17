@@ -103,10 +103,22 @@ class RouteIndexItem extends React.Component {
         let day = new Date(this.props.route.created_at).getDay();
         let year = new Date(this.props.route.created_at).getFullYear();
 
+
+        const navbarProps =
+        {
+            loginBtnClass: "nav-btn-secondary",
+            loginBtnLabel: "Log Out",
+            loginBtnPath: "/logout",
+            isAuthenticated: true,
+        }
+
         return (
             <div className="route-card">
                 <Link to={`/routes/${this.props.route.id}`}>
-                    <div id='item-map-container' ref={map => this.mapNode = map}> </div>
+                    {/* <div className="map-preview">
+                        <img className="sprite-wrench" src={window.wrench} alt="" /> */}
+                        <div id='item-map-container' ref={map => this.mapNode = map}> </div>
+                    {/* </div> */}
                 </Link>
                 <div id='route-item-info'>
                     <Link to={`/routes/${this.props.route.id}`}>

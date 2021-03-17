@@ -16,9 +16,7 @@ import RouteIndexItem from './Route/route_index_item';
 import SearchContainer from './Search/SearchContainer';
 
 const App = () => (
-    <div>
-
-        {/* <NavbarContainer /> */}
+    <>
 
         <Route exact path="/" component={SplashPage}/>
 
@@ -32,7 +30,7 @@ const App = () => (
             <ProtectedRoute exact path="/routes/:routeId/edit" component={RouteMapEditContainer}/>
             <ProtectedRoute exact path="/routes/" component={SearchContainer}/>
         </Switch>
-    </div>
+    </>
 );
 
 export default App;

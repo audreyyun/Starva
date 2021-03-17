@@ -54,14 +54,12 @@ class RouteIndex extends React.Component {
         
             const routeItems = Object.values(this.props.routes).map( (route) => (
                 <li className="route-index-item" key={route.id}>
-
-                    <button className="delete-route-btn" onClick={this.handleDelete(route.id)}>Delete</button>
-                    {/* <Link to={`/routes/${route.id}`}> */}
+                    <div className="map-preview">
+                        <img className="sprite-wrench" src={window.wrench} alt="" onClick={this.handleDelete(route.id)}/>
                         <RouteIndexItem route={route}
                         fetchRoute={this.props.fetchRoute}
-                        // deleteRoute={this.props.deleteRoute}
                         />
-                    {/* </Link> */}
+                    </div>
                 </li>
             ));
 

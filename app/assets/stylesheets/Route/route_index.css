@@ -59,6 +59,12 @@
     width: 100%
 }
 
+.map-preview { 
+    position: relative;
+    z-index: 1;
+    width: 100%;
+
+}
 
 #item-map-container { 
     height: 175px;
@@ -93,4 +99,20 @@
     font-weight: 700;
     font-size: 17px;
     line-height: 22px;
+}
+
+.sprite-wrench { 
+    height: 18px;
+    width: 16px;
+    background-position: 0 0;
+    z-index: 1;
+    position: absolute;
+    background-color: #fff;
+    opacity: 0.75;
+    right: 0px;
+    top: 40px;
+}
+
+.sprite-wrench:hover { 
+    opacity: 1;
 }
