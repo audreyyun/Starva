@@ -11,6 +11,7 @@ class RouteIndex extends React.Component {
         // debugger
         super(props);
         this.handleDelete = this.handleDelete.bind(this)
+        this.handleClick = this.handleClick.bind(this)
     }
 
     componentDidMount() { 
@@ -41,6 +42,16 @@ class RouteIndex extends React.Component {
         // }
     }
 
+    handleClick(e) { 
+        e.preventDefault();
+        const dropdown = document.getElementById("wrench-content")
+        if (dropdown.style.display === "none"){
+            dropdown.style.display = "block"
+        } else { 
+            dropdown.style.display = "none"
+        }
+    }
+
     render () { 
 
         // debugger
@@ -55,15 +66,28 @@ class RouteIndex extends React.Component {
             const routeItems = Object.values(this.props.routes).map( (route) => (
                 <li className="route-index-item" key={route.id}>
                     <div className="map-preview">
-                        <img className="sprite-wrench" src={window.wrench} alt="" onClick={this.handleDelete(route.id)}/>
+                        {/* <div className="wrench-dropdown"> */}
+
+                        {/* <Link id ="wrench-btn" className="wrench-btn" onClick={this.handleClick} to="/"> */}
+                        <div id="wrench-btn" className="wrench-btn" onClick={this.handleClick}>
+                            <img className="sprite-wrench" src={window.wrench} alt="" />
+                        </div>
+                            <div id="wrench-content" className="wrench-content" >
+                            <div>
+                                <Link className="sprite-wrench-options" to={`/routes/${route.id}/edit`}>Edit Route</Link>
+                            </div>
+                            <div>
+                                <Link className="sprite-wrench-options" to="/routes/" onClick={this.handleDelete(route.id)}>Delete Route</Link>
+                            </div>
+                        </div>
                         <RouteIndexItem route={route}
                         fetchRoute={this.props.fetchRoute}
                         />
-                    </div>
+                        </div>
+                    {/* </div> */}
                 </li>
             ));
 
-        debugger
         if (this.props.routes.length === 0) {
             return (
                 <div id="routes-index-pg-container">
