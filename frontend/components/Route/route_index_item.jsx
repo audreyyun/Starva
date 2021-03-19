@@ -117,15 +117,11 @@ class RouteIndexItem extends React.Component {
                 <Navbar logout={this.props.logout} {...navbarProps} />
                 <div className="route-card">
 
-                        {/* <div className="map-preview">
-                            <img className="sprite-wrench" src={window.wrench} alt="" /> */}
                             <div id='item-map-container' ref={map => this.mapNode = map}> </div>
-                        {/* </div> */}
 
                     <div id='route-item-info'>
                             <div className="route-name">{this.props.route.route_name}</div>
                             <div className="distance">{this.props.route.distance}</div>
-                        {/* <button className="delete-route-btn" onClick={this.handleDelete}>Delete</button> */}
                     </div>
 
                     <div id="route-item-timestamp">Created on {month}/{day}/{year} </div>

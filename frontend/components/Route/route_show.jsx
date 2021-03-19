@@ -102,7 +102,7 @@ class RouteShow extends React.Component {
 
     render() {
         let month = new Date(this.props.route.created_at).getMonth() + 1;
-        let day = new Date(this.props.route.created_at).getDay();
+        let day = new Date(this.props.route.created_at).getDate();
         let year = new Date(this.props.route.created_at).getFullYear();
 
 
@@ -118,10 +118,7 @@ class RouteShow extends React.Component {
             <div>
                 <div className="route-card">
                     <Link to={`/routes/${this.props.route.id}`}>
-                        {/* <div className="map-preview">
-                            <img className="sprite-wrench" src={window.wrench} alt="" /> */}
                         <div id='item-map-container' ref={map => this.mapNode = map}> </div>
-                        {/* </div> */}
                     </Link>
                     <div id='route-item-info'>
                         <Link to={`/routes/${this.props.route.id}/view`}>
