@@ -43,7 +43,7 @@ class RouteMap extends React.Component {
         debugger
         const mapOptions = {
             center: { lat: 34.0745, lng: -118.3294 },
-            zoom: 7
+            zoom: 12
         };
 
         
@@ -82,13 +82,13 @@ class RouteMap extends React.Component {
         if (this.state.encodedRoute) {
             debugger
             this.poly.setPath(google.maps.geometry.encoding.decodePath(this.state.encodedRoute));
+            
+            const mapBounds = new google.maps.LatLngBounds();
+            this.poly.getPath().forEach(location => mapBounds.extend(location));
+            this.map.fitBounds(mapBounds);
 
             this.changedRoute();
         }
-
-        const mapBounds = new google.maps.LatLngBounds();
-        this.poly.getPath().forEach(location => mapBounds.extend(location));
-        this.map.fitBounds(mapBounds);
 
 
         // Add a listener for the click event
@@ -203,17 +203,17 @@ class RouteMap extends React.Component {
             <div className="route-page-container">
                 <Navbar logout={this.props.logout} {...navbarProps} />
                 <div className="create-route-container">
-                    {this.renderSidebar()}
+                    {this.renderTools()}
                     <div id='map-container' ref={map => this.mapNode = map}> </div>
                 </div>
             </div>
         )
     }
 
-    renderSidebar() { 
+    renderTools() { 
         return (
-            <div className="create-route-sidebar">
-                <button id="save-route" onClick={this.handleSave}>Save Route</button>
+            <div className="create-route-bar">
+                <button id="save-route" onClick={this.handleSave}>Save</button>
                 <div>Miles: {this.state.distance}</div>
             </div>
         )

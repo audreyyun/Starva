@@ -105,6 +105,7 @@ class RouteIndexItem extends React.Component {
         let day = new Date(this.props.route.created_at).getDay();
         let year = new Date(this.props.route.created_at).getFullYear();
         let monthLetter = null; 
+        let athleteName;
 
         if (month === 1) { monthLetter = "January"; }
         else if (month === 2) { monthLetter = "February"; }
@@ -128,10 +129,11 @@ class RouteIndexItem extends React.Component {
         }
 
         if (!this.props.athlete.first_name) { 
-            let athleteName = this.props.athlete.email
+            athleteName = this.props.athlete.email
         } else { 
-            let athleteName = this.props.athlete.first_name + this.props.athlete.last_name
+            athleteName = this.props.athlete.first_name + this.props.athlete.last_name
         }
+        debugger
 
         return (
             <div>
@@ -158,10 +160,9 @@ class RouteIndexItem extends React.Component {
 
                         <div id='route-view-info'>
                             <div className="route-details">
-                                {/* <div className="details media-body">By {athleteName}</div> */}
+                                <div className="details media-body">By {athleteName}</div>
                                 <div id="route-view-timestamp">Created on {monthLetter} {day}, {year}</div>
                             </div>
-                            {/* <div className="route-name">{this.props.route.route_name}</div> */}
                             <div className="distance">{this.props.route.distance}</div>
                         </div>
 

@@ -17,24 +17,29 @@
 .create-route-container { 
     display: flex;
     width: 100%;
-    height:100%
+    height:100%;
+    flex-direction: column;
 }
 
-.create-route-sidebar { 
-    width: 200px;
+.create-route-bar { 
+    width: 100%;
 }
 
 #save-route { 
-    border-radius: 3px;
-    width: 100%;
+    width: 60px;
     text-align: center;
     cursor: pointer;
-    background-color: #fc5200;
-    border-color: #fc5200;
     align-items: center;
     color: #fff;
     font-size: 14px;
     font-weight: 750;
     border-radius: 3px;
     height: 40px;
+
+    border: 1px solid rgb(203, 210, 216);
+    background-color: #fff;
+    align-items: center;
+    color: black;
+    margin-top: 20px;
+
 }

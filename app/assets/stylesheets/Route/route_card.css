@@ -113,17 +113,11 @@
   overflow: visible;
 }
 
-/* ul, ol {
-    padding: 0;
-    list-style: none;
-} */
-
 .inline-stats strong {
     display: flex;
     font-weight: 300;
     font-size: 24px;
     line-height: 1.2em;
-    /* border: 1px solid black; */
     height: 100%;
 } 
 
