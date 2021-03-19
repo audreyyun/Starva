@@ -23,7 +23,7 @@ class RouteShow extends React.Component {
         this.initializeMap(() => {
             if (this.state.encodedRoute) { this.createRoute() }
             debugger
-            this.props.fetchRoute(this.props.routeId).then(action => {
+            this.props.fetchRoute(this.props.route.id).then(action => {
                 this.setState({
                     encodedRoute: action.route.route,
                     route: action.route

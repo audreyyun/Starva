@@ -66,7 +66,7 @@ class RouteIndex extends React.Component {
             isAuthenticated: true,
         }
         
-            const routeItems = Object.values(this.props.routes).map( (route) => (
+            const routeItems = Object.values(this.props.routes).reverse().map( (route) => (
                 <li className="route-index-item" key={route.id}>
                     <div className="map-preview">
 
@@ -91,15 +91,15 @@ class RouteIndex extends React.Component {
                 </li>
             ));
 
-            const routeIndexItems = Object.values(this.props.routes).map( (route) => (
-                <li className="route-index-item" key={route.id}>
+            // const routeIndexItems = Object.values(this.props.routes).map( (route) => (
+            //     <li className="route-index-item" key={route.id}>
                     
-                        <RouteIndexItemContainer route={route}
-                            fetchRoute={this.props.fetchRoute}
-                        />
+            //             <RouteIndexItemContainer route={route}
+            //                 fetchRoute={this.props.fetchRoute}
+            //             />
 
-                </li>
-            ));
+            //     </li>
+            // ));
 
         if (this.props.routes.length === 0) {
             return (
