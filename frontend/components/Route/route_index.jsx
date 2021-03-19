@@ -91,23 +91,23 @@ class RouteIndex extends React.Component {
                 </li>
             ));
 
-            // const routeIndexItems = Object.values(this.props.routes).map( (route) => (
-            //     <li className="route-index-item" key={route.id}>
+            const routeIndexItems = Object.values(this.props.routes).map( (route) => (
+                <li className="route-index-item" key={route.id}>
                     
-            //             <RouteIndexItemContainer route={route}
-            //                 fetchRoute={this.props.fetchRoute}
-            //             />
+                        <RouteIndexItemContainer route={route}
+                            fetchRoute={this.props.fetchRoute}
+                        />
 
-            //     </li>
-            // ));
+                </li>
+            ));
 
         if (this.props.routes.length === 0) {
             return (
-                <div id="routes-index-pg-container">
+                <div id="routes-index-pg-container ">
                     <Navbar logout={this.props.logout} {...navbarProps} />
                     <div className="splash-border"></div>
 
-                    <div className="routes-index-body-container">
+                    <div className="routes-index-body-container page container">
                         <div className="routes-index-body">
                             <div className="routes-index-heading-row">
                                 <h1 className="routes-index-title">My Routes</h1>
@@ -131,7 +131,7 @@ class RouteIndex extends React.Component {
                     <Navbar logout={this.props.logout} {...navbarProps} />
                     <div className="splash-border"></div>
 
-                    <div className="routes-index-body-container">
+                    <div className="routes-index-body-container  page container">
                         <div className="routes-index-body">
                             <div className="routes-index-heading-row">
                                 <div className="routes-index-heading-title-container">

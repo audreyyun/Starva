@@ -5,10 +5,12 @@ import RouteIndexItem from "./route_index_item";
 import { logout } from "../../actions/session_actions"
 
 const msp = (state, ownProps) => { 
+    debugger
     return {
         routeId: ownProps.match.params.routeId,
         route: state.entities.routes[ownProps.match.params.routeId],
-        sessionId: state.session.id
+        sessionId: state.session.id,
+        athlete: state.entities.users ? state.entities.users[state.session.id] : null
     }
 }
 

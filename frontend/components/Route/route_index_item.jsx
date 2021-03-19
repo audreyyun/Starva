@@ -7,11 +7,13 @@ import Button from '../Button';
 class RouteIndexItem extends React.Component {
 
     constructor(props) {
+        debugger
         super(props);
 
         this.state = { 
             encodedRoute: this.props.route.route, 
-            distance: this.props.route.distance
+            distance: this.props.route.distance,
+            updated: false
         };
 
         this.initializeMap = this.initializeMap.bind(this);
@@ -23,7 +25,7 @@ class RouteIndexItem extends React.Component {
         this.initializeMap(() => { 
             if (this.state.encodedRoute) {  this.createRoute() }
             debugger
-            this.props.fetchRoute(this.props.routeId).then(action => { 
+            this.props.fetchRoute(this.props.route.id).then(action => { 
                 this.setState({ 
                     encodedRoute: action.route.route, 
                     route: action.route
@@ -75,7 +77,7 @@ class RouteIndexItem extends React.Component {
             },
             zoom: 10, 
             disableDefaultUI: true,
-            draggable: false,
+            // draggable: false,
         };
 
         // wrap this.mapNode in a Google Map
@@ -102,7 +104,20 @@ class RouteIndexItem extends React.Component {
         let month = new Date(this.props.route.created_at).getMonth() + 1;
         let day = new Date(this.props.route.created_at).getDay();
         let year = new Date(this.props.route.created_at).getFullYear();
+        let monthLetter = null; 
 
+        if (month === 1) { monthLetter = "January"; }
+        else if (month === 2) { monthLetter = "February"; }
+        else if (month === 3) { monthLetter = "March"; }
+        else if (month === 4) { monthLetter = "April"; }
+        else if (month === 5) { monthLetter = "May"; }
+        else if (month === 6) { monthLetter = "June"; }
+        else if (month === 7) { monthLetter = "July"; }
+        else if (month === 8) { monthLetter = "August"; }
+        else if (month === 9) { monthLetter = "September"; }
+        else if (month === 10) { monthLetter = "October"; }
+        else if (month === 11) { monthLetter = "November"; }
+        else if (month === 12) { monthLetter = "December"; }
 
         const navbarProps =
         {
@@ -112,20 +127,46 @@ class RouteIndexItem extends React.Component {
             isAuthenticated: true,
         }
 
+        if (!this.props.athlete.first_name) { 
+            let athleteName = this.props.athlete.email
+        } else { 
+            let athleteName = this.props.athlete.first_name + this.props.athlete.last_name
+        }
+
         return (
             <div>
                 <Navbar logout={this.props.logout} {...navbarProps} />
-                <div className="route-card">
-
-                            <div id='item-map-container' ref={map => this.mapNode = map}> </div>
-
-                    <div id='route-item-info'>
-                            <div className="route-name">{this.props.route.route_name}</div>
-                            <div className="distance">{this.props.route.distance}</div>
+                <div className="page container">
+                    <div className="breadcrumbs">
+                        <Link className="" to="/routes/">{`My Routes `}</Link>
+                        <div>{` / ${this.props.route.route_name}`}</div>
                     </div>
 
-                    <div id="route-item-timestamp">Created on {month}/{day}/{year} </div>
+                    <div className="route-name media">
+                        <div className="media-body">
+                            <h1>{this.props.route.route_name}</h1>
+                        </div>
+                    </div>
 
+                    <section className="borderless actions">
+                        <Link to={`/routes/${this.props.route.id}/edit`}>
+                            <Button className={`btn-secondary edit-route`} formType={`Edit`}></Button>
+                        </Link>
+                    </section>
+                    <div className="route-view">
+                        <div id='route-view-map-container' ref={map => this.mapNode = map}> </div>
+
+                        <div id='route-view-info'>
+                            <div className="route-details">
+                                {/* <div className="details media-body">By {athleteName}</div> */}
+                                <div id="route-view-timestamp">Created on {monthLetter} {day}, {year}</div>
+                            </div>
+                            {/* <div className="route-name">{this.props.route.route_name}</div> */}
+                            <div className="distance">{this.props.route.distance}</div>
+                        </div>
+
+
+                    </div>
                 </div>
             </div>
         )

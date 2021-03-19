@@ -71,7 +71,7 @@ button:hover {
 
 
 
-.nav-btn-secondary {
+.btn-secondary, .nav-btn-secondary {
     color: rgb(0,0,0);
     background-color: #fff;
     border: 1px solid #dfdfe8;

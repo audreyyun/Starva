@@ -104,7 +104,22 @@ class RouteShow extends React.Component {
         let month = new Date(this.props.route.created_at).getMonth() + 1;
         let day = new Date(this.props.route.created_at).getDate();
         let year = new Date(this.props.route.created_at).getFullYear();
+        let monthLetter = null;
 
+            if (month ===  1) { monthLetter = "January";}
+            else if (month ===  2) { monthLetter = "February";}
+            else if (month ===  3) { monthLetter = "March";}
+            else if (month ===  4) { monthLetter = "April";}
+            else if (month ===  5) { monthLetter = "May";}
+            else if (month ===  6) { monthLetter = "June";}
+            else if (month ===  7) { monthLetter = "July";}
+            else if (month ===  8) { monthLetter = "August";}
+            else if (month ===  9) { monthLetter = "September";}
+            else if (month ===  10) { monthLetter = "October";}
+            else if (month ===  11) { monthLetter = "November";}
+            else if (month ===  12) { monthLetter = "December";}
+        
+        
 
         const navbarProps =
         {
@@ -117,19 +132,25 @@ class RouteShow extends React.Component {
         return (
             <div>
                 <div className="route-card">
-                    <Link to={`/routes/${this.props.route.id}`}>
+                    <Link to={`/routes/${this.props.route.id}/view`}>
                         <div id='item-map-container' ref={map => this.mapNode = map}> </div>
                     </Link>
                     <div id='route-item-info'>
                         <Link to={`/routes/${this.props.route.id}/view`}>
-                            <div className="route-name">{this.props.route.route_name}</div>
+                            <h3 className="route-name">{this.props.route.route_name}</h3>
                         </Link>
-                        <Link to={`/routes/${this.props.route.id}/view`}>
-                            <div className="distance">{this.props.route.distance}</div>
-                        </Link>
+                        <ul className="inline-stats">
+                            <li>
+                            <strong>
+                                <p id="text" className="distance">{this.props.route.distance}</p>
+                                <abbr className="unit" title="miles">mi</abbr>
+                            </strong>
+                            <p className="label">Distance</p>
+                            </li>
+                        </ul>
                     </div>
 
-                    <div id="route-item-timestamp">Created on {month}/{day}/{year} </div>
+                    <div id="route-item-timestamp">Created on {monthLetter} {day}, {year} </div>
 
                 </div>
             </div>

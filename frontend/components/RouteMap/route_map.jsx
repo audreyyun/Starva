@@ -86,6 +86,10 @@ class RouteMap extends React.Component {
             this.changedRoute();
         }
 
+        const mapBounds = new google.maps.LatLngBounds();
+        this.poly.getPath().forEach(location => mapBounds.extend(location));
+        this.map.fitBounds(mapBounds);
+
 
         // Add a listener for the click event
         this.map.addListener("click", this.handleClick);

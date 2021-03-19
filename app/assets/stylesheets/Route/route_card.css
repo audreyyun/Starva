@@ -1,0 +1,156 @@
+#item-map-container { 
+    height: 175px;
+}
+
+#route-item-info { 
+    padding: 15px 20px;
+    background-color: #f7f7fa;
+    height: 100%;
+    max-height: 135px;
+}
+
+#route-item-timestamp {
+    color: #6d6d78;
+    background-color: #f0f0f0;
+    padding: 5px 20px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.route-index-item {
+    max-width: 100%;
+}
+
+.route-index-item a { 
+    text-decoration: none;
+}
+
+.route-index-item a:visited { 
+    text-decoration: none;
+}
+.route-name  { 
+    text-decoration: none;
+    color: #007FB6;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    height: 46px;
+}
+
+.sprite-wrench, .map-preview { 
+    position: relative;
+    width: 100%;
+    height: 100%
+}
+
+
+.sprite-wrench { 
+    height: 18px;
+    width: 16px;
+    background-position: 0 0;
+    z-index: 10;
+    position: absolute;
+    background-color: #fff;
+    opacity: 0.75;
+    right: 0px;
+    top: 40px;  
+}
+
+.sprite-wrench:hover { 
+    opacity: 1;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.wrench-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  color: #242428;
+  overflow-y: visible;
+  right: -120px;
+  z-index: 100;
+
+    font-size: 14px;
+    min-height: 35px;
+    box-sizing: border-box;
+    line-height: 1.2;
+    border: none;
+    min-width: 120px;
+  
+    align-items: left;
+    width: 120px;
+    top: 25px;
+}
+
+
+.sprite-wrench-options:link { 
+    background-color: #fff;
+    color: #242428;
+}
+
+.sprite-wrench-options:visited { 
+    background-color: #fff;
+    color: #242428;
+}
+
+.wrench-btn {
+  color: white;
+  font-size: 16px;
+  z-index: 2;
+  position: relative;
+  overflow: visible;
+}
+
+/* Links inside the dropdown */
+.wrench-content div {
+  color: black;
+  padding: 9px 10px;
+  text-decoration: none;
+  display: block;
+  z-index: 10;
+  overflow: visible;
+}
+
+/* ul, ol {
+    padding: 0;
+    list-style: none;
+} */
+
+.inline-stats strong {
+    display: flex;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.2em;
+    /* border: 1px solid black; */
+    height: 100%;
+} 
+
+.inline-stats .label {
+    display: block;
+    font-size: 12px;
+    color: #6d6d78;
+    margin: 0;
+}
+
+.inline-stats strong .unit {
+    vertical-align: text-bottom;
+    font-size: 0.65em;
+    line-height: 1em;
+    margin-left: 2px;
+}
+
+abbr[title] {
+    text-decoration: none;
+    cursor: auto;
+}
+
+.distance { 
+    width: fit-content;
+}
+
+.unit { 
+    text-decoration: none;
+    height: 100%;
+}

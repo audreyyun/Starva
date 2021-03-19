@@ -1,0 +1,85 @@
+/* .container {
+    min-width: 0;
+} */
+
+.container .page { 
+    margin-top: 30px;
+    margin-bottom: 80px;
+    position: relative;
+}
+.container {
+    min-width: 1248px;
+    box-sizing: border-box;
+}
+
+.page {
+    margin-top: 30px;
+    margin-bottom: 80px;
+    position: relative;
+}
+@media (min-width: 1250px) { 
+    .container {
+        width: 1248px;
+    }
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.breadcrumbs { 
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-family: "MaisonNeue", "Segoe UI", "Helvetica Neue", -apple-system, system-ui, BlinkMacSystemFont, Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+section.actions {
+    margin: 10px 0;
+    padding: 0;
+}
+
+.edit-route { 
+    margin-top: 0;
+}
+
+.route-name h1 { 
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 41px;
+    color: #000;
+    word-break: break-word;
+    font-family: "MaisonNeue", "Segoe UI", "Helvetica Neue", -apple-system, system-ui, BlinkMacSystemFont, Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.route-view { 
+    display: flex;
+}
+
+#route-view-map-container { 
+    height: 350px;
+    width: 65%;
+    margin: 16px;
+    margin-left: 0px;
+}
+
+#route-view-info { 
+    padding: 16px;
+    width: 385px
+}
+
+#route-view-timestamp { 
+    background-color: #fff;
+    color: #6d6d78;
+    padding: 5px 0px;
+    font-size: 12px;
+    line-height: 16px;
+}
