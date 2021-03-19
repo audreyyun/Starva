@@ -4,6 +4,7 @@
     width: 100%;
     height: 100%;
     display: flex;
+    overflow: visible;
 }
 
 .route-card { 
@@ -11,15 +12,17 @@
     height: 365px;
     display: flex;
     flex-direction: column;
+    overflow: visible;
 }
 
 .routes-index-body-container { 
     display: flex;
     padding: 0 16px;
     width: 100vw;
-    width: 70%;
+    width: 63%;
     height: 100%;
     margin: 30px auto 80px;
+    overflow: visible;
 
 }
 
@@ -40,14 +43,25 @@
     justify-content: center;
     row-gap: 40px;
     column-gap: 1.6%;
+    position: relative;
 
 }
 
 .routes-index-title {
     font-size: 34px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 41px;
+    letter-spacing: -0.01em;
+    margin-bottom: 20px;
 }
+
+.strava-routes { 
+    /* width: 174px;
+    height: 91px; */
+    margin-top: 20px;
+    margin-right: 9%;
+}
+
 
 .create-route-btn {
     width: 151px;
@@ -68,10 +82,19 @@
 }
 
 .routes-index-heading-row { 
-    border: 1px solid black;
-    width: 100%
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 114px;
+    justify-content: space-between;
+    display: flex;
 }
 
+.index-heading-border { 
+    width: 100%;
+    padding-top: 20px;
+    border-bottom: 1px solid #dfdfe8;
+    margin-bottom: 54px;
+}
 
 #item-map-container { 
     height: 175px;
@@ -153,7 +176,7 @@
   overflow-y: visible;
   right: -120px;
   /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
-  z-index: 1;
+  z-index: 10;
 
     font-size: 14px;
     min-height: 35px;
@@ -184,6 +207,8 @@
   font-size: 16px;
   /* border: none; */
   z-index: 2;
+  position: relative;
+  overflow: visible;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -198,6 +223,8 @@
   padding: 9px 10px;
   text-decoration: none;
   display: block;
+  z-index: 10;
+  overflow: visible;
 }
 
 

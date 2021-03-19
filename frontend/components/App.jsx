@@ -11,7 +11,7 @@ import DashboardIndexContainer from './dashboard/dashboard_container';
 import RouteMapContainer from './RouteMap/route_map_container';
 import RouteMapEditContainer from './RouteMap/route_map_edit_container';
 import RouteIndexItemContainer from './Route/route_index_item_container';
-import RouteIndexItem from './Route/route_index_item';
+import RouteShowContainer from './Route/route_show_container';
 // import NavbarContainer from './Navbar/navbar_container';
 import SearchContainer from './Search/SearchContainer';
 
@@ -26,7 +26,8 @@ const App = () => (
         <ProtectedRoute exact path="/dashboard" component={DashboardIndexContainer}/>
         <Switch>
             <ProtectedRoute exact path="/routes/new" component={RouteMapContainer}/>
-            <ProtectedRoute exact path="/routes/:routeId" component={RouteIndexItemContainer}/>
+            <ProtectedRoute exact path="/routes/:routeId" component={RouteShowContainer}/>
+            <ProtectedRoute exact path="/routes/:routeId/view" component={RouteIndexItemContainer}/>
             <ProtectedRoute exact path="/routes/:routeId/edit" component={RouteMapEditContainer}/>
             <ProtectedRoute exact path="/routes/" component={SearchContainer}/>
         </Switch>

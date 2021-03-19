@@ -9,7 +9,7 @@ const msp = (state, ownProps) => {
     debugger
     return {
         // routeId: ownProps.match.params.routeId,
-        route: state.entities.routes[ownProps.match.params.routeId],
+        // route: state.entities.routes[ownProps.match.params.routeId],
         routes: Object.values(state.entities.routes)
     }
 };

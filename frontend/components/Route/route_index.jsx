@@ -3,7 +3,9 @@ import Navbar from '../Navbar';
 import { Link } from 'react-router-dom';
 import Button from '../Button';
 import RouteIndexItemContainer from './route_index_item_container'
+import RouteShowContainer from './route_show_container'
 import RouteIndexItem from './route_index_item'
+import RouteShow from './route_show'
 
 
 class RouteIndex extends React.Component { 
@@ -23,7 +25,7 @@ class RouteIndex extends React.Component {
 
     handleDelete(routeId) {
         return e => { 
-            if (window.confirm("Are you sure you want to delete this route? You can not undo this action.")) {
+            if (window.confirm(`Are you sure you want to delete this route? You can not undo this action.`)) {
                 this.props.deleteRoute(routeId).then(
                     this.props.history.replace({
                         pathname: `/dashboard`
@@ -43,9 +45,9 @@ class RouteIndex extends React.Component {
         // }
     }
 
-    handleClick(e) { 
-        e.preventDefault();
-        const dropdown = document.getElementById("wrench-content")
+    handleClick(routeId) { 
+        debugger
+        const dropdown = document.getElementById(`wrench-content ${routeId}`)
         if (dropdown.style.display === "none"){
             dropdown.style.display = "block"
         } else { 
@@ -67,13 +69,12 @@ class RouteIndex extends React.Component {
             const routeItems = Object.values(this.props.routes).map( (route) => (
                 <li className="route-index-item" key={route.id}>
                     <div className="map-preview">
-                        {/* <div className="wrench-dropdown"> */}
 
                         {/* <Link id ="wrench-btn" className="wrench-btn" onClick={this.handleClick} to="/"> */}
-                        <div id="wrench-btn" className="wrench-btn" onClick={this.handleClick}>
+                        <div id="wrench-btn" className="wrench-btn" onClick={() => this.handleClick(route.id)}>
                             <img className="sprite-wrench" src={window.wrench} alt="" />
                         </div>
-                            <div id="wrench-content" className="wrench-content" >
+                            <div id={`wrench-content ${route.id}`} className="wrench-content" >
                             <div>
                                 <Link className="sprite-wrench-options" to={`/routes/${route.id}/edit`}>Edit Route</Link>
                             </div>
@@ -81,11 +82,22 @@ class RouteIndex extends React.Component {
                                 <Link className="sprite-wrench-options" to="/routes/" onClick={this.handleDelete(route.id)}>Delete Route</Link>
                             </div>
                         </div>
-                        <RouteIndexItem route={route}
-                        fetchRoute={this.props.fetchRoute}
+                        
+                        <RouteShow route={route}
+                            fetchRoute={this.props.fetchRoute}
                         />
-                        </div>
-                    {/* </div> */}
+
+                    </div>
+                </li>
+            ));
+
+            const routeIndexItems = Object.values(this.props.routes).map( (route) => (
+                <li className="route-index-item" key={route.id}>
+                    
+                        <RouteIndexItemContainer route={route}
+                            fetchRoute={this.props.fetchRoute}
+                        />
+
                 </li>
             ));
 
@@ -103,15 +115,14 @@ class RouteIndex extends React.Component {
                                 <Link className="create-route-btn-container" to="/routes/new">
                                     <Button className="create-route-btn" formType="Create New Route" />
                                 </Link>
-                            </div>
 
-                            <div>
-                                No Routes!
+                                <img className="strava-routes" src={window.routes} alt="" />
                             </div>
+                            <div className="index-heading-border"></div>
+                            <p>You haven't created any routes.</p>
 
                         </div>
                     </div>
-
                 </div>
             )   
         } else { 
@@ -123,14 +134,17 @@ class RouteIndex extends React.Component {
                     <div className="routes-index-body-container">
                         <div className="routes-index-body">
                             <div className="routes-index-heading-row">
-                                <h1 className="routes-index-title">My Routes</h1>
-                            
-                                <Link className="create-route-btn-container" to="/routes/new">
-                                    <Button className="create-route-btn" formType="Create New Route" />
-                                </Link> 
+                                <div className="routes-index-heading-title-container">
+                                    <h1 className="routes-index-title">My Routes</h1>
+                                
+                                    <Link className="create-route-btn-container" to="/routes/new">
+                                        <Button className="create-route-btn" formType="Create New Route" />
+                                    </Link> 
+                                </div>
+                                <img className="strava-routes" src={window.route} alt="" />
                             </div>
 
-                            
+                            <div className="index-heading-border"></div>
                             <ul className="routes-list">{routeItems}</ul>
                         
                         </div>
