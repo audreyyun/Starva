@@ -13,7 +13,10 @@
 
 .nav-right {
     float: right;
+    width: fit-content;
+    display: flex;
 }
+
 
 .nav-content { 
     min-height: 56.25px;
@@ -62,19 +65,23 @@
 .navbar-routes:hover { 
     border-top: #fff;
 }
-.drop-btn:hover { 
+.dashboard-dropdown:hover .drop-btn { 
     color: #fc5200;
 }
+
 
 /* The container <div> - needed to position the dropdown content */
 .dashboard-dropdown {
   position: relative;
   display: inline-block;
   margin-left: 20px;
-  margin-top: 35px;
-  height: 100%;
+  padding-top: 20px;
+  height: 40px;
   align-items: center;
-  border: 1px solid black
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #fff;
+  /* background-color: #fff; */
 }
 
 
@@ -94,9 +101,10 @@
   position: absolute;
   background-color: #fff;
   min-width: 160px;
-  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  border: 1px solid #dfdfe8;
+  /* border-top: none; */
   z-index: 1;
-  border-top: none;
+  margin-left: -11px;
 }
 
 /* Links inside the dropdown */
@@ -115,6 +123,14 @@
 
 .upload-dropdown:hover .dashboard-dropdown-content {display: block;}
 
+.dashboard-dropdown:hover  {
+    background-color: #fff;
+    border-bottom: 3px solid black;
+    border-left: 1px solid #dfdfe8;
+    border-right: 1px solid #dfdfe8;
+    margin-bottom: -2px;
+}
+
 /* Change the background color of the dropdown button when the dropdown content is shown */
 /* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
 
@@ -122,25 +138,18 @@
         border: 1px solid red
     } */
 
-.nav-right { 
-    width: fit-content;
-    display: flex;
-}
+
 
 .upload-btn { 
     height: 26px;
     width: fit-content;
     overflow: hidden;
+    /* border: 1px solid red */
 }
 
 .upload-activity { 
     width: 25px;
-    border: 1px solid black;
-    /* background-image: url(../../images/upload-2.png); */
-    /* height: 30px;
-    width: 55px; */
-    
 }
 .upload-activity:hover { 
-    height: 26px
+    margin: -27px 0 0 0;
 }
