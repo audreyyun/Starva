@@ -22,27 +22,32 @@ class RouteIndexItem extends React.Component {
     }
 
     componentDidMount() { 
+        if (this.state.encodedRoute) {
+            this.initializeMap(() => { 
+                this.props.fetchRoute(this.props.routeId).then(action => { 
+                    this.setState({ 
+                        encodedRoute: action.route.route, 
+                        route: action.route
+                    })
+                    this.createRoute();
+                })
+                
+                if (this.state.encodedRoute) { this.createRoute() }
+            })
 
-        debugger
-        this.initializeMap(() => { 
-            this.props.fetchRoute(this.props.routeId).then(action => { 
+
+        } else { 
+            if (this.state.encodedRoute) { this.createRoute() }
+            this.props.fetchRoute(this.props.routeId).then(action => {
                 this.setState({ 
-                    encodedRoute: action.route.route, 
+                    encodedRoute: action.route.route,
                     route: action.route
                 })
-                this.createRoute();
+                this.initializeMap(() => { 
+                    if (this.state.encodedRoute) { this.createRoute() }
+                })
             })
-            if (this.state.encodedRoute) {  this.createRoute() }
-        })
-
-        // if (this.state.encodedRoute) { this.createRoute() }
-        // this.props.fetchRoute(this.props.routeId).then(action=> { 
-        //     this.setState({ 
-        //         encodedRoute: action.route.route,
-        //         route: action.route
-        //     })
-        // })
-        // this.initializeMap(this.createRoute)
+        }
     }
 
 
