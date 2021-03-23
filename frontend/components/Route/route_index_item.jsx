@@ -11,8 +11,8 @@ class RouteIndexItem extends React.Component {
         super(props);
 
         this.state = { 
-            encodedRoute: this.props.route.route, 
-            distance: this.props.route.distance,
+            encodedRoute: this.props.route ? this.props.route.route : null,
+            distance: this.props.route ? this.props.route.distance : null,
             updated: false
         };
 
@@ -22,18 +22,26 @@ class RouteIndexItem extends React.Component {
     }
 
     componentDidMount() { 
+
+        debugger
         this.initializeMap(() => { 
-            if (this.state.encodedRoute) {  this.createRoute() }
-            debugger
-            this.props.fetchRoute(this.props.route.id).then(action => { 
+            this.props.fetchRoute(this.props.routeId).then(action => { 
                 this.setState({ 
                     encodedRoute: action.route.route, 
                     route: action.route
                 })
                 this.createRoute();
             })
+            if (this.state.encodedRoute) {  this.createRoute() }
         })
 
+        // if (this.state.encodedRoute) { this.createRoute() }
+        // this.props.fetchRoute(this.props.routeId).then(action=> { 
+        //     this.setState({ 
+        //         encodedRoute: action.route.route,
+        //         route: action.route
+        //     })
+        // })
         // this.initializeMap(this.createRoute)
     }
 
@@ -101,25 +109,6 @@ class RouteIndexItem extends React.Component {
     }
 
     render() {
-        let month = new Date(this.props.route.created_at).getMonth() + 1;
-        let day = new Date(this.props.route.created_at).getDay();
-        let year = new Date(this.props.route.created_at).getFullYear();
-        let monthLetter = null; 
-        let athleteName;
-
-        if (month === 1) { monthLetter = "January"; }
-        else if (month === 2) { monthLetter = "February"; }
-        else if (month === 3) { monthLetter = "March"; }
-        else if (month === 4) { monthLetter = "April"; }
-        else if (month === 5) { monthLetter = "May"; }
-        else if (month === 6) { monthLetter = "June"; }
-        else if (month === 7) { monthLetter = "July"; }
-        else if (month === 8) { monthLetter = "August"; }
-        else if (month === 9) { monthLetter = "September"; }
-        else if (month === 10) { monthLetter = "October"; }
-        else if (month === 11) { monthLetter = "November"; }
-        else if (month === 12) { monthLetter = "December"; }
-
         const navbarProps =
         {
             loginBtnClass: "nav-btn-secondary",
@@ -127,51 +116,72 @@ class RouteIndexItem extends React.Component {
             loginBtnPath: "/logout",
             isAuthenticated: true,
         }
-
-        if (!this.props.athlete.first_name) { 
-            athleteName = this.props.athlete.email
-        } else { 
-            athleteName = this.props.athlete.first_name + this.props.athlete.last_name
-        }
         debugger
 
-        return (
-            <div>
-                <Navbar logout={this.props.logout} {...navbarProps} />
-                <div className="splash-border"></div>
-                <div className="page container">
-                    <div className="breadcrumbs">
-                        <Link className="" to="/routes/">{`My Routes `}</Link>
-                        <div>{` / ${this.props.route.route_name}`}</div>
-                    </div>
+        if (!this.props.route) { 
+            return (<div></div>)
+        } else { 
+            let month = new Date(this.props.route.created_at).getMonth() + 1;
+            let day = new Date(this.props.route.created_at).getDay();
+            let year = new Date(this.props.route.created_at).getFullYear();
+            let monthLetter = null;
+            let athleteName;
 
-                    <div className="route-name media">
-                        <div className="media-body">
-                            <h1>{this.props.route.route_name}</h1>
+            if (month === 1) { monthLetter = "January"; }
+            else if (month === 2) { monthLetter = "February"; }
+            else if (month === 3) { monthLetter = "March"; }
+            else if (month === 4) { monthLetter = "April"; }
+            else if (month === 5) { monthLetter = "May"; }
+            else if (month === 6) { monthLetter = "June"; }
+            else if (month === 7) { monthLetter = "July"; }
+            else if (month === 8) { monthLetter = "August"; }
+            else if (month === 9) { monthLetter = "September"; }
+            else if (month === 10) { monthLetter = "October"; }
+            else if (month === 11) { monthLetter = "November"; }
+            else if (month === 12) { monthLetter = "December"; }
+
+            if (!this.props.athlete.first_name) {
+                athleteName = this.props.athlete.email
+            } else {
+                athleteName = this.props.athlete.first_name + this.props.athlete.last_name
+            }
+
+            return (
+                <div>
+                    <Navbar logout={this.props.logout} {...navbarProps} />
+                    <div className="splash-border"></div>
+                    <div className="page container">
+                        <div className="breadcrumbs">
+                            <Link className="" to="/routes/">{`My Routes `}</Link>
+                            <div>{` / ${this.props.route.route_name}`}</div>
                         </div>
-                    </div>
 
-                    <section className="borderless actions">
-                        <Link to={`/routes/${this.props.route.id}/edit`}>
-                            <Button className={`btn-secondary edit-route`} formType={`Edit`}></Button>
-                        </Link>
-                    </section>
-                    <div className="route-view">
-                        <div id='route-view-map-container' ref={map => this.mapNode = map}> </div>
-
-                        <div id='route-view-info'>
-                            <div className="route-details">
-                                <div className="details media-body">By {athleteName}</div>
-                                <div id="route-view-timestamp">Created on {monthLetter} {day}, {year}</div>
+                        <div className="route-name media">
+                            <div className="media-body">
+                                <h1>{this.props.route.route_name}</h1>
                             </div>
-                            <div className="distance">{this.props.route.distance}</div>
                         </div>
 
+                        <section className="borderless actions">
+                            <Link to={`/routes/${this.props.route.id}/edit`}>
+                                <Button className={`btn-secondary edit-route`} formType={`Edit`}></Button>
+                            </Link>
+                        </section>
+                        <div className="route-view">
+                            <div id='route-view-map-container' ref={map => this.mapNode = map}> </div>
 
+                            <div id='route-view-info'>
+                                <div className="route-details">
+                                    <div className="details media-body">By {athleteName}</div>
+                                    <div id="route-view-timestamp">Created on {monthLetter} {day}, {year}</div>
+                                </div>
+                                <div className="distance">{this.props.route.distance}</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        )
+            )
+        }
     }
 }
 
