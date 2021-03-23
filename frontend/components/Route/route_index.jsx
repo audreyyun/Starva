@@ -27,9 +27,10 @@ class RouteIndex extends React.Component {
         return e => { 
             if (window.confirm(`Are you sure you want to delete this route? You can not undo this action.`)) {
                 this.props.deleteRoute(routeId).then(
-                    this.props.history.replace({
-                        pathname: `/dashboard`
-                    })
+                    // this.props.history.replace({
+                    //     pathname: `/dashboard`
+                    // })
+                    location.reload()
                 )
             }
         }

@@ -30,7 +30,6 @@ class ManualActivity extends React.Component {
     }
 
     handleSubmit(e) { 
-        debugger
         e.preventDefault();
 
         // const title= prompt("Workout title(required)", this.state.workout.workout_title)
@@ -52,9 +51,7 @@ class ManualActivity extends React.Component {
                 workout.id = this.props.workoutId;
             }
             
-            debugger
             this.props.action(workout).then(workout => { 
-                debugger
                 this.props.history.push({ 
                     pathname: `/activities/${workout.workout.id}`
                 })

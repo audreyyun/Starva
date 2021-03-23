@@ -20,11 +20,16 @@ class WorkoutIndex extends React.Component {
 
     handleDelete(workoutId) {
         return e => {
-            if (window.confirm(`Are you sure you want to delete this route? You can not undo this action.`)) {
-                this.props.deleteRoute(workoutId).then(
-                    this.props.history.replace({
-                        pathname: `/dashboard`
-                    })
+            // if (window.confirm(`Are you sure you want to delete this activity? You can not undo this action.`)) {
+            //     this.props.deleteWorkout(workoutId).then(
+            //         this.props.history.replace({
+            //             pathname: `/training`
+            //         })
+            //     )
+            // }
+            if (window.confirm(`Are you sure you want to delete this activity? You can not undo this action.`)) {
+                this.props.deleteWorkout(workoutId).then(
+                    location.reload()
                 )
             }
         }
@@ -57,9 +62,9 @@ class WorkoutIndex extends React.Component {
                     <p>{workout.elevation}</p>
 
 
-                    <Link className="workout-edit-btn" to={`/activities/${workout.id}/edit`}>Edit</Link>
+                    {/* <Link className="workout-edit-btn" to={`/activity/${workout.id}/edit`}>Edit</Link> */}
 
-                    <Link className="workout-delete-btn" to="/activities/" onClick={this.handleDelete(workout.id)}>Delete</Link>
+                    <div className="workout-delete-btn" onClick={this.handleDelete(workout.id)}>Delete</div>
 
                     {/* <WorkoutShow workout={workout}
                         fetchWorkout={this.props.fetchWorkout}
