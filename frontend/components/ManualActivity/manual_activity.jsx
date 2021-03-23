@@ -44,7 +44,8 @@ class ManualActivity extends React.Component {
                 elevation: this.state.elevation, 
                 sport: this.state.sport,
                 date: this.state.date,
-                start_time: this.state.time
+                start_time: this.state.time, 
+                id: this.props.workoutId
             }
             
             if (this.props.workoutId) {
@@ -53,8 +54,9 @@ class ManualActivity extends React.Component {
             
             debugger
             this.props.action(workout).then(workout => { 
+                debugger
                 this.props.history.push({ 
-                    pathname: `/activities/${workout.id}`
+                    pathname: `/activities/${workout.workout.id}`
                 })
             })
         }
