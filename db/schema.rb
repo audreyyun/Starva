@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_04_213338) do
+ActiveRecord::Schema.define(version: 2021_03_22_203700) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -43,6 +43,22 @@ ActiveRecord::Schema.define(version: 2021_03_04_213338) do
     t.string "username"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["session_token"], name: "index_users_on_session_token", unique: true
+  end
+
+  create_table "workouts", force: :cascade do |t|
+    t.string "workout_title", null: false
+    t.integer "athlete_id"
+    t.float "distance"
+    t.float "duration"
+    t.float "elevation"
+    t.string "sport"
+    t.date "date"
+    t.time "start_time"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["athlete_id"], name: "index_workouts_on_athlete_id"
+    t.index ["workout_title"], name: "index_workouts_on_workout_title"
   end
 
 end

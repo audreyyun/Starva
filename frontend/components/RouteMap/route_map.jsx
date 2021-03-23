@@ -4,7 +4,7 @@ import Navbar from '../Navbar'
 
 class RouteMap extends React.Component {
     constructor(props) { 
-        debugger
+        // debugger
         super(props);
         this.addLatLng = this.addLatLng.bind(this);
         this.initializeMap = this.initializeMap.bind(this)
@@ -40,7 +40,7 @@ class RouteMap extends React.Component {
     }
 
     initializeMap(cb) { 
-        debugger
+        // debugger
         const mapOptions = {
             center: { lat: 34.0745, lng: -118.3294 },
             zoom: 12

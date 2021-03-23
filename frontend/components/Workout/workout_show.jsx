@@ -4,97 +4,29 @@ import Navbar from '../Navbar';
 import Button from '../Button';
 
 
-class RouteIndexItem extends React.Component {
+class WorkoutShow extends React.Component {
 
     constructor(props) {
-        debugger
+        // debugger
         super(props);
 
-        this.state = { 
-            encodedRoute: this.props.route.route, 
-            distance: this.props.route.distance,
-            updated: false
-        };
+        // this.state = {
+        //     encodedRoute: this.props.route.route,
+        //     distance: this.props.route.distance,
+        //     updated: false
+        // };
 
-        this.initializeMap = this.initializeMap.bind(this);
-        this.createRoute = this.createRoute.bind(this);
         this.handleDelete = this.handleDelete.bind(this);
     }
 
-    componentDidMount() { 
-        this.initializeMap(() => { 
-            if (this.state.encodedRoute) {  this.createRoute() }
-            debugger
-            this.props.fetchRoute(this.props.route.id).then(action => { 
-                this.setState({ 
-                    encodedRoute: action.route.route, 
-                    route: action.route
-                })
-                this.createRoute();
-            })
-        })
-
-        // this.initializeMap(this.createRoute)
-    }
 
 
-    createRoute() {
-        this.poly = new google.maps.Polyline({
-            strokeColor: "#FC5200",
-            strokeOpacity: 1.0,
-            strokeWeight: 3,
-            editable: false, 
-        });
 
-        this.poly.setMap(this.map);
-
-
-        // this.elevation.getElevationAlongPath(
-        //     { path: this.poly.getPath(),
-        //     samples: 256,
-        //     },
-        //     this.plotElevation
-        // );
-
-        if (this.state.encodedRoute) {
-            this.poly.setPath(google.maps.geometry.encoding.decodePath(this.state.encodedRoute));
-        }
-
-
-        const mapBounds = new google.maps.LatLngBounds();
-        this.poly.getPath().forEach(location => mapBounds.extend(location));
-        this.map.fitBounds(mapBounds);
-    }
-
-    initializeMap(cb) {
-        // set the map to show SF
-        debugger
-        const mapOptions = {
-            strokeColor: "#FC5200",
-            center: { 
-                lat: this.props.route.start_lat,
-                lng: this.props.route.start_long
-            },
-            zoom: 10, 
-            disableDefaultUI: true,
-            // draggable: false,
-        };
-
-        // wrap this.mapNode in a Google Map
-        this.map = new google.maps.Map(this.mapNode, mapOptions);
-
-        if (cb) {
-            debugger
-            google.maps.event.addListenerOnce(this.map, 'tilesloaded', cb);
-        }
-
-    }
-
-    handleDelete() { 
-        if (window.confirm("Are you sure you want to delete this route? You can not undo this action.")) { 
+    handleDelete() {
+        if (window.confirm("Are you sure you want to delete this route? You can not undo this action.")) {
             this.props.deleteRoute(this.props.routeId).then(
-                this.props.history.replace({ 
-                    pathname:`/routes/`
+                this.props.history.replace({
+                    pathname: `/routes/`
                 })
             )
         }
@@ -104,7 +36,7 @@ class RouteIndexItem extends React.Component {
         let month = new Date(this.props.route.created_at).getMonth() + 1;
         let day = new Date(this.props.route.created_at).getDay();
         let year = new Date(this.props.route.created_at).getFullYear();
-        let monthLetter = null; 
+        let monthLetter = null;
         let athleteName;
 
         if (month === 1) { monthLetter = "January"; }
@@ -128,16 +60,16 @@ class RouteIndexItem extends React.Component {
             isAuthenticated: true,
         }
 
-        if (!this.props.athlete.first_name) { 
+        if (!this.props.athlete.first_name) {
             athleteName = this.props.athlete.email
-        } else { 
+        } else {
             athleteName = this.props.athlete.first_name + this.props.athlete.last_name
         }
-        debugger
 
         return (
             <div>
-                <Navbar logout={this.props.logout} {...navbarProps} />
+                testing
+                {/* <Navbar logout={this.props.logout} {...navbarProps} />
                 <div className="splash-border"></div>
                 <div className="page container">
                     <div className="breadcrumbs">
@@ -157,7 +89,6 @@ class RouteIndexItem extends React.Component {
                         </Link>
                     </section>
                     <div className="route-view">
-                        <div id='route-view-map-container' ref={map => this.mapNode = map}> </div>
 
                         <div id='route-view-info'>
                             <div className="route-details">
@@ -169,10 +100,10 @@ class RouteIndexItem extends React.Component {
 
 
                     </div>
-                </div>
+                </div> */}
             </div>
         )
     }
 }
 
-export default RouteIndexItem;
+export default WorkoutShow;

@@ -40,3 +40,11 @@ footer {
    height: 100%;
    bottom: 0;
 }
+
+h1 { 
+   font-size: 34px;
+    font-weight: 600;
+    line-height: 41px;
+    letter-spacing: -0.01em;
+    margin-bottom: 20px;
+}

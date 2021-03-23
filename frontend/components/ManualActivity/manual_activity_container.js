@@ -1,7 +1,7 @@
 import React from 'react';
 import ManualActivity from './manual_activity';
 import { connect } from 'react-redux';
-import { createRoute } from "../../actions/route_actions"
+import { createWorkout } from "../../actions/workout_actions"
 import { logout } from "../../actions/session_actions"
 
 const msp = (state, ownProps) => {
@@ -10,7 +10,7 @@ const msp = (state, ownProps) => {
 
 const mdp = dispatch => {
     return {
-        action: newRoute => dispatch(createRoute(newRoute)),
+        action: newWorkout => dispatch(createWorkout(newWorkout)),
         logout: () => dispatch(logout())
     };
 };

@@ -12,8 +12,11 @@ import RouteMapContainer from './RouteMap/route_map_container';
 import RouteMapEditContainer from './RouteMap/route_map_edit_container';
 import RouteIndexItemContainer from './Route/route_index_item_container';
 import RouteShowContainer from './Route/route_show_container';
+import WorkoutShow from './Workout/workout_show';
+import WorkoutIndexContainer from './Workout/workouts_index_container';
 // import NavbarContainer from './Navbar/navbar_container';
 import SearchContainer from './Search/SearchContainer';
+import ManualActivityContainer from './ManualActivity/manual_activity_container'
 
 const App = () => (
     <>
@@ -30,7 +33,9 @@ const App = () => (
             <ProtectedRoute exact path="/routes/:routeId/view" component={RouteIndexItemContainer}/>
             <ProtectedRoute exact path="/routes/:routeId/edit" component={RouteMapEditContainer}/>
             <ProtectedRoute exact path="/routes/" component={SearchContainer}/>
-            {/* <ProtectedRoute exact path="/upload/manual" component={ManualActivityContainer}/> */}
+            <ProtectedRoute exact path="/training/" component={WorkoutIndexContainer}/>
+            <ProtectedRoute exact path="/activities/:id" component={WorkoutShow}/>
+            <ProtectedRoute exact path="/upload/manual" component={ManualActivityContainer}/>
         </Switch>
     </>
 );
