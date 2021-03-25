@@ -76,6 +76,7 @@ class WorkoutShow extends React.Component {
                 <div></div>
             )
         } else { 
+            const speed = (this.props.workout.distance / (this.props.workout.hours + (this.props.workout.minutes/60))).toFixed(2);
 
             return (
                 <div>
@@ -84,9 +85,13 @@ class WorkoutShow extends React.Component {
                     <div className="splash-border"></div>
                     <div className="page container">
 
-                        <div className="route-name media">
+                        <div className="activity media">
                             <div className="media-body">
                                 <h1>{this.props.workout.workout_title}</h1>
+                                <p>{this.props.workout.distance}</p>
+                                <p>{`${this.props.workout.hours}:${this.props.workout.minutes}:${this.props.workout.seconds}`}</p>
+                                <p>{speed}</p>
+                                <p>{this.props.workout.elevation}</p>
                             </div>
                         </div>
 
