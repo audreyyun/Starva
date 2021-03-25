@@ -27,7 +27,7 @@ class WorkoutIndex extends React.Component {
             //         })
             //     )
             // }
-            if (window.confirm(`Are you sure you want to delete this activity? You can not undo this action.`)) {
+            if (window.confirm(`Are you sure? Deleting an activity cannot be undone.`)) {
                 this.props.deleteWorkout(workoutId).then(
                     location.reload()
                 )
