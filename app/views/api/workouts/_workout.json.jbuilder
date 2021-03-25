@@ -2,4 +2,4 @@
 # :created_at, :updated_at
 
 
-json.extract! workout, :id, :start_time, :date, :workout_title, :sport, :description, :elevation, :distance, :duration, :athlete_id
+json.extract! workout, :id, :start_time, :date, :workout_title, :sport, :description, :elevation, :distance, :hours, :minutes, :seconds, :athlete_id

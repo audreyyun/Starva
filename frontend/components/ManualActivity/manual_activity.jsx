@@ -14,8 +14,8 @@ class ManualActivity extends React.Component {
             seconds: 0,
             elevation: 0,
             sport: "bike",
-            date: null,
-            start_time: null,
+            date: "",
+            start_time: "",
             title: ""
         }
 
@@ -33,13 +33,18 @@ class ManualActivity extends React.Component {
         e.preventDefault();
 
         // const title= prompt("Workout title(required)", this.state.workout.workout_title)
+        // const dur = `${`${this.state.hours} : ${this.state.minutes} : ${this.state.seconds}`}`;
+        // const dur = this.state.hours + ':' + this.state.minutes + ':' + this.state.seconds;
 
         if (this.state.title) { 
             const workout = { 
                 athlete_id: this.props.athleteId,
                 workout_title: this.state.title,
                 distance: this.state.distance,
-                // duration: this.props.duration, 
+                // duration: dur,
+                hours: this.state.hours,
+                minutes: this.state.minutes,
+                seconds: this.state.seconds,
                 elevation: this.state.elevation, 
                 sport: this.state.sport,
                 date: this.state.date,
@@ -96,15 +101,15 @@ class ManualActivity extends React.Component {
                     <div className="row">
                         <label>Sport
                             <select id="sports">
-                                <option value="bike">Ride</option>
-                                <option value="run">Run</option>                            
-                                <option value="swim">Swim</option>                            
+                                <option value="Ride">Ride</option>
+                                <option value="Run">Run</option>                            
+                                <option value="Swim">Swim</option>                            
                             </select>
                         </label>
                             
                         <label>Date and Time
-                            <input type="date" />
-                                <input type="time" />
+                            <input type="date" value={this.state.date} onChange={this.handleChange("date")}/>
+                                <input type="time" value={this.state.time}/>
                         </label>
                     </div>
 

@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2021_03_22_203700) do
 
   create_table "routes", force: :cascade do |t|
     t.string "route_name", null: false
+    t.string "route", null: false
     t.float "distance"
     t.string "activity"
     t.float "start_lat"
@@ -24,32 +25,34 @@ ActiveRecord::Schema.define(version: 2021_03_22_203700) do
     t.float "end_lat"
     t.float "end_long"
     t.text "description"
+    t.integer "athlete_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "athlete_id"
-    t.string "route", null: false
     t.index ["athlete_id"], name: "index_routes_on_athlete_id"
     t.index ["route_name"], name: "index_routes_on_route_name"
   end
 
   create_table "users", force: :cascade do |t|
+    t.string "username"
     t.string "email", null: false
     t.string "password_digest", null: false
     t.string "session_token", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.string "first_name"
     t.string "last_name"
-    t.string "username"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["session_token"], name: "index_users_on_session_token", unique: true
+    t.index ["username"], name: "index_users_on_username", unique: true
   end
 
   create_table "workouts", force: :cascade do |t|
     t.string "workout_title", null: false
     t.integer "athlete_id"
     t.float "distance"
-    t.float "duration"
+    t.float "hours"
+    t.float "minutes"
+    t.float "seconds"
     t.float "elevation"
     t.string "sport"
     t.date "date"

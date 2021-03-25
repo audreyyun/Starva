@@ -1,18 +1,19 @@
-.container {
+/* .container {
     min-width: 1248px;
     box-sizing: border-box;
-}
+} */
 
 .page {
     margin-top: 30px;
     margin-bottom: 80px;
     position: relative;
+    /* display: flex; */
 }
-@media (min-width: 1250px) { 
+/* @media (min-width: 1250px) { 
     .container {
         width: 1248px;
     }
-}
+} */
 
 .container {
     margin-right: auto;

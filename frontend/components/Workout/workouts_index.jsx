@@ -49,29 +49,33 @@ class WorkoutIndex extends React.Component {
         debugger
 
         const workoutItems = Object.values(this.props.workouts).reverse().map((workout) => (
-            <li className="workout-index-item" key={workout.id}>
-                <div className="workout-preview">
+            <tr className="workout-index-item" key={workout.id}>
+                {/* <div className="workout-preview"> */}
         
-                    <p>{workout.sport}</p>
-                    <p>{workout.date}</p>
-                    <Link to={`/activities/${workout.id}`}>
-                        <p>{workout.workout_title}</p>
-                    </Link>
-                    <p>{workout.duration}</p>
-                    <p>{workout.distance}</p>
-                    <p>{workout.elevation}</p>
+                <td className="view-col col-type col-str">{workout.sport}</td>
+                <td className="view-col col-date col-str">{workout.date}</td>
+                        <td className="view-col col-title col-str">
+                        <Link className="col-str" to={`/activities/${workout.id}`}>
+                        {workout.workout_title}
+                        </Link>
+                        </td>
+                <td className="view-col col-time col-num">{`${workout.hours}:${workout.minutes}:${workout.seconds}`}</td>
+                <td className="view-col col-distance col-num">{workout.distance}</td>
+                <td className="view-col col-elevation col-num">{workout.elevation}</td>
 
 
                     {/* <Link className="workout-edit-btn" to={`/activity/${workout.id}/edit`}>Edit</Link> */}
 
-                    <div className="workout-delete-btn" onClick={this.handleDelete(workout.id)}>Delete</div>
+                    <td className="col-edit">
+                        <button className="workout-delete-btn btn-link" onClick={this.handleDelete(workout.id)}>Delete</button>
+                    </td>
 
                     {/* <WorkoutShow workout={workout}
                         fetchWorkout={this.props.fetchWorkout}
                     /> */}
 
-                </div>
-            </li>
+                {/* </div> */}
+            </tr>
         ));
 
         if (this.props.workouts.length === 0) {
@@ -101,18 +105,29 @@ class WorkoutIndex extends React.Component {
                     <div className="splash-border"></div>
 
                     <div className="routes-index-body-container  page container">
-                        <div className="routes-index-body">
+                        <div className="activities-index-body">
                             <div className="routes-index-heading-row">
                                 <div className="routes-index-heading-title-container">
-                                    <h1 className="routes-index-title">My Routes</h1>
+                                    <h1 className="routes-index-title">My Activities</h1>
 
                                 </div>
-                                <img className="strava-routes" src={window.route} alt="" />
                             </div>
+                        
+                            <table className="table table-padded" id="search-results">
+                                <thead>
+                                    <tr>
+                                        <th className="col-type col-sort-control">Sport</th>
+                                        <th className="col-date col-sort-control">Date</th>
+                                        <th className="col-title col-sort-control">Title</th>
+                                        <th className="col-time col-sort-control">Time</th>
+                                        <th className="col-distance col-sort-control">Distance</th>
+                                        <th className="col-elevation col-sort-control">Elevation</th>
+                                        <th className="col-edit col-sort-control"></th>
+                                    </tr>
+                                </thead>
 
-                            <div className="index-heading-border"></div>
-                            <ul className="routes-list">{workoutItems}</ul>
-
+                                <tbody className="activities-list">{workoutItems}</tbody>
+                            </table>
                         </div>
                     </div>
                 </div>

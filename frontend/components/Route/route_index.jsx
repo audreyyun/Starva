@@ -132,7 +132,7 @@ class RouteIndex extends React.Component {
                     <Navbar logout={this.props.logout} {...navbarProps} />
                     <div className="splash-border"></div>
 
-                    <div className="routes-index-body-container  page container">
+                    <div className="routes-index-body-container page container">
                         <div className="routes-index-body">
                             <div className="routes-index-heading-row">
                                 <div className="routes-index-heading-title-container">

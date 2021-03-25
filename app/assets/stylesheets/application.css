@@ -27,6 +27,7 @@ html, body {
 
 body {
    overflow: hidden; 
+   font-family: "MaisonNeue", "Segoe UI", "Helvetica Neue", -apple-system, system-ui, BlinkMacSystemFont, Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 /* #map { 
@@ -47,4 +48,28 @@ h1 {
     line-height: 41px;
     letter-spacing: -0.01em;
     margin-bottom: 20px;
+}
+
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+a { 
+   color: #007FB6;
+   text-decoration: none;
 }

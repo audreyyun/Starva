@@ -16,6 +16,7 @@
 #
 #  index_users_on_email          (email) UNIQUE
 #  index_users_on_session_token  (session_token) UNIQUE
+#  index_users_on_username       (username) UNIQUE
 #
 class User < ApplicationRecord
     validates :email,:session_token, presence: true

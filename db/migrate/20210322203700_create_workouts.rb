@@ -4,7 +4,9 @@ class CreateWorkouts < ActiveRecord::Migration[5.2]
       t.string :workout_title, null: false
       t.integer :athlete_id
       t.float :distance
-      t.float :duration
+      t.float :hours
+      t.float :minutes
+      t.float :seconds
       t.float :elevation
       t.string :sport
       t.date :date
