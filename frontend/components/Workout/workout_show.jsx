@@ -10,14 +10,9 @@ class WorkoutShow extends React.Component {
         debugger
         super(props);
 
-        // this.state = {
-        //     encodedRoute: this.props.route.route,
-        //     distance: this.props.route.distance,
-        //     updated: false
-        // };
-
         // this.handleDelete = this.handleDelete.bind(this);
         this.formatTime = this.formatTime.bind(this);
+        this.formatDuration = this.formatDuration.bind(this);
     }
 
     componentDidMount() { 
@@ -44,6 +39,26 @@ class WorkoutShow extends React.Component {
         minutes = minutes < 10 ? '0' + minutes : minutes;
         let strTime = hours + ':' + minutes + ' ' + ampm;
         return strTime;
+    }
+
+    formatDuration(receivedWorkout) { 
+        let min, sec, hrs;
+        if (receivedWorkout.minutes < 10) { 
+            min = `0${receivedWorkout.minutes}`
+        }
+        if (receivedWorkout.seconds < 10) { 
+            sec = `0${receivedWorkout.seconds}`
+        }
+
+        if (receivedWorkout.hours < 10) { 
+            hrs = `0${receivedWorkout.hours}`
+        }
+
+        if (receivedWorkout.hours === 0) { 
+            return `${min}:${sec}`
+        } 
+
+        return `${hrs}:${min}:${sec}`
     }
 
     render() {
@@ -129,6 +144,7 @@ class WorkoutShow extends React.Component {
                                     <div className="activity-summary activity-card">
                                         <time>{formattedTime} on {dayWord}, {monthLetter} {date}, {year} </time>
                                         <h1>{this.props.workout.workout_title}</h1>
+                                        <p>{this.props.workout.description}</p>
                                     </div>
                                     <div className="activity-stats activity-card">
                                         <ul className="activity-stats-list inline-stats section">
@@ -141,7 +157,8 @@ class WorkoutShow extends React.Component {
                                             </li>
                                             <li>
                                                 <strong>
-                                                    {`${this.props.workout.hours}:${this.props.workout.minutes}:${this.props.workout.seconds}`}
+                                                    {/* {`${this.props.workout.hours}:${this.props.workout.minutes}:${this.props.workout.seconds}`} */}
+                                                    {this.formatDuration(this.props.workout)}
                                                 </strong>
                                                 <div className="label">Duration</div>
                                             </li>

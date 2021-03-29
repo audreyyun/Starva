@@ -8,7 +8,9 @@ import Button from '../Button';
 class WorkoutIndex extends React.Component {
     constructor(props) {
         super(props);
-        this.handleDelete = this.handleDelete.bind(this)
+        this.handleDelete = this.handleDelete.bind(this);
+        this.formatDay = this.formatDay.bind(this);
+        this.formatDuration = this.formatDuration.bind(this);
     }
 
     componentDidMount() {
@@ -36,6 +38,52 @@ class WorkoutIndex extends React.Component {
 
     }
 
+    formatDay(d) { 
+        let month = new Date(d).getMonth() + 1;
+        let date = new Date(d).getDate();
+        let year = new Date(d).getFullYear();
+        let day = new Date(d).getDay();
+        let dayWord
+
+        if (day === 0) { dayWord = "Sun"; }
+        else if (day === 1) { dayWord = "Mon"; }
+        else if (day === 2) { dayWord = "Tues"; }
+        else if (day === 3) { dayWord = "Wed"; }
+        else if (day === 4) { dayWord = "Thurs"; }
+        else if (day === 5) { dayWord = "Fri"; }
+        else if (day === 6) { dayWord = "Sat"; }
+
+
+        let strDay = `${dayWord}, ${month}/${date}/${year}`
+        return strDay;
+    }
+
+    formatDuration(receivedWorkout) {
+        let min, sec, hrs;
+        if (receivedWorkout.minutes < 10) {
+            min = `0${receivedWorkout.minutes}`
+        } else { 
+            min = receivedWorkout.minutes
+        }
+        if (receivedWorkout.seconds < 10) {
+            sec = `0${receivedWorkout.seconds}`
+        } else { 
+            sec = receivedWorkout.seconds
+        }
+
+        if (receivedWorkout.hours < 10) {
+            hrs = `0${receivedWorkout.hours}`
+        } else { 
+            hrs = receivedWorkout.hours
+        }
+
+        if (receivedWorkout.hours === 0) {
+            return `${min}:${sec}`
+        }
+
+        return `${hrs}:${min}:${sec}`
+    }
+
     render() {
 
         const navbarProps =
@@ -55,15 +103,16 @@ class WorkoutIndex extends React.Component {
                 {/* <div className="workout-preview"> */}
         
                 <td className="view-col col-type col-str">{workout.sport}</td>
-                <td className="view-col col-date col-str">{workout.date}</td>
+                <td className="view-col col-date col-str">{this.formatDay(workout.date)}</td>
                         <td className="view-col col-title col-str">
                         <Link className="col-str" to={`/activities/${workout.id}`}>
                         {workout.workout_title}
                         </Link>
                         </td>
-                <td className="view-col col-time col-num">{`${workout.hours}:${workout.minutes}:${workout.seconds}`}</td>
-                <td className="view-col col-distance col-num">{workout.distance}</td>
-                <td className="view-col col-elevation col-num">{workout.elevation}</td>
+                {/* <td className="view-col col-time col-num">{`${workout.hours}:${workout.minutes}:${workout.seconds}`}</td> */}
+                <td className="view-col col-time col-num">{this.formatDuration(workout)}</td>
+                <td className="view-col col-distance col-num">{workout.distance} mi</td>
+                <td className="view-col col-elevation col-num">{workout.elevation} ft</td>
 
 
                     {/* <Link className="workout-edit-btn" to={`/activity/${workout.id}/edit`}>Edit</Link> */}
@@ -71,10 +120,6 @@ class WorkoutIndex extends React.Component {
                     <td className="col-edit">
                         <button className="workout-delete-btn btn-link" onClick={this.handleDelete(workout.id)}>Delete</button>
                     </td>
-
-                    {/* <WorkoutShow workout={workout}
-                        fetchWorkout={this.props.fetchWorkout}
-                    /> */}
 
                 {/* </div> */}
             </tr>
