@@ -17,6 +17,7 @@ class WorkoutShow extends React.Component {
         // };
 
         // this.handleDelete = this.handleDelete.bind(this);
+        this.formatTime = this.formatTime.bind(this);
     }
 
     componentDidMount() { 
@@ -34,26 +35,19 @@ class WorkoutShow extends React.Component {
     //     }
     // }
 
+    formatTime(date) { 
+        let hours = new Date(date).getHours();
+        let minutes = new Date(date).getMinutes();
+        let ampm = hours >= 12 ? 'PM' : 'AM';
+        hours = hours % 12;
+        hours = hours ? hours : 12; // the hour '0' should be '12'
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        let strTime = hours + ':' + minutes + ' ' + ampm;
+        return strTime;
+    }
+
     render() {
-        // let month = new Date(this.props.route.created_at).getMonth() + 1;
-        // let day = new Date(this.props.route.created_at).getDay();
-        // let year = new Date(this.props.route.created_at).getFullYear();
-        // let monthLetter = null;
-        let athleteName;
-
-        // if (month === 1) { monthLetter = "January"; }
-        // else if (month === 2) { monthLetter = "February"; }
-        // else if (month === 3) { monthLetter = "March"; }
-        // else if (month === 4) { monthLetter = "April"; }
-        // else if (month === 5) { monthLetter = "May"; }
-        // else if (month === 6) { monthLetter = "June"; }
-        // else if (month === 7) { monthLetter = "July"; }
-        // else if (month === 8) { monthLetter = "August"; }
-        // else if (month === 9) { monthLetter = "September"; }
-        // else if (month === 10) { monthLetter = "October"; }
-        // else if (month === 11) { monthLetter = "November"; }
-        // else if (month === 12) { monthLetter = "December"; }
-
+        
         const navbarProps =
         {
             loginBtnClass: "nav-btn-secondary",
@@ -61,7 +55,8 @@ class WorkoutShow extends React.Component {
             loginBtnPath: "/logout",
             isAuthenticated: true,
         }
-
+        
+        let athleteName;
         if (!this.props.athlete.first_name) {
             athleteName = this.props.athlete.email
         } else {
@@ -69,16 +64,51 @@ class WorkoutShow extends React.Component {
         }
 
 
-        debugger
-
         if (!this.props.workout) { 
             return (
                 <div></div>
             )
         } else { 
             const speed = (this.props.workout.distance / (this.props.workout.hours + (this.props.workout.minutes/60))).toFixed(2);
+            let athleteName;
 
+            if (!this.props.athlete.first_name) {
+                athleteName = this.props.athlete.email
+            } else {
+                athleteName = this.props.athlete.first_name + this.props.athlete.last_name
+            }
+            let month = new Date(this.props.workout.created_at).getMonth() + 1;
+            let date = new Date(this.props.workout.created_at).getDate();
+            let year = new Date(this.props.workout.created_at).getFullYear();
+            let day = new Date(this.props.workout.created_at).getDay();
+            let formattedTime = this.formatTime(this.props.workout.start_time);
+            let monthLetter, dayWord;
+
+            if (day === 0) { dayWord = "Sunday"; }
+            else if (day === 1) { dayWord = "Monday"; } 
+            else if (day === 2) { dayWord = "Tuesday"; } 
+            else if (day === 3) { dayWord = "Wednesday"; } 
+            else if (day === 4) { dayWord = "Thursday"; } 
+            else if (day === 5) { dayWord = "Friday"; } 
+            else if (day === 6) { dayWord = "Saturday"; } 
+
+
+            if (month === 1) { monthLetter = "January"; }
+            else if (month === 2) { monthLetter = "February"; }
+            else if (month === 3) { monthLetter = "March"; }
+            else if (month === 4) { monthLetter = "April"; }
+            else if (month === 5) { monthLetter = "May"; }
+            else if (month === 6) { monthLetter = "June"; }
+            else if (month === 7) { monthLetter = "July"; }
+            else if (month === 8) { monthLetter = "August"; }
+            else if (month === 9) { monthLetter = "September"; }
+            else if (month === 10) { monthLetter = "October"; }
+            else if (month === 11) { monthLetter = "November"; }
+            else if (month === 12) { monthLetter = "December"; }
+
+            
             return (
+
                 <div>
                     
                     <Navbar logout={this.props.logout} {...navbarProps} />
@@ -86,32 +116,31 @@ class WorkoutShow extends React.Component {
                     <div className="page container">
 
                         <div className="activity media">
-                            <div className="media-body">
-                                <h1>{this.props.workout.workout_title}</h1>
-                                <p>{this.props.workout.distance}</p>
-                                <p>{`${this.props.workout.hours}:${this.props.workout.minutes}:${this.props.workout.seconds}`}</p>
-                                <p>{speed}</p>
-                                <p>{this.props.workout.elevation}</p>
-                            </div>
+                            <section className="media-body" id="heading">
+                                <header>
+                                    <h2>
+                                        <span className="title">
+                                            
+                                            {athleteName} – {this.props.workout.sport}
+                                        </span>
+                                    </h2>
+                                </header>
+                                <div className="activity-summary-container">
+                                    <div className="activity-summary activity-card">
+                                        <div>{formattedTime} on {dayWord}, {monthLetter} {date}, {year} </div>
+                                        <h1>{this.props.workout.workout_title}</h1>
+                                    </div>
+                                    <div className="activity-stats activity-card">
+                                        <p>{this.props.workout.distance}</p>
+                                        <p>{`${this.props.workout.hours}:${this.props.workout.minutes}:${this.props.workout.seconds}`}</p>
+                                        <p>{speed}</p>
+                                        <p>{this.props.workout.elevation}</p>
+                                        
+                                    </div>
+                                </div>
+                            </section>
                         </div>
 
-                        {/* <section className="borderless actions">
-                            <Link to={`/routes/${this.props.route.id}/edit`}>
-                                <Button className={`btn-secondary edit-route`} formType={`Edit`}></Button>
-                            </Link>
-                        </section>
-                        <div className="route-view">
-
-                            <div id='route-view-info'>
-                                <div className="route-details">
-                                    <div className="details media-body">By {athleteName}</div>
-                                    <div id="route-view-timestamp">Created on {monthLetter} {day}, {year}</div>
-                                </div>
-                                <div className="distance">{this.props.route.distance}</div>
-                            </div>
-
-
-                        </div> */}
                     </div>
                 </div>
             )

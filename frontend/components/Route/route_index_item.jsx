@@ -127,7 +127,7 @@ class RouteIndexItem extends React.Component {
             return (<div></div>)
         } else { 
             let month = new Date(this.props.route.created_at).getMonth() + 1;
-            let day = new Date(this.props.route.created_at).getDay();
+            let day = new Date(this.props.route.created_at).getDate();
             let year = new Date(this.props.route.created_at).getFullYear();
             let monthLetter = null;
             let athleteName;
@@ -162,7 +162,7 @@ class RouteIndexItem extends React.Component {
                         </div>
 
                         <div className="route-name media">
-                            <div className="media-body">
+                            <div className="">
                                 <h1>{this.props.route.route_name}</h1>
                             </div>
                         </div>
@@ -177,7 +177,7 @@ class RouteIndexItem extends React.Component {
 
                             <div id='route-view-info'>
                                 <div className="route-details">
-                                    <div className="details media-body">By {athleteName}</div>
+                                    <div className="details">By {athleteName}</div>
                                     <div id="route-view-timestamp">Created on {monthLetter} {day}, {year}</div>
                                 </div>
                                 <div className="distance">{this.props.route.distance}</div>

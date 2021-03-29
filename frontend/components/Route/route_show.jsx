@@ -132,11 +132,11 @@ class RouteShow extends React.Component {
         return (
             <div>
                 <div className="route-card">
-                    <Link to={`/routes/${this.props.route.id}/view`}>
+                    <Link to={`/routes/${this.props.route.id}`}>
                         <div id='item-map-container' ref={map => this.mapNode = map}> </div>
                     </Link>
                     <div id='route-item-info'>
-                        <Link to={`/routes/${this.props.route.id}/view`}>
+                        <Link to={`/routes/${this.props.route.id}`}>
                             <h3 className="route-name">{this.props.route.route_name}</h3>
                         </Link>
                         <ul className="inline-stats">

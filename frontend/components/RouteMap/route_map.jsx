@@ -153,7 +153,8 @@ class RouteMap extends React.Component {
 
             this.props.action(route).then((route) => {
                 this.props.history.push({ 
-                    pathname: `/routes/${route.route.id}/view`
+                    // pathname: `/routes/${route.route.id}/view`
+                    pathname: `/routes/${route.route.id}`
                 })
             });
         }

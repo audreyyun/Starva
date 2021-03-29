@@ -16,7 +16,8 @@ class ManualActivity extends React.Component {
             sport: "bike",
             date: "",
             start_time: "",
-            title: ""
+            title: "",
+            description: ""
         }
 
         this.handleSubmit = this.handleSubmit.bind(this)
@@ -48,8 +49,9 @@ class ManualActivity extends React.Component {
                 elevation: this.state.elevation, 
                 sport: this.state.sport,
                 date: this.state.date,
-                start_time: this.state.time, 
-                id: this.props.workoutId
+                start_time: this.state.start_time, 
+                id: this.props.workoutId,
+                description: this.state.description
             }
             
             if (this.props.workoutId) {
@@ -73,7 +75,7 @@ class ManualActivity extends React.Component {
             isAuthenticated: true,
         }
 
-
+        
         return (
             <div>
                 <Navbar logout={this.props.logout} {...navbarProps} />
@@ -109,7 +111,7 @@ class ManualActivity extends React.Component {
                             
                         <label>Date and Time
                             <input type="date" value={this.state.date} onChange={this.handleChange("date")}/>
-                                <input type="time" value={this.state.time}/>
+                                <input type="time" value={this.state.start_time} onChange={this.handleChange("start_time")}/>
                         </label>
                     </div>
 
@@ -121,7 +123,7 @@ class ManualActivity extends React.Component {
                     
                     <div className="row">
                         <label>Description
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <textarea name="" id="" cols="30" rows="10" value={this.state.description} onChange={this.handleChange("description")}></textarea>
                         </label>
                     </div>
 

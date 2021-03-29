@@ -35,15 +35,6 @@ class RouteIndex extends React.Component {
             }
         }
 
-
-        // debugger
-        // if (window.confirm("Are you sure you want to delete this route? You can not undo this action.")) {
-        //     this.props.deleteRoute(routeId).then(
-        //         this.props.history.replace({
-        //             pathname: `/routes/`
-        //         })
-        //     )
-        // }
     }
 
     handleClick(routeId) { 
@@ -58,7 +49,6 @@ class RouteIndex extends React.Component {
 
     render () { 
 
-        // debugger
         const navbarProps =
         {
             loginBtnClass: "nav-btn-secondary",
@@ -75,7 +65,8 @@ class RouteIndex extends React.Component {
                         <div id="wrench-btn" className="wrench-btn" onClick={() => this.handleClick(route.id)}>
                             <img className="sprite-wrench" src={window.wrench} alt="" />
                         </div>
-                            <div id={`wrench-content ${route.id}`} className="wrench-content" >
+
+                        <div id={`wrench-content ${route.id}`} className="wrench-content" >
                             <div>
                                 <Link className="sprite-wrench-options" to={`/routes/${route.id}/edit`}>Edit Route</Link>
                             </div>
