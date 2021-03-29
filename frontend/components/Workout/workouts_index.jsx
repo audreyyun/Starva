@@ -48,6 +48,8 @@ class WorkoutIndex extends React.Component {
 
         debugger
 
+        const numWorkouts = Object.values(this.props.workouts).length;
+
         const workoutItems = Object.values(this.props.workouts).reverse().map((workout) => (
             <tr className="workout-index-item" key={workout.id}>
                 {/* <div className="workout-preview"> */}
@@ -89,7 +91,6 @@ class WorkoutIndex extends React.Component {
                             <div className="routes-index-heading-row">
                                 <h1 className="routes-index-title">My Activities</h1>
 
-                                <img className="strava-routes" src={window.routes} alt="" />
                             </div>
                             <div className="index-heading-border"></div>
                             <p>You don't have any activities.</p>
@@ -109,7 +110,7 @@ class WorkoutIndex extends React.Component {
                             <div className="routes-index-heading-row">
                                 <div className="routes-index-heading-title-container">
                                     <h1 className="routes-index-title">My Activities</h1>
-
+                                    <h3>{numWorkouts} Activities</h3>
                                 </div>
                             </div>
                         

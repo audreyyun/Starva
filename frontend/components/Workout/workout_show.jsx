@@ -113,7 +113,7 @@ class WorkoutShow extends React.Component {
                     
                     <Navbar logout={this.props.logout} {...navbarProps} />
                     <div className="splash-border"></div>
-                    <div className="page container">
+                    <div className="workout-show-container">
 
                         <div className="activity media">
                             <section className="media-body" id="heading">
