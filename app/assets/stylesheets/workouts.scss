@@ -206,3 +206,41 @@ section header {
     float: left;
     margin: 20px 0;
 }
+
+.activity-stats { 
+    font-size: 12px;
+    margin: 0;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 1px solid #dfdfe8;
+}
+
+.activity-stats-list {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+// .inline-stats {
+//     clear: none;
+//     white-space: nowrap;
+// }
+
+.inline-stats { 
+    li {
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        float: none;
+        margin-right: 20px;
+    }
+
+    .label {
+    white-space: normal;
+    max-width: 100px;
+    line-height: 1.2em;
+    }
+}

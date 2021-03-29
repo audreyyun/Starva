@@ -13,5 +13,7 @@ Route.destroy_all
 
 demo_user = User.create!( 
     email: "guest@email.com",
-    password: "password1"
+    password: "password1", 
+    first_name: "Audrey",
+    last_name: "Yun"
 )

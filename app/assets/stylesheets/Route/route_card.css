@@ -133,6 +133,8 @@
     font-size: 0.65em;
     line-height: 1em;
     margin-left: 2px;
+    position: relative;
+    bottom: -10px;
 }
 
 abbr[title] {
@@ -147,4 +149,13 @@ abbr[title] {
 .unit { 
     text-decoration: none;
     height: 100%;
+    font-weight: 300;
+}
+
+.activity-summary time { 
+    color: #666;
+    margin: 0;
+    white-space: nowrap;
+    font-size: 12px;
+    line-height: 16px;
 }

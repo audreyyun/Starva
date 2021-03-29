@@ -29,9 +29,7 @@ const App = () => (
         <ProtectedRoute exact path="/dashboard" component={DashboardIndexContainer}/>
         <Switch>
             <ProtectedRoute exact path="/routes/new" component={RouteMapContainer}/>
-            {/* <ProtectedRoute exact path="/routes/:routeId" component={RouteShowContainer}/> */}
             <ProtectedRoute exact path="/routes/:routeId" component={RouteIndexItemContainer}/>
-            {/* <ProtectedRoute exact path="/routes/:routeId/view" component={RouteIndexItemContainer}/> */}
             <ProtectedRoute exact path="/routes/:routeId/edit" component={RouteMapEditContainer}/>
             <ProtectedRoute exact path="/routes/" component={SearchContainer}/>
             <ProtectedRoute exact path="/training/" component={WorkoutIndexContainer}/>

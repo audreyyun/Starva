@@ -75,7 +75,7 @@ class WorkoutShow extends React.Component {
             if (!this.props.athlete.first_name) {
                 athleteName = this.props.athlete.email
             } else {
-                athleteName = this.props.athlete.first_name + this.props.athlete.last_name
+                athleteName = this.props.athlete.first_name + " " + this.props.athlete.last_name
             }
             let month = new Date(this.props.workout.created_at).getMonth() + 1;
             let date = new Date(this.props.workout.created_at).getDate();
@@ -106,7 +106,7 @@ class WorkoutShow extends React.Component {
             else if (month === 11) { monthLetter = "November"; }
             else if (month === 12) { monthLetter = "December"; }
 
-            
+            debugger
             return (
 
                 <div>
@@ -127,14 +127,39 @@ class WorkoutShow extends React.Component {
                                 </header>
                                 <div className="activity-summary-container">
                                     <div className="activity-summary activity-card">
-                                        <div>{formattedTime} on {dayWord}, {monthLetter} {date}, {year} </div>
+                                        <time>{formattedTime} on {dayWord}, {monthLetter} {date}, {year} </time>
                                         <h1>{this.props.workout.workout_title}</h1>
                                     </div>
                                     <div className="activity-stats activity-card">
-                                        <p>{this.props.workout.distance}</p>
-                                        <p>{`${this.props.workout.hours}:${this.props.workout.minutes}:${this.props.workout.seconds}`}</p>
-                                        <p>{speed}</p>
-                                        <p>{this.props.workout.elevation}</p>
+                                        <ul className="activity-stats-list inline-stats section">
+                                            <li>
+                                                <strong>
+                                                    {this.props.workout.distance}
+                                                    <abbr className="unit" title="miles"> mi</abbr>
+                                                </strong>
+                                                <div className="label">Distance</div>
+                                            </li>
+                                            <li>
+                                                <strong>
+                                                    {`${this.props.workout.hours}:${this.props.workout.minutes}:${this.props.workout.seconds}`}
+                                                </strong>
+                                                <div className="label">Duration</div>
+                                            </li>
+                                            <li>
+                                                <strong>
+                                                    {speed}
+                                                    <abbr className="unit" title="speed"> mi/h</abbr>
+                                                </strong>
+                                                <div className="label">Speed</div>
+                                            </li>
+                                            <li>
+                                                <strong>
+                                                    {this.props.workout.elevation}
+                                                    <abbr className="unit" title="feet"> ft</abbr>
+                                                </strong>
+                                                <div className="label">Elevation</div>
+                                            </li>
+                                        </ul>
                                         
                                     </div>
                                 </div>

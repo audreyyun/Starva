@@ -13,7 +13,7 @@ class ManualActivity extends React.Component {
             minutes: 0,
             seconds: 0,
             elevation: 0,
-            sport: "bike",
+            sport: "Ride",
             date: "",
             start_time: "",
             title: "",
@@ -86,7 +86,7 @@ class ManualActivity extends React.Component {
                     <form onSubmit={this.handleSubmit} className="manual-entry-body">
                     <div className="row">
                         <label>Distance
-                            <input type="number" min="0" value={this.state.distance} onChange={this.handleChange("distance")}/>
+                            <input type="float" min="0" value={this.state.distance} onChange={this.handleChange("distance")}/>
                         </label>
 
                         <label>Duration
@@ -102,7 +102,7 @@ class ManualActivity extends React.Component {
 
                     <div className="row">
                         <label>Sport
-                            <select id="sports">
+                            <select id="sports" value={this.state.sport} onChange={this.handleChange("sport")}>
                                 <option value="Ride">Ride</option>
                                 <option value="Run">Run</option>                            
                                 <option value="Swim">Swim</option>                            
