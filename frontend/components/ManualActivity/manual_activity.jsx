@@ -22,6 +22,7 @@ class ManualActivity extends React.Component {
 
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChange = this.handleChange.bind(this);
+        this.timeOfDay = this.timeOfDay.bind(this);
     }
 
     handleChange(type) { 
@@ -65,6 +66,23 @@ class ManualActivity extends React.Component {
         }
     }
     
+    timeOfDay() { 
+        let tOd = new Date();
+        let currentHour = tOd.getHours();
+        if (currentHour < 12 && currentHour >= 0) { 
+                return "Morning Ride"
+            } else if (currentHour >= 12 && currentHour <= 5) {
+                    return "Afternoon Ride"
+                } else if (currentHour > 5 && currentHour <= 23) { 
+                        return "Evening Ride"
+                    }
+
+        // if (currHour >= 5 && currHour <= 23) { 
+        //     return "Evening"
+        // } else { 
+        //     return currHour
+        // }
+    }
 
     render() { 
         const navbarProps =
@@ -154,7 +172,7 @@ class ManualActivity extends React.Component {
                         <div className="row row2">
                             <label>Title
                                 <div className="title">
-                                    <input type="text" value={this.state.title} onChange={this.handleChange("title")}/>
+                                    <input type="text" value={this.state.title} placeholder={this.timeOfDay()} onChange={this.handleChange("title")}/>
                                 </div>
                             </label>
                         </div>
@@ -166,6 +184,8 @@ class ManualActivity extends React.Component {
                                 <textarea name="" id="" cols="30" rows="10" value={this.state.description} onChange={this.handleChange("description")}></textarea>
                             </label>
                         </div>
+
+                        <hr className="line" />
 
                         <input type="submit" className="btn-secondary" value="Create"/>
                     </form>
