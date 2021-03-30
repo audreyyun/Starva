@@ -80,6 +80,10 @@ a {
    text-decoration: none;
 }
 
+form { 
+   display: block;
+}
+
 fieldset {
     border: 0;
     padding: 0 0 20px;

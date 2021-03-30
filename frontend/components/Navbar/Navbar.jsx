@@ -67,7 +67,7 @@ const Navbar = (props) => {
                             <div className="upload-dropdown-content">
                                 <div>
                                     {/* <Link className="navbar-routes" to="/workouts/new">Add a Manual Entry</Link> */}
-                                    <Link className="navbar-routes" to="/upload/manual">Add a Manual Entry</Link>
+                                    <Link className="navbar-routes" to="/upload/manual">Add Manual Entry</Link>
                                 </div>
 
                                 <div>

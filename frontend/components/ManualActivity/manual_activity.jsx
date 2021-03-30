@@ -20,8 +20,8 @@ class ManualActivity extends React.Component {
             description: ""
         }
 
-        this.handleSubmit = this.handleSubmit.bind(this)
-        this.handleChange = this.handleChange.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleChange = this.handleChange.bind(this);
     }
 
     handleChange(type) { 
@@ -64,6 +64,7 @@ class ManualActivity extends React.Component {
             })
         }
     }
+    
 
     render() { 
         const navbarProps =
@@ -96,57 +97,77 @@ class ManualActivity extends React.Component {
                             </label> */}
 
                             <div className="upload">
-                                <fieldset>
+                                <fieldset className="upload-duration">
                                     <legend>Duration</legend>
-                                    <input type="number" min="0" value={this.state.hours} onChange={this.handleChange("hours")}/>
-                                    <input type="number" min="0" value={this.state.minutes} onChange={this.handleChange("minutes")}/>
-                                    <input type="number" min="0" value={this.state.seconds} onChange={this.handleChange("seconds")}/>
+                                    <div className="duration-input">
+                                        <div className="input-field validation-wrapper">
+                                            <label htmlFor="hours"><abbr title="hours">hr</abbr></label>
+                                                <input type="number" name="hours" min="0" value={this.state.hours} onChange={this.handleChange("hours")}/>
+                                        </div>
+                                        
+                                        <div className="input-field validation-wrapper">
+                                            <label htmlFor="minutes"><abbr title="minutes">min</abbr></label>
+                                                <input type="number" name="minutes" min="0" value={this.state.minutes} onChange={this.handleChange("minutes")}/>
+                                        </div>
+
+                                        <div className="input-field validation-wrapper">
+                                            <label htmlFor="seconds"><abbr title="seconds">s</abbr></label>
+                                                <input type="number" name="seconds" min="0" value={this.state.seconds} onChange={this.handleChange("seconds")}/>
+                                        </div>
+                                    </div>
                                 </fieldset>
                             </div>
-                            {/* <label>Duration
-                                <input type="number" min="0" value={this.state.hours} onChange={this.handleChange("hours")}/>
-                                <input type="number" min="0" value={this.state.minutes} onChange={this.handleChange("minutes")}/>
-                                <input type="number" min="0" value={this.state.seconds} onChange={this.handleChange("seconds")}/>
-                            </label> */}
+                           
                             <div className="upload">
                                 <fieldset>
                                     <legend>Elevation</legend>
                                     <input type="number" min="0" value={this.state.elevation} onChange={this.handleChange("elevation")}/>
                                 </fieldset>
                             </div>
-                            {/* <label>Elevation
-                                <input type="number" min="0" value={this.state.elevation} onChange={this.handleChange("elevation")}/>
-                            </label> */}
                         </div>
 
-                        <div className="row">
-                            <label>Sport
-                                <select id="sports" value={this.state.sport} onChange={this.handleChange("sport")}>
-                                    <option value="Ride">Ride</option>
-                                    <option value="Run">Run</option>                            
-                                    <option value="Swim">Swim</option>                            
-                                </select>
-                            </label>
-                                
-                            <label>Date and Time
-                                <input type="date" value={this.state.date} onChange={this.handleChange("date")}/>
-                                    <input type="time" value={this.state.start_time} onChange={this.handleChange("start_time")}/>
-                            </label>
+                        <hr className="line"/>
+
+                        <div className="row row2">
+                            <div className="upload block">
+                                <label>Sport
+                                    <select className="selection" id="sports" value={this.state.sport} onChange={this.handleChange("sport")}>
+                                        <option value="Ride">Ride</option>
+                                        <option value="Run">Run</option>                            
+                                        <option value="Swim">Swim</option>                            
+                                    </select>
+                                </label>
+                            </div>
+                            
+                            <div className="upload block">
+                                <label>Date and Time
+                                    <div className="selection">
+                                        <div className="time-date-input-wrapper">
+                                            <input type="date" value={this.state.date} onChange={this.handleChange("date")}/>
+                                            <input type="time" value={this.state.start_time} onChange={this.handleChange("start_time")}/>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
                         </div>
 
-                        <div className="row">
+                        <div className="row row2">
                             <label>Title
-                                <input type="text" value={this.state.title} onChange={this.handleChange("title")}/>
+                                <div className="title">
+                                    <input type="text" value={this.state.title} onChange={this.handleChange("title")}/>
+                                </div>
                             </label>
                         </div>
                         
+                        <hr className="line" />
+
                         <div className="row">
                             <label>Description
                                 <textarea name="" id="" cols="30" rows="10" value={this.state.description} onChange={this.handleChange("description")}></textarea>
                             </label>
                         </div>
 
-                        <input type="submit" value="Create"/>
+                        <input type="submit" className="btn-secondary" value="Create"/>
                     </form>
                     </div>
                 </div>

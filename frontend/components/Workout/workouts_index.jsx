@@ -100,7 +100,6 @@ class WorkoutIndex extends React.Component {
 
         const workoutItems = Object.values(this.props.workouts).reverse().map((workout) => (
             <tr className="workout-index-item" key={workout.id}>
-                {/* <div className="workout-preview"> */}
         
                 <td className="view-col col-type col-str">{workout.sport}</td>
                 <td className="view-col col-date col-str">{this.formatDay(workout.date)}</td>
@@ -109,7 +108,6 @@ class WorkoutIndex extends React.Component {
                         {workout.workout_title}
                         </Link>
                         </td>
-                {/* <td className="view-col col-time col-num">{`${workout.hours}:${workout.minutes}:${workout.seconds}`}</td> */}
                 <td className="view-col col-time col-num">{this.formatDuration(workout)}</td>
                 <td className="view-col col-distance col-num">{workout.distance} mi</td>
                 <td className="view-col col-elevation col-num">{workout.elevation} ft</td>
@@ -121,7 +119,6 @@ class WorkoutIndex extends React.Component {
                         <button className="workout-delete-btn btn-link" onClick={this.handleDelete(workout.id)}>Delete</button>
                     </td>
 
-                {/* </div> */}
             </tr>
         ));
 
