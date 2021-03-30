@@ -23,6 +23,7 @@ class ManualActivity extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.timeOfDay = this.timeOfDay.bind(this);
+        this.descriptionPlaceholder = this.descriptionPlaceholder.bind(this);
     }
 
     handleChange(type) { 
@@ -69,19 +70,18 @@ class ManualActivity extends React.Component {
     timeOfDay() { 
         let tOd = new Date();
         let currentHour = tOd.getHours();
-        if (currentHour < 12 && currentHour >= 0) { 
-                return "Morning Ride"
-            } else if (currentHour >= 12 && currentHour <= 5) {
-                    return "Afternoon Ride"
-                } else if (currentHour > 5 && currentHour <= 23) { 
-                        return "Evening Ride"
-                    }
 
-        // if (currHour >= 5 && currHour <= 23) { 
-        //     return "Evening"
-        // } else { 
-        //     return currHour
-        // }
+        if (currentHour < 12 && currentHour >= 0) { 
+            return "Morning Ride"
+        } else if (currentHour >= 12 && currentHour <= 5) {
+            return "Afternoon Ride"
+        } else if (currentHour > 5 && currentHour <= 23) { 
+            return "Evening Ride"
+        }
+    }
+
+    descriptionPlaceholder() { 
+        return "How did it go? Were you tired or rested? How was the weather?"
     }
 
     render() { 
@@ -179,9 +179,9 @@ class ManualActivity extends React.Component {
                         
                         <hr className="line" />
 
-                        <div className="row">
+                        <div className="row row2">
                             <label>Description
-                                <textarea name="" id="" cols="30" rows="10" value={this.state.description} onChange={this.handleChange("description")}></textarea>
+                                <textarea className="upload-description selection" name="" id="" cols="30" rows="10" placeholder={this.descriptionPlaceholder()} value={this.state.description} onChange={this.handleChange("description")}></textarea>
                             </label>
                         </div>
 

@@ -12,12 +12,14 @@
     margin-left: 20px;
     // display: flex;
     justify-content: center;
-    width: 100%;
+    width: 1548px;
+    padding-left: 5%;
 }
 
 .entry-page-body { 
-    width: 80%;
-    width: 1248px;
+    width: 70%;
+    // width: 1248px;
+    margin-right: 100px;
     padding-left: 200px;
 }
 
@@ -43,6 +45,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     display: flex;
+    margin-bottom: -20px;
 }
 
 .row:before, .row:after {
@@ -161,6 +164,7 @@ hr {
  .row2 { 
     padding: 0 20px 20px 0;
     margin: 0 0 20px;
+    margin-bottom: -20px;
  }
 
  .block { 
@@ -189,4 +193,14 @@ hr {
         // width: auto;
         padding-right: 10px;
     }
+}
+
+.upload-description { 
+    width: 260%;
+    height: 125px;
+    resize: vertical;
+    overflow: auto;
+    vertical-align: top;
+    font-weight: 200;
+    margin: 7px 0;
 }
