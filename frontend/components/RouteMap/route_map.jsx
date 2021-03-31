@@ -236,12 +236,12 @@ class RouteMap extends React.Component {
                 <div className="miles"> Miles: {this.state.distance}</div>
 
                 <div className="edit-tools">
-                    <div onClick={this.handleEdit}>
-                        <button id="save-route" action="undo">Undo</button>
-                        <button id="save-route" action="redo">Redo</button>
-                        <button id="save-route" action="clear">Clear</button>
+                    <div className="edit-tools" onClick={this.handleEdit}>
+                        <button id="edit-route" action="undo">Undo</button>
+                        <button id="edit-route" action="redo">Redo</button>
+                        <button id="edit-route" action="clear">Clear</button>
                     </div>
-                    <button id="save-route" onClick={this.handleSave}>Save</button>
+                    <button id="save-route" className="save-btn" onClick={this.handleSave}>Save</button>
                 </div>
             </div>
         )
