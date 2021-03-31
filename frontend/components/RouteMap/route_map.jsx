@@ -5,8 +5,8 @@ import Navbar from '../Navbar'
 class RouteMap extends React.Component {
     constructor(props) { 
         super(props);
-        this.lastMarker;
-        this.addLatLng = this.addLatLng.bind(this);
+        this.lastMarker = [];
+        // this.addLatLng = this.addLatLng.bind(this);
         this.initializeMap = this.initializeMap.bind(this)
         this.handleSave = this.handleSave.bind(this);
         this.createRoute = this.createRoute.bind(this);
@@ -80,7 +80,6 @@ class RouteMap extends React.Component {
         // );
 
         if (this.state.encodedRoute) {
-            debugger
             this.poly.setPath(google.maps.geometry.encoding.decodePath(this.state.encodedRoute));
             
             const mapBounds = new google.maps.LatLngBounds();
@@ -114,14 +113,16 @@ class RouteMap extends React.Component {
     //         }
     //     }
     // }
-    addLatLng() {
-        const path = this.poly.getPath().getArray();
 
-        this.setState({ //spherical computes geodesic angles, distances, and areas
-            distance: Number.parseFloat(google.maps.geometry.spherical.computeLength(path) / 1600).toFixed(2)
-        });
 
-    }
+    // addLatLng() {
+    //     const path = this.poly.getPath().getArray();
+
+    //     this.setState({ //spherical computes geodesic angles, distances, and areas
+    //         distance: Number.parseFloat(google.maps.geometry.spherical.computeLength(path) / 1600).toFixed(2)
+    //     });
+
+    // }
 
     handleClick(e) { 
         const path = this.poly.getPath();
@@ -132,13 +133,12 @@ class RouteMap extends React.Component {
 
     handleEdit(e) { 
         const path = this.poly.getPath();
-
         switch (e.target.attributes.action.value) {
             case "undo":
-                this.lastMarker = path.pop()
+                this.lastMarker.push(path.pop());
                 return path;
             case "redo": 
-                path.push(this.lastMarker);
+                path.push(this.lastMarker.pop());
                 return path;
                 // break;
             case "clear":
@@ -196,9 +196,11 @@ class RouteMap extends React.Component {
 
             this.starter.addListener("click", () => { 
                 this.poly.getPath().push(this.starter.getPosition()); //Marker method 
+                this.lastMarker.push(this.starter.getPosition());
             })
         } else { 
             this.starter.setPosition(path[0]);
+            this.lastMarker.push(this.starter.setPosition(path[0]))
             this.starter.setMap(this.map); //renders this shape on the specific map 
         }
     }
