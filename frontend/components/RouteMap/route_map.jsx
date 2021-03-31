@@ -4,25 +4,26 @@ import Navbar from '../Navbar'
 
 class RouteMap extends React.Component {
     constructor(props) { 
-        // debugger
         super(props);
+        this.lastMarker;
         this.addLatLng = this.addLatLng.bind(this);
         this.initializeMap = this.initializeMap.bind(this)
         this.handleSave = this.handleSave.bind(this);
         this.createRoute = this.createRoute.bind(this);
         this.handleClick = this.handleClick.bind(this);
         this.changedRoute = this.changedRoute.bind(this);
+        this.handleEdit= this.handleEdit.bind(this);
 
         this.state = { 
             route: {name: ""},
             encodedRoute: null,
             distance: 0
         }
+
     }
 
     componentDidMount() {
         if (!this.props.routeId) { 
-            // debugger
             this.initializeMap(this.createRoute);
         } else { 
             this.initializeMap(() => { 
@@ -40,7 +41,6 @@ class RouteMap extends React.Component {
     }
 
     initializeMap(cb) { 
-        // debugger
         const mapOptions = {
             center: { lat: 34.0745, lng: -118.3294 },
             zoom: 12
@@ -130,6 +130,23 @@ class RouteMap extends React.Component {
         path.push(e.latLng);
     }
 
+    handleEdit(e) { 
+        const path = this.poly.getPath();
+
+        switch (e.target.attributes.action.value) {
+            case "undo":
+                this.lastMarker = path.pop()
+                return path;
+            case "redo": 
+                path.push(this.lastMarker);
+                return path;
+                // break;
+            case "clear":
+                path.clear();
+                break;
+        }
+    }
+
 
     handleSave() { 
         // eventually a modal?
@@ -153,7 +170,6 @@ class RouteMap extends React.Component {
 
             this.props.action(route).then((route) => {
                 this.props.history.push({ 
-                    // pathname: `/routes/${route.route.id}/view`
                     pathname: `/routes/${route.route.id}`
                 })
             });
@@ -188,6 +204,7 @@ class RouteMap extends React.Component {
     }
 
 
+
     render() {
 
         const navbarProps =
@@ -214,7 +231,11 @@ class RouteMap extends React.Component {
     renderTools() { 
         return (
             <div className="create-route-bar">
-                <button id="save-route" onClick={this.handleSave}>Save</button>
+                <div onClick={this.handleEdit}>
+                    <button id="save-route" action="undo">Undo</button>
+                    <button id="save-route" action="redo">Redo</button>
+                </div>
+                    <button id="save-route" onClick={this.handleSave}>Save</button>
                 <div>Miles: {this.state.distance}</div>
             </div>
         )
