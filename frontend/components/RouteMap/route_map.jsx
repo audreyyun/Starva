@@ -233,12 +233,16 @@ class RouteMap extends React.Component {
     renderTools() { 
         return (
             <div className="create-route-bar">
-                <div onClick={this.handleEdit}>
-                    <button id="save-route" action="undo">Undo</button>
-                    <button id="save-route" action="redo">Redo</button>
-                </div>
+                <div className="miles"> Miles: {this.state.distance}</div>
+
+                <div className="edit-tools">
+                    <div onClick={this.handleEdit}>
+                        <button id="save-route" action="undo">Undo</button>
+                        <button id="save-route" action="redo">Redo</button>
+                        <button id="save-route" action="clear">Clear</button>
+                    </div>
                     <button id="save-route" onClick={this.handleSave}>Save</button>
-                <div>Miles: {this.state.distance}</div>
+                </div>
             </div>
         )
     }

@@ -23,6 +23,8 @@
 
 .create-route-bar { 
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 #save-route { 
@@ -42,4 +44,15 @@
     color: black;
     margin-top: 20px;
 
+}
+
+.miles { 
+    position: relative;
+    bottom: -33px;
+    margin-right: 30px;
+}
+
+.edit-tools { 
+    display: flex;
+    margin-right: 20px;
 }
