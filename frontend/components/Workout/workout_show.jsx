@@ -41,22 +41,28 @@ class WorkoutShow extends React.Component {
         return strTime;
     }
 
-    formatDuration(receivedWorkout) { 
+    formatDuration(receivedWorkout) {
         let min, sec, hrs;
-        if (receivedWorkout.minutes < 10) { 
+        if (receivedWorkout.minutes < 10) {
             min = `0${receivedWorkout.minutes}`
+        } else {
+            min = receivedWorkout.minutes
         }
-        if (receivedWorkout.seconds < 10) { 
+        if (receivedWorkout.seconds < 10) {
             sec = `0${receivedWorkout.seconds}`
+        } else {
+            sec = receivedWorkout.seconds
         }
 
-        if (receivedWorkout.hours < 10) { 
+        if (receivedWorkout.hours < 10) {
             hrs = `0${receivedWorkout.hours}`
+        } else {
+            hrs = receivedWorkout.hours
         }
 
-        if (receivedWorkout.hours === 0) { 
+        if (receivedWorkout.hours === 0) {
             return `${min}:${sec}`
-        } 
+        }
 
         return `${hrs}:${min}:${sec}`
     }
