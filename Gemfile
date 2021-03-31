@@ -29,7 +29,6 @@ gem 'binding_of_caller'
 gem 'pry-rails'
 gem 'annotate'
 gem 'jquery-rails'
-gem 'mapbox-gl-rails'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
