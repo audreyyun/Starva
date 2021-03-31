@@ -1,24 +1,30 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+<p align="center"> 
+  <a href="https://starva.herokuapp.com/"><img src={window.starva-logo}></a>
+</p>
 
-* Ruby version
+-------------
+# Overview
 
-* System dependencies
+[Starva](https://starva.herokuapp.com/) is a clone of Strava, an application for Cyclists, Runners, Swimmers, and Triathletes.  It allows athletes to connect via a platform that puts their workouts as the priority. 
 
-* Configuration
 
-* Database creation
 
-* Database initialization
+Starva utilizes Ruby on Rails for the backend and React/Redux in the frontend, which allows users to interact with the app and utilize CRUD operations with route-building.
 
-* How to run the test suite
+## Key Technologies
+* Ruby
+* PostgreSQL
+* Rails
+* React
+* Redux 
+* Google Maps APIs
+-------------
 
-* Services (job queues, cache servers, search engines, etc.)
+# Standout Features
 
-* Deployment instructions
+## User Authentication
 
-* ...
+Users can sign up for a new account, login to an existing account, or access a demo user to access the site features. The session token for the current user persists until the user explicitly logs out, allowing users to close out of tabs with ease. 
