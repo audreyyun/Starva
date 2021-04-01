@@ -28,7 +28,7 @@ class RouteMap extends React.Component {
         } else { 
             this.initializeMap(() => { 
                 this.props.fetchRoute(this.props.routeId).then(action => { 
-                    debugger
+                    
                     this.setState({ 
                         route: action.route, 
                         encodedRoute: action.route.route
@@ -56,7 +56,7 @@ class RouteMap extends React.Component {
         //displayPathElevation(path, elevation, map) is my createRoute ()
 
         if (cb) { 
-            debugger
+            
             google.maps.event.addListenerOnce(this.map, 'tilesloaded', cb);
         }
         

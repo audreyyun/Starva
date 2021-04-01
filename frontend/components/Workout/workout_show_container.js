@@ -5,7 +5,6 @@ import { logout } from "../../actions/session_actions"
 import WorkoutShow from "./workout_show";
 
 const msp = (state, ownProps) => {
-    debugger
     return {
         workoutId: ownProps.match.params.workoutId,
         workout: state.entities.workouts[ownProps.match.params.workoutId],

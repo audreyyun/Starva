@@ -4,7 +4,6 @@ import WorkoutIndex from './workouts_index';
 import { logout } from "../../actions/session_actions"
 
 const msp = (state, ownProps) => {
-    debugger
     return {
         sessionId: state.session.id || null,
         workoutId: ownProps.match.params.workoutId,

@@ -5,7 +5,6 @@ import RouteIndexItem from "./route_index_item";
 import { logout } from "../../actions/session_actions"
 
 const msp = (state, ownProps) => { 
-    debugger
     return {
         routeId: ownProps.match.params.routeId,
         route: state.entities.routes[ownProps.match.params.routeId],

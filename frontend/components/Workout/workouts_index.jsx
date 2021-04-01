@@ -14,7 +14,6 @@ class WorkoutIndex extends React.Component {
     }
 
     componentDidMount() {
-        // debugger
         this.props.fetchWorkouts(this.props.sessionId);
 
     }
@@ -94,7 +93,6 @@ class WorkoutIndex extends React.Component {
             isAuthenticated: true,
         }
 
-        debugger
 
         const numWorkouts = Object.values(this.props.workouts).length;
 

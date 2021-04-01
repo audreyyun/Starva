@@ -6,7 +6,6 @@ import { logout } from "../../actions/session_actions"
 import { deleteRoute } from '../../util/route_api_util';
 
 const msp = (state, ownProps) => {
-    debugger
     return {
         sessionId: state.session.id || null,
         routeId: ownProps.match.params.routeId,

@@ -7,7 +7,6 @@ import Button from '../Button';
 class RouteIndexItem extends React.Component {
 
     constructor(props) {
-        debugger
         super(props);
 
         this.state = { 
@@ -81,7 +80,6 @@ class RouteIndexItem extends React.Component {
 
     initializeMap(cb) {
         // set the map to show SF
-        debugger
         const mapOptions = {
             strokeColor: "#FC5200",
             center: { 
@@ -97,7 +95,7 @@ class RouteIndexItem extends React.Component {
         this.map = new google.maps.Map(this.mapNode, mapOptions);
 
         if (cb) {
-            debugger
+
             google.maps.event.addListenerOnce(this.map, 'tilesloaded', cb);
         }
 
@@ -121,7 +119,6 @@ class RouteIndexItem extends React.Component {
             loginBtnPath: "/logout",
             isAuthenticated: true,
         }
-        debugger
 
         if (!this.props.route) { 
             return (<div></div>)

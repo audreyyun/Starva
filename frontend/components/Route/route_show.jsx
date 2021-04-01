@@ -22,7 +22,7 @@ class RouteShow extends React.Component {
     componentDidMount() {
         this.initializeMap(() => {
             if (this.state.encodedRoute) { this.createRoute() }
-            debugger
+            
             this.props.fetchRoute(this.props.route.id).then(action => {
                 this.setState({
                     encodedRoute: action.route.route,
@@ -68,7 +68,7 @@ class RouteShow extends React.Component {
 
     initializeMap(cb) {
         // set the map to show SF
-        debugger
+        
         const mapOptions = {
             strokeColor: "#FC5200",
             center: {
@@ -84,7 +84,7 @@ class RouteShow extends React.Component {
         this.map = new google.maps.Map(this.mapNode, mapOptions);
 
         if (cb) {
-            debugger
+            
             google.maps.event.addListenerOnce(this.map, 'tilesloaded', cb);
         }
 

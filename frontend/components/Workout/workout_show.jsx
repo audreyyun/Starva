@@ -7,7 +7,6 @@ import Button from '../Button';
 class WorkoutShow extends React.Component {
 
     constructor(props) {
-        debugger
         super(props);
 
         // this.handleDelete = this.handleDelete.bind(this);
@@ -127,7 +126,6 @@ class WorkoutShow extends React.Component {
             else if (month === 11) { monthLetter = "November"; }
             else if (month === 12) { monthLetter = "December"; }
 
-            debugger
             return (
 
                 <div>

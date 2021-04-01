@@ -10,14 +10,12 @@ import RouteShow from './route_show'
 
 class RouteIndex extends React.Component { 
     constructor(props) { 
-        // debugger
         super(props);
         this.handleDelete = this.handleDelete.bind(this)
         this.handleClick = this.handleClick.bind(this)
     }
 
     componentDidMount() { 
-        // debugger
         this.props.fetchRoutes(this.props.sessionId);
 
     }
@@ -38,7 +36,7 @@ class RouteIndex extends React.Component {
     }
 
     handleClick(routeId) { 
-        debugger
+        
         const dropdown = document.getElementById(`wrench-content ${routeId}`)
         if (dropdown.style.display === "none"){
             dropdown.style.display = "block"
