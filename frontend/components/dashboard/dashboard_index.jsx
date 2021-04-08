@@ -78,9 +78,11 @@ class DashboardIndex extends React.Component {
                     <div>{athleteName}</div>
                     <time className="activity-feed-card-date">{this.formatDay(workout.date)}</time>
                 </header>
-                <div className="view-col col-title col-str">
-                    <Link className="col-str" to={`/activities/${workout.id}`}>
-                        {workout.workout_title}
+                <div className="activity-feed-card-body">
+                    <Link className="activity-feed-card-title" to={`/activities/${workout.id}`}>
+                        <h3 className="feed-title">
+                            {workout.workout_title}
+                        </h3>
                     </Link>
                 </div>
                 <div className="view-col col-time col-num">{this.formatDuration(workout)}</div>
