@@ -147,7 +147,24 @@ class DashboardIndex extends React.Component {
             athleteName = this.props.athlete.first_name + " " + this.props.athlete.last_name
         }
 
-        let numActivities = (Object.values(this.props.workouts)).length
+        // let activities = Object.values(this.props.workouts).reverse().map((workout) => (
+        //     <div>
+        //         {workout.title}
+        //     </div>
+        // ));
+  
+        let numActivities = (Object.values(this.props.workouts)).length;
+
+        let activities = Object.values(this.props.workouts).map(workout => (
+                <Link className="last-activity text-small" to={`/activities/${workout.id}`}>
+                    <strong>
+                        {workout.workout_title}
+                    </strong>
+                </Link>            
+        ));
+        let lastActivity = activities[0];
+
+        debugger
 
         return ( 
             < div className = "feed-sidebar-container" >
@@ -158,9 +175,9 @@ class DashboardIndex extends React.Component {
                                 {athleteName}
                             </h2>
 
-                            <ul className="list-stats">
+                            <ul className="profile-stats">
                                 <li>
-                                    <Link to="/training">
+                                    <Link to="/training" className="stat">
                                         <div className="stat-subtext">Activities</div>
                                         <b className="stat-text">
                                             {numActivities}
@@ -168,6 +185,16 @@ class DashboardIndex extends React.Component {
                                     </Link>
                                 </li>
                             </ul>
+                        </div>
+                        <div className="card-footer">
+                            <div className="card-section">
+                                <div className="text-small">
+                                    Latest Activity 
+                                </div>
+                                <div className="last-activity">
+                                    {lastActivity}
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

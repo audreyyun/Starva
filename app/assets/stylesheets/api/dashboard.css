@@ -50,6 +50,7 @@
     margin-top: 64px;
     margin-bottom: 12px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -68,8 +69,39 @@
     margin-bottom: 16px;
 }
 
-.athlete-profile .list-stats li {
-    width: 33.333%;
+.profile-stats li {
     margin: 0;
     padding: 0;
+    -webkit-box-pack: center;
+    display: flex;
+    justify-content: center;
+}
+.profile-stats .stat-text {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.card-footer { 
+    width: 100%;
+    border-top: 1px solid #f0f0f5;
+    padding: 16px;
+    clear: both;
+}
+
+.text-small { 
+    font-size: 12px;
+    line-height: 18px;
+    font-family: system-ui,BlinkMacSystemFont,Roboto,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+
+.last-activity { 
+    color: rgb(0,0,0)
+}
+
+.last-activity:hover { 
+    color: #007FB6; 
 }

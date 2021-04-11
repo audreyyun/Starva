@@ -68,8 +68,15 @@
     line-height: 1;
     white-space: nowrap;
     -webkit-font-smoothing: antialiased;
+    color: rgb(0,0,0)
 }
 
+.stat-text:after {
+    content: ' ';
+    min-height: 1em;
+    display: inline-block;
+}
+ 
 .list-stats li { 
     margin-left: 0;
     margin-right: 16px;

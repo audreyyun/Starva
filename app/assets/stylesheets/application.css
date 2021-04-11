@@ -96,3 +96,7 @@ fieldset {
     padding-block-end: 0.625em;
     min-inline-size: min-content;
 }
+
+strong { 
+   font-weight: bold;
+}
