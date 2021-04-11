@@ -127,6 +127,7 @@ class DashboardIndex extends React.Component {
                     <Navbar logout={this.props.logout} {...navbarProps} />
                     <div className="splash-border"></div>
                     <div className="dashboard-page-content">
+                        {this.renderProfile()}
                         <div className="feed">
                             <div>{workoutItems}</div>
                         </div>
@@ -136,6 +137,42 @@ class DashboardIndex extends React.Component {
             </div>
         )
 
+    }
+
+    renderProfile() { 
+        let athleteName;
+        if (!this.props.athlete.first_name) {
+            athleteName = this.props.athlete.email
+        } else {
+            athleteName = this.props.athlete.first_name + " " + this.props.athlete.last_name
+        }
+
+        let numActivities = (Object.values(this.props.workouts)).length
+
+        return ( 
+            < div className = "feed-sidebar-container" >
+                <div className="feed-sidebar-content">
+                    <div className="athlete-profile">
+                        <div className="profile-body">
+                            <h2 className="athlete-name">
+                                {athleteName}
+                            </h2>
+
+                            <ul className="list-stats">
+                                <li>
+                                    <Link to="/training">
+                                        <div className="stat-subtext">Activities</div>
+                                        <b className="stat-text">
+                                            {numActivities}
+                                        </b>
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div >
+        )
     }
 }
 
