@@ -4,7 +4,11 @@ import Navbar from '../Navbar'
 
 class DashboardIndex extends React.Component { 
     constructor(props) { 
-        super(props)
+        super(props);
+
+        this.formatDay = this.formatDay.bind(this);
+        this.formatLongDay = this.formatLongDay.bind(this);
+        this.whatDay = this.whatDay.bind(this);
     }
 
     componentDidMount() { 
@@ -28,6 +32,31 @@ class DashboardIndex extends React.Component {
 
 
         let strDay = `${dayWord}, ${month}/${date}/${year}`
+        return strDay;
+    }
+
+    formatLongDay(d) {
+        let month = new Date(d).getMonth() + 1;
+        let date = new Date(d).getDate();
+        let year = new Date(d).getFullYear();
+        // let day = new Date(d).getDay();
+        let monthLetter;
+
+        if (month === 1) { monthLetter = "January"; }
+        else if (month === 2) { monthLetter = "February"; }
+        else if (month === 3) { monthLetter = "March"; }
+        else if (month === 4) { monthLetter = "April"; }
+        else if (month === 5) { monthLetter = "May"; }
+        else if (month === 6) { monthLetter = "June"; }
+        else if (month === 7) { monthLetter = "July"; }
+        else if (month === 8) { monthLetter = "August"; }
+        else if (month === 9) { monthLetter = "September"; }
+        else if (month === 10) { monthLetter = "October"; }
+        else if (month === 11) { monthLetter = "November"; }
+        else if (month === 12) { monthLetter = "December"; }
+
+
+        let strDay = `${monthLetter} ${date}, ${year}`
         return strDay;
     }
 
@@ -55,6 +84,21 @@ class DashboardIndex extends React.Component {
         }
 
         return `${hrs}h ${min}m`
+    } 
+
+    whatDay(receivedWorkout) { 
+        debugger
+        let today = new Date();
+        let workoutDay = new Date(receivedWorkout).getDate();
+        let workoutMonth = new Date(receivedWorkout).getMonth();
+        let workoutYear = new Date(receivedWorkout).getFullYear();
+        if (today.getDate() === workoutDay && today.getMonth() === workoutMonth && today.getFullYear() === workoutYear) { 
+            return ("Today")
+        } else if ((today.getDate()-1) === workoutDay && today.getMonth() === workoutMonth && today.getFullYear() === workoutYear) {
+            return("Yesterday")
+        } else { 
+            return (this.formatLongDay(receivedWorkout));
+        }
     }
 
     render() { 
@@ -158,7 +202,8 @@ class DashboardIndex extends React.Component {
         let activities = Object.values(this.props.workouts).map(workout => (
                 <Link className="last-activity text-small" to={`/activities/${workout.id}`}>
                     <strong>
-                        {workout.workout_title}
+                        
+                    {workout.workout_title} • {this.whatDay(workout.date)}
                     </strong>
                 </Link>            
         ));
