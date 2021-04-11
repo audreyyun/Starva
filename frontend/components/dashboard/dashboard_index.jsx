@@ -85,9 +85,33 @@ class DashboardIndex extends React.Component {
                         </h3>
                     </Link>
                 </div>
-                <div className="view-col col-time col-num">{this.formatDuration(workout)}</div>
-                <div className="view-col col-distance col-num">{workout.distance} mi</div>
-                <div className="view-col col-elevation col-num">{workout.elevation} ft</div>
+
+                <ul className="list-stats">
+                    <li>
+                        <div className="stat">
+                            <div className="stat-subtext">Distance</div>
+                            <b className="stat-text">
+                                {workout.distance} mi
+                            </b>
+                        </div>
+                    </li>
+                    <li>
+                        <div className="stat">
+                            <div className="stat-subtext">Elev Gain</div>
+                            <b className="stat-text">
+                                {workout.elevation} ft
+                            </b>
+                        </div>
+                    </li>
+                    <li>
+                        <div className="stat">
+                            <div className="stat-subtext">Time</div>
+                            <b className="stat-text">
+                                {this.formatDuration(workout)}
+                            </b>
+                        </div>
+                    </li>
+                </ul>
 
 
                 {/* <Link className="workout-edit-btn" to={`/activity/${workout.id}/edit`}>Edit</Link> */}
@@ -104,7 +128,6 @@ class DashboardIndex extends React.Component {
                     <div className="splash-border"></div>
                     <div className="dashboard-page-content">
                         <div className="feed">
-                            <p>testing</p>
                             <div>{workoutItems}</div>
                         </div>
                     </div>

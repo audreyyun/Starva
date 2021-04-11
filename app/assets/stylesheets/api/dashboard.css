@@ -44,6 +44,7 @@
 }
 
 .activity-feed-card-date { 
+    padding-top: 5px;
     display: block;
     font-size: 11px;
     color: #666;
