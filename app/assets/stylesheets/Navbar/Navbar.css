@@ -50,7 +50,7 @@
 
 
 .navbar-routes:visited , .navbar-routes:link {
-    color: rgba(0,0,0,0);
+    color: #000);
     text-decoration: none;
 }
 

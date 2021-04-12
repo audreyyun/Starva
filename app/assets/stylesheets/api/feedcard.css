@@ -36,7 +36,7 @@
 
 .feed-title { 
     line-height: 28px;
-    color: rgba(0,0,0,0);
+    color: #000;
     font-weight: 700;
 }
 
@@ -68,7 +68,7 @@
     line-height: 1;
     white-space: nowrap;
     -webkit-font-smoothing: antialiased;
-    color: rgba(0,0,0,0)
+    color: #000;
 }
 
 .stat-text:after {
