@@ -72,7 +72,7 @@ button:hover {
 
 
 .btn-secondary, .nav-btn-secondary {
-    color: rgb(0,0,0);
+    color: rgba(0,0,0,0);
     background-color: #fff;
     border: 1px solid #dfdfe8;
     padding: 0px;

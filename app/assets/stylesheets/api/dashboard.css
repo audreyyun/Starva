@@ -99,7 +99,7 @@
 }
 
 .last-activity { 
-    color: rgb(0,0,0)
+    color: rgba(0,0,0,0)
 }
 
 .last-activity:hover { 
