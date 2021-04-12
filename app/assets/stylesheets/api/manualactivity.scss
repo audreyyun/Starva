@@ -10,7 +10,6 @@
     margin-top: 30px;
     margin-bottom: 80px;
     margin-left: 20px;
-    // display: flex;
     justify-content: center;
     width: 1548px;
     padding-left: 5%;
@@ -18,7 +17,6 @@
 
 .entry-page-body { 
     width: 70%;
-    // width: 1248px;
     margin-right: 100px;
     padding-left: 200px;
 }
@@ -120,7 +118,6 @@ input:not([type="range"]), textarea {
     letter-spacing: normal;
     vertical-align: top;
     width: 80px;
-    // border: 1px solid black;
     position: relative;
 }
 
@@ -183,14 +180,12 @@ hr {
 }
 
 .title { 
-    // width: 300%;
     display: block;
     margin-top: 7px;
     margin-bottom: 7px;
 
     input[type='text']  { 
         width: 360%;
-        // width: auto;
         padding-right: 10px;
     }
 }

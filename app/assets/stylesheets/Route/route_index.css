@@ -18,7 +18,6 @@
 .routes-index-body-container { 
     display: flex;
     padding: 0 16px;
-    /* width: 100%; */
     width: 70%;
     height: 100%;
     overflow: visible;
@@ -36,15 +35,12 @@
 }
 
 .strava-routes { 
-    /* width: 174px;
-    height: 91px; */
     margin-top: 20px;
     margin-right: 9%;
 }
 
 
 .routes-index-heading-row { 
-    /* border: 1px solid black; */
     width: 100%;
     height: 114px;
     justify-content: space-between;
