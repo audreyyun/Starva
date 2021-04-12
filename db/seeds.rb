@@ -21,13 +21,13 @@ demo_user = User.create!(
 
 route1 = Route.create!( 
     id: 2,
-    activity: null,
+    activity: nil,
     athlete_id: 1,
     created_at: "2021-03-31T16:30:29.534Z",
     description: "Good workout, approximately 2 hours",
     distance: 39.54,
-    end_lat: null,
-    end_long: null,
+    end_lat: nil,
+    end_long: nil,
     route: "mn}nEd|dqUa~BlEtA_wAsiByCmSghBmG?aFeIcJQ{GvBqBrGqB…yRtAkZymC{wEwFuF????Ggq@x@miCraD`@]yeAbFmELqd@ZwQ",
     route_name: "Home to Observatory and Mullholland",
     start_lat: 34.070946109880985,
@@ -37,13 +37,13 @@ route1 = Route.create!(
 
 route2 = Route.create!(
     id: 1,
-    activity: null,
+    activity: nil,
     athlete_id: 1,
     created_at: "2021-03-29T19:12:13.889Z",
     description: "Relatively flat and scenic",
     distance: 47.78,
-    end_lat: null,
-    end_long: null,
+    end_lat: nil,
+    end_long: nil,
     route: "ctboErhjqUpzFoYnzDfaG~{KdeLxoTsxJil@umTkpa@knAuyCasCgdE~yG__@pgI",
     route_name: "Beach Ride",
     start_lat: 34.0974603775323,
