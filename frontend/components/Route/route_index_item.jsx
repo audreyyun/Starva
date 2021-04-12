@@ -148,6 +148,8 @@ class RouteIndexItem extends React.Component {
                 athleteName = this.props.athlete.first_name + this.props.athlete.last_name
             }
 
+            debugger
+
             return (
                 <div>
                     <Navbar logout={this.props.logout} {...navbarProps} />

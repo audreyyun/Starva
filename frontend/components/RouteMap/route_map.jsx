@@ -7,7 +7,7 @@ class RouteMap extends React.Component {
         super(props);
         this.lastMarker = [];
         // this.addLatLng = this.addLatLng.bind(this);
-        this.initializeMap = this.initializeMap.bind(this)
+        this.initializeMap = this.initializeMap.bind(this);
         this.handleSave = this.handleSave.bind(this);
         this.createRoute = this.createRoute.bind(this);
         this.handleClick = this.handleClick.bind(this);
@@ -18,7 +18,7 @@ class RouteMap extends React.Component {
             route: {name: ""},
             encodedRoute: null,
             distance: 0
-        }
+        };
 
     }
 
@@ -32,11 +32,11 @@ class RouteMap extends React.Component {
                     this.setState({ 
                         route: action.route, 
                         encodedRoute: action.route.route
-                    })
+                    });
                     this.createRoute();
                 })
-            })
-        }
+            });
+        };
 
     }
 
@@ -56,9 +56,8 @@ class RouteMap extends React.Component {
         //displayPathElevation(path, elevation, map) is my createRoute ()
 
         if (cb) { 
-            
             google.maps.event.addListenerOnce(this.map, 'tilesloaded', cb);
-        }
+        };
         
     }
 
@@ -140,7 +139,6 @@ class RouteMap extends React.Component {
             case "redo": 
                 path.push(this.lastMarker.pop());
                 return path;
-                // break;
             case "clear":
                 path.clear();
                 break;
@@ -162,20 +160,19 @@ class RouteMap extends React.Component {
                 start_long: path.getArray()[0].lng(),
                 distance: this.state.distance,
                 id: this.props.routeId
-            }
+            };
             
             if (this.props.routeId) {
                 route.id = this.props.routeId;
-            }
+            };
 
             this.props.action(route).then((route) => {
                 this.props.history.push({ 
                     pathname: `/routes/${route.route.id}`
-                })
+                });
             });
-        }
-
-    }
+        };
+    };
 
     changedRoute() {
         //.getPath retrieves the path
@@ -202,9 +199,8 @@ class RouteMap extends React.Component {
             this.starter.setPosition(path[0]);
             this.lastMarker.push(this.starter.setPosition(path[0]))
             this.starter.setMap(this.map); //renders this shape on the specific map 
-        }
-    }
-
+        };
+    };
 
 
     render() {
@@ -249,4 +245,4 @@ class RouteMap extends React.Component {
 
 }
 
-export default RouteMap
+export default RouteMap;

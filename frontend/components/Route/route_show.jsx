@@ -129,7 +129,6 @@ class RouteShow extends React.Component {
             isAuthenticated: true,
         }
 
-        debugger
         return (
             <div>
                 <div className="route-card">

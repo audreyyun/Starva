@@ -44,8 +44,8 @@ route2 = Route.create!(
     distance: 47.78,
     end_lat: nil,
     end_long: nil,
-    route: "ctboErhjqUpzFoYnzDfaG~{KdeLxoTsxJil@umTkpa@knAuyCasCgdE~yG__@pgI",
-    route_name: "Beach Ride",
+    route: "mn}nEd|dqUa~BlEtA_wAsiByCmSghBmG?aFeIcJQ{GvBqBrGqBdImGnFg@bFsNrBwHtAyD`@~BvBfEtAqB|Ew@tHrAfCcBpFsAxCy@vBj@zD`BzCxDp@gApFz\}k@cGnm@|COvHtAbFp@dEgCuEs@sDcA|GiCzCdBrEPbB`@tXxArBrBhTtAZ~Mj@hh@Z~y@nR``A`Cjk@kDxsAe]xCuEfJkPvVy_@hEiPtPj@kShHyChDgIzC}EMkK{KgCcJ?{G_F_CP_CQsEjK{C{KiJbHsApF_G`@_CxCMhK{ChCh@nFqBdIeAvIv@zDqBtALrGiDvBi@bHzGwB~B{CrEdAlCbAeAhClCNhDvBzO`GxD`@rAfJ_Cr@[lLw@zDdA`G?lEfAvBdA`GrAfJaJr@M|EzCbOpBvBlCzDzChCZnFtA`@pBvI_CfJkDtAaNnFuE`HmClEmChKqFO{GxCLlEeEbHcAoWQvb@Z~MtAnM~Fr@~FzDy@rO{CjKeElEmG|E_CjKLdI?lEuAvBaB`@h@nF_C~EuAjDrDvSdD`FcBbPsAbO~BhK~BhJeAlOiDpNyDdAbB`H[~E[lEMhC_CbHy@fCbB`GtEvBzCr@h@dIv@fJ{CvIzC`GNzDnBhCh@vBL`GsAxC[tH]vBpFnFtElEzC`@hD|DnNzLvDbP|KvInJ~EpFfCdi@?lOuIlGaGlSwIlg@pCvDwQpBuAtE`@hD`@lC?vt@qGlEu@bJgBtIaH`JcH`DsGraCwiB__@soBmG_FyLsHoFoF_G_UgAwIbB{K[wIdAkS[yRtAkZymC{wEwFuF????Ggq@x@miCraD`@]yeAbFmELqd@ZwQ",
+    route_name: "Home to Observatory and Mullholland",
     start_lat: 34.0974603775323,
     start_long: -118.3503426879883,
     updated_at: "2021-03-29T19:12:13.889Z"
