@@ -39,7 +39,7 @@ class WorkoutIndex extends React.Component {
 
     formatDay(d) { 
         let month = new Date(d).getMonth() + 1;
-        let date = new Date(d).getDate();
+        let date = new Date(d).getDate() + 1;
         let year = new Date(d).getFullYear();
         let day = new Date(d).getDay();
         let dayWord

@@ -17,7 +17,7 @@ class DashboardIndex extends React.Component {
 
     formatDay(d) {
         let month = new Date(d).getMonth() + 1;
-        let date = new Date(d).getDate();
+        let date = new Date(d).getDate() + 1;
         let year = new Date(d).getFullYear();
         let day = new Date(d).getDay();
         let dayWord
@@ -87,9 +87,8 @@ class DashboardIndex extends React.Component {
     } 
 
     whatDay(receivedWorkout) { 
-        debugger
         let today = new Date();
-        let workoutDay = new Date(receivedWorkout).getDate();
+        let workoutDay = new Date(receivedWorkout).getDate() + 1;
         let workoutMonth = new Date(receivedWorkout).getMonth();
         let workoutYear = new Date(receivedWorkout).getFullYear();
         if (today.getDate() === workoutDay && today.getMonth() === workoutMonth && today.getFullYear() === workoutYear) { 
@@ -190,16 +189,10 @@ class DashboardIndex extends React.Component {
         } else {
             athleteName = this.props.athlete.first_name + " " + this.props.athlete.last_name
         }
-
-        // let activities = Object.values(this.props.workouts).reverse().map((workout) => (
-        //     <div>
-        //         {workout.title}
-        //     </div>
-        // ));
   
         let numActivities = (Object.values(this.props.workouts)).length;
 
-        let activities = Object.values(this.props.workouts).map(workout => (
+        let activities = Object.values(this.props.workouts).reverse().map(workout => (
                 <Link className="last-activity text-small" to={`/activities/${workout.id}`}>
                     <strong>
                         
@@ -209,7 +202,6 @@ class DashboardIndex extends React.Component {
         ));
         let lastActivity = activities[0];
 
-        debugger
 
         return ( 
             < div className = "feed-sidebar-container" >

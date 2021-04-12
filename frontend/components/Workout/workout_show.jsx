@@ -97,10 +97,10 @@ class WorkoutShow extends React.Component {
             } else {
                 athleteName = this.props.athlete.first_name + " " + this.props.athlete.last_name
             }
-            let month = new Date(this.props.workout.created_at).getMonth() + 1;
-            let date = new Date(this.props.workout.created_at).getDate();
-            let year = new Date(this.props.workout.created_at).getFullYear();
-            let day = new Date(this.props.workout.created_at).getDay();
+            let month = new Date(this.props.workout.date).getMonth() + 1;
+            let date = new Date(this.props.workout.date).getDate() + 1;
+            let year = new Date(this.props.workout.date).getFullYear();
+            let day = new Date(this.props.workout.date).getDay();
             let formattedTime = this.formatTime(this.props.workout.start_time);
             let monthLetter, dayWord;
 
