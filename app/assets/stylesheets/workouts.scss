@@ -6,6 +6,12 @@
     .activity {width: 1248px;}   
 }
 
+.activity { 
+    display: flex;
+    width: 100%;
+
+}
+
 .workout-show-container { 
     display: flex;
     justify-content: center;
@@ -233,4 +239,19 @@ section header {
     max-width: 100px;
     line-height: 1.2em;
     }
+}
+
+.actions { 
+    height: 40px;
+    display: inline-flex;
+    box-shadow: -1px 0 0 #dfdfe8;
+    border: 1px solid #f0f0f5;
+    text-align: center;
+}
+
+.side-nav { 
+        width: 154px;
+    margin-left: -180px;
+    z-index: 12;
+    position: absolute;
 }

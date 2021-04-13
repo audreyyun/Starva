@@ -9,7 +9,7 @@ class WorkoutShow extends React.Component {
     constructor(props) {
         super(props);
 
-        // this.handleDelete = this.handleDelete.bind(this);
+        this.handleDelete = this.handleDelete.bind(this);
         this.formatTime = this.formatTime.bind(this);
         this.formatDuration = this.formatDuration.bind(this);
     }
@@ -19,15 +19,15 @@ class WorkoutShow extends React.Component {
     }
 
 
-    // handleDelete() {
-    //     if (window.confirm("Are you sure you want to delete this route? You can not undo this action.")) {
-    //         this.props.deleteRoute(this.props.routeId).then(
-    //             this.props.history.replace({
-    //                 pathname: `/routes/`
-    //             })
-    //         )
-    //     }
-    // }
+    handleDelete(workoutId) {
+        if (window.confirm("Are you sure you want to delete this workout? You can not undo this action.")) {
+            this.props.deleteWorkout(this.props.workoutId).then(
+                this.props.history.replace({
+                    pathname: `/training/`
+                })
+            )
+        }
+    }
 
     formatTime(date) { 
         let hours = new Date(date).getHours();
@@ -135,6 +135,11 @@ class WorkoutShow extends React.Component {
                     <div className="workout-show-container">
 
                         <div className="activity media">
+                            <div className="side-nav">
+                                <div className="actions" onClick={() => this.handleDelete(this.props.workout.id)}>
+                                    <img className="starva-logo" src={window.actions} alt="" />
+                                </div>
+                            </div>
                             <section className="media-body" id="heading">
                                 <header>
                                     <h2>
