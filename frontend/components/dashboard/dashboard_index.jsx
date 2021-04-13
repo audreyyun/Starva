@@ -170,9 +170,11 @@ class DashboardIndex extends React.Component {
                     <Navbar logout={this.props.logout} {...navbarProps} />
                     <div className="splash-border"></div>
                     <div className="dashboard-page-content">
-                        {this.renderProfile()}
-                        <div className="feed">
-                            <div>{workoutItems}</div>
+                        <div className="dashboard-page">
+                            {this.renderProfile()}
+                            <div className="feed">
+                                <div>{workoutItems}</div>
+                            </div>
                         </div>
                     </div>
                     

@@ -15,6 +15,19 @@
     background-color: #f7f7fa;
 }
 
+.dashboard-page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 1250px){
+    .dashboard-page {
+        width: 1248px;
+    }
+}
+
 .feed-sidebar-content { 
     width: 100%;
     display: flex;
@@ -39,10 +52,6 @@
         float: left;
     }
 }
-
-/* .feed-sidebar-content { 
-    margin-left: -30px;
-} */
 
 .athlete-profile { 
     width: 100%;
