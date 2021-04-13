@@ -2,19 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-// @media screen and (min-width: 1500px) { 
-//     .workout-show-content {width: 1248px;}   
-//     // .workout-show-container {width: 1248px;}   
-//     // .activity {width: 1248px;}   
-//     // .media-body {width: 1248px;}   
-// }
+@media screen and (min-width: 1250px) { 
+    .workout-show-content {width: 1248px;}   
+}
 
 .activity { 
     display: flex;
     width: 100%;
 }
 
-
+.workout-show-pg-container { 
+    height: 100%;
+    width: 100%;
+}
 .workout-show-container { 
     display: flex;
     justify-content: center;
@@ -22,17 +22,16 @@
     margin-bottom: 80px;
     padding: 0 5px;
     width: 100%;
-    overflow-x: hidden;
     margin-left: 60px;
+    height: 95vh;
 }
 
 .workout-show-content { 
-    width: 100%;
     display: block;
     justify-content: flex-start;
     width: fit-content;
     position: absolute;
-    
+    margin-left: 10px;
 }
 
 .activities-index-body { 
@@ -163,7 +162,6 @@ section header {
 }
 
 .activity.media { 
-    // padding-left: 180px;
     width: 1000px;
     margin-left: 10px;
 }
@@ -265,7 +263,10 @@ section header {
     border: 1px solid #f0f0f5;
     text-align: center;
     justify-content: center;
-    // margin-left: 10px;
+}
+
+.actions:hover { 
+    background: #f7f7fa;;
 }
 
 .side-nav { 
@@ -277,6 +278,6 @@ section header {
 }
 
 .actions-logo { 
-    z-index:     12;
+    z-index: 12;
     width: 30%;
 }

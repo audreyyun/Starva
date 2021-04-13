@@ -100,6 +100,16 @@ class DashboardIndex extends React.Component {
         }
     }
 
+    selectSportImg(sport) { 
+        if (sport === "Ride") { 
+            return `${window.bike}`
+        } else if (sport === "Run") { 
+            return `${window.shoe}`
+        } else if (sport === "Swim") { 
+            return `${window.water}`
+        }
+    }
+
     render() { 
         const navbarProps = 
             {
@@ -122,39 +132,46 @@ class DashboardIndex extends React.Component {
                     <time className="activity-feed-card-date">{this.formatDay(workout.date)}</time>
                 </header>
                 <div className="activity-feed-card-body">
-                    <Link className="activity-feed-card-title" to={`/activities/${workout.id}`}>
-                        <h3 className="feed-title">
-                            {workout.workout_title}
-                        </h3>
-                    </Link>
+                    {/* <div className="sport-type-img"> */}
+                        <img className="sport-type-img"src={this.selectSportImg(workout.sport)} alt=""/>
+                    {/* </div> */}
+                    <div className="feed-card-content">
+
+                        <Link className="activity-feed-card-title" to={`/activities/${workout.id}`}>
+                            <h3 className="feed-title">
+                                {workout.workout_title}
+                            </h3>
+                        </Link>
+
+                        <ul className="list-stats">
+                            <li>
+                                <div className="stat">
+                                    <div className="stat-subtext">Distance</div>
+                                    <b className="stat-text">
+                                        {workout.distance} mi
+                                    </b>
+                                </div>
+                            </li>
+                            <li>
+                                <div className="stat">
+                                    <div className="stat-subtext">Elev Gain</div>
+                                    <b className="stat-text">
+                                        {workout.elevation} ft
+                                    </b>
+                                </div>
+                            </li>
+                            <li>
+                                <div className="stat">
+                                    <div className="stat-subtext">Time</div>
+                                    <b className="stat-text">
+                                        {this.formatDuration(workout)}
+                                    </b>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <ul className="list-stats">
-                    <li>
-                        <div className="stat">
-                            <div className="stat-subtext">Distance</div>
-                            <b className="stat-text">
-                                {workout.distance} mi
-                            </b>
-                        </div>
-                    </li>
-                    <li>
-                        <div className="stat">
-                            <div className="stat-subtext">Elev Gain</div>
-                            <b className="stat-text">
-                                {workout.elevation} ft
-                            </b>
-                        </div>
-                    </li>
-                    <li>
-                        <div className="stat">
-                            <div className="stat-subtext">Time</div>
-                            <b className="stat-text">
-                                {this.formatDuration(workout)}
-                            </b>
-                        </div>
-                    </li>
-                </ul>
 
 
                 {/* <Link className="workout-edit-btn" to={`/activity/${workout.id}/edit`}>Edit</Link> */}
@@ -163,6 +180,8 @@ class DashboardIndex extends React.Component {
 
             </div>
         ));
+
+        debugger
 
         return (
             <div className="dashboard-page-container">

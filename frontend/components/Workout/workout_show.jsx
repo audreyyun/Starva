@@ -126,6 +126,7 @@ class WorkoutShow extends React.Component {
             else if (month === 11) { monthLetter = "November"; }
             else if (month === 12) { monthLetter = "December"; }
 
+            debugger
             return (
 
                 <div className="workout-show-pg-container">
@@ -134,7 +135,6 @@ class WorkoutShow extends React.Component {
                     <div className="splash-border"></div>
                     <div className="workout-show-container">
                         <div className="workout-show-content">
-
                                 <div className="side-nav">
                                     <div className="actions" onClick={() => this.handleDelete(this.props.workout.id)}>
                                         <img className="actions-logo" src={window.actions} alt="" />
@@ -167,7 +167,6 @@ class WorkoutShow extends React.Component {
                                                 </li>
                                                 <li>
                                                     <strong>
-                                                        {/* {`${this.props.workout.hours}:${this.props.workout.minutes}:${this.props.workout.seconds}`} */}
                                                         {this.formatDuration(this.props.workout)}
                                                     </strong>
                                                     <div className="label">Duration</div>

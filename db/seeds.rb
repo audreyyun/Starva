@@ -10,6 +10,7 @@
 # {username: "guest", email: "guest@gmail.com", first_name: "G", last_name: "Uest", password: "password" }
 User.destroy_all
 Route.destroy_all
+Workout.destroy_all
 
 demo_user = User.create!( 
     id: 1,
@@ -50,3 +51,37 @@ route2 = Route.create!(
     start_long: -118.3503426879883,
     updated_at: "2021-03-29T19:12:13.889Z"
     )
+
+workout1 = Workout.create!(
+    athlete_id: 1,
+    created_at: "2021-03-29T19:33:50.637Z",
+    date: "2021-03-01",
+    description: "Weather was perfect today. Met up with a friend in the middle and finished the ride!",
+    distance: 43.7,
+    elevation: 783,
+    hours: 2,
+    id: 1,
+    minutes: 5,
+    seconds: 13,
+    sport: "Ride",
+    start_time: "2000-01-01T06:33:00.000Z",
+    updated_at: "2021-03-29T19:33:50.637Z",
+    workout_title: "Ride to Azusa"
+)
+
+workout2 = Workout.create!(
+    athlete_id: 1,
+    created_at: "2021-03-29T22:41:04.562Z",
+    date: "2021-03-03",
+    description: "Pretty tiring",
+    distance: 6.3,
+    elevation: 213,
+    hours: 0,
+    id: 26,
+    minutes: 58,
+    seconds: 12,
+    sport: "Run",
+    start_time: "2000-01-01T08:42:00.000Z",
+    updated_at: "2021-03-29T22:41:04.562Z",
+    workout_title: "First Long Run"
+)

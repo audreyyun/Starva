@@ -18,7 +18,7 @@
 }
 
 .activity-feed-card-header { 
-    padding-left: 24px;
+    padding-left: 48px;
 }
 
 .activity-feed-card-date { 
@@ -28,10 +28,21 @@
     color: #666;
 }
 .activity-feed-card-body { 
+    display: flex;
     padding-right: 88px;
     margin-bottom: 16px;
     margin-top: 8px;
-    padding-left: 24px;
+    margin-left: 24px;
+}
+
+.sport-type-img { 
+    line-height: 1;
+    width: 40px;
+    margin-left: -40px;
+    padding-right: 0px;
+    margin-top: -50px;
+    margin-right: 24px;
+    /* text-align: center; */
 }
 
 .feed-title { 
@@ -45,7 +56,7 @@
     align-items: stretch;
     list-style: none;
     flex-wrap: wrap;
-    padding-left: 24px;
+    /* padding-left: 24px; */
 }
 
 .stat { 
@@ -98,3 +109,4 @@
     margin-top: -12px; 
     box-sizing: border-box;
 }
+
