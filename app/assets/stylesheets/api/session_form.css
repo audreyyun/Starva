@@ -72,15 +72,12 @@
     overflow: hidden;
 }
 
-.login-input {
-    align-items: center;
- }
-
 
 .login-input { 
+    align-items: center;
     border-radius: 3px;
     min-width: 80px;
-    width: 88.5%;
+    width: 100%;
     padding: 10px 16px;
     margin-bottom: 20px;
     background: rgba(0, 0, 0, .75);
