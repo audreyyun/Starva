@@ -128,68 +128,70 @@ class WorkoutShow extends React.Component {
 
             return (
 
-                <div>
+                <div className="workout-show-pg-container">
                     
                     <Navbar logout={this.props.logout} {...navbarProps} />
                     <div className="splash-border"></div>
                     <div className="workout-show-container">
+                        <div className="workout-show-content">
 
-                        <div className="activity media">
-                            <div className="side-nav">
-                                <div className="actions" onClick={() => this.handleDelete(this.props.workout.id)}>
-                                    <img className="starva-logo" src={window.actions} alt="" />
+                                <div className="side-nav">
+                                    <div className="actions" onClick={() => this.handleDelete(this.props.workout.id)}>
+                                        <img className="actions-logo" src={window.actions} alt="" />
+                                    </div>
                                 </div>
-                            </div>
-                            <section className="media-body" id="heading">
-                                <header>
-                                    <h2>
-                                        <span className="title">
+                            <div className="activity media">
+                                <section className="media-body" id="heading">
+                                    <header>
+                                        <h2>
+                                            <span className="title">
+                                                
+                                                {athleteName} – {this.props.workout.sport}
+                                            </span>
+                                        </h2>
+                                    </header>
+                                    <div className="activity-summary-container">
+                                        <div className="activity-summary activity-card">
+                                            <time>{formattedTime} on {dayWord}, {monthLetter} {date}, {year} </time>
+                                            <h1>{this.props.workout.workout_title}</h1>
+                                            <p>{this.props.workout.description}</p>
+                                        </div>
+                                        <div className="activity-stats activity-card">
+                                            <ul className="activity-stats-list inline-stats section">
+                                                <li>
+                                                    <strong>
+                                                        {this.props.workout.distance}
+                                                        <abbr className="unit" title="miles"> mi</abbr>
+                                                    </strong>
+                                                    <div className="label">Distance</div>
+                                                </li>
+                                                <li>
+                                                    <strong>
+                                                        {/* {`${this.props.workout.hours}:${this.props.workout.minutes}:${this.props.workout.seconds}`} */}
+                                                        {this.formatDuration(this.props.workout)}
+                                                    </strong>
+                                                    <div className="label">Duration</div>
+                                                </li>
+                                                <li>
+                                                    <strong>
+                                                        {speed}
+                                                        <abbr className="unit" title="speed"> mi/h</abbr>
+                                                    </strong>
+                                                    <div className="label">Speed</div>
+                                                </li>
+                                                <li>
+                                                    <strong>
+                                                        {this.props.workout.elevation}
+                                                        <abbr className="unit" title="feet"> ft</abbr>
+                                                    </strong>
+                                                    <div className="label">Elevation</div>
+                                                </li>
+                                            </ul>
                                             
-                                            {athleteName} – {this.props.workout.sport}
-                                        </span>
-                                    </h2>
-                                </header>
-                                <div className="activity-summary-container">
-                                    <div className="activity-summary activity-card">
-                                        <time>{formattedTime} on {dayWord}, {monthLetter} {date}, {year} </time>
-                                        <h1>{this.props.workout.workout_title}</h1>
-                                        <p>{this.props.workout.description}</p>
+                                        </div>
                                     </div>
-                                    <div className="activity-stats activity-card">
-                                        <ul className="activity-stats-list inline-stats section">
-                                            <li>
-                                                <strong>
-                                                    {this.props.workout.distance}
-                                                    <abbr className="unit" title="miles"> mi</abbr>
-                                                </strong>
-                                                <div className="label">Distance</div>
-                                            </li>
-                                            <li>
-                                                <strong>
-                                                    {/* {`${this.props.workout.hours}:${this.props.workout.minutes}:${this.props.workout.seconds}`} */}
-                                                    {this.formatDuration(this.props.workout)}
-                                                </strong>
-                                                <div className="label">Duration</div>
-                                            </li>
-                                            <li>
-                                                <strong>
-                                                    {speed}
-                                                    <abbr className="unit" title="speed"> mi/h</abbr>
-                                                </strong>
-                                                <div className="label">Speed</div>
-                                            </li>
-                                            <li>
-                                                <strong>
-                                                    {this.props.workout.elevation}
-                                                    <abbr className="unit" title="feet"> ft</abbr>
-                                                </strong>
-                                                <div className="label">Elevation</div>
-                                            </li>
-                                        </ul>
-                                        
-                                    </div>
-                                </div>
-                            </section>
+                                </section>
+                            </div>
                         </div>
 
                     </div>
