@@ -105,3 +105,26 @@
 .last-activity:hover { 
     color: #007FB6; 
 }
+
+.card-section { 
+    padding-bottom: 16px;
+}
+
+.card-section-2 { 
+    border-top: 1px solid #f0f0f5;
+    padding-top: 16px;
+}
+
+
+.training-log { 
+    font-weight: 400;
+    line-height: 1;
+    white-space: nowrap;
+    -webkit-font-smoothing: antialiased;
+    color: #000;
+    font-size: 14px;
+}
+
+.training-log:hover { 
+    color: #007FB6; 
+}

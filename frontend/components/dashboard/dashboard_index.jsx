@@ -37,7 +37,7 @@ class DashboardIndex extends React.Component {
 
     formatLongDay(d) {
         let month = new Date(d).getMonth() + 1;
-        let date = new Date(d).getDate();
+        let date = new Date(d).getDate() + 1;
         let year = new Date(d).getFullYear();
         // let day = new Date(d).getDay();
         let monthLetter;
@@ -231,6 +231,11 @@ class DashboardIndex extends React.Component {
                                 <div className="last-activity">
                                     {lastActivity}
                                 </div>
+                            </div>
+                            <div className="card-section-2">
+                                <Link to="/training" className="stat">
+                                    <div className="training-log">Your Training Log</div>
+                                </Link>
                             </div>
                         </div>
                     </div>
