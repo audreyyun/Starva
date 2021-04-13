@@ -21,7 +21,7 @@ import ManualActivityContainer from './ManualActivity/manual_activity_container'
 const App = () => (
     <>
 
-        <Route exact path="/" component={SplashPage}/>
+        <AuthRoute exact path="/" component={SplashPage}/>
 
         <AuthRoute path="/signup" component={SignUpFormContainer}/>
         <AuthRoute path="/login" component={LogInFormContainer}/>
