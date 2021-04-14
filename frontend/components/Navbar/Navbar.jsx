@@ -17,7 +17,7 @@ const Navbar = (props) => {
 
                     {props.isAuthenticated &&
                     <div className="dashboard-dropdown">
-                        <Link to="/" onClick={(event) => event.preventDefault()} className="navbar-routes drop-btn">Dashboard</Link>
+                        <Link to="/dashboard" className="navbar-routes drop-btn">Dashboard</Link>
                         <div className="dashboard-dropdown-content">
                             {/* <div>
                                 <Link className="navbar-routes" to="/routes/new">Create a Route</Link>
