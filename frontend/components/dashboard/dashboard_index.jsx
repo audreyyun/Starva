@@ -181,7 +181,6 @@ class DashboardIndex extends React.Component {
             </div>
         ));
 
-        debugger
 
         return (
             <div className="dashboard-page-container">

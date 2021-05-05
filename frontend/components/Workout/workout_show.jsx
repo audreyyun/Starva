@@ -126,7 +126,6 @@ class WorkoutShow extends React.Component {
             else if (month === 11) { monthLetter = "November"; }
             else if (month === 12) { monthLetter = "December"; }
 
-            debugger
             return (
 
                 <div className="workout-show-pg-container">
