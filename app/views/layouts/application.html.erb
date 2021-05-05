@@ -6,6 +6,13 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <meta property="og:title" content=Starva />
+    <meta property="og:image" content="<%= image_url('starva.png') %>g" />
+    <meta property="og:description" content="A fullstack Strava clone where users can upload workouts and plan future cycling/running routes." />
+    <meta property="og:url" content="https://starva.herokuapp.com/">
+    <meta name="author" content="Audrey Yun">
+
+
     <script type="text/javascript">
       window.googleAPIKey = "<%= Rails.application.credentials.google[:api_key] %>"
     </script>
