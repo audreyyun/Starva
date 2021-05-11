@@ -20,6 +20,7 @@
     height: 100%;
     display: flex;
     justify-content: center;
+    overflow-y: scroll;
 }
 
 @media (min-width: 1250px){
@@ -37,8 +38,10 @@
 
 .feed { 
     width: 50%;
+    height: 100%;
     padding: 0 16px;
     margin-top: 64px;
+    overflow-y: scroll;
 }
 
 .feed-sidebar-container { 

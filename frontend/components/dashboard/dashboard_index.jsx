@@ -9,11 +9,29 @@ class DashboardIndex extends React.Component {
         this.formatDay = this.formatDay.bind(this);
         this.formatLongDay = this.formatLongDay.bind(this);
         this.whatDay = this.whatDay.bind(this);
+
+        this.state = { 
+            scrolling: false
+        }
     }
 
     componentDidMount() { 
         this.props.fetchWorkouts(this.props.sessionId);
+        // window.addEventListener('scroll', this.handleScroll);
     }
+
+    // componentWillUnmount() {
+    //     window.removeEventListener('scroll', this.handleScroll);
+    // }
+
+    // handleScroll(event) { 
+    //     if (window.scrollY === 0 && this.state.scrolling === true) {
+    //         this.setState({ scrolling: false });
+    //     }
+    //     else if (window.scrollY !== 0 && this.state.scrolling !== true) {
+    //         this.setState({ scrolling: true });
+    //     }
+    // }
 
     formatDay(d) {
         let month = new Date(d).getMonth() + 1;
