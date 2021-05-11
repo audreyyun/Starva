@@ -17,21 +17,8 @@ class DashboardIndex extends React.Component {
 
     componentDidMount() { 
         this.props.fetchWorkouts(this.props.sessionId);
-        // window.addEventListener('scroll', this.handleScroll);
     }
 
-    // componentWillUnmount() {
-    //     window.removeEventListener('scroll', this.handleScroll);
-    // }
-
-    // handleScroll(event) { 
-    //     if (window.scrollY === 0 && this.state.scrolling === true) {
-    //         this.setState({ scrolling: false });
-    //     }
-    //     else if (window.scrollY !== 0 && this.state.scrolling !== true) {
-    //         this.setState({ scrolling: true });
-    //     }
-    // }
 
     formatDay(d) {
         let month = new Date(d).getMonth() + 1;
