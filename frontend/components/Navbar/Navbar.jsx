@@ -39,6 +39,22 @@ const Navbar = (props) => {
                         </div>
                     </div>
                     }
+                    {props.isAuthenticated &&
+                    <div className="dashboard-dropdown">
+                        <Link to="/" onClick={(event) => event.preventDefault()} className="navbar-routes drop-btn">Personal Links</Link>
+                        <div className="dashboard-dropdown-content">
+                            <div>
+                                <a className="navbar-routes" href="https://www.linkedin.com/in/audrey-yun/" target="_blank">LinkedIn</a>
+                            </div>
+                            <div>
+                                <a className="navbar-routes" href="https://github.com/audreyyun/" target="_blank">Github</a>
+                            </div>
+                            <div>
+                                <a className="navbar-routes" href="http://audreyyun.github.io/" target="_blank">Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+                    }
                 </div>
 
 
