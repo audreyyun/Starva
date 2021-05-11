@@ -28,3 +28,21 @@ Starva utilizes Ruby on Rails for the backend and React/Redux in the frontend, w
 ## User Authentication
 
 Users can sign up for a new account, login to an existing account, or access a demo user to access the site features. The session token for the current user persists until the user explicitly logs out, allowing users to close out of tabs with ease. 
+
+Users can also sign in with a demo account to bypass signing up to enjoy and interact with the application features that Starva offers. 
+
+## Create Routes
+
+Users can create, save, edit, and delete routes that they plan for their future workouts. 
+
+## Create Workouts 
+
+Users can create, store, and manage their workouts by filling out the manual workout entry page.
+
+## Dashboard
+
+Users can access their dashboard to see all of their activities. 
+
+## Activities
+
+Users can see all of their workouts summarized on their "My Activities" page.
