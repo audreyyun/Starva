@@ -196,6 +196,17 @@ class DashboardIndex extends React.Component {
                         <div id="dashboard-page" className="dashboard-page">
                             {this.renderProfile()}
                             <div id="feed" className="feed">
+                                <div className="feed-header"> 
+                                <div className="feed-header-content">
+                                        <h5 className="feed-header-text">
+                                            Your Activities
+                                        </h5>
+                                    </div>
+                                    <div className="arrow-wrapper">
+                                        {window.downArrow}
+                                    </div>
+                                </div>
+
                                 <div className="workoutItems">{workoutItems}</div>
                             </div>
                         </div>

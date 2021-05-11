@@ -42,17 +42,14 @@
     width: 50%;
     height: 100%;
     padding: 0 16px;
-    margin-top: 64px;
+    /* margin-top: 64px; */
     position: relative;
     overflow-y: auto;
     max-height: 100%
 }
 
 .workoutItems { 
-    /* border: 1px solid black; */
-    /* height: 100%; */
     position: relative;
-    /* overflow-y: scroll; */
     margin-bottom: 200px;
     overflow-y: auto;
 
@@ -62,6 +59,19 @@
     display: none;
 }
 
+
+.feed-header { 
+    margin-top: 0;
+    height: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.feed-header-text { 
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22px;
+}
 
 .feed-sidebar-container { 
     width: 280px;
