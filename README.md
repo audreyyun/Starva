@@ -2,7 +2,7 @@
 
 
 <p align="center"> 
-  <a href="https://starva.herokuapp.com/"><img src="assets/images/starva-logo.png" /></a>
+  <a href="https://starva.herokuapp.com/"><img src="app/assets/images/starva-logo.png" /></a>
 </p>
 
 -------------
