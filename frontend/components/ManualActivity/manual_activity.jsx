@@ -14,6 +14,7 @@ class ManualActivity extends React.Component {
             seconds: 0,
             elevation: 0,
             sport: "Ride",
+            // date: `${this.timeofDay()}`,
             date: "",
             start_time: "",
             title: "",
@@ -84,6 +85,12 @@ class ManualActivity extends React.Component {
         return "How did it go? Were you tired or rested? How was the weather?"
     }
 
+    // renderBike() { 
+    //     return (
+
+    //     )
+    // }
+
     render() { 
         const navbarProps =
         {
@@ -93,7 +100,9 @@ class ManualActivity extends React.Component {
             isAuthenticated: true,
         }
 
-        
+        // const someDate = new Date();
+        // const todate = someDate.setDate(someDate.getDate());
+
         return (
             <div>
                 <Navbar logout={this.props.logout} {...navbarProps} />
@@ -161,8 +170,9 @@ class ManualActivity extends React.Component {
                                 <label>Date and Time
                                     <div className="selection">
                                         <div className="time-date-input-wrapper">
-                                            <input type="date" value={this.state.date} onChange={this.handleChange("date")}/>
-                                            <input type="time" value={this.state.start_time} onChange={this.handleChange("start_time")}/>
+                                            {/* <input required type="date" value={this.state.date} defaultValue={todate} onChange={this.handleChange("date")}/> */}
+                                            <input required type="date" value={this.state.date} onChange={this.handleChange("date")}/>
+                                            <input required type="time" value={this.state.start_time} onChange={this.handleChange("start_time")}/>
                                         </div>
                                     </div>
                                 </label>
@@ -172,7 +182,8 @@ class ManualActivity extends React.Component {
                         <div className="row row2">
                             <label>Title
                                 <div className="title">
-                                    <input type="text" value={this.state.title} placeholder={this.timeOfDay()} onChange={this.handleChange("title")}/>
+                                    {/* <input type="text" value={this.state.title} placeholder={this.timeOfDay()} onChange={this.handleChange("title")}/> */}
+                                    <input required autofocus="true" type="text" value={this.state.title} placeholder={this.timeOfDay()} onChange={this.handleChange("title")}/>
                                 </div>
                             </label>
                         </div>
