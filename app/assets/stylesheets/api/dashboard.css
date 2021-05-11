@@ -61,16 +61,34 @@
 
 
 .feed-header { 
-    margin-top: 0;
+    /* margin-top: 0;
     height: 64px;
     display: flex;
-    align-items: center;
+    align-items: center; */
+
+    margin-top: 0;
+    display: flex;
+    padding-top: 20px;
+    width: 100%;
+    padding-bottom: 20px;
 }
 
 .feed-header-text { 
     font-size: 17px;
     font-weight: 400;
     line-height: 22px;
+}
+
+.arrow-wrapper { 
+    background-position: 0 33.33%;
+    margin: 0 0 0 5px;
+    width: fit-content;
+}
+.down-arrow { 
+        width: 16px;
+    height: 16px;
+    overflow: hidden;
+    margin-top: 2px;
 }
 
 .feed-sidebar-container { 

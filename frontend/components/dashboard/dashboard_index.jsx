@@ -203,7 +203,7 @@ class DashboardIndex extends React.Component {
                                         </h5>
                                     </div>
                                     <div className="arrow-wrapper">
-                                        {window.downArrow}
+                                        <img className="down-arrow" src={window.downArrow} alt=""/>
                                     </div>
                                 </div>
 
