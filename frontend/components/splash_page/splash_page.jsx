@@ -28,6 +28,21 @@ class SplashPage extends React.Component {
                             <img className="splashphoto" src={window.splashpage} alt="" />
                         </div>
                         <div className="splash-body-right">
+                            <div className="splash-links-container">
+                                <a target="_blank" href="https://www.linkedin.com/in/audrey-yun/"><Button className="splash-signup-btn linkedin-splash" formType="LinkedIn" /></a>
+                                <a target="_blank" href="https://github.com/audreyyun/"><Button className="splash-signup-btn" formType="Github" /></a>
+                                <a target="_blank" href="http://audreyyun.github.io/"><Button className="splash-signup-btn" formType="Portfolio" /></a>
+
+                                {/* <div>
+                                    <a className="splash-links" href="https://www.linkedin.com/in/audrey-yun/" target="_blank">LinkedIn</a>
+                                </div>
+                                <div>
+                                    <a className="splash-links" href="https://github.com/audreyyun/" target="_blank">Github</a>
+                                </div>
+                                <div>
+                                    <a className="splash-links" href="http://audreyyun.github.io/" target="_blank">Portfolio</a>
+                                </div> */}
+                            </div>
                             <div className="hr">
                                 <div className="hr-text">or</div>
                             </div>
