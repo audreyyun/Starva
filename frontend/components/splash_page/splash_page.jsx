@@ -28,6 +28,9 @@ class SplashPage extends React.Component {
                             <img className="splashphoto" src={window.splashpage} alt="" />
                         </div>
                         <div className="splash-body-right">
+                            <div className="hr">
+                                <div className="hr-text">or</div>
+                            </div>
                             <Link to="/signup"><Button className="splash-signup-btn" formType="Use my email" /></Link>
                             <div className="member-spacing">
                                 <p className="member">Already a Member? <Link to="/login" className="member">Log In</Link></p>
