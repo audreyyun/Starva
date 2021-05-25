@@ -85,6 +85,12 @@
     color: #fff;
 }
 
+input[type="email"], input[type="password"] {
+    background: rgba(0,0,0,0.5);
+    border: 1px solid #666;
+    color: #CCC;
+}
+
 .login-input::placeholder { 
     color: #fff;
     opacity: 1;
