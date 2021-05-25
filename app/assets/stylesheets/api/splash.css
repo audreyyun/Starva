@@ -58,6 +58,15 @@
     /* margin-top: 80px; */
 }
 
+@media (max-width: 992px) {
+    .splash-body-content {
+        padding-left: 128px;
+        padding-right: 128px;
+        width: 41.66666667%;
+    }
+}
+
+
 .splash-links-container {
     display: flex;
     flex-direction: column;
