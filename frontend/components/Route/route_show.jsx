@@ -101,60 +101,67 @@ class RouteShow extends React.Component {
     }
 
     render() {
-        let month = new Date(this.props.route.created_at).getMonth() + 1;
-        let day = new Date(this.props.route.created_at).getDate();
-        let year = new Date(this.props.route.created_at).getFullYear();
-        let monthLetter = null;
+        if (this.props.sessionId !== this.props.route.athlete_id) {
+            debugger
+            return null;
+        } else if (this.props.sessionId === this.props.route.athlete_id) {
+            let month = new Date(this.props.route.created_at).getMonth() + 1;
+            let day = new Date(this.props.route.created_at).getDate();
+            let year = new Date(this.props.route.created_at).getFullYear();
+            let monthLetter = null;
 
-            if (month ===  1) { monthLetter = "January";}
-            else if (month ===  2) { monthLetter = "February";}
-            else if (month ===  3) { monthLetter = "March";}
-            else if (month ===  4) { monthLetter = "April";}
-            else if (month ===  5) { monthLetter = "May";}
-            else if (month ===  6) { monthLetter = "June";}
-            else if (month ===  7) { monthLetter = "July";}
-            else if (month ===  8) { monthLetter = "August";}
-            else if (month ===  9) { monthLetter = "September";}
-            else if (month ===  10) { monthLetter = "October";}
-            else if (month ===  11) { monthLetter = "November";}
-            else if (month ===  12) { monthLetter = "December";}
-        
-        
+                if (month ===  1) { monthLetter = "January";}
+                else if (month ===  2) { monthLetter = "February";}
+                else if (month ===  3) { monthLetter = "March";}
+                else if (month ===  4) { monthLetter = "April";}
+                else if (month ===  5) { monthLetter = "May";}
+                else if (month ===  6) { monthLetter = "June";}
+                else if (month ===  7) { monthLetter = "July";}
+                else if (month ===  8) { monthLetter = "August";}
+                else if (month ===  9) { monthLetter = "September";}
+                else if (month ===  10) { monthLetter = "October";}
+                else if (month ===  11) { monthLetter = "November";}
+                else if (month ===  12) { monthLetter = "December";}
+            
+            
 
-        const navbarProps =
-        {
-            loginBtnClass: "nav-btn-secondary",
-            loginBtnLabel: "Log Out",
-            loginBtnPath: "/logout",
-            isAuthenticated: true,
-        }
+            const navbarProps =
+            {
+                loginBtnClass: "nav-btn-secondary",
+                loginBtnLabel: "Log Out",
+                loginBtnPath: "/logout",
+                isAuthenticated: true,
+            }
 
-        return (
-            <div>
-                <div className="route-card">
-                    <Link to={`/routes/${this.props.route.id}`}>
-                        <div id='item-map-container' ref={map => this.mapNode = map}> </div>
-                    </Link>
-                    <div id='route-item-info'>
+            debugger
+
+            return (
+                <div>
+                    <div className="route-card">
                         <Link to={`/routes/${this.props.route.id}`}>
-                            <h3 className="route-name">{this.props.route.route_name}</h3>
+                            <div id='item-map-container' ref={map => this.mapNode = map}> </div>
                         </Link>
-                        <ul className="inline-stats">
-                            <li>
-                            <strong>
-                                <p id="text" className="distance">{this.props.route.distance}</p>
-                                <abbr className="unit" title="miles">mi</abbr>
-                            </strong>
-                            <p className="label">Distance</p>
-                            </li>
-                        </ul>
+                        <div id='route-item-info'>
+                            <Link to={`/routes/${this.props.route.id}`}>
+                                <h3 className="route-name">{this.props.route.route_name}</h3>
+                            </Link>
+                            <ul className="inline-stats">
+                                <li>
+                                <strong>
+                                    <p id="text" className="distance">{this.props.route.distance}</p>
+                                    <abbr className="unit" title="miles">mi</abbr>
+                                </strong>
+                                <p className="label">Distance</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id="route-item-timestamp">Created on {monthLetter} {day}, {year} </div>
+
                     </div>
-
-                    <div id="route-item-timestamp">Created on {monthLetter} {day}, {year} </div>
-
                 </div>
-            </div>
-        )
+            )
+        }
     }
 }
 

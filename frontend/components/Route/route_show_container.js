@@ -5,10 +5,12 @@ import RouteShow from "./route_show";
 import { logout } from "../../actions/session_actions";
 
 const msp = (state, ownProps) => {
+    debugger
     return {
-        // routeId: ownProps.match.params.route.id,
+        sessionId: state.session.id || null,
+        routeId: ownProps.match.params.routeId,
         route: state.entities.routes ? state.entities.routes[ownProps.match.params.routeId] : null,
-        sessionId: state.session.id
+    
     }
 }
 

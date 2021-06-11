@@ -16,6 +16,7 @@ class RouteIndex extends React.Component {
     }
 
     componentDidMount() { 
+        debugger
         this.props.fetchRoutes(this.props.sessionId);
 
     }
@@ -53,7 +54,7 @@ class RouteIndex extends React.Component {
             loginBtnLabel: "Log Out",
             loginBtnPath: "/logout",
             isAuthenticated: true,
-        }
+        };
         
             const routeItems = Object.values(this.props.routes).reverse().map( (route) => (
                 <li className="route-index-item" key={route.id}>
@@ -73,7 +74,13 @@ class RouteIndex extends React.Component {
                             </div>
                         </div>
                         
+                        {/* <RouteShow route={route}
+                            sessionId={this.props.sessionId}
+                            fetchRoute={this.props.fetchRoute}
+                        /> */}
                         <RouteShow route={route}
+                            routeId={route.id}
+                            // sessionId={this.props.sessionId}
                             fetchRoute={this.props.fetchRoute}
                         />
 
@@ -91,7 +98,7 @@ class RouteIndex extends React.Component {
                 </li>
             ));
 
-        if (this.props.routes.length === 0) {
+        if (this.props.routes.length === 0 || this.props.routes[0].athlete_id !==this.props.sessionId) {
             return (
                 <div id="routes-index-pg-container ">
                     <Navbar logout={this.props.logout} {...navbarProps} />
@@ -116,6 +123,7 @@ class RouteIndex extends React.Component {
                 </div>
             )   
         } else { 
+            debugger
             return ( 
                 <div id="routes-index-pg-container">
                     <Navbar logout={this.props.logout} {...navbarProps} />

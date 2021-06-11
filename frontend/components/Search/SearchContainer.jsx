@@ -6,17 +6,19 @@ import { logout } from "../../actions/session_actions"
 import Search from './Search'
 
 const msp = (state, ownProps) => {
-    
+    debugger
     return {
         // routeId: ownProps.match.params.routeId,
         // route: state.entities.routes[ownProps.match.params.routeId],
-        routes: Object.values(state.entities.routes)
+        routes: Object.values(state.entities.routes),
+        sessionId: state.session.id || null,
+        athlete: state.entities.users ? state.entities.users[state.session.id] : null,
     }
 };
 
 const mdp = dispatch => {
     return {
-        fetchRoutes: () => dispatch(fetchRoutes()),
+        fetchRoutes: (athleteId) => dispatch(fetchRoutes(athleteId)),
         fetchRoute: routeId => dispatch(fetchRoute(routeId)),
         createRoute: route => dispatch(createRoute(route)),
         updateRoute: route => dispatch(updateRoute(route)),

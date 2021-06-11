@@ -120,7 +120,7 @@ class RouteIndexItem extends React.Component {
             isAuthenticated: true,
         }
 
-        if (!this.props.route) { 
+        if (!this.props.route || this.props.route.athlete_id !== this.props.athlete.id) { 
             return (<div></div>)
         } else { 
             let month = new Date(this.props.route.created_at).getMonth() + 1;
@@ -148,6 +148,7 @@ class RouteIndexItem extends React.Component {
                 athleteName = this.props.athlete.first_name + this.props.athlete.last_name
             }
 
+            debugger
 
             return (
                 <div>

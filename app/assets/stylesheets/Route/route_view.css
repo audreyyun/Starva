@@ -28,6 +28,8 @@
 section.actions {
     margin: 10px 0;
     padding: 0;
+    border: none;
+    justify-content: left;
 }
 
 .edit-route { 

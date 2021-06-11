@@ -84,7 +84,7 @@ class WorkoutShow extends React.Component {
         }
 
 
-        if (!this.props.workout) { 
+        if (!this.props.workout || this.props.sessionId !== this.props.workout.athlete_id) {
             return (
                 <div></div>
             )

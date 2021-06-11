@@ -119,8 +119,9 @@ class WorkoutIndex extends React.Component {
 
             </tr>
         ));
+            debugger
+        if (this.props.workouts.length === 0 || this.props.workouts[0].athleteId !== this.props.sessionId) {
 
-        if (this.props.workouts.length === 0) {
             return (
                 <div id="routes-index-pg-container ">
                     <Navbar logout={this.props.logout} {...navbarProps} />
