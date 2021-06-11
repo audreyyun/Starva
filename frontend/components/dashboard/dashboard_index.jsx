@@ -130,6 +130,13 @@ class DashboardIndex extends React.Component {
             athleteName = this.props.athlete.first_name + " " + this.props.athlete.last_name
         }
 
+        let totalWorkouts = true;
+        if (this.props.workouts.map((workout) => (
+            workout.athlete_id === this.props.sessionsId
+        ))) { 
+            totalWorkouts = false;
+        }
+
         const workoutItems = Object.values(this.props.workouts).reverse().map((workout) => (
             <div className="activity-feed-card" key={workout.id}>
                 <header className="activity-feed-card-header">
@@ -186,7 +193,36 @@ class DashboardIndex extends React.Component {
             </div>
         ));
 
+        if (totalWorkouts === false) { 
+            return (
+            <div className="dashboard-page-container">
+                <div className="dashboard-border">
+                    <Navbar logout={this.props.logout} {...navbarProps} />
+                    <div className="splash-border"></div>
+                    <div className="dashboard-page-content">
+                        <div id="dashboard-page" className="dashboard-page">
+                            {this.renderProfile()}
+                            <div id="feed" className="feed">
+                                <div className="feed-header">
+                                    <div className="feed-header-content">
+                                        <h5 className="feed-header-text">
+                                            Your Activities
+                                        </h5>
+                                    </div>
+                                    <div className="arrow-wrapper">
+                                        <img className="down-arrow" src={window.downArrow} alt="" />
+                                    </div>
+                                </div>
 
+                                <div className="workoutItems">Your activities will appear here.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+                )
+        } else {
         return (
             <div className="dashboard-page-container">
                 <div className="dashboard-border">
@@ -215,6 +251,7 @@ class DashboardIndex extends React.Component {
                 </div>
             </div>
         )
+        }
 
     }
 
