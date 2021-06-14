@@ -14,6 +14,7 @@
     width: 1548px;
     padding-left: 5%;
     height: 100%;
+    overflow-x: scroll;
 }
 
 .entry-page-body { 
@@ -23,28 +24,24 @@
     // margin-bottom: 10px;
     height: 100%;
     position: absolute;
-    overflow: scroll;
-    // display: flex;
-    // flex-direction: column;
+    overflow-y: scroll;
 
-    // h1 { 
-    //     margin-bottom: -80px;
-    // }
-    form {
-        height: 100%;
+
+    form { 
+        display: block;
     }
 }
 
 #manual-entry-body { 
     margin-top: 20px;
-    // display: flex;
-    flex-direction: column;
+    display: block;
+    // flex-direction: column;
     justify-content: center;
     margin: 0px auto;
     width: 100%;
     height: 100%;
     position: absolute;
-    overflow: scroll;
+    overflow-y: scroll;
 
     padding-bottom: 100px;
 
