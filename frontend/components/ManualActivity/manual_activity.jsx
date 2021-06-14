@@ -111,7 +111,7 @@ class ManualActivity extends React.Component {
                 <div className="entry-page-container">
                     <div className="entry-page-body">
                     <h1>Manual Entry</h1>
-                        <form onSubmit={this.handleSubmit} className="manual-entry-body">
+                        <form onSubmit={this.handleSubmit} id="manual-entry-body">
                         <div className="row">
                             <div className="upload">
                                 <fieldset>

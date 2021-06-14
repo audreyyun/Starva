@@ -8,26 +8,46 @@
 
 .entry-page-container { 
     margin-top: 30px;
-    margin-bottom: 80px;
+    // margin-bottom: 80px;
     margin-left: 20px;
     justify-content: center;
     width: 1548px;
     padding-left: 5%;
+    height: 100%;
 }
 
 .entry-page-body { 
     width: 70%;
     margin-right: 100px;
     padding-left: 200px;
+    // margin-bottom: 10px;
+    height: 100%;
+    position: absolute;
+    overflow: scroll;
+    // display: flex;
+    // flex-direction: column;
+
+    // h1 { 
+    //     margin-bottom: -80px;
+    // }
+    form {
+        height: 100%;
+    }
 }
 
-.manual-entry-body { 
+#manual-entry-body { 
     margin-top: 20px;
-    display: flex;
+    // display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0px auto;
     width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: scroll;
+
+    padding-bottom: 100px;
+
 
     legend, label { 
         color: #242428;
