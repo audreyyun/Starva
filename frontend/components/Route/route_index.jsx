@@ -80,7 +80,7 @@ class RouteIndex extends React.Component {
                         /> */}
                         <RouteShow route={route}
                             routeId={route.id}
-                            // sessionId={this.props.sessionId}
+                            sessionId={this.props.sessionId}
                             fetchRoute={this.props.fetchRoute}
                         />
 

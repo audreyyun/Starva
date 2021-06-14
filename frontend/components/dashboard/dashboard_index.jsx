@@ -131,67 +131,73 @@ class DashboardIndex extends React.Component {
         }
 
         let totalWorkouts = true;
-        if (this.props.workouts.map((workout) => (
-            workout.athlete_id === this.props.sessionsId
-        ))) { 
-            totalWorkouts = false;
+        for(let i = 0; i < this.props.workouts.length; i++) { 
+            let workout = this.props.workouts[i];
+            if (workout.athlete_id !== this.props.athlete.id) {
+                totalWorkouts = false;
+            } else { 
+                totalWorkouts = true;
+            }
         }
 
-        const workoutItems = Object.values(this.props.workouts).reverse().map((workout) => (
-            <div className="activity-feed-card" key={workout.id}>
-                <header className="activity-feed-card-header">
-                    <div>{athleteName}</div>
-                    <time className="activity-feed-card-date">{this.formatDay(workout.date)}</time>
-                </header>
-                <div className="activity-feed-card-body">
-                    {/* <div className="sport-type-img"> */}
-                        <img className="sport-type-img"src={this.selectSportImg(workout.sport)} alt=""/>
-                    {/* </div> */}
-                    <div className="feed-card-content">
+        debugger
+            
 
-                        <Link className="activity-feed-card-title" to={`/activities/${workout.id}`}>
-                            <h3 className="feed-title">
-                                {workout.workout_title}
-                            </h3>
-                        </Link>
+        // const workoutItems = Object.values(this.props.workouts).reverse().map((workout) => (
+        //     <div className="activity-feed-card" key={workout.id}>
+        //         <header className="activity-feed-card-header">
+        //             <div>{athleteName}</div>
+        //             <time className="activity-feed-card-date">{this.formatDay(workout.date)}</time>
+        //         </header>
+        //         <div className="activity-feed-card-body">
+        //             {/* <div className="sport-type-img"> */}
+        //                 <img className="sport-type-img"src={this.selectSportImg(workout.sport)} alt=""/>
+        //             {/* </div> */}
+        //             <div className="feed-card-content">
 
-                        <ul className="list-stats">
-                            <li>
-                                <div className="stat">
-                                    <div className="stat-subtext">Distance</div>
-                                    <b className="stat-text">
-                                        {workout.distance} mi
-                                    </b>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="stat">
-                                    <div className="stat-subtext">Elev Gain</div>
-                                    <b className="stat-text">
-                                        {workout.elevation} ft
-                                    </b>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="stat">
-                                    <div className="stat-subtext">Time</div>
-                                    <b className="stat-text">
-                                        {this.formatDuration(workout)}
-                                    </b>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+        //                 <Link className="activity-feed-card-title" to={`/activities/${workout.id}`}>
+        //                     <h3 className="feed-title">
+        //                         {workout.workout_title}
+        //                     </h3>
+        //                 </Link>
+
+        //                 <ul className="list-stats">
+        //                     <li>
+        //                         <div className="stat">
+        //                             <div className="stat-subtext">Distance</div>
+        //                             <b className="stat-text">
+        //                                 {workout.distance} mi
+        //                             </b>
+        //                         </div>
+        //                     </li>
+        //                     <li>
+        //                         <div className="stat">
+        //                             <div className="stat-subtext">Elev Gain</div>
+        //                             <b className="stat-text">
+        //                                 {workout.elevation} ft
+        //                             </b>
+        //                         </div>
+        //                     </li>
+        //                     <li>
+        //                         <div className="stat">
+        //                             <div className="stat-subtext">Time</div>
+        //                             <b className="stat-text">
+        //                                 {this.formatDuration(workout)}
+        //                             </b>
+        //                         </div>
+        //                     </li>
+        //                 </ul>
+        //             </div>
+        //         </div>
 
 
 
-                {/* <Link className="workout-edit-btn" to={`/activity/${workout.id}/edit`}>Edit</Link> */}
+        //         {/* <Link className="workout-edit-btn" to={`/activity/${workout.id}/edit`}>Edit</Link> */}
 
                 
 
-            </div>
-        ));
+        //     </div>
+        // ));
 
         if (totalWorkouts === false) { 
             return (
@@ -221,36 +227,89 @@ class DashboardIndex extends React.Component {
 
                 </div>
             </div>
-                )
-        } else {
-        return (
-            <div className="dashboard-page-container">
-                <div className="dashboard-border">
-                    <Navbar logout={this.props.logout} {...navbarProps} />
-                    <div className="splash-border"></div>
-                    <div className="dashboard-page-content">
-                        <div id="dashboard-page" className="dashboard-page">
-                            {this.renderProfile()}
-                            <div id="feed" className="feed">
-                                <div className="feed-header"> 
-                                <div className="feed-header-content">
-                                        <h5 className="feed-header-text">
-                                            Your Activities
-                                        </h5>
-                                    </div>
-                                    <div className="arrow-wrapper">
-                                        <img className="down-arrow" src={window.downArrow} alt=""/>
-                                    </div>
-                                </div>
+            )
+        } 
+        if (totalWorkouts === true) {
+            const workoutItems = Object.values(this.props.workouts).reverse().map((workout) => (
+                <div className="activity-feed-card" key={workout.id}>
+                    <header className="activity-feed-card-header">
+                        <div>{athleteName}</div>
+                        <time className="activity-feed-card-date">{this.formatDay(workout.date)}</time>
+                    </header>
+                    <div className="activity-feed-card-body">
+                        {/* <div className="sport-type-img"> */}
+                        <img className="sport-type-img" src={this.selectSportImg(workout.sport)} alt="" />
+                        {/* </div> */}
+                        <div className="feed-card-content">
 
-                                <div className="workoutItems">{workoutItems}</div>
-                            </div>
+                            <Link className="activity-feed-card-title" to={`/activities/${workout.id}`}>
+                                <h3 className="feed-title">
+                                    {workout.workout_title}
+                                </h3>
+                            </Link>
+
+                            <ul className="list-stats">
+                                <li>
+                                    <div className="stat">
+                                        <div className="stat-subtext">Distance</div>
+                                        <b className="stat-text">
+                                            {workout.distance} mi
+                                    </b>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="stat">
+                                        <div className="stat-subtext">Elev Gain</div>
+                                        <b className="stat-text">
+                                            {workout.elevation} ft
+                                    </b>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="stat">
+                                        <div className="stat-subtext">Time</div>
+                                        <b className="stat-text">
+                                            {this.formatDuration(workout)}
+                                        </b>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    
+
+                    {/* <Link className="workout-edit-btn" to={`/activity/${workout.id}/edit`}>Edit</Link> */}
+
                 </div>
-            </div>
-        )
+            ));
+
+            return (
+                <div className="dashboard-page-container">
+                    <div className="dashboard-border">
+                        <Navbar logout={this.props.logout} {...navbarProps} />
+                        <div className="splash-border"></div>
+                        <div className="dashboard-page-content">
+                            <div id="dashboard-page" className="dashboard-page">
+                                {this.renderProfile()}
+                                <div id="feed" className="feed">
+                                    <div className="feed-header"> 
+                                    <div className="feed-header-content">
+                                            <h5 className="feed-header-text">
+                                                Your Activities
+                                            </h5>
+                                        </div>
+                                        <div className="arrow-wrapper">
+                                            <img className="down-arrow" src={window.downArrow} alt=""/>
+                                        </div>
+                                    </div>
+
+                                    <div className="workoutItems">{workoutItems}</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            )
         }
 
     }
