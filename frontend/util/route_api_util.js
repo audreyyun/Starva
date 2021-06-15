@@ -1,8 +1,7 @@
-export const fetchRoutes = (athleteId) => (
+export const fetchRoutes = () => (
     $.ajax({
         method: "GET",
         url: "/api/routes",
-        data: { route: { athleteId: athleteId } }
     })
 );
 // export const fetchRoutes = () => (

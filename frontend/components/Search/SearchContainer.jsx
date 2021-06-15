@@ -17,7 +17,7 @@ const msp = (state, ownProps) => {
 
 const mdp = dispatch => {
     return {
-        fetchRoutes: (athleteId) => dispatch(fetchRoutes(athleteId)),
+        fetchRoutes: () => dispatch(fetchRoutes()),
         fetchRoute: routeId => dispatch(fetchRoute(routeId)),
         createRoute: route => dispatch(createRoute(route)),
         updateRoute: route => dispatch(updateRoute(route)),
