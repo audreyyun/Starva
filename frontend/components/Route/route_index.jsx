@@ -16,7 +16,6 @@ class RouteIndex extends React.Component {
     }
 
     componentDidMount() { 
-        debugger
         this.props.fetchRoutes(this.props.sessionId);
 
     }
@@ -123,7 +122,6 @@ class RouteIndex extends React.Component {
                 </div>
             )   
         } else { 
-            debugger
             return ( 
                 <div id="routes-index-pg-container">
                     <Navbar logout={this.props.logout} {...navbarProps} />

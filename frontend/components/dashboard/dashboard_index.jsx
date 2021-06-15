@@ -140,7 +140,6 @@ class DashboardIndex extends React.Component {
             }
         }
 
-        debugger
             
 
         // const workoutItems = Object.values(this.props.workouts).reverse().map((workout) => (

@@ -119,7 +119,6 @@ class WorkoutIndex extends React.Component {
 
             </tr>
         ));
-            debugger
         if (this.props.workouts.length === 0 || this.props.workouts[0].athlete_id !== this.props.sessionId) {
 
             return (

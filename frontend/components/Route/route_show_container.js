@@ -5,7 +5,6 @@ import RouteShow from "./route_show";
 import { logout } from "../../actions/session_actions";
 
 const msp = (state, ownProps) => {
-    debugger
     return {
         sessionId: state.session.id || null,
         routeId: ownProps.match.params.routeId,

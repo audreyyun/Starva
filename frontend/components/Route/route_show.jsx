@@ -102,7 +102,6 @@ class RouteShow extends React.Component {
 
     render() {
         if (this.props.sessionId !== this.props.route.athlete_id) {
-            debugger
             return null;
         } else if (this.props.sessionId === this.props.route.athlete_id) {
             let month = new Date(this.props.route.created_at).getMonth() + 1;
@@ -133,7 +132,6 @@ class RouteShow extends React.Component {
                 isAuthenticated: true,
             }
 
-            debugger
 
             return (
                 <div>
