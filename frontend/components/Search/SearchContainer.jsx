@@ -7,8 +7,8 @@ import Search from './Search'
 
 const msp = (state, ownProps) => {
     return {
-        // routeId: ownProps.match.params.routeId,
-        // route: state.entities.routes[ownProps.match.params.routeId],
+        routeId: ownProps.match.params.routeId,
+        route: state.entities.routes[ownProps.match.params.routeId],
         routes: Object.values(state.entities.routes),
         sessionId: state.session.id || null,
         athlete: state.entities.users ? state.entities.users[state.session.id] : null,
