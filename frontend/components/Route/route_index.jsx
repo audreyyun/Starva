@@ -137,7 +137,6 @@ class RouteIndex extends React.Component {
             //         </div>
             //     </li>
             // ));
-            debugger
 
             // const routeIndexItems = Object.values(this.props.routes).map( (route) => (
             //     <li className="route-index-item" key={route.id}>
