@@ -101,10 +101,10 @@ class RouteShow extends React.Component {
     }
 
     render() {
-        debugger
-        if (this.props.sessionId !== this.props.route.athlete_id) {
-            return null;
-        } else if (this.props.sessionId === this.props.route.athlete_id) {
+        // debugger
+        // if (this.props.sessionId !== this.props.route.athlete_id) {
+        //     return null;
+        // } else if (this.props.sessionId === this.props.route.athlete_id) {
             let month = new Date(this.props.route.created_at).getMonth() + 1;
             let day = new Date(this.props.route.created_at).getDate();
             let year = new Date(this.props.route.created_at).getFullYear();
@@ -161,7 +161,7 @@ class RouteShow extends React.Component {
                 </div>
             )
         }
-    }
+    // }
 }
 
 export default RouteShow;
