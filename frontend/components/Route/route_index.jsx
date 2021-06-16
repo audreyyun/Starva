@@ -78,6 +78,7 @@ class RouteIndex extends React.Component {
                             sessionId={this.props.sessionId}
                             fetchRoute={this.props.fetchRoute}
                         /> */}
+                    
                         <RouteShow route={route}
                             routeId={route.id}
                             athlete={this.props.athlete}
@@ -88,16 +89,17 @@ class RouteIndex extends React.Component {
                     </div>
                 </li>
             ));
+            debugger
 
-            const routeIndexItems = Object.values(this.props.routes).map( (route) => (
-                <li className="route-index-item" key={route.id}>
+            // const routeIndexItems = Object.values(this.props.routes).map( (route) => (
+            //     <li className="route-index-item" key={route.id}>
                     
-                        <RouteIndexItemContainer route={route}
-                            fetchRoute={this.props.fetchRoute}
-                        />
+            //             <RouteIndexItemContainer route={route}
+            //                 fetchRoute={this.props.fetchRoute}
+            //             />
 
-                </li>
-            ));
+            //     </li>
+            // ));
 
         if (this.props.routes.length === 0 || this.props.routes[0].athlete_id !==this.props.sessionId) {
             return (

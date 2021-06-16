@@ -7,7 +7,7 @@ import { logout } from "../../actions/session_actions";
 const msp = (state, ownProps) => {
     return {
         sessionId: state.session.id || null,
-        routeId: ownProps.match.params.routeId,
+        routeId: ownProps.match.params.route.id,
         route: state.entities.routes ? state.entities.routes[ownProps.match.params.routeId] : null,
         athlete: state.entities.users ? state.entities.users[state.session.id] : null,
     }
