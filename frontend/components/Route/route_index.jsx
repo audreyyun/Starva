@@ -11,8 +11,12 @@ import RouteShow from './route_show'
 class RouteIndex extends React.Component { 
     constructor(props) { 
         super(props);
-        this.handleDelete = this.handleDelete.bind(this)
-        this.handleClick = this.handleClick.bind(this)
+        this.handleDelete = this.handleDelete.bind(this);
+        this.handleClick = this.handleClick.bind(this);
+        this.myRoutes = this.myRoutes.bind(this);
+        this.state= { 
+            myCreatedRoutes: [],
+        }
     }
 
     componentDidMount() { 
@@ -46,6 +50,16 @@ class RouteIndex extends React.Component {
         }
     }
 
+    myRoutes() { 
+        let allRoutes = Object.values(this.props.routes).reverse()
+        for (let i = 0; i < allRoutes.length; i++) { 
+            let route = allRoutes[i];
+            if (route.athlete_id === this.props.sessionId) { 
+                this.state.myCreatedRoutes.push(route);
+            } 
+        }
+    }
+
     render () { 
 
         const navbarProps =
@@ -56,7 +70,10 @@ class RouteIndex extends React.Component {
             isAuthenticated: true,
         };
         
-            const routeItems = Object.values(this.props.routes).reverse().map( (route) => (
+
+        
+
+            const routeItems = this.state.myCreatedRoutes.map( (route) => (
                 <li className="route-index-item" key={route.id}>
                     <div className="map-preview">
 
@@ -89,6 +106,39 @@ class RouteIndex extends React.Component {
                     </div>
                 </li>
             ));
+            // const routeItems = Object.values(this.props.routes).reverse().map( (route) => (
+            //     <li className="route-index-item" key={route.id}>
+            //         <div className="map-preview">
+
+            //             {/* <Link id ="wrench-btn" className="wrench-btn" onClick={this.handleClick} to="/"> */}
+            //             <div id="wrench-btn" className="wrench-btn" onClick={() => this.handleClick(route.id)}>
+            //                 <img className="sprite-wrench" src={window.wrench} alt="" />
+            //             </div>
+
+            //             <div id={`wrench-content ${route.id}`} className="wrench-content" >
+            //                 <div>
+            //                     <Link className="sprite-wrench-options" to={`/routes/${route.id}/edit`}>Edit Route</Link>
+            //                 </div>
+            //                 <div>
+            //                     <Link className="sprite-wrench-options" to="/routes/" onClick={this.handleDelete(route.id)}>Delete Route</Link>
+            //                 </div>
+            //             </div>
+                        
+            //             {/* <RouteShow route={route}
+            //                 sessionId={this.props.sessionId}
+            //                 fetchRoute={this.props.fetchRoute}
+            //             /> */}
+                    
+            //             <RouteShow route={route}
+            //                 routeId={route.id}
+            //                 athlete={this.props.athlete}
+            //                 sessionId={this.props.sessionId}
+            //                 fetchRoute={this.props.fetchRoute}
+            //             />
+
+            //         </div>
+            //     </li>
+            // ));
             debugger
 
             // const routeIndexItems = Object.values(this.props.routes).map( (route) => (
