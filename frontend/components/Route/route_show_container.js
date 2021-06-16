@@ -9,7 +9,7 @@ const msp = (state, ownProps) => {
         sessionId: state.session.id || null,
         routeId: ownProps.match.params.routeId,
         route: state.entities.routes ? state.entities.routes[ownProps.match.params.routeId] : null,
-    
+        athlete: state.entities.users ? state.entities.users[state.session.id] : null,
     }
 }
 
