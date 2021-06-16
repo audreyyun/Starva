@@ -14,16 +14,15 @@ class RouteIndex extends React.Component {
         this.handleDelete = this.handleDelete.bind(this);
         this.handleClick = this.handleClick.bind(this);
         this.myRoutes = this.myRoutes.bind(this);
-        this.state= { 
+        this.state = { 
             myCreatedRoutes: [],
-        }
-    }
+        };
+    };
 
     componentDidMount() { 
         this.props.fetchRoutes(this.props.sessionId);
         // this.props.fetchRoutes();
-
-    }
+    };
     
 
     handleDelete(routeId) {
@@ -34,11 +33,11 @@ class RouteIndex extends React.Component {
                     //     pathname: `/dashboard`
                     // })
                     location.reload()
-                )
-            }
-        }
+                );
+            };
+        };
 
-    }
+    };
 
     handleClick(routeId) { 
         
@@ -51,14 +50,14 @@ class RouteIndex extends React.Component {
     }
 
     myRoutes() { 
-        let allRoutes = Object.values(this.props.routes).reverse()
+        let allRoutes = Object.values(this.props.routes).reverse();
         for (let i = 0; i < allRoutes.length; i++) { 
             let route = allRoutes[i];
             if (route.athlete_id === this.props.sessionId) { 
                 this.state.myCreatedRoutes.push(route);
-            } 
-        }
-    }
+            }; 
+        };
+    };
 
     render () { 
 
@@ -71,8 +70,7 @@ class RouteIndex extends React.Component {
         };
         
 
-        
-
+            const myRouteFcn = this.myRoutes();
             const routeItems = this.state.myCreatedRoutes.map( (route) => (
                 <li className="route-index-item" key={route.id}>
                     <div className="map-preview">
@@ -195,6 +193,7 @@ class RouteIndex extends React.Component {
                             </div>
 
                             <div className="index-heading-border"></div>
+                            <div >{myRouteFcn}</div>
                             <ul className="routes-list">{routeItems}</ul>
                         
                         </div>
