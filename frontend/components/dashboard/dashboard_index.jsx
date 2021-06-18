@@ -9,14 +9,17 @@ class DashboardIndex extends React.Component {
         this.formatDay = this.formatDay.bind(this);
         this.formatLongDay = this.formatLongDay.bind(this);
         this.whatDay = this.whatDay.bind(this);
+        this.myWorkouts = this.myWorkouts.bind(this);
 
         this.state = { 
-            scrolling: false
+            scrolling: false,
+            myCreatedWorkouts: [],
         }
     }
 
     componentDidMount() { 
-        this.props.fetchWorkouts(this.props.sessionId);
+        debugger
+        this.props.fetchWorkouts(this.props.sessionId).then( () => ( this.myWorkouts() ));
     }
 
 
@@ -115,6 +118,19 @@ class DashboardIndex extends React.Component {
         }
     }
 
+    myWorkouts() {
+        debugger
+        let allWorkouts = Object.values(this.props.workouts).reverse();
+        for (let i = 0; i < allWorkouts.length; i++) {
+            let workout = allWorkouts[i];
+            if (workout.athlete_id === this.props.sessionId) {
+                this.state.myCreatedWorkouts.push(workout);
+            };
+            this.setState({ state: this.state });
+        };
+        debugger
+    };
+
     render() { 
         const navbarProps = 
             {
@@ -131,16 +147,19 @@ class DashboardIndex extends React.Component {
         }
 
         let totalWorkouts = true;
-        for(let i = 0; i < this.props.workouts.length; i++) { 
-            let workout = this.props.workouts[i];
-            if (workout.athlete_id !== this.props.athlete.id) {
-                totalWorkouts = false;
-            } else { 
-                totalWorkouts = true;
-            }
-        }
+        // for(let i = 0; i < this.props.workouts.length; i++) { 
+        //     let workout = this.props.workouts[i];
+            // if (workout.athlete_id === this.props.athlete.id) {
+            //     this.state.myCreatedWorkouts.push(workout)
+            // } 
+            // this.setState({ state: this.state })
+            // if (workout.athlete_id !== this.props.athlete.id) {
+            //     totalWorkouts = false;
+            // } else { 
+            //     totalWorkouts = true;
+            // }
+        // }
 
-            
 
         // const workoutItems = Object.values(this.props.workouts).reverse().map((workout) => (
         //     <div className="activity-feed-card" key={workout.id}>
@@ -197,8 +216,8 @@ class DashboardIndex extends React.Component {
 
         //     </div>
         // ));
-
-        if (totalWorkouts === false) { 
+        debugger
+        if (this.state.myCreatedWorkouts.length == 0) { 
             return (
             <div className="dashboard-page-container">
                 <div className="dashboard-border">
@@ -227,9 +246,9 @@ class DashboardIndex extends React.Component {
                 </div>
             </div>
             )
-        } 
-        if (totalWorkouts === true) {
-            const workoutItems = Object.values(this.props.workouts).reverse().map((workout) => (
+        } else { 
+        // if (totalWorkouts === true) {
+            const workoutItems = this.state.myCreatedWorkouts.map((workout) => (
                 <div className="activity-feed-card" key={workout.id}>
                     <header className="activity-feed-card-header">
                         <div>{athleteName}</div>
