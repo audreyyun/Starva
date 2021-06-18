@@ -217,7 +217,7 @@ class DashboardIndex extends React.Component {
         //     </div>
         // ));
         debugger
-        if (this.state.myCreatedWorkouts.length == 0) { 
+        if (this.state.myCreatedWorkouts.length === 0) { 
             return (
             <div className="dashboard-page-container">
                 <div className="dashboard-border">
@@ -340,9 +340,11 @@ class DashboardIndex extends React.Component {
             athleteName = this.props.athlete.first_name + " " + this.props.athlete.last_name
         }
   
-        let numActivities = (Object.values(this.props.workouts)).length;
+        // let numActivities = (Object.values(this.props.workouts)).length;
+        let myActivities = (this.state.myCreatedWorkouts);
+        let numActivities = myActivities.length;
 
-        let activities = Object.values(this.props.workouts).reverse().map(workout => (
+        let activities = myActivities.map(workout => (
                 <Link className="last-activity text-small" to={`/activities/${workout.id}`}>
                     <strong>
                         
@@ -352,7 +354,7 @@ class DashboardIndex extends React.Component {
         ));
         let lastActivity = activities[0];
 
-
+            debugger
         return ( 
             < div className = "feed-sidebar-container" >
                 <div className="feed-sidebar-content">

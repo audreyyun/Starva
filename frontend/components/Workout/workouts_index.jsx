@@ -18,7 +18,7 @@ class WorkoutIndex extends React.Component {
     }
 
     componentDidMount() {
-        debugger
+        // debugger
         this.props.fetchWorkouts(this.props.sessionId).then( () => ( this.myWorkouts() ) );
 
     }
@@ -93,7 +93,7 @@ class WorkoutIndex extends React.Component {
     }
 
     myWorkouts() {
-        debugger
+        // debugger
         let allWorkouts = Object.values(this.props.workouts).reverse();
         for (let i = 0; i < allWorkouts.length; i++) {
             let workout = allWorkouts[i];
@@ -142,7 +142,7 @@ class WorkoutIndex extends React.Component {
             </tr>
         ));
 
-        debugger
+        // debugger
         if (this.state.myCreatedWorkouts.length === 0 ) {
 
             return (
