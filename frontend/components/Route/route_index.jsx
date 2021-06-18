@@ -20,8 +20,11 @@ class RouteIndex extends React.Component {
     };
 
     componentDidMount() { 
-        this.props.fetchRoutes(this.props.sessionId);
-        // this.props.fetchRoutes();
+        // debugger
+        this.props.fetchRoutes(this.props.sessionId).then(() => ( this.myRoutes() ) );
+
+        // this.props.fetchRoutes(this.props.sessionId);
+        // this.myRoutes();
     };
     
 
@@ -55,12 +58,15 @@ class RouteIndex extends React.Component {
             let route = allRoutes[i];
             if (route.athlete_id === this.props.sessionId) { 
                 this.state.myCreatedRoutes.push(route);
+                // debugger
             }; 
+            this.setState({ state: this.state });
         };
+        // debugger
     };
 
     render () { 
-
+        
         const navbarProps =
         {
             loginBtnClass: "nav-btn-secondary",
@@ -69,13 +75,10 @@ class RouteIndex extends React.Component {
             isAuthenticated: true,
         };
         
-
-            const myRouteFcn = this.myRoutes();
             const routeItems = this.state.myCreatedRoutes.map( (route) => (
                 <li className="route-index-item" key={route.id}>
                     <div className="map-preview">
 
-                        {/* <Link id ="wrench-btn" className="wrench-btn" onClick={this.handleClick} to="/"> */}
                         <div id="wrench-btn" className="wrench-btn" onClick={() => this.handleClick(route.id)}>
                             <img className="sprite-wrench" src={window.wrench} alt="" />
                         </div>
@@ -89,10 +92,6 @@ class RouteIndex extends React.Component {
                             </div>
                         </div>
                         
-                        {/* <RouteShow route={route}
-                            sessionId={this.props.sessionId}
-                            fetchRoute={this.props.fetchRoute}
-                        /> */}
                     
                         <RouteShow route={route}
                             routeId={route.id}
@@ -148,7 +147,7 @@ class RouteIndex extends React.Component {
             //     </li>
             // ));
 
-        if (this.props.routes.length === 0 || this.props.routes[0].athlete_id !==this.props.sessionId) {
+        if (this.state.myCreatedRoutes.length === 0 ) {
             return (
                 <div id="routes-index-pg-container ">
                     <Navbar logout={this.props.logout} {...navbarProps} />
@@ -173,6 +172,7 @@ class RouteIndex extends React.Component {
                 </div>
             )   
         } else { 
+            // debugger
             return ( 
                 <div id="routes-index-pg-container">
                     <Navbar logout={this.props.logout} {...navbarProps} />
@@ -192,7 +192,6 @@ class RouteIndex extends React.Component {
                             </div>
 
                             <div className="index-heading-border"></div>
-                            <div >{myRouteFcn}</div>
                             <ul className="routes-list">{routeItems}</ul>
                         
                         </div>

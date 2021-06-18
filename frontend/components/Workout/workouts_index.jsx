@@ -11,12 +11,21 @@ class WorkoutIndex extends React.Component {
         this.handleDelete = this.handleDelete.bind(this);
         this.formatDay = this.formatDay.bind(this);
         this.formatDuration = this.formatDuration.bind(this);
+        this.myWorkouts = this.myWorkouts.bind(this);
+        this.state= {
+            myCreatedWorkouts: [],
+        };
     }
 
     componentDidMount() {
-        this.props.fetchWorkouts(this.props.sessionId);
+        debugger
+        this.props.fetchWorkouts(this.props.sessionId).then( () => ( this.myWorkouts() ) );
 
     }
+
+    // componentWillUnmount() { 
+    //     this.myWorkouts();
+    // }
 
 
     handleDelete(workoutId) {
@@ -83,6 +92,18 @@ class WorkoutIndex extends React.Component {
         return `${hrs}:${min}:${sec}`
     }
 
+    myWorkouts() {
+        debugger
+        let allWorkouts = Object.values(this.props.workouts).reverse();
+        for (let i = 0; i < allWorkouts.length; i++) {
+            let workout = allWorkouts[i];
+            if (workout.athlete_id === this.props.sessionId) {
+                this.state.myCreatedWorkouts.push(workout);
+            };
+            this.setState({ state: this.state });
+        };
+    };
+
     render() {
 
         const navbarProps =
@@ -95,8 +116,9 @@ class WorkoutIndex extends React.Component {
 
 
         const numWorkouts = Object.values(this.props.workouts).length;
-
-        const workoutItems = Object.values(this.props.workouts).reverse().map((workout) => (
+        // const myWorkoutFcn = this.myWorkouts();
+        // this.myWorkouts();
+        const workoutItems = this.state.myCreatedWorkouts.map((workout) => (
             <tr className="workout-index-item" key={workout.id}>
         
                 <td className="view-col col-type col-str">{workout.sport}</td>
@@ -119,7 +141,9 @@ class WorkoutIndex extends React.Component {
 
             </tr>
         ));
-        if (this.props.workouts.length === 0 || this.props.workouts[0].athlete_id !== this.props.sessionId) {
+
+        debugger
+        if (this.state.myCreatedWorkouts.length === 0 ) {
 
             return (
                 <div id="routes-index-pg-container ">
@@ -167,6 +191,7 @@ class WorkoutIndex extends React.Component {
                                     </tr>
                                 </thead>
 
+                                {/* <div>{myWorkoutFcn}</div> */}
                                 <tbody className="activities-list">{workoutItems}</tbody>
                             </table>
                         </div>
